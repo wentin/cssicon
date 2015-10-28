@@ -209,7 +209,6 @@ body {
   height: 12px;
   border: solid 1px #333333;
   border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
   .search.icon:before {
     top: 12px;
@@ -220,19 +219,16 @@ body {
   .search.icon.plusI i {
     left: 4px;
     top: 4px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
     .search.icon.plusI i:before, .search.icon.plusI i:after {
       width: 6px;
       height: 1px;
       background-color: #333333; }
     .search.icon.plusI i:after {
-      -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
   .search.icon.minusI i {
     left: 4px;
     top: 4px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
     .search.icon.minusI i:before {
       width: 6px;
@@ -265,10 +261,8 @@ body {
     height: 1px;
     background-color: #333333;
     top: 10px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .close.icon:before {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
 .hamburger.icon {
@@ -294,7 +288,6 @@ body {
     height: 10px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     right: 1px;
     top: -5px; }
@@ -308,7 +301,6 @@ body {
     height: 10px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     left: 1px;
     top: -5px; }
@@ -324,7 +316,6 @@ body {
     height: 10px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: -5px;
     top: 1px; }
@@ -340,7 +331,6 @@ body {
     height: 10px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     left: -5px;
     top: 3px; }
@@ -401,7 +391,6 @@ body {
   height: 12px;
   border: solid 1px #333333;
   border-radius: 7px 7px 7px 0;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
   .pin.icon:before {
     width: 4px;
@@ -424,7 +413,6 @@ body {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 0px;
-  -webkit-transform: rotate(135deg);
   transform: rotate(135deg); }
   .raindrop.icon.filled {
     background-color: #333333; }
@@ -441,7 +429,6 @@ body {
     background-color: #333333;
     top: 7px;
     left: -1px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .stop.icon.filled {
     background-color: #333333; }
@@ -461,7 +448,6 @@ body {
   .clock.icon:before, .clock.icon:after {
     background-color: #333333;
     left: 7px;
-    -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%; }
   .clock.icon:before {
     width: 5px;
@@ -548,7 +534,6 @@ body {
   height: 9px;
   border-left: solid 1px #333333;
   border-bottom: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
   .heart.icon:before {
     width: 8px;
@@ -608,7 +593,6 @@ body {
   width: 14px;
   height: 2px;
   border: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border-radius: 1px; }
   .edit.icon:before {
@@ -627,7 +611,6 @@ body {
   width: 7px;
   height: 1px;
   background-color: #333333;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
   .link.icon:before, .link.icon:after {
     width: 8px;
@@ -645,14 +628,12 @@ body {
   height: 10px;
   border: solid 1px #333333;
   border-radius: 1px;
-  -webkit-transform: skewY(20deg);
   transform: skewY(20deg); }
   .map.icon:before, .map.icon:after {
     width: 4px;
     height: 10px;
     border: solid 1px #333333;
     border-radius: 1px;
-    -webkit-transform: skewY(-40deg);
     transform: skewY(-40deg); }
   .map.icon:before {
     left: -6px;
@@ -670,15 +651,12 @@ body {
     width: 1px;
     height: 10px;
     background-color: #333333;
-    -webkit-transform-origin: bottom;
     transform-origin: bottom;
     left: 7px;
     top: -4px; }
   .mail.icon:before {
-    -webkit-transform: rotate(-54deg);
     transform: rotate(-54deg); }
   .mail.icon:after {
-    -webkit-transform: rotate(54deg);
     transform: rotate(54deg); }
   .mail.icon.filled {
     background-color: #333333; }
@@ -697,7 +675,6 @@ body {
     height: 7px;
     border-top: solid 1px #333333;
     border-left: solid 1px #333333;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: 10px;
     left: 1px; }
@@ -742,10 +719,8 @@ body {
     background-color: white;
     left: 3px;
     top: -1px;
-    -webkit-transform-origin: center;
     transform-origin: center; }
   .focus.icon:after {
-    -webkit-transform: rotate(90deg);
     transform: rotate(90deg); }
 
 .card.icon {
@@ -779,7 +754,6 @@ body {
     height: 10px;
     border-top: solid 1px #333333;
     border-left: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: -5px;
     top: 2px; }
@@ -802,7 +776,6 @@ body {
       border-right: solid 5px #333333;
       border-bottom: solid 4px transparent;
       border-left: solid 5px transparent;
-      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
       left: -9px;
       top: 0px; }
@@ -816,10 +789,8 @@ body {
     width: 6px;
     height: 1px;
     background-color: #333333;
-    -webkit-transform-origin: center;
     transform-origin: center; }
   .volumePlus.icon:after {
-    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg); }
 
 .volumeMinus.icon {
@@ -837,13 +808,10 @@ body {
     width: 6px;
     height: 1px;
     background-color: #333333;
-    -webkit-transform-origin: center;
     transform-origin: center; }
   .volumeMute.icon:before {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .volumeMute.icon:after {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
 .volumeOne.icon {
@@ -917,7 +885,6 @@ body {
 .code.icon:before, .code.icon:after {
   width: 8px;
   height: 8px;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 .code.icon:before {
   border-left: solid 1px #333333;
@@ -954,7 +921,6 @@ body {
     border-right: solid 1px #333333;
     border-bottom: solid 1px #333333;
     border-radius: 1px;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: 1px;
     top: 1px; }
@@ -1019,7 +985,6 @@ body {
     border-bottom: solid 1px #333333;
     border-left: solid 1px #333333;
     border-right: solid 1px transparent;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .moon.icon.filled {
     background-color: #333333; }
@@ -1059,7 +1024,6 @@ body {
     height: 4px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: 3px;
     top: -5px; }
@@ -1082,7 +1046,6 @@ body {
     height: 4px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     left: 3px;
     top: 1px; }
@@ -1105,7 +1068,6 @@ body {
     height: 4px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: 3px;
     top: 4px; }
@@ -1140,7 +1102,6 @@ body {
     background-color: #333333;
     left: -3px;
     top: -2px;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .shut.icon:after {
     width: 4px;
@@ -1158,7 +1119,6 @@ body {
   .chat.icon:before {
     width: 4px;
     height: 4px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: white;
     border-bottom: solid 1px #333333;
@@ -1179,7 +1139,6 @@ body {
   border-right: solid 1px #333333;
   border-top: solid 1px #333333;
   border-radius: 4px 4px 0 0;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
   .paperclip.icon:before {
     top: 11px;
@@ -1252,7 +1211,6 @@ body {
   height: 7px;
   border-radius: 50%;
   border: solid 1px #333333;
-  -webkit-transform: rotate(135deg);
   transform: rotate(135deg); }
   .key2.icon:before {
     width: 12px;
@@ -1283,7 +1241,6 @@ body {
     height: 3px;
     border-top: solid 1px #333333;
     border-left: solid 1px #333333;
-    -webkit-transform: rotate(-22.5deg);
     transform: rotate(-22.5deg);
     left: 1px;
     top: 10px; }
@@ -1455,7 +1412,6 @@ body {
   height: 12px;
   border-radius: 70% 15%;
   border: solid 1px #333333;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 3px;
   top: 3px; }
@@ -1598,7 +1554,6 @@ body {
     height: 11px;
     border: solid 1px #333333;
     border-radius: 85% 15%;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .browser.icon:after {
     width: 15px;
@@ -1735,7 +1690,6 @@ body {
     border-right: solid 1px #333333;
     width: 12px;
     height: 8px;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .picture.icon.filled {
     background-color: #333333; }
@@ -1808,7 +1762,6 @@ body {
 .navigate.icon {
   width: 14px;
   height: 18px;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
   .navigate.icon:before {
     left: 0;
@@ -1864,10 +1817,8 @@ body {
     top: 7px;
     left: -1px; }
   .float.icon:before {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .float.icon:after {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .float.icon i {
     width: 7px;
@@ -1904,7 +1855,6 @@ body {
     border-top: solid 1px #333333;
     border-bottom: solid 1px #333333;
     border-radius: 50%;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: -7px;
     left: 4px; }
@@ -1955,7 +1905,6 @@ body {
   height: 4px;
   border-top: solid 1px #333333;
   border-right: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: 3px;
   top: 4px; }
@@ -1973,7 +1922,6 @@ body {
   height: 4px;
   border-top: solid 1px #333333;
   border-right: solid 1px #333333;
-  -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
   left: 3px;
   top: 6px; }
@@ -2157,7 +2105,6 @@ body {
     height: 4px;
     border-left: solid 1px #333333;
     border-bottom: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: 4px;
     top: 4px; }
@@ -2168,10 +2115,8 @@ body {
     left: 4px;
     top: 8px; }
   .calendar.icon.removeI i:before {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .calendar.icon.removeI i:after {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .calendar.icon.contact:after {
     height: 0; }
@@ -2272,14 +2217,12 @@ body {
     width: 8px;
     height: 1px;
     background-color: #333333;
-    -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg); }
     .face.icon.tongue i:before {
       top: -1px;
       right: 0px;
       width: 2px;
       height: 2px;
-      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       border-radius: 2px;
       border-top: solid 1px transparent;
@@ -2328,14 +2271,12 @@ body {
     border-right: solid 1px transparent;
     border-bottom: solid 1px #333333;
     border-left: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .face.icon.doublewink:before, .face.icon.doublewink:after {
     border-top: solid 1px transparent;
     border-right: solid 1px transparent;
     border-bottom: solid 1px #333333;
     border-left: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .face.icon.sad i {
     left: 3px;
@@ -2374,7 +2315,6 @@ body {
     top: 7px; }
   .circle.icon.plusI.icon:after,
   .square.icon.plusI.icon:after {
-    -webkit-transform: rotate(90deg);
     transform: rotate(90deg); }
   .circle.icon.plusI.icon.filled,
   .square.icon.plusI.icon.filled {
@@ -2412,7 +2352,6 @@ body {
     height: 4px;
     border-bottom: solid 1px #333333;
     border-left: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .circle.icon.checkI.icon.filled,
   .square.icon.checkI.icon.filled {
@@ -2432,11 +2371,9 @@ body {
     width: 9px;
     height: 1px;
     background-color: #333333;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .circle.icon.removeI.icon:after,
   .square.icon.removeI.icon:after {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .circle.icon.removeI.icon.filled,
   .square.icon.removeI.icon.filled {
@@ -2454,7 +2391,6 @@ body {
     height: 1px;
     background-color: #333333; }
   .plus.icon:after {
-    -webkit-transform: rotate(90deg);
     transform: rotate(90deg); }
 
 .minus.icon {
@@ -2471,7 +2407,6 @@ body {
   height: 8px;
   border-bottom: solid 1px #333333;
   border-left: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 .remove.icon {
@@ -2481,8 +2416,6 @@ body {
     width: 15px;
     height: 1px;
     background-color: #333333;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .remove.icon:after {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }

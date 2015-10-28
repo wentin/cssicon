@@ -276,8 +276,7 @@ body {
   height: 12px;
   border: solid 1px $grey;
   border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   &:before {
     top: 12px;
     left: 5px;
@@ -288,8 +287,7 @@ body {
   &.plusI i {
     left: 4px;
     top: 4px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     &:before, 
     &:after {
       width: 6px;
@@ -299,15 +297,13 @@ body {
     &:before {
     }
     &:after {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
+      transform: rotate(90deg);
     }
   }
   &.minusI i {
     left: 4px;
     top: 4px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     &:before {
       width: 6px;
       height: 1px;
@@ -350,12 +346,10 @@ body {
       height: 1px;
       background-color: $grey;
       top: 10px;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
+      transform: rotate(45deg);
     }
     &:before {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
 }
 .hamburger.icon {
@@ -385,8 +379,7 @@ body {
     height: 10px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     right: 1px;
     top: -5px;
   }
@@ -400,8 +393,7 @@ body {
     height: 10px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(-135deg);
-            transform: rotate(-135deg);
+    transform: rotate(-135deg);
     left: 1px;
     top: -5px;
   }
@@ -417,8 +409,7 @@ body {
     height: 10px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: -5px;
     top: 1px;
   }
@@ -434,8 +425,7 @@ body {
     height: 10px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform: rotate(135deg);
     left: -5px;
     top: 3px;
   }
@@ -505,8 +495,7 @@ body {
   height: 12px;
   border: solid 1px $grey;
   border-radius: 7px 7px 7px 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   &:before {
     width: 4px;
     height: 4px;
@@ -531,8 +520,7 @@ body {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 0px;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   &.filled {
     background-color: $grey;
   }
@@ -549,8 +537,7 @@ body {
     background-color: $grey;
     top: 7px;
     left: -1px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   &.filled {
     background-color: $grey;
@@ -576,8 +563,7 @@ body {
   &:after {
     background-color: $grey;
     left: 7px;
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
   }
   &:before {
     width: 5px;
@@ -679,8 +665,7 @@ body {
   height: 9px;
   border-left: solid 1px $grey;
   border-bottom: solid 1px $grey;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   &:before {
     width: 8px;
     height: 5px;
@@ -748,8 +733,7 @@ body {
   width: 14px;
   height: 2px;
   border: solid 1px $grey;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   border-radius: 1px;
   &:before {
     width: 0px;
@@ -769,8 +753,7 @@ body {
   width: 7px;
   height: 1px;
   background-color: $grey;
-  -webkit-transform :rotate(-45deg);
-          transform :rotate(-45deg);
+  transform :rotate(-45deg);
   &:before,
   &:after {
     width: 8px;
@@ -791,16 +774,14 @@ body {
   height: 10px;
   border: solid 1px $grey;
   border-radius: 1px;
-  -webkit-transform: skewY(20deg);
-          transform: skewY(20deg);
+  transform: skewY(20deg);
   &:before,
   &:after {
     width: 4px;
     height: 10px;
     border: solid 1px $grey;
     border-radius: 1px;
-    -webkit-transform: skewY(-40deg);
-            transform: skewY(-40deg);
+    transform: skewY(-40deg);
   }
   &:before {
     left: -6px;
@@ -821,18 +802,15 @@ body {
     width: 1px;
     height: 10px;
     background-color: $grey;
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
+    transform-origin: bottom;
     left: 7px;
     top: -4px;
   }
   &:before {
-    -webkit-transform: rotate(-54deg);
-            transform: rotate(-54deg);
+    transform: rotate(-54deg);
   }
   &:after {
-    -webkit-transform: rotate(54deg);
-            transform: rotate(54deg);
+    transform: rotate(54deg);
   }
   &.filled {
     background-color: $grey;
@@ -854,8 +832,7 @@ body {
     height: 7px;
     border-top: solid 1px $grey;
     border-left: solid 1px $grey;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     top: 10px;
     left: 1px;
   }
@@ -907,12 +884,10 @@ body {
     background-color: $white;
     left: 3px;
     top: -1px;
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
   }
   &:after {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 .card.icon {
@@ -951,8 +926,7 @@ body {
     height: 10px;
     border-top: solid 1px $grey;
     border-left: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: -5px;
     top: 2px;
   }
@@ -976,8 +950,7 @@ body {
       border-right: solid 5px $grey;
       border-bottom: solid 4px transparent;
       border-left: solid 5px transparent;
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      transform: rotate(0deg);
       left: -9px;
       top: 0px;
     }
@@ -994,12 +967,10 @@ body {
     width: 6px;
     height: 1px;
     background-color: $grey;
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
   }
   &:after {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
 }
 .volumeMinus.icon {
@@ -1019,16 +990,13 @@ body {
     width: 6px;
     height: 1px;
     background-color: $grey;
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
   }
   &:before {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   &:after {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 .volumeOne.icon {
@@ -1111,8 +1079,7 @@ body {
   &:after {
     width: 8px;
     height: 8px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &:before {
     border-left: solid 1px $grey;
@@ -1153,8 +1120,7 @@ body {
     border-right: solid 1px $grey;
     border-bottom: solid 1px $grey;
     border-radius: 1px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: 1px;
     top: 1px;
   }
@@ -1225,8 +1191,7 @@ body {
     border-bottom: solid 1px $grey;
     border-left: solid 1px $grey;
     border-right: solid 1px transparent;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   &.filled {
     background-color: $grey;
@@ -1278,8 +1243,7 @@ body {
     height: 4px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: 3px;
     top: -5px;
   }
@@ -1303,8 +1267,7 @@ body {
     height: 4px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform: rotate(135deg);
     left: 3px;
     top: 1px;
   }
@@ -1328,8 +1291,7 @@ body {
     height: 4px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: 3px;
     top: 4px;
   }
@@ -1365,8 +1327,7 @@ body {
     background-color: $grey;
     left: -3px;
     top: -2px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &:after {
     width: 4px;
@@ -1385,8 +1346,7 @@ body {
   &:before {
     width: 4px;
     height: 4px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     background-color: $white;
     border-bottom: solid 1px $grey;
     border-right: solid 1px $grey;
@@ -1409,8 +1369,7 @@ body {
   border-right: solid 1px $grey;
   border-top: solid 1px $grey;
   border-radius: 4px 4px 0 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   &:before {
     top: 11px;
     left: -1px;
@@ -1489,8 +1448,7 @@ body {
   height: 7px;
   border-radius: 50%;
   border: solid 1px $grey;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   &:before {
     width: 12px;
     height: 1px;
@@ -1523,8 +1481,7 @@ body {
     height: 3px;
     border-top: solid 1px $grey;
     border-left: solid 1px $grey;
-    -webkit-transform: rotate(-22.5deg);
-            transform: rotate(-22.5deg);
+    transform: rotate(-22.5deg);
     left: 1px;
     top: 10px;
   }
@@ -1711,8 +1668,7 @@ body {
   height: 12px;
   border-radius: 70% 15%;
   border: solid 1px $grey;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   left: 3px;
   top: 3px;
   &:before {
@@ -1893,8 +1849,7 @@ body {
     height: 11px;
     border: solid 1px $grey;
     border-radius: 85% 15%;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &:after {
     width: 15px;
@@ -2052,8 +2007,7 @@ body {
     border-right: solid 1px $grey;
     width: 12px;
     height: 8px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &.filled {
     background-color: $grey;
@@ -2143,8 +2097,7 @@ body {
 .navigate.icon {
   width: 14px;
   height: 18px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   &:before {
     left: 0;
     top: -17px;
@@ -2206,12 +2159,10 @@ body {
     left: -1px;
   }
   &:before {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &:after {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   i {
     width: 7px;
@@ -2253,8 +2204,7 @@ body {
     border-top: solid 1px $grey;
     border-bottom: solid 1px $grey;
     border-radius: 50%;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     top: -7px;
     left: 4px;
   }
@@ -2320,8 +2270,7 @@ body {
     height: 4px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: 3px;
     top: 4px;
   }
@@ -2341,8 +2290,7 @@ body {
     height: 4px;
     border-top: solid 1px $grey;
     border-right: solid 1px $grey;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform: rotate(135deg);
     left: 3px;
     top: 6px;
   }
@@ -2632,8 +2580,7 @@ body {
     height: 4px;
     border-left: solid 1px $grey;
     border-bottom: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     left: 4px;
     top: 4px;
   }
@@ -2647,12 +2594,10 @@ body {
       top: 8px;
     }
     &:before {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
     &:after {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
+      transform: rotate(45deg);
     }
   }
   &.contact {
@@ -2783,15 +2728,13 @@ body {
     width: 8px;
     height: 1px;
     background-color: $grey;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    transform: rotate(-3deg);
     &:before {
       top: -1px;
       right: 0px;
       width: 2px;
       height: 2px;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
       border-radius: 2px;
       border-top: solid 1px transparent;
       border-right: solid 1px transparent;
@@ -2845,8 +2788,7 @@ body {
     border-right: solid 1px transparent;
     border-bottom: solid 1px $grey;
     border-left: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &.doublewink {
     &:before,
@@ -2855,8 +2797,7 @@ body {
       border-right: solid 1px transparent;
       border-bottom: solid 1px $grey;
       border-left: solid 1px $grey;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
   }
   &.sad i{
@@ -2897,8 +2838,7 @@ body {
       top: 7px;
     }
     &:after {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
+      transform: rotate(90deg);
     }
     &.filled {
       background: $grey;
@@ -2935,8 +2875,7 @@ body {
       height: 4px;
       border-bottom: solid 1px $grey;
       border-left: solid 1px $grey;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
     &.filled {
       background: $grey;
@@ -2955,12 +2894,10 @@ body {
       width: 9px;
       height: 1px;
       background-color: $grey;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
+      transform: rotate(45deg);
     }
     &:after {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
     &.filled {
       background: $grey;
@@ -2981,8 +2918,7 @@ body {
     background-color: $grey;
   }
   &:after {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 .minus.icon {
@@ -2999,8 +2935,7 @@ body {
     height: 8px;
     border-bottom: solid 1px $grey;
     border-left: solid 1px $grey;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .remove.icon {
   left: 3px;
@@ -3010,11 +2945,9 @@ body {
     width: 15px;
     height: 1px;
     background-color: $grey;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   &:after {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
