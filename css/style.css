@@ -2090,6 +2090,10 @@ body {
     box-shadow: 0 9px 0 -1px #333333, -4px 9px 0 -1px #333333, 4px 9px 0 -1px #333333, 0 6px 0 -1px #333333, -4px 6px 0 -1px #333333, 4px 6px 0 -1px #333333, 0 3px 0 -1px #333333, -4px 3px 0 -1px #333333, 4px 3px 0 -1px #333333; }
   .calendar3.icon.filled {
     background-color: #333333; }
+    .calendar3.icon.filled:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333; }
     .calendar3.icon.filled:after {
       box-shadow: 0 9px 0 -1px white, -4px 9px 0 -1px white, 4px 9px 0 -1px white, 0 6px 0 -1px white, -4px 6px 0 -1px white, 4px 6px 0 -1px white, 0 3px 0 -1px white, -4px 3px 0 -1px white, 4px 3px 0 -1px white; }
 
@@ -2139,6 +2143,10 @@ body {
     background-color: #333333; }
   .calendar.icon.filled {
     background-color: #333333; }
+    .calendar.icon.filled:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333; }
     .calendar.icon.filled:after {
       top: 2px;
       background-color: white; }

@@ -2514,6 +2514,11 @@ body {
   }
   &.filled {
     background-color: $grey;
+    &:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333;
+    }
     &:after {
       box-shadow: 
          0   9px 0 -1px $white, 
@@ -2599,6 +2604,11 @@ body {
   }
   &.filled {
     background-color: $grey;
+    &:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333;
+    }
     &:after {
       top: 2px;
       background-color: $white;
