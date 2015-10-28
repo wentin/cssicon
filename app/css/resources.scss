@@ -1,0 +1,259 @@
+$tint: #50C9CE;
+$dark: #332C21;
+$grey: #6A6256;
+$light: #D0CAC2;
+$white: #FDFCF6;
+$opensans: 'Open Sans', sans-serif;
+$playfair: 'Playfair Display', serif;
+$playfairsc: 'Playfair Display SC', serif;
+$easing: cubic-bezier(0.18, 0.57, 0.51, 1);
+
+.logo {
+	span {
+		color: $tint;
+	}
+}
+.share{
+	a:hover {
+		&::before {
+			color: $tint;
+		}
+	}	
+	.vote i::after {
+		color: $tint;
+	}
+}
+.title {
+	width: 100%;
+	border-top: dashed 1px $light;
+	font-family: $playfairsc;
+	font-size: 80px;
+	font-weight: 900;
+	font-style: italic;
+	color: $dark;
+	line-height: 126px;
+	text-align: center;
+	padding: 50px 0 30px 30px;
+	box-sizing: border-box;
+	position: relative;
+	span {
+		color: $tint;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: -30px;
+			top: -7px;
+			width: 124px;
+			height: 124px;
+			border-radius: 50%;
+			border: dashed 1px $dark;
+		}
+	}
+}
+.searchWrapper {
+	width: 360px;
+	margin: 0 auto 30px auto;
+	display: block;
+	position: relative;
+	input.search {
+		background: transparent;
+		border: 0;
+		font-family: $opensans;
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 0.2px;
+		width: 100%;
+		border-bottom: solid 1px $grey;
+		padding: 5px 3px;
+  		outline: none;
+  		&:focus {
+		}
+	}	
+	::-webkit-input-placeholder {
+	   color: $light;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   color: $light;  
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $light;  
+	}
+	:-ms-input-placeholder {  
+	   color: $light;  
+	}
+	input.search:not(:valid) ~ .closeBtn {
+		display: none;
+	}
+	input.search:not(:valid) ~ .searchIcon {
+		display: block;
+	}
+	.searchIcon {
+		display: none;
+		width: 12px; 
+		height: 12px;
+		border: solid 1px $grey;
+		border-radius: 100%;
+		position: absolute;
+		top: 8px;
+		right: 4px;
+		transform: rotate(-45deg);
+		&:before {
+			content: '';
+			position: absolute;
+		    top: 12px;
+		    left: 5px;
+		    height: 6px;
+		    width: 1px;
+			background-color: $grey;
+		}
+	}
+	.closeBtn {
+		border: none;
+		background-color: transparent;
+		display: inline-block;
+		cursor: pointer;
+		outline: 0;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 6px;
+		right: 0;
+		width: 21px;
+		height: 21px;	
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			width: 21px; 
+			height: 1px;
+			background-color: $grey;
+			position: absolute;
+			top: 10px;
+			transform: rotate(45deg);
+		}
+		&:before {
+			transform: rotate(-45deg);
+		}
+	}
+}
+.resources {
+	.section {
+		float: left;
+		width: 100%;
+		margin-bottom: 15px;
+		h1 {
+		    display: block;
+		    width: 100%;
+		    font-family: "Open Sans", sans-serif;
+		    font-size: 28px;
+		    color: $grey;
+		    line-height: 36px;
+		    padding-bottom: 6px;
+		    border-bottom: dashed 1px $light;
+		    margin-bottom: 30px;
+		}
+	}
+	.section.list {
+		.card {
+			width: 580px;
+			&:nth-child(2n+1) {
+				margin-right: 0;
+			}
+			img {
+				width: auto;
+				height: 104px;
+				margin-right: 20px;
+				float: left;
+			}
+			.link {
+				margin-top: 0;
+			}
+		}
+	}
+	.card {
+		width: 270px;
+		margin-bottom: 30px;
+		float: left;
+		// cursor: pointer;
+		margin-right: 40px;
+		&:nth-child(4n+1) {
+			margin-right: 0;
+		}
+		&:hover {
+			img {	
+				-webkit-filter: grayscale(0.0);
+				filter: grayscale(0.0);
+				opacity: 1;
+			}
+			.author {
+				a {
+					color: $dark;
+					&::before {
+						width: 100%;
+					}
+				}
+				a:hover {
+					color: $tint;
+				}
+			}
+		}
+		.author {
+			height: 25px;
+			span, a {
+				font-family: $opensans;
+				font-weight: 400;
+				font-style: normal;
+				letter-spacing: 0.3px;
+				font-size: 12px;
+			    line-height: 25px;
+				color: $grey;
+				position: relative;
+			    display: inline-block;
+				transition: all 0.4s $easing;
+				&::before {
+					content: '';
+					display: block;
+					width: 30px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					border-top: solid 1px $light;
+					transition: all 0.4s $easing;
+				}
+			}
+		}
+		img {
+			display: block;
+			width: 100%;
+			-webkit-filter: grayscale(0.92);
+			filter: grayscale(0.92);
+			opacity: 0.5;
+			transition: all 0.4s $easing;
+		}
+		.link {
+			display: block;
+			font-family: $opensans;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 20px;
+			color: $dark;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			transition: color 0.4s $easing;
+			&:hover {
+				color: $tint;
+			}
+		}
+		p {
+			font-family: $opensans;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			color: $grey;
+		    height: 54px;
+		    overflow: hidden;
+		}
+	}
+}

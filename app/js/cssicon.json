@@ -1,0 +1,15 @@
+[
+  {
+    "htmlMarkup": [
+      "search",
+      "icon"
+    ],
+    "htmlChildMarkup": false,
+    "cssBlocks": [
+      ".search.icon {\n  width: 12px;\n  height: 12px;\n  border: solid 1px #333333;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      ".search.icon:before {\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: #333333;\n}"
+    ],
+    "cssHidden": ".iconWrapper .search.icon {\n  top: 2px;\n  left: 3px;\n}\n",
+    "keyword": []
+  }
+]
