@@ -1,0 +1,2421 @@
+body {
+  padding: 100px; }
+
+.iconWrapper {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  margin: 0 80px 80px 0;
+  /* transform: scale(4,4); */ }
+  .iconWrapper .search.icon {
+    top: 2px;
+    left: 3px; }
+  .iconWrapper .close.icon {
+    top: 0;
+    left: 0; }
+  .iconWrapper .hamburger.icon {
+    left: 2px;
+    top: 10px; }
+  .iconWrapper .arrowRight.icon {
+    left: 2px;
+    top: 10px; }
+  .iconWrapper .arrowLeft.icon {
+    left: 3px;
+    top: 10px; }
+  .iconWrapper .trash.icon {
+    left: 5px;
+    top: 7px; }
+  .iconWrapper .audio.icon {
+    left: 5px;
+    top: 8px; }
+  .iconWrapper .pin.icon {
+    left: 4px;
+    top: 2px; }
+  .iconWrapper .raindrop.icon {
+    left: 5px;
+    top: 5px; }
+  .iconWrapper .stop.icon {
+    left: 2px;
+    top: 2px; }
+  .iconWrapper .clock.icon {
+    left: 2px;
+    top: 2px; }
+  .iconWrapper .profile.icon {
+    left: 3px;
+    top: 11px; }
+  .iconWrapper .bell.icon {
+    left: 5px;
+    top: 2px; }
+  .iconWrapper .heart.icon {
+    top: 6px;
+    left: 5px; }
+  .iconWrapper .print.icon {
+    left: 2px;
+    top: 5px; }
+  .iconWrapper .edit.icon {
+    left: 4px;
+    top: 7px; }
+  .iconWrapper .link.icon {
+    left: 8px;
+    top: 10px; }
+  .iconWrapper .map.icon {
+    left: 8px;
+    top: 4px; }
+  .iconWrapper .mail.icon {
+    left: 2px;
+    top: 4px; }
+  .iconWrapper .bookmark.icon {
+    left: 5px;
+    top: 3px; }
+  .iconWrapper .camera.icon {
+    left: 2px;
+    top: 5px; }
+  .iconWrapper .focus.icon {
+    left: 2px;
+    top: 2px; }
+  .iconWrapper .card.icon {
+    left: 2px;
+    top: 4px; }
+  .iconWrapper .volume.icon {
+    left: 11px;
+    top: 3px; }
+  .iconWrapper .lock.icon {
+    left: 3px;
+    top: 10px; }
+  .iconWrapper .code.icon {
+    left: 3px;
+    top: 6px; }
+  .iconWrapper .flag.icon {
+    left: 6px;
+    top: 4px; }
+  .iconWrapper .tag.icon {
+    left: 4px;
+    top: 3px; }
+  .iconWrapper .signal.icon {
+    left: 7px;
+    top: 13px; }
+  .iconWrapper .moon.icon {
+    left: 4px;
+    top: 2px; }
+  .iconWrapper .sun.icon {
+    left: 6px;
+    top: 6px; }
+  .iconWrapper .shutdown.icon {
+    top: 3px;
+    left: 3px; }
+  .iconWrapper .export.icon {
+    left: 4px;
+    top: 7px; }
+  .iconWrapper .download.icon {
+    left: 4px;
+    top: 5px; }
+  .iconWrapper .upload.icon {
+    left: 4px;
+    top: 3px; }
+  .iconWrapper .shut.icon {
+    top: 4px;
+    left: 4px; }
+  .iconWrapper .chat.icon {
+    left: 2px;
+    top: 4px; }
+  .iconWrapper .key.icon {
+    left: 1px;
+    top: 6px; }
+  .iconWrapper .key2.icon {
+    left: 10px;
+    top: 2px; }
+  .iconWrapper .refresh.icon {
+    left: 4px;
+    top: 3px; }
+  .iconWrapper .umbrella.icon {
+    left: 3px;
+    top: 2px; }
+  .iconWrapper .thermometer.icon {
+    left: 7px;
+    top: 11px; }
+  .iconWrapper .pilcrow.icon {
+    left: 4px;
+    top: 2px; }
+  .iconWrapper .justified.icon {
+    left: 2px;
+    top: 6px; }
+  .iconWrapper .leftaligned.icon {
+    left: 2px;
+    top: 6px; }
+  .iconWrapper .centered.icon {
+    left: 2px;
+    top: 6px; }
+  .iconWrapper .rightaligned.icon {
+    left: 2px;
+    top: 6px; }
+  .iconWrapper .indent.icon {
+    left: 2px;
+    top: 6px; }
+  .iconWrapper .outdent.icon {
+    left: 2px;
+    top: 6px; }
+  .iconWrapper .anchor.icon {
+    left: 2px;
+    top: 10px; }
+  .iconWrapper .browser.icon {
+    left: 2px;
+    top: 2px; }
+  .iconWrapper .tv.icon {
+    left: 2px;
+    top: 3px; }
+  .iconWrapper .watch.icon {
+    left: 7px;
+    top: 0px; }
+  .iconWrapper .navigate.icon {
+    left: 6px;
+    top: -1px; }
+  .iconWrapper .float.icon {
+    left: 2px;
+    top: 2px; }
+  .iconWrapper .mouse.icon {
+    left: 4px;
+    top: 1px; }
+  .iconWrapper .keyboard.icon {
+    left: 1px;
+    top: 4px; }
+  .iconWrapper .calendar.icon {
+    left: 2px;
+    top: 4px; }
+  .iconWrapper .calendar2.icon {
+    left: 2px;
+    top: 3px; }
+  .iconWrapper .calendar3.icon {
+    left: 2px;
+    top: 4px; }
+
+.icon {
+  position: absolute; }
+  .icon:before, .icon:after {
+    content: '';
+    position: absolute;
+    display: block; }
+  .icon i {
+    position: absolute; }
+    .icon i:before, .icon i:after {
+      content: '';
+      position: absolute;
+      display: block; }
+
+.search.icon {
+  width: 12px;
+  height: 12px;
+  border: solid 1px #333333;
+  border-radius: 100%;
+  transform: rotate(-45deg); }
+  .search.icon:before {
+    top: 12px;
+    left: 5px;
+    height: 6px;
+    width: 1px;
+    background-color: #333333; }
+  .search.icon.plusI i {
+    left: 4px;
+    top: 4px;
+    transform: rotate(45deg); }
+    .search.icon.plusI i:before, .search.icon.plusI i:after {
+      width: 6px;
+      height: 1px;
+      background-color: #333333; }
+    .search.icon.plusI i:after {
+      transform: rotate(90deg); }
+  .search.icon.minusI i {
+    left: 4px;
+    top: 4px;
+    transform: rotate(45deg); }
+    .search.icon.minusI i:before {
+      width: 6px;
+      height: 1px;
+      background-color: #333333; }
+  .search.icon.filled:after {
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+    border-radius: 50%;
+    left: 1px;
+    top: 1px; }
+  .search.icon.filled i {
+    z-index: 1; }
+  .search.icon.filled.plusI {
+    background-color: #333333; }
+    .search.icon.filled.plusI i:before,
+    .search.icon.filled.plusI i:after {
+      background-color: white; }
+  .search.icon.filled.minusI {
+    background-color: #333333; }
+    .search.icon.filled.minusI i:before {
+      background-color: white; }
+
+.close.icon {
+  width: 21px;
+  height: 21px; }
+  .close.icon:before, .close.icon:after {
+    width: 21px;
+    height: 1px;
+    background-color: #333333;
+    top: 10px;
+    transform: rotate(45deg); }
+  .close.icon:before {
+    transform: rotate(-45deg); }
+
+.hamburger.icon {
+  width: 17px;
+  height: 1px;
+  background-color: #333333; }
+  .hamburger.icon:before, .hamburger.icon:after {
+    left: 0;
+    width: 17px;
+    height: 1px;
+    background-color: #333333; }
+  .hamburger.icon:before {
+    top: -5px; }
+  .hamburger.icon:after {
+    top: 5px; }
+
+.arrowRight.icon {
+  width: 16px;
+  height: 1px;
+  background-color: #333333; }
+  .arrowRight.icon:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(45deg);
+    right: 1px;
+    top: -5px; }
+
+.arrowLeft.icon {
+  width: 16px;
+  height: 1px;
+  background-color: #333333; }
+  .arrowLeft.icon:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(-135deg);
+    left: 1px;
+    top: -5px; }
+
+.arrowUp.icon {
+  left: 10px;
+  top: 3px;
+  width: 1px;
+  height: 16px;
+  background-color: #333333; }
+  .arrowUp.icon:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(-45deg);
+    left: -5px;
+    top: 1px; }
+
+.arrowDown.icon {
+  left: 10px;
+  top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: #333333; }
+  .arrowDown.icon:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(135deg);
+    left: -5px;
+    top: 3px; }
+
+.trash.icon {
+  width: 9px;
+  height: 10px;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-radius: 0 0 2px 2px; }
+  .trash.icon:before {
+    width: 17px;
+    height: 1px;
+    background-color: #333333;
+    left: -4px;
+    top: -2px; }
+  .trash.icon:after {
+    width: 7px;
+    height: 2px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-top: solid 1px #333333;
+    left: 0px;
+    top: -5px;
+    border-radius: 4px 4px 0 0; }
+  .trash.icon.filled {
+    background-color: #333333; }
+    .trash.icon.filled:after {
+      background-color: #333333; }
+
+.audio.icon {
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-radius: 0 0 50% 50%; }
+  .audio.icon:before {
+    left: 1px;
+    top: -6px;
+    width: 5px;
+    height: 10px;
+    border: solid 1px #333333;
+    border-radius: 4px; }
+  .audio.icon:after {
+    left: 4px;
+    bottom: -4px;
+    width: 1px;
+    height: 4px;
+    background-color: #333333; }
+  .audio.icon.filled:before {
+    border-color: #333333;
+    background-color: #333333; }
+
+.pin.icon {
+  width: 12px;
+  height: 12px;
+  border: solid 1px #333333;
+  border-radius: 7px 7px 7px 0;
+  transform: rotate(-45deg); }
+  .pin.icon:before {
+    width: 4px;
+    height: 4px;
+    border: solid 1px #333333;
+    border-radius: 3px;
+    left: 3px;
+    top: 3px; }
+  .pin.icon.filled {
+    background-color: #333333; }
+    .pin.icon.filled:before {
+      border-color: white;
+      background-color: white; }
+
+.raindrop.icon {
+  width: 10px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  transform: rotate(135deg); }
+  .raindrop.icon.filled {
+    background-color: #333333; }
+
+.stop.icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px #333333;
+  border-radius: 8px; }
+  .stop.icon:before {
+    width: 17px;
+    height: 1px;
+    background-color: #333333;
+    top: 7px;
+    left: -1px;
+    transform: rotate(45deg); }
+  .stop.icon.filled {
+    background-color: #333333; }
+    .stop.icon.filled:before {
+      background-color: white; }
+
+.clock.icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px #333333;
+  border-radius: 8px; }
+  .clock.icon.filled {
+    background-color: #333333; }
+    .clock.icon.filled:before, .clock.icon.filled:after {
+      background-color: white; }
+  .clock.icon:before, .clock.icon:after {
+    background-color: #333333;
+    left: 7px;
+    transform-origin: 0% 0%; }
+  .clock.icon:before {
+    width: 5px;
+    height: 1px;
+    top: 7px; }
+  .clock.icon:after {
+    width: 1px;
+    height: 6px;
+    top: 2px; }
+  .clock.icon.h0:before {
+    width: 1px;
+    height: 5px;
+    top: 3px; }
+  .clock.icon.h6:before {
+    width: 1px;
+    height: 5px; }
+  .clock.icon.h9:before {
+    left: 3px; }
+  .clock.icon.m15:after {
+    width: 6px;
+    height: 1px;
+    top: 7px; }
+  .clock.icon.m30:after {
+    width: 1px;
+    height: 6px;
+    top: 7px; }
+  .clock.icon.m45:after {
+    width: 6px;
+    height: 1px;
+    left: 2px; }
+
+.profile.icon {
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0; }
+  .profile.icon:before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    background-color: white; }
+  .profile.icon.filled {
+    background-color: #333333; }
+    .profile.icon.filled:before {
+      background-color: #333333; }
+
+.bell.icon {
+  width: 9px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; }
+  .bell.icon:before {
+    width: 15px;
+    height: 0px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px white;
+    bottom: -2px;
+    left: -3px;
+    z-index: 2; }
+  .bell.icon:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    bottom: -5px;
+    left: 2px; }
+  .bell.icon.filled {
+    background-color: #333333; }
+    .bell.icon.filled:after {
+      background-color: #333333; }
+
+.heart.icon {
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  transform: rotate(-45deg); }
+  .heart.icon:before {
+    width: 8px;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    top: -5px;
+    left: -1px; }
+  .heart.icon:after {
+    width: 5px;
+    height: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    top: 0px;
+    left: 8px; }
+  .heart.icon.filled {
+    background-color: #333333; }
+    .heart.icon.filled:before, .heart.icon.filled:after {
+      background-color: #333333; }
+
+.print.icon {
+  width: 15px;
+  height: 6px;
+  border: solid 1px #333333;
+  border-radius: 1px 1px 0 0; }
+  .print.icon:before {
+    height: 13px;
+    width: 9px;
+    border: solid 1px #333333;
+    background-color: white;
+    left: 2px;
+    top: -3px; }
+  .print.icon:after {
+    width: 13px;
+    height: 3px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    background-color: white;
+    left: 1px;
+    top: -1px; }
+  .print.icon.filled {
+    background-color: #333333; }
+    .print.icon.filled:after {
+      background-color: #333333; }
+
+.edit.icon {
+  width: 14px;
+  height: 2px;
+  border: solid 1px #333333;
+  transform: rotate(-45deg);
+  border-radius: 1px; }
+  .edit.icon:before {
+    width: 0px;
+    height: 0px;
+    border-left: solid 5px transparent;
+    border-right: solid 5px #333333;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+    left: -12px;
+    top: -1px; }
+  .edit.icon.filled {
+    background-color: #333333; }
+
+.link.icon {
+  width: 7px;
+  height: 1px;
+  background-color: #333333;
+  transform: rotate(-45deg); }
+  .link.icon:before, .link.icon:after {
+    width: 8px;
+    height: 5px;
+    border-radius: 2px;
+    border: solid 1px #333333;
+    top: -3px; }
+  .link.icon:before {
+    left: -7px; }
+  .link.icon:after {
+    right: -7px; }
+
+.map.icon {
+  width: 4px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 1px;
+  transform: skewY(20deg); }
+  .map.icon:before, .map.icon:after {
+    width: 4px;
+    height: 10px;
+    border: solid 1px #333333;
+    border-radius: 1px;
+    transform: skewY(-40deg); }
+  .map.icon:before {
+    left: -6px;
+    top: 1px; }
+  .map.icon:after {
+    left: 4px;
+    top: -3px; }
+
+.mail.icon {
+  width: 15px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .mail.icon:before, .mail.icon:after {
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+    transform-origin: bottom;
+    left: 7px;
+    top: -4px; }
+  .mail.icon:before {
+    transform: rotate(-54deg); }
+  .mail.icon:after {
+    transform: rotate(54deg); }
+  .mail.icon.filled {
+    background-color: #333333; }
+    .mail.icon.filled:before, .mail.icon.filled:after {
+      background-color: white; }
+
+.bookmark.icon {
+  width: 10px;
+  height: 15px;
+  border-top: solid 1px #333333;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-radius: 1px 1px 0 0; }
+  .bookmark.icon:before {
+    width: 7px;
+    height: 7px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    transform: rotate(45deg);
+    top: 10px;
+    left: 1px; }
+  .bookmark.icon.filled {
+    background-color: #333333; }
+    .bookmark.icon.filled:before {
+      background-color: white; }
+
+.camera.icon {
+  width: 16px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .camera.icon:before {
+    width: 4px;
+    height: 4px;
+    border: solid 1px #333333;
+    border-radius: 3px;
+    left: 5px;
+    top: 2px; }
+  .camera.icon:after {
+    width: 4px;
+    height: 1px;
+    border-radius: 1px 1px 0 0;
+    background-color: #333333;
+    right: 2px;
+    top: -2px; }
+  .camera.icon.filled {
+    background-color: #333333; }
+    .camera.icon.filled:before {
+      background-color: white;
+      border: solid 1px white; }
+
+.focus.icon {
+  width: 15px;
+  height: 15px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .focus.icon:before, .focus.icon:after {
+    width: 9px;
+    height: 17px;
+    background-color: white;
+    left: 3px;
+    top: -1px;
+    transform-origin: center; }
+  .focus.icon:after {
+    transform: rotate(90deg); }
+
+.card.icon {
+  width: 15px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .card.icon:before {
+    width: 17px;
+    height: 2px;
+    background-color: #333333;
+    top: 1px;
+    left: -1px; }
+  .card.icon:after {
+    width: 4px;
+    height: 1px;
+    background-color: #333333;
+    right: 1px;
+    bottom: 2px; }
+  .card.icon.filled {
+    background-color: #333333; }
+    .card.icon.filled:before, .card.icon.filled:after {
+      background-color: white; }
+
+.volume.icon {
+  width: 1px;
+  height: 15px;
+  background-color: #333333; }
+  .volume.icon:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    transform: rotate(-45deg);
+    left: -5px;
+    top: 2px; }
+  .volume.icon:after {
+    width: 4px;
+    height: 5px;
+    border-left: solid 1px #333333;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-radius: 1px 0 0 1px;
+    background-color: white;
+    left: -8px;
+    top: 4px; }
+  .volume.icon.filled {
+    width: 0; }
+    .volume.icon.filled:before {
+      width: 0;
+      height: 7px;
+      border-top: solid 4px transparent;
+      border-right: solid 5px #333333;
+      border-bottom: solid 4px transparent;
+      border-left: solid 5px transparent;
+      transform: rotate(0deg);
+      left: -9px;
+      top: 0px; }
+    .volume.icon.filled:after {
+      background-color: #333333; }
+
+.volumePlus.icon {
+  left: 2px;
+  top: 7px; }
+  .volumePlus.icon:before, .volumePlus.icon:after {
+    width: 6px;
+    height: 1px;
+    background-color: #333333;
+    transform-origin: center; }
+  .volumePlus.icon:after {
+    transform: rotate(-90deg); }
+
+.volumeMinus.icon {
+  left: 2px;
+  top: 7px; }
+  .volumeMinus.icon:before {
+    width: 6px;
+    height: 1px;
+    background-color: #333333; }
+
+.volumeMute.icon {
+  left: 2px;
+  top: 7px; }
+  .volumeMute.icon:before, .volumeMute.icon:after {
+    width: 6px;
+    height: 1px;
+    background-color: #333333;
+    transform-origin: center; }
+  .volumeMute.icon:before {
+    transform: rotate(45deg); }
+  .volumeMute.icon:after {
+    transform: rotate(-45deg); }
+
+.volumeOne.icon {
+  left: -2px;
+  top: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-right: solid 1px #333333;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent; }
+
+.volumeTwo.icon {
+  left: -4px;
+  top: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-top: double 3px transparent;
+  border-right: double 3px #333333;
+  border-bottom: double 3px transparent;
+  border-left: double 3px transparent; }
+
+.volumeThree.icon {
+  left: -4px;
+  top: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-top: double 3px transparent;
+  border-right: double 3px #333333;
+  border-bottom: double 3px transparent;
+  border-left: double 3px transparent; }
+  .volumeThree.icon:after {
+    left: -5px;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent; }
+
+.lock.icon {
+  width: 13px;
+  height: 6px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .lock.icon:before {
+    width: 5px;
+    height: 6px;
+    border-radius: 4px 4px 0 0;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 3px;
+    top: -8px; }
+  .lock.icon.unlocked:before {
+    height: 3px; }
+  .lock.icon.unlocked:after {
+    width: 1px;
+    height: 3px;
+    background-color: #333333;
+    left: 3px;
+    top: -4px; }
+  .lock.icon.filled {
+    background-color: #333333; }
+
+.code.icon:before, .code.icon:after {
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg); }
+.code.icon:before {
+  border-left: solid 1px #333333;
+  border-top: solid 1px #333333; }
+.code.icon:after {
+  border-bottom: solid 1px #333333;
+  border-right: solid 1px #333333;
+  left: 6px; }
+
+.flag.icon {
+  width: 9px;
+  height: 6px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .flag.icon:before {
+    width: 1px;
+    height: 15px;
+    background-color: #333333;
+    left: -3px;
+    top: -2px; }
+  .flag.icon.filled {
+    background-color: #333333; }
+
+.tag.icon {
+  width: 7px;
+  height: 7px;
+  border-left: solid 1px #333333;
+  border-top: solid 1px #333333;
+  border-radius: 1px 1px 1px 0; }
+  .tag.icon:before {
+    width: 9px;
+    height: 10px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+    left: 1px;
+    top: 1px; }
+  .tag.icon:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #333333;
+    left: 3px;
+    top: 3px; }
+  .tag.icon.filled {
+    background-color: #333333; }
+    .tag.icon.filled:before {
+      background-color: #333333; }
+    .tag.icon.filled:after {
+      background-color: white; }
+
+.signal.icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-top: solid 1px #333333;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent; }
+  .signal.icon:before {
+    left: -5px;
+    top: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border-top: solid 1px #333333;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent; }
+  .signal.icon:after {
+    left: -9px;
+    top: -9px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-top: solid 1px #333333;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent; }
+
+.moon.icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-left: solid 1px #333333;
+  border-right: solid 1px transparent; }
+  .moon.icon:before {
+    left: 7px;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px transparent;
+    transform: rotate(45deg); }
+  .moon.icon.filled {
+    background-color: #333333; }
+    .moon.icon.filled:before {
+      background-color: white;
+      border-bottom: solid 1px transparent;
+      border-left: solid 1px transparent;
+      left: 9px;
+      top: 2px;
+      width: 8px;
+      height: 8px; }
+
+.sun.icon {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  box-shadow: -8px 0 0 -3px #333333, 8px 0 0 -3px #333333, 0 -8px 0 -3px #333333, 0 8px 0 -3px #333333, -6px -6px 0 -3px #333333, -6px 6px 0 -3px #333333, 6px -6px 0 -3px #333333, 6px 6px 0 -3px #333333; }
+  .sun.icon.filled {
+    background-color: #333333; }
+
+.export.icon {
+  width: 11px;
+  height: 9px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .export.icon:before {
+    width: 1px;
+    height: 8px;
+    background-color: #333333;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    top: -5px;
+    left: 2px; }
+  .export.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(-45deg);
+    left: 3px;
+    top: -5px; }
+
+.download.icon {
+  width: 11px;
+  height: 11px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .download.icon:before {
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    top: -4px;
+    left: 2px; }
+  .download.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(135deg);
+    left: 3px;
+    top: 1px; }
+
+.upload.icon {
+  width: 11px;
+  height: 11px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .upload.icon:before {
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    top: 4px;
+    left: 2px; }
+  .upload.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(-45deg);
+    left: 3px;
+    top: 4px; }
+
+.shutdown.icon {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333; }
+  .shutdown.icon:before {
+    width: 1px;
+    height: 7px;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    background-color: #333333;
+    left: 3px;
+    top: -2px; }
+
+.shut.icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .shut.icon:before {
+    width: 1px;
+    height: 8px;
+    border-left: solid 4px white;
+    border-right: solid 4px white;
+    background-color: #333333;
+    left: -3px;
+    top: -2px;
+    transform: rotate(-45deg); }
+  .shut.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    left: -2px;
+    top: -2px; }
+
+.chat.icon {
+  width: 15px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 2px; }
+  .chat.icon:before {
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-bottom: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 3px;
+    top: 8px; }
+  .chat.icon.filled {
+    background-color: #333333; }
+    .chat.icon.filled:before {
+      background-color: #333333; }
+
+.paperclip.icon {
+  left: 9px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-top: solid 1px #333333;
+  border-radius: 4px 4px 0 0;
+  transform: rotate(45deg); }
+  .paperclip.icon:before {
+    top: 11px;
+    left: -1px;
+    width: 4px;
+    height: 6px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-radius: 0 0 3px 3px; }
+  .paperclip.icon:after {
+    left: 1px;
+    top: 1px;
+    width: 2px;
+    height: 10px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-top: solid 1px #333333;
+    border-radius: 4px 4px 0 0; }
+
+.retweet.icon {
+  left: 3px;
+  top: 5px;
+  width: 13px;
+  height: 9px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .retweet.icon:before {
+    width: 0;
+    height: 0;
+    border-top: solid 3px white;
+    border-bottom: solid 3px #333333;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    left: -3px;
+    top: -2px; }
+  .retweet.icon:after {
+    width: 0;
+    height: 0;
+    border-top: solid 3px #333333;
+    border-bottom: solid 3px white;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    right: -3px;
+    bottom: -2px; }
+
+.key.icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .key.icon:before {
+    width: 11px;
+    height: 1px;
+    background-color: #333333;
+    left: 7px;
+    top: 3px; }
+  .key.icon:after {
+    width: 1px;
+    height: 3px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 13px;
+    top: 3px; }
+  .key.icon.filled {
+    background-color: #333333; }
+
+.key2.icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px #333333;
+  transform: rotate(135deg); }
+  .key2.icon:before {
+    width: 12px;
+    height: 1px;
+    background-color: #333333;
+    left: 7px;
+    top: 3px; }
+  .key2.icon:after {
+    width: 1px;
+    height: 3px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 14px;
+    top: 0px; }
+  .key2.icon.filled {
+    background-color: #333333; }
+
+.refresh.icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-left: solid 1px transparent;
+  border-right: solid 1px #333333; }
+  .refresh.icon:before {
+    width: 3px;
+    height: 3px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    transform: rotate(-22.5deg);
+    left: 1px;
+    top: 10px; }
+
+.umbrella.icon {
+  width: 13px;
+  height: 6px;
+  border-radius: 8px 8px 0 0;
+  border: solid 1px #333333; }
+  .umbrella.icon:before {
+    width: 4px;
+    height: 2px;
+    border-radius: 0 0 3px 3px;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    left: 6px;
+    top: 12px; }
+  .umbrella.icon:after {
+    width: 1px;
+    height: 5px;
+    background-color: #333333;
+    left: 6px;
+    top: 7px; }
+  .umbrella.icon.filled {
+    background-color: #333333; }
+
+.thermometer.icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  border: solid 1px #333333; }
+  .thermometer.icon:before {
+    width: 2px;
+    height: 10px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px white;
+    border-radius: 2px 2px 0 0;
+    background-color: white;
+    z-index: 1;
+    left: 1px;
+    top: -11px; }
+  .thermometer.icon.filled:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #333333;
+    left: 1px;
+    top: 1px;
+    z-index: 2; }
+
+.pilcrow.icon {
+  width: 8px;
+  height: 8px;
+  border-left: solid 1px #333333;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-radius: 5px 0 0 5px; }
+  .pilcrow.icon:before {
+    height: 16px;
+    width: 2px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 8px;
+    top: -1px; }
+  .pilcrow.icon.filled {
+    background-color: #333333; }
+
+.justified.icon {
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .justified.icon:before {
+    top: 2px;
+    left: 0;
+    width: 17px;
+    height: 5px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
+
+.leftaligned.icon {
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .leftaligned.icon:before {
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 5px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
+
+.centered.icon {
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .centered.icon:before {
+    top: 2px;
+    left: 2px;
+    width: 13px;
+    height: 5px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
+
+.rightaligned.icon {
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .rightaligned.icon:before {
+    top: 2px;
+    left: 4px;
+    width: 13px;
+    height: 5px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
+
+.indent.icon {
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .indent.icon:before {
+    top: 2px;
+    left: 4px;
+    width: 13px;
+    height: 2px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
+  .indent.icon:after {
+    top: 1px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px #333333;
+    border-right: solid 3px transparent; }
+
+.outdent.icon {
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .outdent.icon:before {
+    top: 2px;
+    left: 4px;
+    width: 13px;
+    height: 2px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
+  .outdent.icon:after {
+    top: 1px;
+    left: -3px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px transparent;
+    border-right: solid 3px #333333; }
+
+.eye.icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 70% 15%;
+  border: solid 1px #333333;
+  transform: rotate(45deg);
+  left: 3px;
+  top: 3px; }
+  .eye.icon:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    left: 2px;
+    top: 2px; }
+  .eye.icon.filled:before {
+    background-color: #333333; }
+  .eye.icon.filled2 {
+    background-color: #333333; }
+    .eye.icon.filled2:before {
+      background-color: white; }
+  .eye.icon.filled3 {
+    background-color: #333333; }
+    .eye.icon.filled3:before {
+      border-color: white; }
+
+.battery.icon {
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px #333333;
+  left: 2px;
+  top: 6px; }
+  .battery.icon:before {
+    width: 2px;
+    height: 3px;
+    border-radius: 0 2px 2px 0;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    right: -3px;
+    top: 1px; }
+  .battery.icon.batteryOne:after {
+    left: 1px;
+    top: 1px;
+    width: 4px;
+    height: 5px;
+    background-color: #333333; }
+  .battery.icon.batteryTwo:after {
+    left: 1px;
+    top: 1px;
+    width: 8px;
+    height: 5px;
+    background-color: #333333; }
+  .battery.icon.batteryThree:after {
+    left: 1px;
+    top: 1px;
+    width: 11px;
+    height: 5px;
+    background-color: #333333; }
+  .battery.icon.filled {
+    background-color: #333333; }
+    .battery.icon.filled:before {
+      border-radius: 0 1px 1px 0;
+      background-color: #333333; }
+    .battery.icon.filled:after {
+      left: 0px;
+      top: 0px;
+      height: 7px;
+      width: 1px;
+      background-color: white;
+      border-radius: 1px 0 0 1px; }
+    .battery.icon.filled.batteryOne:after {
+      width: 5px; }
+    .battery.icon.filled.batteryTwo:after {
+      width: 9px; }
+    .battery.icon.filled.batteryThree:after {
+      width: 13px;
+      border-radius: 1px; }
+
+.bag.icon {
+  left: 2px;
+  top: 6px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 2px; }
+  .bag.icon:before {
+    width: 5px;
+    height: 2px;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-radius: 3px 3px 0 0;
+    left: 4px;
+    top: -3px; }
+  .bag.icon:after {
+    width: 7px;
+    height: 10px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 3px; }
+  .bag.icon.filled {
+    background-color: #333333; }
+    .bag.icon.filled:after {
+      border-left: solid 1px white;
+      border-right: solid 1px white; }
+  .bag.icon.filled2:after {
+    background-color: #333333; }
+  .bag.icon.filled3 {
+    background-color: #333333; }
+    .bag.icon.filled3:after {
+      background-color: white; }
+
+.anchor.icon {
+  width: 15px;
+  height: 8px;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-radius: 0 0 8px 8px; }
+  .anchor.icon:before {
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+    left: 7px;
+    top: -2px; }
+  .anchor.icon:after {
+    width: 5px;
+    height: 5px;
+    border: solid 1px #333333;
+    border-radius: 50%;
+    left: 4px;
+    top: -8px; }
+
+.browser.icon {
+  width: 15px;
+  height: 15px;
+  border: solid 1px #333333;
+  border-radius: 50%; }
+  .browser.icon:before {
+    left: 1px;
+    top: 1px;
+    width: 11px;
+    height: 11px;
+    border: solid 1px #333333;
+    border-radius: 85% 15%;
+    transform: rotate(-45deg); }
+  .browser.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333;
+    top: 7px; }
+  .browser.icon.filled {
+    background-color: #333333; }
+    .browser.icon.filled:before {
+      border: solid 1px white; }
+    .browser.icon.filled:after {
+      background-color: white; }
+
+.tv.icon {
+  width: 15px;
+  height: 10px;
+  border: solid 1px #333333;
+  border-radius: 2px; }
+  .tv.icon:before {
+    left: 7px;
+    bottom: -4px;
+    width: 1px;
+    height: 3px;
+    background-color: #333333; }
+  .tv.icon:after {
+    left: 4px;
+    bottom: -4px;
+    width: 7px;
+    height: 1px;
+    background-color: #333333; }
+  .tv.icon.filled {
+    background-color: #333333; }
+
+.laptop.icon {
+  left: 4px;
+  top: 3px;
+  width: 12px;
+  height: 8px;
+  border: solid 1px #333333;
+  border-radius: 2px; }
+  .laptop.icon:before {
+    left: -4px;
+    bottom: -5px;
+    width: 18px;
+    height: 1px;
+    border: solid 1px #333333;
+    border-radius: 0 0 2px 2px; }
+  .laptop.icon.filled {
+    background-color: #333333; }
+    .laptop.icon.filled:before {
+      background-color: #333333; }
+
+.mobile.icon {
+  left: 4px;
+  top: 0px;
+  width: 12px;
+  height: 19px;
+  border-radius: 2px;
+  border: solid 1px #333333; }
+  .mobile.icon:before {
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 1px;
+    background-color: #333333; }
+  .mobile.icon:after {
+    bottom: 1px;
+    left: 5px;
+    height: 2px;
+    width: 2px;
+    background-color: #333333;
+    border-radius: 50%; }
+  .mobile.icon.filled {
+    height: 14px;
+    border-top: solid 3px #333333;
+    border-bottom: solid 4px #333333; }
+    .mobile.icon.filled:before {
+      top: -2px;
+      background-color: white; }
+    .mobile.icon.filled:after {
+      bottom: -3px;
+      background-color: white; }
+
+.tablet.icon {
+  left: 2px;
+  top: 1px;
+  width: 15px;
+  height: 17px;
+  border-radius: 2px;
+  border: solid 1px #333333; }
+  .tablet.icon:before {
+    top: 1px;
+    left: 1px;
+    height: 11px;
+    width: 11px;
+    border: solid 1px #333333; }
+  .tablet.icon:after {
+    bottom: 1px;
+    left: 6px;
+    width: 3px;
+    height: 1px;
+    background-color: #333333; }
+  .tablet.icon.filled {
+    left: 2px;
+    width: 15px;
+    height: 14px;
+    border-top: solid 2px #333333;
+    border-bottom: solid 3px #333333; }
+    .tablet.icon.filled:before {
+      border: none; }
+    .tablet.icon.filled:after {
+      bottom: -2px;
+      left: 6px;
+      background-color: white; }
+
+.picture.icon {
+  left: 2px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px #333333;
+  border-radius: 2px; }
+  .picture.icon:before {
+    left: 2px;
+    top: 2px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px #333333; }
+  .picture.icon:after {
+    left: 2px;
+    top: 9px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    width: 12px;
+    height: 8px;
+    transform: rotate(-45deg); }
+  .picture.icon.filled {
+    background-color: #333333; }
+    .picture.icon.filled:before {
+      border-color: white;
+      background-color: white; }
+    .picture.icon.filled:after {
+      border-color: white; }
+
+.watch.icon {
+  width: 5px;
+  height: 19px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .watch.icon:before {
+    left: -4px;
+    top: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    background-color: white; }
+  .watch.icon:after {
+    left: 2px;
+    top: 5px;
+    border-left: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    width: 3px;
+    height: 4px; }
+  .watch.icon.filled {
+    background-color: #333333; }
+    .watch.icon.filled:before {
+      left: -5px;
+      top: 2px;
+      width: 13px;
+      height: 13px;
+      border-color: white;
+      background-color: #333333; }
+    .watch.icon.filled:after {
+      border-color: white; }
+
+.target.icon {
+  left: 1px;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .target.icon:before, .target.icon:after {
+    width: 6px;
+    height: 6px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+    z-index: 1; }
+  .target.icon:before {
+    box-shadow: -6px 0 0 -3px #333333, 6px 0 0 -3px #333333, 0 -6px 0 -3px #333333, 0 6px 0 -3px #333333; }
+  .target.icon:after {
+    box-shadow: -7px 0 0 -3px #333333, 7px 0 0 -3px #333333, 0 -7px 0 -3px #333333, 0 7px 0 -3px #333333; }
+  .target.icon.filled {
+    background-color: #333333; }
+    .target.icon.filled:before, .target.icon.filled:after {
+      border-color: #333333; }
+    .target.icon.filled:before {
+      box-shadow: -8px 0 0 -3px white, 8px 0 0 -3px white, 0 -8px 0 -3px white, 0 8px 0 -3px white; }
+    .target.icon.filled:after {
+      box-shadow: -7px 0 0 -3px white, 7px 0 0 -3px white, 0 -7px 0 -3px white, 0 7px 0 -3px white; }
+
+.navigate.icon {
+  width: 14px;
+  height: 18px;
+  transform: rotate(45deg); }
+  .navigate.icon:before {
+    left: 0;
+    top: -17px;
+    width: 0;
+    height: 0;
+    border-top: solid 18px transparent;
+    border-bottom: solid 18px #333333;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent; }
+  .navigate.icon:after {
+    left: 0;
+    top: 9px;
+    width: 0;
+    height: 0;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px white;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent; }
+  .navigate.icon i {
+    width: 10px;
+    height: 14px;
+    left: 2px;
+    top: 3px; }
+    .navigate.icon i:before {
+      left: 0;
+      top: -14px;
+      width: 0;
+      height: 0;
+      border-top: solid 14px transparent;
+      border-bottom: solid 14px white;
+      border-left: solid 5px transparent;
+      border-right: solid 5px transparent; }
+    .navigate.icon i:after {
+      left: 0;
+      top: 6px;
+      width: 0;
+      height: 0;
+      border-top: solid 4px transparent;
+      border-bottom: solid 4px #333333;
+      border-left: solid 5px transparent;
+      border-right: solid 5px transparent; }
+
+.float.icon {
+  width: 15px;
+  height: 15px;
+  border: solid 1px #333333;
+  border-radius: 50%; }
+  .float.icon:before, .float.icon:after {
+    width: 17px;
+    height: 1px;
+    background-color: #333333;
+    top: 7px;
+    left: -1px; }
+  .float.icon:before {
+    transform: rotate(-45deg); }
+  .float.icon:after {
+    transform: rotate(45deg); }
+  .float.icon i {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border: solid 1px #333333;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    z-index: 2; }
+  .float.icon.filled {
+    background-color: #333333; }
+    .float.icon.filled:before, .float.icon.filled:after {
+      background-color: white; }
+    .float.icon.filled i {
+      border: none;
+      left: 4px;
+      top: 4px; }
+
+.cloud.icon {
+  width: 5px;
+  height: 6px;
+  border-left: solid 1px #333333;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-radius: 4px 0 0 4px;
+  left: 1px;
+  top: 9px; }
+  .cloud.icon:before {
+    width: 12px;
+    height: 12px;
+    border-left: solid 1px transparent;
+    border-right: solid 1px #333333;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    top: -7px;
+    left: 4px; }
+  .cloud.icon:after {
+    width: 7px;
+    height: 6px;
+    background-color: transparent;
+    border-bottom: solid 1px #333333;
+    top: 0px;
+    left: 4px; }
+  .cloud.icon .upArrow {
+    left: 5px;
+    top: -4px;
+    z-index: 2; }
+  .cloud.icon .downArrow {
+    left: 5px;
+    top: -4px;
+    z-index: 2; }
+  .cloud.icon.filled {
+    background-color: #333333; }
+    .cloud.icon.filled:before, .cloud.icon.filled:after {
+      background-color: #333333; }
+    .cloud.icon.filled .upArrow:before {
+      background-color: white;
+      border: none;
+      left: 5px; }
+    .cloud.icon.filled .upArrow:after {
+      border-color: white; }
+    .cloud.icon.filled .downArrow {
+      top: -5px; }
+      .cloud.icon.filled .downArrow:before {
+        background-color: white;
+        border: none;
+        left: 5px; }
+      .cloud.icon.filled .downArrow:after {
+        border-color: white; }
+
+.upArrow:before {
+  width: 1px;
+  height: 7px;
+  background-color: #333333;
+  border-left: solid 4px white;
+  border-right: solid 4px white;
+  top: 4px;
+  left: 1px; }
+.upArrow:after {
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px #333333;
+  border-right: solid 1px #333333;
+  transform: rotate(-45deg);
+  left: 3px;
+  top: 4px; }
+
+.downArrow:before {
+  width: 1px;
+  height: 7px;
+  background-color: #333333;
+  border-left: solid 4px white;
+  border-right: solid 4px white;
+  top: 4px;
+  left: 1px; }
+.downArrow:after {
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px #333333;
+  border-right: solid 1px #333333;
+  transform: rotate(135deg);
+  left: 3px;
+  top: 6px; }
+
+.more.icon {
+  left: 9px;
+  top: 9px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .more.icon:before, .more.icon:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    top: -1px; }
+  .more.icon:before {
+    left: -8px; }
+  .more.icon:after {
+    left: 6px; }
+  .more.icon.filled {
+    background-color: #333333; }
+    .more.icon.filled:before, .more.icon.filled:after {
+      background-color: #333333; }
+
+.vmore.icon {
+  left: 9px;
+  top: 9px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .vmore.icon:before, .vmore.icon:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    left: -1px; }
+  .vmore.icon:before {
+    top: -8px; }
+  .vmore.icon:after {
+    top: 6px; }
+  .vmore.icon.filled {
+    background-color: #333333; }
+    .vmore.icon.filled:before, .vmore.icon.filled:after {
+      background-color: #333333; }
+
+.mouse.icon {
+  width: 11px;
+  height: 17px;
+  border: solid 1px #333333;
+  border-radius: 6px; }
+  .mouse.icon:before {
+    width: 13px;
+    height: 1px;
+    background-color: #333333;
+    top: 6px;
+    left: -1px; }
+  .mouse.icon:after {
+    width: 1px;
+    height: 7px;
+    background-color: #333333;
+    left: 5px;
+    top: -1px; }
+  .mouse.icon.filled {
+    background-color: #333333; }
+    .mouse.icon.filled:before, .mouse.icon.filled:after {
+      background-color: white; }
+
+.keyboard.icon {
+  width: 17px;
+  height: 11px;
+  border-radius: 2px;
+  border: solid 1px #333333; }
+  .keyboard.icon:before {
+    left: 7px;
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    border: 1px solid transparent;
+    box-shadow: -2px 0 0 -1px #333333, 2px 0 0 -1px #333333, 0 -2px 0 -1px #333333, 0 2px 0 -1px #333333, -6px 0 0 -1px #333333, 6px 0 0 -1px #333333, -4px -2px 0 -1px #333333, -4px 2px 0 -1px #333333, 4px -2px 0 -1px #333333, 4px 2px 0 -1px #333333; }
+  .keyboard.icon:after {
+    width: 9px;
+    height: 1px;
+    background-color: #333333;
+    bottom: 1px;
+    left: 4px; }
+  .keyboard.icon.filled {
+    background-color: #333333; }
+    .keyboard.icon.filled:before {
+      box-shadow: -2px 0 0 -1px white, 2px 0 0 -1px white, 0 -2px 0 -1px white, 0 2px 0 -1px white, -6px 0 0 -1px white, 6px 0 0 -1px white, -4px -2px 0 -1px white, -4px 2px 0 -1px white, 4px -2px 0 -1px white, 4px 2px 0 -1px white; }
+    .keyboard.icon.filled:after {
+      background-color: white; }
+
+.calendar3.icon {
+  width: 16px;
+  height: 13px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .calendar3.icon:before {
+    left: 4px;
+    top: -3px;
+    width: 6px;
+    height: 5px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333; }
+  .calendar3.icon:after {
+    left: 6px;
+    top: 0px;
+    width: 2px;
+    height: 1px;
+    border: 1px solid transparent;
+    box-shadow: 0 9px 0 -1px #333333, -4px 9px 0 -1px #333333, 4px 9px 0 -1px #333333, 0 6px 0 -1px #333333, -4px 6px 0 -1px #333333, 4px 6px 0 -1px #333333, 0 3px 0 -1px #333333, -4px 3px 0 -1px #333333, 4px 3px 0 -1px #333333; }
+  .calendar3.icon.filled {
+    background-color: #333333; }
+    .calendar3.icon.filled:after {
+      box-shadow: 0 9px 0 -1px white, -4px 9px 0 -1px white, 4px 9px 0 -1px white, 0 6px 0 -1px white, -4px 6px 0 -1px white, 4px 6px 0 -1px white, 0 3px 0 -1px white, -4px 3px 0 -1px white, 4px 3px 0 -1px white; }
+
+.calendar2.icon {
+  width: 16px;
+  height: 14px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .calendar2.icon:before {
+    left: 5px;
+    top: -3px;
+    width: 4px;
+    height: 5px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    box-shadow: 0 12px 0 -2px #333333, -4px 12px 0 -2px #333333, 4px 12px 0 -2px #333333, 0 9px 0 -2px #333333, -4px 9px 0 -2px #333333, 4px 9px 0 -2px #333333, 0 6px 0 -2px #333333, -4px 6px 0 -2px #333333, 4px 6px 0 -2px #333333; }
+  .calendar2.icon:after {
+    left: -1px;
+    top: 2px;
+    width: 18px;
+    height: 1px;
+    background-color: #333333; }
+  .calendar2.icon.filled {
+    background-color: #333333; }
+    .calendar2.icon.filled:before {
+      box-shadow: 0 12px 0 -2px white, -4px 12px 0 -2px white, 4px 12px 0 -2px white, 0 9px 0 -2px white, -4px 9px 0 -2px white, 4px 9px 0 -2px white, 0 6px 0 -2px white, -4px 6px 0 -2px white, 4px 6px 0 -2px white; }
+    .calendar2.icon.filled:after {
+      background-color: white; }
+
+.calendar.icon {
+  width: 16px;
+  height: 13px;
+  border: solid 1px #333333;
+  border-radius: 1px; }
+  .calendar.icon:before {
+    left: 4px;
+    top: -3px;
+    width: 6px;
+    height: 5px;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333; }
+  .calendar.icon:after {
+    left: -1px;
+    top: 3px;
+    width: 18px;
+    height: 1px;
+    background-color: #333333; }
+  .calendar.icon.filled {
+    background-color: #333333; }
+    .calendar.icon.filled:after {
+      top: 2px;
+      background-color: white; }
+    .calendar.icon.filled.checkI i {
+      border-color: white; }
+    .calendar.icon.filled.removeI i:before, .calendar.icon.filled.removeI i:after {
+      background-color: white; }
+    .calendar.icon.filled.contact i:before, .calendar.icon.filled.contact i:after {
+      border-color: white; }
+    .calendar.icon.filled.paragraph i:before {
+      border-color: white; }
+    .calendar.icon.filled.paragraph i:after {
+      background-color: white; }
+  .calendar.icon.checkI i {
+    width: 7px;
+    height: 4px;
+    border-left: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 4px; }
+  .calendar.icon.removeI i:before, .calendar.icon.removeI i:after {
+    width: 8px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 8px; }
+  .calendar.icon.removeI i:before {
+    transform: rotate(-45deg); }
+  .calendar.icon.removeI i:after {
+    transform: rotate(45deg); }
+  .calendar.icon.contact:after {
+    height: 0; }
+  .calendar.icon.contact i {
+    left: 5px;
+    top: 3px; }
+    .calendar.icon.contact i:before {
+      width: 4px;
+      height: 4px;
+      border: solid 1px #333333;
+      border-radius: 50%; }
+    .calendar.icon.contact i:after {
+      left: -2px;
+      top: 5px;
+      width: 8px;
+      height: 3px;
+      border-top: solid 1px #333333;
+      border-left: solid 1px #333333;
+      border-right: solid 1px #333333;
+      border-radius: 4px 4px 0 0; }
+  .calendar.icon.paragraph i {
+    left: 3px;
+    top: 6px; }
+    .calendar.icon.paragraph i:before {
+      width: 10px;
+      height: 1px;
+      border-top: solid 1px #333333;
+      border-bottom: solid 1px #333333; }
+    .calendar.icon.paragraph i:after {
+      left: 0px;
+      top: 4px;
+      width: 6px;
+      height: 1px;
+      background-color: #333333; }
+
+.face.icon {
+  left: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .face.icon.filled {
+    background-color: #333333; }
+    .face.icon.filled:before, .face.icon.filled:after {
+      border-color: #333333;
+      background-color: white; }
+    .face.icon.filled.smile i {
+      border-bottom: solid 1px white; }
+    .face.icon.filled.tongue i {
+      background-color: white; }
+      .face.icon.filled.tongue i:before {
+        border-top: solid 1px transparent;
+        border-right: solid 1px transparent;
+        border-bottom: solid 1px white;
+        border-left: solid 1px white; }
+    .face.icon.filled.laugh i {
+      border-color: white; }
+    .face.icon.filled.teethlaugh i {
+      border-color: white; }
+      .face.icon.filled.teethlaugh i:before {
+        border-left: solid 1px white;
+        border-right: solid 1px white; }
+    .face.icon.filled.bigsmile i {
+      border-bottom: solid 1px white;
+      border-left: solid 1px white;
+      border-right: solid 1px white; }
+    .face.icon.filled.sad i {
+      border-top: solid 1px white; }
+    .face.icon.filled.doublewink:before, .face.icon.filled.doublewink:after {
+      background-color: transparent;
+      border-bottom: solid 1px white;
+      border-left: solid 1px white; }
+  .face.icon:before, .face.icon:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px #333333; }
+  .face.icon:before {
+    left: 3px;
+    top: 3px; }
+  .face.icon:after {
+    right: 3px;
+    top: 3px; }
+  .face.icon.smile i {
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent; }
+  .face.icon.tongue i {
+    left: 4px;
+    top: 10px;
+    width: 8px;
+    height: 1px;
+    background-color: #333333;
+    transform: rotate(-3deg); }
+    .face.icon.tongue i:before {
+      top: -1px;
+      right: 0px;
+      width: 2px;
+      height: 2px;
+      transform: rotate(-45deg);
+      border-radius: 2px;
+      border-top: solid 1px transparent;
+      border-right: solid 1px transparent;
+      border-bottom: solid 1px #333333;
+      border-left: solid 1px #333333; }
+  .face.icon.laugh i {
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333; }
+  .face.icon.teethlaugh i {
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333; }
+    .face.icon.teethlaugh i:before {
+      left: 3px;
+      top: 0px;
+      width: 2px;
+      height: 4px;
+      border-left: solid 1px #333333;
+      border-right: solid 1px #333333; }
+  .face.icon.bigsmile i {
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333; }
+  .face.icon.wink:before {
+    border-top: solid 1px transparent;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    transform: rotate(-45deg); }
+  .face.icon.doublewink:before, .face.icon.doublewink:after {
+    border-top: solid 1px transparent;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    transform: rotate(-45deg); }
+  .face.icon.sad i {
+    left: 3px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent; }
+
+.circle.icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+
+.square.icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid 1px #333333; }
+
+.circle.icon.plusI.icon,
+.square.icon.plusI.icon {
+  left: 2px;
+  top: 2px; }
+  .circle.icon.plusI.icon:before, .circle.icon.plusI.icon:after,
+  .square.icon.plusI.icon:before,
+  .square.icon.plusI.icon:after {
+    width: 7px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 7px; }
+  .circle.icon.plusI.icon:after,
+  .square.icon.plusI.icon:after {
+    transform: rotate(90deg); }
+  .circle.icon.plusI.icon.filled,
+  .square.icon.plusI.icon.filled {
+    background: #333333; }
+    .circle.icon.plusI.icon.filled:before, .circle.icon.plusI.icon.filled:after,
+    .square.icon.plusI.icon.filled:before,
+    .square.icon.plusI.icon.filled:after {
+      background-color: white; }
+.circle.icon.minusI.icon,
+.square.icon.minusI.icon {
+  left: 2px;
+  top: 2px; }
+  .circle.icon.minusI.icon:before,
+  .square.icon.minusI.icon:before {
+    width: 7px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 7px; }
+  .circle.icon.minusI.icon.filled,
+  .square.icon.minusI.icon.filled {
+    background: #333333; }
+    .circle.icon.minusI.icon.filled:before,
+    .square.icon.minusI.icon.filled:before {
+      background-color: white; }
+.circle.icon.checkI.icon,
+.square.icon.checkI.icon {
+  left: 2px;
+  top: 2px; }
+  .circle.icon.checkI.icon:before,
+  .square.icon.checkI.icon:before {
+    left: 4px;
+    top: 4px;
+    width: 7px;
+    height: 4px;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    transform: rotate(-45deg); }
+  .circle.icon.checkI.icon.filled,
+  .square.icon.checkI.icon.filled {
+    background: #333333; }
+    .circle.icon.checkI.icon.filled:before,
+    .square.icon.checkI.icon.filled:before {
+      border-color: white; }
+.circle.icon.removeI.icon,
+.square.icon.removeI.icon {
+  left: 2px;
+  top: 2px; }
+  .circle.icon.removeI.icon:before, .circle.icon.removeI.icon:after,
+  .square.icon.removeI.icon:before,
+  .square.icon.removeI.icon:after {
+    left: 3px;
+    top: 7px;
+    width: 9px;
+    height: 1px;
+    background-color: #333333;
+    transform: rotate(45deg); }
+  .circle.icon.removeI.icon:after,
+  .square.icon.removeI.icon:after {
+    transform: rotate(-45deg); }
+  .circle.icon.removeI.icon.filled,
+  .square.icon.removeI.icon.filled {
+    background: #333333; }
+    .circle.icon.removeI.icon.filled:before, .circle.icon.removeI.icon.filled:after,
+    .square.icon.removeI.icon.filled:before,
+    .square.icon.removeI.icon.filled:after {
+      background-color: white; }
+
+.plus.icon {
+  left: 3px;
+  top: 10px; }
+  .plus.icon:before, .plus.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333; }
+  .plus.icon:after {
+    transform: rotate(90deg); }
+
+.minus.icon {
+  left: 3px;
+  top: 10px;
+  width: 15px;
+  height: 1px;
+  background-color: #333333; }
+
+.check.icon {
+  left: 3px;
+  top: 4px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 1px #333333;
+  border-left: solid 1px #333333;
+  transform: rotate(-45deg); }
+
+.remove.icon {
+  left: 3px;
+  top: 10px; }
+  .remove.icon:before, .remove.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333;
+    transform: rotate(45deg); }
+  .remove.icon:after {
+    transform: rotate(-45deg); }
