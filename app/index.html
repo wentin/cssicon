@@ -18,12 +18,10 @@
     <div ng-if="(icons | filter: searchText).length > 0">
         <div class="icon" 
           ng-repeat="icon in icons | filter: searchText">
-          <pre>
-	          <span class="icon" 
-	          	ng-repeat="cssBlock in icon.cssBlocks">
-{{cssBlock}}
-	          </span>
-	      </pre>
+	          <pre class="icon" 
+	          	ng-repeat="cssBlock in icon.cssBlocks"><!-- 
+					-->{{cssBlock}}
+	          </pre>
         </div>
     </div>
     <script src="js/app.js"></script>
