@@ -1,12 +1,12 @@
 $grey: #333;
 $white: #fff;
 body {
-  width: 1280px;
+  width: 1210px;
   margin: 40px auto;
 }
 footer {
-  width: 1200px;
-  margin: 40px auto;
+  width: 1110px;
+  margin: 50px auto;
 }
 .iconWrapper {
   position: relative; 
@@ -15,7 +15,7 @@ footer {
   width: 21px;
   height: 21px;
   background-color: $white;
-  margin: 40px;
+  margin: 50px;
   /* transform: scale(4,4); */
   .search.icon {
     top: 2px;
