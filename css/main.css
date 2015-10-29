@@ -79,9 +79,15 @@ footer {
   float: left;
   width: 21px;
   height: 21px;
+  border-radius: 2px;
+  transition: all 0.6s ease;
   background-color: white;
   padding: 50px;
   /* transform: scale(4,4); */ }
+  .iconWrapper:hover {
+    transition: none;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.06); }
   .iconWrapper .search.icon {
     margin-top: 2px;
     margin-left: 3px; }
