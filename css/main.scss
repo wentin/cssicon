@@ -1,0 +1,466 @@
+$grey: #333;
+$white: #fff;
+body {
+  width: 1210px;
+  margin: 100px auto;
+}
+footer {
+  width: 1110px;
+  margin: 50px;
+}
+.logo {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 100px 50px 50px 50px;
+  div {
+    position: relative;
+    float: left;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+  }
+  .c {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-top: solid 4px $grey;
+    border-right: solid 4px transparent;
+    border-bottom: solid 4px $grey;
+    border-left: solid 4px $grey;
+  }
+  .s {
+    width: 18px;
+    height: 30px;
+    margin-right: 6px;
+    &:before ,
+    &:after {
+      border-radius: 50%;
+      border-top: solid 4px $grey;
+      border-right: solid 4px transparent;
+      border-bottom: solid 4px $grey;
+      border-left: solid 4px $grey;
+    }
+    &:before {
+      margin-left: 1px;
+      top: 0;
+      width: 8px;
+      height: 8px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      margin-left: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      transform: rotate(225deg);
+    }
+  }
+  .i {
+    margin-left: 14px;
+    margin-right: 6px;
+    height: 30px;
+    width: 4px;
+    background-color: $grey;
+  }
+  .o {
+    margin-right: 6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: solid 4px $grey;
+  }
+  .n {
+    width: 15px;
+    height: 30px;
+    border-left: solid 4px $grey;
+    border-right: solid 4px $grey;
+    &:before {
+      left: -4px;
+      width: 4px;
+      height: 30px;
+      background-color: $grey;
+      transform: skewX(32.5deg);
+      transform-origin: left top;
+    }
+  }
+}
+.iconWrapper {
+  position: relative; 
+  overflow: hidden;
+  float: left;
+  width: 21px;
+  height: 21px;
+  background-color: $white;
+  padding: 50px;
+  /* transform: scale(4,4); */
+  .search.icon {
+    margin-top: 2px;
+    margin-left: 3px;
+  }
+  .close.icon {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .hamburger.icon {
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  .arrowRight.icon {
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  .arrowLeft.icon {
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  .trash.icon {
+    margin-left: 5px;
+    margin-top: 7px;
+  }
+  .audio.icon {
+    margin-left: 5px;
+    margin-top: 8px;
+  }
+  .pin.icon {
+    margin-left: 4px;
+    margin-top: 2px;
+  }
+  .raindrop.icon {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .stop.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .clock.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .profile.icon {
+    margin-left: 3px;
+    margin-top: 11px;
+  }
+  .bell.icon {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+  .heart.icon {
+    margin-top: 6px;
+    margin-left: 5px;
+  }
+  .print.icon {
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+  .edit.icon { 
+    margin-left: 4px;
+    margin-top: 7px;
+  }
+  .link.icon { 
+    margin-left: 8px;
+    margin-top: 10px;
+  }
+  .map.icon { 
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+  .mail.icon {  
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+  .bookmark.icon {
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  .camera.icon {
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+  .focus.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .card.icon {
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+  .volume.icon {
+    margin-left: 11px;
+    margin-top: 3px;
+  }
+  .lock.icon {
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  .code.icon {
+    margin-left: 3px;
+    margin-top: 6px;
+  }
+  .flag.icon {
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+  .tag.icon {  
+    margin-left: 4px;
+    margin-top: 3px;
+  }
+  .signal.icon {
+    margin-left: 7px;
+    margin-top: 13px;
+  }
+  .moon.icon {
+    margin-left: 4px;
+    margin-top: 2px;
+  }
+  .sun.icon {
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+  .shutdown.icon {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  .export.icon {
+    margin-left: 4px;
+    margin-top: 7px;
+  }
+  .download.icon {
+    margin-left: 4px;
+    margin-top: 5px;
+  }
+  .upload.icon {
+    margin-left: 4px;
+    margin-top: 3px;
+  }
+  .shut.icon {
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+  .chat.icon {
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+  .key.icon {
+    margin-left: 1px;
+    margin-top: 6px;
+  }
+  .key2.icon {
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+  .refresh.icon {
+    margin-left: 4px;
+    margin-top: 3px;
+  }
+  .umbrella.icon {
+    margin-left: 3px;
+    margin-top: 2px;
+  }
+  .thermometer.icon {
+    margin-left: 7px;
+    margin-top: 11px;
+  }
+  .pilcrow.icon {
+    margin-left: 4px;
+    margin-top: 2px;
+  }
+  .justified.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .leftaligned.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .centered.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .rightaligned.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .indent.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .outdent.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .anchor.icon {
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  .browser.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .tv.icon {
+    margin-left: 2px;
+    margin-top: 3px;
+  }
+  .watch.icon {
+    margin-left: 7px;
+    margin-top: 0px;
+  }
+  .navigate.icon {
+    margin-left: 6px;
+    margin-top: -1px;
+  }
+  .float.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .mouse.icon {
+    margin-left: 4px;
+    margin-top: 1px;
+  }
+  .keyboard.icon {
+    margin-left: 1px;
+    margin-top: 4px;
+  }
+  .calendar.icon {
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+  .calendar2.icon {
+    margin-left: 2px;
+    margin-top: 3px;
+  }
+  .calendar3.icon {
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+  .paperclip.icon {
+    margin-left: 9px;
+    margin-top: 2px;
+  }
+  .retweet.icon {
+    margin-left: 3px;
+    margin-top: 5px;
+  }
+  .laptop.icon {
+    margin-left: 4px;
+    margin-top: 3px;
+  }
+  .mobile.icon {
+    margin-left: 4px;
+    margin-top: 0px;
+  }
+  .tablet.icon {
+    margin-left: 2px;
+    margin-top: 1px;
+    &.filled {
+      margin-left: 2px;
+    }
+  }
+  .picture.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .target.icon {
+    margin-left: 1px;
+    margin-top: 1px;
+  }
+  .more.icon {
+    margin-left: 9px;
+    margin-top: 9px;
+  }
+  .vmore.icon {
+    margin-left: 9px;
+    margin-top: 9px;
+  }
+  .face.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .plus.icon {
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  .minus.icon {
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  .remove.icon {
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  .check.icon {
+    margin-left: 3px;
+    margin-top: 4px;
+  }
+  .arrowUp.icon {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  .arrowDown.icon {
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+  .volumePlus.icon {
+    margin-left: 2px;
+    margin-top: 7px;
+  }
+  .volumeMinus.icon {
+    margin-left: 2px;
+    margin-top: 7px;
+  }
+  .volumeMute.icon {
+    margin-left: 2px;
+    margin-top: 7px;
+  }
+  .volumeOne.icon {
+    margin-left: -2px;
+    margin-top: 5px;
+  }
+  .volumeTwo.icon {
+    margin-left: -4px;
+    margin-top: 3px;
+  }
+  .volumeThree.icon {
+    margin-left: -4px;
+    margin-top: 3px;
+  }
+  .eye.icon {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+  .battery.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .bag.icon {
+    margin-left: 2px;
+    margin-top: 6px;
+  }
+  .cloud.icon {
+    margin-left: 1px;
+    margin-top: 9px;
+  }
+  .circle,
+  .square {
+    &.plusI.icon {
+      margin-left: 2px;
+      margin-top: 2px;
+    }
+    &.minusI.icon {
+      margin-left: 2px;
+      margin-top: 2px;
+    }
+    &.checkI.icon {
+      margin-left: 2px;
+      margin-top: 2px;
+    }
+    &.removeI.icon {
+      margin-left: 2px;
+      margin-top: 2px;
+    }
+  }
+}
