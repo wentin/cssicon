@@ -1808,7 +1808,7 @@
 .keyboard.icon {
   width: 17px;
   height: 11px;
-  border-radius: 2px;
+  border-radius: 1px;
   border: solid 1px #333333; }
   .keyboard.icon:before {
     left: 7px;
