@@ -12,6 +12,8 @@
       display: block; }
 
 .search.icon {
+  margin-top: 2px;
+  margin-left: 3px;
   width: 12px;
   height: 12px;
   border: solid 1px #333333;
@@ -65,6 +67,8 @@
       background-color: white; }
 
 .close.icon {
+  margin-top: 0;
+  margin-left: 0;
   width: 21px;
   height: 21px; }
   .close.icon:before, .close.icon:after {
@@ -79,6 +83,8 @@
     transform: rotate(-45deg); }
 
 .hamburger.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 17px;
   height: 1px;
   background-color: #333333; }
@@ -93,6 +99,8 @@
     top: 5px; }
 
 .arrowRight.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: #333333; }

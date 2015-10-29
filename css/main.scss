@@ -60,7 +60,7 @@ footer {
     }
   }
   .i {
-    margin-left: 14px;
+    margin-left: 18px;
     margin-right: 6px;
     height: 30px;
     width: 4px;
@@ -95,27 +95,56 @@ footer {
   width: 21px;
   height: 21px;
   border-radius: 2px;
-  transition: all 0.6s ease;
   background-color: $white;
   padding: 50px;
   /* transform: scale(4,4); */
-  &:hover {
-    transition: none;
-    cursor: pointer;
-    background-color: rgba($grey,0.06);
+  .icon {
+    z-index: 1;
   }
-  .search.icon {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    border: solid 1px $white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    background-color: $white;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    &:before {
+      transition: none;
+      border: solid 1px $grey;
+    }
+  }
+  /* .search.icon {
     margin-top: 2px;
     margin-left: 3px;
   }
   .close.icon {
     margin-top: 0;
     margin-left: 0;
-  }
+  } 
   .hamburger.icon {
     margin-left: 2px;
     margin-top: 10px;
-  }
+  } 
   .arrowRight.icon {
     margin-left: 2px;
     margin-top: 10px;
@@ -123,7 +152,7 @@ footer {
   .arrowLeft.icon {
     margin-left: 3px;
     margin-top: 10px;
-  }
+  }  */
   .trash.icon {
     margin-left: 5px;
     margin-top: 7px;

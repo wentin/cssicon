@@ -49,7 +49,7 @@ footer {
       height: 10px;
       transform: rotate(225deg); }
   .logo .i {
-    margin-left: 14px;
+    margin-left: 18px;
     margin-right: 6px;
     height: 30px;
     width: 4px;
@@ -80,29 +80,59 @@ footer {
   width: 21px;
   height: 21px;
   border-radius: 2px;
-  transition: all 0.6s ease;
   background-color: white;
   padding: 50px;
-  /* transform: scale(4,4); */ }
-  .iconWrapper:hover {
-    transition: none;
-    cursor: pointer;
-    background-color: rgba(51, 51, 51, 0.06); }
-  .iconWrapper .search.icon {
+  /* transform: scale(4,4); */
+  /* .search.icon {
     margin-top: 2px;
-    margin-left: 3px; }
-  .iconWrapper .close.icon {
-    margin-top: 0;
-    margin-left: 0; }
-  .iconWrapper .hamburger.icon {
-    margin-left: 2px;
-    margin-top: 10px; }
-  .iconWrapper .arrowRight.icon {
-    margin-left: 2px;
-    margin-top: 10px; }
-  .iconWrapper .arrowLeft.icon {
     margin-left: 3px;
-    margin-top: 10px; }
+  }
+  .close.icon {
+    margin-top: 0;
+    margin-left: 0;
+  } 
+  .hamburger.icon {
+    margin-left: 2px;
+    margin-top: 10px;
+  } 
+  .arrowRight.icon {
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  .arrowLeft.icon {
+    margin-left: 3px;
+    margin-top: 10px;
+  }  */ }
+  .iconWrapper .icon {
+    z-index: 1; }
+  .iconWrapper:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    border: solid 1px white;
+    border-radius: 2px;
+    transition: all 0.3s ease; }
+  .iconWrapper:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    transition: all 0.3s ease; }
+  .iconWrapper:hover {
+    cursor: pointer; }
+    .iconWrapper:hover:before {
+      transition: none;
+      border: solid 1px #333333; }
   .iconWrapper .trash.icon {
     margin-left: 5px;
     margin-top: 7px; }
@@ -379,6 +409,8 @@ footer {
       display: block; }
 
 .search.icon {
+  margin-top: 2px;
+  margin-left: 3px;
   width: 12px;
   height: 12px;
   border: solid 1px #333333;
@@ -432,6 +464,8 @@ footer {
       background-color: white; }
 
 .close.icon {
+  margin-top: 0;
+  margin-left: 0;
   width: 21px;
   height: 21px; }
   .close.icon:before, .close.icon:after {
@@ -446,6 +480,8 @@ footer {
     transform: rotate(-45deg); }
 
 .hamburger.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 17px;
   height: 1px;
   background-color: #333333; }
@@ -460,6 +496,8 @@ footer {
     top: 5px; }
 
 .arrowRight.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: #333333; }
