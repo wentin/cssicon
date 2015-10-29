@@ -148,6 +148,8 @@ $white: #fff;
   }
 }
 .arrowLeft.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: $grey;
@@ -163,6 +165,8 @@ $white: #fff;
   }
 }
 .arrowUp.icon {
+  margin-left: 10px;
+  margin-top: 3px;
   width: 1px;
   height: 16px;
   background-color: $grey;
@@ -178,6 +182,8 @@ $white: #fff;
   }
 }
 .arrowDown.icon {
+  margin-left: 10px;
+  margin-top: 2px;
   width: 1px;
   height: 16px;
   background-color: $grey;
@@ -193,6 +199,8 @@ $white: #fff;
   }
 }
 .trash.icon {
+  margin-left: 5px;
+  margin-top: 7px;
   width: 9px;
   height: 10px;
   border-left: solid 1px $grey;
@@ -224,6 +232,8 @@ $white: #fff;
   }
 }
 .audio.icon {
+  margin-left: 5px;
+  margin-top: 8px;
   width: 9px;
   height: 7px;
   border-left: solid 1px $grey;
@@ -253,6 +263,8 @@ $white: #fff;
   }
 }
 .pin.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 12px;
   height: 12px;
   border: solid 1px $grey;
@@ -276,6 +288,8 @@ $white: #fff;
   }
 }
 .raindrop.icon {
+  margin-left: 5px;
+  margin-top: 5px;
   width: 10px;
   height: 10px;
   border: solid 1px $grey;
@@ -290,6 +304,8 @@ $white: #fff;
   }
 }
 .stop.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   position: relative;
@@ -312,6 +328,8 @@ $white: #fff;
   }
 }
 .clock.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   position: relative;
@@ -370,6 +388,8 @@ $white: #fff;
   }
 }
 .profile.icon {
+  margin-left: 3px;
+  margin-top: 11px;
   width: 14px;
   height: 6px;
   border-left: solid 1px $grey;
@@ -395,6 +415,8 @@ $white: #fff;
   }
 }
 .bell.icon {
+  margin-left: 5px;
+  margin-top: 2px;
   width: 9px;
   height: 10px;
   border: solid 1px $grey;
@@ -427,6 +449,8 @@ $white: #fff;
   }
 }
 .heart.icon {
+  margin-top: 6px;
+  margin-left: 5px;
   width: 9px;
   height: 9px;
   border-left: solid 1px $grey;
@@ -468,6 +492,8 @@ $white: #fff;
   }
 }
 .print.icon {
+  margin-left: 2px;
+  margin-top: 5px;
   width: 15px;
   height: 6px;
   border: solid 1px $grey;
@@ -497,6 +523,8 @@ $white: #fff;
   }
 }
 .edit.icon {
+  margin-left: 4px;
+  margin-top: 7px;
   width: 14px;
   height: 2px;
   border: solid 1px $grey;
@@ -518,6 +546,8 @@ $white: #fff;
   }
 }
 .link.icon {
+  margin-left: 8px;
+  margin-top: 10px;
   width: 7px;
   height: 1px;
   background-color: $grey;
@@ -539,6 +569,8 @@ $white: #fff;
   }
 }
 .map.icon {
+  margin-left: 8px;
+  margin-top: 4px;
   width: 4px;
   height: 10px;
   border: solid 1px $grey;
@@ -564,6 +596,8 @@ $white: #fff;
   }
 }
 .mail.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px $grey;
@@ -595,6 +629,8 @@ $white: #fff;
   }
 }
 .bookmark.icon {
+  margin-left: 5px;
+  margin-top: 3px;
   width: 10px;
   height: 15px;
   border-top: solid 1px $grey;
@@ -619,6 +655,8 @@ $white: #fff;
   }
 }
 .camera.icon {
+  margin-left: 2px;
+  margin-top: 5px;
   width: 16px;
   height: 10px;
   border: solid 1px $grey;
@@ -648,6 +686,8 @@ $white: #fff;
   }
 }
 .focus.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px $grey;
@@ -668,6 +708,8 @@ $white: #fff;
   }
 }
 .card.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px $grey;
@@ -695,6 +737,8 @@ $white: #fff;
   }
 }
 .volume.icon {
+  margin-left: 11px;
+  margin-top: 3px;
   width: 1px;
   height: 15px;
   background-color: $grey;
@@ -739,6 +783,8 @@ $white: #fff;
   }
 }
 .volumePlus.icon {
+  margin-left: 2px;
+  margin-top: 7px;
   &:before,
   &:after {
     width: 6px;
@@ -753,6 +799,8 @@ $white: #fff;
   }
 }
 .volumeMinus.icon {
+  margin-left: 2px;
+  margin-top: 7px;
   &:before{
     width: 6px;
     height: 1px;
@@ -760,6 +808,8 @@ $white: #fff;
   }
 }
 .volumeMute.icon {
+  margin-left: 2px;
+  margin-top: 7px;
   &:before,
   &:after {
     width: 6px;
@@ -778,6 +828,8 @@ $white: #fff;
   }
 }
 .volumeOne.icon {
+  margin-left: -2px;
+  margin-top: 5px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -787,6 +839,8 @@ $white: #fff;
   border-left: solid 1px transparent;
 }
 .volumeTwo.icon {
+  margin-left: -4px;
+  margin-top: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -796,6 +850,8 @@ $white: #fff;
   border-left: double 3px transparent;
 }
 .volumeThree.icon {
+  margin-left: -4px;
+  margin-top: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -816,6 +872,8 @@ $white: #fff;
   }
 }
 .lock.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 13px;
   height: 6px;
   border: solid 1px $grey;
@@ -847,6 +905,8 @@ $white: #fff;
   }
 }
 .code.icon {
+  margin-left: 3px;
+  margin-top: 6px;
   &:before,
   &:after {
     width: 8px;
@@ -865,6 +925,8 @@ $white: #fff;
   }
 }
 .flag.icon {
+  margin-left: 6px;
+  margin-top: 4px;
   width: 9px;
   height: 6px;
   border: solid 1px $grey;
@@ -881,6 +943,8 @@ $white: #fff;
   }
 }
 .tag.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 7px;
   height: 7px;
   border-left: solid 1px $grey;
@@ -917,6 +981,8 @@ $white: #fff;
   }
 }
 .signal.icon {
+  margin-left: 7px;
+  margin-top: 13px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -948,6 +1014,8 @@ $white: #fff;
   }
 }
 .moon.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -982,6 +1050,8 @@ $white: #fff;
   }
 }
 .sun.icon {
+  margin-left: 6px;
+  margin-top: 6px;
   width: 6px;
   height: 6px;
   border: 1px solid $grey;
@@ -1000,6 +1070,8 @@ $white: #fff;
   }
 }
 .export.icon {
+  margin-left: 4px;
+  margin-top: 7px;
   width: 11px;
   height: 9px;
   border: solid 1px $grey;
@@ -1025,6 +1097,8 @@ $white: #fff;
   }
 }
 .download.icon {
+  margin-left: 4px;
+  margin-top: 5px;
   width: 11px;
   height: 11px;
   border: solid 1px $grey;
@@ -1050,6 +1124,8 @@ $white: #fff;
   }
 }
 .upload.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 11px;
   height: 11px;
   border: solid 1px $grey;
@@ -1075,6 +1151,8 @@ $white: #fff;
   }
 }
 .shutdown.icon {
+  margin-top: 3px;
+  margin-left: 3px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -1093,6 +1171,8 @@ $white: #fff;
   }
 }
 .shut.icon {
+  margin-top: 4px;
+  margin-left: 4px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1118,6 +1198,8 @@ $white: #fff;
   }
 }
 .chat.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px $grey;
@@ -1141,6 +1223,8 @@ $white: #fff;
   }
 }
 .paperclip.icon {
+  margin-left: 9px;
+  margin-top: 2px;
   width: 6px;
   height: 12px;
   border-left: solid 1px $grey;
@@ -1171,6 +1255,8 @@ $white: #fff;
   }
 }
 .retweet.icon {
+  margin-left: 3px;
+  margin-top: 5px;
   width: 13px;
   height: 9px;
   border: solid 1px $grey;
@@ -1197,6 +1283,8 @@ $white: #fff;
   }
 }
 .key.icon {
+  margin-left: 1px;
+  margin-top: 6px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1221,6 +1309,8 @@ $white: #fff;
   }
 }
 .key2.icon {
+  margin-left: 10px;
+  margin-top: 2px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1247,6 +1337,8 @@ $white: #fff;
   }
 }
 .refresh.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1266,6 +1358,8 @@ $white: #fff;
   }
 }
 .umbrella.icon {
+  margin-left: 3px;
+  margin-top: 2px;
   width: 13px;
   height: 6px;
   border-radius: 8px 8px 0 0;
@@ -1292,6 +1386,8 @@ $white: #fff;
   }
 }
 .thermometer.icon {
+  margin-left: 7px;
+  margin-top: 11px;
   width:  6px;
   height: 6px;
   border-radius: 4px;
@@ -1320,6 +1416,8 @@ $white: #fff;
   }
 }
 .pilcrow.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 8px;
   height: 8px;
   border-left: solid 1px $grey;
@@ -1340,6 +1438,8 @@ $white: #fff;
   }
 }
 .justified.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px $grey;
@@ -1354,6 +1454,8 @@ $white: #fff;
   }
 }
 .leftaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px $grey;
@@ -1368,6 +1470,8 @@ $white: #fff;
   }
 }
 .centered.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px $grey;
@@ -1382,6 +1486,8 @@ $white: #fff;
   }
 }
 .rightaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px $grey;
@@ -1396,6 +1502,8 @@ $white: #fff;
   }
 }
 .indent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 8px;
   border-top: solid 1px $grey;
@@ -1419,6 +1527,8 @@ $white: #fff;
   }
 }
 .outdent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 8px;
   border-top: solid 1px $grey;
@@ -1443,6 +1553,8 @@ $white: #fff;
   }
 }
 .eye.icon {
+  margin-left: 3px;
+  margin-top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 70% 15%;
@@ -1474,6 +1586,8 @@ $white: #fff;
   }
 }
 .battery.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 13px;
   height: 7px;
   border-radius: 2px;
@@ -1548,6 +1662,8 @@ $white: #fff;
   }
 }
 .bag.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 15px;
   height: 10px;
   border: solid 1px $grey;
@@ -1589,6 +1705,8 @@ $white: #fff;
   }
 }
 .anchor.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 15px;
   height: 8px;
   border-left: solid 1px $grey;
@@ -1612,6 +1730,8 @@ $white: #fff;
   }
 }
 .browser.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px $grey;
@@ -1643,6 +1763,8 @@ $white: #fff;
   }
 }
 .tv.icon {
+  margin-left: 2px;
+  margin-top: 3px;
   width: 15px;
   height: 10px;
   border: solid 1px $grey;
@@ -1666,6 +1788,8 @@ $white: #fff;
   }
 }
 .laptop.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 12px;
   height: 8px;
   border: solid 1px $grey;
@@ -1686,6 +1810,8 @@ $white: #fff;
   }
 }
 .mobile.icon {
+  margin-left: 4px;
+  margin-top: 0px;
   width: 12px; 
   height: 19px;
   border-radius: 2px;
@@ -1720,6 +1846,8 @@ $white: #fff;
   }
 }
 .tablet.icon {
+  margin-left: 2px;
+  margin-top: 1px;
   width: 15px; 
   height: 17px;
   border-radius: 2px;
@@ -1739,6 +1867,7 @@ $white: #fff;
     background-color: $grey;
   }
   &.filled {
+    margin-left: 2px;
     width: 15px; 
     height: 14px;
     border-top: solid 2px $grey;
@@ -1754,6 +1883,8 @@ $white: #fff;
   }
 }
 .picture.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px $grey;
@@ -1788,6 +1919,8 @@ $white: #fff;
   }
 }
 .watch.icon {
+  margin-left: 7px;
+  margin-top: 0px;
   width: 5px;
   height: 19px;
   border: solid 1px $grey;
@@ -1825,6 +1958,8 @@ $white: #fff;
   }
 }
 .target.icon {
+  margin-left: 1px;
+  margin-top: 1px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1860,6 +1995,8 @@ $white: #fff;
   }
 }
 .navigate.icon {
+  margin-left: 6px;
+  margin-top: -1px;
   width: 14px;
   height: 18px;
   -webkit-transform: rotate(45deg);
@@ -1911,7 +2048,9 @@ $white: #fff;
     }
   }
 }
-.float.icon {
+.float.icon { 
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px $grey;
@@ -1956,6 +2095,8 @@ $white: #fff;
   }
 }
 .cloud.icon {
+  margin-left: 1px;
+  margin-top: 9px;
   width: 5px;
   height: 6px;
   border-left: solid 1px $grey;
@@ -2065,6 +2206,8 @@ $white: #fff;
   }
 }
 .more.icon {
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -2092,6 +2235,8 @@ $white: #fff;
   }
 }
 .vmore.icon {
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -2119,6 +2264,8 @@ $white: #fff;
   }
 }
 .mouse.icon {
+  margin-left: 4px;
+  margin-top: 1px;
   width: 11px;
   height: 17px;
   border: solid 1px $grey;
@@ -2146,6 +2293,8 @@ $white: #fff;
   }
 }
 .keyboard.icon {
+  margin-left: 1px;
+  margin-top: 4px;
   width: 17px;
   height: 11px;
   border-radius: 1px;
@@ -2196,6 +2345,8 @@ $white: #fff;
   }
 }
 .calendar3.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 16px;
   height: 13px;
   border: solid 1px $grey;
@@ -2247,6 +2398,8 @@ $white: #fff;
   }
 }
 .calendar2.icon {
+  margin-left: 2px;
+  margin-top: 3px;
   width: 16px;
   height: 14px;
   border: solid 1px $grey;
@@ -2296,6 +2449,8 @@ $white: #fff;
   }
 }
 .calendar.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 16px;
   height: 13px;
   border: solid 1px $grey;
@@ -2422,6 +2577,8 @@ $white: #fff;
   }
 }
 .face.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -2607,6 +2764,8 @@ $white: #fff;
 .circle,
 .square {
   &.plusI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
     &:before,
     &:after {
       width: 7px;
@@ -2628,6 +2787,8 @@ $white: #fff;
     }
   }
   &.minusI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
     &:before{
       width: 7px;
       height: 1px;
@@ -2643,6 +2804,8 @@ $white: #fff;
     }
   }
   &.checkI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
     &:before{
       left: 4px;
       top: 4px;
@@ -2661,6 +2824,8 @@ $white: #fff;
     }
   }
   &.removeI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
     &:before,
     &:after {
       left: 3px;
@@ -2685,6 +2850,8 @@ $white: #fff;
   }
 }
 .plus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   &:before,
   &:after {
     width: 15px;
@@ -2697,11 +2864,15 @@ $white: #fff;
   }
 }
 .minus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 15px;
   height: 1px;
   background-color: $grey;
 }
 .check.icon {
+  margin-left: 3px;
+  margin-top: 4px;
   width: 14px;
   height: 8px;
   border-bottom: solid 1px $grey;
@@ -2710,6 +2881,8 @@ $white: #fff;
           transform: rotate(-45deg);
 }
 .remove.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   &:before,
   &:after {
     width: 15px;

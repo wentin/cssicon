@@ -82,27 +82,7 @@ footer {
   border-radius: 2px;
   background-color: white;
   padding: 50px;
-  /* transform: scale(4,4); */
-  /* .search.icon {
-    margin-top: 2px;
-    margin-left: 3px;
-  }
-  .close.icon {
-    margin-top: 0;
-    margin-left: 0;
-  } 
-  .hamburger.icon {
-    margin-left: 2px;
-    margin-top: 10px;
-  } 
-  .arrowRight.icon {
-    margin-left: 2px;
-    margin-top: 10px;
-  }
-  .arrowLeft.icon {
-    margin-left: 3px;
-    margin-top: 10px;
-  }  */ }
+  /* transform: scale(4,4); */ }
   .iconWrapper .icon {
     z-index: 1; }
   .iconWrapper:before {
@@ -133,267 +113,6 @@ footer {
     .iconWrapper:hover:before {
       transition: none;
       border: solid 1px #333333; }
-  .iconWrapper .trash.icon {
-    margin-left: 5px;
-    margin-top: 7px; }
-  .iconWrapper .audio.icon {
-    margin-left: 5px;
-    margin-top: 8px; }
-  .iconWrapper .pin.icon {
-    margin-left: 4px;
-    margin-top: 2px; }
-  .iconWrapper .raindrop.icon {
-    margin-left: 5px;
-    margin-top: 5px; }
-  .iconWrapper .stop.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .clock.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .profile.icon {
-    margin-left: 3px;
-    margin-top: 11px; }
-  .iconWrapper .bell.icon {
-    margin-left: 5px;
-    margin-top: 2px; }
-  .iconWrapper .heart.icon {
-    margin-top: 6px;
-    margin-left: 5px; }
-  .iconWrapper .print.icon {
-    margin-left: 2px;
-    margin-top: 5px; }
-  .iconWrapper .edit.icon {
-    margin-left: 4px;
-    margin-top: 7px; }
-  .iconWrapper .link.icon {
-    margin-left: 8px;
-    margin-top: 10px; }
-  .iconWrapper .map.icon {
-    margin-left: 8px;
-    margin-top: 4px; }
-  .iconWrapper .mail.icon {
-    margin-left: 2px;
-    margin-top: 4px; }
-  .iconWrapper .bookmark.icon {
-    margin-left: 5px;
-    margin-top: 3px; }
-  .iconWrapper .camera.icon {
-    margin-left: 2px;
-    margin-top: 5px; }
-  .iconWrapper .focus.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .card.icon {
-    margin-left: 2px;
-    margin-top: 4px; }
-  .iconWrapper .volume.icon {
-    margin-left: 11px;
-    margin-top: 3px; }
-  .iconWrapper .lock.icon {
-    margin-left: 3px;
-    margin-top: 10px; }
-  .iconWrapper .code.icon {
-    margin-left: 3px;
-    margin-top: 6px; }
-  .iconWrapper .flag.icon {
-    margin-left: 6px;
-    margin-top: 4px; }
-  .iconWrapper .tag.icon {
-    margin-left: 4px;
-    margin-top: 3px; }
-  .iconWrapper .signal.icon {
-    margin-left: 7px;
-    margin-top: 13px; }
-  .iconWrapper .moon.icon {
-    margin-left: 4px;
-    margin-top: 2px; }
-  .iconWrapper .sun.icon {
-    margin-left: 6px;
-    margin-top: 6px; }
-  .iconWrapper .shutdown.icon {
-    margin-top: 3px;
-    margin-left: 3px; }
-  .iconWrapper .export.icon {
-    margin-left: 4px;
-    margin-top: 7px; }
-  .iconWrapper .download.icon {
-    margin-left: 4px;
-    margin-top: 5px; }
-  .iconWrapper .upload.icon {
-    margin-left: 4px;
-    margin-top: 3px; }
-  .iconWrapper .shut.icon {
-    margin-top: 4px;
-    margin-left: 4px; }
-  .iconWrapper .chat.icon {
-    margin-left: 2px;
-    margin-top: 4px; }
-  .iconWrapper .key.icon {
-    margin-left: 1px;
-    margin-top: 6px; }
-  .iconWrapper .key2.icon {
-    margin-left: 10px;
-    margin-top: 2px; }
-  .iconWrapper .refresh.icon {
-    margin-left: 4px;
-    margin-top: 3px; }
-  .iconWrapper .umbrella.icon {
-    margin-left: 3px;
-    margin-top: 2px; }
-  .iconWrapper .thermometer.icon {
-    margin-left: 7px;
-    margin-top: 11px; }
-  .iconWrapper .pilcrow.icon {
-    margin-left: 4px;
-    margin-top: 2px; }
-  .iconWrapper .justified.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .leftaligned.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .centered.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .rightaligned.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .indent.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .outdent.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .anchor.icon {
-    margin-left: 2px;
-    margin-top: 10px; }
-  .iconWrapper .browser.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .tv.icon {
-    margin-left: 2px;
-    margin-top: 3px; }
-  .iconWrapper .watch.icon {
-    margin-left: 7px;
-    margin-top: 0px; }
-  .iconWrapper .navigate.icon {
-    margin-left: 6px;
-    margin-top: -1px; }
-  .iconWrapper .float.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .mouse.icon {
-    margin-left: 4px;
-    margin-top: 1px; }
-  .iconWrapper .keyboard.icon {
-    margin-left: 1px;
-    margin-top: 4px; }
-  .iconWrapper .calendar.icon {
-    margin-left: 2px;
-    margin-top: 4px; }
-  .iconWrapper .calendar2.icon {
-    margin-left: 2px;
-    margin-top: 3px; }
-  .iconWrapper .calendar3.icon {
-    margin-left: 2px;
-    margin-top: 4px; }
-  .iconWrapper .paperclip.icon {
-    margin-left: 9px;
-    margin-top: 2px; }
-  .iconWrapper .retweet.icon {
-    margin-left: 3px;
-    margin-top: 5px; }
-  .iconWrapper .laptop.icon {
-    margin-left: 4px;
-    margin-top: 3px; }
-  .iconWrapper .mobile.icon {
-    margin-left: 4px;
-    margin-top: 0px; }
-  .iconWrapper .tablet.icon {
-    margin-left: 2px;
-    margin-top: 1px; }
-    .iconWrapper .tablet.icon.filled {
-      margin-left: 2px; }
-  .iconWrapper .picture.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .target.icon {
-    margin-left: 1px;
-    margin-top: 1px; }
-  .iconWrapper .more.icon {
-    margin-left: 9px;
-    margin-top: 9px; }
-  .iconWrapper .vmore.icon {
-    margin-left: 9px;
-    margin-top: 9px; }
-  .iconWrapper .face.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .plus.icon {
-    margin-left: 3px;
-    margin-top: 10px; }
-  .iconWrapper .minus.icon {
-    margin-left: 3px;
-    margin-top: 10px; }
-  .iconWrapper .remove.icon {
-    margin-left: 3px;
-    margin-top: 10px; }
-  .iconWrapper .check.icon {
-    margin-left: 3px;
-    margin-top: 4px; }
-  .iconWrapper .arrowUp.icon {
-    margin-left: 10px;
-    margin-top: 3px; }
-  .iconWrapper .arrowDown.icon {
-    margin-left: 10px;
-    margin-top: 2px; }
-  .iconWrapper .volumePlus.icon {
-    margin-left: 2px;
-    margin-top: 7px; }
-  .iconWrapper .volumeMinus.icon {
-    margin-left: 2px;
-    margin-top: 7px; }
-  .iconWrapper .volumeMute.icon {
-    margin-left: 2px;
-    margin-top: 7px; }
-  .iconWrapper .volumeOne.icon {
-    margin-left: -2px;
-    margin-top: 5px; }
-  .iconWrapper .volumeTwo.icon {
-    margin-left: -4px;
-    margin-top: 3px; }
-  .iconWrapper .volumeThree.icon {
-    margin-left: -4px;
-    margin-top: 3px; }
-  .iconWrapper .eye.icon {
-    margin-left: 3px;
-    margin-top: 3px; }
-  .iconWrapper .battery.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .bag.icon {
-    margin-left: 2px;
-    margin-top: 6px; }
-  .iconWrapper .cloud.icon {
-    margin-left: 1px;
-    margin-top: 9px; }
-  .iconWrapper .circle.plusI.icon,
-  .iconWrapper .square.plusI.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .circle.minusI.icon,
-  .iconWrapper .square.minusI.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .circle.checkI.icon,
-  .iconWrapper .square.checkI.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
-  .iconWrapper .circle.removeI.icon,
-  .iconWrapper .square.removeI.icon {
-    margin-left: 2px;
-    margin-top: 2px; }
 
 .icon {
   position: absolute; }
@@ -512,6 +231,8 @@ footer {
     top: -5px; }
 
 .arrowLeft.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: #333333; }
@@ -526,6 +247,8 @@ footer {
     top: -5px; }
 
 .arrowUp.icon {
+  margin-left: 10px;
+  margin-top: 3px;
   width: 1px;
   height: 16px;
   background-color: #333333; }
@@ -540,6 +263,8 @@ footer {
     top: 1px; }
 
 .arrowDown.icon {
+  margin-left: 10px;
+  margin-top: 2px;
   width: 1px;
   height: 16px;
   background-color: #333333; }
@@ -554,6 +279,8 @@ footer {
     top: 3px; }
 
 .trash.icon {
+  margin-left: 5px;
+  margin-top: 7px;
   width: 9px;
   height: 10px;
   border-left: solid 1px #333333;
@@ -581,6 +308,8 @@ footer {
       background-color: #333333; }
 
 .audio.icon {
+  margin-left: 5px;
+  margin-top: 8px;
   width: 9px;
   height: 7px;
   border-left: solid 1px #333333;
@@ -605,6 +334,8 @@ footer {
     background-color: #333333; }
 
 .pin.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 12px;
   height: 12px;
   border: solid 1px #333333;
@@ -625,6 +356,8 @@ footer {
       background-color: white; }
 
 .raindrop.icon {
+  margin-left: 5px;
+  margin-top: 5px;
   width: 10px;
   height: 10px;
   border: solid 1px #333333;
@@ -638,6 +371,8 @@ footer {
     background-color: #333333; }
 
 .stop.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   position: relative;
@@ -657,6 +392,8 @@ footer {
       background-color: white; }
 
 .clock.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   position: relative;
@@ -702,6 +439,8 @@ footer {
     left: 2px; }
 
 .profile.icon {
+  margin-left: 3px;
+  margin-top: 11px;
   width: 14px;
   height: 6px;
   border-left: solid 1px #333333;
@@ -724,6 +463,8 @@ footer {
       background-color: #333333; }
 
 .bell.icon {
+  margin-left: 5px;
+  margin-top: 2px;
   width: 9px;
   height: 10px;
   border: solid 1px #333333;
@@ -752,6 +493,8 @@ footer {
       background-color: #333333; }
 
 .heart.icon {
+  margin-top: 6px;
+  margin-left: 5px;
   width: 9px;
   height: 9px;
   border-left: solid 1px #333333;
@@ -788,6 +531,8 @@ footer {
       background-color: #333333; }
 
 .print.icon {
+  margin-left: 2px;
+  margin-top: 5px;
   width: 15px;
   height: 6px;
   border: solid 1px #333333;
@@ -813,6 +558,8 @@ footer {
       background-color: #333333; }
 
 .edit.icon {
+  margin-left: 4px;
+  margin-top: 7px;
   width: 14px;
   height: 2px;
   border: solid 1px #333333;
@@ -832,6 +579,8 @@ footer {
     background-color: #333333; }
 
 .link.icon {
+  margin-left: 8px;
+  margin-top: 10px;
   width: 7px;
   height: 1px;
   background-color: #333333;
@@ -849,6 +598,8 @@ footer {
     right: -7px; }
 
 .map.icon {
+  margin-left: 8px;
+  margin-top: 4px;
   width: 4px;
   height: 10px;
   border: solid 1px #333333;
@@ -870,6 +621,8 @@ footer {
     top: -3px; }
 
 .mail.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -894,6 +647,8 @@ footer {
       background-color: white; }
 
 .bookmark.icon {
+  margin-left: 5px;
+  margin-top: 3px;
   width: 10px;
   height: 15px;
   border-top: solid 1px #333333;
@@ -915,6 +670,8 @@ footer {
       background-color: white; }
 
 .camera.icon {
+  margin-left: 2px;
+  margin-top: 5px;
   width: 16px;
   height: 10px;
   border: solid 1px #333333;
@@ -940,6 +697,8 @@ footer {
       border: solid 1px white; }
 
 .focus.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -957,6 +716,8 @@ footer {
     transform: rotate(90deg); }
 
 .card.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -979,6 +740,8 @@ footer {
       background-color: white; }
 
 .volume.icon {
+  margin-left: 11px;
+  margin-top: 3px;
   width: 1px;
   height: 15px;
   background-color: #333333; }
@@ -1017,35 +780,46 @@ footer {
     .volume.icon.filled:after {
       background-color: #333333; }
 
-.volumePlus.icon:before, .volumePlus.icon:after {
-  width: 6px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform-origin: center;
-  transform-origin: center; }
-.volumePlus.icon:after {
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+.volumePlus.icon {
+  margin-left: 2px;
+  margin-top: 7px; }
+  .volumePlus.icon:before, .volumePlus.icon:after {
+    width: 6px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform-origin: center;
+    transform-origin: center; }
+  .volumePlus.icon:after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
-.volumeMinus.icon:before {
-  width: 6px;
-  height: 1px;
-  background-color: #333333; }
+.volumeMinus.icon {
+  margin-left: 2px;
+  margin-top: 7px; }
+  .volumeMinus.icon:before {
+    width: 6px;
+    height: 1px;
+    background-color: #333333; }
 
-.volumeMute.icon:before, .volumeMute.icon:after {
-  width: 6px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform-origin: center;
-  transform-origin: center; }
-.volumeMute.icon:before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-.volumeMute.icon:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
+.volumeMute.icon {
+  margin-left: 2px;
+  margin-top: 7px; }
+  .volumeMute.icon:before, .volumeMute.icon:after {
+    width: 6px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform-origin: center;
+    transform-origin: center; }
+  .volumeMute.icon:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .volumeMute.icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .volumeOne.icon {
+  margin-left: -2px;
+  margin-top: 5px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -1055,6 +829,8 @@ footer {
   border-left: solid 1px transparent; }
 
 .volumeTwo.icon {
+  margin-left: -4px;
+  margin-top: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -1064,6 +840,8 @@ footer {
   border-left: double 3px transparent; }
 
 .volumeThree.icon {
+  margin-left: -4px;
+  margin-top: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -1083,6 +861,8 @@ footer {
     border-left: solid 1px transparent; }
 
 .lock.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 13px;
   height: 6px;
   border: solid 1px #333333;
@@ -1107,20 +887,25 @@ footer {
   .lock.icon.filled {
     background-color: #333333; }
 
-.code.icon:before, .code.icon:after {
-  width: 8px;
-  height: 8px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-.code.icon:before {
-  border-left: solid 1px #333333;
-  border-top: solid 1px #333333; }
-.code.icon:after {
-  border-bottom: solid 1px #333333;
-  border-right: solid 1px #333333;
-  left: 6px; }
+.code.icon {
+  margin-left: 3px;
+  margin-top: 6px; }
+  .code.icon:before, .code.icon:after {
+    width: 8px;
+    height: 8px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .code.icon:before {
+    border-left: solid 1px #333333;
+    border-top: solid 1px #333333; }
+  .code.icon:after {
+    border-bottom: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 6px; }
 
 .flag.icon {
+  margin-left: 6px;
+  margin-top: 4px;
   width: 9px;
   height: 6px;
   border: solid 1px #333333;
@@ -1135,6 +920,8 @@ footer {
     background-color: #333333; }
 
 .tag.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 7px;
   height: 7px;
   border-left: solid 1px #333333;
@@ -1166,6 +953,8 @@ footer {
       background-color: white; }
 
 .signal.icon {
+  margin-left: 7px;
+  margin-top: 13px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1195,6 +984,8 @@ footer {
     border-left: solid 1px transparent; }
 
 .moon.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -1226,6 +1017,8 @@ footer {
       height: 8px; }
 
 .sun.icon {
+  margin-left: 6px;
+  margin-top: 6px;
   width: 6px;
   height: 6px;
   border: 1px solid #333333;
@@ -1235,6 +1028,8 @@ footer {
     background-color: #333333; }
 
 .export.icon {
+  margin-left: 4px;
+  margin-top: 7px;
   width: 11px;
   height: 9px;
   border: solid 1px #333333;
@@ -1258,6 +1053,8 @@ footer {
     top: -5px; }
 
 .download.icon {
+  margin-left: 4px;
+  margin-top: 5px;
   width: 11px;
   height: 11px;
   border: solid 1px #333333;
@@ -1281,6 +1078,8 @@ footer {
     top: 1px; }
 
 .upload.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 11px;
   height: 11px;
   border: solid 1px #333333;
@@ -1304,6 +1103,8 @@ footer {
     top: 4px; }
 
 .shutdown.icon {
+  margin-top: 3px;
+  margin-left: 3px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -1321,6 +1122,8 @@ footer {
     top: -2px; }
 
 .shut.icon {
+  margin-top: 4px;
+  margin-left: 4px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1344,6 +1147,8 @@ footer {
     top: -2px; }
 
 .chat.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -1364,6 +1169,8 @@ footer {
       background-color: #333333; }
 
 .paperclip.icon {
+  margin-left: 9px;
+  margin-top: 2px;
   width: 6px;
   height: 12px;
   border-left: solid 1px #333333;
@@ -1392,6 +1199,8 @@ footer {
     border-radius: 4px 4px 0 0; }
 
 .retweet.icon {
+  margin-left: 3px;
+  margin-top: 5px;
   width: 13px;
   height: 9px;
   border: solid 1px #333333;
@@ -1416,6 +1225,8 @@ footer {
     bottom: -2px; }
 
 .key.icon {
+  margin-left: 1px;
+  margin-top: 6px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1437,6 +1248,8 @@ footer {
     background-color: #333333; }
 
 .key2.icon {
+  margin-left: 10px;
+  margin-top: 2px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1460,6 +1273,8 @@ footer {
     background-color: #333333; }
 
 .refresh.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1478,6 +1293,8 @@ footer {
     top: 10px; }
 
 .umbrella.icon {
+  margin-left: 3px;
+  margin-top: 2px;
   width: 13px;
   height: 6px;
   border-radius: 8px 8px 0 0;
@@ -1501,6 +1318,8 @@ footer {
     background-color: #333333; }
 
 .thermometer.icon {
+  margin-left: 7px;
+  margin-top: 11px;
   width: 6px;
   height: 6px;
   border-radius: 4px;
@@ -1527,6 +1346,8 @@ footer {
     z-index: 2; }
 
 .pilcrow.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 8px;
   height: 8px;
   border-left: solid 1px #333333;
@@ -1545,6 +1366,8 @@ footer {
     background-color: #333333; }
 
 .justified.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1558,6 +1381,8 @@ footer {
     border-bottom: solid 1px #333333; }
 
 .leftaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1571,6 +1396,8 @@ footer {
     border-bottom: solid 1px #333333; }
 
 .centered.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1584,6 +1411,8 @@ footer {
     border-bottom: solid 1px #333333; }
 
 .rightaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1597,6 +1426,8 @@ footer {
     border-bottom: solid 1px #333333; }
 
 .indent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 8px;
   border-top: solid 1px #333333;
@@ -1618,6 +1449,8 @@ footer {
     border-right: solid 3px transparent; }
 
 .outdent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 8px;
   border-top: solid 1px #333333;
@@ -1640,6 +1473,8 @@ footer {
     border-right: solid 3px #333333; }
 
 .eye.icon {
+  margin-left: 3px;
+  margin-top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 70% 15%;
@@ -1665,6 +1500,8 @@ footer {
       border-color: white; }
 
 .battery.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 13px;
   height: 7px;
   border-radius: 2px;
@@ -1717,6 +1554,8 @@ footer {
       border-radius: 1px; }
 
 .bag.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -1749,6 +1588,8 @@ footer {
       background-color: white; }
 
 .anchor.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 15px;
   height: 8px;
   border-left: solid 1px #333333;
@@ -1770,6 +1611,8 @@ footer {
     top: -8px; }
 
 .browser.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -1796,6 +1639,8 @@ footer {
       background-color: white; }
 
 .tv.icon {
+  margin-left: 2px;
+  margin-top: 3px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -1816,6 +1661,8 @@ footer {
     background-color: #333333; }
 
 .laptop.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 12px;
   height: 8px;
   border: solid 1px #333333;
@@ -1833,6 +1680,8 @@ footer {
       background-color: #333333; }
 
 .mobile.icon {
+  margin-left: 4px;
+  margin-top: 0px;
   width: 12px;
   height: 19px;
   border-radius: 2px;
@@ -1862,6 +1711,8 @@ footer {
       background-color: white; }
 
 .tablet.icon {
+  margin-left: 2px;
+  margin-top: 1px;
   width: 15px;
   height: 17px;
   border-radius: 2px;
@@ -1879,6 +1730,7 @@ footer {
     height: 1px;
     background-color: #333333; }
   .tablet.icon.filled {
+    margin-left: 2px;
     width: 15px;
     height: 14px;
     border-top: solid 2px #333333;
@@ -1891,6 +1743,8 @@ footer {
       background-color: white; }
 
 .picture.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -1920,6 +1774,8 @@ footer {
       border-color: white; }
 
 .watch.icon {
+  margin-left: 7px;
+  margin-top: 0px;
   width: 5px;
   height: 19px;
   border: solid 1px #333333;
@@ -1952,6 +1808,8 @@ footer {
       border-color: white; }
 
 .target.icon {
+  margin-left: 1px;
+  margin-top: 1px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1978,6 +1836,8 @@ footer {
       box-shadow: -7px 0 0 -3px white, 7px 0 0 -3px white, 0 -7px 0 -3px white, 0 7px 0 -3px white; }
 
 .navigate.icon {
+  margin-left: 6px;
+  margin-top: -1px;
   width: 14px;
   height: 18px;
   -webkit-transform: rotate(45deg);
@@ -2025,6 +1885,8 @@ footer {
       border-right: solid 5px transparent; }
 
 .float.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -2060,6 +1922,8 @@ footer {
       top: 4px; }
 
 .cloud.icon {
+  margin-left: 1px;
+  margin-top: 9px;
   width: 5px;
   height: 6px;
   border-left: solid 1px #333333;
@@ -2149,6 +2013,8 @@ footer {
   top: 6px; }
 
 .more.icon {
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -2169,6 +2035,8 @@ footer {
       background-color: #333333; }
 
 .vmore.icon {
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -2189,6 +2057,8 @@ footer {
       background-color: #333333; }
 
 .mouse.icon {
+  margin-left: 4px;
+  margin-top: 1px;
   width: 11px;
   height: 17px;
   border: solid 1px #333333;
@@ -2211,6 +2081,8 @@ footer {
       background-color: white; }
 
 .keyboard.icon {
+  margin-left: 1px;
+  margin-top: 4px;
   width: 17px;
   height: 11px;
   border-radius: 1px;
@@ -2236,6 +2108,8 @@ footer {
       background-color: white; }
 
 .calendar3.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 16px;
   height: 13px;
   border: solid 1px #333333;
@@ -2264,6 +2138,8 @@ footer {
       box-shadow: 0 9px 0 -1px white, -4px 9px 0 -1px white, 4px 9px 0 -1px white, 0 6px 0 -1px white, -4px 6px 0 -1px white, 4px 6px 0 -1px white, 0 3px 0 -1px white, -4px 3px 0 -1px white, 4px 3px 0 -1px white; }
 
 .calendar2.icon {
+  margin-left: 2px;
+  margin-top: 3px;
   width: 16px;
   height: 14px;
   border: solid 1px #333333;
@@ -2290,6 +2166,8 @@ footer {
       background-color: white; }
 
 .calendar.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 16px;
   height: 13px;
   border: solid 1px #333333;
@@ -2382,6 +2260,8 @@ footer {
       background-color: #333333; }
 
 .face.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -2532,90 +2412,113 @@ footer {
   border-radius: 2px;
   border: solid 1px #333333; }
 
-.circle.plusI.icon:before, .circle.plusI.icon:after,
-.square.plusI.icon:before,
-.square.plusI.icon:after {
-  width: 7px;
-  height: 1px;
-  background-color: #333333;
-  left: 4px;
-  top: 7px; }
-.circle.plusI.icon:after,
-.square.plusI.icon:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
-.circle.plusI.icon.filled,
-.square.plusI.icon.filled {
-  background: #333333; }
-  .circle.plusI.icon.filled:before, .circle.plusI.icon.filled:after,
-  .square.plusI.icon.filled:before,
-  .square.plusI.icon.filled:after {
-    background-color: white; }
-.circle.minusI.icon:before,
-.square.minusI.icon:before {
-  width: 7px;
-  height: 1px;
-  background-color: #333333;
-  left: 4px;
-  top: 7px; }
-.circle.minusI.icon.filled,
-.square.minusI.icon.filled {
-  background: #333333; }
-  .circle.minusI.icon.filled:before,
-  .square.minusI.icon.filled:before {
-    background-color: white; }
-.circle.checkI.icon:before,
-.square.checkI.icon:before {
-  left: 4px;
-  top: 4px;
-  width: 7px;
-  height: 4px;
-  border-bottom: solid 1px #333333;
-  border-left: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-.circle.checkI.icon.filled,
-.square.checkI.icon.filled {
-  background: #333333; }
-  .circle.checkI.icon.filled:before,
-  .square.checkI.icon.filled:before {
-    border-color: white; }
-.circle.removeI.icon:before, .circle.removeI.icon:after,
-.square.removeI.icon:before,
-.square.removeI.icon:after {
-  left: 3px;
-  top: 7px;
-  width: 9px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-.circle.removeI.icon:after,
-.square.removeI.icon:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-.circle.removeI.icon.filled,
-.square.removeI.icon.filled {
-  background: #333333; }
-  .circle.removeI.icon.filled:before, .circle.removeI.icon.filled:after,
-  .square.removeI.icon.filled:before,
-  .square.removeI.icon.filled:after {
-    background-color: white; }
+.circle.plusI.icon,
+.square.plusI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.plusI.icon:before, .circle.plusI.icon:after,
+  .square.plusI.icon:before,
+  .square.plusI.icon:after {
+    width: 7px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 7px; }
+  .circle.plusI.icon:after,
+  .square.plusI.icon:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .circle.plusI.icon.filled,
+  .square.plusI.icon.filled {
+    background: #333333; }
+    .circle.plusI.icon.filled:before, .circle.plusI.icon.filled:after,
+    .square.plusI.icon.filled:before,
+    .square.plusI.icon.filled:after {
+      background-color: white; }
+.circle.minusI.icon,
+.square.minusI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.minusI.icon:before,
+  .square.minusI.icon:before {
+    width: 7px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 7px; }
+  .circle.minusI.icon.filled,
+  .square.minusI.icon.filled {
+    background: #333333; }
+    .circle.minusI.icon.filled:before,
+    .square.minusI.icon.filled:before {
+      background-color: white; }
+.circle.checkI.icon,
+.square.checkI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.checkI.icon:before,
+  .square.checkI.icon:before {
+    left: 4px;
+    top: 4px;
+    width: 7px;
+    height: 4px;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .circle.checkI.icon.filled,
+  .square.checkI.icon.filled {
+    background: #333333; }
+    .circle.checkI.icon.filled:before,
+    .square.checkI.icon.filled:before {
+      border-color: white; }
+.circle.removeI.icon,
+.square.removeI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.removeI.icon:before, .circle.removeI.icon:after,
+  .square.removeI.icon:before,
+  .square.removeI.icon:after {
+    left: 3px;
+    top: 7px;
+    width: 9px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .circle.removeI.icon:after,
+  .square.removeI.icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .circle.removeI.icon.filled,
+  .square.removeI.icon.filled {
+    background: #333333; }
+    .circle.removeI.icon.filled:before, .circle.removeI.icon.filled:after,
+    .square.removeI.icon.filled:before,
+    .square.removeI.icon.filled:after {
+      background-color: white; }
 
-.plus.icon:before, .plus.icon:after {
-  width: 15px;
-  height: 1px;
-  background-color: #333333; }
-.plus.icon:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+.plus.icon {
+  margin-left: 3px;
+  margin-top: 10px; }
+  .plus.icon:before, .plus.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333; }
+  .plus.icon:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .minus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 15px;
   height: 1px;
   background-color: #333333; }
 
 .check.icon {
+  margin-left: 3px;
+  margin-top: 4px;
   width: 14px;
   height: 8px;
   border-bottom: solid 1px #333333;
@@ -2623,12 +2526,15 @@ footer {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-.remove.icon:before, .remove.icon:after {
-  width: 15px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-.remove.icon:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
+.remove.icon {
+  margin-left: 3px;
+  margin-top: 10px; }
+  .remove.icon:before, .remove.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .remove.icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }

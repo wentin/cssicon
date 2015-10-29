@@ -115,6 +115,8 @@
     top: -5px; }
 
 .arrowLeft.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: #333333; }
@@ -129,6 +131,8 @@
     top: -5px; }
 
 .arrowUp.icon {
+  margin-left: 10px;
+  margin-top: 3px;
   width: 1px;
   height: 16px;
   background-color: #333333; }
@@ -143,6 +147,8 @@
     top: 1px; }
 
 .arrowDown.icon {
+  margin-left: 10px;
+  margin-top: 2px;
   width: 1px;
   height: 16px;
   background-color: #333333; }
@@ -157,6 +163,8 @@
     top: 3px; }
 
 .trash.icon {
+  margin-left: 5px;
+  margin-top: 7px;
   width: 9px;
   height: 10px;
   border-left: solid 1px #333333;
@@ -184,6 +192,8 @@
       background-color: #333333; }
 
 .audio.icon {
+  margin-left: 5px;
+  margin-top: 8px;
   width: 9px;
   height: 7px;
   border-left: solid 1px #333333;
@@ -208,6 +218,8 @@
     background-color: #333333; }
 
 .pin.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 12px;
   height: 12px;
   border: solid 1px #333333;
@@ -228,6 +240,8 @@
       background-color: white; }
 
 .raindrop.icon {
+  margin-left: 5px;
+  margin-top: 5px;
   width: 10px;
   height: 10px;
   border: solid 1px #333333;
@@ -241,6 +255,8 @@
     background-color: #333333; }
 
 .stop.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   position: relative;
@@ -260,6 +276,8 @@
       background-color: white; }
 
 .clock.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   position: relative;
@@ -305,6 +323,8 @@
     left: 2px; }
 
 .profile.icon {
+  margin-left: 3px;
+  margin-top: 11px;
   width: 14px;
   height: 6px;
   border-left: solid 1px #333333;
@@ -327,6 +347,8 @@
       background-color: #333333; }
 
 .bell.icon {
+  margin-left: 5px;
+  margin-top: 2px;
   width: 9px;
   height: 10px;
   border: solid 1px #333333;
@@ -355,6 +377,8 @@
       background-color: #333333; }
 
 .heart.icon {
+  margin-top: 6px;
+  margin-left: 5px;
   width: 9px;
   height: 9px;
   border-left: solid 1px #333333;
@@ -391,6 +415,8 @@
       background-color: #333333; }
 
 .print.icon {
+  margin-left: 2px;
+  margin-top: 5px;
   width: 15px;
   height: 6px;
   border: solid 1px #333333;
@@ -416,6 +442,8 @@
       background-color: #333333; }
 
 .edit.icon {
+  margin-left: 4px;
+  margin-top: 7px;
   width: 14px;
   height: 2px;
   border: solid 1px #333333;
@@ -435,6 +463,8 @@
     background-color: #333333; }
 
 .link.icon {
+  margin-left: 8px;
+  margin-top: 10px;
   width: 7px;
   height: 1px;
   background-color: #333333;
@@ -452,6 +482,8 @@
     right: -7px; }
 
 .map.icon {
+  margin-left: 8px;
+  margin-top: 4px;
   width: 4px;
   height: 10px;
   border: solid 1px #333333;
@@ -473,6 +505,8 @@
     top: -3px; }
 
 .mail.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -497,6 +531,8 @@
       background-color: white; }
 
 .bookmark.icon {
+  margin-left: 5px;
+  margin-top: 3px;
   width: 10px;
   height: 15px;
   border-top: solid 1px #333333;
@@ -518,6 +554,8 @@
       background-color: white; }
 
 .camera.icon {
+  margin-left: 2px;
+  margin-top: 5px;
   width: 16px;
   height: 10px;
   border: solid 1px #333333;
@@ -543,6 +581,8 @@
       border: solid 1px white; }
 
 .focus.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -560,6 +600,8 @@
     transform: rotate(90deg); }
 
 .card.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -582,6 +624,8 @@
       background-color: white; }
 
 .volume.icon {
+  margin-left: 11px;
+  margin-top: 3px;
   width: 1px;
   height: 15px;
   background-color: #333333; }
@@ -620,35 +664,46 @@
     .volume.icon.filled:after {
       background-color: #333333; }
 
-.volumePlus.icon:before, .volumePlus.icon:after {
-  width: 6px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform-origin: center;
-  transform-origin: center; }
-.volumePlus.icon:after {
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+.volumePlus.icon {
+  margin-left: 2px;
+  margin-top: 7px; }
+  .volumePlus.icon:before, .volumePlus.icon:after {
+    width: 6px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform-origin: center;
+    transform-origin: center; }
+  .volumePlus.icon:after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
-.volumeMinus.icon:before {
-  width: 6px;
-  height: 1px;
-  background-color: #333333; }
+.volumeMinus.icon {
+  margin-left: 2px;
+  margin-top: 7px; }
+  .volumeMinus.icon:before {
+    width: 6px;
+    height: 1px;
+    background-color: #333333; }
 
-.volumeMute.icon:before, .volumeMute.icon:after {
-  width: 6px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform-origin: center;
-  transform-origin: center; }
-.volumeMute.icon:before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-.volumeMute.icon:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
+.volumeMute.icon {
+  margin-left: 2px;
+  margin-top: 7px; }
+  .volumeMute.icon:before, .volumeMute.icon:after {
+    width: 6px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform-origin: center;
+    transform-origin: center; }
+  .volumeMute.icon:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .volumeMute.icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .volumeOne.icon {
+  margin-left: -2px;
+  margin-top: 5px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -658,6 +713,8 @@
   border-left: solid 1px transparent; }
 
 .volumeTwo.icon {
+  margin-left: -4px;
+  margin-top: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -667,6 +724,8 @@
   border-left: double 3px transparent; }
 
 .volumeThree.icon {
+  margin-left: -4px;
+  margin-top: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -686,6 +745,8 @@
     border-left: solid 1px transparent; }
 
 .lock.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 13px;
   height: 6px;
   border: solid 1px #333333;
@@ -710,20 +771,25 @@
   .lock.icon.filled {
     background-color: #333333; }
 
-.code.icon:before, .code.icon:after {
-  width: 8px;
-  height: 8px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-.code.icon:before {
-  border-left: solid 1px #333333;
-  border-top: solid 1px #333333; }
-.code.icon:after {
-  border-bottom: solid 1px #333333;
-  border-right: solid 1px #333333;
-  left: 6px; }
+.code.icon {
+  margin-left: 3px;
+  margin-top: 6px; }
+  .code.icon:before, .code.icon:after {
+    width: 8px;
+    height: 8px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .code.icon:before {
+    border-left: solid 1px #333333;
+    border-top: solid 1px #333333; }
+  .code.icon:after {
+    border-bottom: solid 1px #333333;
+    border-right: solid 1px #333333;
+    left: 6px; }
 
 .flag.icon {
+  margin-left: 6px;
+  margin-top: 4px;
   width: 9px;
   height: 6px;
   border: solid 1px #333333;
@@ -738,6 +804,8 @@
     background-color: #333333; }
 
 .tag.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 7px;
   height: 7px;
   border-left: solid 1px #333333;
@@ -769,6 +837,8 @@
       background-color: white; }
 
 .signal.icon {
+  margin-left: 7px;
+  margin-top: 13px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -798,6 +868,8 @@
     border-left: solid 1px transparent; }
 
 .moon.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -829,6 +901,8 @@
       height: 8px; }
 
 .sun.icon {
+  margin-left: 6px;
+  margin-top: 6px;
   width: 6px;
   height: 6px;
   border: 1px solid #333333;
@@ -838,6 +912,8 @@
     background-color: #333333; }
 
 .export.icon {
+  margin-left: 4px;
+  margin-top: 7px;
   width: 11px;
   height: 9px;
   border: solid 1px #333333;
@@ -861,6 +937,8 @@
     top: -5px; }
 
 .download.icon {
+  margin-left: 4px;
+  margin-top: 5px;
   width: 11px;
   height: 11px;
   border: solid 1px #333333;
@@ -884,6 +962,8 @@
     top: 1px; }
 
 .upload.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 11px;
   height: 11px;
   border: solid 1px #333333;
@@ -907,6 +987,8 @@
     top: 4px; }
 
 .shutdown.icon {
+  margin-top: 3px;
+  margin-left: 3px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -924,6 +1006,8 @@
     top: -2px; }
 
 .shut.icon {
+  margin-top: 4px;
+  margin-left: 4px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -947,6 +1031,8 @@
     top: -2px; }
 
 .chat.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -967,6 +1053,8 @@
       background-color: #333333; }
 
 .paperclip.icon {
+  margin-left: 9px;
+  margin-top: 2px;
   width: 6px;
   height: 12px;
   border-left: solid 1px #333333;
@@ -995,6 +1083,8 @@
     border-radius: 4px 4px 0 0; }
 
 .retweet.icon {
+  margin-left: 3px;
+  margin-top: 5px;
   width: 13px;
   height: 9px;
   border: solid 1px #333333;
@@ -1019,6 +1109,8 @@
     bottom: -2px; }
 
 .key.icon {
+  margin-left: 1px;
+  margin-top: 6px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1040,6 +1132,8 @@
     background-color: #333333; }
 
 .key2.icon {
+  margin-left: 10px;
+  margin-top: 2px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1063,6 +1157,8 @@
     background-color: #333333; }
 
 .refresh.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1081,6 +1177,8 @@
     top: 10px; }
 
 .umbrella.icon {
+  margin-left: 3px;
+  margin-top: 2px;
   width: 13px;
   height: 6px;
   border-radius: 8px 8px 0 0;
@@ -1104,6 +1202,8 @@
     background-color: #333333; }
 
 .thermometer.icon {
+  margin-left: 7px;
+  margin-top: 11px;
   width: 6px;
   height: 6px;
   border-radius: 4px;
@@ -1130,6 +1230,8 @@
     z-index: 2; }
 
 .pilcrow.icon {
+  margin-left: 4px;
+  margin-top: 2px;
   width: 8px;
   height: 8px;
   border-left: solid 1px #333333;
@@ -1148,6 +1250,8 @@
     background-color: #333333; }
 
 .justified.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1161,6 +1265,8 @@
     border-bottom: solid 1px #333333; }
 
 .leftaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1174,6 +1280,8 @@
     border-bottom: solid 1px #333333; }
 
 .centered.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1187,6 +1295,8 @@
     border-bottom: solid 1px #333333; }
 
 .rightaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 5px;
   border-top: solid 1px #333333;
@@ -1200,6 +1310,8 @@
     border-bottom: solid 1px #333333; }
 
 .indent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 8px;
   border-top: solid 1px #333333;
@@ -1221,6 +1333,8 @@
     border-right: solid 3px transparent; }
 
 .outdent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 17px;
   height: 8px;
   border-top: solid 1px #333333;
@@ -1243,6 +1357,8 @@
     border-right: solid 3px #333333; }
 
 .eye.icon {
+  margin-left: 3px;
+  margin-top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 70% 15%;
@@ -1268,6 +1384,8 @@
       border-color: white; }
 
 .battery.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 13px;
   height: 7px;
   border-radius: 2px;
@@ -1320,6 +1438,8 @@
       border-radius: 1px; }
 
 .bag.icon {
+  margin-left: 2px;
+  margin-top: 6px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -1352,6 +1472,8 @@
       background-color: white; }
 
 .anchor.icon {
+  margin-left: 2px;
+  margin-top: 10px;
   width: 15px;
   height: 8px;
   border-left: solid 1px #333333;
@@ -1373,6 +1495,8 @@
     top: -8px; }
 
 .browser.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -1399,6 +1523,8 @@
       background-color: white; }
 
 .tv.icon {
+  margin-left: 2px;
+  margin-top: 3px;
   width: 15px;
   height: 10px;
   border: solid 1px #333333;
@@ -1419,6 +1545,8 @@
     background-color: #333333; }
 
 .laptop.icon {
+  margin-left: 4px;
+  margin-top: 3px;
   width: 12px;
   height: 8px;
   border: solid 1px #333333;
@@ -1436,6 +1564,8 @@
       background-color: #333333; }
 
 .mobile.icon {
+  margin-left: 4px;
+  margin-top: 0px;
   width: 12px;
   height: 19px;
   border-radius: 2px;
@@ -1465,6 +1595,8 @@
       background-color: white; }
 
 .tablet.icon {
+  margin-left: 2px;
+  margin-top: 1px;
   width: 15px;
   height: 17px;
   border-radius: 2px;
@@ -1482,6 +1614,7 @@
     height: 1px;
     background-color: #333333; }
   .tablet.icon.filled {
+    margin-left: 2px;
     width: 15px;
     height: 14px;
     border-top: solid 2px #333333;
@@ -1494,6 +1627,8 @@
       background-color: white; }
 
 .picture.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -1523,6 +1658,8 @@
       border-color: white; }
 
 .watch.icon {
+  margin-left: 7px;
+  margin-top: 0px;
   width: 5px;
   height: 19px;
   border: solid 1px #333333;
@@ -1555,6 +1692,8 @@
       border-color: white; }
 
 .target.icon {
+  margin-left: 1px;
+  margin-top: 1px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1581,6 +1720,8 @@
       box-shadow: -7px 0 0 -3px white, 7px 0 0 -3px white, 0 -7px 0 -3px white, 0 7px 0 -3px white; }
 
 .navigate.icon {
+  margin-left: 6px;
+  margin-top: -1px;
   width: 14px;
   height: 18px;
   -webkit-transform: rotate(45deg);
@@ -1628,6 +1769,8 @@
       border-right: solid 5px transparent; }
 
 .float.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #333333;
@@ -1663,6 +1806,8 @@
       top: 4px; }
 
 .cloud.icon {
+  margin-left: 1px;
+  margin-top: 9px;
   width: 5px;
   height: 6px;
   border-left: solid 1px #333333;
@@ -1752,6 +1897,8 @@
   top: 6px; }
 
 .more.icon {
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -1772,6 +1919,8 @@
       background-color: #333333; }
 
 .vmore.icon {
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -1792,6 +1941,8 @@
       background-color: #333333; }
 
 .mouse.icon {
+  margin-left: 4px;
+  margin-top: 1px;
   width: 11px;
   height: 17px;
   border: solid 1px #333333;
@@ -1814,6 +1965,8 @@
       background-color: white; }
 
 .keyboard.icon {
+  margin-left: 1px;
+  margin-top: 4px;
   width: 17px;
   height: 11px;
   border-radius: 1px;
@@ -1839,6 +1992,8 @@
       background-color: white; }
 
 .calendar3.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 16px;
   height: 13px;
   border: solid 1px #333333;
@@ -1867,6 +2022,8 @@
       box-shadow: 0 9px 0 -1px white, -4px 9px 0 -1px white, 4px 9px 0 -1px white, 0 6px 0 -1px white, -4px 6px 0 -1px white, 4px 6px 0 -1px white, 0 3px 0 -1px white, -4px 3px 0 -1px white, 4px 3px 0 -1px white; }
 
 .calendar2.icon {
+  margin-left: 2px;
+  margin-top: 3px;
   width: 16px;
   height: 14px;
   border: solid 1px #333333;
@@ -1893,6 +2050,8 @@
       background-color: white; }
 
 .calendar.icon {
+  margin-left: 2px;
+  margin-top: 4px;
   width: 16px;
   height: 13px;
   border: solid 1px #333333;
@@ -1985,6 +2144,8 @@
       background-color: #333333; }
 
 .face.icon {
+  margin-left: 2px;
+  margin-top: 2px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -2135,90 +2296,113 @@
   border-radius: 2px;
   border: solid 1px #333333; }
 
-.circle.plusI.icon:before, .circle.plusI.icon:after,
-.square.plusI.icon:before,
-.square.plusI.icon:after {
-  width: 7px;
-  height: 1px;
-  background-color: #333333;
-  left: 4px;
-  top: 7px; }
-.circle.plusI.icon:after,
-.square.plusI.icon:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
-.circle.plusI.icon.filled,
-.square.plusI.icon.filled {
-  background: #333333; }
-  .circle.plusI.icon.filled:before, .circle.plusI.icon.filled:after,
-  .square.plusI.icon.filled:before,
-  .square.plusI.icon.filled:after {
-    background-color: white; }
-.circle.minusI.icon:before,
-.square.minusI.icon:before {
-  width: 7px;
-  height: 1px;
-  background-color: #333333;
-  left: 4px;
-  top: 7px; }
-.circle.minusI.icon.filled,
-.square.minusI.icon.filled {
-  background: #333333; }
-  .circle.minusI.icon.filled:before,
-  .square.minusI.icon.filled:before {
-    background-color: white; }
-.circle.checkI.icon:before,
-.square.checkI.icon:before {
-  left: 4px;
-  top: 4px;
-  width: 7px;
-  height: 4px;
-  border-bottom: solid 1px #333333;
-  border-left: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-.circle.checkI.icon.filled,
-.square.checkI.icon.filled {
-  background: #333333; }
-  .circle.checkI.icon.filled:before,
-  .square.checkI.icon.filled:before {
-    border-color: white; }
-.circle.removeI.icon:before, .circle.removeI.icon:after,
-.square.removeI.icon:before,
-.square.removeI.icon:after {
-  left: 3px;
-  top: 7px;
-  width: 9px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-.circle.removeI.icon:after,
-.square.removeI.icon:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-.circle.removeI.icon.filled,
-.square.removeI.icon.filled {
-  background: #333333; }
-  .circle.removeI.icon.filled:before, .circle.removeI.icon.filled:after,
-  .square.removeI.icon.filled:before,
-  .square.removeI.icon.filled:after {
-    background-color: white; }
+.circle.plusI.icon,
+.square.plusI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.plusI.icon:before, .circle.plusI.icon:after,
+  .square.plusI.icon:before,
+  .square.plusI.icon:after {
+    width: 7px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 7px; }
+  .circle.plusI.icon:after,
+  .square.plusI.icon:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .circle.plusI.icon.filled,
+  .square.plusI.icon.filled {
+    background: #333333; }
+    .circle.plusI.icon.filled:before, .circle.plusI.icon.filled:after,
+    .square.plusI.icon.filled:before,
+    .square.plusI.icon.filled:after {
+      background-color: white; }
+.circle.minusI.icon,
+.square.minusI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.minusI.icon:before,
+  .square.minusI.icon:before {
+    width: 7px;
+    height: 1px;
+    background-color: #333333;
+    left: 4px;
+    top: 7px; }
+  .circle.minusI.icon.filled,
+  .square.minusI.icon.filled {
+    background: #333333; }
+    .circle.minusI.icon.filled:before,
+    .square.minusI.icon.filled:before {
+      background-color: white; }
+.circle.checkI.icon,
+.square.checkI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.checkI.icon:before,
+  .square.checkI.icon:before {
+    left: 4px;
+    top: 4px;
+    width: 7px;
+    height: 4px;
+    border-bottom: solid 1px #333333;
+    border-left: solid 1px #333333;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .circle.checkI.icon.filled,
+  .square.checkI.icon.filled {
+    background: #333333; }
+    .circle.checkI.icon.filled:before,
+    .square.checkI.icon.filled:before {
+      border-color: white; }
+.circle.removeI.icon,
+.square.removeI.icon {
+  margin-left: 2px;
+  margin-top: 2px; }
+  .circle.removeI.icon:before, .circle.removeI.icon:after,
+  .square.removeI.icon:before,
+  .square.removeI.icon:after {
+    left: 3px;
+    top: 7px;
+    width: 9px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .circle.removeI.icon:after,
+  .square.removeI.icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .circle.removeI.icon.filled,
+  .square.removeI.icon.filled {
+    background: #333333; }
+    .circle.removeI.icon.filled:before, .circle.removeI.icon.filled:after,
+    .square.removeI.icon.filled:before,
+    .square.removeI.icon.filled:after {
+      background-color: white; }
 
-.plus.icon:before, .plus.icon:after {
-  width: 15px;
-  height: 1px;
-  background-color: #333333; }
-.plus.icon:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+.plus.icon {
+  margin-left: 3px;
+  margin-top: 10px; }
+  .plus.icon:before, .plus.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333; }
+  .plus.icon:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .minus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
   width: 15px;
   height: 1px;
   background-color: #333333; }
 
 .check.icon {
+  margin-left: 3px;
+  margin-top: 4px;
   width: 14px;
   height: 8px;
   border-bottom: solid 1px #333333;
@@ -2226,12 +2410,15 @@
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-.remove.icon:before, .remove.icon:after {
-  width: 15px;
-  height: 1px;
-  background-color: #333333;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-.remove.icon:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
+.remove.icon {
+  margin-left: 3px;
+  margin-top: 10px; }
+  .remove.icon:before, .remove.icon:after {
+    width: 15px;
+    height: 1px;
+    background-color: #333333;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .remove.icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
