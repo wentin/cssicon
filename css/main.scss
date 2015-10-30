@@ -49,14 +49,16 @@ footer {
       top: 0;
       width: 8px;
       height: 8px;
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
     }
     &:after {
       margin-left: 0;
       bottom: 0;
       width: 10px;
       height: 10px;
-      transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+              transform: rotate(225deg);
     }
   }
   .i {
@@ -83,8 +85,10 @@ footer {
       width: 4px;
       height: 30px;
       background-color: $grey;
-      transform: skewX(32.5deg);
-      transform-origin: left top;
+      -webkit-transform: skewX(32.5deg);
+              transform: skewX(32.5deg);
+      -webkit-transform-origin: left top;
+              transform-origin: left top;
     }
   }
 }
@@ -122,7 +126,8 @@ footer {
     width: 109px;
     height: 109px;
     background-color: $white;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     border-radius: 2px;
     transition: all 0.3s ease;
   }
