@@ -239,21 +239,6 @@
       border-color: white;
       background-color: white; }
 
-.raindrop.icon {
-  margin-left: 5px;
-  margin-top: 5px;
-  width: 10px;
-  height: 10px;
-  border: solid 1px #333333;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 0px;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg); }
-  .raindrop.icon.filled {
-    background-color: #333333; }
-
 .stop.icon {
   margin-left: 2px;
   margin-top: 2px;
@@ -867,50 +852,6 @@
     border-bottom: solid 1px transparent;
     border-left: solid 1px transparent; }
 
-.moon.icon {
-  margin-left: 4px;
-  margin-top: 2px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border-top: solid 1px #333333;
-  border-bottom: solid 1px #333333;
-  border-left: solid 1px #333333;
-  border-right: solid 1px transparent; }
-  .moon.icon:before {
-    left: 7px;
-    top: 1px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border-top: solid 1px transparent;
-    border-bottom: solid 1px #333333;
-    border-left: solid 1px #333333;
-    border-right: solid 1px transparent;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .moon.icon.filled {
-    background-color: #333333; }
-    .moon.icon.filled:before {
-      background-color: white;
-      border-bottom: solid 1px transparent;
-      border-left: solid 1px transparent;
-      left: 9px;
-      top: 2px;
-      width: 8px;
-      height: 8px; }
-
-.sun.icon {
-  margin-left: 6px;
-  margin-top: 6px;
-  width: 6px;
-  height: 6px;
-  border: 1px solid #333333;
-  border-radius: 50%;
-  box-shadow: -8px 0 0 -3px #333333, 8px 0 0 -3px #333333, 0 -8px 0 -3px #333333, 0 8px 0 -3px #333333, -6px -6px 0 -3px #333333, -6px 6px 0 -3px #333333, 6px -6px 0 -3px #333333, 6px 6px 0 -3px #333333; }
-  .sun.icon.filled {
-    background-color: #333333; }
-
 .export.icon {
   margin-left: 4px;
   margin-top: 7px;
@@ -931,10 +872,32 @@
     height: 4px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: 3px;
     top: -5px; }
+
+.export2.icon {
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border: solid 1px #333333;
+  border-top: none;
+  border-radius: 1px; }
+  .export2.icon:before {
+    width: 1px;
+    height: 9px;
+    background-color: #333333;
+    top: -8px;
+    left: 6px; }
+  .export2.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: -8px; }
 
 .download.icon {
   margin-left: 4px;
@@ -956,10 +919,32 @@
     height: 4px;
     border-top: solid 1px #333333;
     border-right: solid 1px #333333;
-    -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     left: 3px;
     top: 1px; }
+
+.download2.icon {
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border: solid 1px #333333;
+  border-top: none;
+  border-radius: 1px; }
+  .download2.icon:before {
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+    top: -9px;
+    left: 6px; }
+  .download2.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    transform: rotate(135deg);
+    left: 4px;
+    top: -4px; }
 
 .upload.icon {
   margin-left: 4px;
@@ -998,7 +983,7 @@
   border-right: solid 1px #333333; }
   .shutdown.icon:before {
     width: 1px;
-    height: 7px;
+    height: 8px;
     border-left: solid 3px white;
     border-right: solid 3px white;
     background-color: #333333;
@@ -1028,6 +1013,30 @@
     border-top: solid 1px #333333;
     border-left: solid 1px #333333;
     left: -2px;
+    top: -2px; }
+
+.shut-right.icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px #333333; }
+  .shut-right.icon:before {
+    width: 1px;
+    height: 8px;
+    border-left: solid 4px white;
+    border-right: solid 4px white;
+    background-color: #333333;
+    right: -3px;
+    top: -2px;
+    transform: rotate(45deg); }
+  .shut-right.icon:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px #333333;
+    border-right: solid 1px #333333;
+    right: -2px;
     top: -2px; }
 
 .chat.icon {
@@ -1176,59 +1185,6 @@
     left: 1px;
     top: 10px; }
 
-.umbrella.icon {
-  margin-left: 3px;
-  margin-top: 2px;
-  width: 13px;
-  height: 6px;
-  border-radius: 8px 8px 0 0;
-  border: solid 1px #333333; }
-  .umbrella.icon:before {
-    width: 4px;
-    height: 2px;
-    border-radius: 0 0 3px 3px;
-    border-right: solid 1px #333333;
-    border-bottom: solid 1px #333333;
-    border-left: solid 1px #333333;
-    left: 6px;
-    top: 12px; }
-  .umbrella.icon:after {
-    width: 1px;
-    height: 5px;
-    background-color: #333333;
-    left: 6px;
-    top: 7px; }
-  .umbrella.icon.filled {
-    background-color: #333333; }
-
-.thermometer.icon {
-  margin-left: 7px;
-  margin-top: 11px;
-  width: 6px;
-  height: 6px;
-  border-radius: 4px;
-  border: solid 1px #333333; }
-  .thermometer.icon:before {
-    width: 2px;
-    height: 10px;
-    border-top: solid 1px #333333;
-    border-left: solid 1px #333333;
-    border-right: solid 1px #333333;
-    border-bottom: solid 1px white;
-    border-radius: 2px 2px 0 0;
-    background-color: white;
-    z-index: 1;
-    left: 1px;
-    top: -11px; }
-  .thermometer.icon.filled:after {
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #333333;
-    left: 1px;
-    top: 1px;
-    z-index: 2; }
-
 .pilcrow.icon {
   margin-left: 4px;
   margin-top: 2px;
@@ -1263,6 +1219,32 @@
     height: 5px;
     border-top: solid 1px #333333;
     border-bottom: solid 1px #333333; }
+
+.paragraph-direction.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+  .paragraph-direction.icon:before {
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    border-radius: 0 2px 2px 0;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+    border-right: solid 1px #333333; }
+  .paragraph-direction.icon:after {
+    top: 3px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-left: solid 2px white;
+    border-right: solid 2px #333333;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white; }
 
 .leftaligned.icon {
   margin-left: 2px;
@@ -1471,29 +1453,6 @@
     .bag.icon.filled3:after {
       background-color: white; }
 
-.anchor.icon {
-  margin-left: 2px;
-  margin-top: 10px;
-  width: 15px;
-  height: 8px;
-  border-left: solid 1px #333333;
-  border-right: solid 1px #333333;
-  border-bottom: solid 1px #333333;
-  border-radius: 0 0 8px 8px; }
-  .anchor.icon:before {
-    width: 1px;
-    height: 10px;
-    background-color: #333333;
-    left: 7px;
-    top: -2px; }
-  .anchor.icon:after {
-    width: 5px;
-    height: 5px;
-    border: solid 1px #333333;
-    border-radius: 50%;
-    left: 4px;
-    top: -8px; }
-
 .browser.icon {
   margin-left: 2px;
   margin-top: 2px;
@@ -1603,12 +1562,13 @@
   border: solid 1px #333333; }
   .tablet.icon:before {
     top: 1px;
-    left: 1px;
-    height: 11px;
-    width: 11px;
-    border: solid 1px #333333; }
+    left: 0;
+    height: 13px;
+    width: 15px;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333; }
   .tablet.icon:after {
-    bottom: 1px;
+    bottom: 0px;
     left: 6px;
     width: 3px;
     height: 1px;
@@ -1692,32 +1652,36 @@
       border-color: white; }
 
 .target.icon {
-  margin-left: 1px;
-  margin-top: 1px;
-  width: 16px;
-  height: 16px;
+  left: 2px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: solid 1px #333333; }
-  .target.icon:before, .target.icon:after {
-    width: 6px;
-    height: 6px;
-    border: 1px solid white;
-    border-radius: 50%;
-    left: 4px;
-    top: 4px;
-    z-index: 1; }
   .target.icon:before {
-    box-shadow: -6px 0 0 -3px #333333, 6px 0 0 -3px #333333, 0 -6px 0 -3px #333333, 0 6px 0 -3px #333333; }
+    width: 11px;
+    height: 1px;
+    border-left: solid 3px #333333;
+    border-right: solid 3px #333333;
+    left: -1px;
+    top: 7px; }
   .target.icon:after {
-    box-shadow: -7px 0 0 -3px #333333, 7px 0 0 -3px #333333, 0 -7px 0 -3px #333333, 0 7px 0 -3px #333333; }
+    width: 1px;
+    height: 11px;
+    border-top: solid 3px #333333;
+    border-bottom: solid 3px #333333;
+    left: 7px;
+    top: -1px; }
   .target.icon.filled {
     background-color: #333333; }
-    .target.icon.filled:before, .target.icon.filled:after {
-      border-color: #333333; }
     .target.icon.filled:before {
-      box-shadow: -8px 0 0 -3px white, 8px 0 0 -3px white, 0 -8px 0 -3px white, 0 8px 0 -3px white; }
+      width: 13px;
+      border-left: solid 2px white;
+      border-right: solid 2px white; }
     .target.icon.filled:after {
-      box-shadow: -7px 0 0 -3px white, 7px 0 0 -3px white, 0 -7px 0 -3px white, 0 7px 0 -3px white; }
+      height: 13px;
+      border-top: solid 2px white;
+      border-bottom: solid 2px white; }
 
 .navigate.icon {
   margin-left: 6px;
@@ -1804,97 +1768,6 @@
       border: none;
       left: 4px;
       top: 4px; }
-
-.cloud.icon {
-  margin-left: 1px;
-  margin-top: 9px;
-  width: 5px;
-  height: 6px;
-  border-left: solid 1px #333333;
-  border-top: solid 1px #333333;
-  border-bottom: solid 1px #333333;
-  border-radius: 4px 0 0 4px; }
-  .cloud.icon:before {
-    width: 12px;
-    height: 12px;
-    border-left: solid 1px transparent;
-    border-right: solid 1px #333333;
-    border-top: solid 1px #333333;
-    border-bottom: solid 1px #333333;
-    border-radius: 50%;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    top: -7px;
-    left: 4px; }
-  .cloud.icon:after {
-    width: 7px;
-    height: 6px;
-    background-color: transparent;
-    border-bottom: solid 1px #333333;
-    top: 0px;
-    left: 4px; }
-  .cloud.icon .upArrow {
-    left: 5px;
-    top: -4px;
-    z-index: 2; }
-  .cloud.icon .downArrow {
-    left: 5px;
-    top: -4px;
-    z-index: 2; }
-  .cloud.icon.filled {
-    background-color: #333333; }
-    .cloud.icon.filled:before, .cloud.icon.filled:after {
-      background-color: #333333; }
-    .cloud.icon.filled .upArrow:before {
-      background-color: white;
-      border: none;
-      left: 5px; }
-    .cloud.icon.filled .upArrow:after {
-      border-color: white; }
-    .cloud.icon.filled .downArrow {
-      top: -5px; }
-      .cloud.icon.filled .downArrow:before {
-        background-color: white;
-        border: none;
-        left: 5px; }
-      .cloud.icon.filled .downArrow:after {
-        border-color: white; }
-
-.upArrow:before {
-  width: 1px;
-  height: 7px;
-  background-color: #333333;
-  border-left: solid 4px white;
-  border-right: solid 4px white;
-  top: 4px;
-  left: 1px; }
-.upArrow:after {
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px #333333;
-  border-right: solid 1px #333333;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  left: 3px;
-  top: 4px; }
-
-.downArrow:before {
-  width: 1px;
-  height: 7px;
-  background-color: #333333;
-  border-left: solid 4px white;
-  border-right: solid 4px white;
-  top: 4px;
-  left: 1px; }
-.downArrow:after {
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px #333333;
-  border-right: solid 1px #333333;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  left: 3px;
-  top: 6px; }
 
 .more.icon {
   margin-left: 9px;
