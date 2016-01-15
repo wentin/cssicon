@@ -3,13 +3,13 @@ $white: #fff;
 $color: #19D599;
 
 body {
-  width: 1210px;
+  width: 1280px;
   margin: 0 auto;
   background-color: #F6F5F3;
 }
 footer {
-  width: 1110px;
-  margin: 50px;
+  width: 10%;
+  margin: 50px auto;
 }
 .logo {
   display: block;
@@ -103,10 +103,10 @@ footer {
   height: 21px;
   border-radius: 2px;
   background-color: $white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 5px;
   border: solid 2px transparent;
-  margin: 0 10px 10px 0;
+  margin: 0 5px 5px 0;
   transition: border-color 0.4s ease-out;
   /* transform: scale(4,4); */
   .icon {
