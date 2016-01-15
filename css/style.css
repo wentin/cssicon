@@ -5122,21 +5122,21 @@ footer {
       .sun-horizon.icon.filled.sun-set i:before {
         border-top-color: white; }
 
-.record.icon {
+.voice-mail.icon {
   margin-left: 5px;
   margin-top: 14px;
   width: 11px;
   height: 1px;
   background-color: #333333; }
-  .record.icon:before, .record.icon:after {
+  .voice-mail.icon:before, .voice-mail.icon:after {
     top: -7px;
     width: 6px;
     height: 6px;
     border: solid 1px #333333;
     border-radius: 50%; }
-  .record.icon:before {
+  .voice-mail.icon:before {
     left: -4px; }
-  .record.icon:after {
+  .voice-mail.icon:after {
     right: -4px; }
 
 .raindrop.icon {
