@@ -1,6 +1,6 @@
 body {
   width: 1210px;
-  margin: 100px auto;
+  margin: 0 auto;
   background-color: #F6F5F3; }
 
 footer {
@@ -11,7 +11,7 @@ footer {
   display: block;
   width: 100%;
   height: 30px;
-  margin: 100px 50px 50px 50px; }
+  margin: 100px 0 50px 0; }
   .logo div {
     position: relative;
     float: left; }
@@ -88,7 +88,9 @@ footer {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
+  border: solid 2px transparent;
   margin: 0 10px 10px 0;
+  transition: border-color 0.4s ease-out;
   /* transform: scale(4,4); */
   /* &:before {
     content: '';
@@ -115,13 +117,10 @@ footer {
             transform: rotate(45deg);
     border-radius: 2px;
     transition: all 0.3s ease;
-  }
-  &:hover {
-    cursor: pointer;
-    &:before {
-      transition: none;
-      border: solid 1px $grey;
-    }
-  } */ }
+  }*/ }
   .iconWrapper .icon {
     z-index: 1; }
+  .iconWrapper:hover {
+    cursor: pointer;
+    border-color: #19d599;
+    transition: none; }
