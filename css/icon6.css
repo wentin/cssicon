@@ -1098,8 +1098,8 @@
     box-shadow: 6px 4px 0 0 #333333; }
 
 .lightning-filled.icon {
-  left: 5px;
-  top: 1px;
+  margin-left: 5px;
+  margin-top: 1px;
   width: 9px;
   height: 3px; }
   .lightning-filled.icon:before {
