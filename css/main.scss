@@ -3,6 +3,7 @@ $white: #fff;
 body {
   width: 1210px;
   margin: 100px auto;
+  background-color: #F6F5F3;
 }
 footer {
   width: 1110px;
@@ -100,12 +101,14 @@ footer {
   height: 21px;
   border-radius: 2px;
   background-color: $white;
-  padding: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
   /* transform: scale(4,4); */
   .icon {
     z-index: 1;
   }
-  &:before {
+  /* &:before {
     content: '';
     display: block;
     position: absolute;
@@ -137,5 +140,5 @@ footer {
       transition: none;
       border: solid 1px $grey;
     }
-  }
+  } */
 }

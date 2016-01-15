@@ -1,6 +1,7 @@
 body {
   width: 1210px;
-  margin: 100px auto; }
+  margin: 100px auto;
+  background-color: #F6F5F3; }
 
 footer {
   width: 1110px;
@@ -85,36 +86,42 @@ footer {
   height: 21px;
   border-radius: 2px;
   background-color: white;
-  padding: 50px;
-  /* transform: scale(4,4); */ }
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
+  /* transform: scale(4,4); */
+  /* &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    border: solid 1px $white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    background-color: $white;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    &:before {
+      transition: none;
+      border: solid 1px $grey;
+    }
+  } */ }
   .iconWrapper .icon {
     z-index: 1; }
-  .iconWrapper:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    width: 109px;
-    height: 109px;
-    border: solid 1px white;
-    border-radius: 2px;
-    transition: all 0.3s ease; }
-  .iconWrapper:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    width: 109px;
-    height: 109px;
-    background-color: white;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border-radius: 2px;
-    transition: all 0.3s ease; }
-  .iconWrapper:hover {
-    cursor: pointer; }
-    .iconWrapper:hover:before {
-      transition: none;
-      border: solid 1px #333333; }
