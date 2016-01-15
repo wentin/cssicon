@@ -5,6 +5,14 @@ body {
 	margin: 0;
 	font-family: $futura;
 }
+.viewer, .selected { 
+  .search.icon {
+    border: solid 1px $white;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
 .wrapper {
 	width: 1280px;
 	min-height: 100%;
@@ -29,9 +37,39 @@ body {
 	right: 0;
 	top: 0;
 	height: 100%;
-	// width: 432px;
-	width: 512px;
+  width: calc(50% - 640px + 480px);
 	background-color: $grey;
+  .sidebarWrapper {
+    width: 480px;
+    .viewer{
+      transform: scale(4,4);
+      width: 21px;
+      height: 21px;
+      margin: 40px auto;
+
+    }
+    .selected {
+      margin: 20px 0 0 20px;
+      width: 21px;
+      height: 21px;
+      padding: 9px;
+      border: solid 1px $white;
+      border-radius: 2px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        top: -1px;
+        left: -1px;
+        background-color: $grey;
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+      }
+    }
+  }
 }
 header {
   padding: 40px 0 0 0;
