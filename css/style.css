@@ -4,6 +4,7 @@ body {
   background-color: #F6F5F3; }
 
 footer {
+  float: left;
   width: 100%;
   margin: 50px auto; }
 
