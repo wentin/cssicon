@@ -1,10 +1,7 @@
 [
   {
     "id": 0,
-    "htmlMarkup": [
-      "search",
-      "icon"
-    ],
+    "classNames": "search",
     "htmlChildMarkup": false,
     "cssBlocks": {
       "cssBlock1": ".search.icon {\n  width: 12px;\n  height: 12px;\n  border: solid 1px #333333;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
