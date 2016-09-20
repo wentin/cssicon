@@ -39,11 +39,20 @@ $highlightColor: #3CD5FF;
   .icon i {   
     color: black;
   }
-  .icon i:before{
+  .icon i:before {
     color: black;
   }
-  .icon i:after{
+  .icon i:after {
     color: black;
+  }
+  .icon.filled {
+    color: white;
+  }
+  .icon.filled i:before {
+    color: white;
+  }
+  .icon.filled i:after {
+    color: white;
   }
 }
 .viewer.cssIconBeforeHover .iconViewer {
@@ -63,11 +72,17 @@ $highlightColor: #3CD5FF;
     color: $highlightColor !important;
     z-index: 9;
   }
-  .icon i:before{
+  .icon i:before {
     color: black;
   }
-  .icon i:after{
+  .icon i:after {
     color: black;
+  }
+  .icon.filled i:before {
+    color: white;
+  }
+  .icon.filled i:after {
+    color: white;
   }
 }
 .viewer.cssChildBeforeHover .iconViewer {

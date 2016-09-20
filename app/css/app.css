@@ -528,6 +528,15 @@ button {
 .viewer.cssIconHover .iconViewer .icon i:after {
   color: black;
 }
+.viewer.cssIconHover .iconViewer .icon.filled {
+  color: white;
+}
+.viewer.cssIconHover .iconViewer .icon.filled i:before {
+  color: white;
+}
+.viewer.cssIconHover .iconViewer .icon.filled i:after {
+  color: white;
+}
 
 .viewer.cssIconBeforeHover .iconViewer .icon:before {
   color: #3CD5FF !important;
@@ -548,6 +557,12 @@ button {
 }
 .viewer.cssChildHover .iconViewer .icon i:after {
   color: black;
+}
+.viewer.cssChildHover .iconViewer .icon.filled i:before {
+  color: white;
+}
+.viewer.cssChildHover .iconViewer .icon.filled i:after {
+  color: white;
 }
 
 .viewer.cssChildBeforeHover .iconViewer .icon i:before {

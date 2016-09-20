@@ -1,4 +1,5 @@
 $white: #fff;
+@import 'icons-done';
 
 body {
   color: currentColor;
@@ -30,7 +31,6 @@ body {
   }
 }
 
-@import 'icons-done';
 
 .bell.icon {
   margin-left: 5px;
