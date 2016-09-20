@@ -1,37 +1,762 @@
 [
   {
     "id": 0,
-    "classNames": "search",
     "name": "search",
+    "classNames": "search",
+    "style": "line",
     "htmlChildMarkup": false,
     "cssBlocks": {
-      "cssBlock1": ".search.icon {\n  width: 12px;\n  height: 12px;\n  border: solid 1px #333333;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssBlock2": ".search.icon:before {\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: #333333;\n}",
-      "cssBlock3": ""
+      "cssIcon": ".search.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".search.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
     },
-    "cssHidden": ".iconWrapper .search.icon {\n  top: 2px;\n  left: 3px;\n}\n",
-    "keyword": [
+    "cssHidden": "",
+    "tag": [
       "search",
       "looking glass"
     ]
   },
   {
     "id": 1,
-    "classNames": "search plusI",
+    "name": "search",
+    "classNames": "search filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".search.filled.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".search.filled.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": ".search.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  background-color: black;\n  border-radius: 50%;\n  left: 1px;\n  top: 1px;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "search",
+      "looking glass",
+      "solid"
+    ]
+  },
+  {
+    "id": 2,
     "name": "magnify",
+    "classNames": "search-plusI",
+    "style": "line",
     "htmlChildMarkup": true,
     "cssBlocks": {
-      "cssIcon": ".search.icon {\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px currentColor;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search.icon:before {\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: currentColor;\n}",
+      "cssIcon": ".search-plusI.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".search-plusI.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
       "cssIconAfter": "",
-      "cssChild": ".search.icon.plusI i {\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssChildBefore": ".search.icon.plusI i:before {\n  width: 6px;\n  height: 1px;\n  background-color: currentColor;\n}",
-      "cssChildAfter": ".search.icon.plusI i:after {\n  width: 6px;\n  height: 1px;\n  background-color: currentColor;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}"
+      "cssChild": ".search-plusI.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssChildBefore": ".search-plusI.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssChildAfter": ".search-plusI.icon i:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}"
     },
-    "cssHidden": ".iconWrapper .search.icon {\n  top: 2px;\n  left: 3px;\n}\n",
-    "keyword": [
+    "cssHidden": "",
+    "tag": [
       "search",
-      "looking glass"
+      "looking glass",
+      "magnify",
+      "plus"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "magnify",
+    "classNames": "search-plusI filled",
+    "style": "solid",
+    "htmlChildMarkup": true,
+    "cssBlocks": {
+      "cssIcon": ".search-plusI.filled.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".search-plusI.filled.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": "",
+      "cssChild": ".search-plusI.filled.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssChildBefore": ".search-plusI.filled.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: white;\n}",
+      "cssChildAfter": ".search-plusI.filled.icon i:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: white;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}"
+    },
+    "cssHidden": "",
+    "tag": [
+      "search",
+      "looking glass",
+      "magnify",
+      "plus",
+      "solid"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "minify",
+    "classNames": "search-minusI",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssBlocks": {
+      "cssIcon": ".search-minusI.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".search-minusI.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": "",
+      "cssChild": ".search-minusI.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssChildBefore": ".search-minusI.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "search",
+      "looking glass",
+      "minify",
+      "minus"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "minify",
+    "classNames": "search-minusI filled",
+    "style": "solid",
+    "htmlChildMarkup": true,
+    "cssBlocks": {
+      "cssIcon": ".search-minusI.filled.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".search-minusI.filled.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": "",
+      "cssChild": ".search-minusI.filled.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssChildBefore": ".search-minusI.filled.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: white;\n}",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "search",
+      "looking glass",
+      "minify",
+      "minus",
+      "solid"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "close",
+    "classNames": "close",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".close.icon {\n  position: absolute;\n  margin-top: 0;\n  margin-left: 0;\n  width: 21px;\n  height: 21px;\n}",
+      "cssIconBefore": ".close.icon:before {\n  content: '';\n  position: absolute;\n  width: 21px;\n  height: 1px;\n  background-color: black;\n  top: 10px;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconAfter": ".close.icon:after {\n  content: '';\n  position: absolute;\n  width: 21px;\n  height: 1px;\n  background-color: black;\n  top: 10px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "close",
+      "x"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "menu",
+    "classNames": "hamburger",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".hamburger.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 10px;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssIconBefore": ".hamburger.icon:before {\n  content: '';\n  position: absolute;\n  top: -5px;\n  left: 0;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": ".hamburger.icon:after {\n  content: '';\n  position: absolute;\n  top: 5px;\n  left: 0;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "hamburger",
+      "menu"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "arrow left",
+    "classNames": "arrowLeft",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".arrowLeft.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 16px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssIconBefore": ".arrowLeft.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-135deg);\n  transform: rotate(-135deg);\n  left: 1px;\n  top: -5px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "arrow left",
+      "arrow"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "arrow right",
+    "classNames": "arrowRight",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".arrowRight.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 10px;\n  width: 16px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssIconBefore": ".arrowRight.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  right: 1px;\n  top: -5px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "arrow right",
+      "arrow"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "arrow up",
+    "classNames": "arrowUp",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".arrowUp.icon {\n  position: absolute;\n  margin-left: 10px;\n  margin-top: 3px;\n  width: 1px;\n  height: 16px;\n  background-color: black;\n}",
+      "cssIconBefore": ".arrowUp.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  left: -5px;\n  top: 1px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "arrow up",
+      "arrow"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "arrow down",
+    "classNames": "arrowDown",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".arrowDown.icon {\n  position: absolute;\n  margin-left: 10px;\n  margin-top: 2px;\n  width: 1px;\n  height: 16px;\n  background-color: black;\n}",
+      "cssIconBefore": ".arrowDown.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(135deg);\n  transform: rotate(135deg);\n  left: -5px;\n  top: 3px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "arrow down",
+      "arrow"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "plus",
+    "classNames": "plus",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".plus.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n}",
+      "cssIconBefore": ".plus.icon:before {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssIconAfter": ".plus.icon:after {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "plus",
+      "math"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "minus",
+    "classNames": "minus",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".minus.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n}",
+      "cssIconBefore": "",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "minus",
+      "math"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "check",
+    "classNames": "check",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".check.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 4px;\n  width: 14px;\n  height: 8px;\n  border-bottom: solid 1px black;\n  border-left: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": "",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "check",
+      "math"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "remove",
+    "classNames": "remove",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".remove.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n}",
+      "cssIconBefore": ".remove.icon:before {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssIconAfter": ".remove.icon:after {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "remove",
+      "math"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "trash",
+    "classNames": "trash",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".trash.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 7px;\n  width: 9px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 2px 2px;\n}",
+      "cssIconBefore": ".trash.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n  left: -4px;\n  top: -2px;\n}",
+      "cssIconAfter": ".trash.icon:after {\n  content: '';\n  position: absolute;\n  width: 7px;\n  height: 2px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  left: 0px;\n  top: -5px;\n  border-radius: 4px 4px 0 0;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "trash",
+      "delete"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "trash",
+    "classNames": "trash filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".trash.filled.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 7px;\n  width: 9px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 2px 2px;\n  background-color: black;\n}",
+      "cssIconBefore": ".trash.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n  left: -4px;\n  top: -2px;\n}",
+      "cssIconAfter": ".trash.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 7px;\n  height: 2px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  background-color: black;\n  left: 0px;\n  top: -5px;\n  border-radius: 4px 4px 0 0;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "trash",
+      "delete"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "audio",
+    "classNames": "audio",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".audio.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 8px;\n  width: 9px;\n  height: 7px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 50% 50%;\n}",
+      "cssIconBefore": ".audio.icon:before {\n  content: '';\n  position: absolute;\n  left: 1px;\n  top: -6px;\n  width: 5px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 4px;\n}",
+      "cssIconAfter": ".audio.icon:after {\n  content: '';\n  position: absolute;\n  left: 4px;\n  bottom: -4px;\n  width: 1px;\n  height: 4px;\n  background-color: black;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "audio",
+      "micophone",
+      "record"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "audio",
+    "classNames": "audio filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".audio.filled.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 8px;\n  width: 9px;\n  height: 7px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 50% 50%;\n}",
+      "cssIconBefore": ".audio.filled.icon:before {\n  content: '';\n  position: absolute;\n  left: 1px;\n  top: -6px;\n  width: 5px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 4px;\n  background-color: black;\n}",
+      "cssIconAfter": ".audio.filled.icon:after {\n  content: '';\n  position: absolute;\n  left: 4px;\n  bottom: -4px;\n  width: 1px;\n  height: 4px;\n  background-color: black;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "audio",
+      "micophone",
+      "record",
+      "solid"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "pin",
+    "classNames": "pin",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".pin.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 2px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 7px 7px 7px 0;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".pin.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border: solid 1px black;\n  border-radius: 3px;\n  left: 3px;\n  top: 3px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "pin",
+      "map",
+      "location"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "pin",
+    "classNames": "pin filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".pin.filled.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 2px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 7px 7px 7px 0;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
+      "cssIconBefore": ".pin.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border: solid 1px black;\n  border-radius: 3px;\n  left: 3px;\n  top: 3px;\n  background-color: white;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "pin",
+      "map",
+      "location",
+      "solid"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "chat",
+    "classNames": "chat",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".chat.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 2px;\n}",
+      "cssIconBefore": ".chat.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  background-color: #fff;\n  border-bottom: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: 8px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "chat",
+      "bubble"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "chat",
+    "classNames": "chat filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".chat.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 2px;\n}",
+      "cssIconBefore": ".chat.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  background-color: black;\n  border-bottom: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: 8px;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "chat",
+      "bubble",
+      "solid"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "stop",
+    "classNames": "stop",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".stop.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".stop.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n  top: 7px;\n  left: -1px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "stop",
+      "banned"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "stop",
+    "classNames": "stop filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".stop.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".stop.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: white;\n  top: 7px;\n  left: -1px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "stop",
+      "banned",
+      "solid"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "clock",
+    "classNames": "clock",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "three o'clock",
+      "three"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "clock",
+    "classNames": "clock filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "nine o'clock",
+      "nine",
+      "solid"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "clock",
+    "classNames": "clock h3m30",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.h3m30.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.h3m30.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.h3m30.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "three o'clock thirty minutes",
+      "three thirty",
+      "three",
+      "thirty"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "clock",
+    "classNames": "clock h3m30 filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.h3m30.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.h3m30.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.h3m30.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "three o'clock thirty minutes",
+      "three thirty",
+      "three",
+      "thirty",
+      "solid"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "clock",
+    "classNames": "clock h9m0",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.h9m0.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.h9m0.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.h9m0.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "nine o'clock",
+      "nine"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "clock",
+    "classNames": "clock h9m0 filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.h9m0.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.h9m0.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.h9m0.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "nine o'clock",
+      "nine",
+      "solid"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "clock",
+    "classNames": "clock h9m30",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.h9m30.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.h9m30.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.h9m30.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "nine o'clock thirty minutes",
+      "nine",
+      "thirty"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "clock",
+    "classNames": "clock h9m30 filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".clock.h9m30.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
+      "cssIconBefore": ".clock.h9m30.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssIconAfter": ".clock.h9m30.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "clock",
+      "nine o'clock thirty minutes",
+      "nine",
+      "thirty",
+      "solid"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "profile",
+    "classNames": "profile",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".profile.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 11px;\n  width: 14px;\n  height: 6px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  border-bottom: solid 1px transparent;\n  border-radius: 6px 6px 0 0;\n}",
+      "cssIconBefore": ".profile.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  border: solid 1px black;\n  position: absolute;\n  left: 2px;\n  top: -10px;\n  background-color: #fff;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "profile",
+      "people",
+      "head"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "profile",
+    "classNames": "profile filled",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssBlocks": {
+      "cssIcon": ".profile.filled.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 11px;\n  width: 14px;\n  height: 6px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  border-bottom: solid 1px transparent;\n  background-color: black;\n  border-radius: 6px 6px 0 0;\n}",
+      "cssIconBefore": ".profile.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  border: solid 1px black;\n  position: absolute;\n  left: 2px;\n  top: -10px;\n  background-color: black;\n}",
+      "cssIconAfter": "",
+      "cssChild": "",
+      "cssChildBefore": "",
+      "cssChildAfter": ""
+    },
+    "cssHidden": "",
+    "tag": [
+      "profile",
+      "people",
+      "head",
+      "solid"
     ]
   }
 ]

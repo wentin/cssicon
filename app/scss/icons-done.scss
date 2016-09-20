@@ -1,4 +1,5 @@
 .search.icon {
+  position: absolute;
   margin-top: 2px;
   margin-left: 3px;
   width: 12px; 
@@ -8,6 +9,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: 12px;
     left: 5px;
     height: 6px;
@@ -17,6 +21,7 @@
 }
 
 .search.filled.icon {
+  position: absolute;
   margin-top: 2px;
   margin-left: 3px;
   width: 12px; 
@@ -26,6 +31,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: 12px;
     left: 5px;
     height: 6px;
@@ -33,6 +41,9 @@
     background-color: currentColor;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 10px;
     height: 10px;
     background-color: currentColor;
@@ -43,6 +54,7 @@
 }
 
 .search-plusI.icon {
+  position: absolute;
   margin-top: 2px;
   margin-left: 3px;
   width: 12px; 
@@ -52,6 +64,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: 12px;
     left: 5px;
     height: 6px;
@@ -64,11 +79,17 @@
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     &:before {
+      content: '';
+      position: absolute;
+      display: block;
       width: 6px;
       height: 1px;
       background-color: currentColor;
     }
     &:after {
+      content: '';
+      position: absolute;
+      display: block;
       width: 6px;
       height: 1px;
       background-color: currentColor;
@@ -79,6 +100,7 @@
 }
 
 .search-plusI.filled.icon {
+  position: absolute;
   margin-top: 2px;
   margin-left: 3px;
   width: 12px; 
@@ -89,6 +111,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: 12px;
     left: 5px;
     height: 6px;
@@ -101,12 +126,18 @@
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     &:before {
+      content: '';
+      position: absolute;
+      display: block;
       width: 6px;
       height: 1px;
       color: white;
       background-color: currentColor;
     }
     &:after {
+      content: '';
+      position: absolute;
+      display: block;
       width: 6px;
       height: 1px;
       color: white;
@@ -118,6 +149,7 @@
 }
 
 .search-minusI.icon {
+  position: absolute;
   margin-top: 2px;
   margin-left: 3px;
   width: 12px; 
@@ -127,6 +159,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: 12px;
     left: 5px;
     height: 6px;
@@ -139,6 +174,9 @@
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     &:before {
+      content: '';
+      position: absolute;
+      display: block;
       width: 6px;
       height: 1px;
       background-color: currentColor;
@@ -147,6 +185,7 @@
 }
 
 .search-minusI.filled.icon {
+  position: absolute;
   margin-top: 2px;
   margin-left: 3px;
   width: 12px; 
@@ -157,6 +196,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: 12px;
     left: 5px;
     height: 6px;
@@ -169,6 +211,9 @@
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     &:before {
+      content: '';
+      position: absolute;
+      display: block;
       width: 6px;
       height: 1px;
       color: white;
@@ -178,11 +223,15 @@
 }
 
 .close.icon {
+  position: absolute;
   margin-top: 0;
   margin-left: 0;
   width: 21px;
   height: 21px; 
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 21px; 
     height: 1px;
     background-color: currentColor;
@@ -191,6 +240,9 @@
             transform: rotate(-45deg);
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 21px; 
     height: 1px;
     background-color: currentColor;
@@ -200,12 +252,16 @@
   }
 }
 .hamburger.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 10px;
   width: 17px;
   height: 1px;
   background-color: currentColor;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     top: -5px;
     left: 0;
     width: 17px;
@@ -213,6 +269,9 @@
     background-color: currentColor;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     top: 5px;
     left: 0;
     width: 17px;
@@ -221,12 +280,16 @@
   }
 }
 .arrowRight.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: currentColor;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 10px;
     height: 10px;
     border-top: solid 1px currentColor;
@@ -238,12 +301,16 @@
   }
 }
 .arrowLeft.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 10px;
   width: 16px;
   height: 1px;
   background-color: currentColor;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 10px;
     height: 10px;
     border-top: solid 1px currentColor;
@@ -255,12 +322,16 @@
   }
 }
 .arrowUp.icon {
+  position: absolute;
   margin-left: 10px;
   margin-top: 3px;
   width: 1px;
   height: 16px;
   background-color: currentColor;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 10px;
     height: 10px;
     border-top: solid 1px currentColor;
@@ -272,12 +343,16 @@
   }
 }
 .arrowDown.icon {
+  position: absolute;
   margin-left: 10px;
   margin-top: 2px;
   width: 1px;
   height: 16px;
   background-color: currentColor;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 10px;
     height: 10px;
     border-top: solid 1px currentColor;
@@ -290,14 +365,21 @@
 }
 
 .plus.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 10px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 15px;
     height: 1px;
     background-color: currentColor;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 15px;
     height: 1px;
     background-color: currentColor;
@@ -306,6 +388,7 @@
   }
 }
 .minus.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 10px;
   width: 15px;
@@ -313,6 +396,7 @@
   background-color: currentColor;
 }
 .check.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 4px;
   width: 14px;
@@ -323,9 +407,13 @@
           transform: rotate(-45deg);
 }
 .remove.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 10px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 15px;
     height: 1px;
     background-color: currentColor;
@@ -333,6 +421,9 @@
             transform: rotate(45deg);
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 15px;
     height: 1px;
     background-color: currentColor;
@@ -341,6 +432,7 @@
   }
 }
 .trash.icon {
+  position: absolute;
   margin-left: 5px;
   margin-top: 7px;
   width: 9px;
@@ -350,6 +442,9 @@
   border-bottom: solid 1px currentColor;
   border-radius: 0 0 2px 2px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 17px;
     height: 1px;
     background-color: currentColor;
@@ -357,6 +452,9 @@
     top: -2px;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 7px;
     height: 2px;
     border-left: solid 1px currentColor;
@@ -366,15 +464,10 @@
     top: -5px;
     border-radius: 4px 4px 0 0;
   }
-  &.filled {
-    background-color: currentColor;
-    &:after {
-      background-color: currentColor;
-    }
-  }
 }
 
 .trash.filled.icon {
+  position: absolute;
   margin-left: 5px;
   margin-top: 7px;
   width: 9px;
@@ -385,6 +478,9 @@
   border-radius: 0 0 2px 2px;
   background-color: currentColor;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 17px;
     height: 1px;
     background-color: currentColor;
@@ -392,6 +488,9 @@
     top: -2px;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 7px;
     height: 2px;
     border-left: solid 1px currentColor;
@@ -404,6 +503,7 @@
   }
 }
 .audio.icon {
+  position: absolute;
   margin-left: 5px;
   margin-top: 8px;
   width: 9px;
@@ -413,6 +513,9 @@
   border-bottom: solid 1px currentColor;
   border-radius: 0 0 50% 50%;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     left: 1px;
     top: -6px;
     width: 5px;
@@ -421,6 +524,9 @@
     border-radius: 4px;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     left: 4px;
     bottom: -4px;
     width: 1px;
@@ -430,6 +536,7 @@
 }
 
 .audio.filled.icon {
+  position: absolute;
   margin-left: 5px;
   margin-top: 8px;
   width: 9px;
@@ -439,6 +546,9 @@
   border-bottom: solid 1px currentColor;
   border-radius: 0 0 50% 50%;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     left: 1px;
     top: -6px;
     width: 5px;
@@ -448,6 +558,9 @@
     background-color: currentColor;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     left: 4px;
     bottom: -4px;
     width: 1px;
@@ -456,6 +569,7 @@
   }
 }
 .pin.icon {
+  position: absolute;
   margin-left: 4px;
   margin-top: 2px;
   width: 12px;
@@ -465,6 +579,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 4px;
     height: 4px;
     border: solid 1px currentColor;
@@ -474,6 +591,7 @@
   }
 }
 .pin.filled.icon {
+  position: absolute;
   margin-left: 4px;
   margin-top: 2px;
   width: 12px;
@@ -484,6 +602,9 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 4px;
     height: 4px;
     color: white;
@@ -496,6 +617,7 @@
 }
 
 .chat.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 4px;
   width: 15px;
@@ -503,6 +625,9 @@
   border: solid 1px currentColor;
   border-radius: 2px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 4px;
     height: 4px;
     -webkit-transform: rotate(45deg);
@@ -516,6 +641,7 @@
 }
 
 .chat.filled.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 4px;
   width: 15px;
@@ -524,6 +650,9 @@
     background-color: currentColor;
   border-radius: 2px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 4px;
     height: 4px;
     -webkit-transform: rotate(45deg);
@@ -536,6 +665,7 @@
   }
 }
 .stop.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -544,6 +674,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 17px;
     height: 1px;
     background-color: currentColor;
@@ -554,6 +687,7 @@
   }
 }
 .stop.filled.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -563,6 +697,9 @@
   background-color: currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 17px;
     height: 1px;
     color: white;
@@ -574,6 +711,7 @@
   }
 }
 .clock.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -583,6 +721,9 @@
   border-radius: 8px;
   
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -592,6 +733,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 2px;
@@ -602,6 +746,7 @@
   }
 }
 .clock.filled.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -611,6 +756,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -621,6 +769,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 2px;
@@ -632,6 +783,7 @@
   }
 }
 .clock.h3m30.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -640,6 +792,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -649,6 +804,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 7px;
@@ -659,6 +817,7 @@
   }
 }
 .clock.h3m30.filled.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -668,6 +827,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -678,6 +840,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 7px;
@@ -689,6 +854,7 @@
   }
 }
 .clock.h9m0.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -697,6 +863,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -706,6 +875,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 2px;
@@ -716,6 +888,7 @@
   }
 }
 .clock.h9m0.filled.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -725,6 +898,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -735,6 +911,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 2px;
@@ -747,6 +926,7 @@
 }
 
 .clock.h9m30.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -755,6 +935,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -764,6 +947,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 7px;
@@ -774,6 +960,7 @@
   }
 }
 .clock.h9m30.filled.icon {
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -783,6 +970,9 @@
   border: solid 1px currentColor;
   border-radius: 8px;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 5px;
     height: 1px;
     top: 7px;
@@ -793,6 +983,9 @@
             transform-origin: 0% 0%;
   }
   &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 1px;
     height: 6px;
     top: 7px;
@@ -804,6 +997,7 @@
   }
 }
 .profile.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 11px;
   width: 14px;
@@ -814,6 +1008,9 @@
   border-bottom: solid 1px transparent;
   border-radius: 6px 6px 0 0;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -826,6 +1023,7 @@
 }
 
 .profile.filled.icon {
+  position: absolute;
   margin-left: 3px;
   margin-top: 11px;
   width: 14px;
@@ -837,6 +1035,9 @@
   background-color: currentColor;
   border-radius: 6px 6px 0 0;
   &:before {
+    content: '';
+    position: absolute;
+    display: block;
     width: 8px;
     height: 8px;
     border-radius: 50%;

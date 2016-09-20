@@ -37,10 +37,10 @@ app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http,
       if (icon.cssBlocks.cssChildAfter) {
         CSS += icon.cssBlocks.cssChildAfter + '\n';
       }
-      CSS += ".icon {\n  position: absolute;\n}\n.icon:before, .icon:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n" ;
-      if (icon.htmlChildMarkup) {
-        CSS += ".icon i {\n  position: absolute;\n}\n.icon i:before, .icon i:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n";
-      } 
+      // CSS += ".icon {\n  position: absolute;\n}\n.icon:before, .icon:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n" ;
+      // if (icon.htmlChildMarkup) {
+      //   CSS += ".icon i {\n  position: absolute;\n}\n.icon i:before, .icon i:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n";
+      // } 
       return CSS;
     }
     
