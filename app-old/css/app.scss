@@ -1,0 +1,319 @@
+$grey: #000;
+$white: #fff;
+$futura: "futura-pt",sans-serif;
+body {
+	margin: 0;
+	font-family: $futura;
+}
+.viewer, .selected { 
+  .search.icon {
+    border: solid 1px $white;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.wrapper {
+	width: 1280px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	&.sidebarOpen {
+		.sidebar {
+			display: block;
+		}
+		header {
+			width: 750px;
+		}
+		main {
+			width: 850px;
+		}
+	}
+}
+.sidebar {
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+  width: calc(50% - 640px + 480px);
+	background-color: $grey;
+  .sidebarWrapper {
+    width: 480px;
+    .viewer{
+      transform: scale(4,4);
+      width: 21px;
+      height: 21px;
+      margin: 40px auto;
+
+    }
+    .selected {
+      margin: 20px 0 0 20px;
+      width: 21px;
+      height: 21px;
+      padding: 9px;
+      border: solid 1px $white;
+      border-radius: 2px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        top: -1px;
+        left: -1px;
+        background-color: $grey;
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+}
+header {
+  padding: 40px 0 0 0;
+}
+.logo {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 0 0 40px 0;
+  div {
+    position: relative;
+    float: left;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+  }
+  .c {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-top: solid 4px $grey;
+    border-right: solid 4px transparent;
+    border-bottom: solid 4px $grey;
+    border-left: solid 4px $grey;
+  }
+  .s {
+    width: 18px;
+    height: 30px;
+    margin-right: 6px;
+    &:before ,
+    &:after {
+      border-radius: 50%;
+      border-top: solid 4px $grey;
+      border-right: solid 4px transparent;
+      border-bottom: solid 4px $grey;
+      border-left: solid 4px $grey;
+    }
+    &:before {
+      margin-left: 1px;
+      top: 0;
+      width: 8px;
+      height: 8px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    &:after {
+      margin-left: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      -webkit-transform: rotate(225deg);
+              transform: rotate(225deg);
+    }
+  }
+  .i {
+    margin-left: 18px;
+    margin-right: 6px;
+    height: 30px;
+    width: 4px;
+    background-color: $grey;
+  }
+  .o {
+    margin-right: 6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: solid 4px $grey;
+  }
+  .n {
+    width: 15px;
+    height: 30px;
+    border-left: solid 4px $grey;
+    border-right: solid 4px $grey;
+    &:before {
+      left: -4px;
+      width: 4px;
+      height: 30px;
+      background-color: $grey;
+      -webkit-transform: skewX(32.5deg);
+              transform: skewX(32.5deg);
+      -webkit-transform-origin: left top;
+              transform-origin: left top;
+    }
+  }
+}
+.tabButton {
+	font-family: $futura;
+	font-size: 16px;
+	letter-spacing: -0.2px;
+	line-height: 18px;
+	color: $grey;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 10px;
+	border-radius: 2px;
+	margin-right: 10px;
+	cursor: pointer;
+	.cssicon {
+		display: inline-block;
+	}
+	&.active,
+	&:hover {
+		background-color: $grey;
+		color: $white;
+		div.cssicon.inspect {
+			border-color: $white;
+			&:before, 
+			&:after {
+				background-color: $white;
+			}
+			i {
+				background: $grey;
+			}
+		}
+		div.cssicon.multiSelect {
+			border-color: $white;
+			&:before, 
+			&:after {
+				border-color: $white;
+			}
+		}
+	}
+}
+div.cssicon.inspect {
+	width: 19px;
+	height: 19px;
+	border: solid 1px $grey;
+	border-radius: 50%;
+	position: relative;
+    margin-bottom: -5px;
+	margin-right: 6px;
+	i {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		background-color: $white;
+		z-index: 2;
+	}
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+	}
+	&:before {
+		width: 1px;
+		height: 25px;
+		background-color: $grey;
+		top: -3px;
+		left: 9px;
+	}
+	&:after {
+		height: 1px;
+		width: 25px;
+		background-color: $grey;
+		left: -3px;
+		top: 9px;
+	}
+}
+div.cssicon.multiSelect {
+	width: 9px;
+	height: 9px;
+	border-radius: 2px;
+	border: solid 1px $grey;
+	position: relative;
+    margin-bottom: 6px;
+    margin-right: 19px;
+	&:before, 
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 9px;
+		height: 9px;
+		border-radius: 2px;
+		border: solid 1px $grey;
+	}
+	&:before {
+		left: 11px;
+		top: -1px;
+	}
+	&:after {
+		left: -1px;
+		top: 12px;
+	}
+}
+
+main {
+	float: left;
+	margin-left: -50px;
+    margin-right: -50px;
+	margin-top: 20px;
+}
+.iconWrapper {
+  position: relative; 
+  overflow: hidden;
+  float: left;
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  background-color: $white;
+  padding: 50px;
+  /* transform: scale(4,4); */
+  .icon {
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    border: solid 1px $white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 109px;
+    height: 109px;
+    background-color: $white;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    &:before {
+      transition: none;
+      border: solid 1px $grey;
+    }
+  }
+}

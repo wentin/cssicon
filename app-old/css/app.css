@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  font-family: "futura-pt", sans-serif;
+}
+
+.viewer .search.icon, .selected .search.icon {
+  border: solid 1px #fff;
+}
+.viewer .search.icon:before, .selected .search.icon:before {
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 1280px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.wrapper.sidebarOpen .sidebar {
+  display: block;
+}
+.wrapper.sidebarOpen header {
+  width: 750px;
+}
+.wrapper.sidebarOpen main {
+  width: 850px;
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: calc(50% - 640px + 480px);
+  background-color: #000;
+}
+.sidebar .sidebarWrapper {
+  width: 480px;
+}
+.sidebar .sidebarWrapper .viewer {
+  -webkit-transform: scale(4, 4);
+          transform: scale(4, 4);
+  width: 21px;
+  height: 21px;
+  margin: 40px auto;
+}
+.sidebar .sidebarWrapper .selected {
+  margin: 20px 0 0 20px;
+  width: 21px;
+  height: 21px;
+  padding: 9px;
+  border: solid 1px #fff;
+  border-radius: 2px;
+  position: relative;
+}
+.sidebar .sidebarWrapper .selected:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: -1px;
+  left: -1px;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+header {
+  padding: 40px 0 0 0;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 0 0 40px 0;
+}
+.logo div {
+  position: relative;
+  float: left;
+}
+.logo div:before, .logo div:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+.logo .c {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-top: solid 4px #000;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px #000;
+  border-left: solid 4px #000;
+}
+.logo .s {
+  width: 18px;
+  height: 30px;
+  margin-right: 6px;
+}
+.logo .s:before, .logo .s:after {
+  border-radius: 50%;
+  border-top: solid 4px #000;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px #000;
+  border-left: solid 4px #000;
+}
+.logo .s:before {
+  margin-left: 1px;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.logo .s:after {
+  margin-left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.logo .i {
+  margin-left: 18px;
+  margin-right: 6px;
+  height: 30px;
+  width: 4px;
+  background-color: #000;
+}
+.logo .o {
+  margin-right: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: solid 4px #000;
+}
+.logo .n {
+  width: 15px;
+  height: 30px;
+  border-left: solid 4px #000;
+  border-right: solid 4px #000;
+}
+.logo .n:before {
+  left: -4px;
+  width: 4px;
+  height: 30px;
+  background-color: #000;
+  -webkit-transform: skewX(32.5deg);
+  transform: skewX(32.5deg);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.tabButton {
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+  color: #000;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.tabButton .cssicon {
+  display: inline-block;
+}
+.tabButton.active, .tabButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+.tabButton.active div.cssicon.inspect, .tabButton:hover div.cssicon.inspect {
+  border-color: #fff;
+}
+.tabButton.active div.cssicon.inspect:before, .tabButton.active div.cssicon.inspect:after, .tabButton:hover div.cssicon.inspect:before, .tabButton:hover div.cssicon.inspect:after {
+  background-color: #fff;
+}
+.tabButton.active div.cssicon.inspect i, .tabButton:hover div.cssicon.inspect i {
+  background: #000;
+}
+.tabButton.active div.cssicon.multiSelect, .tabButton:hover div.cssicon.multiSelect {
+  border-color: #fff;
+}
+.tabButton.active div.cssicon.multiSelect:before, .tabButton.active div.cssicon.multiSelect:after, .tabButton:hover div.cssicon.multiSelect:before, .tabButton:hover div.cssicon.multiSelect:after {
+  border-color: #fff;
+}
+
+div.cssicon.inspect {
+  width: 19px;
+  height: 19px;
+  border: solid 1px #000;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: -5px;
+  margin-right: 6px;
+}
+div.cssicon.inspect i {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  z-index: 2;
+}
+div.cssicon.inspect:before, div.cssicon.inspect:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+div.cssicon.inspect:before {
+  width: 1px;
+  height: 25px;
+  background-color: #000;
+  top: -3px;
+  left: 9px;
+}
+div.cssicon.inspect:after {
+  height: 1px;
+  width: 25px;
+  background-color: #000;
+  left: -3px;
+  top: 9px;
+}
+
+div.cssicon.multiSelect {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  border: solid 1px #000;
+  position: relative;
+  margin-bottom: 6px;
+  margin-right: 19px;
+}
+div.cssicon.multiSelect:before, div.cssicon.multiSelect:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  border: solid 1px #000;
+}
+div.cssicon.multiSelect:before {
+  left: 11px;
+  top: -1px;
+}
+div.cssicon.multiSelect:after {
+  left: -1px;
+  top: 12px;
+}
+
+main {
+  float: left;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: 20px;
+}
+
+.iconWrapper {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 50px;
+  /* transform: scale(4,4); */
+}
+.iconWrapper .icon {
+  z-index: 1;
+}
+.iconWrapper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 109px;
+  height: 109px;
+  border: solid 1px #fff;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.iconWrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 109px;
+  height: 109px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.iconWrapper:hover {
+  cursor: pointer;
+}
+.iconWrapper:hover:before {
+  -webkit-transition: none;
+          transition: none;
+  border: solid 1px #000;
+}
+
+/*# sourceMappingURL=app.css.map */

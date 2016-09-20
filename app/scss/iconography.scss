@@ -1,0 +1,123 @@
+//iconography.css
+.copy.icon {
+  width: 8px;
+  height: 11px;
+  border: solid 1px black;
+  border-radius: 1px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    width: 8px;
+    height: 11px;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-radius: 1px 0 0 0;
+  }
+}
+.search.icon {
+  width: 12px; 
+  height: 12px;
+  border: solid 1px black;
+  border-radius: 100%;
+  transform: rotate(-45deg);
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    height: 6px;
+    width: 1px;
+    background-color: black;
+  }
+}
+.close.icon {
+  width: 21px;
+  height: 21px; 
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 21px; 
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+}
+.c {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-top: solid 4px black;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px black;
+  border-left: solid 4px black;
+}
+.s {
+  width: 18px;
+  height: 30px;
+  margin-right: 6px;
+  &:before ,
+  &:after {
+    border-radius: 50%;
+    border-top: solid 4px black;
+    border-right: solid 4px transparent;
+    border-bottom: solid 4px black;
+    border-left: solid 4px black;
+  }
+  &:before {
+    margin-left: 1px;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:after {
+    margin-left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+}
+.i {
+  margin-left: 18px;
+  margin-right: 6px;
+  height: 30px;
+  width: 4px;
+  background-color: black;
+}
+.o {
+  margin-right: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: solid 4px black;
+}
+.n {
+  width: 15px;
+  height: 30px;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+  &:before {
+    left: -4px;
+    width: 4px;
+    height: 30px;
+    background-color: black;
+    -webkit-transform: skewX(32.5deg);
+            transform: skewX(32.5deg);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+  }
+}

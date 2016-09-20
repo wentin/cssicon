@@ -1,0 +1,305 @@
+//layout.scss
+$borderRadius: 0;
+
+body {
+  box-sizing: border-box;
+}
+button {
+  outline: none;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  &.viewerClosed {
+    .icons {
+      width: 100%;
+    }
+    .viewer {
+      display: none;
+    }
+  }
+}
+.icons {
+  width: 63.25757576%;
+  background-color: #ffe;
+  height: 100%;
+  float: left;
+  overflow: auto;
+  background-color: #fff;
+  padding: 20px 15px 20px 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  font-size: 0;
+  position: relative;
+  .iconWrapper {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    padding: 26px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: $borderRadius;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    &.iconWrapperHidden {
+      visibility: hidden;
+      height: 0px;
+      border: none;
+      padding: 0;
+    }
+  }
+}
+.viewer {
+  width: 36.74242424%;
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+  position: relative;
+  background-color: white;
+  .buttonClose {
+    position: absolute;
+    right: 10px;
+    top: 41px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    z-index: 9;
+    cursor: pointer;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 29px;
+      height: 1px;
+      left: -4px;
+      top: 10px;
+      background-color: black;
+      transform-origin: 50% 50%;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+  .viewerWrapper {
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: $borderRadius;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 20px;
+    margin: 0;
+    padding: 20px;
+    overflow-y: auto;
+    .iconWrapper {
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      padding: 8px;
+      border: solid 1px black;
+    }
+    .iconWrapperBig {
+      width: 84px;
+      height: 84px;
+      padding: 20px;
+      margin: 40px auto 0 auto;
+      .scale {
+        transform: scale(4);
+        transform-origin: left top;
+        display: inline-block;
+      }
+    }
+    .iconLabel {
+      margin-bottom: 30px;
+    }
+    .buttonCodepen {
+      display: block;
+      border: solid 1px black;
+      border-radius: $borderRadius;
+      margin-bottom: 30px;
+      cursor: pointer;
+      padding: 0;
+      background-color: white;
+      width: 100%;
+      svg {
+        margin-left: 3px;
+        position: relative;
+        top: 6px;
+      }
+      &:hover {
+        background-color: black;
+        color: white;
+        svg path{
+          fill: white;
+        }
+      }
+    }
+    h4 .buttonCopy {
+      float: right;
+      cursor: pointer;
+      width: 56px;
+      height: 22px;
+      position: relative;
+      .copy.icon {
+        position: absolute;
+        top: 6px;
+        right: 0;
+      }
+      &::after {
+        content: "copy";
+        font-weight: 400;
+        margin-right: 20px;
+        display: none;
+      }
+      &:hover::after {
+        display: block;
+      }
+    }
+  }
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 30px 0 50px 0;
+  div {
+    position: relative;
+    float: left;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+  }
+}
+
+.searchWrapper {
+  width: 250px;
+  position: absolute;
+  right: 20px;
+  top: 39px;
+  box-sizing: border-box;
+  input.search {
+    background: transparent;
+    border: 0;
+    width: 100%;
+    border-bottom: solid 1px black;
+    padding: 9px 0 7px 0;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }   
+  ::-webkit-input-placeholder {
+     color: black;
+  }
+  :-moz-placeholder {
+     color: black;  
+  }
+  ::-moz-placeholder {
+     color: black;  
+  }
+  :-ms-input-placeholder {  
+     color: black;  
+  }
+  .search.icon {
+    display: none;
+    position: absolute;
+    top: 11px;
+    right: 4px;
+  }
+  button.close.icon {
+    display: none;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  input.search:not(:valid) ~ .close.icon {
+    display: none;
+  }
+  input.search:not(:valid) ~ .search.icon {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+  .container:not(.viewerClosed) {
+    .logo {
+      margin-bottom: 20px;
+    }    
+    .searchWrapper {
+      width: auto;
+      position: relative;
+      right: inherit;
+      top: inherit;
+      margin-right: 5px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+  .icons {
+    width: calc( 100% - 365px);
+  }
+  .viewer {
+    width: 365px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .icons {
+    width: 100%;
+  }
+  .viewer {
+    // display: none;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .buttonClose {
+      right: 5px;
+      top: 40px;
+      width: 31px;
+      height: 31px;
+      &:before, &:after {
+        width: 41px;
+        left: -5px;
+        top: 15px;
+      }
+    }
+    .viewerWrapper {
+      left: 20px;
+    }
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .searchWrapper {
+    width: auto;
+    position: relative;
+    right: inherit;
+    top: inherit;
+    margin-right: 5px;
+    margin-bottom: 40px;
+  }
+}

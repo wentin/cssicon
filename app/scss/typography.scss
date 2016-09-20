@@ -1,0 +1,53 @@
+@import "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700";
+$futura: "futura-pt",sans-serif;
+
+body {
+  font-family: $futura;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.viewerWrapper {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  line-height: 22px;
+  .iconLabel {
+    font-family: $futura;
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+  }
+  .buttonCodepen {
+    font-family: $futura;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    line-height: 38px;
+    text-align: center;
+  }
+  h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+  xmp {
+    font-weight: 400;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+  }
+}
+
+.searchWrapper {
+  input.search {
+    color: black;
+    font-family: $futura;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }   
+}

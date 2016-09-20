@@ -7,8 +7,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'css/app.css': 'scss/app.scss',
-                    'css/icons.css': 'scss/icons.scss'
+                    'css/app.css': 'scss/app.scss'
                 }
             }
         },
@@ -18,8 +17,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/app.css': 'css/app.css',
-                    'css/icons.css': 'scss/icons.scss'
+                    'css/app.css': 'css/app.css'
                 }
             }
         },
