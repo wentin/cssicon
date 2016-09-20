@@ -80,6 +80,7 @@ button {
   height: 100%;
   float: left;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #fff;
   padding: 20px 15px 20px 20px;
   text-align: justify;
@@ -156,6 +157,7 @@ button {
   margin: 0;
   padding: 20px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .viewer .viewerWrapper .iconWrapper {
   position: absolute;
@@ -499,6 +501,7 @@ button {
     padding-bottom: 20px;
     padding-right: 20px;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .codeBlocks .codeBlockHight {
     cursor: pointer;

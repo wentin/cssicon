@@ -15,6 +15,7 @@ $highlightColor: #3CD5FF;
     padding-bottom: 20px;
     padding-right: 20px;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     .codeBlockHight {
       cursor: pointer;
       &:hover {
