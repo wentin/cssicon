@@ -1,15 +1,11 @@
 $white: #fff;
 
 body {
-  color: currentColor;
+  color: black;
 }
 .icon {
   position: absolute;
-  &:before {
-    content: '';
-    position: absolute;
-    display: block;
-  }
+  &:before,
   &:after {
     content: '';
     position: absolute;
@@ -17,11 +13,7 @@ body {
   }
   i { 
     position: absolute;
-    &:before {
-      content: '';
-      position: absolute;
-      display: block;
-    }
+    &:before,
     &:after {
       content: '';
       position: absolute;
@@ -29,9 +21,385 @@ body {
     }
   }
 }
-
-@import 'icons-done';
-
+.search.icon {
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px; 
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  &:before {
+    top: 12px;
+    left: 5px;
+    height: 6px;
+    width: 1px;
+    background-color: currentColor;
+  }
+  &.plusI i {
+    left: 4px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    &:before, 
+    &:after {
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+    &:before {
+    }
+    &:after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+  }
+  &.minusI i {
+    left: 4px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    &:before {
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:after {
+      width: 10px;
+      height: 10px;
+      background-color: currentColor;
+      border-radius: 50%;
+      left: 1px;
+      top: 1px;
+    }
+    i {
+      z-index: 1;
+    }
+    &.plusI {
+      background-color: currentColor;
+      i:before, 
+      i:after {
+        background-color: $white;
+      }
+    }
+    &.minusI {
+      background-color: currentColor;
+      i:before {
+        background-color: $white;
+      }
+    }
+  }
+}
+.close.icon {
+  margin-top: 0;
+  margin-left: 0;
+  width: 21px;
+  height: 21px; 
+  &:before,
+  &:after {
+    width: 21px; 
+    height: 1px;
+    background-color: currentColor;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+.hamburger.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    left: 0;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:before {
+    top: -5px;
+  }
+  &:after {
+    top: 5px;
+  }
+}
+.arrowRight.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    right: 1px;
+    top: -5px;
+  }
+}
+.arrowLeft.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    left: 1px;
+    top: -5px;
+  }
+}
+.arrowUp.icon {
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: -5px;
+    top: 1px;
+  }
+}
+.arrowDown.icon {
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    left: -5px;
+    top: 3px;
+  }
+}
+.trash.icon {
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 9px;
+  height: 10px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 2px 2px;
+  &:before {
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    left: -4px;
+    top: -2px;
+  }
+  &:after {
+    width: 7px;
+    height: 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    left: 0px;
+    top: -5px;
+    border-radius: 4px 4px 0 0;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.audio.icon {
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 50% 50%;
+  &:before {
+    left: 1px;
+    top: -6px;
+    width: 5px;
+    height: 10px;
+    border: solid 1px currentColor;
+    border-radius: 4px;
+  }
+  &:after {
+    left: 4px;
+    bottom: -4px;
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+  }
+  &.filled {
+    &:before {
+      border-color: currentColor;
+      background-color: currentColor;
+    }
+  }
+}
+.pin.icon {
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 7px 7px 7px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  &:before {
+    width: 4px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 3px;
+    left: 3px;
+    top: 3px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-color: $white;
+      background-color: $white;
+    }
+  }
+}
+.stop.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+  &:before {
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    top: 7px;
+    left: -1px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.clock.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+  &.filled {
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      background-color: $white;
+    }
+  }
+  &:before, 
+  &:after {
+    background-color: currentColor;
+    left: 7px;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  &:before {
+    width: 5px;
+    height: 1px;
+    top: 7px;
+  }
+  &:after {
+    width: 1px;
+    height: 6px;
+    top: 2px;
+  }
+  &.h0:before {
+    width: 1px;
+    height: 5px;
+    top: 3px;
+  }
+  &.h6:before {
+    width: 1px;
+    height: 5px;
+  }
+  &.h9:before {
+    left: 3px;
+  }
+  &.m15:after {
+    width: 6px;
+    height: 1px;
+    top: 7px;
+  }
+  &.m30:after {
+    width: 1px;
+    height: 6px;
+    top: 7px;
+  }
+  &.m45:after {
+    width: 6px;
+    height: 1px;
+    left: 2px;
+  }
+}
+.profile.icon {
+  margin-left: 3px;
+  margin-top: 11px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0;
+  &:before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    background-color: $white;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
 .bell.icon {
   margin-left: 5px;
   margin-top: 2px;
@@ -103,9 +471,7 @@ body {
   }
   &.filled {
     background-color: currentColor;
-    &:before{
-      background-color: currentColor;
-    }
+    &:before,
     &:after {
       background-color: currentColor;
     }
@@ -173,20 +539,18 @@ body {
   background-color: currentColor;
   -webkit-transform :rotate(-45deg);
           transform :rotate(-45deg);
-  &:before {
-    width: 8px;
-    height: 5px;
-    border-radius: 2px;
-    border: solid 1px currentColor;
-    top: -3px;
-    left: -7px;
-  }
+  &:before,
   &:after {
     width: 8px;
     height: 5px;
     border-radius: 2px;
     border: solid 1px currentColor;
     top: -3px;
+  }
+  &:before {
+    left: -7px;
+  }
+  &:after {
     right: -7px;
   }
 }
@@ -199,23 +563,22 @@ body {
   border-radius: 1px;
   -webkit-transform: skewY(20deg);
           transform: skewY(20deg);
-  &:before {
-    left: -6px;
-    top: 1px;
+  &:before,
+  &:after {
     width: 4px;
     height: 10px;
     border: solid 1px currentColor;
     border-radius: 1px;
     -webkit-transform: skewY(-40deg);
+            transform: skewY(-40deg);
+  }
+  &:before {
+    left: -6px;
+    top: 1px;
   }
   &:after {
     left: 4px;
     top: -3px;
-    width: 4px;
-    height: 10px;
-    border: solid 1px currentColor;
-    border-radius: 1px;
-    -webkit-transform: skewY(-40deg);
   }
 }
 .mail.icon {
@@ -225,17 +588,7 @@ body {
   height: 10px;
   border: solid 1px currentColor;
   border-radius: 1px;
-  &:before {
-    width: 1px;
-    height: 10px;
-    background-color: currentColor;
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    left: 7px;
-    top: -4px;
-    -webkit-transform: rotate(-54deg);
-            transform: rotate(-54deg);
-  }
+  &:before, 
   &:after {
     width: 1px;
     height: 10px;
@@ -244,14 +597,18 @@ body {
             transform-origin: bottom;
     left: 7px;
     top: -4px;
+  }
+  &:before {
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+  }
+  &:after {
     -webkit-transform: rotate(54deg);
             transform: rotate(54deg);
   }
   &.filled {
     background-color: currentColor;
-    &:before {
-      background-color: $white;
-    } 
+    &:before, 
     &:after {
       background-color: $white;
     }
@@ -321,7 +678,8 @@ body {
   height: 15px;
   border: solid 1px currentColor;
   border-radius: 1px;
-  &:before {
+  &:before,
+  &:after {
     width: 9px;
     height: 19px;
     background-color: $white;
@@ -331,13 +689,6 @@ body {
             transform-origin: center;
   }
   &:after {
-    width: 9px;
-    height: 19px;
-    background-color: $white;
-    left: 3px;
-    top: -2px;
-    -webkit-transform-origin: center;
-            transform-origin: center;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
@@ -365,45 +716,10 @@ body {
   }
   &.filled {
     background-color: currentColor;
-    &:before {
-      background-color: $white;
-    } 
+    &:before, 
     &:after {
       background-color: $white;
     }
-  }
-}
-.lock.icon {
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 13px;
-  height: 6px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-  &:before {
-    width: 5px;
-    height: 6px;
-    border-radius: 4px 4px 0 0;
-    border-top: solid 1px currentColor;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-    left: 3px;
-    top: -8px;
-  }
-  &.unlocked {
-    &:before {
-      height: 3px;
-    }
-    &:after {
-      width: 1px;
-      height: 3px;
-      background-color: currentColor;
-      left: 3px;
-      top: -4px;
-    } 
-  }
-  &.filled {
-    background-color: currentColor;
   }
 }
 .volume.icon {
@@ -455,7 +771,8 @@ body {
 .volumePlus.icon {
   margin-left: 2px;
   margin-top: 7px;
-  &:before {
+  &:before,
+  &:after {
     width: 6px;
     height: 1px;
     background-color: currentColor;
@@ -463,11 +780,6 @@ body {
             transform-origin: center;
   }
   &:after {
-    width: 6px;
-    height: 1px;
-    background-color: currentColor;
-    -webkit-transform-origin: center;
-            transform-origin: center;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
@@ -484,21 +796,19 @@ body {
 .volumeMute.icon {
   margin-left: 2px;
   margin-top: 7px;
-  &:before {
-    width: 6px;
-    height: 1px;
-    background-color: currentColor;
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
+  &:before,
   &:after {
     width: 6px;
     height: 1px;
     background-color: currentColor;
     -webkit-transform-origin: center;
             transform-origin: center;
+  }
+  &:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
@@ -547,22 +857,54 @@ body {
     border-left: solid 1px transparent;
   }
 }
+.lock.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 5px;
+    height: 6px;
+    border-radius: 4px 4px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 3px;
+    top: -8px;
+  }
+  &.unlocked {
+    &:before {
+      height: 3px;
+    }
+    &:after {
+      width: 1px;
+      height: 3px;
+      background-color: currentColor;
+      left: 3px;
+      top: -4px;
+    } 
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
 .code.icon {
   margin-left: 3px;
   margin-top: 6px;
-  &:before {
-    width: 8px;
-    height: 8px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    border-left: solid 1px currentColor;
-    border-top: solid 1px currentColor;
-  }
+  &:before,
   &:after {
     width: 8px;
     height: 8px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+  }
+  &:before {
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+  }
+  &:after {
     border-bottom: solid 1px currentColor;
     border-right: solid 1px currentColor;
     left: 6px;
@@ -857,6 +1199,31 @@ body {
     border-right: solid 1px currentColor;
     right: -2px;
     top: -2px;
+  }
+}
+.chat.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    width: 4px;
+    height: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: $white;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 3px;
+    top: 8px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
   }
 }
 .paperclip.icon {
@@ -1638,21 +2005,19 @@ body {
   height: 15px;
   border: solid 1px currentColor;
   border-radius: 50%;
-  &:before {
-    width: 17px;
-    height: 1px;
-    background-color: currentColor;
-    top: 7px;
-    left: -1px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
+  &:before,
   &:after {
     width: 17px;
     height: 1px;
     background-color: currentColor;
     top: 7px;
     left: -1px;
+  }
+  &:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &:after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
@@ -1668,9 +2033,7 @@ body {
   }
   &.filled {
     background-color: currentColor;
-    &:before {
-      background-color: $white;
-    } 
+    &:before, 
     &:after {
       background-color: $white;
     }
@@ -1688,27 +2051,23 @@ body {
   height: 2px;
   border-radius: 50%;
   border: solid 1px currentColor;
-  &:before {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-    top: -1px;
-    left: -8px;
-  }
+  &:before,
   &:after {
     width: 2px;
     height: 2px;
     border-radius: 50%;
     border: solid 1px currentColor;
     top: -1px;
+  }
+  &:before {
+    left: -8px;
+  }
+  &:after {
     left: 6px;
   }
   &.filled {
     background-color: currentColor;
-    &:before {
-      background-color: currentColor;
-    }
+    &:before,
     &:after {
       background-color: currentColor;
     }
@@ -1721,27 +2080,23 @@ body {
   height: 2px;
   border-radius: 50%;
   border: solid 1px currentColor;
-  &:before {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-    left: -1px;
-    top: -8px;
-  }
+  &:before,
   &:after {
     width: 2px;
     height: 2px;
     border-radius: 50%;
     border: solid 1px currentColor;
     left: -1px;
+  }
+  &:before {
+    top: -8px;
+  }
+  &:after {
     top: 6px;
   }
   &.filled {
     background-color: currentColor;
-    &:before {
-      background-color: currentColor;
-    }
+    &:before,
     &:after {
       background-color: currentColor;
     }
@@ -1770,9 +2125,7 @@ body {
   }
   &.filled {
     background-color: currentColor;
-    &:before {
-      background-color: $white;
-    }
+    &:before,
     &:after {
       background-color: $white;
     }
@@ -1971,17 +2324,13 @@ body {
       border-color: $white;
     }
     &.removeI i{
-      &:before {
-        background-color: $white;
-      }
+      &:before,
       &:after {
         background-color: $white;
       }
     } 
     &.contact i{
-      &:before {
-        border-color: $white;
-      } 
+      &:before, 
       &:after {
         border-color: $white;
       }
@@ -2006,21 +2355,19 @@ body {
     top: 4px;
   }
   &.removeI i{
-    &:before {
-      width: 8px;
-      height: 1px;
-      background-color: currentColor;
-      left: 4px;
-      top: 8px;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-    }
+    &:before,
     &:after {
       width: 8px;
       height: 1px;
       background-color: currentColor;
       left: 4px;
       top: 8px;
+    }
+    &:before {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    &:after {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
     }
@@ -2077,10 +2424,7 @@ body {
   border: solid 1px currentColor;
   &.filled {
     background-color: currentColor;
-    &:before {
-      border-color: currentColor;
-      background-color: $white;
-    }
+    &:before,
     &:after {
       border-color: currentColor;
       background-color: $white;
@@ -2116,11 +2460,7 @@ body {
       border-top: solid 1px $white;
     }
     &.doublewink {
-      &:before {
-        background-color: transparent;
-        border-bottom: solid 1px $white;
-        border-left: solid 1px $white;
-      }
+      &:before,
       &:after {
         background-color: transparent;
         border-bottom: solid 1px $white;
@@ -2128,21 +2468,20 @@ body {
       }
     }
   }
-  &:before {
-    left: 3px;
-    top: 3px;
+  &:before,
+  &:after {
     width: 2px;
     height: 2px;
     border-radius: 50%;
     border: solid 1px currentColor;
   }
+  &:before {
+    left: 3px;
+    top: 3px;
+  }
   &:after {
     right: 3px;
     top: 3px;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
   }
   &.smile i{
     left: 3px;
@@ -2227,14 +2566,7 @@ body {
             transform: rotate(-45deg);
   }
   &.doublewink {
-    &:before {
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px currentColor;
-      border-left: solid 1px currentColor;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-    }
+    &:before,
     &:after {
       border-top: solid 1px transparent;
       border-right: solid 1px transparent;
@@ -2273,7 +2605,8 @@ body {
   &.plusI.icon {
     margin-left: 2px;
     margin-top: 2px;
-    &:before {
+    &:before,
+    &:after {
       width: 7px;
       height: 1px;
       background-color: currentColor;
@@ -2281,19 +2614,12 @@ body {
       top: 7px;
     }
     &:after {
-      width: 7px;
-      height: 1px;
-      background-color: currentColor;
-      left: 4px;
-      top: 7px;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
     }
     &.filled {
       background: currentColor;
-      &:before {
-        background-color: $white;
-      }
+      &:before,
       &:after {
         background-color: $white;
       }
@@ -2339,7 +2665,8 @@ body {
   &.removeI.icon {
     margin-left: 2px;
     margin-top: 2px;
-    &:before {
+    &:before,
+    &:after {
       left: 3px;
       top: 7px;
       width: 9px;
@@ -2349,25 +2676,63 @@ body {
               transform: rotate(45deg);
     }
     &:after {
-      left: 3px;
-      top: 7px;
-      width: 9px;
-      height: 1px;
-      background-color: currentColor;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
     }
     &.filled {
       background: currentColor;
-      &:before {
-        background-color: $white;
-      }
+      &:before,
       &:after {
         background-color: $white;
       }
     }
+  }
+}
+.plus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  &:before,
+  &:after {
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+.minus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+.check.icon {
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.remove.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  &:before,
+  &:after {
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
 
@@ -2635,9 +3000,7 @@ body {
     border-radius: 1px 2px 3px 1px;
   }
   &.filled {
-    &:before {
-      background-color: currentColor;  
-    }
+    &:before, 
     &:after {
       background-color: currentColor;  
     }
@@ -2648,18 +3011,17 @@ body {
   margin-top: 7px;
   width: 18px;
   height: 7px;
-  &:before {
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50% 50% 0 50%;
-    transform: rotate(-45deg);
-  }
+  &:before,
   &:after {
     width: 6px;
     height: 6px;
     border: solid 1px currentColor;
     border-radius: 50% 50% 0 50%;
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
     transform: rotate(135deg);
     right: 0px;
   }
@@ -2695,16 +3057,16 @@ body {
   width: 1px;
   height: 11px;
   background-color: currentColor;
-  &:before {
-    width: 1px;
-    height: 11px;
-    background-color: currentColor;
-    transform: rotate(60deg);
-  }
+  &:before, 
   &:after {
     width: 1px;
     height: 11px;
     background-color: currentColor;
+  }
+  &:before {
+    transform: rotate(60deg);
+  }
+  &:after {
     transform: rotate(-60deg);
   }
 }
@@ -3755,7 +4117,8 @@ body {
   width: 1px;
   height: 14px;
   background-color: currentColor;
-  &:before {
+  &:before, 
+  &:after {
     left: -9px;
     width: 9px;
     height: 9px;
@@ -3767,13 +4130,6 @@ body {
   }
   &:after {
     left: -13px;
-    width: 9px;
-    height: 9px;
-    border-top: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-    border-radius: 0 1px 0 0;
-    transform-origin: left top;
-    transform: rotate(45deg);
   }
 }
 .last-filled.icon {
@@ -3795,7 +4151,7 @@ body {
     left: -14px;
   }
 }
-.record-video.icon {
+.record.icon {
   margin-left: 4px;
   margin-top: 4px;
   width: 11px;
@@ -5553,29 +5909,19 @@ body {
   width: 11px;
   height: 1px;
   background-color: currentColor;
-  &:before {
-    left: -4px;
+  &:before,
+  &:after {
     top: -7px;
     width: 6px;
     height: 6px;
     border: solid 1px currentColor;
     border-radius: 50%;
+  }
+  &:before {
+    left: -4px;
   }
   &:after {
     right: -4px;
-    top: -7px;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-  }
-  &.filled {
-    &:before {
-      background-color: currentColor;
-    }
-    &:after {
-      background-color: currentColor;
-    }
   }
 }
 .raindrop.icon {
@@ -7466,9 +7812,7 @@ body {
     }
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    } 
+    &:before, 
     &:after {
       background-color: currentColor;
     }
@@ -7502,9 +7846,7 @@ body {
     }
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    }
+    &:before, 
     &:after {
       background-color: currentColor;
     }
@@ -7538,9 +7880,7 @@ body {
     }
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    } 
+    &:before, 
     &:after {
       background-color: currentColor;
     }
@@ -7574,9 +7914,7 @@ body {
     }
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    } 
+    &:before, 
     &:after {
       background-color: currentColor;
     }
@@ -7610,9 +7948,7 @@ body {
     }
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    } 
+    &:before, 
     &:after {
       background-color: currentColor;
     }
@@ -7646,9 +7982,7 @@ body {
     }
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    } 
+    &:before, 
     &:after {
       background-color: currentColor;
     }
@@ -8073,9 +8407,7 @@ body {
     transform: rotate(45deg);
   }
   &.filled {
-    &:before {
-      background-color: currentColor;
-    }
+    &:before,
     &:after {
       background-color: currentColor;
     }
@@ -8089,16 +8421,7 @@ body {
   border-radius: 2px;
   border: solid 1px currentColor;
   background-color: $white;
-  &:before {
-    width: 1px;
-    height: 17px;
-    background-color: currentColor;
-    left: 6px;
-    top: -4px;
-    z-index: -1;
-    transform-origin: right top;
-    transform: skew(-21deg);
-  }
+  &:before,
   &:after {
     width: 1px;
     height: 17px;
@@ -8106,6 +8429,12 @@ body {
     left: 6px;
     top: -4px;
     z-index: -1;
+  }
+  &:before {
+    transform-origin: right top;
+    transform: skew(-21deg);
+  }
+  &:after {
     transform-origin: left top;
     transform: skew(21deg);
   }
@@ -8197,56 +8526,46 @@ body {
   width: 19px;
   height: 1px;
   background-color: currentColor;
-  &:before {
-    left: 4px;
+  &:before,
+  &:after {
     top: -6px;
     height: 11px;
     width: 1px;
     border-radius: 2px;
     border: solid 1px currentColor;
     background-color: $white;
+  }
+  &:before {
+    left: 4px;
   }
   &:after {
     right: 4px;
-    top: -6px;
-    height: 11px;
-    width: 1px;
-    border-radius: 2px;
-    border: solid 1px currentColor;
-    background-color: $white;
   }
   i {
     width: 19px;
-    &:before {
-      left: 2px;
+    &:before,
+    &:after {
       top: -4px;
       height: 7px;
       width: 1px;
       border-radius: 2px;
       border: solid 1px currentColor;
       background-color: $white;
+    }
+    &:before {
+      left: 2px;
     }
     &:after {
       right: 2px;
-      top: -4px;
-      height: 7px;
-      width: 1px;
-      border-radius: 2px;
-      border: solid 1px currentColor;
-      background-color: $white;
     }
   }
   &.filled {
-    &:before {
-      width: 0;
-    }
+    &:before, 
     &:after {
       width: 0;
     }
     i {
-      &:before {
-        width: 0;
-      }
+      &:before, 
       &:after {
         width: 0;
       }

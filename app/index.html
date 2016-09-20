@@ -6,12 +6,13 @@
   <script src="https://use.typekit.net/xgq4tnl.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link type="text/css" rel="stylesheet" href="css/app.css" />
+  <link type="text/css" rel="stylesheet" href="css/icons.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
   <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
 </head>
 
 <body>
-<div class="container" ng-class="{viewerClosed: viewerClosed}" >
+<div class="container" ng-class="{viewerOpen: viewerOpen}" >
   <div class="icons">
     <div class="logo">
       <div class="c"></div>
@@ -68,12 +69,12 @@
        >
     <div class="buttonClose" ng-click="handleButtonCloseClick();"></div>
     <div class="viewerWrapper">
-      <div class="iconWrapper">
+      <div class="iconWrapper iconViewer">
         <div ng-class="selectedIcon.classNames" class="icon">
           <i ng-if="selectedIcon.htmlChildMarkup"></i>
         </div>
       </div>
-      <div class="iconWrapperBig">
+      <div class="iconWrapperBig iconViewer">
         <div class="scale">
           <div ng-class="selectedIcon.classNames" class="icon">
             <i ng-if="selectedIcon.htmlChildMarkup"></i>

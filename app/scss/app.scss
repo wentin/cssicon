@@ -2,9 +2,9 @@
 @import 'layout';
 @import 'iconography';
 
-@import 'icons';
+// @import 'icons';
 
-$highlightColor: red;
+$highlightColor: #3CD5FF;
 @media screen and ( min-height: 550px ){
   .codeBlocks {
     position: absolute;
@@ -25,9 +25,9 @@ $highlightColor: red;
   }
 }
 
-.viewer.cssIconHover .iconWrapperBig {
+.viewer.cssIconHover .iconViewer {
   .icon {   
-    color: $highlightColor;
+    color: $highlightColor !important;
     z-index: 9;
   }
   .icon:before{
@@ -42,112 +42,43 @@ $highlightColor: red;
   .icon i:before{
     color: black;
   }
-  .icon i:after {
-    color: black;
-  } 
-}
-.viewer.cssIconBeforeHover .iconWrapperBig {
-  .icon {   
+  .icon i:after{
     color: black;
   }
+}
+.viewer.cssIconBeforeHover .iconViewer {
   .icon:before{
-    color: $highlightColor;
+    color: $highlightColor !important;
     z-index: 9;
   }
-  .icon:after {
-    color: black;
-  }
-  .icon i {   
-    color: black;
-  }
-  .icon i:before{
-    color: black;
-  }
-  .icon i:after {
-    color: black;
-  } 
 }
-.viewer.cssIconAfterHover .iconWrapperBig {
-  .icon {   
-    color: black;
-  }
-  .icon:before{
-    color: black;
-  }
+.viewer.cssIconAfterHover .iconViewer {
   .icon:after {
-    color: $highlightColor;
+    color: $highlightColor !important;
     z-index: 9;
   }
-  .icon i {   
-    color: black;
-  }
-  .icon i:before{
-    color: black;
-  }
-  .icon i:after {
-    color: black;
-  } 
 }
-.viewer.cssChildHover .iconWrapperBig {
-  .icon {
-    color: black;
-  }
-  .icon:before{
-    color: black;
-  }
-  .icon:after {
-    color: black;
-  }
+.viewer.cssChildHover .iconViewer {
   .icon i {   
-    color: $highlightColor;
+    color: $highlightColor !important;
     z-index: 9;
   }
   .icon i:before{
     color: black;
   }
-  .icon i:after {
+  .icon i:after{
     color: black;
-  } 
+  }
 }
-.viewer.cssChildBeforeHover .iconWrapperBig {
-  .icon {   
-    color: black;
-  }
-  .icon:before{
-    color: black;
-  }
-  .icon:after {
-    color: black;
-  }
-  .icon i {   
-    color: black;
-  }
+.viewer.cssChildBeforeHover .iconViewer {
   .icon i:before{
-    color: $highlightColor;
+    color: $highlightColor !important;
     z-index: 9;
   }
-  .icon i:after {
-    color: black;
-  } 
 }
-.viewer.cssChildAfterHover .iconWrapperBig {
-  .icon {   
-    color: black;
-  }
-  .icon:before{
-    color: black;
-  }
-  .icon:after {
-    color: black;
-  }
-  .icon i {   
-    color: black;
-  }
-  .icon i:before{
-    color: black;
-  }
+.viewer.cssChildAfterHover .iconViewer {
   .icon i:after {
-    color: $highlightColor;
+    color: $highlightColor !important;
     z-index: 9;
   } 
 }

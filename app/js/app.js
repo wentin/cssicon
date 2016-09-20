@@ -2,7 +2,7 @@ var app = angular.module("iconApp", []);
 app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http, $filter) { 
   $http.get('http://api.jsoneditoronline.org/v1/docs/f26dbdc8aa88e459fb89a95b7067bf15/data').success(function(data){ 
     $scope.icons = data; 
-    $scope.viewerClosed = true;
+    $scope.viewerOpen = false;
     
     $scope.selectedIcon = $scope.icons[0];
     
@@ -39,7 +39,7 @@ app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http,
       }
       CSS += ".icon {\n  position: absolute;\n}\n.icon:before, .icon:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n" ;
       if (icon.htmlChildMarkup) {
-        CSS += "icon i {\n  position: absolute;\n}\n.icon i:before, .icon i:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n";
+        CSS += ".icon i {\n  position: absolute;\n}\n.icon i:before, .icon i:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n";
       } 
       return CSS;
     }
@@ -66,7 +66,7 @@ app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http,
     
     $scope.handleIconClick = function(icon){
       $scope.selectedIcon = icon;
-      $scope.viewerClosed = false;
+      $scope.viewerOpen = true;
       $scope.JSONstring = generateCodepenString(icon);
       
       var htmlClipboard = new Clipboard('.html.buttonCopy', {
@@ -92,7 +92,7 @@ app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http,
     }
     
     $scope.handleButtonCloseClick = function(icon){
-      $scope.viewerClosed = true;
+      $scope.viewerOpen = false;
     }
     
   }); 

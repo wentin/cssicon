@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'css/app.css': 'css/app.css',
-                    'css/icons.css': 'scss/icons.scss'
+                    'css/icons.css': 'css/icons.css',
                 }
             }
         },

@@ -3,6 +3,7 @@ $borderRadius: 0;
 
 body {
   box-sizing: border-box;
+  margin: 0;
 }
 button {
   outline: none;
@@ -13,17 +14,20 @@ button {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  &.viewerClosed {
+  .viewer {
+    display: none;
+  }
+  &.viewerOpen {
     .icons {
-      width: 100%;
+      width: 63.25757576%;
     }
     .viewer {
-      display: none;
+      display: block;
     }
   }
 }
 .icons {
-  width: 63.25757576%;
+  width: 100%;
   background-color: #ffe;
   height: 100%;
   float: left;
