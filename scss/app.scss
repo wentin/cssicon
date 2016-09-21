@@ -1,0 +1,100 @@
+@import 'typography';
+@import 'layout';
+@import 'iconography';
+
+// @import 'icons';
+
+$highlightColor: #3CD5FF;
+@media screen and ( min-height: 550px ){
+  .codeBlocks {
+    position: absolute;
+    top: 289px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    .codeBlockHight {
+      cursor: pointer;
+      &:hover {
+        background-color: black;
+        color: $highlightColor;
+      }
+    }
+  }
+}
+
+.viewer.cssIconHover .iconViewer {
+  .icon {   
+    color: $highlightColor !important;
+    // z-index: 9;
+  }
+  .icon:before{
+    color: black;
+  }
+  .icon:after {
+    color: black;
+  }
+  .icon i {   
+    color: black;
+  }
+  .icon i:before {
+    color: black;
+  }
+  .icon i:after {
+    color: black;
+  }
+  .icon.filled {
+    color: white;
+  }
+  .icon.filled i:before {
+    color: white;
+  }
+  .icon.filled i:after {
+    color: white;
+  }
+}
+.viewer.cssIconBeforeHover .iconViewer {
+  .icon:before{
+    color: $highlightColor !important;
+    // z-index: 9;
+  }
+}
+.viewer.cssIconAfterHover .iconViewer {
+  .icon:after {
+    color: $highlightColor !important;
+    // z-index: 9;
+  }
+}
+.viewer.cssChildHover .iconViewer {
+  .icon i {   
+    color: $highlightColor !important;
+    // z-index: 9;
+  }
+  .icon i:before {
+    color: black;
+  }
+  .icon i:after {
+    color: black;
+  }
+  .icon.filled i:before {
+    color: white;
+  }
+  .icon.filled i:after {
+    color: white;
+  }
+}
+.viewer.cssChildBeforeHover .iconViewer {
+  .icon i:before{
+    color: $highlightColor !important;
+    // z-index: 9;
+  }
+}
+.viewer.cssChildAfterHover .iconViewer {
+  .icon i:after {
+    color: $highlightColor !important;
+    // z-index: 9;
+  } 
+}

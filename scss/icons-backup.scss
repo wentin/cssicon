@@ -1,0 +1,8622 @@
+$white: #fff;
+
+body {
+  color: black;
+}
+.icon {
+  position: absolute;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+  }
+  i { 
+    position: absolute;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+  }
+}
+.search.icon {
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px; 
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  &:before {
+    top: 12px;
+    left: 5px;
+    height: 6px;
+    width: 1px;
+    background-color: currentColor;
+  }
+  &.plusI i {
+    left: 4px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    &:before, 
+    &:after {
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+    &:before {
+    }
+    &:after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+  }
+  &.minusI i {
+    left: 4px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    &:before {
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:after {
+      width: 10px;
+      height: 10px;
+      background-color: currentColor;
+      border-radius: 50%;
+      left: 1px;
+      top: 1px;
+    }
+    i {
+      z-index: 1;
+    }
+    &.plusI {
+      background-color: currentColor;
+      i:before, 
+      i:after {
+        background-color: $white;
+      }
+    }
+    &.minusI {
+      background-color: currentColor;
+      i:before {
+        background-color: $white;
+      }
+    }
+  }
+}
+.close.icon {
+  margin-top: 0;
+  margin-left: 0;
+  width: 21px;
+  height: 21px; 
+  &:before,
+  &:after {
+    width: 21px; 
+    height: 1px;
+    background-color: currentColor;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+.hamburger.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    left: 0;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:before {
+    top: -5px;
+  }
+  &:after {
+    top: 5px;
+  }
+}
+.arrowRight.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    right: 1px;
+    top: -5px;
+  }
+}
+.arrowLeft.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    left: 1px;
+    top: -5px;
+  }
+}
+.arrowUp.icon {
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: -5px;
+    top: 1px;
+  }
+}
+.arrowDown.icon {
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    left: -5px;
+    top: 3px;
+  }
+}
+.trash.icon {
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 9px;
+  height: 10px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 2px 2px;
+  &:before {
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    left: -4px;
+    top: -2px;
+  }
+  &:after {
+    width: 7px;
+    height: 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    left: 0px;
+    top: -5px;
+    border-radius: 4px 4px 0 0;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.audio.icon {
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 50% 50%;
+  &:before {
+    left: 1px;
+    top: -6px;
+    width: 5px;
+    height: 10px;
+    border: solid 1px currentColor;
+    border-radius: 4px;
+  }
+  &:after {
+    left: 4px;
+    bottom: -4px;
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+  }
+  &.filled {
+    &:before {
+      border-color: currentColor;
+      background-color: currentColor;
+    }
+  }
+}
+.pin.icon {
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 7px 7px 7px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  &:before {
+    width: 4px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 3px;
+    left: 3px;
+    top: 3px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-color: $white;
+      background-color: $white;
+    }
+  }
+}
+.stop.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+  &:before {
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    top: 7px;
+    left: -1px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.clock.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+  &.filled {
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      background-color: $white;
+    }
+  }
+  &:before, 
+  &:after {
+    background-color: currentColor;
+    left: 7px;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  &:before {
+    width: 5px;
+    height: 1px;
+    top: 7px;
+  }
+  &:after {
+    width: 1px;
+    height: 6px;
+    top: 2px;
+  }
+  &.h0:before {
+    width: 1px;
+    height: 5px;
+    top: 3px;
+  }
+  &.h6:before {
+    width: 1px;
+    height: 5px;
+  }
+  &.h9:before {
+    left: 3px;
+  }
+  &.m15:after {
+    width: 6px;
+    height: 1px;
+    top: 7px;
+  }
+  &.m30:after {
+    width: 1px;
+    height: 6px;
+    top: 7px;
+  }
+  &.m45:after {
+    width: 6px;
+    height: 1px;
+    left: 2px;
+  }
+}
+.profile.icon {
+  margin-left: 3px;
+  margin-top: 11px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0;
+  &:before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    background-color: $white;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.bell.icon {
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 9px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  &:before {
+    width: 15px;
+    height: 0px; 
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px $white;
+    bottom: -2px;
+    left: -3px;
+    z-index: 2;
+  }
+  &:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    bottom: -5px;
+    left: 2px;
+  }
+  &.filled{
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.heart.icon {
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  &:before {
+    width: 8px;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    top: -5px;
+    left: -1px;
+  }
+  &:after {
+    width: 5px;
+    height: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    top: 0px;
+    left: 8px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.print.icon {
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 15px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px 1px 0 0;
+  &:before {
+    height: 13px;
+    width: 9px;
+    border: solid 1px currentColor;
+    background-color: $white;
+    left: 2px;
+    top: -3px;
+  }
+  &:after {
+    width: 13px;
+    height: 3px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    background-color: $white;
+    left: 1px;
+    top: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.edit.icon {
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 14px;
+  height: 2px;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-radius: 1px;
+  &:before {
+    width: 0px;
+    height: 0px;
+    border-left: solid 5px transparent;
+    border-right: solid 5px currentColor;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+    left: -12px;
+    top: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.link.icon {
+  margin-left: 8px;
+  margin-top: 10px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform :rotate(-45deg);
+          transform :rotate(-45deg);
+  &:before,
+  &:after {
+    width: 8px;
+    height: 5px;
+    border-radius: 2px;
+    border: solid 1px currentColor;
+    top: -3px;
+  }
+  &:before {
+    left: -7px;
+  }
+  &:after {
+    right: -7px;
+  }
+}
+.map.icon {
+  margin-left: 8px;
+  margin-top: 4px;
+  width: 4px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
+  &:before,
+  &:after {
+    width: 4px;
+    height: 10px;
+    border: solid 1px currentColor;
+    border-radius: 1px;
+    -webkit-transform: skewY(-40deg);
+            transform: skewY(-40deg);
+  }
+  &:before {
+    left: -6px;
+    top: 1px;
+  }
+  &:after {
+    left: 4px;
+    top: -3px;
+  }
+}
+.mail.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before, 
+  &:after {
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    left: 7px;
+    top: -4px;
+  }
+  &:before {
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+  }
+  &:after {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.bookmark.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 10px;
+  height: 15px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-radius: 1px 1px 0 0;
+  &:before {
+    width: 7px;
+    height: 7px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 10px;
+    left: 1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.camera.icon {
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 16px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 4px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 3px;
+    left: 5px;
+    top: 2px;
+  }
+  &:after {
+    width: 4px;
+    height: 1px;
+    border-radius: 1px 1px 0 0;
+    background-color: currentColor;
+    right: 2px;
+    top: -2px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+      border: solid 1px $white;
+    }
+  }
+}
+.focus.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before,
+  &:after {
+    width: 9px;
+    height: 19px;
+    background-color: $white;
+    left: 3px;
+    top: -2px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  &:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+.card.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 17px;
+    height: 2px;
+    background-color: currentColor;
+    top: 1px;
+    left: -1px;
+  }
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: currentColor;
+    right: 1px;
+    bottom: 2px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.volume.icon {
+  margin-left: 11px;
+  margin-top: 3px;
+  width: 1px;
+  height: 15px;
+  background-color: currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: -5px;
+    top: 2px;
+  }
+  &:after {
+    width: 4px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 1px;
+    background-color: $white;
+    left: -8px;
+    top: 4px;
+  }
+  &.filled {
+    width: 0;
+    &:before {
+      width: 0;
+      height: 7px;
+      border-top: solid 4px transparent;
+      border-right: solid 5px currentColor;
+      border-bottom: solid 4px transparent;
+      border-left: solid 5px transparent;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      left: -9px;
+      top: 0px;
+    }
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.volumePlus.icon {
+  margin-left: 2px;
+  margin-top: 7px;
+  &:before,
+  &:after {
+    width: 6px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  &:after {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+.volumeMinus.icon {
+  margin-left: 2px;
+  margin-top: 7px;
+  &:before{
+    width: 6px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+.volumeMute.icon {
+  margin-left: 2px;
+  margin-top: 7px;
+  &:before,
+  &:after {
+    width: 6px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  &:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+.volumeOne.icon {
+  margin-left: -2px;
+  margin-top: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
+.volumeTwo.icon {
+  margin-left: -4px;
+  margin-top: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-top: double 3px transparent;
+  border-right: double 3px currentColor;
+  border-bottom: double 3px transparent;
+  border-left: double 3px transparent;
+}
+.volumeThree.icon {
+  margin-left: -4px;
+  margin-top: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-top: double 3px transparent;
+  border-right: double 3px currentColor;
+  border-bottom: double 3px transparent;
+  border-left: double 3px transparent;
+  &:after {
+    left: -5px;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+  }
+}
+.lock.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 5px;
+    height: 6px;
+    border-radius: 4px 4px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 3px;
+    top: -8px;
+  }
+  &.unlocked {
+    &:before {
+      height: 3px;
+    }
+    &:after {
+      width: 1px;
+      height: 3px;
+      background-color: currentColor;
+      left: 3px;
+      top: -4px;
+    } 
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.code.icon {
+  margin-left: 3px;
+  margin-top: 6px;
+  &:before,
+  &:after {
+    width: 8px;
+    height: 8px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &:before {
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+  }
+  &:after {
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 6px;
+  }
+}
+.flag.icon {
+  margin-left: 6px;
+  margin-top: 4px;
+  width: 9px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 1px;
+    height: 15px;
+    background-color: currentColor;
+    left: -3px;
+    top: -2px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.tag.icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 7px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-radius: 1px 1px 1px 0;
+  &:before {
+    width: 9px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 1px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 1px;
+    top: 1px;
+  }
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: currentColor;
+    left: 3px;
+    top: 3px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.signal.icon {
+  margin-left: 7px;
+  margin-top: 13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+  &:before {
+    left: -5px;
+    top: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+  }
+  &:after {
+    left: -9px;
+    top: -9px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+  }
+}
+.export.icon {
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 11px;
+  height: 9px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 1px;
+    height: 8px;
+    background-color: currentColor;
+    border-left: solid 3px $white;
+    border-right: solid 3px $white;
+    top: -5px;
+    left: 2px;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(-45deg);
+    left: 3px;
+    top: -5px;
+  }
+}
+.export2.icon {
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+  &:before {
+    width: 1px;
+    height: 9px;
+    background-color: currentColor;
+    top: -8px;
+    left: 6px;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: -8px;
+  }
+}
+.download.icon {
+  margin-left: 4px;
+  margin-top: 5px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    border-left: solid 3px $white;
+    border-right: solid 3px $white;
+    top: -4px;
+    left: 2px;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(135deg);
+    left: 3px;
+    top: 1px;
+  }
+}
+.download2.icon {
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+  &:before {
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    top: -9px;
+    left: 6px;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(135deg);
+    left: 4px;
+    top: -4px;
+  }
+}
+.upload.icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    border-left: solid 3px $white;
+    border-right: solid 3px $white;
+    top: 4px;
+    left: 2px;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 3px;
+    top: 4px;
+  }
+}
+.shutdown.icon {
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    width: 1px;
+    height: 8px;
+    border-left: solid 3px $white;
+    border-right: solid 3px $white;
+    background-color: currentColor;
+    left: 3px;
+    top: -2px;
+  }
+}
+.shut.icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    width: 1px;
+    height: 8px;
+    border-left: solid 4px $white;
+    border-right: solid 4px $white;
+    background-color: currentColor;
+    left: -3px;
+    top: -2px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    left: -2px;
+    top: -2px;
+  }
+}
+.shut-right.icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    width: 1px;
+    height: 8px;
+    border-left: solid 4px $white;
+    border-right: solid 4px $white;
+    background-color: currentColor;
+    right: -3px;
+    top: -2px;
+    transform: rotate(45deg);
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    right: -2px;
+    top: -2px;
+  }
+}
+.chat.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    width: 4px;
+    height: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: $white;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 3px;
+    top: 8px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.paperclip.icon {
+  margin-left: 9px;
+  margin-top: 2px;
+  width: 6px;
+  height: 12px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-radius: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  &:before {
+    top: 11px;
+    left: -1px;
+    width: 4px;
+    height: 6px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 3px 3px;
+  }
+  &:after {
+    left: 1px;
+    top: 1px;
+    width: 2px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 4px 4px 0 0;
+  }
+}
+.retweet.icon {
+  margin-left: 3px;
+  margin-top: 5px;
+  width: 13px;
+  height: 9px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-top: solid 3px $white;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px $white;
+    border-right: solid 3px $white;
+    left: -3px;
+    top: -2px;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    border-top: solid 3px currentColor;
+    border-bottom: solid 3px $white;
+    border-left: solid 3px $white;
+    border-right: solid 3px $white;
+    right: -3px;
+    bottom: -2px;
+  }
+}
+.key.icon {
+  margin-left: 1px;
+  margin-top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    width: 11px;
+    height: 1px;
+    background-color: currentColor;
+    left: 7px;
+    top: 3px;
+  }
+  &:after {
+    width: 1px;
+    height: 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 13px;
+    top: 3px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.key2.icon {
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  &:before {
+    width: 12px;
+    height: 1px;
+    background-color: currentColor;
+    left: 7px;
+    top: 3px;
+  }
+  &:after {
+    width: 1px;
+    height: 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 14px;
+    top: 0px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.refresh.icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  &:before {
+    width: 3px;
+    height: 3px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    -webkit-transform: rotate(-22.5deg);
+            transform: rotate(-22.5deg);
+    left: 1px;
+    top: 10px;
+  }
+}
+.pilcrow.icon {
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 8px;
+  height: 8px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 5px 0 0 5px;
+  &:before {
+    height: 16px;
+    width: 2px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 8px;
+    top: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.justified.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    left: 0;
+    width: 17px;
+    height: 5px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}
+.paragraph-direction.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    border-radius: 0 2px 2px 0;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    top: 3px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-left: solid 2px $white;
+    border-right: solid 2px currentColor;
+    border-top: solid 2px $white;
+    border-bottom: solid 2px $white;
+  }
+}
+.leftaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    left: 0;
+    width: 11px;
+    height: 5px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}
+.centered.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    left: 3px;
+    width: 11px;
+    height: 5px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}
+.rightaligned.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    right: 0;
+    width: 11px;
+    height: 5px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}
+.indent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    right: 0;
+    width: 11px;
+    height: 2px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    top: 1px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px currentColor;
+    border-right: solid 3px transparent;
+  }
+}
+.outdent.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: 2px;
+    right: 0;
+    width: 11px;
+    height: 2px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    top: 1px;
+    left: -3px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px transparent;
+    border-right: solid 3px currentColor;
+  }
+}
+.eye.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 70% 15%;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  &:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    left: 2px;
+    top: 2px;
+  }
+  &.filled:before {
+    background-color: currentColor;
+  }
+  &.filled2 {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+  &.filled3 {
+    background-color: currentColor;
+    &:before {
+      border-color: $white;
+    }
+  }
+}
+.battery.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 2px;
+    height: 3px;
+    border-radius: 0 2px 2px 0;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    right: -3px;
+    top: 1px;
+  }
+  &.batteryOne {
+    &:after {
+      left: 1px;
+      top: 1px;
+      width: 4px;
+      height: 5px;
+      background-color: currentColor;
+    }
+  }
+  &.batteryTwo {
+    &:after {
+      left: 1px;
+      top: 1px;
+      width: 8px;
+      height: 5px;
+      background-color: currentColor;
+    }
+  }
+  &.batteryThree {
+    &:after {
+      left: 1px;
+      top: 1px;
+      width: 11px;
+      height: 5px;
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-radius: 0 1px 1px 0;
+      background-color: currentColor;
+    }
+    &:after {
+      left: 0px;
+      top: 0px;
+      height: 7px;
+      width: 1px;
+      background-color: $white;
+      border-radius: 1px 0 0 1px;
+    }
+    &.batteryOne {
+      &:after {
+        width: 5px;
+      }
+    }
+    &.batteryTwo {
+      &:after {
+        width: 9px;
+      }
+    }
+    &.batteryThree {
+      &:after {
+        width: 13px;
+        border-radius: 1px;
+      }
+    }
+  }
+}
+.bag.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    width: 5px;
+    height: 2px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-radius: 3px 3px 0 0;
+    left: 4px;
+    top: -3px;
+  }
+  &:after {
+    width: 7px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    left: 3px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      border-left: solid 1px $white;
+      border-right: solid 1px $white;
+    }
+  }
+  &.filled2 {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled3 {
+    background-color: currentColor;
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.browser.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  &:before {
+    left: 1px;
+    top: 1px;
+    width: 11px;
+    height: 11px;
+    border: solid 1px currentColor;
+    border-radius: 85% 15%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &:after {
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+    top: 7px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border: solid 1px $white;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.tv.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    left: 7px;
+    bottom: -4px;
+    width: 1px;
+    height: 3px;
+    background-color: currentColor;
+  }
+  &:after {
+    left: 4px;
+    bottom: -4px;
+    width: 7px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.laptop.icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 8px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    left: -4px;
+    bottom: -5px;
+    width: 18px;
+    height: 1px;
+    border: solid 1px currentColor;
+    border-radius: 0 0 2px 2px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.mobile.icon {
+  margin-left: 4px;
+  margin-top: 0px;
+  width: 12px; 
+  height: 19px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  &:before {
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    bottom: 1px;
+    left: 5px;
+    height: 2px;
+    width: 2px;
+    background-color: currentColor;
+    border-radius: 50%;
+  }
+  &.filled {
+    height: 14px;
+    border-top: solid 3px currentColor;
+    border-bottom: solid 4px currentColor;
+    &:before {
+      top: -2px;
+      background-color: $white;
+    }
+    &:after {
+      bottom: -3px;
+      background-color: $white;
+    }
+  }
+}
+.tablet.icon {
+  margin-left: 2px;
+  margin-top: 1px;
+  width: 15px; 
+  height: 17px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  &:before {
+    top: 1px;
+    left: 0;
+    height: 13px;
+    width: 15px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    bottom: 0px;
+    left: 6px;
+    width: 3px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    margin-left: 2px;
+    width: 15px; 
+    height: 14px;
+    border-top: solid 2px currentColor;
+    border-bottom: solid 3px currentColor;
+    &:before {
+      border: none;
+    }
+    &:after {
+      bottom: -2px;
+      left: 6px;
+      background-color: $white;
+    }
+  }
+}
+.picture.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    left: 2px;
+    top: 2px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+  &:after {
+    left: 2px;
+    top: 9px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    width: 12px;
+    height: 8px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-color: $white;
+      background-color: $white;
+    }
+    &:after {
+      border-color: $white;
+    }
+  }
+}
+.watch.icon {
+  margin-left: 7px;
+  margin-top: 0px;
+  width: 5px;
+  height: 19px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: -4px;
+    top: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    background-color: $white;
+  }
+  &:after {
+    left: 2px;
+    top: 5px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    width: 3px;
+    height: 4px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      left: -5px;
+      top: 2px;
+      width: 13px;
+      height: 13px;
+      border-color: $white;
+      background-color: currentColor;
+    }
+    &:after {
+      border-color: $white;
+    }
+  }
+}
+.target.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px currentColor; 
+  &:before {
+    width: 11px;
+    height: 1px;
+    border-left: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+    left: -1px;
+    top: 7px;
+  }
+  &:after {
+    width: 1px;
+    height: 11px;
+    border-top: solid 3px currentColor;
+    border-bottom: solid 3px currentColor;
+    left: 7px;
+    top: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      width: 13px;
+      border-left: solid 2px $white;
+      border-right: solid 2px $white;
+    }
+    &:after {
+      height: 13px;
+      border-top: solid 2px $white;
+      border-bottom: solid 2px $white;
+    }
+  }
+}
+.navigate.icon {
+  margin-left: 6px;
+  margin-top: -1px;
+  width: 14px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  &:before {
+    left: 0;
+    top: -17px;
+    width: 0;
+    height: 0;
+    border-top: solid 18px transparent;
+    border-bottom: solid 18px currentColor;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent;
+  }
+  &:after {
+    left: 0;
+    top: 9px;
+    width: 0;
+    height: 0;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px $white;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent;
+  }
+  i {
+    width: 10px;
+    height: 14px;
+    left: 2px;
+    top: 3px;
+    &:before {
+      left: 0;
+      top: -14px;
+      width: 0;
+      height: 0;
+      border-top: solid 14px transparent;
+      border-bottom: solid 14px $white;
+      border-left: solid 5px transparent;
+      border-right: solid 5px transparent;
+    }
+    &:after {
+      left: 0;
+      top: 6px;
+      width: 0;
+      height: 0;
+      border-top: solid 4px transparent;
+      border-bottom: solid 4px currentColor;
+      border-left: solid 5px transparent;
+      border-right: solid 5px transparent;
+    }
+  }
+}
+.float.icon { 
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  &:before,
+  &:after {
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    top: 7px;
+    left: -1px;
+  }
+  &:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  i {
+    width: 7px;
+    height: 7px;
+    background-color: $white;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    z-index: 2;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      background-color: $white;
+    }
+    i {
+      border: none;
+      left: 4px;
+      top: 4px;
+    }
+  }
+}
+.more.icon {
+  margin-left: 9px;
+  margin-top: 9px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    top: -1px;
+  }
+  &:before {
+    left: -8px;
+  }
+  &:after {
+    left: 6px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.vmore.icon {
+  margin-left: 9px;
+  margin-top: 9px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    left: -1px;
+  }
+  &:before {
+    top: -8px;
+  }
+  &:after {
+    top: 6px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.mouse.icon {
+  margin-left: 4px;
+  margin-top: 1px;
+  width: 11px;
+  height: 17px;
+  border: solid 1px currentColor;
+  border-radius: 6px;
+  &:before {
+    width: 13px;
+    height: 1px;
+    background-color: currentColor;
+    top: 6px;
+    left: -1px;
+  }
+  &:after {
+    width: 1px;
+    height: 7px;
+    background-color: currentColor;
+    left: 5px;
+    top: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.keyboard.icon {
+  margin-left: 1px;
+  margin-top: 4px;
+  width: 17px;
+  height: 11px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  &:before {
+    left: 7px;
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    border: 1px solid transparent;
+    box-shadow: 
+      -2px 0 0 -1px currentColor, 
+      2px 0 0 -1px currentColor, 
+      0 -2px 0 -1px currentColor, 
+      0 2px 0 -1px currentColor, 
+      -6px 0 0 -1px currentColor, 
+      6px 0 0 -1px currentColor, 
+      -4px -2px 0 -1px currentColor, 
+      -4px 2px 0 -1px currentColor, 
+      4px -2px 0 -1px currentColor, 
+      4px 2px 0 -1px currentColor;
+  }
+  &:after {
+    width: 9px;
+    height: 1px;
+    background-color: currentColor;
+    bottom: 1px;
+    left: 4px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+    box-shadow: 
+      -2px 0 0 -1px $white, 
+      2px 0 0 -1px $white, 
+      0 -2px 0 -1px $white, 
+      0 2px 0 -1px $white, 
+      -6px 0 0 -1px $white, 
+      6px 0 0 -1px $white, 
+      -4px -2px 0 -1px $white, 
+      -4px 2px 0 -1px $white, 
+      4px -2px 0 -1px $white, 
+      4px 2px 0 -1px $white;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.calendar3.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: 4px;
+    top: -3px;
+    width: 6px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    left: 6px;
+    top: 0px;
+    width: 2px;
+    height: 1px;
+    border: 1px solid transparent;
+    box-shadow: 
+       0   9px 0 -1px currentColor, 
+      -4px 9px 0 -1px currentColor, 
+       4px 9px 0 -1px currentColor,
+       0   6px 0 -1px currentColor, 
+      -4px 6px 0 -1px currentColor, 
+       4px 6px 0 -1px currentColor,
+       0   3px 0 -1px currentColor, 
+      -4px 3px 0 -1px currentColor, 
+       4px 3px 0 -1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333;
+    }
+    &:after {
+      box-shadow: 
+         0   9px 0 -1px $white, 
+        -4px 9px 0 -1px $white, 
+         4px 9px 0 -1px $white,
+         0   6px 0 -1px $white, 
+        -4px 6px 0 -1px $white, 
+         4px 6px 0 -1px $white,
+         0   3px 0 -1px $white, 
+        -4px 3px 0 -1px $white, 
+         4px 3px 0 -1px $white;
+    }
+  }
+}
+.calendar2.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 16px;
+  height: 14px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: 5px;
+    top: -3px;
+    width: 4px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    box-shadow: 
+       0   12px 0 -2px currentColor, 
+      -4px 12px 0 -2px currentColor, 
+       4px 12px 0 -2px currentColor,
+       0   9px 0 -2px currentColor, 
+      -4px 9px 0 -2px currentColor, 
+       4px 9px 0 -2px currentColor,
+       0   6px 0 -2px currentColor, 
+      -4px 6px 0 -2px currentColor, 
+       4px 6px 0 -2px currentColor;
+  }
+  &:after {
+    left: -1px;
+    top: 2px;
+    width: 18px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      box-shadow: 
+         0   12px 0 -2px $white, 
+        -4px 12px 0 -2px $white, 
+         4px 12px 0 -2px $white,
+         0   9px 0 -2px $white, 
+        -4px 9px 0 -2px $white, 
+         4px 9px 0 -2px $white,
+         0   6px 0 -2px $white, 
+        -4px 6px 0 -2px $white, 
+         4px 6px 0 -2px $white;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.calendar.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: 4px;
+    top: -3px;
+    width: 6px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    left: -1px;
+    top: 3px;
+    width: 18px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333;
+    }
+    &:after {
+      top: 2px;
+      background-color: $white;
+    }
+    &.checkI i{
+      border-color: $white;
+    }
+    &.removeI i{
+      &:before,
+      &:after {
+        background-color: $white;
+      }
+    } 
+    &.contact i{
+      &:before, 
+      &:after {
+        border-color: $white;
+      }
+    }
+    &.paragraph i{
+      &:before {
+        border-color: $white;
+      }
+      &:after {
+        background-color: $white;
+      }
+    }
+  }
+  &.checkI i{
+    width: 7px;
+    height: 4px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 4px;
+    top: 4px;
+  }
+  &.removeI i{
+    &:before,
+    &:after {
+      width: 8px;
+      height: 1px;
+      background-color: currentColor;
+      left: 4px;
+      top: 8px;
+    }
+    &:before {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    &:after {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
+  &.contact {
+    &:after {
+      height: 0;
+    }
+    i {
+      left: 5px;
+      top: 3px;
+      &:before {
+        width: 4px;
+        height: 4px;
+        border: solid 1px currentColor;
+        border-radius: 50%;
+      }
+      &:after {
+        left: -2px;
+        top: 5px;
+        width: 8px;
+        height: 3px;
+        border-top: solid 1px currentColor;
+        border-left: solid 1px currentColor;
+        border-right: solid 1px currentColor;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+  }
+  &.paragraph i{
+    left: 3px;
+    top: 6px;
+    &:before {
+      width: 10px;
+      height: 1px;
+      border-top: solid 1px currentColor;
+      border-bottom: solid 1px currentColor;
+    }
+    &:after {
+      left: 0px;
+      top: 4px;
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+}
+.face.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      border-color: currentColor;
+      background-color: $white;
+    }
+    &.smile i{
+      border-bottom: solid 1px $white;
+    }
+    &.tongue i{
+      background-color: $white;
+      &:before {
+        border-top: solid 1px transparent;
+        border-right: solid 1px transparent;
+        border-bottom: solid 1px $white;
+        border-left: solid 1px $white;
+      }
+    }
+    &.laugh i{
+      border-color: $white;
+    }
+    &.teethlaugh i{
+      border-color: $white;
+      &:before {
+        border-left: solid 1px $white;
+        border-right: solid 1px $white;
+      }
+    }
+    &.bigsmile i{
+      border-bottom: solid 1px $white;
+      border-left: solid 1px $white;
+      border-right: solid 1px $white;
+    } 
+    &.sad i{
+      border-top: solid 1px $white;
+    }
+    &.doublewink {
+      &:before,
+      &:after {
+        background-color: transparent;
+        border-bottom: solid 1px $white;
+        border-left: solid 1px $white;
+      }
+    }
+  }
+  &:before,
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: 3px;
+    top: 3px;
+  }
+  &:after {
+    right: 3px;
+    top: 3px;
+  }
+  &.smile i{
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;
+  }
+  &.tongue i{
+    left: 4px;
+    top: 10px;
+    width: 8px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    &:before {
+      top: -1px;
+      right: 0px;
+      width: 2px;
+      height: 2px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      border-radius: 2px;
+      border-top: solid 1px transparent;
+      border-right: solid 1px transparent;
+      border-bottom: solid 1px currentColor;
+      border-left: solid 1px currentColor;
+    }
+  }
+  &.laugh i{
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &.teethlaugh i{
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    &:before {
+      left: 3px;
+      top: 0px;
+      width: 2px;
+      height: 4px;
+      border-left: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+    }
+  }
+  &.bigsmile i{
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &.wink:before {
+    border-top: solid 1px transparent;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &.doublewink {
+    &:before,
+    &:after {
+      border-top: solid 1px transparent;
+      border-right: solid 1px transparent;
+      border-bottom: solid 1px currentColor;
+      border-left: solid 1px currentColor;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  &.sad i{
+    left: 3px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;
+  }
+}
+.circle.icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+.square.icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+.circle,
+.square {
+  &.plusI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+    &:before,
+    &:after {
+      width: 7px;
+      height: 1px;
+      background-color: currentColor;
+      left: 4px;
+      top: 7px;
+    }
+    &:after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    &.filled {
+      background: currentColor;
+      &:before,
+      &:after {
+        background-color: $white;
+      }
+    }
+  }
+  &.minusI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+    &:before{
+      width: 7px;
+      height: 1px;
+      background-color: currentColor;
+      left: 4px;
+      top: 7px;
+    }
+    &.filled {
+      background: currentColor;
+      &:before{
+        background-color: $white;
+      }
+    }
+  }
+  &.checkI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+    &:before{
+      left: 4px;
+      top: 4px;
+      width: 7px;
+      height: 4px;
+      border-bottom: solid 1px currentColor;
+      border-left: solid 1px currentColor;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    &.filled {
+      background: currentColor;
+      &:before{
+        border-color: $white;
+      }
+    }
+  }
+  &.removeI.icon {
+    margin-left: 2px;
+    margin-top: 2px;
+    &:before,
+    &:after {
+      left: 3px;
+      top: 7px;
+      width: 9px;
+      height: 1px;
+      background-color: currentColor;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    &:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    &.filled {
+      background: currentColor;
+      &:before,
+      &:after {
+        background-color: $white;
+      }
+    }
+  }
+}
+.plus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  &:before,
+  &:after {
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+.minus.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+.check.icon {
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.remove.icon {
+  margin-left: 3px;
+  margin-top: 10px;
+  &:before,
+  &:after {
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+// css icon 5: http://codepen.io/wentin/pen/098951f382a880f92170da12c8268e56?editors=0100
+
+.cmd.icon {
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 3px;
+  height: 3px;
+  border: solid 1px currentColor;
+  &:before {
+    left: -6px;
+    top: -6px;
+    width: 4px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 50% 50% 0 50%;
+  }  
+  &:after {
+    left: 3px;
+    top: -6px;
+    width: 4px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 50% 50% 50% 0;
+  } 
+  i {
+    &:before {
+      left: -6px;
+      top: 3px;
+      width: 4px;
+      height: 4px;
+      border: solid 1px currentColor;
+      border-radius: 50% 0 50% 50%;
+    }  
+    &:after {
+      left: 3px;
+      top: 3px;
+      width: 4px;
+      height: 4px;
+      border: solid 1px currentColor;
+      border-radius: 0 50% 50% 50%;
+    } 
+  }
+}
+.option.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  box-shadow: 9px 0 0 0 currentColor,
+              10px 14px 0 0 currentColor;
+  &:before {
+    height: 16px;
+    width: 1px;
+    background-color: currentColor;
+    left: 4px;
+    transform-origin: right top;
+    transform: rotate(-22.4deg);
+  }
+}
+.shift.icon {
+  margin-left: 6px;
+  margin-top: 10px;
+  width: 7px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    left: -2px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    transform: rotate(45deg);
+  }
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: currentColor;
+    left: -4px;
+    box-shadow: 11px 0 0 0 currentColor;
+  }
+}
+.hard-drive.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 15px;
+  height: 6px;
+  border-radius: 0 0 2px 2px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    top: 0px;
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    box-shadow: 10px 0 0 0 currentColor;
+  }
+  i {
+    width: 9px;
+    height: 1px;
+    background: currentColor;
+    left: 3px;
+    top: -6px;
+    &:before {
+      top: -1px;
+      left: -5px;
+      width: 1px;
+      height: 7px;
+      border-right: solid 1px currentColor;
+      transform-origin: bottom center;
+      transform: rotate(33deg);
+    }
+    &:after {
+      top: -1px;
+      right: -4px;
+      width: 1px;
+      height: 7px;
+      border-right: solid 1px currentColor;
+      transform-origin: bottom right;
+      transform: rotate(-33deg);
+    }
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.terminal.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 15px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    top: 4px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: currentColor;
+    left: 8px;
+    top: 9px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-color: $white;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.coffee-cup.icon {
+  margin-left: 4px;
+  margin-top: 5px;
+  width: 11px;
+  height: 8px;
+  border: solid 1px currentColor;
+  border-radius: 0 0 3px 3px;
+  &:before {
+    top: 1px;
+    right: -4px;
+    width: 3px;
+    height: 3px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 3px 3px 0;
+  }
+  &:after {
+    width: 15px;
+    height: 1px;
+    border-radius: 0 0 1px 1px;
+    background-color: currentColor;
+    bottom: -3px;
+    left: -2px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.value-slider.icon {
+  margin-top: 3px;
+  margin-left: 13px;
+  height: 13px;
+  width: 1px;
+  background-color: currentColor;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px $white;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px $white;
+  &:before {
+    top: 3px;
+    left: -12px;
+    width: 15px;
+    height: 5px;
+    border: solid 1px currentColor;
+  }
+  &:after {
+    left: -10px;
+    top: 5px;
+    width: 9px;
+    height: 3px;
+    background-color: currentColor;
+  }
+  &.filled {
+    &:after {
+      left: 1px;
+      top: 4px;
+      width: 3px;
+      height: 5px;
+    }
+  }
+}
+.headphone.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-radius: 6px 6px 0 0;
+  &:before {
+    top: 6px;
+    left: -3px;
+    width: 2px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 2px 1px 1px 3px;
+  }
+  &:after {
+    top: 6px;
+    right: -3px;
+    width: 2px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 1px 2px 3px 1px;
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;  
+    }
+  }
+}
+.infinite.icon {
+  margin-left: 1px;
+  margin-top: 7px;
+  width: 18px;
+  height: 7px;
+  &:before,
+  &:after {
+    width: 6px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 50% 50% 0 50%;
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(135deg);
+    right: 0px;
+  }
+}
+.crop.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-left: solid 2px currentColor;
+  border-bottom: solid 2px currentColor;
+  &:before {
+    left: -4px;
+    top: 2px;
+    width: 11px;
+    height: 11px;
+    border-right: solid 2px currentColor;
+    border-top: solid 2px currentColor;
+  }
+  &:after {
+    width: 1px;
+    height: 15px;
+    background-color: currentColor;
+    bottom: -1px;
+    left: -1px;
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+  }
+}
+.asterisk.icon {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 1px;
+  height: 11px;
+  background-color: currentColor;
+  &:before, 
+  &:after {
+    width: 1px;
+    height: 11px;
+    background-color: currentColor;
+  }
+  &:before {
+    transform: rotate(60deg);
+  }
+  &:after {
+    transform: rotate(-60deg);
+  }
+}
+.pie-chart.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 8px;
+    height: 8px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-color: $white;
+    }
+  }
+}
+.bar-chart.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 12px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    left: 1px;
+    bottom: 1px;
+    width: 1px;
+    height: 4px;
+    border: solid 1px currentColor;
+  }
+  &:after {
+    left: 5px;
+    bottom: 1px;
+    width: 1px;
+    height: 8px;
+    border: solid 1px currentColor;
+  }
+  i {
+    top: 11px;
+    left: 8px;
+    &:before {
+      left: 1px;
+      bottom: 0;
+      width: 1px;
+      height: 4px;
+      border: solid 1px currentColor;
+    }
+    &:after {
+      left: 5px;
+      bottom: 0;
+      width: 1px;
+      height: 8px;
+      border: solid 1px currentColor;
+    }
+  }
+}
+.bar-chart-filled.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 12px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    left: 1px;
+    bottom: 1px;
+    width: 3px;
+    height: 6px;
+    background-color: currentColor;
+    box-shadow: 8px 0 0 0 currentColor;
+  }
+  &:after {
+    left: 5px;
+    bottom: 1px;
+    width: 3px;
+    height: 10px;
+    background-color: currentColor;
+    box-shadow: 8px 0 0 0 currentColor;
+  }
+}
+.line-chart.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 12px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    left: 1px;
+    bottom: 1px;
+    width: 0;
+    height: 0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 6px currentColor;
+  }
+  &:after {
+    right: 0;
+    bottom: 1px;
+    width: 0;
+    height: 0;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    border-bottom: solid 11px currentColor;
+  }
+}
+.toggle-button.icon {
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 17px;
+  height: 10px;
+  border-radius: 6px;
+  border: solid 1px currentColor;
+  &:before {
+    left: 1px;
+    top: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.filter.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 1px;
+  height: 0;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-top: solid 7px currentColor;
+  &:before {
+    left: -1px;
+    top: -5px;
+    height: 7px;
+    width: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 3px currentColor;
+    border-bottom: solid 3px transparent;
+  }
+}
+.play-button.icon {
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 17px;
+  height: 10px;
+  border-radius: 5px;
+  border: solid 1px currentColor;
+  &:before {
+    left: 7px;
+    top: 2px;
+    height: 0;
+    width: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 5px currentColor;
+    border-bottom: solid 3px transparent;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-left: solid 5px $white;
+    }
+  }
+}
+.folder.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 1px 1px 1px;
+  &:before {
+    left: -1px;
+    top: -3px;
+    width: 6px;
+    height: 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 2px 3px 0 0;
+  }
+  &:after {
+    top: -1px;
+    right: -1px;
+    width: 9px;
+    height: 1px;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 0 2px 0 0;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.square-pin.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 11px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    left: 2px;
+    width: 5px;
+    height: 8px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    top: 9px;
+    left: 5px;
+    width: 1px;
+    height: 5px;
+    background-color: currentColor;
+  }
+  &.filled:before {
+    background-color: currentColor;
+  }
+}
+.ruler.icon {
+  margin-top: 7px;
+  width: 19px;
+  height: 5px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  transform: rotate(-45deg);
+  &:before {
+    top: -1px;
+    left: 1px;
+    width: 1px;
+    height: 3px;
+    background-color: currentColor;
+    box-shadow: 4px 0 0 0 currentColor,
+                8px 0 0 0 currentColor,
+                12px 0 0 0 currentColor,
+                16px 0 0 0 currentColor;
+  }
+  &:after {
+    top: -1px;
+    left: 3px;
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+    box-shadow: 4px 0 0 0 currentColor,
+                8px 0 0 0 currentColor,
+                12px 0 0 0 currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      height: 2px;
+      background-color: $white;
+      box-shadow: 4px 0 0 0 $white,
+                  8px 0 0 0 $white,
+                  12px 0 0 0 $white,
+                  16px 0 0 0 $white;
+    }
+    &:after {
+      height: 3px;
+      background-color: $white;
+      box-shadow: 4px 0 0 0 $white,
+                  8px 0 0 0 $white,
+                  12px 0 0 0 $white;
+    }
+  }
+}
+.piano.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 3px;
+  height: 15px;
+  border-radius: 0 0 2px 2px;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    width: 3px;
+    height: 15px;
+    border-radius: 0 0 2px 2px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: 3px;
+    top: -1px;
+  }
+  &:after {
+    left: 7px;
+    top: -1px;
+  }
+  i {
+    left: 11px;
+    top: -1px;
+    width: 3px;
+    height: 15px;
+    border-radius: 0 0 2px 2px;
+    border: solid 1px currentColor;
+    z-index: 1;
+    &:before {
+      left: -2px;
+      width: 3px;
+      height: 8px;
+      background-color: currentColor;
+      box-shadow: -4px 0 0 0 currentColor,
+                  -8px 0 0 0 currentColor;
+    }
+    &:after {
+      left: -1px;
+      width: 1px;
+      height: 7px;
+      background-color: $white;
+      box-shadow: -4px 0 0 0 $white,
+                  -8px 0 0 0 $white;
+    }
+  }
+  &.filled i:after {
+    display: none;
+  }
+}
+.film.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 12px;
+  border: solid 1px currentColor;
+  &:before {
+    left: -4px;
+    top: -1px;
+    width: 2px;
+    height: 2px;
+    background-color: currentColor;
+    box-shadow: 0 3px 0 0 currentColor,
+                0 6px 0 0 currentColor,
+                0 9px 0 0 currentColor,
+                0 12px 0 0 currentColor,
+                17px 0px 0 0 currentColor,
+                17px 3px 0 0 currentColor,
+                17px 6px 0 0 currentColor,
+                17px 9px 0 0 currentColor,
+                17px 12px 0 0 currentColor;
+  }
+  &:after {
+    left: 3px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: solid 5px currentColor;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      border-left: solid 5px $white;
+    }
+  }
+}
+.eyedropper.icon {
+  margin-left: 8px;
+  width: 2px;
+  height: 19px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  &:before {
+    left: -1px;
+    top: -1px;
+    width: 4px;
+    height: 7px;
+    border-radius: 2px 2px 0 0;
+    background-color: currentColor;
+  }
+  &:after {
+    left: -3px;
+    top: 5px;
+    width: 8px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+.shop2.icon {
+  margin-left: 4px;
+  margin-top: 12px;
+  width: 11px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before,
+  &:after {
+    top: -7px;
+    width: 1px;
+    height: 4px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: -2px;
+    border-radius: 4px 0 2px 2px;
+  }
+  &:after {
+    right: -2px;
+    border-radius: 0 4px 2px 2px;
+  }
+  i {
+    left: 3px;
+    border: solid 1px currentColor;
+    width: 3px;
+    height: 3px;
+    &:before,
+    &:after {
+      top: -10px;
+      width: 1px;
+      height: 6px;
+      border: solid 1px currentColor;
+    }
+    &:before {
+      left: -2px;
+      border-radius: 3px 0 2px 2px;
+    }
+    &:after {
+      right: -2px;
+      border-radius: 0 3px 2px 2px;
+    }
+  }
+  &.filled {
+    &:before,
+    &:after,
+    i:before,
+    i:after {
+      background-color: currentColor;
+    }
+    
+  }
+}
+.shop.icon {
+  margin-left: 4px;
+  margin-top: 12px;
+  width: 11px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before,
+  &:after {
+    top: -8px;
+    width: 1px;
+    height: 5px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: -2px;
+    border-radius: 0 0 2px 2px;
+  }
+  &:after {
+    right: -2px;
+    border-radius: 0 0 2px 2px;
+  }
+  i {
+    left: 3px;
+    border: solid 1px currentColor;
+    width: 3px;
+    height: 3px;
+    &:before,
+    &:after {
+      top: -9px;
+      width: 1px;
+      height: 5px;
+      border: solid 1px currentColor;
+    }
+    &:before {
+      left: -2px;
+      border-radius: 0 0 2px 2px;
+    }
+    &:after {
+      right: -2px;
+      border-radius: 0 0 2px 2px;
+    }
+  }
+}
+.shop-filled.icon {
+  margin-left: 4px;
+  margin-top: 12px;
+  width: 11px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    top: -8px;
+    width: 3px;
+    height: 7px;
+    background-color: currentColor;
+    left: -2px;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 4px 0 0 0 currentColor,
+                8px 0 0 0 currentColor,
+                12px 0 0 0 currentColor;
+  }
+  &:after {
+    left: 3px;
+    border: solid 1px currentColor;
+    width: 3px;
+    height: 3px;
+  }
+}
+.music-note.icon {
+  margin-left: 7px;
+  margin-top: 4px;
+  width: 9px;
+  height: 8px;
+  border-top: solid 3px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  transform: skewY(-11deg);
+  &:before,
+  &:after {
+    width: 5px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 50%;
+  }
+  &:before {
+    left: -5px;
+    top: 6px;
+  }
+  &:after {
+    left: 5px;
+    top: 6px;
+  }
+}
+.share.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 2px;
+  height: 2px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before,
+  &:after {
+    left: 9px;
+    width: 2px;
+    height: 2px;
+    border: solid 1px currentColor;
+    border-radius: 2px;
+  }
+  &:before { 
+    top: -6px;
+  }
+  &:after { 
+    top: 4px;
+  }
+  i {
+    &:before {
+      left: 3px;
+      width: 8px;
+      height: 1px;
+      background-color: currentColor;
+      transform-origin: left bottom;
+      transform: rotate(-30deg);
+    }
+    &:after {
+      top: 1px;
+      left: 3px;
+      width: 8px;
+      height: 1px;
+      background-color: currentColor;
+      transform-origin: left top;
+      transform: rotate(30deg);
+    }
+  }
+}
+.share-filled.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 4px;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 2px;
+  box-shadow: 9px -5px 0 0 currentColor,
+              9px 5px 0 0 currentColor;
+  &:before {
+    top: 1px;
+    left: 3px;
+    width: 8px;
+    height: 1px;
+    background-color: currentColor;
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+  }
+  &:after {
+    top: 2px;
+    left: 3px;
+    width: 8px;
+    height: 1px;
+    background-color: currentColor;
+    transform-origin: left top;
+    transform: rotate(30deg);
+  }
+}
+.house.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 11px;
+  height: 9px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    width: 3px;
+    height: 5px;
+    border: solid 1px currentColor;
+    left: 3px;
+    top: 3px;
+  }
+  &:after {
+    left: -1px;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform: rotate(45deg);
+  }
+  &.filled:before {
+    background-color: currentColor;
+  }
+}
+.insert2.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 14px;
+  height: 14px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  &:before {
+    width: 4px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+    right: 0;
+    bottom: 0;
+  } 
+  i {
+    width: 2px;
+    height: 2px;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    left: 3px;
+    bottom: 3px;
+    &:before {
+      width: 2px;
+      height: 10px;
+      border-top: solid 1px currentColor;
+      border-left: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      bottom: 2px;
+      left: -1px;
+      transform-origin: left bottom;
+      transform: rotate(45deg);
+    }
+  }
+  &.filled { 
+    i {
+      width: 3px;
+      height: 3px;
+      background-color: currentColor;
+      left: 3px;
+      bottom: 3px;
+      border: none;
+      &:before {
+        width: 4px;
+        height: 11px;
+        background-color: currentColor;
+        bottom: 3px;
+        left: 0;
+        transform-origin: left bottom;
+        transform: rotate(45deg);
+        border: none;
+      }
+    }
+  }
+}
+.equalizer.icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 1px;
+  height: 15px;
+  background-color: currentColor;
+  box-shadow: 6px 0 0 0 currentColor,
+              12px 0 0 0 currentColor;
+  &:before {
+    left: -1px;
+    top: 2px;
+    width: 3px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: currentColor;
+    box-shadow: 6px 8px 0 0 currentColor,
+               12px 4px 0 0 currentColor;
+  }
+  &:after {
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    background-color: $white;
+    box-shadow: 6px 8px 0 0 $white,
+               12px 4px 0 0 $white;
+  }
+  &.filled:after {
+    display: none;
+  }
+}
+.video-camera.icon {
+  margin-left: 1px;
+  margin-top: 6px;
+  width: 12px;
+  height: 9px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    right: -6px;
+    width: 0;
+    height: 1px;
+    border-top: solid 4px transparent;
+    border-bottom: solid 4px transparent;
+    border-right: solid 6px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.back-play.icon {
+  margin-left: 15px;
+  margin-top: 4px;
+  width: 1px;
+  height: 13px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    left: -12px;
+    width: 12px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:before {
+    top: 0;
+    transform-origin: right top;
+    transform: rotate(-30deg);
+  }
+  &:after {
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: rotate(30deg);
+  }
+}
+.back-play-filled.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 0;
+  height: 0;
+  border-right: solid 11px currentColor;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+}
+.play.icon {
+  margin-left: 5px;
+  margin-top: 4px;
+  width: 1px;
+  height: 13px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    left: 1px;
+    width: 12px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:before {
+    top: 0;
+    transform-origin: left top;
+    transform: rotate(30deg);
+  }
+  &:after {
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+  }
+}
+.play-filled.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 0;
+  height: 0;
+  border-left: solid 11px currentColor;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+}
+.pause.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 13px;
+  height: 13px;
+  &:before,
+  &:after {
+    width: 3px;
+    height: 11px;
+    border: solid 1px currentColor;
+    border-radius: 1px;
+  }
+  &:after {
+    right: 0;
+  }
+  &.filled {
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.stop-music.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.backward.icon {
+  margin-left: 4px;
+  margin-top: 10px;
+  transform: rotate(-45deg);
+  &:before,
+  &:after {
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-radius: 1px 0 0 0;
+  }
+  &:after {
+    left: 3px;
+    top: 3px;
+  }
+}
+.backward-filled.icon{
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before,
+  &:after {
+    width: 0;
+    height: 0;
+    border-right: solid 7px currentColor;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 7px;
+  }
+}
+.forward.icon {
+  margin-left: -1px;
+  margin-top: 10px;
+  transform: rotate(-45deg);
+  &:before,
+  &:after {
+    width: 9px;
+    height: 9px;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-radius: 0 0 1px 0;
+  }
+  &:after {
+    left: 3px;
+    top: 3px;
+  }
+}
+.forward-filled.icon{
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before,
+  &:after {
+    width: 0;
+    height: 0;
+    border-left: solid 7px currentColor;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 7px;
+  }
+}
+.next.icon {
+  margin-left: 6px;
+  margin-top: 4px;
+  &:before{
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-radius: 0 1px 0 0;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: 9px;
+    top: 0px;
+    width: 1px;
+    height: 14px;
+    background-color: currentColor;
+  }
+}
+.next-filled.icon{
+  margin-left: 6px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-left: solid 7px currentColor;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 7px;
+    width: 3px;
+    height: 14px;
+    background-color: currentColor;
+  }
+}
+.previous.icon {
+  margin-left: 5px;
+  margin-top: 4px;
+  &:before{
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-radius: 1px 0 0 0;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 14px;
+    background-color: currentColor;
+  }
+}
+.previous-filled.icon{
+  margin-left: 5px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before {
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-right: solid 7px currentColor;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 0;
+    width: 3px;
+    height: 14px;
+    background-color: currentColor;
+  }
+}
+.first.icon {
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 1px;
+  height: 14px;
+  background-color: currentColor;
+  &:before{
+    left: 0;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-radius: 1px 0 0 0;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-radius: 1px 0 0 0;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+}
+.first-filled.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 3px;
+  height: 14px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-right: solid 7px currentColor;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 10px
+  }
+}
+.last.icon {
+  margin-left: 17px;
+  margin-top: 4px;
+  width: 1px;
+  height: 14px;
+  background-color: currentColor;
+  &:before, 
+  &:after {
+    left: -9px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-radius: 0 1px 0 0;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: -13px;
+  }
+}
+.last-filled.icon {
+  margin-left: 16px;
+  margin-top: 4px;
+  width: 3px;
+  height: 14px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: solid 7px currentColor;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: -14px;
+  }
+}
+.record.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.previous-next.icon {
+  margin-left: 8px;
+  margin-top: 4px;
+  width: 3px;
+  height: 13px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    left: -10px;
+    width: 8px;
+    height: 8px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    right: -10px;
+    width: 8px;
+    height: 8px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+}
+.previous-next-filled.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 17px;
+  height: 14px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+    border-right: solid 7px currentColor;
+  }
+  &:after {
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+    border-left: solid 7px currentColor;
+  }
+}
+.note-tree.icon {
+  margin-left: 4px;
+  margin-top: 10px;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    left: 5px;
+    top: -6px;
+    width: 1px;
+    height: 11px;
+    background-color: currentColor;
+  }
+  &:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: currentColor;
+    left: -2px;
+    top: 3px;
+    box-shadow: 6px 0 0 0 currentColor,
+                6px -10px 0 0 currentColor,
+                12px 0 0 0 currentColor;
+  }
+}
+.layout-right-column.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    left: -1px;
+    top: 4px;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    left: 10px;
+    top: 4px;
+    width: 1px;
+    height: 11px;
+    background-color: currentColor;
+  }
+}
+.layout-right-column-filled.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 17px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 2px 2px 0 0;
+  &:before {
+    left: 0;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 0 0 0 2px;
+    background-color: currentColor;
+  }
+  &:after {
+    left: 12px;
+    top: 6px;
+    width: 5px;
+    height: 11px;
+    background-color: currentColor;
+    border-radius: 0 0 2px 0;
+  }
+}
+.layout-left-column.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    left: -1px;
+    top: 4px;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    left: 4px;
+    top: 4px;
+    width: 1px;
+    height: 11px;
+    background-color: currentColor;
+  }
+}
+.layout-left-column-filled.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 17px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 2px 2px 0 0;
+  &:before {
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 11px;
+    border-radius: 0 0 0 2px;
+    background-color: currentColor;
+  }
+  &:after {
+    left: 6px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    background-color: currentColor;
+    border-radius: 0 0 2px 0;
+  }
+}
+.layout-three-column.icon {
+  margin-top: 4px;
+  margin-left: 1px;
+  width: 17px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    top: -1px;
+    left: 4px;
+    width: 1px;
+    height: 13px;
+    background-color: currentColor;
+  }
+  &:after {
+    top: -1px;
+    right: 4px;
+    width: 1px;
+    height: 13px;
+    background-color: currentColor;
+  }
+}
+.layout-three-column-filled.icon {
+  margin-top: 4px;
+  margin-left: 7px;
+  width: 7px;
+  height: 13px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    top: 0;
+    width: 5px;
+    height: 13px;
+    background-color: currentColor;
+  }
+  &:before {
+    left: -6px;
+    border-radius: 2px 0 0 2px;
+  }
+  &:after {
+    right: -6px;
+    border-radius: 0 2px 2px 0;
+  }
+}
+.layout-1.icon {
+  margin-left: 11px;
+  margin-top: 2px;
+  width: 6px;
+  height: 15px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    top: -1px;
+  }
+  &:after {
+    bottom: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.layout-2.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 6px;
+  height: 15px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    top: -1px;
+  }
+  &:after {
+    bottom: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.layout-3.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    bottom: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: -1px;
+  }
+  &:after {
+    right: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.layout-4.icon {
+  margin-left: 2px;
+  margin-top: 11px;
+  width: 15px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    top: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: -1px;
+  }
+  &:after {
+    right: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.trophy.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 15px;
+  height: 15px;
+  &:before {
+    left: 3px;
+    width: 7px;
+    height: 9px;
+    border: solid 1px currentColor;
+    border-radius: 0 0 5px 5px;
+  }
+  &:after {
+    top: 11px;
+    left: 7px;
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+  }
+  i {
+    top: 14px;
+    left: 4px;
+    width: 7px;
+    height: 1px;
+    background-color: currentColor;
+    &:before {
+      top: -12px;
+      left: -4px;
+      width: 2px;
+      height: 4px;
+      border: solid 1px currentColor;
+      border-radius: 0 0 0 3px;
+    }
+    &:after {
+      top: -12px;
+      right: -4px;
+      width: 2px;
+      height: 4px;
+      border: solid 1px currentColor;
+      border-radius: 0 0 3px 0;
+    }
+  }
+  &.filled {
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.speedmeter.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 9px;
+  border-radius: 8px 8px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    left: 5px;
+    top: 7px;
+    width: 3px;
+    height: 3px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+  }
+  &:after {
+    left: 7px;
+    top: 3px;
+    width: 1px;
+    height: 5px;
+    background-color: currentColor;
+  }
+  &.filled:before {
+    background-color: currentColor;
+  }
+}
+.shooting-target.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  &:before {
+    top: 2px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+  }
+  &:after {
+    top: 5px;
+    left: 5px;
+    width: 3px;
+    height: 3px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+  }
+  &.filled {
+    width: 13px;
+    height: 13px;
+    border: solid 2px currentColor;
+    &:before {
+      left: 1px;
+      top: 1px;
+      width: 7px;
+      height: 7px;
+      border: solid 2px currentColor;
+    }
+    &:after {
+      left: 4px;
+      top: 4px;
+      width: 5px;
+      height: 5px;
+      background-color: currentColor;
+      border: none;
+    }
+  }
+}
+.clipboard.icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 11px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+  &:before {
+    top: -1px;
+    left: 2px;
+    width: 5px;
+    height: 1px;
+    border: solid 1px currentColor;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 3px;
+    height: 1px;
+    background-color: currentColor;
+    box-shadow: 8px 0 0 0 currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.airplay.icon {
+  margin-top: 4px;
+  margin-left: 3px;
+  width: 14px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-bottom: none;
+  border-radius: 1px;
+  &:before {
+    top: 7px;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    border-bottom: solid 5px currentColor;
+  }
+  &:after {
+    top: 9px;
+    width: 3px;
+    height: 1px;
+    background-color: currentColor;
+    box-shadow: 11px 0 0 0 currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.reply.icon {
+  margin-left: 5px;
+  margin-top: 9px;
+  width: 11px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-radius: 0 6px 0 0;
+  &:before {
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform: rotate(-45deg);
+  }
+}
+.reply-all.icon {
+  margin-left: 8px;
+  margin-top: 9px;
+  width: 8px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-radius: 0 6px 0 0;
+  &:before,
+  &:after {
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: -3px;
+  }
+}
+.reply-all-reflect.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 8px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-radius: 6px 0 0 0;
+  &:before,
+  &:after {
+    left: 1px;
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 4px;
+  }
+}
+.forward-email.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 11px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-radius: 6px 0 0 0;
+  &:before {
+    left: 4px;
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(45deg);
+  }
+}
+.control.icon {
+  margin-left: 9px;
+  margin-top: 6px;
+  width: 8px;
+  height: 1px;
+  background-color: currentColor;
+  box-shadow: -5px 8px 0 0 currentColor;
+  &:before,
+  &:after {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: -6px;
+    top: -3px;
+  }
+  &:after {
+    right: -1px;
+    top: 5px;
+  }
+  &.filled {
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.cart.icon {
+  margin-left: 5px;
+  margin-top: 6px;
+  width: 8px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before{
+    width: 1px;
+    height: 7px;
+    background-color: currentColor;
+    bottom: -1px;
+    transform-origin: left bottom;
+    transform: rotate(-26deg);
+  }
+  &:after{
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    bottom: -1px;
+    right: 0;
+    transform-origin: right bottom;
+    transform: rotate(23deg);
+  }
+  i {
+    width: 3px;
+    height: 1px;
+    background-color: currentColor;
+    top: -1px;
+    left: -3px;
+    box-shadow: 10px 0 0 0 currentColor,
+                14px -3px 0 0 currentColor;
+    &:before,
+    &:after {
+      top: 8px;
+      left: 1px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      border: solid 1px currentColor;
+    }
+    &:after {
+      left: 9px;
+    }
+  }
+}
+.cart-filled {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 7px;
+  height: 0;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-top: solid 7px currentColor;
+  &:before,
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: currentColor;
+    top: 1px;
+  }
+  &:before {
+    left: -2px;
+  }
+  &:after {
+    left: 5px;
+  }
+  i {
+    width: 3px;
+    height: 1px;
+    background-color: currentColor;
+    top: -10px;
+    left: 10px;
+    &:before {
+      height: 4px;
+      width: 1px;
+      background-color: currentColor;
+      transform-origin: left top;
+      transform: rotate(21deg);
+    }
+  }
+}
+
+// css icon 6: http://codepen.io/wentin/pen/098951f382a880f92170da12c8268e56?editors=0100
+
+.doubleQuoteLeft.icon {
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 17px;
+  height: 11px;
+  &:before, 
+  &:after {
+    width: 6px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    top: 3px;
+  }
+  &:after {
+    left: 9px;
+  }
+  i {
+    &:before,
+    &:after {
+      width: 12px;
+      height: 12px;
+      border-left: solid 1px currentColor;
+      border-top: solid 1px transparent;
+      border-right: solid 1px transparent;
+      border-bottom: solid 1px transparent;
+      border-radius: 50%;
+      transform: rotate(45deg);
+      top: 0;
+    }
+    &:after {
+      left: 9px;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.doubleQuoteRight.icon {
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 17px;
+  height: 11px;
+  &:before, 
+  &:after {
+    width: 6px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    top: 0px;
+  }
+  &:after {
+    left: 9px;
+  }
+  i {
+    &:before,
+    &:after {
+      width: 12px;
+      height: 12px;
+      border-left: solid 1px transparent;
+      border-top: solid 1px transparent;
+      border-right: solid 1px currentColor;
+      border-bottom: solid 1px transparent;
+      border-radius: 50%;
+      transform: rotate(45deg);
+      left: -6px;
+      top: -3px;
+    }
+    &:after {
+      left: 3px;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.singleQuoteLeft.icon {
+  margin-left: 6px;
+  margin-top: 5px;
+  width: 9px;
+  height: 11px;
+  &:before {
+    width: 6px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    top: 3px;
+  }
+  &:after {
+    width: 12px;
+    height: 12px;
+    border-left: solid 1px currentColor;
+    border-top: solid 1px transparent;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    left: 0;
+    top: 0;
+  }
+  &.filled {
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.singleQuoteRight.icon {
+  margin-left: 6px;
+  margin-top: 5px;
+  width: 9px;
+  height: 11px;
+  &:before {
+    width: 6px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    top: 0px;
+  }
+  &:after {
+    width: 12px;
+    height: 12px;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px transparent;
+    border-left: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    left: -6px;
+    top: -3px;
+  }
+  &.filled {
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.allBorders {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  &:before {
+    left: 7px;
+    width: 0;
+    height: 100%;
+    border-left: solid 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    width: 100%;
+    height: 0;
+    border-top: solid 1px currentColor;
+  }
+}
+.outsideBorders {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.insideBorders {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: solid 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: solid 1px currentColor;
+  }
+}
+.noBorder {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.leftBorder {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  border-left-style: solid;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.rightBorder {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  border-right-style: solid;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.topBorder {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  border-top-style: solid;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.bottomBorder {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  border-bottom-style: solid;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.verticalCenterBorders {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: dotted 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: solid 1px currentColor;
+  }
+}
+.horizontalCenterBorders {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: dotted 1px currentColor;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 0;
+    height: 17px;
+    border-left: solid 1px currentColor;
+  }
+  &:after {
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.globe.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border-left: solid 1px transparent;
+    border-top: solid 1px transparent;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    left: -3px;
+    top: -3px;
+  }
+  &:after {
+    top: 14px;
+    left: 1px;
+    width: 7px;
+    height: 8px;
+    border-top: solid 1px currentColor;
+    box-shadow: 0 -5px 0 -3px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.wine-glass.icon {
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 4px;
+  border-radius: 0 0 5px 5px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  &:before {
+    left: -1px;
+    top: -6px;
+    width: 9px;
+    height: 0;
+    border-bottom: solid 5px currentColor;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;
+  }
+  &:after {
+    top: 8px;
+    left: 1px;
+    width: 7px;
+    height: 8px;
+    border-top: solid 1px currentColor;
+    box-shadow: 0 -6px 0 -3px currentColor;
+  }
+  &.filled {
+    background-color: transparent;
+  }
+}
+.cocktail-glass.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 1px;
+  height: 0;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-top: solid 9px currentColor;
+  &:before {
+    top: 5px;
+    left: -3px;
+    width: 7px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    box-shadow: 0 -8px 0 -3px currentColor;
+  }
+  &.filled:after {
+    top: -4px;
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $white;
+    box-shadow: -2px -2px 0 0 $white;
+  }
+}
+.plug.icon {
+  margin-left: 4px;
+  margin-top: 6px;
+  width: 11px;
+  height: 7px;
+  border: solid 1px currentColor;
+  border-radius: 0 0 6px 6px;
+  &:before {
+    left: 2px;
+    top: -5px;
+    width: 3px;
+    height: 4px;
+    border-left: solid 2px currentColor;
+    border-right: solid 2px currentColor;
+  }
+  &:after {
+    width: 3px;
+    height: 4px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 2px 2px;
+    top: 7px;
+    left: 3px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.mirror-horizontal.icon {
+  margin-left: 10px;
+  margin-top: 4px;
+  width: 0;
+  height: 14px;
+  border-left: dotted 1px currentColor;
+  box-shadow: -9px 0 0 0 currentColor,
+              9px 0 0 0 currentColor;
+  &:before {
+    left: -12px;
+    top: -3px;
+    width: 9px;
+    height: 9px;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform-origin: right bottom;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 1px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform-origin: left top;
+    transform: rotate(-45deg);
+  }
+}
+.mirror-horizontal-filled.icon {
+  margin-top: 3px;
+  margin-left: 2px;
+  width: 3px;
+  height: 0;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-left: solid 7px currentColor;
+  border-right: solid 7px currentColor;
+  &:before {
+    left: 1px;
+    top: -7px;
+    width: 0;
+    height: 15px;
+    border-left: dotted 1px currentColor;
+  }
+}
+.mirror-vertical.icon {
+  margin-left: 4px;
+  margin-top: 10px;
+  width: 14px;
+  height: 0;
+  border-top: dotted 1px currentColor;
+  box-shadow: 0 -9px 0 0 currentColor,
+              0 9px 0 0 currentColor;
+  &:before {
+    left: -3px;
+    top: -12px;
+    width: 9px;
+    height: 9px;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform-origin: right bottom;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: 7px;
+    top: 1px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+}
+.mirror-vertical-filled.icon {
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 0;
+  height: 3px;
+  border-top: solid 7px currentColor;
+  border-bottom: solid 7px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  &:before {
+    left: -7px;
+    top: 1px;
+    width: 15px;
+    height: 0;
+    border-top: dotted 1px currentColor;
+  }
+}
+.flip-horizontal.icon {
+  margin-top: 3px;
+  margin-left: 2px;
+  width: 17px;
+  height: 15px;
+  &:before {
+    width: 7px;
+    height: 14px;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    left: 9px;
+    width: 7px;
+    height: 14px;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+  }
+  i { 
+    width: 17px;
+    height: 15px;
+    &:before {
+      width: 1px;
+      height: 16px;
+      background-color: currentColor;
+      bottom: 1px;
+      transform-origin: bottom left;
+      transform: rotate(26deg);
+    }
+    &:after {
+      width: 1px;
+      height: 16px;
+      background-color: currentColor;
+      right: 0;
+      bottom: 1px;
+      transform-origin: bottom right;
+      transform: rotate(-26deg);
+    }
+  }
+}
+.flip-vertical.icon {
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 15px;
+  height: 17px;
+  &:before {
+    width: 14px;
+    height: 7px;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+  }
+  &:after {
+    top: 9px;
+    width: 14px;
+    height: 7px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+  }
+  i { 
+    width: 15px;
+    height: 17px;
+    &:before {
+      width: 16px;
+      height: 1px;
+      background-color: currentColor;
+      left: 1px;
+      transform-origin: top left;
+      transform: rotate(26deg);
+    }
+    &:after {
+      width: 16px;
+      height: 1px;
+      background-color: currentColor;
+      bottom: 0;
+      left: 1px;
+      transform-origin: bottom left;
+      transform: rotate(-26deg);
+    }
+  }
+}
+.flip-horizontal-filled.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 17px;
+  height: 15px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid currentColor;
+    border-left: 8px solid transparent;
+  }
+  &:after {
+    left: 9px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid currentColor;
+    border-right: 8px solid transparent;
+  }
+}
+.flip-vertical-filled.icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  width: 15px;
+  height: 17px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-left: 15px solid currentColor;
+    border-top: 8px solid transparent;
+  }
+  &:after {
+    left: 0;
+    top: 9px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid currentColor;
+    border-bottom: 8px solid transparent;
+  }
+}
+.cloud.icon {
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 4px 0 0 4px;
+  &:before {
+    width: 12px;
+    height: 12px;
+    border-left: solid 1px transparent;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    top: -7px;
+    left: 4px;
+  }
+  &:after {
+    width: 7px;
+    height: 6px;
+    border-bottom: solid 1px currentColor;
+    top: 0px;
+    left: 4px;
+  }
+  &.snow i {
+    left: 6px;
+    top: 4px;
+    width: 9px;
+    height: 3px;
+    background-color: $white;
+    z-index: 2;
+    &:before {
+      top: -1px;
+      left: 2px;
+      width: 2px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: currentColor;
+      box-shadow: 3px -2px 0 0 currentColor,
+                  3px 1px 0 0 currentColor,
+                  0 3px 0 0 currentColor;
+    }
+  }
+  &.rain i {
+    left: 6px;
+    top: 4px;
+    width: 9px;
+    height: 3px;
+    background-color: $white;
+    z-index: 2;
+    &:before {
+      top: 2px;
+      left: 3px;
+      width: 1px;
+      height: 4px;
+      background-color: currentColor;
+      box-shadow: 3px -3px 0 0 currentColor,
+                  3px -8px 0 0 currentColor,
+                  0 -5px 0 0 currentColor;
+    }
+  }
+  &.rain-drop i {
+    left: 6px;
+    top: 4px;
+    width: 9px;
+    height: 3px;
+    background-color: $white;
+    z-index: 2;
+    &:before {
+      top: 1px;
+      left: 1px;
+      width: 4px;
+      height: 4px;
+      transform: rotate(45deg);
+      border-radius: 0 2px 2px 2px;
+      background-color: currentColor;
+      box-shadow: -1px -6px 0 0 currentColor;
+    }
+  }
+  &.lightningI i {
+    left: 6px;
+    top: 4px;
+    width: 9px;
+    height: 3px;
+    background-color: $white;
+    z-index: 2;
+    &:before {
+      top: -6px;
+      left: 2px;
+      width: 0;
+      height: 0;
+      border-right: solid 4px currentColor;
+      border-top: solid 7px transparent;
+    }
+    &:after {
+      top: -1px;
+      left: 4px;
+      width: 0;
+      height: 0;
+      border-left: solid 4px currentColor;
+      border-bottom: solid 7px transparent;
+    }
+  }
+  &.up-arrow i {
+    left: 5px;
+    top: -4px;
+    z-index: 2;
+    &:before {
+      width: 1px;
+      height: 7px;
+      background-color: currentColor;
+      border-left: solid 4px $white;
+      border-right: solid 4px $white;
+      top: 4px;
+      left: 1px;
+    }
+    &:after {
+      width: 4px;
+      height: 4px;
+      border-top: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      transform: rotate(-45deg);
+      left: 3px;
+      top: 4px;
+    }
+  }
+  &.down-arrow i {
+    left: 5px;
+    top: -4px;
+    z-index: 2;
+    &:before {
+      width: 1px;
+      height: 7px;
+      background-color: currentColor;
+      border-left: solid 4px $white;
+      border-right: solid 4px $white;
+      top: 4px;
+      left: 1px;
+    }
+    &:after {
+      width: 4px;
+      height: 4px;
+      border-top: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      transform: rotate(135deg);
+      left: 3px;
+      top: 6px;
+    }
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+    &.up-arrow i {
+      &:before {
+        background-color: $white;
+        border: none;
+        left: 5px;
+      }
+      &:after {
+        border-color: $white;
+      }
+    }
+    &.down-arrow i {
+      top: -5px;
+      &:before {
+        background-color: $white;
+        border: none;
+        left: 5px;
+      }
+      &:after {
+        border-color: $white;
+      }
+    }
+  }
+}
+.moon.icon {
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  &:before {
+    left: 6px;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    transform: rotate(45deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    transform: rotate(0deg);
+    &:before {
+      background-color: $white;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      left: 8px;
+      top: 2px;
+      width: 7px;
+      height: 10px;
+      transform: rotate(0deg);
+    }
+  }
+}
+.sun.icon {
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  box-shadow: 
+    -8px 0 0 -3px currentColor, 
+    8px 0 0 -3px currentColor, 
+    0 -8px 0 -3px currentColor, 
+    0 8px 0 -3px currentColor, 
+    -6px -6px 0 -3px currentColor, 
+    -6px 6px 0 -3px currentColor, 
+    6px -6px 0 -3px currentColor, 
+    6px 6px 0 -3px currentColor;
+  &.filled {
+    background-color: currentColor;
+  }
+  &.sun-brightness {
+    width: 3px;
+    height: 6px;
+    border-color: currentColor;
+    border-style: solid;
+    border-width: 1px 4px 1px 1px;
+    border-radius: 100%;
+  }
+}
+.sun-raindrop.icon {
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  box-shadow: 
+    -8px 0 0 -3px currentColor, 
+    8px 0 0 -3px currentColor, 
+    0 -8px 0 -3px currentColor, 
+    0 8px 0 -3px currentColor, 
+    -6px -6px 0 -3px currentColor, 
+    -6px 6px 0 -3px currentColor, 
+    6px -6px 0 -3px currentColor, 
+    6px 6px 0 -3px currentColor;
+  &:before {
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50% 0 50% 50%;
+    background-color: $white;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 4px;
+    top: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50% 0 50% 50%;
+    background-color: $white;
+    border: solid 1px currentColor;
+    transform: rotate(-45deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.sun-horizon.icon {
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 50%;
+  box-shadow: 
+    -8px 0 0 -3px currentColor, 
+    8px 0 0 -3px currentColor, 
+    0 -8px 0 -3px currentColor, 
+    -6px -6px 0 -3px currentColor, 
+    6px -6px 0 -3px currentColor;
+  &:before {
+    left: -6px;
+    top: 6px;
+    width: 18px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.sun-rise i{
+    left: 2px;
+    top: 2px;
+    width: 2px;
+    height: 3px;
+    background-color: currentColor;
+    &:before {
+      left: -1px;
+      top: -1px;
+      width: 0;
+      height: 0;
+      border-bottom: solid 2px currentColor;
+      border-left: solid 2px transparent;
+      border-right: solid 2px transparent;
+    }
+  }
+  &.sun-set i{
+    left: 2px;
+    top: 1px;
+    width: 2px;
+    height: 3px;
+    background-color: currentColor;
+    &:before {
+      left: -1px;
+      top: 2px;
+      width: 0;
+      height: 0;
+      border-top: solid 2px currentColor;
+      border-left: solid 2px transparent;
+      border-right: solid 2px transparent;
+    }
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      top: 5px;
+      border-top: solid 1px $white;
+    }
+    &.sun-rise i{
+      background-color: $white;
+      &:before {
+        border-bottom-color: $white;
+      }
+    }
+    &.sun-set i{
+      background-color: $white;
+      &:before {
+        border-top-color: $white;
+      }
+    }
+  }
+}
+.record.icon {
+  margin-left: 5px;
+  margin-top: 14px;
+  width: 11px;
+  height: 1px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    top: -7px;
+    width: 6px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+  }
+  &:before {
+    left: -4px;
+  }
+  &:after {
+    right: -4px;
+  }
+}
+.raindrop.icon {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  transform: rotate(135deg);
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.raindrop-nodrop.icon {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  transform: rotate(135deg);
+  &:after {
+    width: 19px;
+    height: 1px;
+    background-color: currentColor;
+    top: 5px;
+    left: -5px;
+  }
+}
+.raindrop-percent.icon {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 12px;
+  height: 12px;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border: solid 1px currentColor;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+    transform: rotate(135deg);
+  }
+  &:after {
+    top: 1px;
+    content: "%";
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    color: currentColor;
+    width: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+  &.filled {
+    &:before {
+      background-color: currentColor;
+    }
+    &:after {
+      color: $white;
+    }
+  }
+}
+.umbrella.icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  width: 13px;
+  height: 6px;
+  border-radius: 8px 8px 0 0;
+  border: solid 1px currentColor;
+  &:before {
+    width: 4px;
+    height: 2px;
+    border-radius: 0 0 3px 3px;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    left: 6px;
+    top: 12px;
+  }
+  &:after {
+    width: 1px;
+    height: 5px;
+    background-color: currentColor;
+    left: 6px;
+    top: 7px;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.thermometer.icon {
+  margin-left: 7px;
+  margin-top: 11px;
+  width:  6px;
+  height: 6px;
+  border-radius: 4px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 2px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px $white;
+    border-radius: 2px 2px 0 0;
+    background-color: $white;
+    z-index: 1;
+    left: 1px;
+    top: -11px;
+  }
+  &.filled:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+    left: 1px;
+    top: 1px;
+    z-index: 2;
+  }
+}
+.windy.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 13px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border-left: solid 1px transparent;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    top: -7px;
+    right: -4px;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    width: 10px;
+    height: 1px;
+    background-color: currentColor;
+    top: 2px;
+  }
+  i {
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    top: -2px;
+    &:before {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      border-left: solid 1px transparent;
+      border-top: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      border-bottom: solid 1px currentColor;
+      top: -5px;
+      right: -3px;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      border-left: solid 1px transparent;
+      border-top: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      border-bottom: solid 1px currentColor;
+      top: 4px;
+      left: 7px;
+      transform: rotate(45deg);
+    }
+  }
+}
+.lightning.icon {
+  margin-left: 5px;
+  margin-top: 12px;
+  width: 3px;
+  height: 6px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    left: 6px;
+    top: -11px;
+    width: 3px;
+    height: 6px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    width: 1px;
+    height: 12px;
+    background-color: currentColor;
+    top: -13px;
+    transform-origin: left bottom;
+    transform: rotate(31deg);
+    box-shadow: 6px 4px 0 0 currentColor;
+  }
+}
+.lightning-filled.icon {
+  margin-left: 5px;
+  margin-top: 1px;
+  width: 9px;
+  height: 3px;
+  &:before {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: solid 7px currentColor;
+    border-top: solid 11px transparent;
+  }
+  &:after {
+    top: 8px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-left: solid 7px currentColor;
+    border-bottom: solid 11px transparent;
+  }
+}
+.celsius.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 17px;
+  height: 15px;
+  &:before {    
+    content: "C";
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: currentColor;
+  }
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    border: solid 1px currentColor;
+    left: 12px;
+    top: 1px;
+  }
+}
+.fahrenheit.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 16px;
+  height: 15px;
+  &:before {    
+    content: "F";
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: currentColor;
+  }
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    border: solid 1px currentColor;
+    left: 11px;
+    top: 1px;
+  }
+}
+.tree.icon {
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 2px;
+  height: 4px;
+  background-color: currentColor;
+  &:before {
+    left: -4px;
+    top: -13px;
+    width: 0;
+    height: 0;
+    border-bottom: solid 7px currentColor;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+  }
+  &:after {
+    left: -6px;
+    top: -9px;
+    width: 0;
+    height: 0;
+    border-bottom: solid 9px currentColor;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent;
+  }
+}
+.anchor.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 15px;
+  height: 8px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 8px 8px;
+  &:before {
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    left: 7px;
+    top: -2px;
+  }
+  &:after {
+    width: 5px;
+    height: 5px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    left: 4px;
+    top: -8px;
+  }
+}
+.contrast.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    left: 8px;
+    top: 1px;
+    width: 5px;
+    height: 12px;
+    border: solid 1px currentColor;
+    border-radius: 0 7px 7px 0;
+  }
+  &.filled:before {
+    background-color: currentColor;
+  }
+}
+.alert-square.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 14px;
+  height: 14px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    top: 2px;
+    left: 6px;
+    width: 2px;
+    height: 7px;
+    background-color: currentColor;
+  }
+  &:after {
+    top: 10px;
+    left: 6px;
+    width: 2px;
+    height: 2px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.alert-circle.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    top: 3px;
+    left: 7px;
+    width: 2px;
+    height: 7px;
+    background-color: currentColor;
+  }
+  &:after {
+    top: 11px;
+    left: 7px;
+    width: 2px;
+    height: 2px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.flash-drive.icon {
+  margin-left: 4px;
+  margin-top: 8px;
+  width: 11px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+  &:before {
+    left: 1px;
+    top: -8px;
+    width: 7px;
+    height: 6px;
+    border: solid 1px currentColor;
+    border-radius: 1px 1px 0 0;
+  }
+  &:after {
+    left: 3px;
+    top: -4px;
+    height: 2px;
+    width: 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.rotate-clockwise.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    left: 7px;
+    top: 3px;
+    width: 8px;
+    height: 5px;
+    background-color: $white;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+  }
+  &:after {
+    right: -2px;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 3px currentColor;
+    transform: rotate(-45deg);
+  }
+}
+.rotate-counter-clockwise.icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before {
+    left: -1px;
+    top: 3px;
+    width: 8px;
+    height: 5px;
+    background-color: $white;
+    transform-origin: right bottom;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: -2px;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 3px currentColor;
+    transform: rotate(-45deg);
+  }
+}
+.rotate-square-clockwise.icon {
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+  &:before {
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    box-shadow: 10px 0 0 0 currentColor;
+  }
+  &:after {
+    left: 3px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-bottom: solid 3px transparent;
+    border-right: solid 3px currentColor;
+    transform: rotate(45deg);
+  }
+}
+.rotate-square-counter-clockwise.icon {
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+  &:before {
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    box-shadow: 10px 0 0 0 currentColor;
+  }
+  &:after {
+    left: 9px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 3px currentColor;
+    transform: rotate(45deg);
+  }
+}
+.refresh-clockwise.icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+  &:before {
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: solid 3px transparent;
+    border-bottom: solid 3px currentColor;
+  }
+  &:after {
+    top: 11px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-right: solid 3px transparent;
+    border-top: solid 3px currentColor;
+  }
+}
+.refresh-counter-clockwise.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+  &:before {
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px currentColor;
+  }
+  &:after {
+    top: 11px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: solid 3px transparent;
+    border-top: solid 3px currentColor;
+  }
+}
+.connection.icon {
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 1px;
+  height: 2px;
+  box-shadow: 0 -2px 0 0 currentColor,
+              10px 7px 0 0 currentColor;
+  &:before {
+    width: 4px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 3px 3px;
+  }
+  &:after {
+    top: -3px;
+    left: 5px;
+    width: 4px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 3px 3px 0 0 ;
+  }
+  i {
+    &:before {
+      left: -1px;
+      top: -2px;
+      width: 0;
+      height: 0;
+      border-left: solid 3px currentColor;
+      border-bottom: solid 3px transparent;
+      transform: rotate(45deg);
+    }
+    &:after {
+      left: 9px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-right: solid 3px currentColor;
+      border-top: solid 3px transparent;
+      transform: rotate(45deg);
+    }
+  }
+}
+.connection2.icon {
+  margin-left: 5px;
+  margin-top: 4px;
+  width: 1px;
+  height: 2px;
+  box-shadow: 0 10px 0 0 currentColor,
+              10px 1px 0 0 currentColor;
+  &:before {
+    width: 4px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 3px 3px 0 0 ;
+  }
+  &:after {
+    top: 3px;
+    left: 5px;
+    width: 4px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 3px 3px;
+  }
+  i {
+    &:before {
+      left: -1px;
+      top: 10px;
+      width: 0;
+      height: 0;
+      border-right: solid 3px currentColor;
+      border-top: solid 3px transparent;
+      transform: rotate(45deg);
+    }
+    &:after {
+      left: 9px;
+      top: 1px;
+      width: 0;
+      height: 0;
+      border-left: solid 3px currentColor;
+      border-bottom: solid 3px transparent;
+      transform: rotate(45deg);
+    }
+  }
+}
+.sign-in.icon {
+  margin-left: 8px;
+  margin-top: 3px;
+  width: 7px;
+  height: 13px;
+  border-radius: 0 1px 1px 0;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  &:before {
+    top: 3px;
+    left: -6px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(45deg);
+  }
+}
+.sign-out.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 7px;
+  height: 13px;
+  border-radius: 1px 0 0 1px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  &:before {
+    top: 3px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(45deg);
+  }
+}
+.grid-4.icon {
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 15px;
+  height: 15px;
+  &:before {
+    width: 5px;
+    height: 5px;
+    border: solid 1px currentColor;
+    border-radius: 1px;
+    box-shadow: 8px 0 0 0 currentColor,
+                0 8px 0 0 currentColor,
+                8px 8px 0 0 currentColor;
+  }
+  &:after {
+    top: 1px;
+    left: 9px;
+    width: 5px;
+    height: 5px;
+    background-color: $white;
+    box-shadow: 0 8px 0 0 $white,
+                -8px 8px 0 0 $white;
+  }
+  &.filled {
+    &:before {
+      background: currentColor;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+.grid-9.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 17px;
+  height: 17px;
+  &:before {
+    width: 3px;
+    height: 3px;
+    border: solid 1px currentColor;
+    border-radius: 1px;
+    background-color: currentColor;
+    box-shadow: 6px 0 0 0 currentColor,
+                12px 0 0 0 currentColor,
+                0 6px 0 0 currentColor,
+                6px 6px 0 0 currentColor,
+                12px 6px 0 0 currentColor,
+                0px 12px 0 0 currentColor,
+                6px 12px 0 0 currentColor,
+                12px 12px 0 0 currentColor;
+  }
+  &:after {
+    left: 1px;
+    top: 1px;
+    width: 3px;
+    height: 3px;
+    background-color: $white;
+    box-shadow: 6px 0 0 0 $white,
+                12px 0 0 0 $white,
+                0 6px 0 0 $white,
+                6px 6px 0 0 $white,
+                12px 6px 0 0 $white,
+                0px 12px 0 0 $white,
+                6px 12px 0 0 $white,
+                12px 12px 0 0 $white;
+    
+  }
+  &.filled {
+    &:after {
+      display: none;
+    }
+  }
+}
+.dial.icon {
+  margin-top: 1px;
+  margin-left: 4px;
+  &:before {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: currentColor;
+    border: solid 1px currentColor;
+    box-shadow: 5px 0 0 0 currentColor,
+                10px 0 0 0 currentColor,
+                0 5px 0 0 currentColor,
+                5px 5px 0 0 currentColor,
+                10px 5px 0 0 currentColor,
+                0 10px 0 0 currentColor,
+                5px 10px 0 0 currentColor,
+                10px 10px 0 0 currentColor,
+                5px 15px 0 0 currentColor;
+  }
+  &:after {
+    left: 1px;
+    top: 1px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 5px 0 0 0 $white,
+                10px 0 0 0 $white,
+                0 5px 0 0 $white,
+                5px 5px 0 0 $white,
+                10px 5px 0 0 $white,
+                0 10px 0 0 $white,
+                5px 10px 0 0 $white,
+                10px 10px 0 0 $white,
+                5px 15px 0 0 $white;
+  }
+  &.filled {
+    &:after {
+      display: none;
+    }
+  }
+}
+.list.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 2px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before,
+  &:after {
+    left: -1px;
+    width: 15px;
+    height: 2px;
+    border: solid 1px currentColor;
+    border-radius: 1px;
+  }
+  &:before {
+    top: 4px;
+  }
+  &:after {
+    top: 9px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.list-circle.icon {
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    left: -1px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor; 
+  }
+  &:before {
+    top: 4px;
+  }
+  &:after {
+    top: 9px;
+  }
+  i {
+    top: -1px;
+    left: 4px;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    &:before,
+    &:after {
+      left: -1px;
+      width: 10px;
+      height: 2px;
+      border-radius: 1px;
+      border: solid 1px currentColor;
+    }
+    &:before {
+      top: 4px;
+    }
+    &:after {
+      top: 9px;
+    }
+  }
+}
+.list-circle-filled.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 17px;
+  height: 14px;
+  &:before {   
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: currentColor;
+    border: solid 1px currentColor;
+    box-shadow: 0 5px 0 0 currentColor,
+                0 10px 0 0 currentColor;
+  }
+  &:after {
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: currentColor;
+    border: solid 1px currentColor;
+    box-shadow: 0 5px 0 0 currentColor,
+                0 10px 0 0 currentColor;
+  }
+}
+.list-square.icon {
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 2px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  &:before,
+  &:after {
+    left: -1px;
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    border: solid 1px currentColor; 
+  }
+  &:before {
+    top: 4px;
+  }
+  &:after {
+    top: 9px;
+  }
+  i {
+    top: -1px;
+    left: 4px;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    &:before,
+    &:after {
+      left: -1px;
+      width: 10px;
+      height: 2px;
+      border-radius: 1px;
+      border: solid 1px currentColor;
+    }
+    &:before {
+      top: 4px;
+    }
+    &:after {
+      top: 9px;
+    }
+  }
+}
+.list-square-filled.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 17px;
+  height: 14px;
+  &:before {   
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: currentColor;
+    border: solid 1px currentColor;
+    box-shadow: 0 5px 0 0 currentColor,
+                0 10px 0 0 currentColor;
+  }
+  &:after {
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: currentColor;
+    border: solid 1px currentColor;
+    box-shadow: 0 5px 0 0 currentColor,
+                0 10px 0 0 currentColor;
+  }
+}
+
+
+// css icon 6: http://codepen.io/wentin/pen/098951f382a880f92170da12c8268e56?editors=0100
+
+
+.sync1.icon {
+  margin: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: $white;
+  &:before, 
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: currentColor;
+    z-index: 1;
+  }
+  &:before {
+    top: 5px;
+    left: -4px;
+  }
+  &:after {
+    top: 6px;
+    right: -4px;
+  }
+  i {
+    width: 16px;
+    height: 6px;
+    background-color: $white;
+    left: -2px;
+    top: 3px;
+    transform: rotate(-22.5deg);
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 1px currentColor;
+      left: 4px;
+      top: -1px;
+    }
+  }
+  &.filled {
+    i:before {
+      background-color: currentColor;
+    }
+  }
+}
+.sync2.icon {
+  margin: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: $white;
+  &:before, 
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: currentColor;
+    z-index: 1;
+  }
+  &:before {
+    top: 6px;
+    left: -4px;
+  }
+  &:after {
+    top: 5px;
+    right: -4px;
+  }
+  i {
+    width: 16px;
+    height: 6px;
+    background-color: $white;
+    left: -2px;
+    top: 3px;
+    transform: rotate(22.5deg);
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 1px currentColor;
+      left: 4px;
+      top: -1px;
+    }
+  }
+  &.filled {
+    i:before {
+      background-color: currentColor;
+    }
+  }
+}
+.barcode.icon {
+  width: 21px;
+  height: 21px;
+  &:before {
+    width: 1px;
+    height: 11px;
+    left: 1px;
+    top: 5px;
+    background-color: currentColor;
+    box-shadow: 
+      6px 0 0 0 currentColor, 
+      12px 0 0 0 currentColor, 
+      14px 0 0 0 currentColor;
+  }
+  &:after {
+    width: 2px;
+    height: 11px;
+    left: 3px;
+    top: 5px;
+    background-color: currentColor;
+    box-shadow: 
+      6px 0 0 0 currentColor, 
+      15px 0 0 0 currentColor;
+  }
+}
+.barcode2.icon {
+  width: 21px;
+  height: 21px;
+  &:before {
+    width: 1px;
+    height: 8px;
+    left: 1px;
+    top: 5px;
+    background-color: currentColor;
+    box-shadow: 
+      2px 0 0 0 currentColor, 
+      3px 0 0 0 currentColor, 
+      6px 0 0 0 currentColor, 
+      8px 0 0 0 currentColor, 
+      9px 0 0 0 currentColor, 
+      12px 0 0 0 currentColor, 
+      14px 0 0 0 currentColor, 
+      17px 0 0 0 currentColor, 
+      18px 0 0 0 currentColor;
+  }
+  &:after {
+      width: 1px;
+      height: 2px;
+      left: 1px;
+      top: 14px;
+      background-color: currentColor;
+      box-shadow: 
+        2px 0 0 0 currentColor, 
+        3px 0 0 0 currentColor, 
+        6px 0 0 0 currentColor, 
+        8px 0 0 0 currentColor, 
+        9px 0 0 0 currentColor, 
+        12px 0 0 0 currentColor, 
+        14px 0 0 0 currentColor, 
+        17px 0 0 0 currentColor, 
+        18px 0 0 0 currentColor;
+  }
+}
+.pill.icon {
+  margin: 1px 6px;
+  width: 7px;
+  height: 17px;
+  border-radius: 4px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 7px;
+    height: 9px;
+    border-radius: 3px 3px 0 0;
+    background-color: currentColor;
+  }
+}
+.pill2.icon {
+  margin: 1px 6px;
+  width: 7px;
+  height: 17px;
+  border-radius: 4px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 7px;
+    height: 9px;
+    top: 8px;
+    border-radius: 0 0 3px 3px;
+    background-color: currentColor;
+  }
+}
+.alarm.icon {
+  width: 13px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  margin: 3px;
+  &:before,
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: -2px;
+  }
+  &:before {
+    left: -2px;
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+  }
+  &:after {
+    right: -2px;
+    border-left: solid 1px transparent;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+  }
+  i {
+    width: 3px;
+    height: 4px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    top: 2px;
+    left: 6px;
+    &:before,
+    &:after {
+      width: 1px;
+      height: 3px;
+      background-color: currentColor;
+    }
+    &:before {
+        left: -7px;
+        top: 11px;
+        transform-origin: right center;
+        transform: rotate(45deg);
+    }
+    &:after {
+        left: 5px;
+        top: 11px;
+        transform-origin: left center;
+        transform: rotate(-45deg);
+    }
+  }
+  &.filled {
+    background-color: currentColor;
+    i {
+      border-color: $white;
+    }
+  }
+}
+.syringe {
+  width: 5px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 0 0 3px 3px;
+  margin: 4px 7px;
+  transform: rotate(45deg);
+  &:before {
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+    left: 2px;
+    bottom: -5px;
+  }
+  i {
+    width: 3px;
+    height: 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    top: -4px;
+    &:before {
+      width: 7px;
+      height: 1px;
+      background-color: currentColor;
+      left: -2px;
+      top: -1px;
+    }
+    &:after {
+      width: 11px;
+      height: 1px;
+      background-color: currentColor;
+      left: -4px;
+      bottom: -1px;
+    }
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.minusFront.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border: dotted 1px currentColor;
+    left: 4px;
+    top: 4px;
+  }
+  &:after {
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    background-color: $white;
+    right: -1px;
+    bottom: -1px
+  }
+  &.filled {
+    background-color: currentColor;
+  }
+}
+.unite.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border: solid 1px currentColor;
+    left: 4px;
+    top: 4px;
+  }
+  &:after {
+    width: 5px;
+    height: 5px;
+    border: solid 1px $white;
+    right: -1px;
+    bottom: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+    &:after {
+      border: solid 1px currentColor;
+    }
+  }
+}
+.intersect.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 10px;
+  height: 10px;
+  border: dotted 1px currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border: dotted 1px currentColor;
+    left: 4px;
+    top: 4px;
+  }
+  &:after {
+    width: 5px;
+    height: 5px;
+    border: solid 1px currentColor;
+    right: -1px;
+    bottom: -1px;
+  }
+  &.filled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.exclude.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  &:before {
+    width: 10px;
+    height: 10px;
+    border: solid 1px currentColor;
+    left: 4px;
+    top: 4px;
+  }
+  &:after {
+    width: 5px;
+    height: 5px;
+    background-color: $white;
+    border: dotted 1px currentColor;
+    right: -1px;
+    bottom: -1px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.glasses.icon {
+  margin-left: 8px;
+  margin-top: 9px;
+  width: 3px;
+  height: 3px; 
+  border-top: solid 1px currentColor;
+  border-radius: 50%;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+  &:before, 
+  &:after {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    top: -3px;
+  }
+  &:before {
+    left: -7px;
+    box-shadow: 
+      -4px 0 0 -3.5px currentColor, 
+      -4.5px 0 0 -3.5px currentColor, 
+      -5px 0 0 -3.5px currentColor;
+  }
+  &:after {
+    right: -7px;
+    box-shadow: 
+      4px 0 0 -3.5px currentColor, 
+      4.5px 0 0 -3.5px currentColor, 
+      5px 0 0 -3.5px currentColor;
+  }
+  &.filled {   
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.sunGlasses.icon {
+  margin-left: 9px;
+  margin-top: 8px;
+  width: 3px;
+  height: 1px; 
+  background-color: currentColor;
+  &:before, 
+  &:after {
+    width: 8px;
+    height: 6px;
+    border: solid 1px currentColor;
+    top: -1px;
+  }
+  &:before {
+    border-radius: 3px 2px 6px 4px;
+    left: -9px;
+  }
+  &:after {
+    border-radius: 2px 3px 4px 6px;
+    right: -9px;
+  }
+  &.filled {   
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.beard.icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 
+    5px 8px 0 0 currentColor, 
+    10px 8px 0 0 currentColor;
+  &:before {
+    border: 0 solid transparent;
+    border-bottom: 6px solid currentColor;
+    border-radius: 0 0 0 100%;
+    width: 7px;
+    height: 4px;
+    left: 1px;
+    top: 4px;
+    transform-origin: right 7px;
+    transform: rotate(-40deg);
+  }
+  &:after {
+    border: 0 solid transparent;
+    border-bottom: 6px solid currentColor;
+    border-radius: 0 0 100% 0;
+    width: 7px;
+    height: 4px;
+    left: 13px;
+    top: 4px;
+    transform-origin: left 7px;
+    transform: rotate(40deg);
+  }
+  &.filled i {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: 
+      6px 9px 0 0 $white, 
+      11px 9px 0 0 $white;
+    z-index: 2;
+    &:before {
+      border: 0 solid transparent;
+      border-bottom: 4px solid $white;
+      border-radius: 0 0 0 100%;
+      width: 6px;
+      height: 3px;
+      left: 2px;
+      top: 6px;
+      transform-origin: right 5px;
+      transform: rotate(-40deg);
+    }
+    &:after {
+      border: 0 solid transparent;
+      border-bottom: 4px solid $white;
+      border-radius: 0 0 100% 0;
+      width: 6px;
+      height: 3px;
+      left: 13px;
+      top: 6px;
+      transform-origin: left 5px;
+      transform: rotate(40deg);
+    }
+  }
+}
+.bowTie.icon {
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 19px;
+  height: 11px;
+  &:before {
+    width: 5px;
+    height: 5px;
+    border-left: solid 7px currentColor;
+    border-right: solid 7px currentColor;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+  }
+  &:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 5px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    background-color: $white;
+  }
+  &.filled:after {
+    background-color: currentColor;
+  }
+}
+.tie.icon {
+  margin-left: 7px;
+  margin-top: 1px;
+  width: 4px;
+  height: 1px;
+  border-top: solid 4px currentColor;
+  border-right: solid 2px transparent;
+  border-bottom: solid 11px currentColor;
+  border-left: solid 2px transparent;
+  &:before { 
+    top: 12px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px currentColor;
+    border-right: solid 4px transparent;
+    border-bottom: solid 0px transparent;
+    border-left: solid 4px transparent;
+  }
+  i {
+    left: 0px;
+    top: -3px;
+    width: 2px;
+    height: 0;
+    border-top: solid 2px $white;
+    border-right: solid 1px transparent;
+    border-left: solid 1px transparent;
+    &:before {
+      left: -2px;
+      top: 3px;
+      width: 2px;
+      height: 0;
+      border-bottom: solid 10px $white;
+      border-right: solid 2px transparent;
+      border-left: solid 2px transparent;
+    }
+    &:after {
+      left: -2px;
+      top: 13px;
+      width: 0;
+      height: 0;
+      border-top: solid 2px $white;
+      border-right: solid 3px transparent;
+      border-left: solid 3px transparent;
+    }
+  }
+}
+
+.tieFilled.icon {
+  margin-left: 7px;
+  margin-top: 1px;
+  width: 4px;
+  height: 1px;
+  border-top: solid 4px currentColor;
+  border-right: solid 2px transparent;
+  border-bottom: solid 11px currentColor;
+  border-left: solid 2px transparent;
+  &:before { 
+    top: 12px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px currentColor;
+    border-right: solid 4px transparent;
+    border-bottom: solid 0px transparent;
+    border-left: solid 4px transparent;
+  }
+}
+.shirt.icon {
+  margin-left: 1px;
+  margin-top: 3px;
+  width: 17px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    top: -1px;
+    left: 5px;
+    width: 5px;
+    height: 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 3px 3px;
+    background-color: $white;
+  }
+  &:after {
+    left: 3px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-radius: 0 0 1px 1px;
+    background-color: $white;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.clothesButton.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 11px;
+  height: 11px;
+  border: double 3px currentColor;
+  border-radius: 50%;
+  &:before,
+  &:after {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+  &:before {
+    left: 2px;
+    top: 2px;
+  }
+  &:after {
+    left: 6px;
+    top: 6px;
+  }
+  &.filled {
+    margin-left: 1px;
+    margin-top: 1px;
+    width: 13px;
+    height: 13px;
+    border: double 3px $white;
+    background-color: currentColor;
+    &:before, 
+    &:after {
+      border: solid 1px $white;
+    }
+    &:before {
+      left: 3px;
+      top: 3px;
+    }
+    &:after {
+      left: 7px;
+      top: 7px;
+    }
+  }
+}
+.bankNote.icon {
+  margin-left: 2px;
+  margin-top: 8px;
+  width: 15px;
+  height: 8px;
+  border: solid 1px currentColor;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 8px;
+  color: currentColor;
+  line-height: 10px;
+  text-align: center;
+  &:before {
+    left: 1px;
+    top: -3px;
+    width: 13px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &:after {
+    left: 3px;
+    top: -5px;
+    width: 9px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    color: $white;
+  }
+}
+.dashboard.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 11px;
+  border-radius: 8px 8px 4px 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+    left: 7px;
+    top: 3px;
+  }
+  &:after {
+    width: 1px;
+    height: 1px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    left: 6px;
+    top: 6px;
+    box-shadow: 
+      -7px 0 0 -1px currentColor, 
+      0 -7px 0 -1px currentColor, 
+      7px 0 0 -1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+    &:after {
+      border-color: $white;
+      box-shadow: 
+        -7px 0 0 -1px $white, 
+        -8px 0 0 -1px $white, 
+        0 -7px 0 -1px $white, 
+        0 -8px 0 -1px $white, 
+        7px 0 0 -1px $white,
+        8px 0 0 -1px $white;
+    }
+  }
+}
+.dashboardLow.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 11px;
+  border-radius: 8px 8px 4px 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+    left: 7px;
+    top: 3px;
+    transform-origin: center 5px;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    width: 1px;
+    height: 1px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    left: 6px;
+    top: 6px;
+    box-shadow: 
+      -7px 0 0 -1px currentColor, 
+      0 -7px 0 -1px currentColor, 
+      7px 0 0 -1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+    &:after {
+      border-color: $white;
+      box-shadow: 
+        -7px 0 0 -1px $white, 
+        -8px 0 0 -1px $white, 
+        0 -7px 0 -1px $white, 
+        0 -8px 0 -1px $white, 
+        7px 0 0 -1px $white,
+        8px 0 0 -1px $white;
+    }
+  }
+}
+.dashboardHigh.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 11px;
+  border-radius: 8px 8px 4px 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &:before {
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+    left: 7px;
+    top: 3px;
+    transform-origin: center 5px;
+    transform: rotate(45deg);
+  }
+  &:after {
+    width: 1px;
+    height: 1px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    left: 6px;
+    top: 6px;
+    box-shadow: 
+      -7px 0 0 -1px currentColor, 
+      0 -7px 0 -1px currentColor, 
+      7px 0 0 -1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+    }
+    &:after {
+      border-color: $white;
+      box-shadow: 
+        -7px 0 0 -1px $white, 
+        -8px 0 0 -1px $white, 
+        0 -7px 0 -1px $white, 
+        0 -8px 0 -1px $white, 
+        7px 0 0 -1px $white,
+        8px 0 0 -1px $white;
+    }
+  }
+}
+.verticalAlignCenter.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 4px;
+    height: 13px;
+    border: solid 1px currentColor;
+    left: 2px;
+    top: -7px;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 4px;
+    height: 9px;
+    border: solid 1px currentColor;
+    right: 2px;
+    top: -5px;
+    border-radius: 1px;
+  }
+  &.halfFilled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.verticalAlignTop.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 4px;
+    height: 13px;
+    border: solid 1px currentColor;
+    left: 2px;
+    top: 2px;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 4px;
+    height: 9px;
+    border: solid 1px currentColor;
+    right: 2px;
+    top: 2px;
+    border-radius: 1px;
+  }
+  &.halfFilled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.verticalAlignBottom.icon {
+  margin-left: 2px;
+  margin-top: 18px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 4px;
+    height: 13px;
+    border: solid 1px currentColor;
+    left: 2px;
+    bottom: 2px;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 4px;
+    height: 9px;
+    border: solid 1px currentColor;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 1px;
+  }
+  &.halfFilled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.horizontalAlignCenter.icon {
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 17px;
+  background-color: currentColor;
+  &:before {
+    width: 13px;
+    height: 4px;
+    border: solid 1px currentColor;
+    left: -7px;
+    bottom: 2px;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 9px;
+    height: 4px;
+    border: solid 1px currentColor;
+    left: -5px;
+    top: 2px;
+    border-radius: 1px;
+  }
+  &.halfFilled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.horizontalAlignLeft.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 1px;
+  height: 17px;
+  background-color: currentColor;
+  &:before {
+    width: 13px;
+    height: 4px;
+    border: solid 1px currentColor;
+    left: 2px;
+    bottom: 2px;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 9px;
+    height: 4px;
+    border: solid 1px currentColor;
+    left: 2px;
+    top: 2px;
+    border-radius: 1px;
+  }
+  &.halfFilled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.horizontalAlignRight.icon {
+  margin-left: 18px;
+  margin-top: 2px;
+  width: 1px;
+  height: 17px;
+  background-color: currentColor;
+  &:before {
+    width: 13px;
+    height: 4px;
+    border: solid 1px currentColor;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 9px;
+    height: 4px;
+    border: solid 1px currentColor;
+    right: 2px;
+    top: 2px;
+    border-radius: 1px;
+  }
+  &.halfFilled {
+    &:after {
+      background-color: currentColor;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.hammerFilled.icon {
+  margin-left: 4px;
+  margin-top: 0px; 
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: currentColor;
+  transform-origin: center 10.5px;
+  transform: rotate(-45deg);
+  &:before {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: -13px;
+    box-shadow: 13px -9px 0 0 $white,
+                13px 9px 0 0 $white;
+  }
+  &:after {
+    width: 3px;
+    height: 21px;
+    border-radius: 1px;
+    background-color: currentColor;
+    left: 5px;
+  }
+}
+.hammer.icon {
+  margin-left: 4px;
+  margin-top: 0px; 
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  transform-origin: center 10.5px;
+  transform: rotate(-45deg);
+  &:before {
+    left: -1px;
+    top: -9px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border-left: solid 1px transparent;
+    border-top: solid 1px transparent;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    left: -1px;
+    top: 7px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border-left: solid 1px transparent;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+  }
+  i {
+    width: 1px;
+    height: 4px;
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-radius: 1px 1px 0 0;
+    left: 4px;
+    top: -1px;
+    &:after {
+      width: 1px;
+      height: 11px;
+      border-left: solid 1px currentColor;
+      border-bottom: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      border-radius: 0 0 1px 1px;
+      left: -1px;
+      top: 8px;
+    }
+  }
+}
+.wrenchFilled.icon {
+  margin-left: 5px;
+  margin-top: 0px; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: currentColor;
+  transform-origin: center 10.5px;
+  transform: rotate(-45deg);
+  &:after { 
+    width: 0;
+    height: 0;
+    border-radius: 0 0 1px 1px;
+    background-color: currentColor;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;   
+    border-top: solid 1px $white;
+    border-bottom: solid 1px transparent;
+    left: 4px;
+    top: 4px;
+  }
+  &:before {
+    width: 2px;
+    height: 5px;
+    background-color: $white;
+    left: 4px;
+    border-radius: 0 0 1px 1px;
+    box-shadow: 0 15px 0px 1px currentColor,
+                0 11px 0px 1px currentColor,
+                0 8px 0px 1px currentColor;
+  }
+}
+.wrench.icon {
+  margin-left: 5px;
+  margin-top: 0px; 
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  transform-origin: center 10.5px;
+  transform: rotate(-45deg);
+  &:before { 
+    top: -1px;
+    left: 2px;
+    width: 2px;
+    height: 5px;
+    background-color: $white;
+    border-radius: 1px 1px 2px 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+  &:after {
+    top: 8px;
+    left: 2px;
+    width: 2px;
+    height: 11px;
+    background-color: $white;
+    border-radius: 0 0 2px 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}
+.sorting.icon {
+  margin-left: 10px;
+  margin-top: 2px;
+  height: 17px;
+  width: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 8px;
+  color: currentColor;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 9px;
+  &:before {
+    width: 1px;
+    height: 15px;
+    background-color: currentColor;
+    left: -5px;
+    top: 1px;
+  }
+  &:after {
+    width: 2px;
+    height: 2px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    left: -6px;
+    top: 13px;
+  }
+}
+.compass.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+  transform: rotate(30deg);
+  &:before {
+    left: 4px;
+    border-left: solid 3px transparent;
+    border-bottom: solid 7px currentColor;
+    border-right: solid 3px transparent;
+  }
+  &:after {
+    left: 5px;
+    top: 2px;
+    border-left: solid 2px transparent;
+    border-bottom: solid 5px $white;
+    border-right: solid 2px transparent;
+  }
+  i {
+    left: 4px;
+    top: 7px;
+    border-left: solid 3px transparent;
+    border-top: solid 7px currentColor;
+    border-right: solid 3px transparent;
+    z-index: 2;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      border-bottom: solid 7px $white;
+    }
+    &:after {
+      border-bottom: solid 5px currentColor;
+    }
+    i {
+      border-top: solid 7px $white;
+    }
+  }
+}
+.moveDown {
+  margin-left: 2px;
+  margin-top: 17px;
+  width: 16px;
+  height: 2px;
+  background-color: currentColor;
+  &:before {
+    width: 2px;
+    height: 11px;
+    top: -15px;
+    left: 7px;
+    background-color: currentColor;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    left: 5px;
+    top: -5px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px transparent;
+  }
+}
+.moveUp {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 2px;
+  background-color: currentColor;
+  &:before {
+    width: 2px;
+    height: 11px;
+    top: 6px;
+    left: 7px;
+    background-color: currentColor;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    left: 5px;
+    top: 1px;
+    border-top: solid 3px transparent;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px transparent;
+  }
+}
+.moveLeft {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 2px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 11px;
+    height: 2px;
+    top: 7px;
+    left: 6px;
+    background-color: currentColor;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    left: 1px;
+    top: 5px;
+    border-top: solid 3px transparent;
+    border-right: solid 3px currentColor;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px transparent;
+  }
+}
+.moveRight {
+  margin-left: 17px;
+  margin-top: 2px;
+  width: 2px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 11px;
+    height: 2px;
+    top: 7px;
+    left: -15px;
+    background-color: currentColor;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    left: -5px;
+    top: 5px;
+    border-top: solid 3px transparent;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px currentColor;
+  }
+}
+.moveHorizontalCenter {
+  margin-left: 9px;
+  margin-top: 2px;
+  width: 2px;
+  height: 16px;
+  background-color: currentColor;
+  &:before {
+    width: 12px;
+    height: 2px;
+    top: 7px;
+    left: -8px;
+    border-left: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+  }
+  &:after {
+    width: 6px;
+    height: 0;
+    left: -5px;
+    top: 5px;
+    border-top: solid 3px transparent;
+    border-right: solid 3px currentColor;
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px currentColor;
+  }
+}
+.moveVerticalCenter {
+  margin-left: 2px;
+  margin-top: 9px;
+  width: 16px;
+  height: 2px;
+  background-color: currentColor;
+  &:before {
+    width: 2px;
+    height: 12px;
+    top: -8px;
+    left: 7px;
+    border-top: solid 3px currentColor;
+    border-bottom: solid 3px currentColor;
+  }
+  &:after {
+    width: 0;
+    height: 6px;
+    left: 5px;
+    top: -5px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px transparent;
+  }
+}
+.insertPages.icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  width: 13px;
+  height: 6px;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-radius: 0 0 1px 1px;
+  &:before {
+    left: -1px;
+    top: 10px;
+    width: 13px;
+    height: 6px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-radius: 1px 1px 0 0;
+  }
+  &:after {
+    width: 17px;
+    height: 0;
+    left: -2px;
+    top: 8px;
+    border-top: dotted 1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+.insert {
+  margin-left: 4px;
+  margin-top: 18px;
+  width: 14px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    width: 4px;
+    height: 4px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    top: -7px;
+  }
+  &:after {
+    width: 5px;
+    height: 12px;
+    border-left: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    top: -20px;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+  }
+  &.filled {
+    &:before,
+    &:after {
+      background-color: currentColor;
+    }
+  }
+}
+.board.icon {
+  margin-left: 3px;
+  margin-top: 5px;
+  width: 13px;
+  height: 8px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: $white;
+  &:before,
+  &:after {
+    width: 1px;
+    height: 17px;
+    background-color: currentColor;
+    left: 6px;
+    top: -4px;
+    z-index: -1;
+  }
+  &:before {
+    transform-origin: right top;
+    transform: skew(-21deg);
+  }
+  &:after {
+    transform-origin: left top;
+    transform: skew(21deg);
+  }
+  &.filled {
+    background-color: currentColor;
+    border: solid 1px $white;
+  }
+}
+.podium.icon {
+  margin-left: 7px;
+  margin-top: 3px;
+  width: 5px;
+  height: 13px;
+  border: solid 1px currentColor;
+  &:before {
+    left: -7px;
+    top: 3px;
+    width: 5px;
+    height: 9px;
+    border: solid 1px currentColor;
+  }
+  &:after {
+    left: 5px;
+    top: 5px;
+    width: 5px;
+    height: 7px;
+    border: solid 1px currentColor;
+  }
+  &.filled {
+    margin-left: 8px;
+    margin-top: 4px;
+    background-color: currentColor;
+    border: none;
+    &:before {
+      top: 4px;
+      left: -6px;
+      background-color: currentColor;
+      border: none;
+    }
+    &:after {
+      top: 6px;
+      left: 6px;
+      background-color: currentColor;
+      border: none;
+    }
+  }
+}
+.socket.icon {
+  margin-left: 1px;
+  margin-top: 3px;
+  width: 17px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 7px;
+
+  &:before {
+    left: 4px;
+    top: 3px;
+    width: 5px;
+    height: 3px;
+    border-left: solid 2px currentColor;
+    border-right: solid 2px currentColor;
+  }
+  &:after {
+    left: 7px;
+    top: 8px;
+    width: 3px;
+    height: 3px;
+    background-color: currentColor;
+    border-radius: 50% 50% 0 0;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      width: 7px;
+      left: 4px;
+      border-left: solid 1px $white;
+      border-right: solid 1px $white;
+    }
+    &:after {
+      background-color: $white;
+      
+    }
+  }
+}
+.barbell {
+  margin-left: 1px;
+  margin-top: 10px;
+  width: 19px;
+  height: 1px;
+  background-color: currentColor;
+  &:before,
+  &:after {
+    top: -6px;
+    height: 11px;
+    width: 1px;
+    border-radius: 2px;
+    border: solid 1px currentColor;
+    background-color: $white;
+  }
+  &:before {
+    left: 4px;
+  }
+  &:after {
+    right: 4px;
+  }
+  i {
+    width: 19px;
+    &:before,
+    &:after {
+      top: -4px;
+      height: 7px;
+      width: 1px;
+      border-radius: 2px;
+      border: solid 1px currentColor;
+      background-color: $white;
+    }
+    &:before {
+      left: 2px;
+    }
+    &:after {
+      right: 2px;
+    }
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      width: 0;
+    }
+    i {
+      &:before, 
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+.detail {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 8px 8px 1px 8px;
+  &:before {
+    width: 9px;
+    height: 9px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      background-color: $white;
+      border: solid 1px $white;
+    }
+  }
+  &.plus {
+    i {
+      top: 7px;
+      left: 5px;
+      width: 5px;
+      height: 1px;
+      background-color: currentColor;
+      &:before {
+        width: 5px;
+        height: 1px;
+        background-color: currentColor;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &.minus {
+    i {
+      top: 7px;
+      left: 5px;
+      width: 5px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+}
+

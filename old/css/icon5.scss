@@ -1,0 +1,2141 @@
+$grey: #333;
+$white: #fff;
+
+.icon {
+  position: absolute;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+  }
+  i { 
+    position: absolute;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+  }
+}
+.cmd.icon {
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 3px;
+  height: 3px;
+  border: solid 1px $grey;
+  &:before {
+    left: -6px;
+    top: -6px;
+    width: 4px;
+    height: 4px;
+    border: solid 1px $grey;
+    border-radius: 50% 50% 0 50%;
+  }  
+  &:after {
+    left: 3px;
+    top: -6px;
+    width: 4px;
+    height: 4px;
+    border: solid 1px $grey;
+    border-radius: 50% 50% 50% 0;
+  } 
+  i {
+    &:before {
+      left: -6px;
+      top: 3px;
+      width: 4px;
+      height: 4px;
+      border: solid 1px $grey;
+      border-radius: 50% 0 50% 50%;
+    }  
+    &:after {
+      left: 3px;
+      top: 3px;
+      width: 4px;
+      height: 4px;
+      border: solid 1px $grey;
+      border-radius: 0 50% 50% 50%;
+    } 
+  }
+}
+.option.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 5px;
+  height: 1px;
+  background-color: $grey;
+  box-shadow: 9px 0 0 0 $grey,
+              10px 14px 0 0 $grey;
+  &:before {
+    height: 16px;
+    width: 1px;
+    background-color: $grey;
+    left: 4px;
+    transform-origin: right top;
+    transform: rotate(-22.4deg);
+  }
+}
+.shift.icon {
+  margin-left: 6px;
+  margin-top: 10px;
+  width: 7px;
+  height: 7px;
+  border-left: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  border-right: solid 1px $grey;
+  &:before {
+    left: -2px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-left: solid 1px $grey;
+    border-top: solid 1px $grey;
+    transform: rotate(45deg);
+  }
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: $grey;
+    left: -4px;
+    box-shadow: 11px 0 0 0 $grey;
+  }
+}
+.hard-drive.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 15px;
+  height: 6px;
+  border-radius: 0 0 2px 2px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    border-left: solid 1px $grey;
+    border-right: solid 1px $grey;
+    border-bottom: solid 1px $grey;
+  }
+  &:after {
+    top: 0px;
+    width: 5px;
+    height: 1px;
+    background-color: $grey;
+    box-shadow: 10px 0 0 0 $grey;
+  }
+  i {
+    width: 9px;
+    height: 1px;
+    background: $grey;
+    left: 3px;
+    top: -6px;
+    &:before {
+      top: -1px;
+      left: -5px;
+      width: 1px;
+      height: 7px;
+      border-right: solid 1px $grey;
+      transform-origin: bottom center;
+      transform: rotate(33deg);
+    }
+    &:after {
+      top: -1px;
+      right: -4px;
+      width: 1px;
+      height: 7px;
+      border-right: solid 1px $grey;
+      transform-origin: bottom right;
+      transform: rotate(-33deg);
+    }
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.terminal.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 15px;
+  height: 13px;
+  border: solid 1px $grey;
+  border-radius: 1px;
+  &:before {
+    top: 4px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    border-right: solid 1px $grey;
+    border-bottom: solid 1px $grey;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    width: 4px;
+    height: 1px;
+    background-color: $grey;
+    left: 8px;
+    top: 9px;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      border-color: $white;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+.coffee-cup.icon {
+  margin-left: 4px;
+  margin-top: 5px;
+  width: 11px;
+  height: 8px;
+  border: solid 1px $grey;
+  border-radius: 0 0 3px 3px;
+  &:before {
+    top: 1px;
+    right: -4px;
+    width: 3px;
+    height: 3px;
+    border-top: solid 1px $grey;
+    border-right: solid 1px $grey;
+    border-bottom: solid 1px $grey;
+    border-radius: 0 3px 3px 0;
+  }
+  &:after {
+    width: 15px;
+    height: 1px;
+    border-radius: 0 0 1px 1px;
+    background-color: $grey;
+    bottom: -3px;
+    left: -2px;
+  }
+  &.filled {
+    background-color: $grey;
+  }
+}
+.value-slider.icon {
+  margin-top: 3px;
+  margin-left: 13px;
+  height: 13px;
+  width: 1px;
+  background-color: $grey;
+  border-top: solid 1px $grey;
+  border-right: solid 1px $white;
+  border-bottom: solid 1px $grey;
+  border-left: solid 1px $white;
+  &:before {
+    top: 3px;
+    left: -12px;
+    width: 15px;
+    height: 5px;
+    border: solid 1px $grey;
+  }
+  &:after {
+    left: -10px;
+    top: 5px;
+    width: 9px;
+    height: 3px;
+    background-color: $grey;
+  }
+  &.filled {
+    &:after {
+      left: 1px;
+      top: 4px;
+      width: 3px;
+      height: 5px;
+    }
+  }
+}
+.headphone.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 7px;
+  border-left: solid 1px $grey;
+  border-top: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-radius: 6px 6px 0 0;
+  &:before {
+    top: 6px;
+    left: -3px;
+    width: 2px;
+    height: 4px;
+    border: solid 1px $grey;
+    border-radius: 2px 1px 1px 3px;
+  }
+  &:after {
+    top: 6px;
+    right: -3px;
+    width: 2px;
+    height: 4px;
+    border: solid 1px $grey;
+    border-radius: 1px 2px 3px 1px;
+  }
+  &.filled {
+    &:before, 
+    &:after {
+      background-color: $grey;  
+    }
+  }
+}
+.infinite.icon {
+  margin-left: 1px;
+  margin-top: 7px;
+  width: 18px;
+  height: 7px;
+  &:before,
+  &:after {
+    width: 6px;
+    height: 6px;
+    border: solid 1px $grey;
+    border-radius: 50% 50% 0 50%;
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(135deg);
+    right: 0px;
+  }
+}
+.crop.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-left: solid 2px $grey;
+  border-bottom: solid 2px $grey;
+  &:before {
+    left: -4px;
+    top: 2px;
+    width: 11px;
+    height: 11px;
+    border-right: solid 2px $grey;
+    border-top: solid 2px $grey;
+  }
+  &:after {
+    width: 1px;
+    height: 15px;
+    background-color: $grey;
+    bottom: -1px;
+    left: -1px;
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+  }
+}
+.asterisk.icon {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 1px;
+  height: 11px;
+  background-color: $grey;
+  &:before, 
+  &:after {
+    width: 1px;
+    height: 11px;
+    background-color: $grey;
+  }
+  &:before {
+    transform: rotate(60deg);
+  }
+  &:after {
+    transform: rotate(-60deg);
+  }
+}
+.pie-chart.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px $grey;
+  border-radius: 50%;
+  &:before {
+    left: 7px;
+    top: -1px;
+    width: 8px;
+    height: 8px;
+    border-left: solid 1px $grey;
+    border-bottom: solid 1px $grey;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      border-color: $white;
+    }
+  }
+}
+.bar-chart.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 12px;
+  border-left: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    left: 1px;
+    bottom: 1px;
+    width: 1px;
+    height: 4px;
+    border: solid 1px $grey;
+  }
+  &:after {
+    left: 5px;
+    bottom: 1px;
+    width: 1px;
+    height: 8px;
+    border: solid 1px $grey;
+  }
+  i {
+    top: 11px;
+    left: 8px;
+    &:before {
+      left: 1px;
+      bottom: 0;
+      width: 1px;
+      height: 4px;
+      border: solid 1px $grey;
+    }
+    &:after {
+      left: 5px;
+      bottom: 0;
+      width: 1px;
+      height: 8px;
+      border: solid 1px $grey;
+    }
+  }
+}
+.bar-chart-filled.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 12px;
+  border-left: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    left: 1px;
+    bottom: 1px;
+    width: 3px;
+    height: 6px;
+    background-color: $grey;
+    box-shadow: 8px 0 0 0 $grey;
+  }
+  &:after {
+    left: 5px;
+    bottom: 1px;
+    width: 3px;
+    height: 10px;
+    background-color: $grey;
+    box-shadow: 8px 0 0 0 $grey;
+  }
+}
+.line-chart.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 12px;
+  border-left: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    left: 1px;
+    bottom: 1px;
+    width: 0;
+    height: 0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 6px $grey;
+  }
+  &:after {
+    right: 0;
+    bottom: 1px;
+    width: 0;
+    height: 0;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    border-bottom: solid 11px $grey;
+  }
+}
+.toggle-button.icon {
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 17px;
+  height: 10px;
+  border-radius: 6px;
+  border: solid 1px $grey;
+  &:before {
+    left: 1px;
+    top: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $grey;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.filter.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 1px;
+  height: 0;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-top: solid 7px $grey;
+  &:before {
+    left: -1px;
+    top: -5px;
+    height: 7px;
+    width: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 3px $grey;
+    border-bottom: solid 3px transparent;
+  }
+}
+.play-button.icon {
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 17px;
+  height: 10px;
+  border-radius: 5px;
+  border: solid 1px $grey;
+  &:before {
+    left: 7px;
+    top: 2px;
+    height: 0;
+    width: 0;
+    border-top: solid 3px transparent;
+    border-left: solid 5px $grey;
+    border-bottom: solid 3px transparent;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      border-left: solid 5px $white;
+    }
+  }
+}
+.folder.icon {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  border-radius: 0 1px 1px 1px;
+  &:before {
+    left: -1px;
+    top: -3px;
+    width: 6px;
+    height: 2px;
+    border-left: solid 1px $grey;
+    border-right: solid 1px $grey;
+    border-top: solid 1px $grey;
+    border-radius: 2px 3px 0 0;
+  }
+  &:after {
+    top: -1px;
+    right: -1px;
+    width: 9px;
+    height: 1px;
+    border-right: solid 1px $grey;
+    border-top: solid 1px $grey;
+    border-radius: 0 2px 0 0;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      background-color: $grey;
+    }
+  }
+}
+.square-pin.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 11px;
+  height: 8px;
+  border-top: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    left: 2px;
+    width: 5px;
+    height: 8px;
+    border-left: solid 1px $grey;
+    border-right: solid 1px $grey;
+  }
+  &:after {
+    top: 9px;
+    left: 5px;
+    width: 1px;
+    height: 5px;
+    background-color: $grey;
+  }
+  &.filled:before {
+    background-color: $grey;
+  }
+}
+.ruler.icon {
+  margin-top: 7px;
+  width: 19px;
+  height: 5px;
+  border-radius: 1px;
+  border: solid 1px $grey;
+  transform: rotate(-45deg);
+  &:before {
+    top: -1px;
+    left: 1px;
+    width: 1px;
+    height: 3px;
+    background-color: $grey;
+    box-shadow: 4px 0 0 0 $grey,
+                8px 0 0 0 $grey,
+                12px 0 0 0 $grey,
+                16px 0 0 0 $grey;
+  }
+  &:after {
+    top: -1px;
+    left: 3px;
+    width: 1px;
+    height: 4px;
+    background-color: $grey;
+    box-shadow: 4px 0 0 0 $grey,
+                8px 0 0 0 $grey,
+                12px 0 0 0 $grey;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      height: 2px;
+      background-color: $white;
+      box-shadow: 4px 0 0 0 $white,
+                  8px 0 0 0 $white,
+                  12px 0 0 0 $white,
+                  16px 0 0 0 $white;
+    }
+    &:after {
+      height: 3px;
+      background-color: $white;
+      box-shadow: 4px 0 0 0 $white,
+                  8px 0 0 0 $white,
+                  12px 0 0 0 $white;
+    }
+  }
+}
+.piano.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 3px;
+  height: 15px;
+  border-radius: 0 0 2px 2px;
+  border: solid 1px $grey;
+  &:before,
+  &:after {
+    width: 3px;
+    height: 15px;
+    border-radius: 0 0 2px 2px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    left: 3px;
+    top: -1px;
+  }
+  &:after {
+    left: 7px;
+    top: -1px;
+  }
+  i {
+    left: 11px;
+    top: -1px;
+    width: 3px;
+    height: 15px;
+    border-radius: 0 0 2px 2px;
+    border: solid 1px $grey;
+    z-index: 1;
+    &:before {
+      left: -2px;
+      width: 3px;
+      height: 8px;
+      background-color: $grey;
+      box-shadow: -4px 0 0 0 $grey,
+                  -8px 0 0 0 $grey;
+    }
+    &:after {
+      left: -1px;
+      width: 1px;
+      height: 7px;
+      background-color: $white;
+      box-shadow: -4px 0 0 0 $white,
+                  -8px 0 0 0 $white;
+    }
+  }
+  &.filled i:after {
+    display: none;
+  }
+}
+.film.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 12px;
+  border: solid 1px $grey;
+  &:before {
+    left: -4px;
+    top: -1px;
+    width: 2px;
+    height: 2px;
+    background-color: $grey;
+    box-shadow: 0 3px 0 0 $grey,
+                0 6px 0 0 $grey,
+                0 9px 0 0 $grey,
+                0 12px 0 0 $grey,
+                17px 0px 0 0 $grey,
+                17px 3px 0 0 $grey,
+                17px 6px 0 0 $grey,
+                17px 9px 0 0 $grey,
+                17px 12px 0 0 $grey;
+  }
+  &:after {
+    left: 3px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: solid 5px $grey;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+  }
+  &.filled {
+    background-color: $grey;
+    &:after {
+      border-left: solid 5px $white;
+    }
+  }
+}
+.eyedropper.icon {
+  margin-left: 8px;
+  width: 2px;
+  height: 19px;
+  border: solid 1px $grey;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  &:before {
+    left: -1px;
+    top: -1px;
+    width: 4px;
+    height: 7px;
+    border-radius: 2px 2px 0 0;
+    background-color: $grey;
+  }
+  &:after {
+    left: -3px;
+    top: 5px;
+    width: 8px;
+    height: 1px;
+    background-color: $grey;
+  }
+}
+.shop2.icon {
+  margin-left: 4px;
+  margin-top: 12px;
+  width: 11px;
+  height: 4px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before,
+  &:after {
+    top: -7px;
+    width: 1px;
+    height: 4px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    left: -2px;
+    border-radius: 4px 0 2px 2px;
+  }
+  &:after {
+    right: -2px;
+    border-radius: 0 4px 2px 2px;
+  }
+  i {
+    left: 3px;
+    border: solid 1px $grey;
+    width: 3px;
+    height: 3px;
+    &:before,
+    &:after {
+      top: -10px;
+      width: 1px;
+      height: 6px;
+      border: solid 1px $grey;
+    }
+    &:before {
+      left: -2px;
+      border-radius: 3px 0 2px 2px;
+    }
+    &:after {
+      right: -2px;
+      border-radius: 0 3px 2px 2px;
+    }
+  }
+  &.filled {
+    &:before,
+    &:after,
+    i:before,
+    i:after {
+      background-color: $grey;
+    }
+    
+  }
+}
+.shop.icon {
+  margin-left: 4px;
+  margin-top: 12px;
+  width: 11px;
+  height: 4px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before,
+  &:after {
+    top: -8px;
+    width: 1px;
+    height: 5px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    left: -2px;
+    border-radius: 0 0 2px 2px;
+  }
+  &:after {
+    right: -2px;
+    border-radius: 0 0 2px 2px;
+  }
+  i {
+    left: 3px;
+    border: solid 1px $grey;
+    width: 3px;
+    height: 3px;
+    &:before,
+    &:after {
+      top: -9px;
+      width: 1px;
+      height: 5px;
+      border: solid 1px $grey;
+    }
+    &:before {
+      left: -2px;
+      border-radius: 0 0 2px 2px;
+    }
+    &:after {
+      right: -2px;
+      border-radius: 0 0 2px 2px;
+    }
+  }
+}
+.shop-filled.icon {
+  margin-left: 4px;
+  margin-top: 12px;
+  width: 11px;
+  height: 4px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    top: -8px;
+    width: 3px;
+    height: 7px;
+    background-color: $grey;
+    left: -2px;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 4px 0 0 0 $grey,
+                8px 0 0 0 $grey,
+                12px 0 0 0 $grey;
+  }
+  &:after {
+    left: 3px;
+    border: solid 1px $grey;
+    width: 3px;
+    height: 3px;
+  }
+}
+.music-note.icon {
+  margin-left: 7px;
+  margin-top: 4px;
+  width: 9px;
+  height: 8px;
+  border-top: solid 3px $grey;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  transform: skewY(-11deg);
+  &:before,
+  &:after {
+    width: 5px;
+    height: 4px;
+    background-color: $grey;
+    border-radius: 50%;
+  }
+  &:before {
+    left: -5px;
+    top: 6px;
+  }
+  &:after {
+    left: 5px;
+    top: 6px;
+  }
+}
+.share.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 2px;
+  height: 2px;
+  border: solid 1px $grey;
+  border-radius: 2px;
+  &:before,
+  &:after {
+    left: 9px;
+    width: 2px;
+    height: 2px;
+    border: solid 1px $grey;
+    border-radius: 2px;
+  }
+  &:before { 
+    top: -6px;
+  }
+  &:after { 
+    top: 4px;
+  }
+  i {
+    &:before {
+      left: 3px;
+      width: 8px;
+      height: 1px;
+      background-color: $grey;
+      transform-origin: left bottom;
+      transform: rotate(-30deg);
+    }
+    &:after {
+      top: 1px;
+      left: 3px;
+      width: 8px;
+      height: 1px;
+      background-color: $grey;
+      transform-origin: left top;
+      transform: rotate(30deg);
+    }
+  }
+}
+.share-filled.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 4px;
+  height: 4px;
+  background-color: $grey;
+  border-radius: 2px;
+  box-shadow: 9px -5px 0 0 $grey,
+              9px 5px 0 0 $grey;
+  &:before {
+    top: 1px;
+    left: 3px;
+    width: 8px;
+    height: 1px;
+    background-color: $grey;
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+  }
+  &:after {
+    top: 2px;
+    left: 3px;
+    width: 8px;
+    height: 1px;
+    background-color: $grey;
+    transform-origin: left top;
+    transform: rotate(30deg);
+  }
+}
+.house.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 11px;
+  height: 9px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before {
+    width: 3px;
+    height: 5px;
+    border: solid 1px $grey;
+    left: 3px;
+    top: 3px;
+  }
+  &:after {
+    left: -1px;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    transform: rotate(45deg);
+  }
+  &.filled:before {
+    background-color: $grey;
+  }
+}
+.insert2.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 14px;
+  height: 14px;
+  border-bottom: solid 1px $grey;
+  border-left: solid 1px $grey;
+  &:before {
+    width: 4px;
+    height: 1px;
+    background-color: $grey;
+  }
+  &:after {
+    width: 1px;
+    height: 4px;
+    background-color: $grey;
+    right: 0;
+    bottom: 0;
+  } 
+  i {
+    width: 2px;
+    height: 2px;
+    border-bottom: solid 1px $grey;
+    border-left: solid 1px $grey;
+    left: 3px;
+    bottom: 3px;
+    &:before {
+      width: 2px;
+      height: 10px;
+      border-top: solid 1px $grey;
+      border-left: solid 1px $grey;
+      border-right: solid 1px $grey;
+      bottom: 2px;
+      left: -1px;
+      transform-origin: left bottom;
+      transform: rotate(45deg);
+    }
+  }
+  &.filled { 
+    i {
+      width: 3px;
+      height: 3px;
+      background-color: $grey;
+      left: 3px;
+      bottom: 3px;
+      border: none;
+      &:before {
+        width: 4px;
+        height: 11px;
+        background-color: $grey;
+        bottom: 3px;
+        left: 0;
+        transform-origin: left bottom;
+        transform: rotate(45deg);
+        border: none;
+      }
+    }
+  }
+}
+.equalizer.icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 1px;
+  height: 15px;
+  background-color: $grey;
+  box-shadow: 6px 0 0 0 $grey,
+              12px 0 0 0 $grey;
+  &:before {
+    left: -1px;
+    top: 2px;
+    width: 3px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: $grey;
+    box-shadow: 6px 8px 0 0 $grey,
+               12px 4px 0 0 $grey;
+  }
+  &:after {
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    background-color: $white;
+    box-shadow: 6px 8px 0 0 $white,
+               12px 4px 0 0 $white;
+  }
+  &.filled:after {
+    display: none;
+  }
+}
+.video-camera.icon {
+  margin-left: 1px;
+  margin-top: 6px;
+  width: 12px;
+  height: 9px;
+  border: solid 1px $grey;
+  border-radius: 2px;
+  &:before {
+    right: -6px;
+    width: 0;
+    height: 1px;
+    border-top: solid 4px transparent;
+    border-bottom: solid 4px transparent;
+    border-right: solid 6px $grey;
+  }
+  &.filled {
+    background-color: $grey;
+  }
+}
+.back-play.icon {
+  margin-left: 15px;
+  margin-top: 4px;
+  width: 1px;
+  height: 13px;
+  background-color: $grey;
+  &:before,
+  &:after {
+    left: -12px;
+    width: 12px;
+    height: 1px;
+    background-color: $grey;
+  }
+  &:before {
+    top: 0;
+    transform-origin: right top;
+    transform: rotate(-30deg);
+  }
+  &:after {
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: rotate(30deg);
+  }
+}
+.back-play-filled.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 0;
+  height: 0;
+  border-right: solid 11px $grey;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+}
+.play.icon {
+  margin-left: 5px;
+  margin-top: 4px;
+  width: 1px;
+  height: 13px;
+  background-color: $grey;
+  &:before,
+  &:after {
+    left: 1px;
+    width: 12px;
+    height: 1px;
+    background-color: $grey;
+  }
+  &:before {
+    top: 0;
+    transform-origin: left top;
+    transform: rotate(30deg);
+  }
+  &:after {
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+  }
+}
+.play-filled.icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 0;
+  height: 0;
+  border-left: solid 11px $grey;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+}
+.pause.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 13px;
+  height: 13px;
+  &:before,
+  &:after {
+    width: 3px;
+    height: 11px;
+    border: solid 1px $grey;
+    border-radius: 1px;
+  }
+  &:after {
+    right: 0;
+  }
+  &.filled {
+    &:before,
+    &:after {
+      background-color: $grey;
+    }
+  }
+}
+.stop-music.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px $grey;
+  border-radius: 1px;
+  &.filled {
+    background-color: $grey;
+  }
+}
+.backward.icon {
+  margin-left: 4px;
+  margin-top: 10px;
+  transform: rotate(-45deg);
+  &:before,
+  &:after {
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    border-radius: 1px 0 0 0;
+  }
+  &:after {
+    left: 3px;
+    top: 3px;
+  }
+}
+.backward-filled.icon{
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before,
+  &:after {
+    width: 0;
+    height: 0;
+    border-right: solid 7px $grey;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 7px;
+  }
+}
+.forward.icon {
+  margin-left: -1px;
+  margin-top: 10px;
+  transform: rotate(-45deg);
+  &:before,
+  &:after {
+    width: 9px;
+    height: 9px;
+    border-bottom: solid 1px $grey;
+    border-right: solid 1px $grey;
+    border-radius: 0 0 1px 0;
+  }
+  &:after {
+    left: 3px;
+    top: 3px;
+  }
+}
+.forward-filled.icon{
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before,
+  &:after {
+    width: 0;
+    height: 0;
+    border-left: solid 7px $grey;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 7px;
+  }
+}
+.next.icon {
+  margin-left: 6px;
+  margin-top: 4px;
+  &:before{
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px $grey;
+    border-right: solid 1px $grey;
+    border-radius: 0 1px 0 0;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: 9px;
+    top: 0px;
+    width: 1px;
+    height: 14px;
+    background-color: $grey;
+  }
+}
+.next-filled.icon{
+  margin-left: 6px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-left: solid 7px $grey;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 7px;
+    width: 3px;
+    height: 14px;
+    background-color: $grey;
+  }
+}
+.previous.icon {
+  margin-left: 5px;
+  margin-top: 4px;
+  &:before{
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    border-radius: 1px 0 0 0;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 14px;
+    background-color: $grey;
+  }
+}
+.previous-filled.icon{
+  margin-left: 5px;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  &:before {
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-right: solid 7px $grey;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 0;
+    width: 3px;
+    height: 14px;
+    background-color: $grey;
+  }
+}
+.first.icon {
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 1px;
+  height: 14px;
+  background-color: $grey;
+  &:before{
+    left: 0;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    border-radius: 1px 0 0 0;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    border-radius: 1px 0 0 0;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+}
+.first-filled.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 3px;
+  height: 14px;
+  background-color: $grey;
+  &:before,
+  &:after {
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-right: solid 7px $grey;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: 10px
+  }
+}
+.last.icon {
+  margin-left: 17px;
+  margin-top: 4px;
+  width: 1px;
+  height: 14px;
+  background-color: $grey;
+  &:before, 
+  &:after {
+    left: -9px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px $grey;
+    border-right: solid 1px $grey;
+    border-radius: 0 1px 0 0;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: -13px;
+  }
+}
+.last-filled.icon {
+  margin-left: 16px;
+  margin-top: 4px;
+  width: 3px;
+  height: 14px;
+  background-color: $grey;
+  &:before,
+  &:after {
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: solid 7px $grey;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+  }
+  &:after {
+    left: -14px;
+  }
+}
+.record.icon {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px $grey;
+  border-radius: 50%;
+  &.filled {
+    background-color: $grey;
+  }
+}
+.previous-next.icon {
+  margin-left: 8px;
+  margin-top: 4px;
+  width: 3px;
+  height: 13px;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  &:before {
+    left: -10px;
+    width: 8px;
+    height: 8px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    transform-origin: right top;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    right: -10px;
+    width: 8px;
+    height: 8px;
+    border-top: solid 1px $grey;
+    border-right: solid 1px $grey;
+    transform-origin: left top;
+    transform: rotate(45deg);
+  }
+}
+.previous-next-filled.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 17px;
+  height: 14px;
+  &:before {
+    width: 0;
+    height: 0;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+    border-right: solid 7px $grey;
+  }
+  &:after {
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+    border-left: solid 7px $grey;
+  }
+}
+.note-tree.icon {
+  margin-left: 4px;
+  margin-top: 10px;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px $grey;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  &:before {
+    left: 5px;
+    top: -6px;
+    width: 1px;
+    height: 11px;
+    background-color: $grey;
+  }
+  &:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: $grey;
+    left: -2px;
+    top: 3px;
+    box-shadow: 6px 0 0 0 $grey,
+                6px -10px 0 0 $grey,
+                12px 0 0 0 $grey;
+  }
+}
+.layout-right-column.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px $grey;
+  border-radius: 2px;
+  &:before {
+    left: -1px;
+    top: 4px;
+    width: 17px;
+    height: 1px;
+    background-color: $grey;
+  }
+  &:after {
+    left: 10px;
+    top: 4px;
+    width: 1px;
+    height: 11px;
+    background-color: $grey;
+  }
+}
+.layout-right-column-filled.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 17px;
+  height: 5px;
+  background-color: $grey;
+  border-radius: 2px 2px 0 0;
+  &:before {
+    left: 0;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 0 0 0 2px;
+    background-color: $grey;
+  }
+  &:after {
+    left: 12px;
+    top: 6px;
+    width: 5px;
+    height: 11px;
+    background-color: $grey;
+    border-radius: 0 0 2px 0;
+  }
+}
+.layout-left-column.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px $grey;
+  border-radius: 2px;
+  &:before {
+    left: -1px;
+    top: 4px;
+    width: 17px;
+    height: 1px;
+    background-color: $grey;
+  }
+  &:after {
+    left: 4px;
+    top: 4px;
+    width: 1px;
+    height: 11px;
+    background-color: $grey;
+  }
+}
+.layout-left-column-filled.icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 17px;
+  height: 5px;
+  background-color: $grey;
+  border-radius: 2px 2px 0 0;
+  &:before {
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 11px;
+    border-radius: 0 0 0 2px;
+    background-color: $grey;
+  }
+  &:after {
+    left: 6px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    background-color: $grey;
+    border-radius: 0 0 2px 0;
+  }
+}
+.layout-three-column.icon {
+  margin-top: 4px;
+  margin-left: 1px;
+  width: 17px;
+  height: 11px;
+  border: solid 1px $grey;
+  border-radius: 2px;
+  &:before {
+    top: -1px;
+    left: 4px;
+    width: 1px;
+    height: 13px;
+    background-color: $grey;
+  }
+  &:after {
+    top: -1px;
+    right: 4px;
+    width: 1px;
+    height: 13px;
+    background-color: $grey;
+  }
+}
+.layout-three-column-filled.icon {
+  margin-top: 4px;
+  margin-left: 7px;
+  width: 7px;
+  height: 13px;
+  background-color: $grey;
+  &:before,
+  &:after {
+    top: 0;
+    width: 5px;
+    height: 13px;
+    background-color: $grey;
+  }
+  &:before {
+    left: -6px;
+    border-radius: 2px 0 0 2px;
+  }
+  &:after {
+    right: -6px;
+    border-radius: 0 2px 2px 0;
+  }
+}
+.layout-1.icon {
+  margin-left: 11px;
+  margin-top: 2px;
+  width: 6px;
+  height: 15px;
+  border-radius: 1px;
+  border: solid 1px $grey;
+  &:before,
+  &:after {
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    top: -1px;
+  }
+  &:after {
+    bottom: -1px;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before,
+    &:after {
+      background-color: $grey;
+    }
+  }
+}
+.layout-2.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 6px;
+  height: 15px;
+  border-radius: 1px;
+  border: solid 1px $grey;
+  &:before,
+  &:after {
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    top: -1px;
+  }
+  &:after {
+    bottom: -1px;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before,
+    &:after {
+      background-color: $grey;
+    }
+  }
+}
+.layout-3.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px $grey;
+  &:before,
+  &:after {
+    bottom: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    left: -1px;
+  }
+  &:after {
+    right: -1px;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before,
+    &:after {
+      background-color: $grey;
+    }
+  }
+}
+.layout-4.icon {
+  margin-left: 2px;
+  margin-top: 11px;
+  width: 15px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px $grey;
+  &:before,
+  &:after {
+    top: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px $grey;
+  }
+  &:before {
+    left: -1px;
+  }
+  &:after {
+    right: -1px;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before,
+    &:after {
+      background-color: $grey;
+    }
+  }
+}
+.trophy.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 15px;
+  height: 15px;
+  &:before {
+    left: 3px;
+    width: 7px;
+    height: 9px;
+    border: solid 1px $grey;
+    border-radius: 0 0 5px 5px;
+  }
+  &:after {
+    top: 11px;
+    left: 7px;
+    width: 1px;
+    height: 4px;
+    background-color: $grey;
+  }
+  i {
+    top: 14px;
+    left: 4px;
+    width: 7px;
+    height: 1px;
+    background-color: $grey;
+    &:before {
+      top: -12px;
+      left: -4px;
+      width: 2px;
+      height: 4px;
+      border: solid 1px $grey;
+      border-radius: 0 0 0 3px;
+    }
+    &:after {
+      top: -12px;
+      right: -4px;
+      width: 2px;
+      height: 4px;
+      border: solid 1px $grey;
+      border-radius: 0 0 3px 0;
+    }
+  }
+  &.filled {
+    &:before {
+      background-color: $grey;
+    }
+  }
+}
+.speedmeter.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 9px;
+  border-radius: 8px 8px 0 0;
+  border-top: solid 1px $grey;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
+  &:before {
+    left: 5px;
+    top: 7px;
+    width: 3px;
+    height: 3px;
+    border: solid 1px $grey;
+    border-radius: 50%;
+  }
+  &:after {
+    left: 7px;
+    top: 3px;
+    width: 1px;
+    height: 5px;
+    background-color: $grey;
+  }
+  &.filled:before {
+    background-color: $grey;
+  }
+}
+.shooting-target.icon {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px $grey;
+  border-radius: 50%;
+  &:before {
+    top: 2px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    border: solid 1px $grey;
+    border-radius: 50%;
+  }
+  &:after {
+    top: 5px;
+    left: 5px;
+    width: 3px;
+    height: 3px;
+    border: solid 1px $grey;
+    border-radius: 50%;
+  }
+  &.filled {
+    width: 13px;
+    height: 13px;
+    border: solid 2px $grey;
+    &:before {
+      left: 1px;
+      top: 1px;
+      width: 7px;
+      height: 7px;
+      border: solid 2px $grey;
+    }
+    &:after {
+      left: 4px;
+      top: 4px;
+      width: 5px;
+      height: 5px;
+      background-color: $grey;
+      border: none;
+    }
+  }
+}
+.clipboard.icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 11px;
+  height: 13px;
+  border: solid 1px $grey;
+  border-top: none;
+  border-radius: 1px;
+  &:before {
+    top: -1px;
+    left: 2px;
+    width: 5px;
+    height: 1px;
+    border: solid 1px $grey;
+    border-radius: 1px;
+  }
+  &:after {
+    width: 3px;
+    height: 1px;
+    background-color: $grey;
+    box-shadow: 8px 0 0 0 $grey;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.airplay.icon {
+  margin-top: 4px;
+  margin-left: 3px;
+  width: 14px;
+  height: 10px;
+  border: solid 1px $grey;
+  border-bottom: none;
+  border-radius: 1px;
+  &:before {
+    top: 7px;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    border-bottom: solid 5px $grey;
+  }
+  &:after {
+    top: 9px;
+    width: 3px;
+    height: 1px;
+    background-color: $grey;
+    box-shadow: 11px 0 0 0 $grey;
+  }
+  &.filled {
+    background-color: $grey;
+    &:before {
+      background-color: $white;
+    }
+  }
+}
+.reply.icon {
+  margin-left: 5px;
+  margin-top: 9px;
+  width: 11px;
+  height: 7px;
+  border-top: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-radius: 0 6px 0 0;
+  &:before {
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    transform: rotate(-45deg);
+  }
+}
+.reply-all.icon {
+  margin-left: 8px;
+  margin-top: 9px;
+  width: 8px;
+  height: 7px;
+  border-top: solid 1px $grey;
+  border-right: solid 1px $grey;
+  border-radius: 0 6px 0 0;
+  &:before,
+  &:after {
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px $grey;
+    border-left: solid 1px $grey;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: -3px;
+  }
+}
+.reply-all-reflect.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 8px;
+  height: 7px;
+  border-top: solid 1px $grey;
+  border-left: solid 1px $grey;
+  border-radius: 6px 0 0 0;
+  &:before,
+  &:after {
+    left: 1px;
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-bottom: solid 1px $grey;
+    border-right: solid 1px $grey;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: 4px;
+  }
+}
+.forward-email.icon {
+  margin-left: 4px;
+  margin-top: 9px;
+  width: 11px;
+  height: 7px;
+  border-top: solid 1px $grey;
+  border-left: solid 1px $grey;
+  border-radius: 6px 0 0 0;
+  &:before {
+    left: 4px;
+    top: -4px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px $grey;
+    border-right: solid 1px $grey;
+    transform: rotate(45deg);
+  }
+}
+.control.icon {
+  margin-left: 9px;
+  margin-top: 6px;
+  width: 8px;
+  height: 1px;
+  background-color: $grey;
+  box-shadow: -5px 8px 0 0 $grey;
+  &:before,
+  &:after {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: solid 1px $grey;
+  }
+  &:before {
+    left: -6px;
+    top: -3px;
+  }
+  &:after {
+    right: -1px;
+    top: 5px;
+  }
+  &.filled {
+    &:before,
+    &:after {
+      background-color: $grey;
+    }
+  }
+}
+.cart.icon {
+  margin-left: 5px;
+  margin-top: 6px;
+  width: 8px;
+  height: 5px;
+  border-top: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  &:before{
+    width: 1px;
+    height: 7px;
+    background-color: $grey;
+    bottom: -1px;
+    transform-origin: left bottom;
+    transform: rotate(-26deg);
+  }
+  &:after{
+    width: 1px;
+    height: 10px;
+    background-color: $grey;
+    bottom: -1px;
+    right: 0;
+    transform-origin: right bottom;
+    transform: rotate(23deg);
+  }
+  i {
+    width: 3px;
+    height: 1px;
+    background-color: $grey;
+    top: -1px;
+    left: -3px;
+    box-shadow: 10px 0 0 0 $grey,
+                14px -3px 0 0 $grey;
+    &:before,
+    &:after {
+      top: 8px;
+      left: 1px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      border: solid 1px $grey;
+    }
+    &:after {
+      left: 9px;
+    }
+  }
+}
+.cart-filled {
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 7px;
+  height: 0;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-top: solid 7px $grey;
+  &:before,
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $grey;
+    top: 1px;
+  }
+  &:before {
+    left: -2px;
+  }
+  &:after {
+    left: 5px;
+  }
+  i {
+    width: 3px;
+    height: 1px;
+    background-color: $grey;
+    top: -10px;
+    left: 10px;
+    &:before {
+      height: 4px;
+      width: 1px;
+      background-color: $grey;
+      transform-origin: left top;
+      transform: rotate(21deg);
+    }
+  }
+}
