@@ -55,9 +55,7 @@
     <div class="iconWrapper iconWrapperHidden"></div>
     <div class="iconWrapper iconWrapperHidden"></div>
 
-    <div ng-include="'partials/icons.html'"></div>
-    
-
+    <!-- <div ng-include="'partials/icons.html'"></div> -->
   </div>
   <div class="viewer"
        ng-init="cssIconHover = cssIconBeforeHover = cssIconAfterHover = cssChildHover = cssChildBeforeHover = cssChildAfterHover = false;"
@@ -134,22 +132,6 @@
              ng-mouseleave= "cssChildAfterHover = false;">
           <xmp ng-if="selectedIcon.cssBlocks.cssChildAfter">{{selectedIcon.cssBlocks.cssChildAfter}}</xmp>
         </div>
-        <!-- <xmp>.icon {
-  position: absolute;
-}
-.icon:before, .icon:after {
-  content: '';
-  position: absolute;
-  display: block;
-}</xmp>
-        <xmp ng-if="selectedIcon.htmlChildMarkup">.icon i {
-  position: absolute;
-}
-.icon i:before, .icon i:after {
-  content: '';
-  position: absolute;
-  display: block;
-}</xmp> -->
       </div>
     </div>
   </div>

@@ -513,7 +513,6 @@ button {
 }
 .viewer.cssIconHover .iconViewer .icon {
   color: #3CD5FF !important;
-  z-index: 9;
 }
 .viewer.cssIconHover .iconViewer .icon:before {
   color: black;
@@ -542,17 +541,14 @@ button {
 
 .viewer.cssIconBeforeHover .iconViewer .icon:before {
   color: #3CD5FF !important;
-  z-index: 9;
 }
 
 .viewer.cssIconAfterHover .iconViewer .icon:after {
   color: #3CD5FF !important;
-  z-index: 9;
 }
 
 .viewer.cssChildHover .iconViewer .icon i {
   color: #3CD5FF !important;
-  z-index: 9;
 }
 .viewer.cssChildHover .iconViewer .icon i:before {
   color: black;
@@ -569,12 +565,10 @@ button {
 
 .viewer.cssChildBeforeHover .iconViewer .icon i:before {
   color: #3CD5FF !important;
-  z-index: 9;
 }
 
 .viewer.cssChildAfterHover .iconViewer .icon i:after {
   color: #3CD5FF !important;
-  z-index: 9;
 }
 
 /*# sourceMappingURL=app.css.map */

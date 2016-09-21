@@ -29,7 +29,7 @@ $highlightColor: #3CD5FF;
 .viewer.cssIconHover .iconViewer {
   .icon {   
     color: $highlightColor !important;
-    z-index: 9;
+    // z-index: 9;
   }
   .icon:before{
     color: black;
@@ -59,19 +59,19 @@ $highlightColor: #3CD5FF;
 .viewer.cssIconBeforeHover .iconViewer {
   .icon:before{
     color: $highlightColor !important;
-    z-index: 9;
+    // z-index: 9;
   }
 }
 .viewer.cssIconAfterHover .iconViewer {
   .icon:after {
     color: $highlightColor !important;
-    z-index: 9;
+    // z-index: 9;
   }
 }
 .viewer.cssChildHover .iconViewer {
   .icon i {   
     color: $highlightColor !important;
-    z-index: 9;
+    // z-index: 9;
   }
   .icon i:before {
     color: black;
@@ -89,12 +89,12 @@ $highlightColor: #3CD5FF;
 .viewer.cssChildBeforeHover .iconViewer {
   .icon i:before{
     color: $highlightColor !important;
-    z-index: 9;
+    // z-index: 9;
   }
 }
 .viewer.cssChildAfterHover .iconViewer {
   .icon i:after {
     color: $highlightColor !important;
-    z-index: 9;
+    // z-index: 9;
   } 
 }
