@@ -106,6 +106,17 @@ button {
   border: none;
   padding: 0;
 }
+.icons .info {
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 40px auto 0 auto;
+}
+.icons .info a {
+  color: black;
+  text-decoration: underline;
+}
 .icons .about {
   display: block;
   width: 100%;

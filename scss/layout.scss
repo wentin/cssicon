@@ -57,6 +57,17 @@ button {
       padding: 0;
     }
   }
+  .info {
+    max-width: 600px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 40px auto 0 auto;
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+  }
   .about {
     display: block;
     width: 100%;
