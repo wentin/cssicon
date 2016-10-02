@@ -7,8 +7,6 @@
   height: 10px;
   color: white;
   background-color: currentColor;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotate(-54deg);
-          transform: rotate(-54deg);
+  transform-origin: bottom;
+  transform: rotate(-54deg);
 }

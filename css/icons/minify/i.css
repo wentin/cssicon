@@ -2,6 +2,5 @@
   position: absolute;
   left: 4px;
   top: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }

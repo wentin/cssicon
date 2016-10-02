@@ -9,6 +9,5 @@
   border-top: solid 1px transparent;
   border-right: solid 1px transparent;
   border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }

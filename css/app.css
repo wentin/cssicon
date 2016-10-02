@@ -182,16 +182,13 @@ button {
   left: -4px;
   top: 10px;
   background-color: black;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 .viewer .buttonClose:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .viewer .buttonClose:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .viewer .viewerWrapper {
   box-sizing: border-box;
@@ -221,10 +218,8 @@ button {
   margin: 40px auto 0 auto;
 }
 .viewer .viewerWrapper .iconWrapperBig .scale {
-  -webkit-transform: scale(4);
-          transform: scale(4);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
+  transform: scale(4);
+  transform-origin: left top;
   display: inline-block;
 }
 .viewer .viewerWrapper .iconLabel {
@@ -448,8 +443,7 @@ button {
   height: 12px;
   border: solid 1px black;
   border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   position: relative;
 }
 .search.icon:before {
@@ -474,12 +468,10 @@ button {
   background-color: black;
   position: absolute;
   top: 10px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .close.icon:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .c {
@@ -601,8 +593,6 @@ button {
 .viewer.cssIconHover .iconViewer .clock.icon.filled:after,
 .viewer.cssIconHover .iconViewer .mail.icon.filled:before,
 .viewer.cssIconHover .iconViewer .mail.icon.filled:after,
-.viewer.cssIconHover .iconViewer .camera.icon.filled:before,
-.viewer.cssIconHover .iconViewer .camera.icon.filled:after,
 .viewer.cssIconHover .iconViewer .card.icon.filled:before,
 .viewer.cssIconHover .iconViewer .card.icon.filled:after,
 .viewer.cssIconHover .iconViewer .keyboard.icon.filled:before,
@@ -612,6 +602,9 @@ button {
   color: white;
 }
 .viewer.cssIconHover .iconViewer .focus.icon:before, .viewer.cssIconHover .iconViewer .focus.icon:after {
+  color: white;
+}
+.viewer.cssIconHover .iconViewer .camera.icon.filled:before {
   color: white;
 }
 .viewer.cssIconHover .iconViewer .tag.icon.filled:after {

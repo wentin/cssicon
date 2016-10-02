@@ -8,6 +8,5 @@
   border: solid 1px currentColor;
   background-color: currentColor;
   border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

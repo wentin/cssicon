@@ -49,7 +49,6 @@ $highlightColor: #3CD5FF;
   .stop,
   .clock,
   .mail,
-  .camera,
   .card,
   .keyboard,
   .mouse {
@@ -61,6 +60,11 @@ $highlightColor: #3CD5FF;
   .focus {
     &.icon:before,
     &.icon:after {   
+      color: white;
+    }
+  }
+  .camera {
+    &.icon.filled:before {   
       color: white;
     }
   }

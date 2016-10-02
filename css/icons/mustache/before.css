@@ -8,8 +8,6 @@
   border-radius: 0 0 0 100%;
   border: 0 solid transparent;
   border-bottom: 6px solid currentColor;
-  -webkit-transform-origin: right 7px;
-          transform-origin: right 7px;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform-origin: right 7px;
+  transform: rotate(-40deg);
 }
