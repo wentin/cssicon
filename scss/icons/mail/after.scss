@@ -1,0 +1,13 @@
+@import '../../mixin';
+.mail.icon {
+  &:after {
+    @include pseudo();
+    left: 7px;
+    top: -4px;
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    transform-origin: bottom;
+    transform: rotate(54deg);
+  }
+}

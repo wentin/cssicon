@@ -1,0 +1,13 @@
+.paperclip.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 2px;
+  width: 6px;
+  height: 12px;
+  border-radius: 4px 4px 0 0;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  transform: rotate(45deg);
+}

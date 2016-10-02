@@ -1,0 +1,13 @@
+@import '../../mixin';
+.upload2.icon {
+  &:before {
+    @include pseudo();
+    top: 4px;
+    left: 2px;
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+  }
+}

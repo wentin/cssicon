@@ -1,4 +1,5 @@
 $white: white;
+@import 'mixin';
 
 body {
   color: currentColor;
@@ -27,529 +28,6 @@ body {
 }
 
 
-.mouse.icon {
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 1px;
-  width: 11px;
-  height: 17px;
-  border: solid 1px currentColor;
-  border-radius: 6px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 13px;
-    height: 1px;
-    background-color: currentColor;
-    top: 6px;
-    left: -1px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 7px;
-    background-color: currentColor;
-    left: 5px;
-    top: -1px;
-  }
-}
-.mouse.filled.icon {
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 1px;
-  width: 11px;
-  height: 17px;
-  border: solid 1px currentColor;
-    background-color: currentColor;
-  border-radius: 6px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 13px;
-    height: 1px;
-    background-color: $white;
-    top: 6px;
-    left: -1px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 7px;
-    background-color: $white;
-    left: 5px;
-    top: -1px;
-  }
-}
-.keyboard.icon {
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 4px;
-  width: 17px;
-  height: 11px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    top: 3px;
-    width: 1px;
-    height: 1px;
-    border: 1px solid transparent;
-    box-shadow: 
-      -2px 0 0 -1px currentColor, 
-      2px 0 0 -1px currentColor, 
-      0 -2px 0 -1px currentColor, 
-      0 2px 0 -1px currentColor, 
-      -6px 0 0 -1px currentColor, 
-      6px 0 0 -1px currentColor, 
-      -4px -2px 0 -1px currentColor, 
-      -4px 2px 0 -1px currentColor, 
-      4px -2px 0 -1px currentColor, 
-      4px 2px 0 -1px currentColor;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 9px;
-    height: 1px;
-    background-color: currentColor;
-    bottom: 1px;
-    left: 4px;
-  }
-}
-.keyboard.filled.icon {
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 4px;
-  width: 17px;
-  height: 11px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    top: 3px;
-    width: 1px;
-    height: 1px;
-    border: 1px solid transparent;
-    box-shadow: 
-      -2px 0 0 -1px $white, 
-      2px 0 0 -1px $white, 
-      0 -2px 0 -1px $white, 
-      0 2px 0 -1px $white, 
-      -6px 0 0 -1px $white, 
-      6px 0 0 -1px $white, 
-      -4px -2px 0 -1px $white, 
-      -4px 2px 0 -1px $white, 
-      4px -2px 0 -1px $white, 
-      4px 2px 0 -1px $white;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 9px;
-    height: 1px;
-    background-color: $white;
-    bottom: 1px;
-    left: 4px;
-  }
-}
-
-
-.doubleQuoteLeft.icon {
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-  &:before{
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-    top: 3px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-    top: 3px;
-    left: 9px;
-  }
-  i {
-    &:before {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px currentColor;
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      top: 0;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px currentColor;
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      top: 0;
-      left: 9px;
-    }
-  }
-}
-
-.doubleQuoteLeft.filled.icon {
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-  &:before{
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    background-color: currentColor;
-    border-radius: 50%;
-    top: 3px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    background-color: currentColor;
-    border-radius: 50%;
-    top: 3px;
-    left: 9px;
-  }
-  i {
-    &:before {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px currentColor;
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      top: 0;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px currentColor;
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      top: 0;
-      left: 9px;
-    }
-  }
-}
-
-.doubleQuoteRight.icon {
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-    top: 0px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-    top: 0px;
-    left: 9px;
-  }
-  i {
-    &:before {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px transparent;
-      border-top: solid 1px transparent;
-      border-right: solid 1px currentColor;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      left: -6px;
-      top: -3px;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px transparent;
-      border-top: solid 1px transparent;
-      border-right: solid 1px currentColor;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      top: -3px;
-      left: 3px;
-    }
-  }
-}
-
-
-.doubleQuoteRight.filled.icon {
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    background-color: currentColor;
-    border-radius: 50%;
-    top: 0px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    background-color: currentColor;
-    border-radius: 50%;
-    top: 0px;
-    left: 9px;
-  }
-  i {
-    &:before {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px transparent;
-      border-top: solid 1px transparent;
-      border-right: solid 1px currentColor;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      left: -6px;
-      top: -3px;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-left: solid 1px transparent;
-      border-top: solid 1px transparent;
-      border-right: solid 1px currentColor;
-      border-bottom: solid 1px transparent;
-      border-radius: 50%;
-      transform: rotate(45deg);
-      top: -3px;
-      left: 3px;
-    }
-  }
-}
-
-.singleQuoteLeft.icon {
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-    top: 3px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-left: solid 1px currentColor;
-    border-top: solid 1px transparent;
-    border-right: solid 1px transparent;
-    border-bottom: solid 1px transparent;
-    border-radius: 50%;
-    transform: rotate(45deg);
-    left: 0;
-    top: 0;
-  }
-}
-.singleQuoteLeft.filled.icon {
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    background-color: currentColor;
-    border-radius: 50%;
-    top: 3px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-left: solid 1px currentColor;
-    border-top: solid 1px transparent;
-    border-right: solid 1px transparent;
-    border-bottom: solid 1px transparent;
-    border-radius: 50%;
-    transform: rotate(45deg);
-    left: 0;
-    top: 0;
-  }
-}
-.singleQuoteRight.icon {
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    border-radius: 50%;
-    top: 0px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-right: solid 1px currentColor;
-    border-top: solid 1px transparent;
-    border-left: solid 1px transparent;
-    border-bottom: solid 1px transparent;
-    border-radius: 50%;
-    transform: rotate(45deg);
-    left: -6px;
-    top: -3px;
-  }
-}
-.singleQuoteRight.filled.icon {
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border: solid 1px currentColor;
-    background-color: currentColor;
-    border-radius: 50%;
-    top: 0px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-right: solid 1px currentColor;
-    border-top: solid 1px transparent;
-    border-left: solid 1px transparent;
-    border-bottom: solid 1px transparent;
-    border-radius: 50%;
-    transform: rotate(45deg);
-    left: -6px;
-    top: -3px;
-  }
-}
-
-.beard.icon {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  box-shadow: 
-    5px 8px 0 0 currentColor, 
-    10px 8px 0 0 currentColor;
-  &:before {
-    content: '';
-    position: absolute;
-    border: 0 solid transparent;
-    border-bottom: 6px solid currentColor;
-    border-radius: 0 0 0 100%;
-    width: 7px;
-    height: 4px;
-    left: 1px;
-    top: 4px;
-    transform-origin: right 7px;
-    transform: rotate(-40deg);
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    border: 0 solid transparent;
-    border-bottom: 6px solid currentColor;
-    border-radius: 0 0 100% 0;
-    width: 7px;
-    height: 4px;
-    left: 13px;
-    top: 4px;
-    transform-origin: left 7px;
-    transform: rotate(40deg);
-  }
-}
 
 .beard.filled.icon {
   position: absolute;
@@ -621,15 +99,7 @@ body {
     }
   }
 }
-
-
-
-
-
-
-
-
-
+ 
 .eye.icon {
   margin-left: 3px;
   margin-top: 3px;
@@ -7693,4 +7163,105 @@ body {
     top: -2px;
   }
 }
-@import 'icons-done';
+@import 'icons/search/*';
+@import 'icons/search-solid/*';
+@import 'icons/magnify/*';
+@import 'icons/magnify-solid/*';
+@import 'icons/minify/*';
+@import 'icons/minify-solid/*';
+@import 'icons/close/*';
+@import 'icons/menu/*';
+@import 'icons/arrow-left/*';
+@import 'icons/arrow-right/*';
+@import 'icons/arrow-up/*';
+@import 'icons/arrow-down/*';
+@import 'icons/plus/*';
+@import 'icons/minus/*';
+@import 'icons/check/*';
+@import 'icons/remove/*';
+@import 'icons/trash/*';
+@import 'icons/trash-solid/*';
+@import 'icons/audio/*';
+@import 'icons/audio-solid/*';
+@import 'icons/pin/*';
+@import 'icons/pin-solid/*';
+@import 'icons/chat/*';
+@import 'icons/chat-solid/*';
+@import 'icons/stop/*';
+@import 'icons/stop-solid/*';
+@import 'icons/clock/*';
+@import 'icons/clock-solid/*';
+@import 'icons/clock-h3m30/*';
+@import 'icons/clock-h3m30-solid/*';
+@import 'icons/clock-h9m0/*';
+@import 'icons/clock-h9m0-solid/*';
+@import 'icons/clock-h9m30/*';
+@import 'icons/clock-h9m30-solid/*';
+@import 'icons/profile/*';
+@import 'icons/profile-solid/*';
+@import 'icons/bell/*';
+@import 'icons/bell-solid/*';
+@import 'icons/heart/*';
+@import 'icons/heart-solid/*';
+@import 'icons/print/*';
+@import 'icons/print-solid/*';
+@import 'icons/edit/*';
+@import 'icons/edit-solid/*';
+@import 'icons/link/*';
+@import 'icons/map/*';
+@import 'icons/mail/*';
+@import 'icons/mail-solid/*';
+@import 'icons/bookmark/*';
+@import 'icons/bookmark-solid/*';
+@import 'icons/camera/*';
+@import 'icons/camera-solid/*';
+@import 'icons/focus/*';
+@import 'icons/card/*';
+@import 'icons/card-solid/*';
+@import 'icons/lock/*';
+@import 'icons/lock-solid/*';
+@import 'icons/unlock/*';
+@import 'icons/unlock-solid/*';
+@import 'icons/code/*';
+@import 'icons/flag/*';
+@import 'icons/flag-solid/*';
+@import 'icons/tag/*';
+@import 'icons/tag-solid/*';
+@import 'icons/signal/*';
+@import 'icons/export/*';
+@import 'icons/upload/*';
+@import 'icons/import/*';
+@import 'icons/download/*';
+@import 'icons/upload2/*';
+@import 'icons/shutdown/*';
+@import 'icons/paperclip/*';
+@import 'icons/retweet/*';
+@import 'icons/key/*';
+@import 'icons/key-solid/*';
+@import 'icons/key2/*';
+@import 'icons/key2-solid/*';
+@import 'icons/refresh/*';
+@import 'icons/pilcrow/*';
+@import 'icons/pilcrow-solid/*';
+@import 'icons/justified/*';
+@import 'icons/paragraph-direction/*';
+@import 'icons/left-align/*';
+@import 'icons/center-align/*';
+@import 'icons/right-align/*';
+@import 'icons/indent/*';
+@import 'icons/outdent/*';
+@import 'icons/mouse/*'; 
+@import 'icons/mouse-solid/*'; 
+@import 'icons/keyboard/*'; 
+@import 'icons/keyboard-solid/*'; 
+@import 'icons/left-double-quote/*'; 
+@import 'icons/left-double-quote-solid/*'; 
+@import 'icons/right-double-quote/*'; 
+@import 'icons/right-double-quote-solid/*'; 
+@import 'icons/left-single-quote/*'; 
+@import 'icons/left-single-quote-solid/*'; 
+@import 'icons/right-single-quote/*'; 
+@import 'icons/right-single-quote-solid/*'; 
+@import 'icons/mustache/*'; 
+
+

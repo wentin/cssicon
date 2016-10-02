@@ -1,0 +1,11 @@
+@import '../../mixin';
+.download.icon {
+  &:before {
+    @include pseudo();
+    left: 6px;
+    top: -9px;
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+  }
+}

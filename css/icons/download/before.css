@@ -1,0 +1,9 @@
+.download.icon:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -9px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+}

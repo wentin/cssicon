@@ -1,0 +1,14 @@
+.doubleQuoteLeft.filled.icon i:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}

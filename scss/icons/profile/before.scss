@@ -1,0 +1,12 @@
+@import '../../mixin';
+.profile.icon {
+  &:before {
+    @include pseudo();
+    left: 2px;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+}

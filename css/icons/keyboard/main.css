@@ -1,0 +1,10 @@
+.keyboard.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 4px;
+  width: 17px;
+  height: 11px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}

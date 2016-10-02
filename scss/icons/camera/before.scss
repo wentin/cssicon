@@ -1,0 +1,12 @@
+@import '../../mixin';
+.camera.icon {
+  &:before {
+    @include pseudo();
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 3px;
+    border: solid 1px currentColor;
+  }
+}

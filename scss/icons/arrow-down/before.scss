@@ -1,0 +1,13 @@
+@import '../../mixin';
+.arrowDown.icon {
+  &:before {
+    @include pseudo();
+    left: -5px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(135deg);
+  }
+}

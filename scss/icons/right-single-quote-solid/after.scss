@@ -1,0 +1,16 @@
+@import '../../mixin';
+.singleQuoteRight.filled.icon {
+  &:after {
+    @include pseudo();
+    left: -6px;
+    top: -3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px transparent;
+    border-left: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    transform: rotate(45deg);
+  }
+}

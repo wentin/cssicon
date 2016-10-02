@@ -1,0 +1,12 @@
+@import '../../mixin';
+.search.filled.icon {
+  &:after {
+    @include pseudo();
+    left: 1px;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: currentColor;
+    border-radius: 50%;
+  }
+}

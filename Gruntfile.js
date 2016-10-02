@@ -4,7 +4,23 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    sourcemap: 'none'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'scss/icons',
+                        src: ["*.scss", "**/*.scss"],
+                        dest: 'css/icons',
+                        ext:  '.css'
+                    }
+                ]
+            },
+            dist2: {
+                options: {
+                    style: 'expanded',
+                    require: 'sass-globbing'
                 },
                 files: {
                     'css/app.css': 'scss/app.scss',
@@ -13,10 +29,21 @@ module.exports = function(grunt) {
             }
         },
         autoprefixer: {
-            options: {
-                map: true
-            },
             dist: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'css/icons',
+                        src: ["*.css", "**/*.css"],
+                        dest: 'css/icons',
+                        ext:  '.css'
+                    }
+                ]
+            },
+            dist2: {
+                options: {
+                    map: true
+                },
                 files: {
                     'css/app.css': 'css/app.css',
                     'css/icons.css': 'css/icons.css',
@@ -25,7 +52,7 @@ module.exports = function(grunt) {
         },
         watch: {
             css: {
-                files: 'scss/*.scss',
+                files: 'scss/**/*.scss',
                 tasks: ['sass', 'autoprefixer']
             },
             options: {
@@ -41,6 +68,7 @@ module.exports = function(grunt) {
           }
         }
     });
+    grunt.loadNpmTasks('grunt-sass-globbing');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-autoprefixer');

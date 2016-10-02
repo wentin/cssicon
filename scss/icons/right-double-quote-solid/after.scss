@@ -1,0 +1,13 @@
+@import '../../mixin';
+.doubleQuoteRight.filled.icon {
+  &:after {
+    @include pseudo();
+    top: 0px;
+    left: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+  }
+}

@@ -1,0 +1,9 @@
+.upload.icon:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 6px;
+  width: 1px;
+  height: 9px;
+  background-color: currentColor;
+}

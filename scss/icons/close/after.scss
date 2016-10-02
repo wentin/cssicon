@@ -1,0 +1,11 @@
+@import '../../mixin';
+.close.icon {
+  &:after {
+    @include pseudo();
+    top: 10px;
+    width: 21px; 
+    height: 1px;
+    background-color: currentColor;
+    transform: rotate(45deg);
+  }
+}

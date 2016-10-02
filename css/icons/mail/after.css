@@ -1,0 +1,13 @@
+.mail.icon:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}

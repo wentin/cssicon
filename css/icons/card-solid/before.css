@@ -1,0 +1,10 @@
+.card.filled.icon:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  width: 17px;
+  height: 2px;
+  color: white;
+  background-color: currentColor;
+}

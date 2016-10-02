@@ -1,0 +1,12 @@
+.pin.filled.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 7px 7px 7px 0;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+}

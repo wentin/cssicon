@@ -1,0 +1,11 @@
+@import '../../mixin';
+.keyboard.icon {
+  &:after {
+    @include pseudo();
+    bottom: 1px;
+    left: 4px;
+    width: 9px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../mixin';
+.clock.h9m30.icon {
+  &:before {
+    @include pseudo();
+    top: 7px;
+    left: 3px;
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    transform-origin: 0% 0%;
+  }
+}

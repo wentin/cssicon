@@ -1,0 +1,12 @@
+.refresh.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-22.5deg);
+          transform: rotate(-22.5deg);
+}

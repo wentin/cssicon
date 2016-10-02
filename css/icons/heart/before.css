@@ -1,0 +1,12 @@
+.heart.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 8px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}

@@ -1,0 +1,10 @@
+.shutdown.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}

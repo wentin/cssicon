@@ -1,0 +1,11 @@
+.print.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 13px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: white;
+}

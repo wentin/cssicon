@@ -1,0 +1,10 @@
+.card.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}

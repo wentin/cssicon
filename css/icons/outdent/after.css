@@ -1,0 +1,12 @@
+.outdent.icon:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px currentColor;
+}

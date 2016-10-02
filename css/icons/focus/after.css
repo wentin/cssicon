@@ -1,0 +1,14 @@
+.focus.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -2px;
+  width: 9px;
+  height: 19px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}

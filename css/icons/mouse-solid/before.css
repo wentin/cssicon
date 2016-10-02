@@ -1,0 +1,10 @@
+.mouse.filled.icon:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -1px;
+  width: 13px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}

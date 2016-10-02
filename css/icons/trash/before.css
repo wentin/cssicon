@@ -1,0 +1,9 @@
+.trash.icon:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}

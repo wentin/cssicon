@@ -1,0 +1,9 @@
+.search.filled.icon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+}

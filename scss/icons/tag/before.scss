@@ -1,0 +1,15 @@
+@import '../../mixin';
+.tag.icon {
+  &:before {
+    @include pseudo();
+    left: 1px;
+    top: 1px;
+    width: 9px;
+    height: 10px;
+    border-radius: 1px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    transform: rotate(-45deg);
+  }
+}

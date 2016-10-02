@@ -1,0 +1,9 @@
+.upload2.icon {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}

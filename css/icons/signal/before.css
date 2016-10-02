@@ -1,0 +1,13 @@
+.signal.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}

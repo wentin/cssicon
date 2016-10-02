@@ -1,0 +1,12 @@
+@import '../../mixin';
+.print.icon {
+  &:before {
+    @include pseudo();
+    left: 2px;
+    top: -3px;
+    height: 13px;
+    width: 9px;
+    border: solid 1px currentColor;
+    background-color: white;
+  }
+}

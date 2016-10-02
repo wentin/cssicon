@@ -1,0 +1,12 @@
+.arrowUp.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

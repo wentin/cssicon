@@ -1,0 +1,8 @@
+.search-plusI.filled.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}

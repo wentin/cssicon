@@ -1,0 +1,12 @@
+.bookmark.icon:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 7px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}

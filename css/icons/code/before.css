@@ -1,0 +1,10 @@
+.code.icon:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

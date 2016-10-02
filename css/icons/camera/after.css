@@ -1,0 +1,10 @@
+.camera.icon:after {
+  content: '';
+  position: absolute;
+  right: 2px;
+  top: -2px;
+  width: 4px;
+  height: 1px;
+  border-radius: 1px 1px 0 0;
+  background-color: currentColor;
+}

@@ -1,0 +1,12 @@
+@import '../../mixin';
+.indent.icon {
+  &:before {
+    @include pseudo();
+    top: 2px;
+    right: 0;
+    width: 11px;
+    height: 2px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}

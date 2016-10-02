@@ -1,0 +1,10 @@
+.link.icon:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}

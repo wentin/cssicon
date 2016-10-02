@@ -1,0 +1,10 @@
+.audio.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -6px;
+  width: 5px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 4px;
+}

@@ -1,0 +1,12 @@
+.camera.filled.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  color: white;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}

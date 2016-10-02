@@ -1,0 +1,12 @@
+.upload2.icon:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

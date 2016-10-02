@@ -1,0 +1,9 @@
+.singleQuoteLeft.icon:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}

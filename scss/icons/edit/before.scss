@@ -1,0 +1,14 @@
+@import '../../mixin';
+.edit.icon {
+  &:before {
+    @include pseudo();
+    left: -12px;
+    top: -1px;
+    width: 0px;
+    height: 0px;
+    border-left: solid 5px transparent;
+    border-right: solid 5px currentColor;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+  }
+}

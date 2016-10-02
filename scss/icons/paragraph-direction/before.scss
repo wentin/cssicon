@@ -1,0 +1,14 @@
+@import '../../mixin';
+.paragraph-direction.icon {
+  &:before {
+    @include pseudo();
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    border-radius: 0 2px 2px 0;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}

@@ -1,0 +1,12 @@
+.bookmark.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 10px;
+  height: 15px;
+  border-radius: 1px 1px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}

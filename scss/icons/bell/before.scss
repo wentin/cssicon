@@ -1,0 +1,12 @@
+@import '../../mixin';
+.bell.icon {
+  &:before {
+    @include pseudo();
+    bottom: -5px;
+    left: 2px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+}

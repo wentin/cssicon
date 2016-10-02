@@ -5,14 +5,6 @@
     "classNames": "search",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".search.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "search",
@@ -21,18 +13,10 @@
   },
   {
     "id": 1,
-    "name": "search",
+    "name": "search solid",
     "classNames": "search filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".search.filled.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search.filled.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": ".search.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  background-color: black;\n  border-radius: 50%;\n  left: 1px;\n  top: 1px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "search",
@@ -46,14 +30,6 @@
     "classNames": "search-plusI",
     "style": "line",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".search-plusI.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search-plusI.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": "",
-      "cssChild": ".search-plusI.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssChildBefore": ".search-plusI.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssChildAfter": ".search-plusI.icon i:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}"
-    },
     "cssHidden": "",
     "tag": [
       "search",
@@ -64,18 +40,10 @@
   },
   {
     "id": 3,
-    "name": "magnify",
+    "name": "magnify solid",
     "classNames": "search-plusI filled",
     "style": "solid",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".search-plusI.filled.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search-plusI.filled.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": "",
-      "cssChild": ".search-plusI.filled.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssChildBefore": ".search-plusI.filled.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: white;\n}",
-      "cssChildAfter": ".search-plusI.filled.icon i:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: white;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}"
-    },
     "cssHidden": "",
     "tag": [
       "search",
@@ -91,14 +59,6 @@
     "classNames": "search-minusI",
     "style": "line",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".search-minusI.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search-minusI.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": "",
-      "cssChild": ".search-minusI.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssChildBefore": ".search-minusI.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "search",
@@ -109,18 +69,10 @@
   },
   {
     "id": 5,
-    "name": "minify",
+    "name": "minify solid",
     "classNames": "search-minusI filled",
     "style": "solid",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".search-minusI.filled.icon {\n  position: absolute;\n  margin-top: 2px;\n  margin-left: 3px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 100%;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".search-minusI.filled.icon:before {\n  content: '';\n  position: absolute;\n  top: 12px;\n  left: 5px;\n  height: 6px;\n  width: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": "",
-      "cssChild": ".search-minusI.filled.icon i {\n  position: absolute;\n  left: 4px;\n  top: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssChildBefore": ".search-minusI.filled.icon i:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 1px;\n  background-color: white;\n}",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "search",
@@ -136,14 +88,6 @@
     "classNames": "close",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".close.icon {\n  position: absolute;\n  margin-top: 0;\n  margin-left: 0;\n  width: 21px;\n  height: 21px;\n}",
-      "cssIconBefore": ".close.icon:before {\n  content: '';\n  position: absolute;\n  width: 21px;\n  height: 1px;\n  background-color: black;\n  top: 10px;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconAfter": ".close.icon:after {\n  content: '';\n  position: absolute;\n  width: 21px;\n  height: 1px;\n  background-color: black;\n  top: 10px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "close",
@@ -156,14 +100,6 @@
     "classNames": "hamburger",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".hamburger.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 10px;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssIconBefore": ".hamburger.icon:before {\n  content: '';\n  position: absolute;\n  top: -5px;\n  left: 0;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": ".hamburger.icon:after {\n  content: '';\n  position: absolute;\n  top: 5px;\n  left: 0;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "hamburger",
@@ -176,14 +112,6 @@
     "classNames": "arrowLeft",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".arrowLeft.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 16px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssIconBefore": ".arrowLeft.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-135deg);\n  transform: rotate(-135deg);\n  left: 1px;\n  top: -5px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "arrow left",
@@ -196,14 +124,6 @@
     "classNames": "arrowRight",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".arrowRight.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 10px;\n  width: 16px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssIconBefore": ".arrowRight.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  right: 1px;\n  top: -5px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "arrow right",
@@ -216,14 +136,6 @@
     "classNames": "arrowUp",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".arrowUp.icon {\n  position: absolute;\n  margin-left: 10px;\n  margin-top: 3px;\n  width: 1px;\n  height: 16px;\n  background-color: black;\n}",
-      "cssIconBefore": ".arrowUp.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  left: -5px;\n  top: 1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "arrow up",
@@ -236,14 +148,6 @@
     "classNames": "arrowDown",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".arrowDown.icon {\n  position: absolute;\n  margin-left: 10px;\n  margin-top: 2px;\n  width: 1px;\n  height: 16px;\n  background-color: black;\n}",
-      "cssIconBefore": ".arrowDown.icon:before {\n  content: '';\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(135deg);\n  transform: rotate(135deg);\n  left: -5px;\n  top: 3px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "arrow down",
@@ -256,14 +160,6 @@
     "classNames": "plus",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".plus.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n}",
-      "cssIconBefore": ".plus.icon:before {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssIconAfter": ".plus.icon:after {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "plus",
@@ -276,14 +172,6 @@
     "classNames": "minus",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".minus.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n}",
-      "cssIconBefore": "",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "minus",
@@ -296,14 +184,6 @@
     "classNames": "check",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".check.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 4px;\n  width: 14px;\n  height: 8px;\n  border-bottom: solid 1px black;\n  border-left: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": "",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "check",
@@ -316,14 +196,6 @@
     "classNames": "remove",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".remove.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n}",
-      "cssIconBefore": ".remove.icon:before {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssIconAfter": ".remove.icon:after {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "remove",
@@ -336,14 +208,6 @@
     "classNames": "trash",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".trash.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 7px;\n  width: 9px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 2px 2px;\n}",
-      "cssIconBefore": ".trash.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n  left: -4px;\n  top: -2px;\n}",
-      "cssIconAfter": ".trash.icon:after {\n  content: '';\n  position: absolute;\n  width: 7px;\n  height: 2px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  left: 0px;\n  top: -5px;\n  border-radius: 4px 4px 0 0;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "trash",
@@ -352,18 +216,10 @@
   },
   {
     "id": 17,
-    "name": "trash",
+    "name": "trash solid",
     "classNames": "trash filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".trash.filled.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 7px;\n  width: 9px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 2px 2px;\n  background-color: black;\n}",
-      "cssIconBefore": ".trash.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n  left: -4px;\n  top: -2px;\n}",
-      "cssIconAfter": ".trash.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 7px;\n  height: 2px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  background-color: black;\n  left: 0px;\n  top: -5px;\n  border-radius: 4px 4px 0 0;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "trash",
@@ -376,14 +232,6 @@
     "classNames": "audio",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".audio.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 8px;\n  width: 9px;\n  height: 7px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 50% 50%;\n}",
-      "cssIconBefore": ".audio.icon:before {\n  content: '';\n  position: absolute;\n  left: 1px;\n  top: -6px;\n  width: 5px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 4px;\n}",
-      "cssIconAfter": ".audio.icon:after {\n  content: '';\n  position: absolute;\n  left: 4px;\n  bottom: -4px;\n  width: 1px;\n  height: 4px;\n  background-color: black;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "audio",
@@ -393,18 +241,10 @@
   },
   {
     "id": 19,
-    "name": "audio",
+    "name": "audio solid",
     "classNames": "audio filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".audio.filled.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 8px;\n  width: 9px;\n  height: 7px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 50% 50%;\n}",
-      "cssIconBefore": ".audio.filled.icon:before {\n  content: '';\n  position: absolute;\n  left: 1px;\n  top: -6px;\n  width: 5px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 4px;\n  background-color: black;\n}",
-      "cssIconAfter": ".audio.filled.icon:after {\n  content: '';\n  position: absolute;\n  left: 4px;\n  bottom: -4px;\n  width: 1px;\n  height: 4px;\n  background-color: black;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "audio",
@@ -419,14 +259,6 @@
     "classNames": "pin",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".pin.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 2px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 7px 7px 7px 0;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".pin.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border: solid 1px black;\n  border-radius: 3px;\n  left: 3px;\n  top: 3px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "pin",
@@ -436,18 +268,10 @@
   },
   {
     "id": 21,
-    "name": "pin",
+    "name": "pin solid",
     "classNames": "pin filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".pin.filled.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 2px;\n  width: 12px;\n  height: 12px;\n  border: solid 1px black;\n  border-radius: 7px 7px 7px 0;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".pin.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border: solid 1px black;\n  border-radius: 3px;\n  left: 3px;\n  top: 3px;\n  background-color: white;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "pin",
@@ -462,14 +286,6 @@
     "classNames": "chat",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".chat.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 2px;\n}",
-      "cssIconBefore": ".chat.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  background-color: #fff;\n  border-bottom: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: 8px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "chat",
@@ -478,18 +294,10 @@
   },
   {
     "id": 23,
-    "name": "chat",
+    "name": "chat solid",
     "classNames": "chat filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".chat.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 2px;\n}",
-      "cssIconBefore": ".chat.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  background-color: black;\n  border-bottom: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: 8px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "chat",
@@ -503,14 +311,6 @@
     "classNames": "stop",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".stop.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".stop.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: black;\n  top: 7px;\n  left: -1px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "stop",
@@ -519,18 +319,10 @@
   },
   {
     "id": 25,
-    "name": "stop",
+    "name": "stop solid",
     "classNames": "stop filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".stop.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".stop.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 1px;\n  background-color: white;\n  top: 7px;\n  left: -1px;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "stop",
@@ -544,14 +336,6 @@
     "classNames": "clock",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -561,18 +345,10 @@
   },
   {
     "id": 27,
-    "name": "clock",
+    "name": "clock solid",
     "classNames": "clock filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -583,18 +359,10 @@
   },
   {
     "id": 28,
-    "name": "clock",
+    "name": "clock h3m30",
     "classNames": "clock h3m30",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.h3m30.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.h3m30.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.h3m30.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -606,18 +374,10 @@
   },
   {
     "id": 29,
-    "name": "clock",
+    "name": "clock h3m30 solid",
     "classNames": "clock h3m30 filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.h3m30.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.h3m30.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.h3m30.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -630,18 +390,10 @@
   },
   {
     "id": 30,
-    "name": "clock",
+    "name": "clock h9m0",
     "classNames": "clock h9m0",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.h9m0.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.h9m0.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.h9m0.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -651,18 +403,10 @@
   },
   {
     "id": 31,
-    "name": "clock",
+    "name": "clock h9m0 solid",
     "classNames": "clock h9m0 filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.h9m0.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.h9m0.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.h9m0.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 2px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -673,18 +417,10 @@
   },
   {
     "id": 32,
-    "name": "clock",
+    "name": "clock h9m30",
     "classNames": "clock h9m30",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.h9m30.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.h9m30.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.h9m30.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: black;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -695,18 +431,10 @@
   },
   {
     "id": 31,
-    "name": "clock",
+    "name": "clock h9m30 solid",
     "classNames": "clock h9m30 filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".clock.h9m30.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  position: relative;\n  background-color: black;\n  border: solid 1px black;\n  border-radius: 8px;\n}",
-      "cssIconBefore": ".clock.h9m30.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 1px;\n  top: 7px;\n  left: 3px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssIconAfter": ".clock.h9m30.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 6px;\n  top: 7px;\n  left: 7px;\n  background-color: white;\n  -webkit-transform-origin: 0% 0%;\n  transform-origin: 0% 0%;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "clock",
@@ -722,14 +450,6 @@
     "classNames": "profile",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".profile.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 11px;\n  width: 14px;\n  height: 6px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  border-bottom: solid 1px transparent;\n  border-radius: 6px 6px 0 0;\n}",
-      "cssIconBefore": ".profile.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  border: solid 1px black;\n  position: absolute;\n  left: 2px;\n  top: -10px;\n  background-color: #fff;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "profile",
@@ -739,18 +459,10 @@
   },
   {
     "id": 35,
-    "name": "profile",
+    "name": "profile solid",
     "classNames": "profile filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".profile.filled.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 11px;\n  width: 14px;\n  height: 6px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  border-bottom: solid 1px transparent;\n  background-color: black;\n  border-radius: 6px 6px 0 0;\n}",
-      "cssIconBefore": ".profile.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  border: solid 1px black;\n  position: absolute;\n  left: 2px;\n  top: -10px;\n  background-color: black;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "profile",
@@ -765,14 +477,6 @@
     "classNames": "bell",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".bell.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 2px;\n  width: 9px;\n  height: 10px;\n  border: solid 1px black;\n  border-top-left-radius: 5px;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}",
-      "cssIconBefore": ".bell.icon:before {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 0px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px #fff;\n  bottom: -2px;\n  left: -3px;\n  z-index: 2;\n}",
-      "cssIconAfter": ".bell.icon:after {\n  content: '';\n  position: absolute;\n  width: 3px;\n  height: 3px;\n  border-radius: 50%;\n  border: solid 1px black;\n  bottom: -5px;\n  left: 2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "bell",
@@ -782,18 +486,10 @@
   },
   {
     "id": 37,
-    "name": "bell",
+    "name": "bell solid",
     "classNames": "bell filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".bell.filled.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 2px;\n  width: 9px;\n  height: 10px;\n  border: solid 1px black;\n  background-color: black;\n  border-top-left-radius: 5px;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}",
-      "cssIconBefore": ".bell.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 15px;\n  height: 0px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px #fff;\n  bottom: -2px;\n  left: -3px;\n  z-index: 2;\n}",
-      "cssIconAfter": ".bell.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 3px;\n  height: 3px;\n  border-radius: 50%;\n  border: solid 1px black;\n  background-color: black;\n  bottom: -5px;\n  left: 2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "bell",
@@ -808,14 +504,6 @@
     "classNames": "heart",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".heart.icon {\n  position: absolute;\n  margin-top: 6px;\n  margin-left: 5px;\n  width: 9px;\n  height: 9px;\n  border-left: solid 1px black;\n  border-bottom: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".heart.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 5px;\n  border-top-left-radius: 5px;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  top: -5px;\n  left: -1px;\n}",
-      "cssIconAfter": ".heart.icon:after {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 8px;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  border-bottom-left-radius: 0px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  top: 0px;\n  left: 8px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "heart",
@@ -825,18 +513,10 @@
   },
   {
     "id": 39,
-    "name": "heart",
+    "name": "heart solid",
     "classNames": "heart filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".heart.filled.icon {\n  position: absolute;\n  margin-top: 6px;\n  margin-left: 5px;\n  width: 9px;\n  height: 9px;\n  border-left: solid 1px black;\n  border-bottom: solid 1px black;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".heart.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 5px;\n  border-top-left-radius: 5px;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  background-color: black;\n  top: -5px;\n  left: -1px;\n}",
-      "cssIconAfter": ".heart.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 8px;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  border-bottom-left-radius: 0px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  background-color: black;\n  top: 0px;\n  left: 8px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "heart",
@@ -851,14 +531,6 @@
     "classNames": "print",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".print.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 15px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 1px 1px 0 0;\n}",
-      "cssIconBefore": ".print.icon:before {\n  content: '';\n  position: absolute;\n  height: 13px;\n  width: 9px;\n  border: solid 1px black;\n  background-color: #fff;\n  left: 2px;\n  top: -3px;\n}",
-      "cssIconAfter": ".print.icon:after {\n  content: '';\n  position: absolute;\n  width: 13px;\n  height: 3px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  background-color: #fff;\n  left: 1px;\n  top: -1px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "print",
@@ -868,18 +540,10 @@
   },
   {
     "id": 41,
-    "name": "print",
+    "name": "print solid",
     "classNames": "print filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".print.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 15px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px 1px 0 0;\n}",
-      "cssIconBefore": ".print.filled.icon:before {\n  content: '';\n  position: absolute;\n  height: 13px;\n  width: 9px;\n  border: solid 1px black;\n  background-color: #fff;\n  left: 2px;\n  top: -3px;\n}",
-      "cssIconAfter": ".print.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 13px;\n  height: 3px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  background-color: black;\n  left: 1px;\n  top: -1px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "print",
@@ -894,14 +558,6 @@
     "classNames": "edit",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".edit.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 7px;\n  width: 14px;\n  height: 2px;\n  border: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".edit.icon:before {\n  content: '';\n  position: absolute;\n  width: 0px;\n  height: 0px;\n  border-left: solid 5px transparent;\n  border-right: solid 5px black;\n  border-top: solid 2px transparent;\n  border-bottom: solid 2px transparent;\n  left: -12px;\n  top: -1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "edit",
@@ -912,18 +568,10 @@
   },
   {
     "id": 43,
-    "name": "edit",
+    "name": "edit solid",
     "classNames": "edit filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".edit.filled.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 7px;\n  width: 14px;\n  height: 2px;\n  border: solid 1px black;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".edit.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 0px;\n  height: 0px;\n  border-left: solid 5px transparent;\n  border-right: solid 5px black;\n  border-top: solid 2px transparent;\n  border-bottom: solid 2px transparent;\n  left: -12px;\n  top: -1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "edit",
@@ -939,14 +587,6 @@
     "classNames": "link",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".link.icon {\n  position: absolute;\n  margin-left: 8px;\n  margin-top: 10px;\n  width: 7px;\n  height: 1px;\n  background-color: black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}",
-      "cssIconBefore": ".link.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 5px;\n  border-radius: 2px;\n  border: solid 1px black;\n  top: -3px;\n  left: -7px;\n}",
-      "cssIconAfter": ".link.icon:after {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 5px;\n  border-radius: 2px;\n  border: solid 1px black;\n  top: -3px;\n  right: -7px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "link",
@@ -961,14 +601,6 @@
     "classNames": "map",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".map.icon {\n  position: absolute;\n  margin-left: 8px;\n  margin-top: 4px;\n  width: 4px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 1px;\n  -webkit-transform: skewY(20deg);\n  transform: skewY(20deg);\n}",
-      "cssIconBefore": ".map.icon:before {\n  content: '';\n  position: absolute;\n  left: -6px;\n  top: 1px;\n  width: 4px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 1px;\n  -webkit-transform: skewY(-40deg);\n}",
-      "cssIconAfter": ".map.icon:after {\n  content: '';\n  position: absolute;\n  left: 4px;\n  top: -3px;\n  width: 4px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 1px;\n  -webkit-transform: skewY(-40deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "map",
@@ -982,14 +614,6 @@
     "classNames": "mail",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".mail.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".mail.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: black;\n  -webkit-transform-origin: bottom;\n  transform-origin: bottom;\n  left: 7px;\n  top: -4px;\n  -webkit-transform: rotate(-54deg);\n  transform: rotate(-54deg);\n}",
-      "cssIconAfter": ".mail.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: black;\n  -webkit-transform-origin: bottom;\n  transform-origin: bottom;\n  left: 7px;\n  top: -4px;\n  -webkit-transform: rotate(54deg);\n  transform: rotate(54deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "mail",
@@ -1000,18 +624,10 @@
   },
   {
     "id": 47,
-    "name": "mail",
+    "name": "mail solid",
     "classNames": "mail filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".mail.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".mail.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: white;\n  -webkit-transform-origin: bottom;\n  transform-origin: bottom;\n  left: 7px;\n  top: -4px;\n  -webkit-transform: rotate(-54deg);\n  transform: rotate(-54deg);\n}",
-      "cssIconAfter": ".mail.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: white;\n  -webkit-transform-origin: bottom;\n  transform-origin: bottom;\n  left: 7px;\n  top: -4px;\n  -webkit-transform: rotate(54deg);\n  transform: rotate(54deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "mail",
@@ -1027,14 +643,6 @@
     "classNames": "bookmark",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".bookmark.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 3px;\n  width: 10px;\n  height: 15px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-radius: 1px 1px 0 0;\n}",
-      "cssIconBefore": ".bookmark.icon:before {\n  content: '';\n  position: absolute;\n  width: 7px;\n  height: 7px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  top: 10px;\n  left: 1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "bookmark",
@@ -1044,18 +652,10 @@
   },
   {
     "id": 49,
-    "name": "bookmark",
+    "name": "bookmark solid",
     "classNames": "bookmark filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".bookmark.filled.icon {\n  position: absolute;\n  margin-left: 5px;\n  margin-top: 3px;\n  width: 10px;\n  height: 15px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  background-color: black;\n  border-radius: 1px 1px 0 0;\n}",
-      "cssIconBefore": ".bookmark.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 7px;\n  height: 7px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  background-color: white;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  top: 10px;\n  left: 1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "bookmark",
@@ -1070,14 +670,6 @@
     "classNames": "camera",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".camera.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 16px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".camera.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border: solid 1px black;\n  border-radius: 3px;\n  left: 5px;\n  top: 2px;\n}",
-      "cssIconAfter": ".camera.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 1px;\n  border-radius: 1px 1px 0 0;\n  background-color: black;\n  right: 2px;\n  top: -2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "camera",
@@ -1087,18 +679,10 @@
   },
   {
     "id": 51,
-    "name": "camera",
+    "name": "camera solid",
     "classNames": "camera filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".camera.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 16px;\n  height: 10px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".camera.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  background-color: white;\n  border: solid 1px white;\n  border-radius: 3px;\n  left: 5px;\n  top: 2px;\n}",
-      "cssIconAfter": ".camera.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 1px;\n  border-radius: 1px 1px 0 0;\n  background-color: black;\n  right: 2px;\n  top: -2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "camera",
@@ -1113,14 +697,6 @@
     "classNames": "focus",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".focus.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 2px;\n  width: 15px;\n  height: 15px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".focus.icon:before {\n  content: '';\n  position: absolute;\n  width: 9px;\n  height: 19px;\n  background-color: white;\n  left: 3px;\n  top: -2px;\n  -webkit-transform-origin: center;\n  transform-origin: center;\n}",
-      "cssIconAfter": ".focus.icon:after {\n  content: '';\n  position: absolute;\n  width: 9px;\n  height: 19px;\n  background-color: white;\n  left: 3px;\n  top: -2px;\n  -webkit-transform-origin: center;\n  transform-origin: center;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "focus",
@@ -1134,14 +710,6 @@
     "classNames": "card",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".card.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".card.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 2px;\n  background-color: black;\n  top: 1px;\n  left: -1px;\n}",
-      "cssIconAfter": ".card.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 1px;\n  background-color: black;\n  right: 1px;\n  bottom: 2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "card",
@@ -1151,18 +719,10 @@
   },
   {
     "id": 54,
-    "name": "card",
+    "name": "card solid",
     "classNames": "card filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".card.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 4px;\n  width: 15px;\n  height: 10px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".card.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 17px;\n  height: 2px;\n  background-color: white;\n  top: 1px;\n  left: -1px;\n}",
-      "cssIconAfter": ".card.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 1px;\n  background-color: white;\n  right: 1px;\n  bottom: 2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "card",
@@ -1177,14 +737,6 @@
     "classNames": "lock",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".lock.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 13px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".lock.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 6px;\n  border-radius: 4px 4px 0 0;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: -8px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "lock",
@@ -1193,18 +745,10 @@
   },
   {
     "id": 56,
-    "name": "lock",
+    "name": "lock solid",
     "classNames": "lock filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".lock.filled.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 13px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".lock.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 6px;\n  border-radius: 4px 4px 0 0;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: -8px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "lock",
@@ -1218,14 +762,6 @@
     "classNames": "lock unlocked",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".lock.unlocked.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 13px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".lock.unlocked.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 3px;\n  border-radius: 4px 4px 0 0;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: -8px;\n}",
-      "cssIconAfter": ".lock.unlocked.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 3px;\n  background-color: black;\n  left: 3px;\n  top: -4px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "lock",
@@ -1234,18 +770,10 @@
   },
   {
     "id": 58,
-    "name": "unlock",
+    "name": "unlock solid",
     "classNames": "lock unlocked filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".lock.unlocked.filled.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 10px;\n  width: 13px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".lock.unlocked.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 5px;\n  height: 3px;\n  border-radius: 4px 4px 0 0;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 3px;\n  top: -8px;\n}",
-      "cssIconAfter": ".lock.unlocked.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 3px;\n  background-color: black;\n  left: 3px;\n  top: -4px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "lock",
@@ -1259,14 +787,6 @@
     "classNames": "code",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".code.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 6px;\n}",
-      "cssIconBefore": ".code.icon:before {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  border-left: solid 1px black;\n  border-top: solid 1px black;\n}",
-      "cssIconAfter": ".code.icon:after {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  border-bottom: solid 1px black;\n  border-right: solid 1px black;\n  left: 6px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "code",
@@ -1281,14 +801,6 @@
     "classNames": "flag",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".flag.icon {\n  position: absolute;\n  margin-left: 6px;\n  margin-top: 4px;\n  width: 9px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".flag.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 15px;\n  background-color: black;\n  left: -3px;\n  top: -2px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "flag",
@@ -1297,18 +809,10 @@
   },
   {
     "id": 61,
-    "name": "flag",
+    "name": "flag solid",
     "classNames": "flag filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".flag.filled.icon {\n  position: absolute;\n  margin-left: 6px;\n  margin-top: 4px;\n  width: 9px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".flag.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 15px;\n  background-color: black;\n  left: -3px;\n  top: -2px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "flag",
@@ -1322,14 +826,6 @@
     "classNames": "tag",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".tag.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 3px;\n  width: 7px;\n  height: 7px;\n  border-left: solid 1px black;\n  border-top: solid 1px black;\n  border-radius: 1px 1px 1px 0;\n}",
-      "cssIconBefore": ".tag.icon:before {\n  content: '';\n  position: absolute;\n  width: 9px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 1px;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  left: 1px;\n  top: 1px;\n}",
-      "cssIconAfter": ".tag.icon:after {\n  content: '';\n  position: absolute;\n  width: 2px;\n  height: 2px;\n  border-radius: 50%;\n  background-color: black;\n  left: 3px;\n  top: 3px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "tag"
@@ -1341,14 +837,6 @@
     "classNames": "tag filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".tag.filled.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 3px;\n  width: 7px;\n  height: 7px;\n  border-left: solid 1px black;\n  border-top: solid 1px black;\n  background-color: black;\n  border-radius: 1px 1px 1px 0;\n}",
-      "cssIconBefore": ".tag.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 9px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  background-color: black;\n  border-radius: 1px;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  left: 1px;\n  top: 1px;\n}",
-      "cssIconAfter": ".tag.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 2px;\n  height: 2px;\n  border-radius: 50%;\n  background-color: white;\n  left: 3px;\n  top: 3px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "tag",
@@ -1361,14 +849,6 @@
     "classNames": "signal",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".signal.icon {\n  position: absolute;\n  margin-left: 7px;\n  margin-top: 13px;\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  border-top: solid 1px black;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-left: solid 1px transparent;\n}",
-      "cssIconBefore": ".signal.icon:before {\n  content: '';\n  position: absolute;\n  left: -5px;\n  top: -5px;\n  width: 14px;\n  height: 14px;\n  border-radius: 50%;\n  border-top: solid 1px black;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-left: solid 1px transparent;\n}",
-      "cssIconAfter": ".signal.icon:after {\n  content: '';\n  position: absolute;\n  left: -9px;\n  top: -9px;\n  width: 22px;\n  height: 22px;\n  border-radius: 50%;\n  border-top: solid 1px black;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-left: solid 1px transparent;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "signal",
@@ -1381,14 +861,6 @@
     "classNames": "export",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".export.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 7px;\n  width: 11px;\n  height: 9px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".export.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 8px;\n  background-color: black;\n  border-left: solid 3px white;\n  border-right: solid 3px white;\n  top: -5px;\n  left: 2px;\n}",
-      "cssIconAfter": ".export.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n  left: 3px;\n  top: -5px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "export"
@@ -1396,18 +868,10 @@
   },
   {
     "id": 66,
-    "name": "export",
-    "classNames": "export2",
+    "name": "upload",
+    "classNames": "upload",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".export2.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 12px;\n  width: 13px;\n  height: 4px;\n  border: solid 1px black;\n  border-top: none;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".export2.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 9px;\n  background-color: black;\n  top: -8px;\n  left: 6px;\n}",
-      "cssIconAfter": ".export2.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n  left: 4px;\n  top: -8px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "export"
@@ -1415,18 +879,10 @@
   },
   {
     "id": 67,
-    "name": "download",
-    "classNames": "download",
+    "name": "import",
+    "classNames": "import",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".download.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 5px;\n  width: 11px;\n  height: 11px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".download.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: black;\n  border-left: solid 3px white;\n  border-right: solid 3px white;\n  top: -4px;\n  left: 2px;\n}",
-      "cssIconAfter": ".download.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(135deg);\n          transform: rotate(135deg);\n  left: 3px;\n  top: 1px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "download"
@@ -1435,17 +891,9 @@
   {
     "id": 68,
     "name": "download",
-    "classNames": "download2",
+    "classNames": "download",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".download2.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 12px;\n  width: 13px;\n  height: 4px;\n  border: solid 1px black;\n  border-top: none;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".download2.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: black;\n  top: -9px;\n  left: 6px;\n}",
-      "cssIconAfter": ".download2.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(135deg);\n          transform: rotate(135deg);\n  left: 4px;\n  top: -4px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "download"
@@ -1453,18 +901,10 @@
   },
   {
     "id": 69,
-    "name": "upload",
-    "classNames": "upload",
+    "name": "upload2",
+    "classNames": "upload2",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".upload.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 3px;\n  width: 11px;\n  height: 11px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".upload.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 10px;\n  background-color: black;\n  border-left: solid 3px white;\n  border-right: solid 3px white;\n  top: 4px;\n  left: 2px;\n}",
-      "cssIconAfter": ".upload.icon:after {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-top: solid 1px black;\n  border-right: solid 1px black;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  left: 3px;\n  top: 4px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "upload"
@@ -1476,14 +916,6 @@
     "classNames": "shutdown",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".shutdown.icon {\n  position: absolute;\n  margin-top: 3px;\n  margin-left: 3px;\n  width: 13px;\n  height: 13px;\n  border-radius: 50%;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n}",
-      "cssIconBefore": ".shutdown.icon:before {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 8px;\n  border-left: solid 3px white;\n  border-right: solid 3px white;\n  background-color: black;\n  left: 3px;\n  top: -2px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "shutdown",
@@ -1496,14 +928,6 @@
     "classNames": "paperclip",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".paperclip.icon {\n  position: absolute;\n  margin-left: 9px;\n  margin-top: 2px;\n  width: 6px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  border-radius: 4px 4px 0 0;\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}",
-      "cssIconBefore": ".paperclip.icon:before {\n  content: '';\n  position: absolute;\n  top: 11px;\n  left: -1px;\n  width: 4px;\n  height: 6px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 0 0 3px 3px;\n}",
-      "cssIconAfter": ".paperclip.icon:after {\n  content: '';\n  position: absolute;\n  left: 1px;\n  top: 1px;\n  width: 2px;\n  height: 10px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  border-top: solid 1px black;\n  border-radius: 4px 4px 0 0;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "paperclip",
@@ -1516,14 +940,6 @@
     "classNames": "retweet",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".retweet.icon {\n  position: absolute;\n  margin-left: 3px;\n  margin-top: 5px;\n  width: 13px;\n  height: 9px;\n  border: solid 1px black;\n  border-radius: 1px;\n}",
-      "cssIconBefore": ".retweet.icon:before {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-top: solid 3px white;\n  border-bottom: solid 3px black;\n  border-left: solid 3px white;\n  border-right: solid 3px white;\n  left: -3px;\n  top: -2px;\n}",
-      "cssIconAfter": ".retweet.icon:after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-top: solid 3px black;\n  border-bottom: solid 3px white;\n  border-left: solid 3px white;\n  border-right: solid 3px white;\n  right: -3px;\n  bottom: -2px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "retweet",
@@ -1536,14 +952,6 @@
     "classNames": "key",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".key.icon {\n  position: absolute;\n  margin-left: 1px;\n  margin-top: 6px;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  border: solid 1px black;\n}",
-      "cssIconBefore": ".key.icon:before {\n  content: '';\n  position: absolute;\n  width: 11px;\n  height: 1px;\n  background-color: black;\n  left: 7px;\n  top: 3px;\n}",
-      "cssIconAfter": ".key.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 3px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 13px;\n  top: 3px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "key",
@@ -1556,14 +964,6 @@
     "classNames": "key filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".key.filled.icon {\n  position: absolute;\n  margin-left: 1px;\n  margin-top: 6px;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  border: solid 1px black;\n  background-color: black;\n}",
-      "cssIconBefore": ".key.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 11px;\n  height: 1px;\n  background-color: black;\n  left: 7px;\n  top: 3px;\n}",
-      "cssIconAfter": ".key.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 3px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 13px;\n  top: 3px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "key",
@@ -1573,18 +973,10 @@
   },
   {
     "id": 75,
-    "name": "key",
+    "name": "key2",
     "classNames": "key2",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".key2.icon {\n  position: absolute;\n  margin-left: 10px;\n  margin-top: 2px;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  border: solid 1px black;\n  -webkit-transform: rotate(135deg);\n  transform: rotate(135deg);\n}",
-      "cssIconBefore": ".key2.icon:before {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 1px;\n  background-color: black;\n  left: 7px;\n  top: 3px;\n}",
-      "cssIconAfter": ".key2.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 3px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 14px;\n  top: 0px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "key",
@@ -1593,18 +985,10 @@
   },
   {
     "id": 76,
-    "name": "key",
+    "name": "key2 solid",
     "classNames": "key2 filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".key2.filled.icon {\n  position: absolute;\n  margin-left: 10px;\n  margin-top: 2px;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  border: solid 1px black;\n  background-color: black;\n  -webkit-transform: rotate(135deg);\n  transform: rotate(135deg);\n}",
-      "cssIconBefore": ".key2.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 1px;\n  background-color: black;\n  left: 7px;\n  top: 3px;\n}",
-      "cssIconAfter": ".key2.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 3px;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 14px;\n  top: 0px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "key",
@@ -1618,14 +1002,6 @@
     "classNames": "refresh",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".refresh.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 3px;\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  border-left: solid 1px transparent;\n  border-right: solid 1px black;\n}",
-      "cssIconBefore": ".refresh.icon:before {\n  content: '';\n  position: absolute;\n  width: 3px;\n  height: 3px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  -webkit-transform: rotate(-22.5deg);\n  transform: rotate(-22.5deg);\n  left: 1px;\n  top: 10px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "refresh",
@@ -1638,14 +1014,6 @@
     "classNames": "pilcrow",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".pilcrow.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 2px;\n  width: 8px;\n  height: 8px;\n  border-left: solid 1px black;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  border-radius: 5px 0 0 5px;\n}",
-      "cssIconBefore": ".pilcrow.icon:before {\n  content: '';\n  position: absolute;\n  height: 16px;\n  width: 2px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 8px;\n  top: -1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "pilcrow",
@@ -1654,18 +1022,10 @@
   },
   {
     "id": 79,
-    "name": "pilcrow",
+    "name": "pilcrow solid",
     "classNames": "pilcrow filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".pilcrow.filled.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 2px;\n  width: 8px;\n  height: 8px;\n  border-left: solid 1px black;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  background-color: black;\n  border-radius: 5px 0 0 5px;\n}",
-      "cssIconBefore": ".pilcrow.filled.icon:before {\n  content: '';\n  position: absolute;\n  height: 16px;\n  width: 2px;\n  border-top: solid 1px black;\n  border-left: solid 1px black;\n  border-right: solid 1px black;\n  left: 8px;\n  top: -1px;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "pilcrow",
@@ -1679,14 +1039,6 @@
     "classNames": "justified",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".justified.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".justified.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  left: 0;\n  width: 17px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "justified",
@@ -1700,14 +1052,6 @@
     "classNames": "paragraph-direction",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".paragraph-direction.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 8px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".paragraph-direction.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  left: 0;\n  width: 16px;\n  height: 2px;\n  border-radius: 0 2px 2px 0;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n  border-right: solid 1px black;\n}",
-      "cssIconAfter": ".paragraph-direction.icon:after {\n  content: '';\n  position: absolute;\n  top: 3px;\n  left: 6px;\n  width: 0;\n  height: 0;\n  border-left: solid 2px white;\n  border-right: solid 2px black;\n  border-top: solid 2px white;\n  border-bottom: solid 2px white;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "paragraph direction",
@@ -1721,14 +1065,6 @@
     "classNames": "leftaligned",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".leftaligned.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".leftaligned.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  left: 0;\n  width: 11px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "left align",
@@ -1743,14 +1079,6 @@
     "classNames": "centered",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".centered.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".centered.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  left: 3px;\n  width: 11px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "center align",
@@ -1765,14 +1093,6 @@
     "classNames": "rightaligned",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".rightaligned.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".rightaligned.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  right: 0;\n  width: 11px;\n  height: 5px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconAfter": "",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "right align",
@@ -1787,14 +1107,6 @@
     "classNames": "indent",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".indent.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 8px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".indent.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  right: 0;\n  width: 11px;\n  height: 2px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconAfter": ".indent.icon:after {\n  content: '';\n  position: absolute;\n  top: 1px;\n  width: 0;\n  height: 0;\n  border-top: solid 3px transparent;\n  border-bottom: solid 3px transparent;\n  border-left: solid 3px black;\n  border-right: solid 3px transparent;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "indent",
@@ -1807,14 +1119,6 @@
     "classNames": "outdent",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".outdent.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 6px;\n  width: 17px;\n  height: 8px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconBefore": ".outdent.icon:before {\n  content: '';\n  position: absolute;\n  top: 2px;\n  right: 0;\n  width: 11px;\n  height: 2px;\n  border-top: solid 1px black;\n  border-bottom: solid 1px black;\n}",
-      "cssIconAfter": ".outdent.icon:after {\n  content: '';\n  position: absolute;\n  top: 1px;\n  left: -3px;\n  width: 0;\n  height: 0;\n  border-top: solid 3px transparent;\n  border-bottom: solid 3px transparent;\n  border-left: solid 3px transparent;\n  border-right: solid 3px black;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "outdent",
@@ -1827,14 +1131,6 @@
     "classNames": "mouse",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".mouse.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 1px;\n  width: 11px;\n  height: 17px;\n  border: solid 1px black;\n  border-radius: 6px;\n}",
-      "cssIconBefore": ".mouse.icon:before {\n  content: '';\n  position: absolute;\n  width: 13px;\n  height: 1px;\n  background-color: black;\n  top: 6px;\n  left: -1px;\n}",
-      "cssIconAfter": ".mouse.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 7px;\n  background-color: black;\n  left: 5px;\n  top: -1px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "mouse",
@@ -1843,18 +1139,10 @@
   },
   {
     "id": 88,
-    "name": "mouse",
+    "name": "mouse solid",
     "classNames": "mouse filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".mouse.filled.icon {\n  position: absolute;\n  margin-left: 4px;\n  margin-top: 1px;\n  width: 11px;\n  height: 17px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 6px;\n}",
-      "cssIconBefore": ".mouse.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 13px;\n  height: 1px;\n  background-color: white;\n  top: 6px;\n  left: -1px;\n}",
-      "cssIconAfter": ".mouse.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 1px;\n  height: 7px;\n  background-color: white;\n  left: 5px;\n  top: -1px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "mouse",
@@ -1868,14 +1156,6 @@
     "classNames": "keyboard",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".keyboard.icon {\n  position: absolute;\n  margin-left: 1px;\n  margin-top: 4px;\n  width: 17px;\n  height: 11px;\n  border-radius: 1px;\n  border: solid 1px black;\n}",
-      "cssIconBefore": ".keyboard.icon:before {\n  content: '';\n  position: absolute;\n  left: 7px;\n  top: 3px;\n  width: 1px;\n  height: 1px;\n  border: 1px solid transparent;\n  box-shadow: -2px 0 0 -1px black,  2px 0 0 -1px black,  0 -2px 0 -1px black,  0 2px 0 -1px black,  -6px 0 0 -1px black,  6px 0 0 -1px black,  -4px -2px 0 -1px black,  -4px 2px 0 -1px black,  4px -2px 0 -1px black,  4px 2px 0 -1px black;\n}",
-      "cssIconAfter": ".keyboard.icon:after {\n  content: '';\n  position: absolute;\n  width: 9px;\n  height: 1px;\n  background-color: black;\n  bottom: 1px;\n  left: 4px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "keyboard",
@@ -1884,18 +1164,10 @@
   },
   {
     "id": 90,
-    "name": "keyboard",
+    "name": "keyboard solid",
     "classNames": "keyboard filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".keyboard.filled.icon {\n  position: absolute;\n  margin-left: 1px;\n  margin-top: 4px;\n  width: 17px;\n  height: 11px;\n  border-radius: 1px;\n  border: solid 1px black;\n  background-color: black;\n}",
-      "cssIconBefore": ".keyboard.filled.icon:before {\n  content: '';\n  position: absolute;\n  left: 7px;\n  top: 3px;\n  width: 1px;\n  height: 1px;\n  border: 1px solid transparent;\n  box-shadow: -2px 0 0 -1px white, 2px 0 0 -1px white, 0 -2px 0 -1px white, 0 2px 0 -1px white, -6px 0 0 -1px white, 6px 0 0 -1px white, -4px -2px 0 -1px white, -4px 2px 0 -1px white, 4px -2px 0 -1px white, 4px 2px 0 -1px white;\n}",
-      "cssIconAfter": ".keyboard.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 9px;\n  height: 1px;\n  background-color: white;\n  bottom: 1px;\n  left: 4px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "keyboard",
@@ -1905,18 +1177,10 @@
   },
   {
     "id": 91,
-    "name": "left doubel quote",
+    "name": "left double quote",
     "classNames": "doubleQuoteLeft",
     "style": "line",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".doubleQuoteLeft.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 17px;\n  height: 11px;\n}",
-      "cssIconBefore": ".doubleQuoteLeft.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 50%;\n  top: 3px;\n}",
-      "cssIconAfter": ".doubleQuoteLeft.icon:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 50%;\n  top: 3px;\n  left: 9px;\n}",
-      "cssChild": "",
-      "cssChildBefore": ".doubleQuoteLeft.icon i:before {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-top: solid 1px transparent;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  top: 0;\n}",
-      "cssChildAfter": ".doubleQuoteLeft.icon i:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-top: solid 1px transparent;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  top: 0;\n  left: 9px;\n}"
-    },
     "cssHidden": "",
     "tag": [
       "left",
@@ -1927,18 +1191,10 @@
   },
   {
     "id": 92,
-    "name": "left doubel quote",
+    "name": "left double quote solid",
     "classNames": "doubleQuoteLeft filled",
     "style": "solid",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".doubleQuoteLeft.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 17px;\n  height: 11px;\n}",
-      "cssIconBefore": ".doubleQuoteLeft.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 50%;\n  top: 3px;\n}",
-      "cssIconAfter": ".doubleQuoteLeft.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 50%;\n  top: 3px;\n  left: 9px;\n}",
-      "cssChild": "",
-      "cssChildBefore": ".doubleQuoteLeft.filled.icon i:before {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-top: solid 1px transparent;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  top: 0;\n}",
-      "cssChildAfter": ".doubleQuoteLeft.filled.icon i:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-top: solid 1px transparent;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  top: 0;\n  left: 9px;\n}"
-    },
     "cssHidden": "",
     "tag": [
       "left",
@@ -1950,18 +1206,10 @@
   },
   {
     "id": 93,
-    "name": "right doubel quote",
+    "name": "right double quote",
     "classNames": "doubleQuoteRight",
     "style": "line",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".doubleQuoteRight.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 17px;\n  height: 11px;\n}",
-      "cssIconBefore": ".doubleQuoteRight.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 50%;\n  top: 0px;\n}",
-      "cssIconAfter": ".doubleQuoteRight.icon:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 50%;\n  top: 0px;\n  left: 9px;\n}",
-      "cssChild": "",
-      "cssChildBefore": ".doubleQuoteRight.icon i:before {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px transparent;\n  border-top: solid 1px transparent;\n  border-right: solid 1px black;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  left: -6px;\n  top: -3px;\n}",
-      "cssChildAfter": ".doubleQuoteRight.icon i:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px transparent;\n  border-top: solid 1px transparent;\n  border-right: solid 1px black;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  top: -3px;\n  left: 3px;\n}"
-    },
     "cssHidden": "",
     "tag": [
       "right",
@@ -1972,18 +1220,10 @@
   },
   {
     "id": 94,
-    "name": "right doubel quote",
+    "name": "right double quote solid",
     "classNames": "doubleQuoteRight filled",
     "style": "solid",
     "htmlChildMarkup": true,
-    "cssBlocks": {
-      "cssIcon": ".doubleQuoteRight.filled.icon {\n  position: absolute;\n  margin-left: 2px;\n  margin-top: 5px;\n  width: 17px;\n  height: 11px;\n}",
-      "cssIconBefore": ".doubleQuoteRight.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 50%;\n  top: 0px;\n}",
-      "cssIconAfter": ".doubleQuoteRight.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 50%;\n  top: 0px;\n  left: 9px;\n}",
-      "cssChild": "",
-      "cssChildBefore": ".doubleQuoteRight.filled.icon i:before {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px transparent;\n  border-top: solid 1px transparent;\n  border-right: solid 1px black;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  left: -6px;\n  top: -3px;\n}",
-      "cssChildAfter": ".doubleQuoteRight.filled.icon i:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px transparent;\n  border-top: solid 1px transparent;\n  border-right: solid 1px black;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  top: -3px;\n  left: 3px;\n}"
-    },
     "cssHidden": "",
     "tag": [
       "right",
@@ -1999,14 +1239,6 @@
     "classNames": "singleQuoteLeft",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".singleQuoteLeft.icon {\n  position: absolute;\n  margin-left: 6px;\n  margin-top: 5px;\n  width: 9px;\n  height: 11px;\n}",
-      "cssIconBefore": ".singleQuoteLeft.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 50%;\n  top: 3px;\n}",
-      "cssIconAfter": ".singleQuoteLeft.icon:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-top: solid 1px transparent;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  left: 0;\n  top: 0;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "left",
@@ -2017,18 +1249,10 @@
   },
   {
     "id": 96,
-    "name": "left single quote",
+    "name": "left single quote solid",
     "classNames": "singleQuoteLeft filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".singleQuoteLeft.filled.icon {\n  position: absolute;\n  margin-left: 6px;\n  margin-top: 5px;\n  width: 9px;\n  height: 11px;\n}",
-      "cssIconBefore": ".singleQuoteLeft.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 50%;\n  top: 3px;\n}",
-      "cssIconAfter": ".singleQuoteLeft.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-left: solid 1px black;\n  border-top: solid 1px transparent;\n  border-right: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  left: 0;\n  top: 0;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "left",
@@ -2044,14 +1268,6 @@
     "classNames": "singleQuoteRight",
     "style": "line",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".singleQuoteRight.icon {\n  position: absolute;\n  margin-left: 6px;\n  margin-top: 5px;\n  width: 9px;\n  height: 11px;\n}",
-      "cssIconBefore": ".singleQuoteRight.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  border-radius: 50%;\n  top: 0px;\n}",
-      "cssIconAfter": ".singleQuoteRight.icon:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-right: solid 1px black;\n  border-top: solid 1px transparent;\n  border-left: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  left: -6px;\n  top: -3px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "right",
@@ -2062,18 +1278,10 @@
   },
   {
     "id": 98,
-    "name": "right single quote",
+    "name": "right single quote solid",
     "classNames": "singleQuoteRight filled",
     "style": "solid",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".singleQuoteRight.filled.icon {\n  position: absolute;\n  margin-left: 6px;\n  margin-top: 5px;\n  width: 9px;\n  height: 11px;\n}",
-      "cssIconBefore": ".singleQuoteRight.filled.icon:before {\n  content: '';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border: solid 1px black;\n  background-color: black;\n  border-radius: 50%;\n  top: 0px;\n}",
-      "cssIconAfter": ".singleQuoteRight.filled.icon:after {\n  content: '';\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  border-right: solid 1px black;\n  border-top: solid 1px transparent;\n  border-left: solid 1px transparent;\n  border-bottom: solid 1px transparent;\n  border-radius: 50%;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  left: -6px;\n  top: -3px;\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "right",
@@ -2089,14 +1297,6 @@
     "classNames": "beard",
     "style": "filled",
     "htmlChildMarkup": false,
-    "cssBlocks": {
-      "cssIcon": ".beard.icon {\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  box-shadow: 5px 8px 0 0 black,  10px 8px 0 0 black;\n}",
-      "cssIconBefore": ".beard.icon:before {\n  content: '';\n  position: absolute;\n  border: 0 solid transparent;\n  border-bottom: 6px solid black;\n  border-radius: 0 0 0 100%;\n  width: 7px;\n  height: 4px;\n  left: 1px;\n  top: 4px;\n  -webkit-transform-origin: right 7px;\n          transform-origin: right 7px;\n  -webkit-transform: rotate(-40deg);\n          transform: rotate(-40deg);\n}",
-      "cssIconAfter": ".beard.icon:after {\n  content: '';\n  position: absolute;\n  border: 0 solid transparent;\n  border-bottom: 6px solid black;\n  border-radius: 0 0 100% 0;\n  width: 7px;\n  height: 4px;\n  left: 13px;\n  top: 4px;\n  -webkit-transform-origin: left 7px;\n          transform-origin: left 7px;\n  -webkit-transform: rotate(40deg);\n          transform: rotate(40deg);\n}",
-      "cssChild": "",
-      "cssChildBefore": "",
-      "cssChildAfter": ""
-    },
     "cssHidden": "",
     "tag": [
       "beard",

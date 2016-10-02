@@ -1,0 +1,13 @@
+@import '../../mixin';
+.map.icon {
+  &:before {
+    @include pseudo();
+    left: -6px;
+    top: 1px;
+    width: 4px;
+    height: 10px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    transform: skewY(-40deg);
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../mixin';
+.card.filled.icon {
+  &:after {
+    @include pseudo();
+    right: 1px;
+    bottom: 2px;
+    width: 4px;
+    height: 1px;
+    color: white;
+    background-color: currentColor;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../mixin';
+.link.icon {
+  &:after {
+    @include pseudo();
+    top: -3px;
+    right: -7px;
+    width: 8px;
+    height: 5px;
+    border-radius: 2px;
+    border: solid 1px currentColor;
+  }
+}

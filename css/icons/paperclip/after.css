@@ -1,0 +1,12 @@
+.paperclip.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 2px;
+  height: 10px;
+  border-radius: 4px 4px 0 0;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+}

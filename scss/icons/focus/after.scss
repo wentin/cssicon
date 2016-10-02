@@ -1,0 +1,14 @@
+@import '../../mixin';
+.focus.icon {
+  &:after {
+    @include pseudo();
+    left: 3px;
+    top: -2px;
+    width: 9px;
+    height: 19px;
+    color: white;
+    background-color: currentColor;
+    transform-origin: center;
+    transform: rotate(90deg);
+  }
+}

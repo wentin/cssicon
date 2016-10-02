@@ -1,0 +1,12 @@
+@import '../../mixin';
+.keyboard.filled.icon {
+  &:after {
+    @include pseudo();
+    bottom: 1px;
+    left: 4px;
+    width: 9px;
+    height: 1px;
+    color: white;
+    background-color: currentColor;
+  }
+}

@@ -65,7 +65,7 @@
     <div class="iconWrapper iconWrapperHidden"></div>
     <div class="iconWrapper iconWrapperHidden"></div>
 
-    <!-- <div ng-include="'partials/icons.html'"></div> -->
+    <div ng-include="'partials/icons.html'"></div>
     
     <div class="info">
       adding more css icons soon, check out the full css icon collection <a href="/old">here</a>
@@ -117,40 +117,53 @@
             <div class="icon copy"></div>
           </div>
         </h4>
-        <pre><code><xmp>{{generateHTML(selectedIcon)}}</xmp></code></pre>
+        <xmp>{{generateHTML(selectedIcon)}}</xmp>
         <h4>css
           <div class="css buttonCopy">
             <div class="icon copy"></div>
           </div>
         </h4>
-        <div class="cssIcon codeBlockHight" 
+        <div class="cssIcon codeBlockHover" 
              ng-mouseover = "cssIconHover = true"
              ng-mouseleave= "cssIconHover = false">
+          <!-- <xmp ng-if="selectedIcon.cssBlocks.cssIcon"
+               ng-include="'css/icons/'+selectedIcon.name+'/main.css'"></xmp> -->
           <xmp ng-if="selectedIcon.cssBlocks.cssIcon">{{selectedIcon.cssBlocks.cssIcon}}</xmp>
         </div>
-        <div class="cssIconBefore codeBlockHight" 
+        <div class="cssIconBefore codeBlockHover" 
              ng-mouseover = "cssIconBeforeHover = true;"
              ng-mouseleave= "cssIconBeforeHover = false;">
+          <!-- <xmp ng-if="selectedIcon.cssBlocks.cssIconBefore"
+               ng-include="'css/icons/'+selectedIcon.name+'/before.css'"></xmp> -->
           <xmp ng-if="selectedIcon.cssBlocks.cssIconBefore">{{selectedIcon.cssBlocks.cssIconBefore}}</xmp>
         </div>
-        <div class="cssIconAfter codeBlockHight" 
+        <div class="cssIconAfter codeBlockHover" 
              ng-mouseover = "cssIconAfterHover = true;"
              ng-mouseleave= "cssIconAfterHover = false;">
+
+          <!-- <xmp ng-if="selectedIcon.cssBlocks.cssIconAfter"
+               ng-include="'css/icons/'+selectedIcon.name+'/after.css'"></xmp> -->
           <xmp ng-if="selectedIcon.cssBlocks.cssIconAfter">{{selectedIcon.cssBlocks.cssIconAfter}}</xmp>
         </div>
-        <div class="cssChild codeBlockHight"
+        <div class="cssChild codeBlockHover"
              ng-mouseover = "cssChildHover = true;"
              ng-mouseleave= "cssChildHover = false;">
+          <!-- <xmp ng-if="selectedIcon.cssBlocks.cssChild"
+               ng-include="'css/icons/'+selectedIcon.name+'/i.css'"></xmp> -->
           <xmp ng-if="selectedIcon.cssBlocks.cssChild">{{selectedIcon.cssBlocks.cssChild}}</xmp>
         </div>
-        <div class="cssChildBefore codeBlockHight" 
+        <div class="cssChildBefore codeBlockHover" 
              ng-mouseover = "cssChildBeforeHover = true;"
              ng-mouseleave= "cssChildBeforeHover = false;">
+          <!-- <xmp ng-if="selectedIcon.cssBlocks.cssChildBefore"
+               ng-include="'css/icons/'+selectedIcon.name+'/i-before.css'"></xmp> -->
           <xmp ng-if="selectedIcon.cssBlocks.cssChildBefore">{{selectedIcon.cssBlocks.cssChildBefore}}</xmp>
         </div>
-        <div class="cssChildAfter codeBlockHight"
+        <div class="cssChildAfter codeBlockHover"
              ng-mouseover = "cssChildAfterHover = true;"
              ng-mouseleave= "cssChildAfterHover = false;">
+          <!-- <xmp ng-if="selectedIcon.cssBlocks.cssChildAfter"
+               ng-include="'css/icons/'+selectedIcon.name+'/i-after.css'"></xmp> -->
           <xmp ng-if="selectedIcon.cssBlocks.cssChildAfter">{{selectedIcon.cssBlocks.cssChildAfter}}</xmp>
         </div>
       </div>

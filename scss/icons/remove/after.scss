@@ -1,0 +1,10 @@
+@import '../../mixin';
+.remove.icon {
+  &:after {
+    @include pseudo();
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+    transform: rotate(-45deg);
+  }
+}

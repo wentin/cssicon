@@ -1,0 +1,14 @@
+@import '../../mixin';
+.retweet.icon {
+  &:before {
+    @include pseudo();
+    left: -3px;
+    top: -2px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px white;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+  }
+}

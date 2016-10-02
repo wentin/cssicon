@@ -1,0 +1,11 @@
+.code.icon:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

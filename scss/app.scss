@@ -16,7 +16,7 @@ $highlightColor: #3CD5FF;
     padding-right: 20px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    .codeBlockHight {
+    .codeBlockHover {
       cursor: pointer;
       &:hover {
         background-color: black;
@@ -29,59 +29,73 @@ $highlightColor: #3CD5FF;
 .viewer.cssIconHover .iconViewer {
   .icon {   
     color: $highlightColor !important;
-    // z-index: 9;
   }
-  .icon:before{
+  .icon:before,
+  .icon:after,
+  .icon i,
+  .icon i:before,
+  .icon i:after,
+  .icon.filled:before,
+  .icon.filled:after {   
     color: black;
   }
-  .icon:after {
-    color: black;
-  }
-  .icon i {   
-    color: black;
-  }
-  .icon i:before {
-    color: black;
-  }
-  .icon i:after {
-    color: black;
-  }
-  .icon.filled {
-    color: white;
-  }
-  .icon.filled i:before {
-    color: white;
-  }
+  .icon.filled i,
+  .icon.filled i:before,
   .icon.filled i:after {
     color: white;
+  }
+  /* special cases */
+  .pin,
+  .stop,
+  .clock,
+  .mail,
+  .camera,
+  .card,
+  .keyboard,
+  .mouse {
+    &.icon.filled:before,
+    &.icon.filled:after {   
+      color: white;
+    }
+  }
+  .focus {
+    &.icon:before,
+    &.icon:after {   
+      color: white;
+    }
+  }
+  .tag {
+    &.icon.filled:after {   
+      color: white;
+    }
+  }
+  .doubleQuoteLeft,
+  .doubleQuoteRight {
+    &.icon.filled i:before,
+    &.icon.filled i:after {   
+      color: black;
+    }
   }
 }
 .viewer.cssIconBeforeHover .iconViewer {
   .icon:before{
     color: $highlightColor !important;
-    // z-index: 9;
   }
 }
 .viewer.cssIconAfterHover .iconViewer {
   .icon:after {
     color: $highlightColor !important;
-    // z-index: 9;
   }
 }
 .viewer.cssChildHover .iconViewer {
   .icon i {   
     color: $highlightColor !important;
-    // z-index: 9;
   }
-  .icon i:before {
-    color: black;
-  }
+  .icon i:before,
   .icon i:after {
     color: black;
   }
-  .icon.filled i:before {
-    color: white;
-  }
+  .icon.filled i:before,
   .icon.filled i:after {
     color: white;
   }
@@ -89,12 +103,10 @@ $highlightColor: #3CD5FF;
 .viewer.cssChildBeforeHover .iconViewer {
   .icon i:before{
     color: $highlightColor !important;
-    // z-index: 9;
   }
 }
 .viewer.cssChildAfterHover .iconViewer {
   .icon i:after {
     color: $highlightColor !important;
-    // z-index: 9;
   } 
 }

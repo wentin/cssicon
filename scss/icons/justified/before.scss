@@ -1,0 +1,12 @@
+@import '../../mixin';
+.justified.icon {
+  &:before {
+    @include pseudo();
+    top: 2px;
+    left: 0;
+    width: 17px;
+    height: 5px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}

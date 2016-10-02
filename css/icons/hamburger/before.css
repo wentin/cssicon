@@ -1,0 +1,9 @@
+.hamburger.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}

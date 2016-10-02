@@ -1,0 +1,12 @@
+.export.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -5px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

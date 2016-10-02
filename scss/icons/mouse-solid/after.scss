@@ -1,0 +1,12 @@
+@import '../../mixin';
+.mouse.filled.icon {
+  &:after {
+    @include pseudo();
+    left: 5px;
+    top: -1px;
+    width: 1px;
+    height: 7px;
+    color: white;
+    background-color: currentColor;
+  }
+}

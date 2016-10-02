@@ -1,0 +1,11 @@
+.flag.filled.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 4px;
+  width: 9px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}

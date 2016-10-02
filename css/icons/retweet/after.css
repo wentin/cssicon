@@ -1,0 +1,12 @@
+.retweet.icon:after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  bottom: -2px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px currentColor;
+  border-bottom: solid 3px white;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}

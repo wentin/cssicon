@@ -1,0 +1,11 @@
+@import '../../mixin';
+.audio.icon {
+  &:after {
+    @include pseudo();
+    left: 4px;
+    bottom: -4px;
+    width: 1px;
+    height: 4px;
+    background-color: currentColor;
+  }
+}

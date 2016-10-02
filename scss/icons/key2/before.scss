@@ -1,0 +1,11 @@
+@import '../../mixin';
+.key2.icon {
+  &:before {
+    @include pseudo();
+    left: 7px;
+    top: 3px;
+    width: 12px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

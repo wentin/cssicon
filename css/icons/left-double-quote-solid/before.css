@@ -1,0 +1,10 @@
+.doubleQuoteLeft.filled.icon:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 3px;
+}

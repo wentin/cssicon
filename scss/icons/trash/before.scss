@@ -1,0 +1,11 @@
+@import '../../mixin';
+.trash.icon {
+  &:before {
+    @include pseudo();
+    left: -4px;
+    top: -2px;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

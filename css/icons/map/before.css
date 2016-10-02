@@ -1,0 +1,12 @@
+.map.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(-40deg);
+          transform: skewY(-40deg);
+}

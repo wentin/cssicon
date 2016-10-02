@@ -1,0 +1,13 @@
+.refresh.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+}

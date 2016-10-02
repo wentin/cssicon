@@ -1,0 +1,10 @@
+.key.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}

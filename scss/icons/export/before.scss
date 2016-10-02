@@ -1,0 +1,13 @@
+@import '../../mixin';
+.export.icon {
+  &:before {
+    @include pseudo();
+    top: -5px;
+    left: 2px;
+    width: 1px;
+    height: 8px;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    background-color: currentColor;
+  }
+}

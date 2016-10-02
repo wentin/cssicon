@@ -1,0 +1,14 @@
+@import '../../mixin';
+.chat.icon {
+  &:before {
+    @include pseudo();
+    left: 3px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}

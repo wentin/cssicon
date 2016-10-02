@@ -1,0 +1,12 @@
+.trash.icon:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 7px;
+  height: 2px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-radius: 4px 4px 0 0;
+}

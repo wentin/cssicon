@@ -1,0 +1,15 @@
+@import '../../mixin';
+.signal.icon {
+  &:after {
+    @include pseudo();
+    left: -9px;
+    top: -9px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+  }
+}

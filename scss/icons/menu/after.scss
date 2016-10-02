@@ -1,0 +1,11 @@
+@import '../../mixin';
+.hamburger.icon {
+  &:after {
+    @include pseudo();
+    top: 5px;
+    left: 0;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../mixin';
+.arrowRight.icon {
+  &:before {
+    @include pseudo();
+    right: 1px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    transform: rotate(45deg);
+  }
+}

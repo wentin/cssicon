@@ -1,0 +1,12 @@
+.audio.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 50% 50%;
+}

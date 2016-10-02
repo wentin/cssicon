@@ -1,0 +1,22 @@
+@import '../../mixin';
+.keyboard.icon {
+  &:before {
+    @include pseudo();
+    left: 7px;
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    border: 1px solid transparent;
+    box-shadow: 
+      -2px 0 0 -1px currentColor, 
+      2px 0 0 -1px currentColor, 
+      0 -2px 0 -1px currentColor, 
+      0 2px 0 -1px currentColor, 
+      -6px 0 0 -1px currentColor, 
+      6px 0 0 -1px currentColor, 
+      -4px -2px 0 -1px currentColor, 
+      -4px 2px 0 -1px currentColor, 
+      4px -2px 0 -1px currentColor, 
+      4px 2px 0 -1px currentColor;
+  }
+}

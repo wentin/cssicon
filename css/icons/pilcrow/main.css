@@ -1,0 +1,12 @@
+.pilcrow.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px 0 0 5px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}

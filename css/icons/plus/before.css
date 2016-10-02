@@ -1,0 +1,7 @@
+.plus.icon:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}

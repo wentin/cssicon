@@ -1,6 +1,9 @@
 var app = angular.module("iconApp", []);
-app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http, $filter) { 
-  $http.get('http://api.jsoneditoronline.org/v1/docs/f26dbdc8aa88e459fb89a95b7067bf15/data').success(function(data){ 
+app.controller("MainCtrl", ['$scope','$http', '$filter', '$q', function($scope, $http, $filter, $q) { 
+  $http.get('http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data').success(function(data){ 
+    
+    //995babe3c73846437f5f1d60549987f5 text
+    //f26dbdc8aa88e459fb89a95b7067bf15 real
     $scope.icons = data; 
     $scope.viewerOpen = false;
     
@@ -66,28 +69,86 @@ app.controller("MainCtrl", ['$scope','$http', '$filter', function($scope, $http,
     
     $scope.handleIconClick = function(icon){
       $scope.selectedIcon = icon;
-      $scope.viewerOpen = true;
-      $scope.JSONstring = generateCodepenString(icon);
-      
-      var htmlClipboard = new Clipboard('.html.buttonCopy', {
-          text: function() {
-              return generateHTML(icon);
-          }
+      $scope.selectedIcon.cssBlocks = {};
+      var iconName = icon.name.replace(/\s+/g, '-').toLowerCase();
+      var cssIconHttp = $http.get('../css/icons/' + iconName + '/main.css').then(function(res){
+        //success
+        $scope.selectedIcon.cssBlocks.cssIcon = res.data;
+      }, function(){
+        //error
+        $scope.selectedIcon.cssBlocks.cssIcon = false;
       });
-      
-      htmlClipboard.on('success', function(e) {
-          console.log("html", e);
+
+      var cssIconBeforeHttp = $http.get('../css/icons/' + iconName + '/before.css').then(function(res){
+        //success
+        $scope.selectedIcon.cssBlocks.cssIconBefore = res.data;
+      }, function(){
+        //error
+        $scope.selectedIcon.cssBlocks.cssIconBefore = false;
       });
-      
-      var cssClipboard = new Clipboard('.css.buttonCopy', {
-          text: function() {
-              return generateCSS(icon);
-          }
+
+      var cssIconAfterHttp = $http.get('../css/icons/' + iconName + '/after.css').then(function(res){
+        //success
+        $scope.selectedIcon.cssBlocks.cssIconAfter = res.data;
+      }, function(){
+        //error
+        $scope.selectedIcon.cssBlocks.cssIconAfter = false;
       });
-      
-      cssClipboard.on('success', function(e) {
-          console.log("css", e);
+
+
+      var cssChildHttp = $http.get('../css/icons/' + iconName + '/i.css').then(function(res){
+        //success
+        $scope.selectedIcon.cssBlocks.cssChild = res.data;
+      }, function(){
+        //error
+        $scope.selectedIcon.cssBlocks.cssChild = false;
       });
+
+      var cssChildBeforeHttp = $http.get('../css/icons/' + iconName + '/i-before.css').then(function(res){
+        //success
+        $scope.selectedIcon.cssBlocks.cssChildBefore = res.data;
+      }, function(){
+        //error
+        $scope.selectedIcon.cssBlocks.cssChildBefore = false;
+      });
+
+      var cssChildAfterHttp = $http.get('../css/icons/' + iconName + '/i-after.css').then(function(res){
+        //success
+        $scope.selectedIcon.cssBlocks.cssChildAfter = res.data;
+      }, function(){
+        //error
+        $scope.selectedIcon.cssBlocks.cssChildAfter = false;
+      });
+
+
+
+      $q.all([cssIconHttp, cssIconBeforeHttp, cssIconAfterHttp, cssChildHttp, cssChildBeforeHttp, cssChildAfterHttp, ]).then(function(){
+
+        $scope.JSONstring = generateCodepenString($scope.selectedIcon);
+        $scope.viewerOpen = true;
+
+        var htmlClipboard = new Clipboard('.html.buttonCopy', {
+            text: function() {
+                return generateHTML($scope.selectedIcon);
+            }
+        });
+        
+        htmlClipboard.on('success', function(e) {
+            console.log("html", e);
+        });
+        
+        var cssClipboard = new Clipboard('.css.buttonCopy', {
+            text: function() {
+                return generateCSS($scope.selectedIcon);
+            }
+        });
+        
+        cssClipboard.on('success', function(e) {
+            console.log("css", e);
+        });
+
+      });
+
       
     }
     

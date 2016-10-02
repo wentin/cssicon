@@ -1,0 +1,12 @@
+@import '../../mixin';
+.pin.icon {
+  &:before {
+    @include pseudo();
+    left: 3px;
+    top: 3px;
+    width: 4px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 3px;
+  }
+}

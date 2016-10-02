@@ -1,0 +1,11 @@
+.clock.icon:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}

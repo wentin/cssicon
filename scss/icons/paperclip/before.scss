@@ -1,0 +1,14 @@
+@import '../../mixin';
+.paperclip.icon {
+  &:before {
+    @include pseudo();
+    top: 11px;
+    left: -1px;
+    width: 4px;
+    height: 6px;
+    border-radius: 0 0 3px 3px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}

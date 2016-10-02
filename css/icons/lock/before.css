@@ -1,0 +1,12 @@
+.lock.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}

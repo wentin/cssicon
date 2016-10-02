@@ -1,0 +1,10 @@
+.leftaligned.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}

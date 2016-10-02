@@ -1,0 +1,13 @@
+@import '../../mixin';
+.stop.filled.icon {
+  &:before {
+    @include pseudo();
+    top: 7px;
+    left: -1px;
+    width: 17px;
+    height: 1px;
+    color: white;
+    background-color: currentColor;
+    transform: rotate(45deg);
+  }
+}

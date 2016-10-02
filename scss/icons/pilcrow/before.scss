@@ -1,0 +1,13 @@
+@import '../../mixin';
+.pilcrow.icon {
+  &:before {
+    @include pseudo();
+    left: 8px;
+    top: -1px;
+    height: 16px;
+    width: 2px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}

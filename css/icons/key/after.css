@@ -1,0 +1,10 @@
+.key.icon:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 3px;
+  width: 1px;
+  height: 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}

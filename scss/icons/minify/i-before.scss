@@ -1,0 +1,11 @@
+@import '../../mixin';
+.search-minusI.icon {
+  i {
+    &:before {
+      @include pseudo();
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../mixin';
+.flag.icon {
+  &:before {
+    @include pseudo();
+    left: -3px;
+    top: -2px;
+    width: 1px;
+    height: 15px;
+    background-color: currentColor;
+  }
+}
