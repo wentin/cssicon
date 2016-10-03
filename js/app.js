@@ -1,7 +1,8 @@
 var app = angular.module("iconApp", []);
 app.controller("MainCtrl", ['$scope','$http', '$filter', '$q', function($scope, $http, $filter, $q) { 
-  $http.get('http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data').success(function(data){ 
-    
+  $http.get('js/cssicon.json').success(function(data){ 
+
+    // $http.get('http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data').success(function(data){ 
     //995babe3c73846437f5f1d60549987f5 text
     //f26dbdc8aa88e459fb89a95b7067bf15 real
     $scope.icons = data; 
