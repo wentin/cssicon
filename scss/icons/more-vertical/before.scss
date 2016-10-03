@@ -1,0 +1,12 @@
+@import '../../mixin';
+.more-vertical.icon {
+  &:before {
+    @include pseudo();
+    left: -1px;
+    top: -8px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+}

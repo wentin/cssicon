@@ -1,0 +1,13 @@
+@import '../../mixin';
+.more-solid.icon {
+  &:before {
+    @include pseudo();
+    top: -1px;
+    left: -8px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+  }
+}

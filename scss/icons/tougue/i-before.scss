@@ -1,0 +1,18 @@
+@import '../../mixin';
+.tougue.icon {
+  i{
+    &:before {
+      @include pseudo();
+      top: -1px;
+      right: 0px;
+      width: 2px;
+      height: 2px;
+      border-radius: 2px;
+      border-top: solid 1px transparent;
+      border-right: solid 1px transparent;
+      border-bottom: solid 1px currentColor;
+      border-left: solid 1px currentColor;
+      transform: rotate(-45deg);
+    }
+  }
+}
