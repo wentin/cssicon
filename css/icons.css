@@ -2797,7 +2797,7 @@ body {
 }
 
 .mouse.icon {
-  color: black;
+  color: #000;
   position: absolute;
   margin-left: 4px;
   margin-top: 1px;
@@ -4654,41 +4654,31 @@ body {
   border: solid 5px currentColor;
 }
 
-.more.icon {
-  margin-left: 9px;
-  margin-top: 9px;
+.more.icon:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 6px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
   border: solid 1px currentColor;
 }
+
 .more.icon:before {
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
+  content: '';
+  position: absolute;
   top: -1px;
   left: -8px;
-}
-.more.icon:after {
   width: 2px;
   height: 2px;
   border-radius: 50%;
   border: solid 1px currentColor;
-  top: -1px;
-  left: 6px;
-}
-.more.icon.filled {
-  background-color: currentColor;
-}
-.more.icon.filled:before {
-  background-color: currentColor;
-}
-.more.icon.filled:after {
-  background-color: currentColor;
 }
 
-.vmore.icon {
+.more.icon {
+  color: #000;
+  position: absolute;
   margin-left: 9px;
   margin-top: 9px;
   width: 2px;
@@ -4696,224 +4686,446 @@ body {
   border-radius: 50%;
   border: solid 1px currentColor;
 }
-.vmore.icon:before {
+
+.more-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 6px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
   border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.more-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -8px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.more-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 9px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.more-vertical.icon:after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 6px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.more-vertical.icon:before {
+  content: '';
+  position: absolute;
   left: -1px;
   top: -8px;
-}
-.vmore.icon:after {
   width: 2px;
   height: 2px;
   border-radius: 50%;
   border: solid 1px currentColor;
-  left: -1px;
-  top: 6px;
-}
-.vmore.icon.filled {
-  background-color: currentColor;
-}
-.vmore.icon.filled:before {
-  background-color: currentColor;
-}
-.vmore.icon.filled:after {
-  background-color: currentColor;
 }
 
-.calendar3.icon {
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 16px;
-  height: 13px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-}
-.calendar3.icon:before {
-  left: 4px;
-  top: -3px;
-  width: 6px;
-  height: 5px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-.calendar3.icon:after {
-  left: 6px;
-  top: 0px;
+.more-vertical.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 9px;
   width: 2px;
-  height: 1px;
-  border: 1px solid transparent;
-  box-shadow: 0   9px 0 -1px currentColor,  -4px 9px 0 -1px currentColor,  4px 9px 0 -1px currentColor, 0   6px 0 -1px currentColor,  -4px 6px 0 -1px currentColor,  4px 6px 0 -1px currentColor, 0   3px 0 -1px currentColor,  -4px 3px 0 -1px currentColor,  4px 3px 0 -1px currentColor;
-}
-.calendar3.icon.filled {
-  background-color: currentColor;
-}
-.calendar3.icon.filled:before {
-  left: 3px;
-  border-left: solid 2px #333333;
-  border-right: solid 2px #333333;
-}
-.calendar3.icon.filled:after {
-  box-shadow: 0   9px 0 -1px white,  -4px 9px 0 -1px white,  4px 9px 0 -1px white, 0   6px 0 -1px white,  -4px 6px 0 -1px white,  4px 6px 0 -1px white, 0   3px 0 -1px white,  -4px 3px 0 -1px white,  4px 3px 0 -1px white;
-}
-
-.calendar2.icon {
-  margin-left: 2px;
-  margin-top: 3px;
-  width: 16px;
-  height: 14px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-}
-.calendar2.icon:before {
-  left: 5px;
-  top: -3px;
-  width: 4px;
-  height: 5px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  box-shadow: 0   12px 0 -2px currentColor,  -4px 12px 0 -2px currentColor,  4px 12px 0 -2px currentColor, 0   9px 0 -2px currentColor,  -4px 9px 0 -2px currentColor,  4px 9px 0 -2px currentColor, 0   6px 0 -2px currentColor,  -4px 6px 0 -2px currentColor,  4px 6px 0 -2px currentColor;
-}
-.calendar2.icon:after {
-  left: -1px;
-  top: 2px;
-  width: 18px;
-  height: 1px;
-  background-color: currentColor;
-}
-.calendar2.icon.filled {
-  background-color: currentColor;
-}
-.calendar2.icon.filled:before {
-  box-shadow: 0   12px 0 -2px white,  -4px 12px 0 -2px white,  4px 12px 0 -2px white, 0   9px 0 -2px white,  -4px 9px 0 -2px white,  4px 9px 0 -2px white, 0   6px 0 -2px white,  -4px 6px 0 -2px white,  4px 6px 0 -2px white;
-}
-.calendar2.icon.filled:after {
-  background-color: white;
-}
-
-.calendar.icon {
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 16px;
-  height: 13px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-}
-.calendar.icon:before {
-  left: 4px;
-  top: -3px;
-  width: 6px;
-  height: 5px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-.calendar.icon:after {
-  left: -1px;
-  top: 3px;
-  width: 18px;
-  height: 1px;
-  background-color: currentColor;
-}
-.calendar.icon.filled {
-  background-color: currentColor;
-}
-.calendar.icon.filled:before {
-  left: 3px;
-  border-left: solid 2px #333333;
-  border-right: solid 2px #333333;
-}
-.calendar.icon.filled:after {
-  top: 2px;
-  background-color: white;
-}
-.calendar.icon.filled.checkI i {
-  border-color: white;
-}
-.calendar.icon.filled.removeI i:before {
-  background-color: white;
-}
-.calendar.icon.filled.removeI i:after {
-  background-color: white;
-}
-.calendar.icon.filled.contact i:before {
-  border-color: white;
-}
-.calendar.icon.filled.contact i:after {
-  border-color: white;
-}
-.calendar.icon.filled.paragraph i:before {
-  border-color: white;
-}
-.calendar.icon.filled.paragraph i:after {
-  background-color: white;
-}
-.calendar.icon.checkI i {
-  width: 7px;
-  height: 4px;
-  border-left: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  left: 4px;
-  top: 4px;
-}
-.calendar.icon.removeI i:before {
-  width: 8px;
-  height: 1px;
-  background-color: currentColor;
-  left: 4px;
-  top: 8px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.calendar.icon.removeI i:after {
-  width: 8px;
-  height: 1px;
-  background-color: currentColor;
-  left: 4px;
-  top: 8px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.calendar.icon.contact:after {
-  height: 0;
-}
-.calendar.icon.contact i {
-  left: 5px;
-  top: 3px;
-}
-.calendar.icon.contact i:before {
-  width: 4px;
-  height: 4px;
-  border: solid 1px currentColor;
+  height: 2px;
   border-radius: 50%;
+  border: solid 1px currentColor;
 }
-.calendar.icon.contact i:after {
-  left: -2px;
-  top: 5px;
-  width: 8px;
-  height: 3px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-radius: 4px 4px 0 0;
-}
-.calendar.icon.paragraph i {
-  left: 3px;
+
+.more-vertical-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: -1px;
   top: 6px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
 }
-.calendar.icon.paragraph i:before {
-  width: 10px;
-  height: 1px;
-  border-top: solid 1px currentColor;
+
+.more-vertical-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -8px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.more-vertical-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 9px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.smile.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smile.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smile.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
   border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
 }
-.calendar.icon.paragraph i:after {
-  left: 0px;
+
+.smile.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smile-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
   top: 4px;
-  width: 6px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.smile-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.smile-solid.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: white;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.smile-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.wink.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.wink.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.wink.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.wink.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.wink-tougue.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.wink-tougue.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.wink-tougue.icon i:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.wink-tougue.icon i {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 8px;
   height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.wink-tougue.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.tougue.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.tougue.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.tougue.icon i:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.tougue.icon i {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 8px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.tougue.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.tougue-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.tougue-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.tougue-solid.icon i:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  color: white;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.tougue-solid.icon i {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 8px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.tougue-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
   background-color: currentColor;
 }
 
@@ -5234,6 +5446,201 @@ body {
 .circle.removeI.icon.filled:after,
 .square.removeI.icon.filled:after {
   background-color: white;
+}
+
+.calendar3.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+.calendar3.icon:before {
+  left: 4px;
+  top: -3px;
+  width: 6px;
+  height: 5px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.calendar3.icon:after {
+  left: 6px;
+  top: 0px;
+  width: 2px;
+  height: 1px;
+  border: 1px solid transparent;
+  box-shadow: 0   9px 0 -1px currentColor,  -4px 9px 0 -1px currentColor,  4px 9px 0 -1px currentColor, 0   6px 0 -1px currentColor,  -4px 6px 0 -1px currentColor,  4px 6px 0 -1px currentColor, 0   3px 0 -1px currentColor,  -4px 3px 0 -1px currentColor,  4px 3px 0 -1px currentColor;
+}
+.calendar3.icon.filled {
+  background-color: currentColor;
+}
+.calendar3.icon.filled:before {
+  left: 3px;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+}
+.calendar3.icon.filled:after {
+  box-shadow: 0   9px 0 -1px white,  -4px 9px 0 -1px white,  4px 9px 0 -1px white, 0   6px 0 -1px white,  -4px 6px 0 -1px white,  4px 6px 0 -1px white, 0   3px 0 -1px white,  -4px 3px 0 -1px white,  4px 3px 0 -1px white;
+}
+
+.calendar2.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 16px;
+  height: 14px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+.calendar2.icon:before {
+  left: 5px;
+  top: -3px;
+  width: 4px;
+  height: 5px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  box-shadow: 0   12px 0 -2px currentColor,  -4px 12px 0 -2px currentColor,  4px 12px 0 -2px currentColor, 0   9px 0 -2px currentColor,  -4px 9px 0 -2px currentColor,  4px 9px 0 -2px currentColor, 0   6px 0 -2px currentColor,  -4px 6px 0 -2px currentColor,  4px 6px 0 -2px currentColor;
+}
+.calendar2.icon:after {
+  left: -1px;
+  top: 2px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}
+.calendar2.icon.filled {
+  background-color: currentColor;
+}
+.calendar2.icon.filled:before {
+  box-shadow: 0   12px 0 -2px white,  -4px 12px 0 -2px white,  4px 12px 0 -2px white, 0   9px 0 -2px white,  -4px 9px 0 -2px white,  4px 9px 0 -2px white, 0   6px 0 -2px white,  -4px 6px 0 -2px white,  4px 6px 0 -2px white;
+}
+.calendar2.icon.filled:after {
+  background-color: white;
+}
+
+.calendar.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+.calendar.icon:before {
+  left: 4px;
+  top: -3px;
+  width: 6px;
+  height: 5px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.calendar.icon:after {
+  left: -1px;
+  top: 3px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}
+.calendar.icon.filled {
+  background-color: currentColor;
+}
+.calendar.icon.filled:before {
+  left: 3px;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+}
+.calendar.icon.filled:after {
+  top: 2px;
+  background-color: white;
+}
+.calendar.icon.filled.checkI i {
+  border-color: white;
+}
+.calendar.icon.filled.removeI i:before {
+  background-color: white;
+}
+.calendar.icon.filled.removeI i:after {
+  background-color: white;
+}
+.calendar.icon.filled.contact i:before {
+  border-color: white;
+}
+.calendar.icon.filled.contact i:after {
+  border-color: white;
+}
+.calendar.icon.filled.paragraph i:before {
+  border-color: white;
+}
+.calendar.icon.filled.paragraph i:after {
+  background-color: white;
+}
+.calendar.icon.checkI i {
+  width: 7px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 4px;
+}
+.calendar.icon.removeI i:before {
+  width: 8px;
+  height: 1px;
+  background-color: currentColor;
+  left: 4px;
+  top: 8px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.calendar.icon.removeI i:after {
+  width: 8px;
+  height: 1px;
+  background-color: currentColor;
+  left: 4px;
+  top: 8px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.calendar.icon.contact:after {
+  height: 0;
+}
+.calendar.icon.contact i {
+  left: 5px;
+  top: 3px;
+}
+.calendar.icon.contact i:before {
+  width: 4px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-radius: 50%;
+}
+.calendar.icon.contact i:after {
+  left: -2px;
+  top: 5px;
+  width: 8px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-radius: 4px 4px 0 0;
+}
+.calendar.icon.paragraph i {
+  left: 3px;
+  top: 6px;
+}
+.calendar.icon.paragraph i:before {
+  width: 10px;
+  height: 1px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.calendar.icon.paragraph i:after {
+  left: 0px;
+  top: 4px;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .cmd.icon {

@@ -164,315 +164,21 @@ body {
 @import 'icons/navigate-solid/*';
 @import 'icons/float/*';
 @import 'icons/float-solid/*';
+@import 'icons/more/*';
+@import 'icons/more-solid/*';
+@import 'icons/more-vertical/*';
+@import 'icons/more-vertical-solid/*';
+@import 'icons/smile/*';
+@import 'icons/smile-solid/*';
+@import 'icons/wink/*';
+@import 'icons/wink-tougue/*';
+@import 'icons/tougue/*';
+@import 'icons/tougue-solid/*';
 
 
 
 
-.more.icon {
-  margin-left: 9px;
-  margin-top: 9px;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  &:before {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-    top: -1px;
-    left: -8px;
-  }
-  &:after {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-    top: -1px;
-    left: 6px;
-  }
-  &.filled {
-    background-color: currentColor;
-    &:before {
-      background-color: currentColor;
-    }
-    &:after {
-      background-color: currentColor;
-    }
-  }
-}
-.vmore.icon {
-  margin-left: 9px;
-  margin-top: 9px;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  &:before {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-    left: -1px;
-    top: -8px;
-  }
-  &:after {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-    left: -1px;
-    top: 6px;
-  }
-  &.filled {
-    background-color: currentColor;
-    &:before {
-      background-color: currentColor;
-    }
-    &:after {
-      background-color: currentColor;
-    }
-  }
-}
 
-.calendar3.icon {
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 16px;
-  height: 13px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-  &:before {
-    left: 4px;
-    top: -3px;
-    width: 6px;
-    height: 5px;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-  }
-  &:after {
-    left: 6px;
-    top: 0px;
-    width: 2px;
-    height: 1px;
-    border: 1px solid transparent;
-    box-shadow: 
-       0   9px 0 -1px currentColor, 
-      -4px 9px 0 -1px currentColor, 
-       4px 9px 0 -1px currentColor,
-       0   6px 0 -1px currentColor, 
-      -4px 6px 0 -1px currentColor, 
-       4px 6px 0 -1px currentColor,
-       0   3px 0 -1px currentColor, 
-      -4px 3px 0 -1px currentColor, 
-       4px 3px 0 -1px currentColor;
-  }
-  &.filled {
-    background-color: currentColor;
-    &:before {
-      left: 3px;
-      border-left: solid 2px #333333;
-      border-right: solid 2px #333333;
-    }
-    &:after {
-      box-shadow: 
-         0   9px 0 -1px white, 
-        -4px 9px 0 -1px white, 
-         4px 9px 0 -1px white,
-         0   6px 0 -1px white, 
-        -4px 6px 0 -1px white, 
-         4px 6px 0 -1px white,
-         0   3px 0 -1px white, 
-        -4px 3px 0 -1px white, 
-         4px 3px 0 -1px white;
-    }
-  }
-}
-.calendar2.icon {
-  margin-left: 2px;
-  margin-top: 3px;
-  width: 16px;
-  height: 14px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-  &:before {
-    left: 5px;
-    top: -3px;
-    width: 4px;
-    height: 5px;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-    box-shadow: 
-       0   12px 0 -2px currentColor, 
-      -4px 12px 0 -2px currentColor, 
-       4px 12px 0 -2px currentColor,
-       0   9px 0 -2px currentColor, 
-      -4px 9px 0 -2px currentColor, 
-       4px 9px 0 -2px currentColor,
-       0   6px 0 -2px currentColor, 
-      -4px 6px 0 -2px currentColor, 
-       4px 6px 0 -2px currentColor;
-  }
-  &:after {
-    left: -1px;
-    top: 2px;
-    width: 18px;
-    height: 1px;
-    background-color: currentColor;
-  }
-  &.filled {
-    background-color: currentColor;
-    &:before {
-      box-shadow: 
-         0   12px 0 -2px white, 
-        -4px 12px 0 -2px white, 
-         4px 12px 0 -2px white,
-         0   9px 0 -2px white, 
-        -4px 9px 0 -2px white, 
-         4px 9px 0 -2px white,
-         0   6px 0 -2px white, 
-        -4px 6px 0 -2px white, 
-         4px 6px 0 -2px white;
-    }
-    &:after {
-      background-color: white;
-    }
-  }
-}
-.calendar.icon {
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 16px;
-  height: 13px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-  &:before {
-    left: 4px;
-    top: -3px;
-    width: 6px;
-    height: 5px;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-  }
-  &:after {
-    left: -1px;
-    top: 3px;
-    width: 18px;
-    height: 1px;
-    background-color: currentColor;
-  }
-  &.filled {
-    background-color: currentColor;
-    &:before {
-      left: 3px;
-      border-left: solid 2px #333333;
-      border-right: solid 2px #333333;
-    }
-    &:after {
-      top: 2px;
-      background-color: white;
-    }
-    &.checkI i{
-      border-color: white;
-    }
-    &.removeI i{
-      &:before {
-        background-color: white;
-      }
-      &:after {
-        background-color: white;
-      }
-    } 
-    &.contact i{
-      &:before {
-        border-color: white;
-      } 
-      &:after {
-        border-color: white;
-      }
-    }
-    &.paragraph i{
-      &:before {
-        border-color: white;
-      }
-      &:after {
-        background-color: white;
-      }
-    }
-  }
-  &.checkI i{
-    width: 7px;
-    height: 4px;
-    border-left: solid 1px currentColor;
-    border-bottom: solid 1px currentColor;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    left: 4px;
-    top: 4px;
-  }
-  &.removeI i{
-    &:before {
-      width: 8px;
-      height: 1px;
-      background-color: currentColor;
-      left: 4px;
-      top: 8px;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-    }
-    &:after {
-      width: 8px;
-      height: 1px;
-      background-color: currentColor;
-      left: 4px;
-      top: 8px;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-    }
-  }
-  &.contact {
-    &:after {
-      height: 0;
-    }
-    i {
-      left: 5px;
-      top: 3px;
-      &:before {
-        width: 4px;
-        height: 4px;
-        border: solid 1px currentColor;
-        border-radius: 50%;
-      }
-      &:after {
-        left: -2px;
-        top: 5px;
-        width: 8px;
-        height: 3px;
-        border-top: solid 1px currentColor;
-        border-left: solid 1px currentColor;
-        border-right: solid 1px currentColor;
-        border-radius: 4px 4px 0 0;
-      }
-    }
-  }
-  &.paragraph i{
-    left: 3px;
-    top: 6px;
-    &:before {
-      width: 10px;
-      height: 1px;
-      border-top: solid 1px currentColor;
-      border-bottom: solid 1px currentColor;
-    }
-    &:after {
-      left: 0px;
-      top: 4px;
-      width: 6px;
-      height: 1px;
-      background-color: currentColor;
-    }
-  }
-}
 .face.icon {
   margin-left: 2px;
   margin-top: 2px;
@@ -776,6 +482,244 @@ body {
   }
 }
 
+.calendar3.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: 4px;
+    top: -3px;
+    width: 6px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    left: 6px;
+    top: 0px;
+    width: 2px;
+    height: 1px;
+    border: 1px solid transparent;
+    box-shadow: 
+       0   9px 0 -1px currentColor, 
+      -4px 9px 0 -1px currentColor, 
+       4px 9px 0 -1px currentColor,
+       0   6px 0 -1px currentColor, 
+      -4px 6px 0 -1px currentColor, 
+       4px 6px 0 -1px currentColor,
+       0   3px 0 -1px currentColor, 
+      -4px 3px 0 -1px currentColor, 
+       4px 3px 0 -1px currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333;
+    }
+    &:after {
+      box-shadow: 
+         0   9px 0 -1px white, 
+        -4px 9px 0 -1px white, 
+         4px 9px 0 -1px white,
+         0   6px 0 -1px white, 
+        -4px 6px 0 -1px white, 
+         4px 6px 0 -1px white,
+         0   3px 0 -1px white, 
+        -4px 3px 0 -1px white, 
+         4px 3px 0 -1px white;
+    }
+  }
+}
+.calendar2.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 16px;
+  height: 14px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: 5px;
+    top: -3px;
+    width: 4px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    box-shadow: 
+       0   12px 0 -2px currentColor, 
+      -4px 12px 0 -2px currentColor, 
+       4px 12px 0 -2px currentColor,
+       0   9px 0 -2px currentColor, 
+      -4px 9px 0 -2px currentColor, 
+       4px 9px 0 -2px currentColor,
+       0   6px 0 -2px currentColor, 
+      -4px 6px 0 -2px currentColor, 
+       4px 6px 0 -2px currentColor;
+  }
+  &:after {
+    left: -1px;
+    top: 2px;
+    width: 18px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      box-shadow: 
+         0   12px 0 -2px white, 
+        -4px 12px 0 -2px white, 
+         4px 12px 0 -2px white,
+         0   9px 0 -2px white, 
+        -4px 9px 0 -2px white, 
+         4px 9px 0 -2px white,
+         0   6px 0 -2px white, 
+        -4px 6px 0 -2px white, 
+         4px 6px 0 -2px white;
+    }
+    &:after {
+      background-color: white;
+    }
+  }
+}
+.calendar.icon {
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 16px;
+  height: 13px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    left: 4px;
+    top: -3px;
+    width: 6px;
+    height: 5px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    left: -1px;
+    top: 3px;
+    width: 18px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  &.filled {
+    background-color: currentColor;
+    &:before {
+      left: 3px;
+      border-left: solid 2px #333333;
+      border-right: solid 2px #333333;
+    }
+    &:after {
+      top: 2px;
+      background-color: white;
+    }
+    &.checkI i{
+      border-color: white;
+    }
+    &.removeI i{
+      &:before {
+        background-color: white;
+      }
+      &:after {
+        background-color: white;
+      }
+    } 
+    &.contact i{
+      &:before {
+        border-color: white;
+      } 
+      &:after {
+        border-color: white;
+      }
+    }
+    &.paragraph i{
+      &:before {
+        border-color: white;
+      }
+      &:after {
+        background-color: white;
+      }
+    }
+  }
+  &.checkI i{
+    width: 7px;
+    height: 4px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 4px;
+    top: 4px;
+  }
+  &.removeI i{
+    &:before {
+      width: 8px;
+      height: 1px;
+      background-color: currentColor;
+      left: 4px;
+      top: 8px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    &:after {
+      width: 8px;
+      height: 1px;
+      background-color: currentColor;
+      left: 4px;
+      top: 8px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
+  &.contact {
+    &:after {
+      height: 0;
+    }
+    i {
+      left: 5px;
+      top: 3px;
+      &:before {
+        width: 4px;
+        height: 4px;
+        border: solid 1px currentColor;
+        border-radius: 50%;
+      }
+      &:after {
+        left: -2px;
+        top: 5px;
+        width: 8px;
+        height: 3px;
+        border-top: solid 1px currentColor;
+        border-left: solid 1px currentColor;
+        border-right: solid 1px currentColor;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+  }
+  &.paragraph i{
+    left: 3px;
+    top: 6px;
+    &:before {
+      width: 10px;
+      height: 1px;
+      border-top: solid 1px currentColor;
+      border-bottom: solid 1px currentColor;
+    }
+    &:after {
+      left: 0px;
+      top: 4px;
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+}
 // css icon 5: http://codepen.io/wentin/pen/098951f382a880f92170da12c8268e56?editors=0100
 
 .cmd.icon {
