@@ -7,5 +7,6 @@
   height: 3px;
   border-top: solid 1px currentColor;
   border-left: solid 1px currentColor;
-  transform: rotate(-22.5deg);
+  -webkit-transform: rotate(-22.5deg);
+          transform: rotate(-22.5deg);
 }

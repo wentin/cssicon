@@ -1,4 +1,4 @@
-.heart.filled.icon:before {
+.heart-solid.icon:before {
   content: '';
   position: absolute;
   top: -5px;

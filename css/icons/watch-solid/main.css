@@ -1,0 +1,11 @@
+.watch-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 0px;
+  width: 5px;
+  height: 19px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}

@@ -1,5 +1,5 @@
 @import '../../mixin';
-.tag.filled.icon {
+.tag-solid.icon {
   &:before {
     @include pseudo();
     left: 1px;

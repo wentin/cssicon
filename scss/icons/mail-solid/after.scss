@@ -1,5 +1,5 @@
 @import '../../mixin';
-.mail.filled.icon {
+.mail-solid.icon {
   &:after {
     @include pseudo();
     left: 7px;

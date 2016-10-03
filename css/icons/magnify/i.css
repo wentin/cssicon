@@ -1,6 +1,7 @@
-.search-plusI.icon i {
+.magnify.icon i {
   position: absolute;
   left: 4px;
   top: 4px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

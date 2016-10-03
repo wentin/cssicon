@@ -1,8 +1,9 @@
-.search-plusI.icon i:after {
+.magnify.icon i:after {
   content: '';
   position: absolute;
   width: 6px;
   height: 1px;
   background-color: currentColor;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }

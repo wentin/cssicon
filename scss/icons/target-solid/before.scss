@@ -1,0 +1,13 @@
+@import '../../mixin';
+.target-solid.icon {
+  &:before {
+    @include pseudo();
+    left: -1px;
+    top: 7px;
+    width: 13px;
+    height: 1px;
+    color: white;
+    border-left: solid 2px currentColor;
+    border-right: solid 2px currentColor;
+  }
+}

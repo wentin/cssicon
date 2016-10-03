@@ -1,0 +1,11 @@
+.float.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  z-index: 2;
+}

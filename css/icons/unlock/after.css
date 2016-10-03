@@ -1,4 +1,4 @@
-.lock.unlocked.icon:after {
+.unlock.icon:after {
   content: '';
   position: absolute;
   left: 3px;

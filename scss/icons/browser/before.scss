@@ -1,0 +1,13 @@
+@import '../../mixin';
+.browser.icon {
+  &:before {
+    @include pseudo();
+    left: 1px;
+    top: 1px;
+    width: 11px;
+    height: 11px;
+    border-radius: 85% 15%;
+    transform: rotate(-45deg);
+    border: solid 1px currentColor;
+  }
+}

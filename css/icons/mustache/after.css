@@ -1,13 +1,15 @@
-.beard.icon:after {
+.mustache.icon:after {
   content: '';
   position: absolute;
-  width: 7px;
-  height: 4px;
   left: 13px;
   top: 4px;
-  border-radius: 0 0 100% 0;
+  width: 7px;
+  height: 4px;
   border: 0 solid transparent;
   border-bottom: 6px solid currentColor;
-  transform-origin: left 7px;
-  transform: rotate(40deg);
+  border-radius: 0 0 100% 0;
+  -webkit-transform-origin: left 7px;
+          transform-origin: left 7px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
 }

@@ -1,0 +1,9 @@
+.tv-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  bottom: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}

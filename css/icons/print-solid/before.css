@@ -1,4 +1,4 @@
-.print.filled.icon:before {
+.print-solid.icon:before {
   content: '';
   position: absolute;
   left: 2px;

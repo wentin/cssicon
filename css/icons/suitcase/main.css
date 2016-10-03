@@ -1,0 +1,10 @@
+.suitcase.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}

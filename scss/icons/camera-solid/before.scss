@@ -1,5 +1,5 @@
 @import '../../mixin';
-.camera.filled.icon {
+.camera-solid.icon {
   &:before {
     @include pseudo();
     left: 5px;

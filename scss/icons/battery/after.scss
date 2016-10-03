@@ -1,0 +1,11 @@
+@import '../../mixin';
+.battery.icon {
+  &:after {
+    @include pseudo();
+    left: 1px;
+    top: 1px;
+    width: 8px;
+    height: 5px;
+    background-color: currentColor;
+  }
+}

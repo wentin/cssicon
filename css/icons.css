@@ -25,82 +25,3421 @@ body {
   position: absolute;
 }
 
-.beard.filled.icon {
+.search.icon:before {
+  content: '';
   position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+.search.icon {
+  color: black;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.search-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.search-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+}
+
+.search-solid.icon {
+  color: black;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.magnify.icon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+.magnify.icon i:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.magnify.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.magnify.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.magnify.icon {
+  color: black;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.magnify-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+.magnify-solid.icon i:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.magnify-solid.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.magnify-solid.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.magnify-solid.icon {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.minify.icon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+.minify.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.minify.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.minify.icon {
+  color: black;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.minify-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+.minify-solid.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.minify-solid.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.minify-solid.icon {
+  color: black;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.close.icon:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close.icon:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.close.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+  width: 21px;
+  height: 21px;
+}
+
+.menu.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.menu.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.menu.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.arrow-left.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.arrow-left.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.arrow-right.icon:before {
+  content: '';
+  position: absolute;
+  right: 1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.arrow-right.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.arrow-up.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.arrow-up.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.arrow-down.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.arrow-down.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.plus.icon:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.plus.icon:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.plus.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+}
+
+.minus.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.check.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.remove.icon:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.remove.icon:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.remove.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+}
+
+.trash.icon:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 7px;
+  height: 2px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-radius: 4px 4px 0 0;
+}
+
+.trash.icon:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.trash.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 9px;
+  height: 10px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 2px 2px;
+}
+
+.trash-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 7px;
+  height: 2px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 4px 4px 0 0;
+}
+
+.trash-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.trash-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 9px;
+  height: 10px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 2px 2px;
+  background-color: currentColor;
+}
+
+.audio.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: -4px;
+  width: 1px;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.audio.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -6px;
+  width: 5px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 4px;
+}
+
+.audio.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 50% 50%;
+}
+
+.audio-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: -4px;
+  width: 1px;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.audio-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -6px;
+  width: 5px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 4px;
+  background-color: currentColor;
+}
+
+.audio-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 50% 50%;
+}
+
+.pin.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 4px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-radius: 3px;
+}
+
+.pin.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 7px 7px 7px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.pin-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 4px;
+  height: 4px;
+  color: white;
+  border: solid 1px currentColor;
+  border-radius: 3px;
+  background-color: currentColor;
+}
+
+.pin-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 7px 7px 7px 0;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.chat.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.chat.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+}
+
+.chat-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.chat-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 2px;
+}
+
+.stop.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.stop.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.stop-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.stop-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 8px;
+}
+
+.clock.icon:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 5px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: currentColor;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-h3m30.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h3m30.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h3m30.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-h3m30-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h3m30-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 5px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h3m30-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: currentColor;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-h9m0.icon:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m0.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m0.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-h9m0-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m0-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  width: 5px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m0-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: currentColor;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-h9m30.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m30.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m30.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.clock-h9m30-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m30-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  width: 5px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock-h9m30-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: currentColor;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+
+.profile.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.profile.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 11px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0;
+}
+
+.profile-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.profile-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 11px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  background-color: currentColor;
+  border-radius: 6px 6px 0 0;
+}
+
+.bell.icon:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -3px;
+  width: 15px;
+  height: 0px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px white;
+}
+
+.bell.icon:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.bell.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 9px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 5px 5px 0 0;
+}
+
+.bell-solid.icon:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -3px;
+  width: 15px;
+  height: 0px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px white;
+}
+
+.bell-solid.icon:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.bell-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 9px;
+  height: 10px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 5px 5px 0 0;
+}
+
+.heart.icon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  width: 5px;
+  height: 8px;
+  border-radius: 0 5px 5px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.heart.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 8px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.heart.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.heart-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  width: 5px;
+  height: 8px;
+  border-radius: 0 5px 5px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.heart-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 8px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.heart-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.print.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 13px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: white;
+}
+
+.print.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -3px;
+  height: 13px;
+  width: 9px;
+  border: solid 1px currentColor;
+  background-color: white;
+}
+
+.print.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 15px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px 1px 0 0;
+}
+
+.print-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 13px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.print-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -3px;
+  height: 13px;
+  width: 9px;
+  border: solid 1px currentColor;
+  background-color: white;
+}
+
+.print-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 15px;
+  height: 6px;
+  border-radius: 1px 1px 0 0;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.edit.icon:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px currentColor;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+}
+
+.edit.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.edit-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px currentColor;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+}
+
+.edit-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.link.icon:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.link.icon:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.link.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 10px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.map.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(-40deg);
+          transform: skewY(-40deg);
+}
+
+.map.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(-40deg);
+          transform: skewY(-40deg);
+}
+
+.map.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 4px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
+}
+
+.mail.icon:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+.mail.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+
+.mail.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.mail-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+.mail-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+
+.mail-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.bookmark.icon:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 7px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.bookmark.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 10px;
+  height: 15px;
+  border-radius: 1px 1px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.bookmark-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 7px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.bookmark-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 10px;
+  height: 15px;
+  border-radius: 1px 1px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.camera.icon:after {
+  content: '';
+  position: absolute;
+  right: 2px;
+  top: -2px;
+  width: 4px;
+  height: 1px;
+  border-radius: 1px 1px 0 0;
+  background-color: currentColor;
+}
+
+.camera.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  border: solid 1px currentColor;
+}
+
+.camera.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 16px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.camera-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 2px;
+  top: -2px;
+  width: 4px;
+  height: 1px;
+  border-radius: 1px 1px 0 0;
+  background-color: currentColor;
+}
+
+.camera-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  color: white;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.camera-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 16px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.focus.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -2px;
+  width: 9px;
+  height: 19px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.focus.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -2px;
+  width: 9px;
+  height: 19px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.focus.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.card.icon:after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 4px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.card.icon:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  width: 17px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.card.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.card-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 4px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.card-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  width: 17px;
+  height: 2px;
+  color: white;
+  background-color: currentColor;
+}
+
+.card-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.lock.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.lock.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.lock-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.lock-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.unlock.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.unlock.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.unlock.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+
+.unlock-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.unlock-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.unlock-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.code.icon:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.code.icon:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.code.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 6px;
+}
+
+.flag.icon:before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -2px;
+  width: 1px;
+  height: 15px;
+  background-color: currentColor;
+}
+
+.flag.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 4px;
+  width: 9px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.flag-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -2px;
+  width: 1px;
+  height: 15px;
+  background-color: currentColor;
+}
+
+.flag-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 4px;
+  width: 9px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.tag.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.tag.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 9px;
+  height: 10px;
+  border-radius: 1px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.tag.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 1px 1px 1px 0;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+}
+
+.tag-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.tag-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 9px;
+  height: 10px;
+  border-radius: 1px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.tag-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 1px 1px 1px 0;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.signal.icon:after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
+
+.signal.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
+
+.signal.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 13px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  box-shadow: 5px 8px 0 0 currentColor,  10px 8px 0 0 currentColor;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
 }
-.beard.filled.icon:before {
+
+.export.icon:after {
   content: '';
   position: absolute;
-  border: 0 solid transparent;
-  border-bottom: 6px solid currentColor;
-  border-radius: 0 0 0 100%;
+  left: 3px;
+  top: -5px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.export.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  width: 1px;
+  height: 8px;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+  background-color: currentColor;
+}
+
+.export.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 11px;
+  height: 9px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.upload.icon:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.upload.icon:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 6px;
+  width: 1px;
+  height: 9px;
+  background-color: currentColor;
+}
+
+.upload.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+}
+
+.import.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.import.icon:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}
+
+.import.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 5px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+
+.download.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -4px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.download.icon:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -9px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+}
+
+.download.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  border-top: none;
+}
+
+.upload2.icon:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.upload2.icon:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}
+
+.upload2.icon {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+
+.shutdown.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -2px;
+  width: 1px;
+  height: 8px;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+  background-color: currentColor;
+}
+
+.shutdown.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.paperclip.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 2px;
+  height: 10px;
+  border-radius: 4px 4px 0 0;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+}
+
+.paperclip.icon:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: -1px;
+  width: 4px;
+  height: 6px;
+  border-radius: 0 0 3px 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.paperclip.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 2px;
+  width: 6px;
+  height: 12px;
+  border-radius: 4px 4px 0 0;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.retweet.icon:after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  bottom: -2px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px currentColor;
+  border-bottom: solid 3px white;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}
+
+.retweet.icon:before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px white;
+  border-bottom: solid 3px currentColor;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}
+
+.retweet.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 5px;
+  width: 13px;
+  height: 9px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.key.icon:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 3px;
+  width: 1px;
+  height: 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.key.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 11px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.key.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.key-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 3px;
+  width: 1px;
+  height: 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.key-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 11px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.key-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.key2.icon:after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0px;
+  width: 1px;
+  height: 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.key2.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 12px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.key2.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.key2-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0px;
+  width: 1px;
+  height: 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.key2-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 12px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.key2-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.refresh.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-22.5deg);
+          transform: rotate(-22.5deg);
+}
+
+.refresh.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+}
+
+.pilcrow.icon:before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: -1px;
+  height: 16px;
+  width: 2px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.pilcrow.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px 0 0 5px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.pilcrow-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: -1px;
+  height: 16px;
+  width: 2px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.pilcrow-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px 0 0 5px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.justified.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.justified.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.paragraph-direction.icon:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 0;
+  height: 0;
+  border-left: solid 2px white;
+  border-right: solid 2px currentColor;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+.paragraph-direction.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 2px;
+  border-radius: 0 2px 2px 0;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.paragraph-direction.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.left-align.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.left-align.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.center-align.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.center-align.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.right-align.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.right-align.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.indent.icon:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px transparent;
+}
+
+.indent.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 11px;
+  height: 2px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.indent.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.outdent.icon:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px currentColor;
+}
+
+.outdent.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 11px;
+  height: 2px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.outdent.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.mouse.icon:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 5px;
+  width: 1px;
+  height: 7px;
+  background-color: currentColor;
+}
+
+.mouse.icon:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -1px;
+  width: 13px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.mouse.icon {
+  color: black;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 1px;
+  width: 11px;
+  height: 17px;
+  border: solid 1px currentColor;
+  border-radius: 6px;
+}
+
+.mouse-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -1px;
+  width: 1px;
+  height: 7px;
+  color: white;
+  background-color: currentColor;
+}
+
+.mouse-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -1px;
+  width: 13px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.mouse-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 1px;
+  width: 11px;
+  height: 17px;
+  border-radius: 6px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.keyboard.icon:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 4px;
+  width: 9px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.keyboard.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 1px;
+  height: 1px;
+  border: 1px solid transparent;
+  box-shadow: -2px 0 0 -1px currentColor,  2px 0 0 -1px currentColor,  0 -2px 0 -1px currentColor,  0 2px 0 -1px currentColor,  -6px 0 0 -1px currentColor,  6px 0 0 -1px currentColor,  -4px -2px 0 -1px currentColor,  -4px 2px 0 -1px currentColor,  4px -2px 0 -1px currentColor,  4px 2px 0 -1px currentColor;
+}
+
+.keyboard.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 4px;
+  width: 17px;
+  height: 11px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.keyboard-solid.icon:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 4px;
+  width: 9px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.keyboard-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 1px;
+  height: 1px;
+  border: 1px solid transparent;
+  color: white;
+  box-shadow: -2px 0 0 -1px currentColor,  2px 0 0 -1px currentColor,  0 -2px 0 -1px currentColor,  0 2px 0 -1px currentColor,  -6px 0 0 -1px currentColor,  6px 0 0 -1px currentColor,  -4px -2px 0 -1px currentColor,  -4px 2px 0 -1px currentColor,  4px -2px 0 -1px currentColor,  4px 2px 0 -1px currentColor;
+}
+
+.keyboard-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 4px;
+  width: 17px;
+  height: 11px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.left-double-quote.icon:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.left-double-quote.icon:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.left-double-quote.icon i:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-double-quote.icon i:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-double-quote.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 17px;
+  height: 11px;
+}
+
+.left-double-quote-solid.icon:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 3px;
+  left: 9px;
+}
+
+.left-double-quote-solid.icon:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 3px;
+}
+
+.left-double-quote-solid.icon i:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-double-quote-solid.icon i:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-double-quote-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 17px;
+  height: 11px;
+}
+
+.right-double-quote.icon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.right-double-quote.icon:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.right-double-quote.icon i:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-double-quote.icon i:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: -3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-double-quote.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 17px;
+  height: 11px;
+}
+
+.right-double-quote-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.right-double-quote-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.right-double-quote-solid.icon i:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-double-quote-solid.icon i:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: -3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-double-quote-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 17px;
+  height: 11px;
+}
+
+.left-single-quote.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-single-quote.icon:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.left-single-quote.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 5px;
+  width: 9px;
+  height: 11px;
+}
+
+.left-single-quote-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-single-quote-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.left-single-quote-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 5px;
+  width: 9px;
+  height: 11px;
+}
+
+.right-single-quote.icon:after {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: -3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-left: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-single-quote.icon:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.right-single-quote.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 5px;
+  width: 9px;
+  height: 11px;
+}
+
+.right-single-quote-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: -3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px transparent;
+  border-left: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-single-quote-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.right-single-quote-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 5px;
+  width: 9px;
+  height: 11px;
+}
+
+.mustache.icon:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 4px;
   width: 7px;
   height: 4px;
-  left: 1px;
-  top: 4px;
-  -webkit-transform-origin: right 7px;
-          transform-origin: right 7px;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-}
-.beard.filled.icon:after {
-  content: '';
-  position: absolute;
   border: 0 solid transparent;
   border-bottom: 6px solid currentColor;
   border-radius: 0 0 100% 0;
-  width: 7px;
-  height: 4px;
-  left: 13px;
-  top: 4px;
   -webkit-transform-origin: left 7px;
           transform-origin: left 7px;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
 }
-.beard.filled.icon i {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  box-shadow: 6px 9px 0 0 white, 11px 9px 0 0 white;
-  z-index: 2;
-}
-.beard.filled.icon i:before {
+
+.mustache.icon:before {
   content: '';
   position: absolute;
-  border: 0 solid transparent;
-  border-bottom: 4px solid white;
+  left: 1px;
+  top: 4px;
+  width: 7px;
+  height: 4px;
   border-radius: 0 0 0 100%;
-  width: 6px;
-  height: 3px;
-  left: 2px;
-  top: 6px;
-  -webkit-transform-origin: right 5px;
-          transform-origin: right 5px;
+  border: 0 solid transparent;
+  border-bottom: 6px solid currentColor;
+  -webkit-transform-origin: right 7px;
+          transform-origin: right 7px;
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
 }
-.beard.filled.icon i:after {
+
+.mustache.icon i:after {
   content: '';
   position: absolute;
-  border: 0 solid transparent;
-  border-bottom: 4px solid white;
-  border-radius: 0 0 100% 0;
-  width: 6px;
-  height: 3px;
   left: 13px;
   top: 6px;
+  width: 6px;
+  height: 3px;
+  color: white;
+  border: 0 solid transparent;
+  border-bottom: 4px solid currentColor;
+  border-radius: 0 0 100% 0;
   -webkit-transform-origin: left 5px;
           transform-origin: left 5px;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
 }
 
+.mustache.icon i:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 6px;
+  width: 6px;
+  height: 3px;
+  color: white;
+  border: 0 solid transparent;
+  border-bottom: 4px solid currentColor;
+  border-radius: 0 0 0 100%;
+  -webkit-transform-origin: right 5px;
+          transform-origin: right 5px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.mustache.icon i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 6px 9px 0 0 currentColor,  11px 9px 0 0 currentColor;
+  position: absolute;
+  z-index: 2;
+}
+
+.mustache.icon {
+  color: #000;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 5px 8px 0 0 currentColor,  10px 8px 0 0 currentColor;
+}
+
+.mustache-solid.icon:after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  left: 13px;
+  top: 4px;
+  border-radius: 0 0 100% 0;
+  border: 0 solid transparent;
+  border-bottom: 6px solid currentColor;
+  -webkit-transform-origin: left 7px;
+          transform-origin: left 7px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.mustache-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 4px;
+  width: 7px;
+  height: 4px;
+  border-radius: 0 0 0 100%;
+  border: 0 solid transparent;
+  border-bottom: 6px solid currentColor;
+  -webkit-transform-origin: right 7px;
+          transform-origin: right 7px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.mustache-solid.icon {
+  color: #000;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 5px 8px 0 0 currentColor,  10px 8px 0 0 currentColor;
+}
+
+.eye.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
 .eye.icon {
+  color: #000;
+  position: absolute;
   margin-left: 3px;
   margin-top: 3px;
   width: 12px;
@@ -108,223 +3447,694 @@ body {
   border-radius: 70% 15%;
   border: solid 1px currentColor;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
-.eye.icon:before {
+
+.eye-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   border: solid 1px currentColor;
-  left: 2px;
-  top: 2px;
-}
-.eye.icon.filled:before {
   background-color: currentColor;
-}
-.eye.icon.filled2 {
-  background-color: currentColor;
-}
-.eye.icon.filled2:before {
-  background-color: white;
-}
-.eye.icon.filled3 {
-  background-color: currentColor;
-}
-.eye.icon.filled3:before {
-  border-color: white;
 }
 
-.battery.icon {
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 13px;
-  height: 7px;
-  border-radius: 2px;
+.eye-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 70% 15%;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.eye-solid2.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.eye-solid2.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 70% 15%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.eye-solid3.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  color: white;
   border: solid 1px currentColor;
 }
-.battery.icon:before {
+
+.eye-solid3.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 70% 15%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.battery-0.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
   width: 2px;
   height: 3px;
   border-radius: 0 2px 2px 0;
   border-top: solid 1px currentColor;
   border-right: solid 1px currentColor;
   border-bottom: solid 1px currentColor;
-  right: -3px;
-  top: 1px;
 }
-.battery.icon.batteryOne:after {
+
+.battery-0.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.battery-1.icon:after {
+  content: '';
+  position: absolute;
   left: 1px;
   top: 1px;
   width: 4px;
   height: 5px;
   background-color: currentColor;
 }
-.battery.icon.batteryTwo:after {
+
+.battery-1.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 2px;
+  height: 3px;
+  border-radius: 0 2px 2px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.battery-1.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.battery.icon:after {
+  content: '';
+  position: absolute;
   left: 1px;
   top: 1px;
   width: 8px;
   height: 5px;
   background-color: currentColor;
 }
-.battery.icon.batteryThree:after {
+
+.battery.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 2px;
+  height: 3px;
+  border-radius: 0 2px 2px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.battery.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.battery-3.icon:after {
+  content: '';
+  position: absolute;
   left: 1px;
   top: 1px;
   width: 11px;
   height: 5px;
   background-color: currentColor;
 }
-.battery.icon.filled {
-  background-color: currentColor;
+
+.battery-3.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 2px;
+  height: 3px;
+  border-radius: 0 2px 2px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
 }
-.battery.icon.filled:before {
-  border-radius: 0 1px 1px 0;
-  background-color: currentColor;
+
+.battery-3.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
 }
-.battery.icon.filled:after {
+
+.battery-solid-0.icon:after {
+  content: '';
+  position: absolute;
   left: 0px;
   top: 0px;
   height: 7px;
   width: 1px;
-  background-color: white;
+  color: white;
   border-radius: 1px 0 0 1px;
-}
-.battery.icon.filled.batteryOne:after {
-  width: 5px;
-}
-.battery.icon.filled.batteryTwo:after {
-  width: 9px;
-}
-.battery.icon.filled.batteryThree:after {
-  width: 13px;
-  border-radius: 1px;
+  background-color: currentColor;
 }
 
-.bag.icon {
+.battery-solid-0.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 3px;
+  height: 5px;
+  border-radius: 0 2px 2px 0;
+  background-color: currentColor;
+}
+
+.battery-solid-0.icon {
+  color: #000;
+  position: absolute;
   margin-left: 2px;
   margin-top: 6px;
-  width: 15px;
-  height: 10px;
-  border: solid 1px currentColor;
+  width: 13px;
+  height: 7px;
   border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
 }
-.bag.icon:before {
+
+.battery-solid-1.icon:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 7px;
   width: 5px;
-  height: 2px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-radius: 3px 3px 0 0;
-  left: 4px;
-  top: -3px;
+  color: white;
+  border-radius: 1px 0 0 1px;
+  background-color: currentColor;
 }
-.bag.icon:after {
+
+.battery-solid-1.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 3px;
+  height: 5px;
+  border-radius: 0 2px 2px 0;
+  background-color: currentColor;
+}
+
+.battery-solid-1.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.battery-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 7px;
+  width: 9px;
+  color: white;
+  border-radius: 1px 0 0 1px;
+  background-color: currentColor;
+}
+
+.battery-solid.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 3px;
+  height: 5px;
+  border-radius: 0 2px 2px 0;
+  background-color: currentColor;
+}
+
+.battery-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.battery-solid-3.icon:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 7px;
+  width: 13px;
+  color: white;
+  border-radius: 1px;
+  background-color: currentColor;
+}
+
+.battery-solid-3.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 3px;
+  height: 5px;
+  border-radius: 0 2px 2px 0;
+  background-color: currentColor;
+}
+
+.battery-solid-3.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 13px;
+  height: 7px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.suitcase.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
   width: 7px;
   height: 10px;
   border-left: solid 1px currentColor;
   border-right: solid 1px currentColor;
-  left: 3px;
-}
-.bag.icon.filled {
-  background-color: currentColor;
-}
-.bag.icon.filled:after {
-  border-left: solid 1px white;
-  border-right: solid 1px white;
-}
-.bag.icon.filled2:after {
-  background-color: currentColor;
-}
-.bag.icon.filled3 {
-  background-color: currentColor;
-}
-.bag.icon.filled3:after {
-  background-color: white;
 }
 
-.browser.icon {
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  border-radius: 50%;
+.suitcase.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 5px;
+  height: 2px;
+  border-radius: 3px 3px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
 }
+
+.suitcase.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.suitcase-1.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 7px;
+  height: 10px;
+  color: white;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.suitcase-1.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 5px;
+  height: 2px;
+  border-radius: 3px 3px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.suitcase-1.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.suitcase-2.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 7px;
+  height: 10px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.suitcase-2.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 5px;
+  height: 2px;
+  border-radius: 3px 3px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.suitcase-2.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.suitcase-3.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  width: 7px;
+  height: 10px;
+  color: white;
+  background-color: currentColor;
+}
+
+.suitcase-3.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 5px;
+  height: 2px;
+  border-radius: 3px 3px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.suitcase-3.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.browser.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+
 .browser.icon:before {
+  content: '';
+  position: absolute;
   left: 1px;
   top: 1px;
   width: 11px;
   height: 11px;
-  border: solid 1px currentColor;
   border-radius: 85% 15%;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.browser.icon:after {
-  width: 15px;
-  height: 1px;
-  background-color: currentColor;
-  top: 7px;
-}
-.browser.icon.filled {
-  background-color: currentColor;
-}
-.browser.icon.filled:before {
-  border: solid 1px white;
-}
-.browser.icon.filled:after {
-  background-color: white;
+          transform: rotate(-45deg);
+  border: solid 1px currentColor;
 }
 
-.tv.icon {
+.browser.icon {
+  color: #000;
+  position: absolute;
   margin-left: 2px;
-  margin-top: 3px;
+  margin-top: 2px;
   width: 15px;
-  height: 10px;
+  height: 15px;
+  border-radius: 50%;
   border: solid 1px currentColor;
-  border-radius: 2px;
 }
+
+.browser-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.browser-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 85% 15%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: white;
+  border: solid 1px currentColor;
+}
+
+.browser-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.tv.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: -4px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+}
+
 .tv.icon:before {
+  content: '';
+  position: absolute;
   left: 7px;
   bottom: -4px;
   width: 1px;
   height: 3px;
   background-color: currentColor;
 }
-.tv.icon:after {
+
+.tv.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.tv-solid.icon:after {
+  content: '';
+  position: absolute;
   left: 4px;
   bottom: -4px;
   width: 7px;
   height: 1px;
   background-color: currentColor;
 }
-.tv.icon.filled {
+
+.tv-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  bottom: -4px;
+  width: 1px;
+  height: 3px;
   background-color: currentColor;
 }
 
-.laptop.icon {
-  margin-left: 4px;
+.tv-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
   margin-top: 3px;
-  width: 12px;
-  height: 8px;
-  border: solid 1px currentColor;
+  width: 15px;
+  height: 10px;
   border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
 }
+
 .laptop.icon:before {
+  content: '';
+  position: absolute;
   left: -4px;
   bottom: -5px;
   width: 18px;
   height: 1px;
-  border: solid 1px currentColor;
   border-radius: 0 0 2px 2px;
+  border: solid 1px currentColor;
 }
-.laptop.icon.filled {
+
+.laptop.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 8px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.laptop-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  bottom: -5px;
+  width: 18px;
+  height: 1px;
+  border-radius: 0 0 2px 2px;
+  border: solid 1px currentColor;
   background-color: currentColor;
 }
-.laptop.icon.filled:before {
+
+.laptop-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 8px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.mobile.icon:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 5px;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.mobile.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 2px;
+  height: 1px;
   background-color: currentColor;
 }
 
 .mobile.icon {
+  color: #000;
+  position: absolute;
   margin-left: 4px;
   margin-top: 0px;
   width: 12px;
@@ -332,44 +4142,57 @@ body {
   border-radius: 2px;
   border: solid 1px currentColor;
 }
-.mobile.icon:before {
-  left: 5px;
-  top: 1px;
-  width: 2px;
-  height: 1px;
-  background-color: currentColor;
-}
-.mobile.icon:after {
-  bottom: 1px;
+
+.mobile-solid.icon:after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
   left: 5px;
   height: 2px;
   width: 2px;
-  background-color: currentColor;
   border-radius: 50%;
+  color: white;
+  background-color: currentColor;
 }
-.mobile.icon.filled {
+
+.mobile-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  width: 2px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.mobile-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 0px;
+  width: 12px;
   height: 14px;
+  border-radius: 2px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
   border-top: solid 3px currentColor;
   border-bottom: solid 4px currentColor;
 }
-.mobile.icon.filled:before {
-  top: -2px;
-  background-color: white;
-}
-.mobile.icon.filled:after {
-  bottom: -3px;
-  background-color: white;
+
+.tablet.icon:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 6px;
+  width: 3px;
+  height: 1px;
+  background-color: currentColor;
 }
 
-.tablet.icon {
-  margin-left: 2px;
-  margin-top: 1px;
-  width: 15px;
-  height: 17px;
-  border-radius: 2px;
-  border: solid 1px currentColor;
-}
 .tablet.icon:before {
+  content: '';
+  position: absolute;
   top: 1px;
   left: 0;
   height: 13px;
@@ -377,38 +4200,69 @@ body {
   border-top: solid 1px currentColor;
   border-bottom: solid 1px currentColor;
 }
-.tablet.icon:after {
-  bottom: 0px;
+
+.tablet.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 1px;
+  width: 15px;
+  height: 17px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.tablet-solid.icon:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
   left: 6px;
   width: 3px;
   height: 1px;
+  color: white;
   background-color: currentColor;
 }
-.tablet.icon.filled {
+
+.tablet-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 13px;
+  width: 15px;
+  border: none;
+}
+
+.tablet-solid.icon {
+  color: #000;
+  position: absolute;
   margin-left: 2px;
+  margin-top: 1px;
   width: 15px;
   height: 14px;
+  border-radius: 2px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
   border-top: solid 2px currentColor;
   border-bottom: solid 3px currentColor;
 }
-.tablet.icon.filled:before {
-  border: none;
-}
-.tablet.icon.filled:after {
-  bottom: -2px;
-  left: 6px;
-  background-color: white;
+
+.picture.icon:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 12px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
-.picture.icon {
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  border-radius: 2px;
-}
 .picture.icon:before {
+  content: '';
+  position: absolute;
   left: 2px;
   top: 2px;
   width: 2px;
@@ -416,36 +4270,70 @@ body {
   border-radius: 50%;
   border: solid 1px currentColor;
 }
-.picture.icon:after {
-  left: 2px;
-  top: 9px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  width: 12px;
-  height: 8px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.picture.icon.filled {
-  background-color: currentColor;
-}
-.picture.icon.filled:before {
-  border-color: white;
-  background-color: white;
-}
-.picture.icon.filled:after {
-  border-color: white;
+
+.picture.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
 }
 
-.watch.icon {
-  margin-left: 7px;
-  margin-top: 0px;
-  width: 5px;
-  height: 19px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
+.picture-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 12px;
+  height: 8px;
+  color: white;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
+
+.picture-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  border: solid 1px currentColor;
+}
+
+.picture-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.watch.icon:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 3px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
 .watch.icon:before {
+  content: '';
+  position: absolute;
   left: -4px;
   top: 3px;
   width: 11px;
@@ -454,30 +4342,79 @@ body {
   border: solid 1px currentColor;
   background-color: white;
 }
-.watch.icon:after {
+
+.watch.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 0px;
+  width: 5px;
+  height: 19px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.watch-solid.icon:after {
+  content: '';
+  position: absolute;
   left: 2px;
   top: 5px;
-  border-left: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
   width: 3px;
   height: 4px;
+  color: white;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
 }
-.watch.icon.filled {
-  background-color: currentColor;
-}
-.watch.icon.filled:before {
+
+.watch-solid.icon:before {
+  content: '';
+  position: absolute;
   left: -5px;
   top: 2px;
   width: 13px;
   height: 13px;
-  border-color: white;
+  border-radius: 50%;
+  border: solid 1px white;
   background-color: currentColor;
 }
-.watch.icon.filled:after {
-  border-color: white;
+
+.watch-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 0px;
+  width: 5px;
+  height: 19px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.target.icon:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -1px;
+  width: 1px;
+  height: 11px;
+  border-top: solid 3px currentColor;
+  border-bottom: solid 3px currentColor;
+}
+
+.target.icon:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 7px;
+  width: 11px;
+  height: 1px;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px currentColor;
 }
 
 .target.icon {
+  color: #000;
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
@@ -485,45 +4422,60 @@ body {
   border-radius: 50%;
   border: solid 1px currentColor;
 }
-.target.icon:before {
-  width: 11px;
-  height: 1px;
-  border-left: solid 3px currentColor;
-  border-right: solid 3px currentColor;
-  left: -1px;
-  top: 7px;
-}
-.target.icon:after {
-  width: 1px;
-  height: 11px;
-  border-top: solid 3px currentColor;
-  border-bottom: solid 3px currentColor;
+
+.target-solid.icon:after {
+  content: '';
+  position: absolute;
   left: 7px;
   top: -1px;
-}
-.target.icon.filled {
-  background-color: currentColor;
-}
-.target.icon.filled:before {
-  width: 13px;
-  border-left: solid 2px white;
-  border-right: solid 2px white;
-}
-.target.icon.filled:after {
+  width: 1px;
   height: 13px;
-  border-top: solid 2px white;
-  border-bottom: solid 2px white;
+  color: white;
+  border-top: solid 2px currentColor;
+  border-bottom: solid 2px currentColor;
 }
 
-.navigate.icon {
-  margin-left: 6px;
-  margin-top: -1px;
-  width: 14px;
-  height: 18px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+.target-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 7px;
+  width: 13px;
+  height: 1px;
+  color: white;
+  border-left: solid 2px currentColor;
+  border-right: solid 2px currentColor;
 }
+
+.target-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.navigate.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 0;
+  height: 0;
+  color: white;
+  border-top: solid 5px transparent;
+  border-bottom: solid 5px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+
 .navigate.icon:before {
+  content: '';
+  position: absolute;
   left: 0;
   top: -17px;
   width: 0;
@@ -533,33 +4485,10 @@ body {
   border-left: solid 7px transparent;
   border-right: solid 7px transparent;
 }
-.navigate.icon:after {
-  left: 0;
-  top: 9px;
-  width: 0;
-  height: 0;
-  border-top: solid 5px transparent;
-  border-bottom: solid 5px white;
-  border-left: solid 7px transparent;
-  border-right: solid 7px transparent;
-}
-.navigate.icon i {
-  width: 10px;
-  height: 14px;
-  left: 2px;
-  top: 3px;
-}
-.navigate.icon i:before {
-  left: 0;
-  top: -14px;
-  width: 0;
-  height: 0;
-  border-top: solid 14px transparent;
-  border-bottom: solid 14px white;
-  border-left: solid 5px transparent;
-  border-right: solid 5px transparent;
-}
+
 .navigate.icon i:after {
+  content: '';
+  position: absolute;
   left: 0;
   top: 6px;
   width: 0;
@@ -570,55 +4499,159 @@ body {
   border-right: solid 5px transparent;
 }
 
+.navigate.icon i:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -14px;
+  width: 0;
+  height: 0;
+  color: white;
+  border-top: solid 14px transparent;
+  border-bottom: solid 14px currentColor;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+}
+
+.navigate.icon i {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  left: 2px;
+  top: 3px;
+}
+
+.navigate.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: -1px;
+  width: 14px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navigate-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 0;
+  height: 0;
+  color: white;
+  border-top: solid 5px transparent;
+  border-bottom: solid 5px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+
+.navigate-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -17px;
+  width: 0;
+  height: 0;
+  border-top: solid 18px transparent;
+  border-bottom: solid 18px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+
+.navigate-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: -1px;
+  width: 14px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.float.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: currentColor;
+}
+
+.float.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: currentColor;
+}
+
+.float.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  z-index: 2;
+}
+
 .float.icon {
+  color: #000;
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 15px;
   height: 15px;
-  border: solid 1px currentColor;
   border-radius: 50%;
+  border: solid 1px currentColor;
 }
-.float.icon:before {
+
+.float-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -5px;
   width: 17px;
   height: 1px;
-  background-color: currentColor;
-  top: 7px;
-  left: -1px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.float.icon:after {
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-  top: 7px;
-  left: -1px;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: white;
+  background-color: currentColor;
 }
-.float.icon i {
+
+.float-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -5px;
+  width: 17px;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: white;
+  background-color: currentColor;
+}
+
+.float-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
   width: 7px;
   height: 7px;
-  background-color: white;
-  border: solid 1px currentColor;
   border-radius: 50%;
-  left: 3px;
-  top: 3px;
-  z-index: 2;
-}
-.float.icon.filled {
-  background-color: currentColor;
-}
-.float.icon.filled:before {
-  background-color: white;
-}
-.float.icon.filled:after {
-  background-color: white;
-}
-.float.icon.filled i {
-  border: none;
-  left: 4px;
-  top: 4px;
+  border: solid 5px currentColor;
 }
 
 .more.icon {
@@ -722,7 +4755,7 @@ body {
   border-right: solid 2px #333333;
 }
 .calendar3.icon.filled:after {
-  box-shadow: 0 9px 0 -1px white, -4px 9px 0 -1px white, 4px 9px 0 -1px white, 0 6px 0 -1px white, -4px 6px 0 -1px white, 4px 6px 0 -1px white, 0 3px 0 -1px white, -4px 3px 0 -1px white, 4px 3px 0 -1px white;
+  box-shadow: 0   9px 0 -1px white,  -4px 9px 0 -1px white,  4px 9px 0 -1px white, 0   6px 0 -1px white,  -4px 6px 0 -1px white,  4px 6px 0 -1px white, 0   3px 0 -1px white,  -4px 3px 0 -1px white,  4px 3px 0 -1px white;
 }
 
 .calendar2.icon {
@@ -753,7 +4786,7 @@ body {
   background-color: currentColor;
 }
 .calendar2.icon.filled:before {
-  box-shadow: 0 12px 0 -2px white, -4px 12px 0 -2px white, 4px 12px 0 -2px white, 0 9px 0 -2px white, -4px 9px 0 -2px white, 4px 9px 0 -2px white, 0 6px 0 -2px white, -4px 6px 0 -2px white, 4px 6px 0 -2px white;
+  box-shadow: 0   12px 0 -2px white,  -4px 12px 0 -2px white,  4px 12px 0 -2px white, 0   9px 0 -2px white,  -4px 9px 0 -2px white,  4px 9px 0 -2px white, 0   6px 0 -2px white,  -4px 6px 0 -2px white,  4px 6px 0 -2px white;
 }
 .calendar2.icon.filled:after {
   background-color: white;
@@ -6006,7 +10039,7 @@ body {
 }
 .dashboard.icon.filled:after {
   border-color: white;
-  box-shadow: -7px 0 0 -1px white, -8px 0 0 -1px white, 0 -7px 0 -1px white, 0 -8px 0 -1px white, 7px 0 0 -1px white, 8px 0 0 -1px white;
+  box-shadow: -7px 0 0 -1px white,  -8px 0 0 -1px white,  0 -7px 0 -1px white,  0 -8px 0 -1px white,  7px 0 0 -1px white, 8px 0 0 -1px white;
 }
 
 .dashboardLow.icon {
@@ -6048,7 +10081,7 @@ body {
 }
 .dashboardLow.icon.filled:after {
   border-color: white;
-  box-shadow: -7px 0 0 -1px white, -8px 0 0 -1px white, 0 -7px 0 -1px white, 0 -8px 0 -1px white, 7px 0 0 -1px white, 8px 0 0 -1px white;
+  box-shadow: -7px 0 0 -1px white,  -8px 0 0 -1px white,  0 -7px 0 -1px white,  0 -8px 0 -1px white,  7px 0 0 -1px white, 8px 0 0 -1px white;
 }
 
 .dashboardHigh.icon {
@@ -6090,7 +10123,7 @@ body {
 }
 .dashboardHigh.icon.filled:after {
   border-color: white;
-  box-shadow: -7px 0 0 -1px white, -8px 0 0 -1px white, 0 -7px 0 -1px white, 0 -8px 0 -1px white, 7px 0 0 -1px white, 8px 0 0 -1px white;
+  box-shadow: -7px 0 0 -1px white,  -8px 0 0 -1px white,  0 -7px 0 -1px white,  0 -8px 0 -1px white,  7px 0 0 -1px white, 8px 0 0 -1px white;
 }
 
 .verticalAlignCenter.icon {
@@ -7169,3322 +11202,6 @@ body {
   border-right: solid 1px currentColor;
   right: -2px;
   top: -2px;
-}
-
-.search.icon:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  height: 6px;
-  width: 1px;
-  background-color: currentColor;
-}
-
-.search.icon {
-  color: black;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.search.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  width: 10px;
-  height: 10px;
-  background-color: currentColor;
-  border-radius: 50%;
-}
-
-.search.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  width: 1px;
-  height: 6px;
-  background-color: currentColor;
-}
-
-.search.filled.icon {
-  color: black;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.search-plusI.icon:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  height: 6px;
-  width: 1px;
-  background-color: currentColor;
-}
-
-.search-plusI.icon i:after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.search-plusI.icon i:before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.search-plusI.icon i {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.search-plusI.icon {
-  color: black;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.search-plusI.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  height: 6px;
-  width: 1px;
-  background-color: currentColor;
-}
-
-.search-plusI.filled.icon i:after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.search-plusI.filled.icon i:before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-}
-
-.search-plusI.filled.icon i {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.search-plusI.filled.icon {
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.search-minusI.icon:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  height: 6px;
-  width: 1px;
-  background-color: currentColor;
-}
-
-.search-minusI.icon i:before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.search-minusI.icon i {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.search-minusI.icon {
-  color: black;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.search-minusI.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  height: 6px;
-  width: 1px;
-  background-color: currentColor;
-}
-
-.search-minusI.filled.icon i:before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-}
-
-.search-minusI.filled.icon i {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.search-minusI.filled.icon {
-  color: black;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.close.icon:after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  width: 21px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.close.icon:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  width: 21px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.close.icon {
-  color: #000;
-  position: absolute;
-  margin-top: 0;
-  margin-left: 0;
-  width: 21px;
-  height: 21px;
-}
-
-.hamburger.icon:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.hamburger.icon:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.hamburger.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 10px;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.arrowLeft.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: -5px;
-  width: 10px;
-  height: 10px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-
-.arrowLeft.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 16px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.arrowRight.icon:before {
-  content: '';
-  position: absolute;
-  right: 1px;
-  top: -5px;
-  width: 10px;
-  height: 10px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.arrowRight.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 10px;
-  width: 16px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.arrowUp.icon:before {
-  content: '';
-  position: absolute;
-  left: -5px;
-  top: 1px;
-  width: 10px;
-  height: 10px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.arrowUp.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 3px;
-  width: 1px;
-  height: 16px;
-  background-color: currentColor;
-}
-
-.arrowDown.icon:before {
-  content: '';
-  position: absolute;
-  left: -5px;
-  top: 3px;
-  width: 10px;
-  height: 10px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.arrowDown.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 2px;
-  width: 1px;
-  height: 16px;
-  background-color: currentColor;
-}
-
-.plus.icon:after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.plus.icon:before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.plus.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-}
-
-.minus.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 15px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.check.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 4px;
-  width: 14px;
-  height: 8px;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.remove.icon:after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.remove.icon:before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.remove.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-}
-
-.trash.icon:after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 7px;
-  height: 2px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-radius: 4px 4px 0 0;
-}
-
-.trash.icon:before {
-  content: '';
-  position: absolute;
-  left: -4px;
-  top: -2px;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.trash.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 7px;
-  width: 9px;
-  height: 10px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-radius: 0 0 2px 2px;
-}
-
-.trash.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 7px;
-  height: 2px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 4px 4px 0 0;
-}
-
-.trash.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: -4px;
-  top: -2px;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.trash.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 7px;
-  width: 9px;
-  height: 10px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-radius: 0 0 2px 2px;
-  background-color: currentColor;
-}
-
-.audio.icon:after {
-  content: '';
-  position: absolute;
-  left: 4px;
-  bottom: -4px;
-  width: 1px;
-  height: 4px;
-  background-color: currentColor;
-}
-
-.audio.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: -6px;
-  width: 5px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-radius: 4px;
-}
-
-.audio.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 8px;
-  width: 9px;
-  height: 7px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-radius: 0 0 50% 50%;
-}
-
-.audio.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 4px;
-  bottom: -4px;
-  width: 1px;
-  height: 4px;
-  background-color: currentColor;
-}
-
-.audio.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: -6px;
-  width: 5px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-radius: 4px;
-  background-color: currentColor;
-}
-
-.audio.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 8px;
-  width: 9px;
-  height: 7px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-radius: 0 0 50% 50%;
-}
-
-.pin.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 4px;
-  height: 4px;
-  border: solid 1px currentColor;
-  border-radius: 3px;
-}
-
-.pin.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 2px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  border-radius: 7px 7px 7px 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.pin.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 4px;
-  height: 4px;
-  color: white;
-  border: solid 1px currentColor;
-  border-radius: 3px;
-  background-color: currentColor;
-}
-
-.pin.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 2px;
-  width: 12px;
-  height: 12px;
-  border: solid 1px currentColor;
-  border-radius: 7px 7px 7px 0;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.chat.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 8px;
-  width: 4px;
-  height: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: white;
-  border-bottom: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.chat.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-radius: 2px;
-}
-
-.chat.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 8px;
-  width: 4px;
-  height: 4px;
-  background-color: currentColor;
-  border-bottom: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.chat.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 2px;
-}
-
-.stop.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: -1px;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.stop.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.stop.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: -1px;
-  width: 17px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.stop.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 8px;
-}
-
-.clock.icon:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 5px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  position: relative;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.filled.icon:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 5px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  background-color: currentColor;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.h3m30.icon:after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h3m30.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 5px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h3m30.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.h3m30.filled.icon:after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h3m30.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 5px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h3m30.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  background-color: currentColor;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.h9m0.icon:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m0.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 3px;
-  width: 5px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m0.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.h9m0.filled.icon:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m0.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 3px;
-  width: 5px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m0.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  background-color: currentColor;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.h9m30.icon:after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m30.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 3px;
-  width: 5px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m30.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.clock.h9m30.filled.icon:after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 1px;
-  height: 6px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m30.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 3px;
-  width: 5px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.clock.h9m30.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  background-color: currentColor;
-  border: solid 1px currentColor;
-  border-radius: 8px;
-}
-
-.profile.icon:before {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: -10px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.profile.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 11px;
-  width: 14px;
-  height: 6px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px transparent;
-  border-radius: 6px 6px 0 0;
-}
-
-.profile.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: -10px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.profile.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 11px;
-  width: 14px;
-  height: 6px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px transparent;
-  background-color: currentColor;
-  border-radius: 6px 6px 0 0;
-}
-
-.bell.icon:after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: -3px;
-  width: 15px;
-  height: 0px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px white;
-}
-
-.bell.icon:before {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 2px;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.bell.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 2px;
-  width: 9px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-radius: 5px 5px 0 0;
-}
-
-.bell.filled.icon:after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: -3px;
-  width: 15px;
-  height: 0px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px white;
-}
-
-.bell.filled.icon:before {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 2px;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.bell.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 2px;
-  width: 9px;
-  height: 10px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 5px 5px 0 0;
-}
-
-.heart.icon:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 8px;
-  width: 5px;
-  height: 8px;
-  border-radius: 0 5px 5px 0;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.heart.icon:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -1px;
-  width: 8px;
-  height: 5px;
-  border-radius: 5px 5px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.heart.icon {
-  color: #000;
-  position: absolute;
-  margin-top: 6px;
-  margin-left: 5px;
-  width: 9px;
-  height: 9px;
-  border-left: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.heart.filled.icon:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 8px;
-  width: 5px;
-  height: 8px;
-  border-radius: 0 5px 5px 0;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.heart.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -1px;
-  width: 8px;
-  height: 5px;
-  border-radius: 5px 5px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.heart.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-top: 6px;
-  margin-left: 5px;
-  width: 9px;
-  height: 9px;
-  border-left: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.print.icon:after {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: -1px;
-  width: 13px;
-  height: 3px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  background-color: white;
-}
-
-.print.icon:before {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: -3px;
-  height: 13px;
-  width: 9px;
-  border: solid 1px currentColor;
-  background-color: white;
-}
-
-.print.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 15px;
-  height: 6px;
-  border: solid 1px currentColor;
-  border-radius: 1px 1px 0 0;
-}
-
-.print.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: -1px;
-  width: 13px;
-  height: 3px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.print.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: -3px;
-  height: 13px;
-  width: 9px;
-  border: solid 1px currentColor;
-  background-color: white;
-}
-
-.print.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 15px;
-  height: 6px;
-  border-radius: 1px 1px 0 0;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.edit.icon:before {
-  content: '';
-  position: absolute;
-  left: -12px;
-  top: -1px;
-  width: 0px;
-  height: 0px;
-  border-left: solid 5px transparent;
-  border-right: solid 5px currentColor;
-  border-top: solid 2px transparent;
-  border-bottom: solid 2px transparent;
-}
-
-.edit.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 7px;
-  width: 14px;
-  height: 2px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.edit.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: -12px;
-  top: -1px;
-  width: 0px;
-  height: 0px;
-  border-left: solid 5px transparent;
-  border-right: solid 5px currentColor;
-  border-top: solid 2px transparent;
-  border-bottom: solid 2px transparent;
-}
-
-.edit.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 7px;
-  width: 14px;
-  height: 2px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.link.icon:after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  right: -7px;
-  width: 8px;
-  height: 5px;
-  border-radius: 2px;
-  border: solid 1px currentColor;
-}
-
-.link.icon:before {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -7px;
-  width: 8px;
-  height: 5px;
-  border-radius: 2px;
-  border: solid 1px currentColor;
-}
-
-.link.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 8px;
-  margin-top: 10px;
-  width: 7px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.map.icon:after {
-  content: '';
-  position: absolute;
-  left: 4px;
-  top: -3px;
-  width: 4px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  -webkit-transform: skewY(-40deg);
-          transform: skewY(-40deg);
-}
-
-.map.icon:before {
-  content: '';
-  position: absolute;
-  left: -6px;
-  top: 1px;
-  width: 4px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  -webkit-transform: skewY(-40deg);
-          transform: skewY(-40deg);
-}
-
-.map.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 8px;
-  margin-top: 4px;
-  width: 4px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  -webkit-transform: skewY(20deg);
-          transform: skewY(20deg);
-}
-
-.mail.icon:after {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: -4px;
-  width: 1px;
-  height: 10px;
-  background-color: currentColor;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotate(54deg);
-          transform: rotate(54deg);
-}
-
-.mail.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: -4px;
-  width: 1px;
-  height: 10px;
-  background-color: currentColor;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotate(-54deg);
-          transform: rotate(-54deg);
-}
-
-.mail.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.mail.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: -4px;
-  width: 1px;
-  height: 10px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotate(54deg);
-          transform: rotate(54deg);
-}
-
-.mail.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: -4px;
-  width: 1px;
-  height: 10px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotate(-54deg);
-          transform: rotate(-54deg);
-}
-
-.mail.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.bookmark.icon:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 1px;
-  width: 7px;
-  height: 7px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.bookmark.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 3px;
-  width: 10px;
-  height: 15px;
-  border-radius: 1px 1px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.bookmark.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 1px;
-  width: 7px;
-  height: 7px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  background-color: white;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.bookmark.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 3px;
-  width: 10px;
-  height: 15px;
-  border-radius: 1px 1px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.camera.icon:after {
-  content: '';
-  position: absolute;
-  right: 2px;
-  top: -2px;
-  width: 4px;
-  height: 1px;
-  border-radius: 1px 1px 0 0;
-  background-color: currentColor;
-}
-
-.camera.icon:before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 2px;
-  width: 4px;
-  height: 4px;
-  border-radius: 3px;
-  border: solid 1px currentColor;
-}
-
-.camera.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 16px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.camera.filled.icon:after {
-  content: '';
-  position: absolute;
-  right: 2px;
-  top: -2px;
-  width: 4px;
-  height: 1px;
-  border-radius: 1px 1px 0 0;
-  background-color: currentColor;
-}
-
-.camera.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 2px;
-  width: 4px;
-  height: 4px;
-  border-radius: 3px;
-  color: white;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.camera.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 16px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.focus.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -2px;
-  width: 9px;
-  height: 19px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.focus.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -2px;
-  width: 9px;
-  height: 19px;
-  color: white;
-  background-color: currentColor;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
-.focus.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 15px;
-  height: 15px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.card.icon:after {
-  content: '';
-  position: absolute;
-  right: 1px;
-  bottom: 2px;
-  width: 4px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.card.icon:before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: -1px;
-  width: 17px;
-  height: 2px;
-  background-color: currentColor;
-}
-
-.card.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.card.filled.icon:after {
-  content: '';
-  position: absolute;
-  right: 1px;
-  bottom: 2px;
-  width: 4px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-}
-
-.card.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: -1px;
-  width: 17px;
-  height: 2px;
-  color: white;
-  background-color: currentColor;
-}
-
-.card.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.lock.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -8px;
-  width: 5px;
-  height: 6px;
-  border-radius: 4px 4px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.lock.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 13px;
-  height: 6px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.lock.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -8px;
-  width: 5px;
-  height: 6px;
-  border-radius: 4px 4px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.lock.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 13px;
-  height: 6px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.lock.unlocked.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -4px;
-  width: 1px;
-  height: 3px;
-  background-color: currentColor;
-}
-
-.lock.unlocked.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -8px;
-  width: 5px;
-  height: 3px;
-  border-radius: 4px 4px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.lock.unlocked.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 13px;
-  height: 6px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-}
-
-.lock.unlocked.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -4px;
-  width: 1px;
-  height: 3px;
-  background-color: currentColor;
-}
-
-.lock.unlocked.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -8px;
-  width: 5px;
-  height: 3px;
-  border-radius: 4px 4px 0 0;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.lock.unlocked.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 10px;
-  width: 13px;
-  height: 6px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.code.icon:after {
-  content: '';
-  position: absolute;
-  left: 6px;
-  width: 8px;
-  height: 8px;
-  border-bottom: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.code.icon:before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.code.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 6px;
-}
-
-.flag.icon:before {
-  content: '';
-  position: absolute;
-  left: -3px;
-  top: -2px;
-  width: 1px;
-  height: 15px;
-  background-color: currentColor;
-}
-
-.flag.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 4px;
-  width: 9px;
-  height: 6px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.flag.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: -3px;
-  top: -2px;
-  width: 1px;
-  height: 15px;
-  background-color: currentColor;
-}
-
-.flag.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 4px;
-  width: 9px;
-  height: 6px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.tag.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  background-color: currentColor;
-}
-
-.tag.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  width: 9px;
-  height: 10px;
-  border-radius: 1px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.tag.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 3px;
-  width: 7px;
-  height: 7px;
-  border-radius: 1px 1px 1px 0;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-}
-
-.tag.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  color: white;
-  background-color: currentColor;
-}
-
-.tag.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  width: 9px;
-  height: 10px;
-  border-radius: 1px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.tag.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 3px;
-  width: 7px;
-  height: 7px;
-  border-radius: 1px 1px 1px 0;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.signal.icon:after {
-  content: '';
-  position: absolute;
-  left: -9px;
-  top: -9px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  border-left: solid 1px transparent;
-}
-
-.signal.icon:before {
-  content: '';
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  border-left: solid 1px transparent;
-}
-
-.signal.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 7px;
-  margin-top: 13px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  border-left: solid 1px transparent;
-}
-
-.export.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -5px;
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.export.icon:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: 2px;
-  width: 1px;
-  height: 8px;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-  background-color: currentColor;
-}
-
-.export.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 7px;
-  width: 11px;
-  height: 9px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.upload.icon:after {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 4px;
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.upload.icon:before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 6px;
-  width: 1px;
-  height: 9px;
-  background-color: currentColor;
-}
-
-.upload.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 12px;
-  width: 13px;
-  height: 4px;
-  border: solid 1px currentColor;
-  border-top: none;
-  border-radius: 1px;
-}
-
-.import.icon:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 1px;
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.import.icon:before {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: 2px;
-  width: 1px;
-  height: 10px;
-  background-color: currentColor;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-}
-
-.import.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 5px;
-  width: 11px;
-  height: 11px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-}
-
-.download.icon:after {
-  content: '';
-  position: absolute;
-  left: 4px;
-  top: -4px;
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.download.icon:before {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: -9px;
-  width: 1px;
-  height: 10px;
-  background-color: currentColor;
-}
-
-.download.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 12px;
-  width: 13px;
-  height: 4px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  border-top: none;
-}
-
-.upload2.icon:after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.upload2.icon:before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 2px;
-  width: 1px;
-  height: 10px;
-  background-color: currentColor;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-}
-
-.upload2.icon {
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 3px;
-  width: 11px;
-  height: 11px;
-  border: solid 1px currentColor;
-  border-radius: 1px;
-}
-
-.shutdown.icon:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: -2px;
-  width: 1px;
-  height: 8px;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-  background-color: currentColor;
-}
-
-.shutdown.icon {
-  color: #000;
-  position: absolute;
-  margin-top: 3px;
-  margin-left: 3px;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.paperclip.icon:after {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  width: 2px;
-  height: 10px;
-  border-radius: 4px 4px 0 0;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-}
-
-.paperclip.icon:before {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: -1px;
-  width: 4px;
-  height: 6px;
-  border-radius: 0 0 3px 3px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.paperclip.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 9px;
-  margin-top: 2px;
-  width: 6px;
-  height: 12px;
-  border-radius: 4px 4px 0 0;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.retweet.icon:after {
-  content: '';
-  position: absolute;
-  right: -3px;
-  bottom: -2px;
-  width: 0;
-  height: 0;
-  border-top: solid 3px currentColor;
-  border-bottom: solid 3px white;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-}
-
-.retweet.icon:before {
-  content: '';
-  position: absolute;
-  left: -3px;
-  top: -2px;
-  width: 0;
-  height: 0;
-  border-top: solid 3px white;
-  border-bottom: solid 3px currentColor;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-}
-
-.retweet.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 3px;
-  margin-top: 5px;
-  width: 13px;
-  height: 9px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.key.icon:after {
-  content: '';
-  position: absolute;
-  left: 13px;
-  top: 3px;
-  width: 1px;
-  height: 3px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.key.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 11px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.key.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 6px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.key.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 13px;
-  top: 3px;
-  width: 1px;
-  height: 3px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.key.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 11px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.key.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 6px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.key2.icon:after {
-  content: '';
-  position: absolute;
-  left: 14px;
-  top: 0px;
-  width: 1px;
-  height: 3px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.key2.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 12px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.key2.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 2px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.key2.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 14px;
-  top: 0px;
-  width: 1px;
-  height: 3px;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.key2.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 12px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.key2.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 2px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.refresh.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 10px;
-  width: 3px;
-  height: 3px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  -webkit-transform: rotate(-22.5deg);
-          transform: rotate(-22.5deg);
-}
-
-.refresh.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px transparent;
-  border-right: solid 1px currentColor;
-}
-
-.pilcrow.icon:before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: -1px;
-  height: 16px;
-  width: 2px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.pilcrow.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 5px 0 0 5px;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.pilcrow.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: -1px;
-  height: 16px;
-  width: 2px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.pilcrow.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 5px 0 0 5px;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.justified.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 17px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.justified.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.paragraph-direction.icon:after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 6px;
-  width: 0;
-  height: 0;
-  border-left: solid 2px white;
-  border-right: solid 2px currentColor;
-  border-top: solid 2px white;
-  border-bottom: solid 2px white;
-}
-
-.paragraph-direction.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 16px;
-  height: 2px;
-  border-radius: 0 2px 2px 0;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-
-.paragraph-direction.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 8px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.leftaligned.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 11px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.leftaligned.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.centered.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  width: 11px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.centered.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.rightaligned.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  right: 0;
-  width: 11px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.rightaligned.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 5px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.indent.icon:after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  width: 0;
-  height: 0;
-  border-top: solid 3px transparent;
-  border-bottom: solid 3px transparent;
-  border-left: solid 3px currentColor;
-  border-right: solid 3px transparent;
-}
-
-.indent.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  right: 0;
-  width: 11px;
-  height: 2px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.indent.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 8px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.outdent.icon:after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: -3px;
-  width: 0;
-  height: 0;
-  border-top: solid 3px transparent;
-  border-bottom: solid 3px transparent;
-  border-left: solid 3px transparent;
-  border-right: solid 3px currentColor;
-}
-
-.outdent.icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  right: 0;
-  width: 11px;
-  height: 2px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.outdent.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 6px;
-  width: 17px;
-  height: 8px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.mouse.icon:after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: 5px;
-  width: 1px;
-  height: 7px;
-  background-color: currentColor;
-}
-
-.mouse.icon:before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: -1px;
-  width: 13px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.mouse.icon {
-  color: black;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 1px;
-  width: 11px;
-  height: 17px;
-  border: solid 1px currentColor;
-  border-radius: 6px;
-}
-
-.mouse.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: -1px;
-  width: 1px;
-  height: 7px;
-  color: white;
-  background-color: currentColor;
-}
-
-.mouse.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: -1px;
-  width: 13px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-}
-
-.mouse.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 4px;
-  margin-top: 1px;
-  width: 11px;
-  height: 17px;
-  border-radius: 6px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.keyboard.icon:after {
-  content: '';
-  position: absolute;
-  bottom: 1px;
-  left: 4px;
-  width: 9px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.keyboard.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 1px;
-  height: 1px;
-  border: 1px solid transparent;
-  box-shadow: -2px 0 0 -1px currentColor,  2px 0 0 -1px currentColor,  0 -2px 0 -1px currentColor,  0 2px 0 -1px currentColor,  -6px 0 0 -1px currentColor,  6px 0 0 -1px currentColor,  -4px -2px 0 -1px currentColor,  -4px 2px 0 -1px currentColor,  4px -2px 0 -1px currentColor,  4px 2px 0 -1px currentColor;
-}
-
-.keyboard.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 4px;
-  width: 17px;
-  height: 11px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-}
-
-.keyboard.filled.icon:after {
-  content: '';
-  position: absolute;
-  bottom: 1px;
-  left: 4px;
-  width: 9px;
-  height: 1px;
-  color: white;
-  background-color: currentColor;
-}
-
-.keyboard.filled.icon:before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 1px;
-  height: 1px;
-  border: 1px solid transparent;
-  color: white;
-  box-shadow: -2px 0 0 -1px currentColor,  2px 0 0 -1px currentColor,  0 -2px 0 -1px currentColor,  0 2px 0 -1px currentColor,  -6px 0 0 -1px currentColor,  6px 0 0 -1px currentColor,  -4px -2px 0 -1px currentColor,  -4px 2px 0 -1px currentColor,  4px -2px 0 -1px currentColor,  4px 2px 0 -1px currentColor;
-}
-
-.keyboard.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 4px;
-  width: 17px;
-  height: 11px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.doubleQuoteLeft.icon:after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 9px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.doubleQuoteLeft.icon:before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.doubleQuoteLeft.icon i:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 9px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteLeft.icon i:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteLeft.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-}
-
-.doubleQuoteLeft.filled.icon:after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
-  top: 3px;
-  left: 9px;
-}
-
-.doubleQuoteLeft.filled.icon:before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
-  top: 3px;
-}
-
-.doubleQuoteLeft.filled.icon i:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 9px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteLeft.filled.icon i:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteLeft.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-}
-
-.doubleQuoteRight.icon:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 9px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.doubleQuoteRight.icon:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.doubleQuoteRight.icon i:after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: 3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px transparent;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteRight.icon i:before {
-  content: '';
-  position: absolute;
-  left: -6px;
-  top: -3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px transparent;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteRight.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-}
-
-.doubleQuoteRight.filled.icon:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 9px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.doubleQuoteRight.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.doubleQuoteRight.filled.icon i:after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: 3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px transparent;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteRight.filled.icon i:before {
-  content: '';
-  position: absolute;
-  left: -6px;
-  top: -3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px transparent;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.doubleQuoteRight.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 17px;
-  height: 11px;
-}
-
-.singleQuoteLeft.icon:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.singleQuoteLeft.icon:before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.singleQuoteLeft.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-}
-
-.singleQuoteLeft.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.singleQuoteLeft.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.singleQuoteLeft.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-}
-
-.singleQuoteRight.icon:after {
-  content: '';
-  position: absolute;
-  left: -6px;
-  top: -3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-left: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.singleQuoteRight.icon:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-}
-
-.singleQuoteRight.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-}
-
-.singleQuoteRight.filled.icon:after {
-  content: '';
-  position: absolute;
-  left: -6px;
-  top: -3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px transparent;
-  border-left: solid 1px transparent;
-  border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.singleQuoteRight.filled.icon:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  background-color: currentColor;
-}
-
-.singleQuoteRight.filled.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 5px;
-  width: 9px;
-  height: 11px;
-}
-
-.beard.icon:after {
-  content: '';
-  position: absolute;
-  width: 7px;
-  height: 4px;
-  left: 13px;
-  top: 4px;
-  border-radius: 0 0 100% 0;
-  border: 0 solid transparent;
-  border-bottom: 6px solid currentColor;
-  -webkit-transform-origin: left 7px;
-          transform-origin: left 7px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-
-.beard.icon:before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 4px;
-  width: 7px;
-  height: 4px;
-  border-radius: 0 0 0 100%;
-  border: 0 solid transparent;
-  border-bottom: 6px solid currentColor;
-  -webkit-transform-origin: right 7px;
-          transform-origin: right 7px;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-}
-
-.beard.icon {
-  color: #000;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  box-shadow: 5px 8px 0 0 currentColor,  10px 8px 0 0 currentColor;
 }
 
 /*# sourceMappingURL=icons.css.map */

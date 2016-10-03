@@ -7,5 +7,6 @@
   height: 10px;
   border-radius: 1px;
   border: solid 1px currentColor;
-  transform: skewY(20deg);
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
 }

@@ -1,5 +1,5 @@
 @import '../../mixin';
-.key2.filled.icon {
+.key2-solid.icon {
   &:after {
     @include pseudo();
     left: 14px;

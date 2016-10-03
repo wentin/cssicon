@@ -1,0 +1,13 @@
+.mustache.icon {
+  i {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 
+      6px 9px 0 0 currentColor, 
+      11px 9px 0 0 currentColor;
+    position: absolute;
+    z-index: 2;
+  }
+}

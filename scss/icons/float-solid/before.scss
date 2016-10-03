@@ -1,0 +1,13 @@
+@import '../../mixin';
+.float-solid.icon { 
+  &:before {
+    @include pseudo();
+    top: 3px;
+    left: -5px;
+    width: 17px;
+    height: 1px;
+    transform: rotate(-45deg);
+    color: white;
+    background-color: currentColor;
+  }
+}

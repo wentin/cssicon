@@ -1,5 +1,5 @@
 @import '../../mixin';
-.trash.filled.icon {
+.trash-solid.icon {
   &:before {
     @include pseudo();
     left: -4px;

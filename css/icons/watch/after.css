@@ -1,0 +1,10 @@
+.watch.icon:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 3px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}

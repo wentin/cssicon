@@ -1,0 +1,11 @@
+@import '../../mixin';
+.mobile.icon {
+  &:before {
+    @include pseudo();
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

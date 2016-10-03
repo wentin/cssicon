@@ -1,0 +1,11 @@
+.float-solid.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  z-index: 2;
+}

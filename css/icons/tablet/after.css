@@ -1,0 +1,9 @@
+.tablet.icon:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 6px;
+  width: 3px;
+  height: 1px;
+  background-color: currentColor;
+}

@@ -1,0 +1,11 @@
+@import '../../mixin';
+.tv-solid.icon {
+  &:before {
+    @include pseudo();
+    left: 7px;
+    bottom: -4px;
+    width: 1px;
+    height: 3px;
+    background-color: currentColor;
+  }
+}

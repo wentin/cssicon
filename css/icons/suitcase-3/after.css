@@ -1,0 +1,9 @@
+.suitcase-3.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  width: 7px;
+  height: 10px;
+  color: white;
+  background-color: currentColor;
+}

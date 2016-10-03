@@ -1,5 +1,5 @@
 @import '../../mixin';
-.doubleQuoteLeft.filled.icon {
+.left-double-quote-solid.icon {
   &:after {
     @include pseudo();
     width: 6px;

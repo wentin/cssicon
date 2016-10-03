@@ -6,6 +6,8 @@
   width: 1px;
   height: 10px;
   background-color: currentColor;
-  transform-origin: bottom;
-  transform: rotate(-54deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
 }

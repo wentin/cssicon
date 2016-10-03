@@ -1,5 +1,5 @@
 @import '../../mixin';
-.search.filled.icon {
+.search-solid.icon {
   &:after {
     @include pseudo();
     left: 1px;

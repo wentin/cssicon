@@ -1,5 +1,5 @@
 @import '../../mixin';
-.flag.filled.icon {
+.flag-solid.icon {
   &:before {
     @include pseudo();
     left: -3px;

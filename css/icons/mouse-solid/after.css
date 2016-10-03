@@ -1,4 +1,4 @@
-.mouse.filled.icon:after {
+.mouse-solid.icon:after {
   content: '';
   position: absolute;
   left: 5px;

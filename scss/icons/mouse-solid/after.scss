@@ -1,5 +1,5 @@
 @import '../../mixin';
-.mouse.filled.icon {
+.mouse-solid.icon {
   &:after {
     @include pseudo();
     left: 5px;

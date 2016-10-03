@@ -1,0 +1,11 @@
+@import '../../mixin';
+.suitcase-3.icon {
+  &:after {
+    @include pseudo();
+    left: 4px;
+    width: 7px;
+    height: 10px;
+    color: white;
+    background-color: currentColor;
+  }
+}

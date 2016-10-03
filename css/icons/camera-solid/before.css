@@ -1,4 +1,4 @@
-.camera.filled.icon:before {
+.camera-solid.icon:before {
   content: '';
   position: absolute;
   left: 5px;

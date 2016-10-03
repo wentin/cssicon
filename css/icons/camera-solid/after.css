@@ -1,4 +1,4 @@
-.camera.filled.icon:after {
+.camera-solid.icon:after {
   content: '';
   position: absolute;
   right: 2px;

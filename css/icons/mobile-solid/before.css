@@ -1,0 +1,10 @@
+.mobile-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  width: 2px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}

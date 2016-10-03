@@ -70,7 +70,8 @@ app.controller("MainCtrl", ['$scope','$http', '$filter', '$q', function($scope, 
     $scope.handleIconClick = function(icon){
       $scope.selectedIcon = icon;
       $scope.selectedIcon.cssBlocks = {};
-      var iconName = icon.name.replace(/\s+/g, '-').toLowerCase();
+      // var iconName = icon.name.replace(/\s+/g, '-').toLowerCase();
+      var iconName = icon.classNames;
       var cssIconHttp = $http.get('../css/icons/' + iconName + '/main.css').then(function(res){
         //success
         $scope.selectedIcon.cssBlocks.cssIcon = res.data;

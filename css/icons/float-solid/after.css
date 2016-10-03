@@ -1,0 +1,12 @@
+.float-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: white;
+  background-color: currentColor;
+}

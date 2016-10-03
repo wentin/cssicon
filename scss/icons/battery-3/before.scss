@@ -1,0 +1,14 @@
+@import '../../mixin';
+.battery-3.icon {
+  &:before {
+    @include pseudo();
+    right: -3px;
+    top: 1px;
+    width: 2px;
+    height: 3px;
+    border-radius: 0 2px 2px 0;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}

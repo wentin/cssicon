@@ -1,4 +1,4 @@
-.bell.filled.icon:before {
+.bell-solid.icon:before {
   content: '';
   position: absolute;
   bottom: -5px;

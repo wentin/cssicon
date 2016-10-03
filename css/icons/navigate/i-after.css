@@ -1,0 +1,12 @@
+.navigate.icon i:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-top: solid 4px transparent;
+  border-bottom: solid 4px currentColor;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+}

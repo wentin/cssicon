@@ -1,5 +1,5 @@
 @import '../../mixin';
-.clock.filled.icon {
+.clock-solid.icon {
   &:after {
     @include pseudo();
     top: 2px;

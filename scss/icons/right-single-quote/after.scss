@@ -1,5 +1,5 @@
 @import '../../mixin';
-.singleQuoteRight.icon {
+.right-single-quote.icon {
   &:after {
     @include pseudo();
     left: -6px;

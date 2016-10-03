@@ -1,4 +1,4 @@
-.print.filled.icon:after {
+.print-solid.icon:after {
   content: '';
   position: absolute;
   left: 1px;

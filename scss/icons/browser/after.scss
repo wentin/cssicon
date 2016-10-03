@@ -1,0 +1,10 @@
+@import '../../mixin';
+.browser.icon {
+  &:after {
+    @include pseudo();
+    top: 7px;
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

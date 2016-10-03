@@ -1,4 +1,4 @@
-.pin.filled.icon:before {
+.pin-solid.icon:before {
   content: '';
   position: absolute;
   left: 3px;

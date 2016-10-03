@@ -1,0 +1,14 @@
+@import '../../mixin';
+.navigate.icon {
+  &:before {
+    @include pseudo();
+    left: 0;
+    top: -17px;
+    width: 0;
+    height: 0;
+    border-top: solid 18px transparent;
+    border-bottom: solid 18px currentColor;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent;
+  }
+}

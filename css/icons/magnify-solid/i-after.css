@@ -1,9 +1,10 @@
-.search-plusI.filled.icon i:after {
+.magnify-solid.icon i:after {
   content: '';
   position: absolute;
   width: 6px;
   height: 1px;
   color: white;
   background-color: currentColor;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }

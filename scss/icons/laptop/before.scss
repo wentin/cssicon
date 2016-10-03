@@ -1,0 +1,12 @@
+@import '../../mixin';
+.laptop.icon {
+  &:before {
+    @include pseudo();
+    left: -4px;
+    bottom: -5px;
+    width: 18px;
+    height: 1px;
+    border-radius: 0 0 2px 2px;
+    border: solid 1px currentColor;
+  }
+}

@@ -1,0 +1,16 @@
+.mustache.icon i:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 6px;
+  width: 6px;
+  height: 3px;
+  color: white;
+  border: 0 solid transparent;
+  border-bottom: 4px solid currentColor;
+  border-radius: 0 0 0 100%;
+  -webkit-transform-origin: right 5px;
+          transform-origin: right 5px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}

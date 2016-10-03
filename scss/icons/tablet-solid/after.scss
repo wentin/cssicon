@@ -1,0 +1,12 @@
+@import '../../mixin';
+.tablet-solid.icon {
+  &:after {
+    @include pseudo();
+    bottom: -2px;
+    left: 6px;
+    width: 3px;
+    height: 1px;
+    color: white;
+    background-color: currentColor;
+  }
+}

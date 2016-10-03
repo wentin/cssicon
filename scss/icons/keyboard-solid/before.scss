@@ -1,5 +1,5 @@
 @import '../../mixin';
-.keyboard.filled.icon {
+.keyboard-solid.icon {
   &:before {
     @include pseudo();
     left: 7px;

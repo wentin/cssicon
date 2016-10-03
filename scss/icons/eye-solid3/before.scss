@@ -1,0 +1,13 @@
+@import '../../mixin';
+.eye-solid3.icon {
+  &:before {
+    @include pseudo();
+    left: 2px;
+    top: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    color: white;
+    border: solid 1px currentColor;
+  }
+}

@@ -1,4 +1,4 @@
-.search-minusI.filled.icon {
+.minify-solid.icon {
   color: black;
   position: absolute;
   margin-top: 2px;
@@ -8,5 +8,6 @@
   border: solid 1px currentColor;
   background-color: currentColor;
   border-radius: 100%;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }

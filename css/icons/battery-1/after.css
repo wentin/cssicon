@@ -1,0 +1,9 @@
+.battery-1.icon:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 4px;
+  height: 5px;
+  background-color: currentColor;
+}

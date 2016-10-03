@@ -1,5 +1,5 @@
 @import '../../mixin';
-.lock.filled.icon {
+.lock-solid.icon {
   &:before {
     @include pseudo();
     left: 3px;

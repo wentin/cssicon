@@ -4,5 +4,6 @@
   width: 15px;
   height: 1px;
   background-color: currentColor;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }

@@ -1,4 +1,4 @@
-.keyboard.filled.icon:before {
+.keyboard-solid.icon:before {
   content: '';
   position: absolute;
   left: 7px;

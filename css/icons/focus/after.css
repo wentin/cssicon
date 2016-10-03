@@ -7,6 +7,8 @@
   height: 19px;
   color: white;
   background-color: currentColor;
-  transform-origin: center;
-  transform: rotate(90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }

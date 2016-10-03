@@ -1,4 +1,4 @@
-.centered.icon:before {
+.center-align.icon:before {
   content: '';
   position: absolute;
   top: 2px;

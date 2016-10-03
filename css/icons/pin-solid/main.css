@@ -1,4 +1,4 @@
-.pin.filled.icon {
+.pin-solid.icon {
   color: #000;
   position: absolute;
   margin-left: 4px;
@@ -8,5 +8,6 @@
   border: solid 1px currentColor;
   border-radius: 7px 7px 7px 0;
   background-color: currentColor;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }

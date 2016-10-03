@@ -1,4 +1,4 @@
-.chat.filled.icon:before {
+.chat-solid.icon:before {
   content: '';
   position: absolute;
   left: 3px;
@@ -8,5 +8,6 @@
   background-color: currentColor;
   border-bottom: solid 1px currentColor;
   border-right: solid 1px currentColor;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

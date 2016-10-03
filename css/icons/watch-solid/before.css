@@ -1,0 +1,11 @@
+.watch-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: solid 1px white;
+  background-color: currentColor;
+}

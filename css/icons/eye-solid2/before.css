@@ -1,0 +1,11 @@
+.eye-solid2.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}

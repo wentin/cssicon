@@ -1,4 +1,4 @@
-.tag.filled.icon:after {
+.tag-solid.icon:after {
   content: '';
   position: absolute;
   left: 3px;

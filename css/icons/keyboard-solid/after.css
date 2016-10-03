@@ -1,4 +1,4 @@
-.keyboard.filled.icon:after {
+.keyboard-solid.icon:after {
   content: '';
   position: absolute;
   bottom: 1px;

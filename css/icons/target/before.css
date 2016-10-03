@@ -1,0 +1,10 @@
+.target.icon:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 7px;
+  width: 11px;
+  height: 1px;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+}

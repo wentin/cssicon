@@ -1,5 +1,5 @@
 @import '../../mixin';
-.centered.icon {
+.center-align.icon {
   &:before {
     @include pseudo();
     top: 2px;

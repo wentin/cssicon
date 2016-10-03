@@ -1,4 +1,4 @@
-.doubleQuoteRight.filled.icon i:before {
+.right-double-quote-solid.icon i:before {
   content: '';
   position: absolute;
   left: -6px;
@@ -10,5 +10,6 @@
   border-top: solid 1px transparent;
   border-right: solid 1px currentColor;
   border-bottom: solid 1px transparent;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

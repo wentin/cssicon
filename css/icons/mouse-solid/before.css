@@ -1,4 +1,4 @@
-.mouse.filled.icon:before {
+.mouse-solid.icon:before {
   content: '';
   position: absolute;
   top: 6px;

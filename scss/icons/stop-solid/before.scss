@@ -1,5 +1,5 @@
 @import '../../mixin';
-.stop.filled.icon {
+.stop-solid.icon {
   &:before {
     @include pseudo();
     top: 7px;

@@ -1,4 +1,4 @@
-.bell.filled.icon:after {
+.bell-solid.icon:after {
   content: '';
   position: absolute;
   bottom: -2px;

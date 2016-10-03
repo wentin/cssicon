@@ -1,0 +1,8 @@
+.browser.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}

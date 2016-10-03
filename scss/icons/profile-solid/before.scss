@@ -1,5 +1,5 @@
 @import '../../mixin';
-.profile.filled.icon {
+.profile-solid.icon {
   &:before {
     @include pseudo();
     left: 2px;

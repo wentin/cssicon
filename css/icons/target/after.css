@@ -1,0 +1,10 @@
+.target.icon:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -1px;
+  width: 1px;
+  height: 11px;
+  border-top: solid 3px currentColor;
+  border-bottom: solid 3px currentColor;
+}

@@ -1,5 +1,5 @@
 @import '../../mixin';
-.bell.filled.icon {
+.bell-solid.icon {
   &:after {
     @include pseudo();
     bottom: -2px;

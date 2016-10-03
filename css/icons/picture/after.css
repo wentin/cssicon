@@ -1,0 +1,12 @@
+.picture.icon:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 12px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

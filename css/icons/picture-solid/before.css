@@ -1,0 +1,11 @@
+.picture-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  border: solid 1px currentColor;
+}

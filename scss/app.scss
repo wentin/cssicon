@@ -20,7 +20,7 @@ $highlightColor: #3CD5FF;
       cursor: pointer;
       &:hover {
         background-color: black;
-        color: $highlightColor;
+        color: white;
       }
     }
   }
@@ -35,25 +35,34 @@ $highlightColor: #3CD5FF;
   .icon i,
   .icon i:before,
   .icon i:after,
-  .icon.filled:before,
-  .icon.filled:after {   
+  [class*="-solid"]:before,
+  [class*="-solid"]:after {   
     color: black;
   }
-  .icon.filled i,
-  .icon.filled i:before,
-  .icon.filled i:after {
+  [class*="-solid"] i,
+  [class*="-solid"] i:before,
+  [class*="-solid"] i:after {
     color: white;
   }
+
   /* special cases */
-  .pin,
-  .stop,
-  .clock,
-  .mail,
-  .card,
-  .keyboard,
-  .mouse {
-    &.icon.filled:before,
-    &.icon.filled:after {   
+  .pin-solid,
+  .stop-solid,
+  .clock-solid,
+  .clock-h3m30-solid,
+  .clock-h9m0-solid,
+  .clock-h9m30-solid,
+  .mail-solid,
+  .card-solid,
+  .keyboard-solid,
+  .mouse-solid,
+  .browser-solid,
+  .mobile-solid,
+  .target-solid,
+  .picture-solid,
+  .float-solid {
+    &.icon:before,
+    &.icon:after {   
       color: white;
     }
   }
@@ -63,20 +72,40 @@ $highlightColor: #3CD5FF;
       color: white;
     }
   }
-  .camera {
-    &.icon.filled:before {   
+  .camera-solid,
+  .eye-solid2,
+  .eye-solid3 {
+    &.icon:before {   
       color: white;
     }
   }
-  .tag {
-    &.icon.filled:after {   
+  .tag-solid,
+  .battery-solid-0,
+  .battery-solid-1,
+  .battery-solid,
+  .battery-solid-3,
+  .suitcase-1,
+  .suitcase-3,
+  .watch-solid,
+  .navigate,
+  .navigate i,
+  .navigate-solid,
+  .tablet-solid {
+    &.icon:after {   
       color: white;
     }
   }
-  .doubleQuoteLeft,
-  .doubleQuoteRight {
-    &.icon.filled i:before,
-    &.icon.filled i:after {   
+  .mustache.icon {
+    i,
+    i:before,
+    i:after {   
+      color: white;
+    }
+  }
+  .left-double-quote-solid,
+  .right-double-quote-solid {
+    i:before,
+    i:after {   
       color: black;
     }
   }
@@ -99,9 +128,16 @@ $highlightColor: #3CD5FF;
   .icon i:after {
     color: black;
   }
-  .icon.filled i:before,
-  .icon.filled i:after {
+  [class*="-solid"] i:before,
+  [class*="-solid"] i:after {
     color: white;
+  }
+
+  .mustache.icon {
+    i:before,
+    i:after {   
+      color: white;
+    }
   }
 }
 .viewer.cssChildBeforeHover .iconViewer {

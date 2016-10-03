@@ -1,5 +1,5 @@
 @import '../../mixin';
-.hamburger.icon {
+.menu.icon {
   &:before {
     @include pseudo();
     top: -5px;

@@ -1,4 +1,4 @@
-.pilcrow.filled.icon:before {
+.pilcrow-solid.icon:before {
   content: '';
   position: absolute;
   left: 8px;

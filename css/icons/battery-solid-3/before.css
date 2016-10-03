@@ -1,0 +1,10 @@
+.battery-solid-3.icon:before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 3px;
+  height: 5px;
+  border-radius: 0 2px 2px 0;
+  background-color: currentColor;
+}

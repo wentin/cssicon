@@ -1,5 +1,5 @@
 @import '../../mixin';
-.arrowUp.icon {
+.arrow-up.icon {
   &:before {
     @include pseudo();
     left: -5px;

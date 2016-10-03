@@ -182,13 +182,16 @@ button {
   left: -4px;
   top: 10px;
   background-color: black;
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 .viewer .buttonClose:before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .viewer .buttonClose:after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .viewer .viewerWrapper {
   box-sizing: border-box;
@@ -218,8 +221,10 @@ button {
   margin: 40px auto 0 auto;
 }
 .viewer .viewerWrapper .iconWrapperBig .scale {
-  transform: scale(4);
-  transform-origin: left top;
+  -webkit-transform: scale(4);
+          transform: scale(4);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
   display: inline-block;
 }
 .viewer .viewerWrapper .iconLabel {
@@ -443,7 +448,8 @@ button {
   height: 12px;
   border: solid 1px black;
   border-radius: 100%;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   position: relative;
 }
 .search.icon:before {
@@ -468,10 +474,12 @@ button {
   background-color: black;
   position: absolute;
   top: 10px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .close.icon:before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .c {
@@ -563,7 +571,7 @@ button {
   }
   .codeBlocks .codeBlockHover:hover {
     background-color: black;
-    color: #3CD5FF;
+    color: white;
   }
 }
 .viewer.cssIconHover .iconViewer {
@@ -577,42 +585,77 @@ button {
 .viewer.cssIconHover .iconViewer .icon i,
 .viewer.cssIconHover .iconViewer .icon i:before,
 .viewer.cssIconHover .iconViewer .icon i:after,
-.viewer.cssIconHover .iconViewer .icon.filled:before,
-.viewer.cssIconHover .iconViewer .icon.filled:after {
+.viewer.cssIconHover .iconViewer [class*="-solid"]:before,
+.viewer.cssIconHover .iconViewer [class*="-solid"]:after {
   color: black;
 }
-.viewer.cssIconHover .iconViewer .icon.filled i,
-.viewer.cssIconHover .iconViewer .icon.filled i:before,
-.viewer.cssIconHover .iconViewer .icon.filled i:after {
+.viewer.cssIconHover .iconViewer [class*="-solid"] i,
+.viewer.cssIconHover .iconViewer [class*="-solid"] i:before,
+.viewer.cssIconHover .iconViewer [class*="-solid"] i:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .pin.icon.filled:before, .viewer.cssIconHover .iconViewer .pin.icon.filled:after,
-.viewer.cssIconHover .iconViewer .stop.icon.filled:before,
-.viewer.cssIconHover .iconViewer .stop.icon.filled:after,
-.viewer.cssIconHover .iconViewer .clock.icon.filled:before,
-.viewer.cssIconHover .iconViewer .clock.icon.filled:after,
-.viewer.cssIconHover .iconViewer .mail.icon.filled:before,
-.viewer.cssIconHover .iconViewer .mail.icon.filled:after,
-.viewer.cssIconHover .iconViewer .card.icon.filled:before,
-.viewer.cssIconHover .iconViewer .card.icon.filled:after,
-.viewer.cssIconHover .iconViewer .keyboard.icon.filled:before,
-.viewer.cssIconHover .iconViewer .keyboard.icon.filled:after,
-.viewer.cssIconHover .iconViewer .mouse.icon.filled:before,
-.viewer.cssIconHover .iconViewer .mouse.icon.filled:after {
+.viewer.cssIconHover .iconViewer .pin-solid.icon:before, .viewer.cssIconHover .iconViewer .pin-solid.icon:after,
+.viewer.cssIconHover .iconViewer .stop-solid.icon:before,
+.viewer.cssIconHover .iconViewer .stop-solid.icon:after,
+.viewer.cssIconHover .iconViewer .clock-solid.icon:before,
+.viewer.cssIconHover .iconViewer .clock-solid.icon:after,
+.viewer.cssIconHover .iconViewer .clock-h3m30-solid.icon:before,
+.viewer.cssIconHover .iconViewer .clock-h3m30-solid.icon:after,
+.viewer.cssIconHover .iconViewer .clock-h9m0-solid.icon:before,
+.viewer.cssIconHover .iconViewer .clock-h9m0-solid.icon:after,
+.viewer.cssIconHover .iconViewer .clock-h9m30-solid.icon:before,
+.viewer.cssIconHover .iconViewer .clock-h9m30-solid.icon:after,
+.viewer.cssIconHover .iconViewer .mail-solid.icon:before,
+.viewer.cssIconHover .iconViewer .mail-solid.icon:after,
+.viewer.cssIconHover .iconViewer .card-solid.icon:before,
+.viewer.cssIconHover .iconViewer .card-solid.icon:after,
+.viewer.cssIconHover .iconViewer .keyboard-solid.icon:before,
+.viewer.cssIconHover .iconViewer .keyboard-solid.icon:after,
+.viewer.cssIconHover .iconViewer .mouse-solid.icon:before,
+.viewer.cssIconHover .iconViewer .mouse-solid.icon:after,
+.viewer.cssIconHover .iconViewer .browser-solid.icon:before,
+.viewer.cssIconHover .iconViewer .browser-solid.icon:after,
+.viewer.cssIconHover .iconViewer .mobile-solid.icon:before,
+.viewer.cssIconHover .iconViewer .mobile-solid.icon:after,
+.viewer.cssIconHover .iconViewer .target-solid.icon:before,
+.viewer.cssIconHover .iconViewer .target-solid.icon:after,
+.viewer.cssIconHover .iconViewer .picture-solid.icon:before,
+.viewer.cssIconHover .iconViewer .picture-solid.icon:after,
+.viewer.cssIconHover .iconViewer .float-solid.icon:before,
+.viewer.cssIconHover .iconViewer .float-solid.icon:after {
   color: white;
 }
 .viewer.cssIconHover .iconViewer .focus.icon:before, .viewer.cssIconHover .iconViewer .focus.icon:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .camera.icon.filled:before {
+.viewer.cssIconHover .iconViewer .camera-solid.icon:before,
+.viewer.cssIconHover .iconViewer .eye-solid2.icon:before,
+.viewer.cssIconHover .iconViewer .eye-solid3.icon:before {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .tag.icon.filled:after {
+.viewer.cssIconHover .iconViewer .tag-solid.icon:after,
+.viewer.cssIconHover .iconViewer .battery-solid-0.icon:after,
+.viewer.cssIconHover .iconViewer .battery-solid-1.icon:after,
+.viewer.cssIconHover .iconViewer .battery-solid.icon:after,
+.viewer.cssIconHover .iconViewer .battery-solid-3.icon:after,
+.viewer.cssIconHover .iconViewer .suitcase-1.icon:after,
+.viewer.cssIconHover .iconViewer .suitcase-3.icon:after,
+.viewer.cssIconHover .iconViewer .watch-solid.icon:after,
+.viewer.cssIconHover .iconViewer .navigate.icon:after,
+.viewer.cssIconHover .iconViewer .navigate i.icon:after,
+.viewer.cssIconHover .iconViewer .navigate-solid.icon:after,
+.viewer.cssIconHover .iconViewer .tablet-solid.icon:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .doubleQuoteLeft.icon.filled i:before, .viewer.cssIconHover .iconViewer .doubleQuoteLeft.icon.filled i:after,
-.viewer.cssIconHover .iconViewer .doubleQuoteRight.icon.filled i:before,
-.viewer.cssIconHover .iconViewer .doubleQuoteRight.icon.filled i:after {
+.viewer.cssIconHover .iconViewer .mustache.icon i,
+.viewer.cssIconHover .iconViewer .mustache.icon i:before,
+.viewer.cssIconHover .iconViewer .mustache.icon i:after {
+  color: white;
+}
+.viewer.cssIconHover .iconViewer .left-double-quote-solid i:before,
+.viewer.cssIconHover .iconViewer .left-double-quote-solid i:after,
+.viewer.cssIconHover .iconViewer .right-double-quote-solid i:before,
+.viewer.cssIconHover .iconViewer .right-double-quote-solid i:after {
   color: black;
 }
 
@@ -631,8 +674,12 @@ button {
 .viewer.cssChildHover .iconViewer .icon i:after {
   color: black;
 }
-.viewer.cssChildHover .iconViewer .icon.filled i:before,
-.viewer.cssChildHover .iconViewer .icon.filled i:after {
+.viewer.cssChildHover .iconViewer [class*="-solid"] i:before,
+.viewer.cssChildHover .iconViewer [class*="-solid"] i:after {
+  color: white;
+}
+.viewer.cssChildHover .iconViewer .mustache.icon i:before,
+.viewer.cssChildHover .iconViewer .mustache.icon i:after {
   color: white;
 }
 

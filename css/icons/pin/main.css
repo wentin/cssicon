@@ -7,5 +7,6 @@
   height: 12px;
   border: solid 1px currentColor;
   border-radius: 7px 7px 7px 0;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }

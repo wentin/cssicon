@@ -1,4 +1,4 @@
-.heart.filled.icon {
+.heart-solid.icon {
   color: #000;
   position: absolute;
   margin-top: 6px;
@@ -8,5 +8,6 @@
   border-left: solid 1px currentColor;
   border-bottom: solid 1px currentColor;
   background-color: currentColor;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }

@@ -1,5 +1,5 @@
 @import '../../mixin';
-.card.filled.icon {
+.card-solid.icon {
   &:before {
     @include pseudo();
     top: 1px;

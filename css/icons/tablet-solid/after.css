@@ -1,0 +1,10 @@
+.tablet-solid.icon:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 6px;
+  width: 3px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}

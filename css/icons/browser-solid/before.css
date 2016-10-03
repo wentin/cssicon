@@ -1,0 +1,13 @@
+.browser-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 85% 15%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: white;
+  border: solid 1px currentColor;
+}

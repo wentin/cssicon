@@ -1,0 +1,9 @@
+.mobile.icon:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 2px;
+  height: 1px;
+  background-color: currentColor;
+}

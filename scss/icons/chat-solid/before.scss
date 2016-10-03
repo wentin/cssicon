@@ -1,5 +1,5 @@
 @import '../../mixin';
-.chat.filled.icon {
+.chat-solid.icon {
   &:before {
     @include pseudo();
     left: 3px;

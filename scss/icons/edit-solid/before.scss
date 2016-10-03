@@ -1,5 +1,5 @@
 @import '../../mixin';
-.edit.filled.icon {
+.edit-solid.icon {
   &:before {
     @include pseudo();
     left: -12px;

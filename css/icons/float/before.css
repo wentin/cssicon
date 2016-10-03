@@ -1,0 +1,11 @@
+.float.icon:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: currentColor;
+}

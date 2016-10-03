@@ -1,4 +1,4 @@
-.card.filled.icon:before {
+.card-solid.icon:before {
   content: '';
   position: absolute;
   top: 1px;

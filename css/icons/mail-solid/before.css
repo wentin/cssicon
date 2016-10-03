@@ -1,4 +1,4 @@
-.mail.filled.icon:before {
+.mail-solid.icon:before {
   content: '';
   position: absolute;
   left: 7px;
@@ -7,6 +7,8 @@
   height: 10px;
   color: white;
   background-color: currentColor;
-  transform-origin: bottom;
-  transform: rotate(-54deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
 }
