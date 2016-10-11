@@ -1772,7 +1772,7 @@
   },
   {
     "id": 151,
-    "name": "wink-laugh",
+    "name": "wink laugh",
     "classNames": "wink-laugh",
     "style": "",
     "htmlChildMarkup": true,
@@ -1781,8 +1781,8 @@
   },
   {
     "id": 152,
-    "name": "wink-laugh solid",
-    "classNames": "wink-laugh-solid",
+    "name": "grin",
+    "classNames": "grin",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",
@@ -1790,8 +1790,8 @@
   },
   {
     "id": 153,
-    "name": "teeth-laugh",
-    "classNames": "teeth-laugh",
+    "name": "grin solid",
+    "classNames": "grin-solid",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",
@@ -1799,8 +1799,8 @@
   },
   {
     "id": 154,
-    "name": "teeth-laugh solid",
-    "classNames": "teeth-laugh-solid",
+    "name": "grin wink",
+    "classNames": "grin-wink",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",
@@ -1808,24 +1808,6 @@
   },
   {
     "id": 155,
-    "name": "teeth-wink",
-    "classNames": "teeth-wink",
-    "style": "",
-    "htmlChildMarkup": true,
-    "cssHidden": "",
-    "tag": []
-  },
-  {
-    "id": 156,
-    "name": "teeth-wink solid",
-    "classNames": "teeth-wink-solid",
-    "style": "",
-    "htmlChildMarkup": true,
-    "cssHidden": "",
-    "tag": []
-  },
-  {
-    "id": 157,
     "name": "smiley",
     "classNames": "smiley",
     "style": "",
@@ -1834,7 +1816,7 @@
     "tag": []
   },
   {
-    "id": 158,
+    "id": 156,
     "name": "smiley solid",
     "classNames": "smiley-solid",
     "style": "",
@@ -1843,8 +1825,8 @@
     "tag": []
   },
   {
-    "id": 159,
-    "name": "wink-smiley",
+    "id": 157,
+    "name": "smiley wink",
     "classNames": "wink-smiley",
     "style": "",
     "htmlChildMarkup": true,
@@ -1852,16 +1834,7 @@
     "tag": []
   },
   {
-    "id": 160,
-    "name": "wink-smiley solid",
-    "classNames": "wink-smiley-solid",
-    "style": "",
-    "htmlChildMarkup": true,
-    "cssHidden": "",
-    "tag": []
-  },
-  {
-    "id": 161,
+    "id": 158,
     "name": "relieved-smiley",
     "classNames": "relieved-smiley",
     "style": "",
@@ -1870,8 +1843,8 @@
     "tag": []
   },
   {
-    "id": 162,
-    "name": "relieved-smiley solid",
+    "id": 159,
+    "name": "relieved smiley solid",
     "classNames": "relieved-smiley-solid",
     "style": "",
     "htmlChildMarkup": true,
@@ -1879,7 +1852,7 @@
     "tag": []
   },
   {
-    "id": 163,
+    "id": 160,
     "name": "sad",
     "classNames": "sad",
     "style": "",
@@ -1888,7 +1861,7 @@
     "tag": []
   },
   {
-    "id": 164,
+    "id": 161,
     "name": "sad solid",
     "classNames": "sad-solid",
     "style": "",
@@ -1897,7 +1870,7 @@
     "tag": []
   },
   {
-    "id": 165,
+    "id": 162,
     "name": "pensive",
     "classNames": "pensive",
     "style": "",
@@ -1906,9 +1879,27 @@
     "tag": []
   },
   {
-    "id": 166,
+    "id": 163,
     "name": "pensive solid",
     "classNames": "pensive-solid",
+    "style": "",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 164,
+    "name": "unamused",
+    "classNames": "unamused",
+    "style": "",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 165,
+    "name": "unamused solid",
+    "classNames": "unamused-solid",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",

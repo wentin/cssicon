@@ -5129,7 +5129,54 @@ body {
   background-color: currentColor;
 }
 
-.face.icon {
+.relieved.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.relieved.icon {
+  color: #000;
+  position: absolute;
   margin-left: 2px;
   margin-top: 2px;
   width: 16px;
@@ -5137,66 +5184,70 @@ body {
   border-radius: 50%;
   border: solid 1px currentColor;
 }
-.face.icon.filled {
-  background-color: currentColor;
-}
-.face.icon.filled:before {
-  border-color: currentColor;
-  background-color: white;
-}
-.face.icon.filled:after {
-  border-color: currentColor;
-  background-color: white;
-}
-.face.icon.filled.smile i {
-  border-bottom: solid 1px white;
-}
-.face.icon.filled.tongue i {
-  background-color: white;
-}
-.face.icon.filled.tongue i:before {
+
+.relieved-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
   border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
   border-right: solid 1px transparent;
-  border-bottom: solid 1px white;
-  border-left: solid 1px white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
-.face.icon.filled.laugh i {
-  border-color: white;
-}
-.face.icon.filled.teethlaugh i {
-  border-color: white;
-}
-.face.icon.filled.teethlaugh i:before {
-  border-left: solid 1px white;
-  border-right: solid 1px white;
-}
-.face.icon.filled.bigsmile i {
-  border-bottom: solid 1px white;
-  border-left: solid 1px white;
-  border-right: solid 1px white;
-}
-.face.icon.filled.sad i {
-  border-top: solid 1px white;
-}
-.face.icon.filled.doublewink:before {
-  background-color: transparent;
-  border-bottom: solid 1px white;
-  border-left: solid 1px white;
-}
-.face.icon.filled.doublewink:after {
-  background-color: transparent;
-  border-bottom: solid 1px white;
-  border-left: solid 1px white;
-}
-.face.icon:before {
+
+.relieved-solid.icon:before {
+  content: '';
+  position: absolute;
   left: 3px;
   top: 3px;
   width: 2px;
   height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved-solid.icon i {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.relieved-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: solid 1px currentColor;
+  background-color: currentColor;
 }
-.face.icon:after {
+
+.laugh.icon:after {
+  content: '';
+  position: absolute;
   right: 3px;
   top: 3px;
   width: 2px;
@@ -5204,62 +5255,159 @@ body {
   border-radius: 50%;
   border: solid 1px currentColor;
 }
-.face.icon.smile i {
+
+.laugh.icon:before {
+  content: '';
+  position: absolute;
   left: 3px;
   top: 3px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border-top: solid 1px transparent;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px transparent;
-  border-right: solid 1px transparent;
-}
-.face.icon.tongue i {
-  left: 4px;
-  top: 10px;
-  width: 8px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.face.icon.tongue i:before {
-  top: -1px;
-  right: 0px;
   width: 2px;
   height: 2px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border-radius: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.laugh.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
+  border: solid 1px currentColor;
+}
+
+.laugh.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.laugh-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.laugh-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.laugh-solid.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  color: white;
+  border-radius: 0 0 6px 6px;
+  border: solid 1px currentColor;
+}
+
+.laugh-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.wink-laugh.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.wink-laugh.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
   border-top: solid 1px transparent;
   border-right: solid 1px transparent;
   border-bottom: solid 1px currentColor;
   border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
-.face.icon.laugh i {
+
+.wink-laugh.icon i {
+  position: absolute;
   left: 2px;
   top: 9px;
   width: 10px;
   height: 4px;
   border-radius: 0 0 6px 6px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
+  border: solid 1px currentColor;
 }
-.face.icon.teethlaugh i {
-  left: 2px;
-  top: 9px;
-  width: 10px;
-  height: 4px;
-  border-radius: 0 0 6px 6px;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
+
+.wink-laugh.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
 }
-.face.icon.teethlaugh i:before {
+
+.grin.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.grin.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.grin.icon i:before {
+  content: '';
+  position: absolute;
   left: 3px;
   top: 0px;
   width: 2px;
@@ -5267,7 +5415,170 @@ body {
   border-left: solid 1px currentColor;
   border-right: solid 1px currentColor;
 }
-.face.icon.bigsmile i {
+
+.grin.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
+  border: solid 1px currentColor;
+}
+
+.grin.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.grin-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.grin-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.grin-solid.icon i:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 2px;
+  height: 4px;
+  color: white;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.grin-solid.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  color: white;
+  border-radius: 0 0 6px 6px;
+  border: solid 1px currentColor;
+}
+
+.grin-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.grin-wink.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.grin-wink.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.grin-wink.icon i:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 2px;
+  height: 4px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.grin-wink.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
+  border: solid 1px currentColor;
+}
+
+.grin-wink.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smiley.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smiley.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smiley.icon i {
+  position: absolute;
   left: 2px;
   top: 9px;
   width: 10px;
@@ -5278,40 +5589,553 @@ body {
   border-left: solid 1px currentColor;
   border-right: solid 1px currentColor;
 }
-.face.icon.wink:before {
+
+.smiley.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.smiley-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.smiley-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.smiley-solid.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  color: white;
+  border-radius: 0 0 6px 6px;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.smiley-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.wink-smiley.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.wink-smiley.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
   border-top: solid 1px transparent;
   border-right: solid 1px transparent;
   border-bottom: solid 1px currentColor;
   border-left: solid 1px currentColor;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
-.face.icon.doublewink:before {
+
+.wink-smiley.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
   border-top: solid 1px transparent;
-  border-right: solid 1px transparent;
   border-bottom: solid 1px currentColor;
   border-left: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  border-right: solid 1px currentColor;
 }
-.face.icon.doublewink:after {
+
+.wink-smiley.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.relieved-smiley.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
   border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
   border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved-smiley.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved-smiley.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
+  border-top: solid 1px transparent;
   border-bottom: solid 1px currentColor;
   border-left: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  border-right: solid 1px currentColor;
 }
-.face.icon.sad i {
+
+.relieved-smiley.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.relieved-smiley-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved-smiley-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.relieved-smiley-solid.icon i {
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 10px;
+  height: 4px;
+  color: white;
+  border-radius: 0 0 6px 6px;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.relieved-smiley-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.sad.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.sad.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.sad.icon i {
+  position: absolute;
   left: 3px;
   top: 10px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border-top: solid 1px currentColor;
   border-bottom: solid 1px transparent;
+  border-top: solid 1px currentColor;
   border-left: solid 1px transparent;
   border-right: solid 1px transparent;
+}
+
+.sad.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.sad-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.sad-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
+
+.sad-solid.icon i {
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: white;
+  border-bottom: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.sad-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.pensive.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.pensive.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.pensive.icon i {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.pensive.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.pensive-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.pensive-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.pensive-solid.icon i {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  width: 6px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+}
+
+.pensive-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.unamused.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.unamused.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.unamused.icon i {
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border-bottom: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.unamused.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.unamused-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.unamused-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  color: white;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.unamused-solid.icon i {
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: white;
+  border-bottom: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.unamused-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
 }
 
 .circle.icon {

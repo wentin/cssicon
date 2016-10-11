@@ -1,0 +1,11 @@
+.grin-solid.icon i:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 2px;
+  height: 4px;
+  color: white;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}

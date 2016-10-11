@@ -60,7 +60,18 @@ $highlightColor: #3CD5FF;
   .mobile-solid,
   .target-solid,
   .picture-solid,
-  .float-solid {
+  .float-solid,
+  .unamused-solid,
+  .pensive-solid,
+  .smiley-solid,
+  .relieved-smiley-solid,
+  .sad-solid,
+  .smiley-solid,
+  .grin-solid,
+  .laugh-solid,
+  .relieved-solid,
+  .tougue-solid,
+  .smile-solid {
     &.icon:before,
     &.icon:after {   
       color: white;

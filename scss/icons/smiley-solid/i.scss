@@ -1,0 +1,15 @@
+.smiley-solid.icon {
+  i{
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    width: 10px;
+    height: 4px;
+    color: white;
+    border-radius: 0 0 6px 6px;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}

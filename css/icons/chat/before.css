@@ -5,8 +5,7 @@
   top: 8px;
   width: 4px;
   height: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background-color: white;
   border-bottom: solid 1px currentColor;
   border-right: solid 1px currentColor;

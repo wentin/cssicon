@@ -1,1 +1,9 @@
-
+.tablet-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 13px;
+  width: 15px;
+  border: none;
+}

@@ -174,199 +174,29 @@ body {
 @import 'icons/wink-tougue/*';
 @import 'icons/tougue/*';
 @import 'icons/tougue-solid/*';
+@import 'icons/relieved/*';
+@import 'icons/relieved-solid/*';
+@import 'icons/laugh/*';
+@import 'icons/laugh-solid/*';
+@import 'icons/wink-laugh/*';
+@import 'icons/grin/*';
+@import 'icons/grin-solid/*';
+@import 'icons/grin-wink/*';
+@import 'icons/smiley/*';
+@import 'icons/smiley-solid/*';
+@import 'icons/wink-smiley/*';
+@import 'icons/relieved-smiley/*';
+@import 'icons/relieved-smiley-solid/*';
+@import 'icons/sad/*';
+@import 'icons/sad-solid/*';
+@import 'icons/pensive/*';
+@import 'icons/pensive-solid/*';
+@import 'icons/unamused/*';
+@import 'icons/unamused-solid/*';
 
 
 
 
-
-.face.icon {
-  margin-left: 2px;
-  margin-top: 2px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: solid 1px currentColor;
-  &.filled {
-    background-color: currentColor;
-    &:before {
-      border-color: currentColor;
-      background-color: white;
-    }
-    &:after {
-      border-color: currentColor;
-      background-color: white;
-    }
-    &.smile i{
-      border-bottom: solid 1px white;
-    }
-    &.tongue i{
-      background-color: white;
-      &:before {
-        border-top: solid 1px transparent;
-        border-right: solid 1px transparent;
-        border-bottom: solid 1px white;
-        border-left: solid 1px white;
-      }
-    }
-    &.laugh i{
-      border-color: white;
-    }
-    &.teethlaugh i{
-      border-color: white;
-      &:before {
-        border-left: solid 1px white;
-        border-right: solid 1px white;
-      }
-    }
-    &.bigsmile i{
-      border-bottom: solid 1px white;
-      border-left: solid 1px white;
-      border-right: solid 1px white;
-    } 
-    &.sad i{
-      border-top: solid 1px white;
-    }
-    &.doublewink {
-      &:before {
-        background-color: transparent;
-        border-bottom: solid 1px white;
-        border-left: solid 1px white;
-      }
-      &:after {
-        background-color: transparent;
-        border-bottom: solid 1px white;
-        border-left: solid 1px white;
-      }
-    }
-  }
-  &:before {
-    left: 3px;
-    top: 3px;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-  }
-  &:after {
-    right: 3px;
-    top: 3px;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: solid 1px currentColor;
-  }
-  &.smile i{
-    left: 3px;
-    top: 3px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border-top: solid 1px transparent;
-    border-bottom: solid 1px currentColor;
-    border-left: solid 1px transparent;
-    border-right: solid 1px transparent;
-  }
-  &.tongue i{
-    left: 4px;
-    top: 10px;
-    width: 8px;
-    height: 1px;
-    background-color: currentColor;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-    &:before {
-      top: -1px;
-      right: 0px;
-      width: 2px;
-      height: 2px;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      border-radius: 2px;
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px currentColor;
-      border-left: solid 1px currentColor;
-    }
-  }
-  &.laugh i{
-    left: 2px;
-    top: 9px;
-    width: 10px;
-    height: 4px;
-    border-radius: 0 0 6px 6px;
-    border-top: solid 1px currentColor;
-    border-bottom: solid 1px currentColor;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-  }
-  &.teethlaugh i{
-    left: 2px;
-    top: 9px;
-    width: 10px;
-    height: 4px;
-    border-radius: 0 0 6px 6px;
-    border-top: solid 1px currentColor;
-    border-bottom: solid 1px currentColor;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-    &:before {
-      left: 3px;
-      top: 0px;
-      width: 2px;
-      height: 4px;
-      border-left: solid 1px currentColor;
-      border-right: solid 1px currentColor;
-    }
-  }
-  &.bigsmile i{
-    left: 2px;
-    top: 9px;
-    width: 10px;
-    height: 4px;
-    border-radius: 0 0 6px 6px;
-    border-top: solid 1px transparent;
-    border-bottom: solid 1px currentColor;
-    border-left: solid 1px currentColor;
-    border-right: solid 1px currentColor;
-  }
-  &.wink:before {
-    border-top: solid 1px transparent;
-    border-right: solid 1px transparent;
-    border-bottom: solid 1px currentColor;
-    border-left: solid 1px currentColor;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  &.doublewink {
-    &:before {
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px currentColor;
-      border-left: solid 1px currentColor;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-    }
-    &:after {
-      border-top: solid 1px transparent;
-      border-right: solid 1px transparent;
-      border-bottom: solid 1px currentColor;
-      border-left: solid 1px currentColor;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-    }
-  }
-  &.sad i{
-    left: 3px;
-    top: 10px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border-top: solid 1px currentColor;
-    border-bottom: solid 1px transparent;
-    border-left: solid 1px transparent;
-    border-right: solid 1px transparent;
-  }
-}
 .circle.icon {
   width: 15px;
   height: 15px;
