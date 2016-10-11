@@ -7,6 +7,5 @@
   height: 1px;
   color: white;
   background-color: currentColor;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }

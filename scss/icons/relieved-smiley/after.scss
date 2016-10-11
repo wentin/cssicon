@@ -1,0 +1,16 @@
+@import '../../mixin';
+.relieved-smiley.icon {
+  &:after {
+    @include pseudo();
+    right: 3px;
+    top: 3px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border-top: solid 1px transparent;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px transparent;
+    transform: rotate(-45deg);
+  }
+}

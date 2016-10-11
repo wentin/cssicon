@@ -1,0 +1,10 @@
+.wink-tougue.icon i {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 8px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}

@@ -1,0 +1,13 @@
+.unamused-solid.icon i {
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: white;
+  border-bottom: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}

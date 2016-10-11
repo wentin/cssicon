@@ -76,12 +76,10 @@ button {
 
 .icons {
   width: 100%;
-  background-color: #ffe;
   height: 100%;
   float: left;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #fff;
   padding: 20px 15px 20px 20px;
   text-align: justify;
   box-sizing: border-box;
@@ -94,10 +92,11 @@ button {
   height: 75px;
   padding: 26px;
   box-sizing: border-box;
-  border: solid 1px black;
+  border: solid 1px #ccc;
   border-radius: 0;
   margin-right: 5px;
   margin-bottom: 5px;
+  background-color: #fff;
   cursor: pointer;
 }
 .icons .iconWrapper.iconWrapperHidden {
@@ -161,7 +160,6 @@ button {
   float: right;
   box-sizing: border-box;
   position: relative;
-  background-color: white;
 }
 .viewer .buttonClose {
   position: absolute;
@@ -195,7 +193,7 @@ button {
 }
 .viewer .viewerWrapper {
   box-sizing: border-box;
-  border: solid 1px black;
+  border: solid 1px #ccc;
   border-radius: 0;
   position: absolute;
   top: 20px;
@@ -212,7 +210,7 @@ button {
   width: 21px;
   height: 21px;
   padding: 8px;
-  border: solid 1px black;
+  border: solid 1px #ccc;
 }
 .viewer .viewerWrapper .iconWrapperBig {
   width: 84px;
@@ -237,7 +235,7 @@ button {
   margin-bottom: 30px;
   cursor: pointer;
   padding: 0;
-  background-color: white;
+  background-color: transparent;
   width: 100%;
 }
 .viewer .viewerWrapper .buttonCodepen svg {
@@ -622,7 +620,29 @@ button {
 .viewer.cssIconHover .iconViewer .picture-solid.icon:before,
 .viewer.cssIconHover .iconViewer .picture-solid.icon:after,
 .viewer.cssIconHover .iconViewer .float-solid.icon:before,
-.viewer.cssIconHover .iconViewer .float-solid.icon:after {
+.viewer.cssIconHover .iconViewer .float-solid.icon:after,
+.viewer.cssIconHover .iconViewer .unamused-solid.icon:before,
+.viewer.cssIconHover .iconViewer .unamused-solid.icon:after,
+.viewer.cssIconHover .iconViewer .pensive-solid.icon:before,
+.viewer.cssIconHover .iconViewer .pensive-solid.icon:after,
+.viewer.cssIconHover .iconViewer .smiley-solid.icon:before,
+.viewer.cssIconHover .iconViewer .smiley-solid.icon:after,
+.viewer.cssIconHover .iconViewer .relieved-smiley-solid.icon:before,
+.viewer.cssIconHover .iconViewer .relieved-smiley-solid.icon:after,
+.viewer.cssIconHover .iconViewer .sad-solid.icon:before,
+.viewer.cssIconHover .iconViewer .sad-solid.icon:after,
+.viewer.cssIconHover .iconViewer .smiley-solid.icon:before,
+.viewer.cssIconHover .iconViewer .smiley-solid.icon:after,
+.viewer.cssIconHover .iconViewer .grin-solid.icon:before,
+.viewer.cssIconHover .iconViewer .grin-solid.icon:after,
+.viewer.cssIconHover .iconViewer .laugh-solid.icon:before,
+.viewer.cssIconHover .iconViewer .laugh-solid.icon:after,
+.viewer.cssIconHover .iconViewer .relieved-solid.icon:before,
+.viewer.cssIconHover .iconViewer .relieved-solid.icon:after,
+.viewer.cssIconHover .iconViewer .tougue-solid.icon:before,
+.viewer.cssIconHover .iconViewer .tougue-solid.icon:after,
+.viewer.cssIconHover .iconViewer .smile-solid.icon:before,
+.viewer.cssIconHover .iconViewer .smile-solid.icon:after {
   color: white;
 }
 .viewer.cssIconHover .iconViewer .focus.icon:before, .viewer.cssIconHover .iconViewer .focus.icon:after {
