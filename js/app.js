@@ -1,44 +1,4 @@
-<<<<<<< HEAD
-var app = angular.module("iconApp", []);
-app.controller("MainCtrl", ['$scope','$http', '$filter', '$q', function($scope, $http, $filter, $q) { 
-  $http.get('js/cssicon.json').success(function(data){ 
 
-    // $http.get('http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data').success(function(data){ 
-    //995babe3c73846437f5f1d60549987f5 text
-    //f26dbdc8aa88e459fb89a95b7067bf15 real
-    $scope.icons = data; 
-    $scope.viewerOpen = false;
-    
-    $scope.selectedIcon = $scope.icons[0];
-    
-    var generateHTML;
-    $scope.generateHTML = generateHTML = function(icon){
-      if (icon.htmlChildMarkup) {
-        childHTML = "<i></i>";
-      } else {
-        childHTML = '';
-      }
-      var HTML = '<div class="' + icon.classNames + ' icon">' + childHTML + '</div>'
-      return HTML;
-    }
-    
-    var generateCSS = function(icon){
-      var CSS = "";
-      if (icon.cssBlocks.cssIcon) {
-        CSS += icon.cssBlocks.cssIcon + '\n';
-      }
-      if (icon.cssBlocks.cssIconBefore) {
-        CSS += icon.cssBlocks.cssIconBefore + '\n';
-      }
-      if (icon.cssBlocks.cssIconAfter) {
-        CSS += icon.cssBlocks.cssIconAfter + '\n';
-      }
-      if (icon.cssBlocks.cssChild) {
-        CSS += icon.cssBlocks.cssChild + '\n';
-      }
-      if (icon.cssBlocks.cssChildBefore) {
-        CSS += icon.cssBlocks.cssChildBefore + '\n';
-=======
 var app = angular.module("iconApp", ['ngRoute']);
 
 app.config(function($routeProvider){
@@ -50,7 +10,6 @@ app.config(function($routeProvider){
         load: function (IconsService) {
           return IconsService.loadIcons();
         }
->>>>>>> master
       }
     })
     .when('/icon/:uid', {
@@ -73,8 +32,6 @@ app.controller("HomeController", function($scope, IconsService) {
 }); 
 
 app.controller('IconController', function($scope, $filter, $http, $routeParams, $q, IconsService) {
-
-
   var generateHTML = $scope.generateHTML = function(icon){
     if (icon.htmlChildMarkup) {
       childHTML = "<i></i>";
