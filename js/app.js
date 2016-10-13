@@ -158,7 +158,7 @@ app.controller("HomeController", function($rootScope, $scope, IconsService) {
 
 app.controller('IconController', function($rootScope, $scope, $filter, $stateParams) {
   $rootScope.viewerOpen = true;
-  var icon = $filter('filter')($scope.icons, {classNames: $stateParams.uid})[0];
+  var icon = $filter('filter')($scope.icons, {classNames: $stateParams.uid}, true)[0];
   $scope.openIconPanel(icon);
   
   $scope.handleButtonCloseClick = function(){
