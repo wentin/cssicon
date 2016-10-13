@@ -26,12 +26,7 @@ app.config(function($routeProvider){
     });
 });
 
-app.controller("HomeController", function($scope, IconsService) {
-  $scope.viewerOpen = false;
-  $scope.icons = IconsService.getIcons();
-}); 
-
-app.controller('IconController', function($scope, $filter, $http, $routeParams, $q, IconsService) {
+app.controller("MainController", function($http, $scope, $q) {
   var generateHTML = $scope.generateHTML = function(icon){
     if (icon.htmlChildMarkup) {
       childHTML = "<i></i>";
@@ -89,11 +84,11 @@ app.controller('IconController', function($scope, $filter, $http, $routeParams, 
     return JSON.stringify(data).replace(/"/g, "&​quot;").replace(/'/g, "&apos;");
   }
 
-  var openIconPanel = function(icon){
+  var openIconPanel = $scope.openIconPanel = function(icon){
     $scope.selectedIcon = icon;
+
     $scope.selectedIcon.cssBlocks = {};
     var iconName = icon.classNames;
-
     var cssIconHttp = $http.get('../css/icons/' + iconName + '/main.css').then(function(res){
       $scope.selectedIcon.cssBlocks.cssIcon = res.data;
     }, function(){
@@ -133,35 +128,42 @@ app.controller('IconController', function($scope, $filter, $http, $routeParams, 
     $q.all([cssIconHttp, cssIconBeforeHttp, cssIconAfterHttp, cssChildHttp, cssChildBeforeHttp, cssChildAfterHttp, ]).then(function(){
       $scope.JSONstring = generateCodepenString($scope.selectedIcon);
       $scope.viewerOpen = true;
-
-      var htmlClipboard = new Clipboard('.html.buttonCopy', {
-          text: function() {
-              return generateHTML($scope.selectedIcon);
-          }
-      });
-      
-      htmlClipboard.on('success', function(e) {
-          console.log("html", e);
-      });
-      
-      var cssClipboard = new Clipboard('.css.buttonCopy', {
-          text: function() {
-              return generateCSS($scope.selectedIcon);
-          }
-      });
-      
-      cssClipboard.on('success', function(e) {
-          console.log("css", e);
-      });
-
     });
   }
 
+  var htmlClipboard = new Clipboard('.html.buttonCopy', {
+    text: function() {
+      return generateHTML($scope.selectedIcon);
+    }
+  });
+  
+  htmlClipboard.on('success', function(e) {
+    console.log("html", e);
+  });
+  
+  var cssClipboard = new Clipboard('.css.buttonCopy', {
+    text: function() {
+        return generateCSS($scope.selectedIcon);
+    }
+  });
+  
+  cssClipboard.on('success', function(e) {
+    console.log("css", e);
+  });
+
+}); 
+
+app.controller("HomeController", function($scope, IconsService) {
+  $scope.viewerOpen = false;
+  $scope.icons = IconsService.getIcons();
+}); 
+
+app.controller('IconController', function($scope, $filter, $routeParams, IconsService) {
   $scope.viewerOpen = true;
   $scope.icons = IconsService.getIcons();
   var icon = $filter('filter')($scope.icons, {classNames: $routeParams.uid})[0];
-  openIconPanel(icon);
-
+  $scope.openIconPanel(icon);
+  
 })
 
 app.service("IconsService", function($http, $q){
