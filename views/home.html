@@ -1,4 +1,4 @@
-<div class="container" ng-class="{viewerOpen: viewerOpen}" >
+<div class="container" ng-class="{viewerOpen: $root.viewerOpen}" >
   <div class="icons">
     <div class="logo">
       <div class="c"></div>
@@ -17,7 +17,7 @@
         <div class="search icon"></div>
         <button class="close icon" type="reset" ng-click="searchText=''"></button>
     </form>
-    <a class="iconWrapper" ng-href="/#/icon/{{icon.classNames}} " ng-repeat-start="icon in icons | filter: searchText">
+    <a class="iconWrapper" ui-sref=".icon({ uid: icon.classNames })" ng-repeat-start="icon in icons | filter: searchText">
       <div ng-class="icon.classNames" class="icon">
         <i ng-if="icon.htmlChildMarkup"></i>
       </div> 
@@ -53,5 +53,7 @@
       <a href="https://twitter.com/home?status=http%3A//cssicon.space/%20CSS%20ICON%3A%20a%20set%20of%20icons%20made%20by%20pure%20css%20via%20%40DesignJokes%20%23css%20%23cssicon" target="_blank" class="twitter"><i></i>or twitter</a>
     </div>
   </div>
-  <icon-viewer></icon-viewer>
+  <!-- <icon-viewer></icon-viewer> -->
+
+  <ui-view></ui-view>
 </div>
