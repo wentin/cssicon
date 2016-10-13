@@ -56,6 +56,11 @@ button {
     margin-bottom: 5px;
     background-color: #fff;
     cursor: pointer;
+    transition: border-color 0.4s ease-out;
+    &:hover {
+      border-color: #000;
+      transition: none;
+    }
     &.iconWrapperHidden {
       visibility: hidden;
       height: 0px;

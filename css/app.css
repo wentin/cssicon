@@ -73,7 +73,7 @@ button {
 .container.viewerOpen .icons .iconWrapper.selected {
   border-width: 2px;
   padding: 25px;
-  border-color: black;
+  border-color: #000;
 }
 .container.viewerOpen .viewer {
   display: block;
@@ -103,6 +103,13 @@ button {
   margin-bottom: 5px;
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: border-color 0.4s ease-out;
+          transition: border-color 0.4s ease-out;
+}
+.icons .iconWrapper:hover {
+  border-color: #000;
+  -webkit-transition: none;
+          transition: none;
 }
 .icons .iconWrapper.iconWrapperHidden {
   visibility: hidden;
