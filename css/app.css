@@ -70,6 +70,11 @@ button {
 .container.viewerOpen .icons {
   width: 63.25757576%;
 }
+.container.viewerOpen .icons .iconWrapper.selected {
+  border-width: 2px;
+  padding: 25px;
+  border-color: black;
+}
 .container.viewerOpen .viewer {
   display: block;
 }

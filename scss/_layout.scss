@@ -21,6 +21,12 @@ button {
   &.viewerOpen {
     .icons {
       width: 63.25757576%;
+
+      .iconWrapper.selected {
+        border-width: 2px;
+        padding: 25px;
+        border-color: #000;
+      }
     }
     .viewer {
       display: block;
