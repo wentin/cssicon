@@ -1,13 +1,13 @@
-<div class="container" ng-class="{viewerOpen: $root.viewerOpen}" >
+<div class="container" ng-class="{viewerOpen: $root.viewerOpen, letterIconViewerOpen: $root.letterIconViewerOpen}" >
   <div class="icons">
     <div class="logo">
-      <div class="c"></div>
-      <div class="s"></div>
-      <div class="s"></div>
-      <div class="i"></div>
-      <div class="c"></div>
-      <div class="o"></div>
-      <div class="n"></div>
+      <div class="C icon" ui-sref=".icon({ uid: 'C' })" ng-class="{selected: 'C' == selectedIcon.classNames}"></div>
+      <div class="S icon" ui-sref=".icon({ uid: 'S' })" ng-class="{selected: 'S' == selectedIcon.classNames}"></div>
+      <div class="S icon" ui-sref=".icon({ uid: 'S' })" ng-class="{selected: 'S' == selectedIcon.classNames}"></div>
+      <div class="I icon" ui-sref=".icon({ uid: 'I' })" ng-class="{selected: 'I' == selectedIcon.classNames}"></div>
+      <div class="C icon" ui-sref=".icon({ uid: 'C' })" ng-class="{selected: 'C' == selectedIcon.classNames}"></div>
+      <div class="O icon" ui-sref=".icon({ uid: 'O' })" ng-class="{selected: 'O' == selectedIcon.classNames}"></div>
+      <div class="N icon" ui-sref=".icon({ uid: 'N' })" ng-class="{selected: 'N' == selectedIcon.classNames}"></div>
     </div>
     <!-- <h4 class="info">
       A side project by <a href="https://github.com/wentin" target="_blank">wentin</a> (Wenting Zhang)
@@ -17,7 +17,7 @@
         <div class="search icon"></div>
         <button class="close icon" type="reset" ng-click="searchText=''"></button>
     </form>
-    <a class="iconWrapper" ng-class="{selected: icon.classNames == selectedIcon.classNames}" ui-sref=".icon({ uid: icon.classNames })" ng-repeat-start="icon in icons | filter: searchText">
+    <a class="iconWrapper" ng-class="{selected: icon.classNames == selectedIcon.classNames}" ui-sref=".icon({ uid: icon.classNames })" ng-repeat-start="icon in icons | filter: searchText | filter: {'style': '!letter'}">
       <div ng-class="icon.classNames" class="icon">
         <i ng-if="icon.htmlChildMarkup"></i>
       </div> 

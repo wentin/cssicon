@@ -8,5 +8,6 @@
   border-top: solid 1px currentColor;
   border-left: solid 1px currentColor;
   background-color: white;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

@@ -1,0 +1,12 @@
+@import '../../mixin';
+.N.icon {
+  &:before {
+    @include pseudo();
+    left: -4px;
+    width: 4px;
+    height: 30px;
+    background-color: currentColor;
+    transform: skewX(32.5deg);
+    transform-origin: left top;
+  }
+}

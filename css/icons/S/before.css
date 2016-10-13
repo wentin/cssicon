@@ -1,0 +1,15 @@
+.S.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 50%;
+  border-top: solid 4px currentColor;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px currentColor;
+  border-left: solid 4px currentColor;
+}

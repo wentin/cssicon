@@ -55,17 +55,12 @@ app.controller("MainController", function($http, $scope, $scope, $q) {
     if (icon.cssBlocks.cssChildAfter) {
       CSS += icon.cssBlocks.cssChildAfter + '\n';
     }
-    // CSS += ".icon {\n  position: absolute;\n}\n.icon:before, .icon:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n" ;
-    // if (icon.htmlChildMarkup) {
-    //   CSS += ".icon i {\n  position: absolute;\n}\n.icon i:before, .icon i:after {\n  content: '';\n  position: absolute;\n  display: block;\n}\n";
-    // } 
     return CSS;
   }
   
   var generateCodepenString = function(icon){
-    var html = "<div class='iconWrapper'>\n\t" + generateHTML(icon) + "\n</div>";
+    var html = generateHTML(icon);
     var css = generateCSS(icon);
-    css += ".iconWrapper {\n  position: relative;\n  width: 21px;\n  height: 21px;\n}\n"
     if (icon.cssHidden) {
       css += icon.cssHidden + '\n';
     }
@@ -154,11 +149,23 @@ app.controller("MainController", function($http, $scope, $scope, $q) {
 app.controller("HomeController", function($rootScope, $scope, IconsService) {
   $rootScope.viewerOpen = false;
   $scope.icons = IconsService.getIcons();
+
 }); 
 
 app.controller('IconController', function($rootScope, $scope, $filter, $stateParams) {
   $rootScope.viewerOpen = true;
   var icon = $filter('filter')($scope.icons, {classNames: $stateParams.uid}, true)[0];
+  
+  if (icon.classNames == "C" || 
+      icon.classNames == "S" || 
+      icon.classNames == "I" || 
+      icon.classNames == "O" || 
+      icon.classNames == "N" ) {
+    $rootScope.letterIconViewerOpen = true;
+  } else {
+    $rootScope.letterIconViewerOpen = false;
+  }
+
   $scope.openIconPanel(icon);
   
   $scope.handleButtonCloseClick = function(){
@@ -173,6 +180,8 @@ app.controller('IconController', function($rootScope, $scope, $filter, $statePar
 app.service("IconsService", function($http, $q){
   var icons = null;
   var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
+  // var url = "js/cssicon.json";
+
   // var defer = false;
   this.loadIcons = function(){
     // if(!defer){

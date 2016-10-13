@@ -1,6 +1,7 @@
 //layout.scss
 $borderRadius: 0;
 $borderColor: #ccc;
+$highlightColor: #3CD5FF;
 
 body {
   box-sizing: border-box;
@@ -21,15 +22,38 @@ button {
   &.viewerOpen {
     .icons {
       width: 63.25757576%;
-
       .iconWrapper.selected {
-        border-width: 2px;
-        padding: 25px;
-        border-color: #000;
+        border-color: $highlightColor;
+        .icon {
+          color: $highlightColor;
+        }
+      }
+      .icon.selected {
+        color: $highlightColor;
       }
     }
     .viewer {
       display: block;
+    }
+
+    &.letterIconViewerOpen .viewerWrapper {
+      .iconViewer .icon {
+        margin: 0 auto;
+        position: relative;
+      }
+      .iconWrapper {
+        border: none;
+        padding: 0;
+      }
+      .iconWrapperBig {
+        height: 90px;
+        width: auto;
+        .scale {
+          transform: scale(3);
+          transform-origin: center top;
+          display: block;
+        }
+      }
     }
   }
 }
@@ -58,7 +82,7 @@ button {
     cursor: pointer;
     transition: border-color 0.4s ease-out;
     &:hover {
-      border-color: #000;
+      border-color: $highlightColor;
       transition: none;
     }
     &.iconWrapperHidden {
@@ -247,14 +271,30 @@ button {
   width: 100%;
   height: 30px;
   margin: 30px 0 50px 0;
-  div {
-    position: relative;
+  .icon {
+    cursor: pointer;
     float: left;
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
+    &.C {
+      position: relative;
+    }
+    &.S {
+      position: relative;
+      margin-right: 6px;
+    }
+    &.I {
+      position: relative;
+      margin-left: 18px;
+      margin-right: 6px; 
+    }
+    &.O {
+      position: relative;
+      margin-right: 6px; 
+    }
+    &.N {
+      position: relative;
+    }
+    &:hover {
+      color: $highlightColor;
     }
   }
 }

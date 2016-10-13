@@ -1,0 +1,12 @@
+.N.icon:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  width: 4px;
+  height: 30px;
+  background-color: currentColor;
+  -webkit-transform: skewX(32.5deg);
+          transform: skewX(32.5deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}

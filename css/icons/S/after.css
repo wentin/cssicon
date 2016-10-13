@@ -1,0 +1,15 @@
+.S.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  border-radius: 50%;
+  border-top: solid 4px currentColor;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px currentColor;
+  border-left: solid 4px currentColor;
+}

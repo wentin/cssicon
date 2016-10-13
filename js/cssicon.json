@@ -1,5 +1,70 @@
 [
   {
+    "id": 1000,
+    "name": "C",
+    "classNames": "letter C",
+    "style": "letter",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": [
+      "logo",
+      "letter",
+      "C"
+    ]
+  },
+  {
+    "id": 1001,
+    "name": "S",
+    "classNames": "letter S",
+    "style": "letter",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": [
+      "logo",
+      "letter",
+      "C"
+    ]
+  },
+  {
+    "id": 1002,
+    "name": "I",
+    "classNames": "letter I",
+    "style": "letter",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": [
+      "logo",
+      "letter",
+      "I"
+    ]
+  },
+  {
+    "id": 1003,
+    "name": "O",
+    "classNames": "letter O",
+    "style": "letter",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": [
+      "logo",
+      "letter",
+      "O"
+    ]
+  },
+  {
+    "id": 1004,
+    "name": "N",
+    "classNames": "letter N",
+    "style": "letter",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": [
+      "logo",
+      "letter",
+      "N"
+    ]
+  },
+  {
     "id": 0,
     "name": "search",
     "classNames": "search",
