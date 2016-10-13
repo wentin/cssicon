@@ -1,81 +1,21 @@
-<<<<<<< HEAD
-var app = angular.module("iconApp", []);
-app.controller("MainCtrl", ['$scope','$http', '$filter', '$q', function($scope, $http, $filter, $q) { 
-  $http.get('js/cssicon.json').success(function(data){ 
-
-    // $http.get('http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data').success(function(data){ 
-    //995babe3c73846437f5f1d60549987f5 text
-    //f26dbdc8aa88e459fb89a95b7067bf15 real
-    $scope.icons = data; 
-    $scope.viewerOpen = false;
-    
-    $scope.selectedIcon = $scope.icons[0];
-    
-    var generateHTML;
-    $scope.generateHTML = generateHTML = function(icon){
-      if (icon.htmlChildMarkup) {
-        childHTML = "<i></i>";
-      } else {
-        childHTML = '';
-      }
-      var HTML = '<div class="' + icon.classNames + ' icon">' + childHTML + '</div>'
-      return HTML;
-    }
-    
-    var generateCSS = function(icon){
-      var CSS = "";
-      if (icon.cssBlocks.cssIcon) {
-        CSS += icon.cssBlocks.cssIcon + '\n';
-      }
-      if (icon.cssBlocks.cssIconBefore) {
-        CSS += icon.cssBlocks.cssIconBefore + '\n';
-      }
-      if (icon.cssBlocks.cssIconAfter) {
-        CSS += icon.cssBlocks.cssIconAfter + '\n';
-      }
-      if (icon.cssBlocks.cssChild) {
-        CSS += icon.cssBlocks.cssChild + '\n';
-      }
-      if (icon.cssBlocks.cssChildBefore) {
-        CSS += icon.cssBlocks.cssChildBefore + '\n';
-=======
 var app = angular.module("iconApp", ['ngRoute']);
 
-app.config(function($routeProvider){
-  $routeProvider
-    .when('/',{
-      controller: 'HomeController',
-      templateUrl: 'views/home.html',
-      resolve:{
-        load: function (IconsService) {
-          return IconsService.loadIcons();
-        }
->>>>>>> master
-      }
-    })
-    .when('/icon/:uid', {
-      templateUrl: 'views/home.html',
-      controller: 'IconController',
-      resolve:{
-        load: function (IconsService) {
-          return IconsService.loadIcons();
-        }
-      }
-    })
-    .otherwise({
-        redirectTo: '/'
-    });
-});
-
-app.controller("HomeController", function($scope, IconsService) {
+app.controller("MainCtrl", function($log, $scope, $http, $q, dataService) {
   $scope.viewerOpen = false;
-  $scope.icons = IconsService.getIcons();
-}); 
+  console.log("MainController init");
 
-app.controller('IconController', function($scope, $filter, $http, $routeParams, $q, IconsService) {
+  var promise = dataService.getIcons();
+  promise.then(
+    function(payload) { 
+      $scope.icons = payload.data;
+    },
+    function(errorPayload) {
+      $log.error('failure loading icons', errorPayload);
+    }
+  );
 
-
-  var generateHTML = $scope.generateHTML = function(icon){
+  var generateHTML;
+  generateHTML = $scope.generateHTML = function(icon){
     if (icon.htmlChildMarkup) {
       childHTML = "<i></i>";
     } else {
@@ -131,8 +71,13 @@ app.controller('IconController', function($scope, $filter, $http, $routeParams, 
     }
     return JSON.stringify(data).replace(/"/g, "&​quot;").replace(/'/g, "&apos;");
   }
+  
+  // $scope.handleIconClick = function(icon){
+  //   openIconPanel(icon);
 
-  var openIconPanel = function(icon){
+  // }
+
+  $scope.openIconPanel = function(icon){
     $scope.selectedIcon = icon;
     $scope.selectedIcon.cssBlocks = {};
     var iconName = icon.classNames;
@@ -199,37 +144,50 @@ app.controller('IconController', function($scope, $filter, $http, $routeParams, 
 
     });
   }
-
-  $scope.viewerOpen = true;
-  $scope.icons = IconsService.getIcons();
-  var icon = $filter('filter')($scope.icons, {classNames: $routeParams.uid})[0];
-  openIconPanel(icon);
-
-})
-
-app.service("IconsService", function($http, $q){
-  var icons = null;
-  var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
-  var defer = false;
-  this.loadIcons = function(){
-    if(!defer){
-      defer = $q.defer();
-      $http.get(url).success(function (data) {
-        icons = data;
-        console.log('load json');
-        defer.resolve();
-      });
-    }
-    return defer.promise;
+  
+  $scope.handleButtonCloseClick = function(icon){
+    $scope.viewerOpen = false;
   }
-  this.getIcons = function(){
-    return icons;
-  }
-})
+}); 
 
-app.directive("iconViewer", function() {
-  return {
-    replace: 'true',
-    templateUrl : 'views/icon-viewer.html',
-  };
+
+app.config(function($routeProvider, $locationProvider){
+  $routeProvider
+    .when('/',{
+      templateUrl: 'views/home.html'
+    })
+    .when('/icon/:className', {
+      templateUrl: 'views/home.html',
+      controller: 'IconController'
+    })
+    .otherwise({
+        redirectTo: '/'
+    });
 });
+
+app.factory('dataService', function($http) {
+  return {
+    getIcons: function() {
+      return $http.get('http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data');
+    }
+  }
+});
+
+
+app.controller('IconController', function($log, $scope, $routeParams, $filter, dataService) {
+  console.log("IconController init");
+
+  var promise = dataService.getIcons();
+  promise.then(
+    function(payload) { 
+      $scope.icons = payload.data;
+      console.log($scope.icons);
+      var icon = $filter('filter')($scope.icons, {classNames: $routeParams.className})[0];
+      
+      $scope.openIconPanel(icon);
+    },
+    function(errorPayload) {
+      $log.error('failure loading icons', errorPayload);
+    }
+  );
+})

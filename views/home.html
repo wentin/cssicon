@@ -1,0 +1,57 @@
+<div class="container" ng-class="{viewerOpen: viewerOpen}" >
+  <div class="icons">
+    <div class="logo">
+      <div class="c"></div>
+      <div class="s"></div>
+      <div class="s"></div>
+      <div class="i"></div>
+      <div class="c"></div>
+      <div class="o"></div>
+      <div class="n"></div>
+    </div>
+    <!-- <h4 class="info">
+      A side project by <a href="https://github.com/wentin" target="_blank">wentin</a> (Wenting Zhang)
+    </h4> -->
+    <form class="searchWrapper">
+        <input required type="text" ng-model="searchText" class="search" placeholder="">
+        <div class="search icon"></div>
+        <button class="close icon" type="reset" ng-click="searchText=''"></button>
+    </form>
+    <a class="iconWrapper" ng-href="/#/icon/{{icon.classNames}} " ng-repeat-start="icon in icons | filter: searchText">
+      <div ng-class="icon.classNames" class="icon">
+        <i ng-if="icon.htmlChildMarkup"></i>
+      </div> 
+    </a> 
+    <i ng-repeat-end></i>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+    <div class="iconWrapper iconWrapperHidden"></div>
+
+    <!-- <div ng-include="'partials/icons.html'"></div> -->
+    
+    <div class="info">
+      adding more css icons soon, check out the full css icon collection <a href="/old">here</a>
+    </div>
+
+    <div class="about">
+      <a href="https://twitter.com/DesignJokes" target="_blank" class="me"><i></i>a side project<br>by wentin</a>
+      <a href="https://github.com/wentin/cssicon" target="_blank" class="github"><i></i>on github</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//cssicon.space/" target="_blank" class="facebook"><i></i>share it on<br>facebook</a>
+      <a href="https://twitter.com/home?status=http%3A//cssicon.space/%20CSS%20ICON%3A%20a%20set%20of%20icons%20made%20by%20pure%20css%20via%20%40DesignJokes%20%23css%20%23cssicon" target="_blank" class="twitter"><i></i>or twitter</a>
+    </div>
+  </div>
+  <icon-viewer></icon-viewer>
+</div>

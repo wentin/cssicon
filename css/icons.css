@@ -2260,6 +2260,7 @@ body {
 }
 
 .upload2.icon {
+  color: #000;
   position: absolute;
   margin-left: 4px;
   margin-top: 3px;
