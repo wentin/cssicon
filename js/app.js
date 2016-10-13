@@ -135,7 +135,8 @@ app.controller("MainController", function($http, $scope, $scope, $q) {
   });
   
   htmlClipboard.on('success', function(e) {
-    console.log("html", e);
+    console.log("html", e.trigger);
+    angular.element(e.trigger).addClass('copied');
   });
   
   var cssClipboard = new Clipboard('.css.buttonCopy', {
@@ -145,7 +146,8 @@ app.controller("MainController", function($http, $scope, $scope, $q) {
   });
   
   cssClipboard.on('success', function(e) {
-    console.log("css", e);
+    console.log("css", e.trigger);
+    angular.element(e.trigger).addClass('copied');
   });
 }); 
 
@@ -161,6 +163,10 @@ app.controller('IconController', function($rootScope, $scope, $filter, $statePar
   
   $scope.handleButtonCloseClick = function(){
     $rootScope.viewerOpen = false;
+  }
+
+  $scope.handleButtonCopyMouseLeave = function(e){
+    angular.element(document.querySelectorAll(".buttonCopy")).removeClass('copied');
   }
 })
 

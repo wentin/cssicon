@@ -34,13 +34,15 @@
     </form>
     <div class="codeBlocks">
       <h4>html
-        <div class="html buttonCopy">
+        <div class="html buttonCopy"
+        ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>
       <xmp>{{generateHTML(selectedIcon)}}</xmp>
       <h4>css
-        <div class="css buttonCopy">
+        <div class="css buttonCopy" 
+        ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>

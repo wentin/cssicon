@@ -253,7 +253,7 @@ button {
 .viewer .viewerWrapper h4 .buttonCopy {
   float: right;
   cursor: pointer;
-  width: 56px;
+  min-width: 56px;
   height: 22px;
   position: relative;
 }
@@ -261,6 +261,9 @@ button {
   position: absolute;
   top: 6px;
   right: 0;
+}
+.viewer .viewerWrapper h4 .buttonCopy.copied::after {
+  content: "copied";
 }
 .viewer .viewerWrapper h4 .buttonCopy::after {
   content: "copy";
