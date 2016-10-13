@@ -48,10 +48,10 @@ button {
       .iconWrapperBig {
         height: 90px;
         width: auto;
+        text-align: center;
         .scale {
           transform: scale(3);
           transform-origin: center top;
-          display: block;
         }
       }
     }

@@ -93,13 +93,13 @@ button {
 .container.viewerOpen.letterIconViewerOpen .viewerWrapper .iconWrapperBig {
   height: 90px;
   width: auto;
+  text-align: center;
 }
 .container.viewerOpen.letterIconViewerOpen .viewerWrapper .iconWrapperBig .scale {
   -webkit-transform: scale(3);
           transform: scale(3);
   -webkit-transform-origin: center top;
           transform-origin: center top;
-  display: block;
 }
 
 .icons {

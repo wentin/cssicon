@@ -1,5 +1,6 @@
 .C.icon {
   color: #000;
+  position: absolute;
   width: 22px;
   height: 22px;
   border-radius: 50%;

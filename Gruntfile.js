@@ -2,21 +2,21 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
-            // dist: {
-            //     options: {
-            //         style: 'expanded',
-            //         sourcemap: 'none'
-            //     },
-            //     files: [
-            //         {
-            //             expand: true,
-            //             cwd: 'scss/icons',
-            //             src: ["*.scss", "**/*.scss"],
-            //             dest: 'css/icons',
-            //             ext:  '.css'
-            //         }
-            //     ]
-            // },
+            dist: {
+                options: {
+                    style: 'expanded',
+                    sourcemap: 'none'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'scss/icons',
+                        src: ["*.scss", "**/*.scss"],
+                        dest: 'css/icons',
+                        ext:  '.css'
+                    }
+                ]
+            },
             dist2: {
                 options: {
                     style: 'expanded',
@@ -29,17 +29,17 @@ module.exports = function(grunt) {
             }
         },
         autoprefixer: {
-            // dist: {
-            //     files: [
-            //         {
-            //             expand: true,
-            //             cwd: 'css/icons',
-            //             src: ["*.css", "**/*.css"],
-            //             dest: 'css/icons',
-            //             ext:  '.css'
-            //         }
-            //     ]
-            // },
+            dist: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'css/icons',
+                        src: ["*.css", "**/*.css"],
+                        dest: 'css/icons',
+                        ext:  '.css'
+                    }
+                ]
+            },
             dist2: {
                 options: {
                     map: true
