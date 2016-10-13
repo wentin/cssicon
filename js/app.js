@@ -6,8 +6,10 @@ app.config(function($routeProvider){
       controller: 'HomeController',
       templateUrl: 'views/home.html',
       resolve:{
-        'MyDataService': function(DataService){
-          return DataService.promise;
+        icons: function (IconsService) {
+            return IconsService.getIcons().then(function (response) {
+                return response.data;
+            });
         }
       }
     })
@@ -16,24 +18,14 @@ app.config(function($routeProvider){
     });
 });
 
-app.service('DataService', function($http) {
-  var myData = null;
-  
-  var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
-  var promise = $http.get(url).success(function (data) {
-    myData = data;
-  });
-
-  return {
-    promise: promise,
-    getIcons: function() {
-      return myData;
-    }
-  }
-});
-
-app.controller("HomeController", function($scope, DataService) {
+app.controller("HomeController", function($scope, icons) {
   $scope.viewerOpen = false;
-  console.log("HomeController init");
-  $scope.icons = DataService.getIcons();
+  $scope.icons = icons;
 }); 
+
+app.service("IconsService", function($http){
+  var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
+  this.getIcons = function(){
+    return $http.get(url);
+  }
+})
