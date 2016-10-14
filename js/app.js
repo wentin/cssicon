@@ -179,8 +179,8 @@ app.controller('IconController', function($rootScope, $scope, $filter, $statePar
 
 app.service("IconsService", function($http, $q){
   var icons = null;
-  var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
-  // var url = "js/cssicon.json";
+  // var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
+  var url = "js/cssicon.json";
 
   // var defer = false;
   this.loadIcons = function(){
