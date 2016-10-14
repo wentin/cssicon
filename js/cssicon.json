@@ -1486,7 +1486,7 @@
   },
   {
     "id": 112,
-    "name": "battery solid",
+    "name": "battery solid charged",
     "classNames": "battery-solid-3",
     "style": "solid",
     "htmlChildMarkup": false,
