@@ -89,6 +89,9 @@ button {
 .container.viewerOpen.letterIconViewerOpen .viewerWrapper .iconWrapper {
   border: none;
   padding: 0;
+  margin-top: 9px;
+  width: auto;
+  height: auto;
 }
 .container.viewerOpen.letterIconViewerOpen .viewerWrapper .iconWrapperBig {
   height: 90px;
