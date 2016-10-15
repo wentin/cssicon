@@ -6325,7 +6325,7 @@ body {
   border-bottom: solid 1px currentColor;
 }
 
-.rain-drop.icon:after {
+.cloud-raindrop.icon:after {
   content: '';
   position: absolute;
   top: 5px;
