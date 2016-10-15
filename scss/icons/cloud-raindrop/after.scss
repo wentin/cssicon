@@ -1,5 +1,5 @@
 @import '../../mixin';
-.rain-drop.icon {
+.cloud-raindrop.icon {
   &:after {
     @include pseudo();
     top: 5px;

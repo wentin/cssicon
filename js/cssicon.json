@@ -2008,8 +2008,8 @@
   },
   {
     "id": 170,
-    "name": "rain drop",
-    "classNames": "rain-drop",
+    "name": "cloud raindrop",
+    "classNames": "cloud-raindrop",
     "style": "line",
     "htmlChildMarkup": true,
     "cssHidden": "",
