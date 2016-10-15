@@ -1,0 +1,10 @@
+.rain.icon i {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 1px;
+  height: 4px;
+  background-color: currentColor;
+  box-shadow: 3px -3px 0 0 currentColor, 3px -8px 0 0 currentColor, 0 -5px 0 0 currentColor;
+  z-index: 2;
+}

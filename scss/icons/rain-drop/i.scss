@@ -1,0 +1,14 @@
+.rain-drop.icon {
+  i {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+    border-radius: 0 2px 2px 2px;
+    background-color: currentColor;
+    box-shadow: -1px -6px 0 0 currentColor;
+    z-index: 2;
+  }
+}

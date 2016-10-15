@@ -1,0 +1,13 @@
+.sun-brightness.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 3px;
+  height: 6px;
+  border-radius: 50%;
+  border-color: currentColor;
+  border-style: solid;
+  border-width: 1px 4px 1px 1px;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
+}

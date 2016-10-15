@@ -1,0 +1,14 @@
+@import '../../mixin';
+.cloud-lightning.icon {
+  i {
+    &:after {
+      @include pseudo();
+      top: -1px;
+      left: 4px;
+      width: 0;
+      height: 0;
+      border-left: solid 4px currentColor;
+      border-bottom: solid 7px transparent;
+    }
+  }
+}

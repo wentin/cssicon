@@ -1,0 +1,11 @@
+.sunrise-solid.icon i:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}

@@ -1,0 +1,16 @@
+@import '../../mixin';
+.rain.icon {
+  &:before {
+    @include pseudo();
+    top: -7px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    border-left: solid 1px transparent;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+}

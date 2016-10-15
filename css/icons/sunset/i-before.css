@@ -1,0 +1,11 @@
+.sunset.icon i:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: solid 2px currentColor;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}

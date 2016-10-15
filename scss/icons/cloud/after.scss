@@ -1,0 +1,11 @@
+@import '../../mixin';
+.cloud.icon {
+  &:after {
+    @include pseudo();
+    top: 0px;
+    left: 4px;
+    width: 7px;
+    height: 6px;
+    border-bottom: solid 1px currentColor;
+  }
+}

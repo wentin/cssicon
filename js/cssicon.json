@@ -1969,5 +1969,239 @@
     "htmlChildMarkup": true,
     "cssHidden": "",
     "tag": []
+  },
+  {
+    "id": 166,
+    "name": "cloud",
+    "classNames": "cloud",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 167,
+    "name": "cloud solid",
+    "classNames": "cloud-solid",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 168,
+    "name": "snow",
+    "classNames": "snow",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 169,
+    "name": "rain",
+    "classNames": "rain",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 170,
+    "name": "rain drop",
+    "classNames": "rain-drop",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 171,
+    "name": "cloud lightning",
+    "classNames": "cloud-lightning",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 172,
+    "name": "cloud download",
+    "classNames": "cloud-download",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 173,
+    "name": "cloud download solid",
+    "classNames": "cloud-download-solid",
+    "style": "solid",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 174,
+    "name": "cloud upload",
+    "classNames": "cloud-upload",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 175,
+    "name": "cloud upload solid",
+    "classNames": "cloud-upload-solid",
+    "style": "solid",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 176,
+    "name": "moon",
+    "classNames": "moon",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 177,
+    "name": "moon solid",
+    "classNames": "moon-solid",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 178,
+    "name": "sun",
+    "classNames": "sun",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 179,
+    "name": "sun solid",
+    "classNames": "sun-solid",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 180,
+    "name": "sun brightness",
+    "classNames": "sun-brightness",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 181,
+    "name": "sun raindrop",
+    "classNames": "sun-raindrop",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 182,
+    "name": "sun raindrop solid",
+    "classNames": "sun-raindrop-solid",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 183,
+    "name": "sun horizon",
+    "classNames": "sun-horizon",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 184,
+    "name": "sun horizon solid",
+    "classNames": "sun-horizon-solid",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 185,
+    "name": "sunrise",
+    "classNames": "sunrise",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 186,
+    "name": "sunrise solid",
+    "classNames": "sunrise-solid",
+    "style": "solid",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 187,
+    "name": "sunset",
+    "classNames": "sunset",
+    "style": "line",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 188,
+    "name": "sunset solid",
+    "classNames": "sunset-solid",
+    "style": "solid",
+    "htmlChildMarkup": true,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 189,
+    "name": "raindrop",
+    "classNames": "raindrop",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 190,
+    "name": "raindrop solid",
+    "classNames": "raindrop-solid",
+    "style": "solid",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
+  },
+  {
+    "id": 191,
+    "name": "no raindrop",
+    "classNames": "no-raindrop",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": []
   }
 ]

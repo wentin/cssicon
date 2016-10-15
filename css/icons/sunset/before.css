@@ -1,0 +1,9 @@
+.sunset.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}

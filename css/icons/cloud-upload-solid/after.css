@@ -1,0 +1,10 @@
+.cloud-upload-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 7px;
+  height: 6px;
+  background-color: currentColor;
+  border-bottom: solid 1px currentColor;
+}

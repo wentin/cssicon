@@ -1,0 +1,13 @@
+.sun-raindrop-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 0 50% 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: #fff;
+  background-color: currentColor;
+}

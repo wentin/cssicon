@@ -1,0 +1,7 @@
+.search.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+}

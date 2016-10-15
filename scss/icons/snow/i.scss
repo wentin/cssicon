@@ -1,0 +1,15 @@
+.snow.icon {
+  i {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: currentColor;
+    box-shadow: 3px -2px 0 0 currentColor,
+                3px 1px 0 0 currentColor,
+                0 3px 0 0 currentColor;
+    z-index: 2;
+  }
+}

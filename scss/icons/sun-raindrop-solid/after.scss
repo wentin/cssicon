@@ -1,0 +1,14 @@
+@import '../../mixin';
+.sun-raindrop-solid.icon {
+  &:after {
+    @include pseudo();    
+    left: 4px;
+    top: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50% 0 50% 50%;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../mixin';
+.sunrise.icon {
+  &:before {
+    @include pseudo();
+    left: -6px;
+    top: 6px;
+    width: 18px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}

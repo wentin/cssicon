@@ -1,0 +1,15 @@
+@import '../../mixin';
+.cloud-download.icon {
+  i {
+    &:before {
+      @include pseudo();
+      top: 4px;
+      left: 1px;
+      width: 1px;
+      height: 7px;
+      background-color: currentColor;
+      border-left: solid 4px #fff;
+      border-right: solid 4px #fff;
+    }
+  }
+}

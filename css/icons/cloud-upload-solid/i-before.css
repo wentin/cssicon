@@ -1,0 +1,9 @@
+.cloud-upload-solid.icon i:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 1px;
+  height: 7px;
+  background-color: currentColor;
+}

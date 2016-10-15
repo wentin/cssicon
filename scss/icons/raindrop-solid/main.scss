@@ -1,0 +1,12 @@
+.raindrop-solid.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: currentColor;
+    border: solid 1px currentColor;
+    border-radius: 6px 6px 6px 0;
+    transform: rotate(135deg);
+}

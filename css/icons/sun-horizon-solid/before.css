@@ -1,0 +1,10 @@
+.sun-horizon-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 18px;
+  height: 1px;
+  border-top: solid 1px #fff;
+  background-color: currentColor;
+}

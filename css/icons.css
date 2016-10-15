@@ -4157,15 +4157,16 @@ body {
   background-color: currentColor;
 }
 
-.mobile-solid.icon:before {
+.moon-solid.icon:before {
   content: '';
   position: absolute;
-  left: 5px;
-  top: -2px;
-  width: 2px;
-  height: 1px;
-  color: white;
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 10px;
+  color: #fff;
   background-color: currentColor;
+  border-radius: 5px 0 0 5px;
 }
 
 .mobile-solid.icon {
@@ -6138,6 +6139,1360 @@ body {
   border-radius: 50%;
   border: solid 1px currentColor;
   background-color: currentColor;
+}
+
+.cloud.icon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  width: 7px;
+  height: 6px;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 7px;
+  height: 6px;
+  background-color: currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  background-color: currentColor;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.snow.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 2px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.snow.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.snow.icon i {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 2px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: currentColor;
+  box-shadow: 3px -2px 0 0 currentColor, 3px 1px 0 0 currentColor, 0 3px 0 0 currentColor;
+  z-index: 2;
+}
+
+.snow.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.rain.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 2px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.rain.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.rain.icon i {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 1px;
+  height: 4px;
+  background-color: currentColor;
+  box-shadow: 3px -3px 0 0 currentColor, 3px -8px 0 0 currentColor, 0 -5px 0 0 currentColor;
+  z-index: 2;
+}
+
+.rain.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.rain-drop.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 2px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.rain-drop.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.rain-drop.icon i {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 4px;
+  height: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 0 2px 2px 2px;
+  background-color: currentColor;
+  box-shadow: -1px -6px 0 0 currentColor;
+  z-index: 2;
+}
+
+.rain-drop.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-lightning.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 2px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.cloud-lightning.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-lightning.icon i:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 4px;
+  width: 0;
+  height: 0;
+  border-left: solid 4px currentColor;
+  border-bottom: solid 7px transparent;
+}
+
+.cloud-lightning.icon i:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border-right: solid 4px currentColor;
+  border-top: solid 7px transparent;
+}
+
+.cloud-lightning.icon i {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  z-index: 2;
+}
+
+.cloud-lightning.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-download.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 2px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.cloud-download.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-download.icon i:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.cloud-download.icon i:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 1px;
+  height: 7px;
+  background-color: currentColor;
+  border-left: solid 4px #fff;
+  border-right: solid 4px #fff;
+}
+
+.cloud-download.icon i {
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  z-index: 2;
+}
+
+.cloud-download.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-download-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 7px;
+  height: 6px;
+  background-color: currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-download-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-download-solid.icon i:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.cloud-download-solid.icon i:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 1px;
+  height: 7px;
+  background-color: currentColor;
+}
+
+.cloud-download-solid.icon i {
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  color: #fff;
+  z-index: 2;
+}
+
+.cloud-download-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  background-color: currentColor;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-upload.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 2px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.cloud-upload.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-upload.icon i:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cloud-upload.icon i:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 1px;
+  height: 7px;
+  background-color: currentColor;
+  border-left: solid 4px #fff;
+  border-right: solid 4px #fff;
+}
+
+.cloud-upload.icon i {
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  z-index: 2;
+}
+
+.cloud-upload.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-upload-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 7px;
+  height: 6px;
+  background-color: currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-upload-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: currentColor;
+  border-left: solid 1px transparent;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.cloud-upload-solid.icon i:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cloud-upload-solid.icon i:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 1px;
+  height: 7px;
+  background-color: currentColor;
+}
+
+.cloud-upload-solid.icon i {
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  color: #fff;
+  z-index: 2;
+}
+
+.cloud-upload-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 9px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 0 0 4px;
+  background-color: currentColor;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.moon.icon:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px transparent;
+}
+
+.moon.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px transparent;
+}
+
+.moon.icon:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.moon-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.sun.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
+}
+
+.sun-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  background-color: currentColor;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
+}
+
+.sun-brightness.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 3px;
+  height: 6px;
+  border-radius: 50%;
+  border-color: currentColor;
+  border-style: solid;
+  border-width: 1px 4px 1px 1px;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
+}
+
+.sun-raindrop.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50% 0 50% 50%;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sun-raindrop.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 0 50% 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: #fff;
+  background-color: currentColor;
+}
+
+.sun-raindrop.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
+}
+
+.sun-raindrop-solid.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50% 0 50% 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sun-raindrop-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 0 50% 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: #fff;
+  background-color: currentColor;
+}
+
+.sun-raindrop-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
+}
+
+.sun-horizon.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.sun-horizon.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  border-bottom: solid 1px transparent;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
+}
+
+.sun-horizon-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 18px;
+  height: 1px;
+  border-top: solid 1px #fff;
+  background-color: currentColor;
+}
+
+.sun-horizon-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  border: 1px solid currentColor;
+  border-bottom: solid 1px transparent;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
+}
+
+.sunrise.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.sunrise.icon i:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}
+
+.sunrise.icon i {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.sunrise.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  border-bottom: solid 1px transparent;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
+}
+
+.sunrise-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+  border-top: solid 1px #fff;
+}
+
+.sunrise-solid.icon i:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}
+
+.sunrise-solid.icon i {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 3px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.sunrise-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  background-color: currentColor;
+  border-bottom: solid 1px transparent;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
+}
+
+.sunset.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.sunset.icon i:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: solid 2px currentColor;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}
+
+.sunset.icon i {
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 2px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.sunset.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  border-bottom: solid 1px transparent;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
+}
+
+.sunset-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+  border-top: solid 1px #fff;
+}
+
+.sunset-solid.icon i:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: solid 2px currentColor;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}
+
+.sunset-solid.icon i {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 3px;
+  color: #fff;
+  background-color: currentColor;
+}
+
+.sunset-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  background-color: currentColor;
+  border-bottom: solid 1px transparent;
+  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
+}
+
+.raindrop.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 6px 6px 6px 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.raindrop-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: currentColor;
+  border: solid 1px currentColor;
+  border-radius: 6px 6px 6px 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.no-raindrop.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 19px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.search.icon i:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.search.icon i:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.search.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.no-raindrop.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 6px 6px 6px 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.raindrop-percent.icon {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 12px;
+  height: 12px;
+}
+.raindrop-percent.icon:before {
+  width: 10px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.raindrop-percent.icon:after {
+  top: 1px;
+  content: "%";
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  color: currentColor;
+  width: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+.raindrop-percent.icon.filled:before {
+  background-color: currentColor;
+}
+.raindrop-percent.icon.filled:after {
+  color: white;
+}
+
+.umbrella.icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  width: 13px;
+  height: 6px;
+  border-radius: 8px 8px 0 0;
+  border: solid 1px currentColor;
+}
+.umbrella.icon:before {
+  width: 4px;
+  height: 2px;
+  border-radius: 0 0 3px 3px;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  left: 6px;
+  top: 12px;
+}
+.umbrella.icon:after {
+  width: 1px;
+  height: 5px;
+  background-color: currentColor;
+  left: 6px;
+  top: 7px;
+}
+.umbrella.icon.filled {
+  background-color: currentColor;
+}
+
+.thermometer.icon {
+  margin-left: 7px;
+  margin-top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  border: solid 1px currentColor;
+}
+.thermometer.icon:before {
+  width: 2px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px white;
+  border-radius: 2px 2px 0 0;
+  background-color: white;
+  z-index: 1;
+  left: 1px;
+  top: -11px;
+}
+.thermometer.icon.filled:after {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
+  left: 1px;
+  top: 1px;
+  z-index: 2;
+}
+
+.windy.icon {
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 13px;
+  height: 1px;
+  background-color: currentColor;
+}
+.windy.icon:before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  top: -7px;
+  right: -4px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.windy.icon:after {
+  width: 10px;
+  height: 1px;
+  background-color: currentColor;
+  top: 2px;
+}
+.windy.icon i {
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  top: -2px;
+}
+.windy.icon i:before {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  top: -5px;
+  right: -3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.windy.icon i:after {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border-left: solid 1px transparent;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  top: 4px;
+  left: 7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.lightning.icon {
+  margin-left: 5px;
+  margin-top: 12px;
+  width: 3px;
+  height: 6px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.lightning.icon:before {
+  left: 6px;
+  top: -11px;
+  width: 3px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.lightning.icon:after {
+  width: 1px;
+  height: 12px;
+  background-color: currentColor;
+  top: -13px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
+  box-shadow: 6px 4px 0 0 currentColor;
+}
+
+.lightning-filled.icon {
+  margin-left: 5px;
+  margin-top: 1px;
+  width: 9px;
+  height: 3px;
+}
+.lightning-filled.icon:before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: solid 7px currentColor;
+  border-top: solid 11px transparent;
+}
+.lightning-filled.icon:after {
+  top: 8px;
+  left: 4px;
+  width: 0;
+  height: 0;
+  border-left: solid 7px currentColor;
+  border-bottom: solid 11px transparent;
+}
+
+.celsius.icon {
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 17px;
+  height: 15px;
+}
+.celsius.icon:before {
+  content: "C";
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: currentColor;
+}
+.celsius.icon:after {
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  left: 12px;
+  top: 1px;
+}
+
+.fahrenheit.icon {
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 16px;
+  height: 15px;
+}
+.fahrenheit.icon:before {
+  content: "F";
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: currentColor;
+}
+.fahrenheit.icon:after {
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  left: 11px;
+  top: 1px;
+}
+
+.tree.icon {
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 2px;
+  height: 4px;
+  background-color: currentColor;
+}
+.tree.icon:before {
+  left: -4px;
+  top: -13px;
+  width: 0;
+  height: 0;
+  border-bottom: solid 7px currentColor;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+}
+.tree.icon:after {
+  left: -6px;
+  top: -9px;
+  width: 0;
+  height: 0;
+  border-bottom: solid 9px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
 }
 
 .circle.icon {
@@ -9235,354 +10590,6 @@ body {
   border-bottom: 8px solid transparent;
 }
 
-.cloud.icon {
-  margin-left: 1px;
-  margin-top: 9px;
-  width: 5px;
-  height: 6px;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-radius: 4px 0 0 4px;
-}
-.cloud.icon:before {
-  width: 12px;
-  height: 12px;
-  border-left: solid 1px transparent;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-radius: 50%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: -7px;
-  left: 4px;
-}
-.cloud.icon:after {
-  width: 7px;
-  height: 6px;
-  border-bottom: solid 1px currentColor;
-  top: 0px;
-  left: 4px;
-}
-.cloud.icon.snow i {
-  left: 6px;
-  top: 4px;
-  width: 9px;
-  height: 3px;
-  background-color: white;
-  z-index: 2;
-}
-.cloud.icon.snow i:before {
-  top: -1px;
-  left: 2px;
-  width: 2px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: currentColor;
-  box-shadow: 3px -2px 0 0 currentColor, 3px 1px 0 0 currentColor, 0 3px 0 0 currentColor;
-}
-.cloud.icon.rain i {
-  left: 6px;
-  top: 4px;
-  width: 9px;
-  height: 3px;
-  background-color: white;
-  z-index: 2;
-}
-.cloud.icon.rain i:before {
-  top: 2px;
-  left: 3px;
-  width: 1px;
-  height: 4px;
-  background-color: currentColor;
-  box-shadow: 3px -3px 0 0 currentColor, 3px -8px 0 0 currentColor, 0 -5px 0 0 currentColor;
-}
-.cloud.icon.rain-drop i {
-  left: 6px;
-  top: 4px;
-  width: 9px;
-  height: 3px;
-  background-color: white;
-  z-index: 2;
-}
-.cloud.icon.rain-drop i:before {
-  top: 1px;
-  left: 1px;
-  width: 4px;
-  height: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  border-radius: 0 2px 2px 2px;
-  background-color: currentColor;
-  box-shadow: -1px -6px 0 0 currentColor;
-}
-.cloud.icon.lightningI i {
-  left: 6px;
-  top: 4px;
-  width: 9px;
-  height: 3px;
-  background-color: white;
-  z-index: 2;
-}
-.cloud.icon.lightningI i:before {
-  top: -6px;
-  left: 2px;
-  width: 0;
-  height: 0;
-  border-right: solid 4px currentColor;
-  border-top: solid 7px transparent;
-}
-.cloud.icon.lightningI i:after {
-  top: -1px;
-  left: 4px;
-  width: 0;
-  height: 0;
-  border-left: solid 4px currentColor;
-  border-bottom: solid 7px transparent;
-}
-.cloud.icon.up-arrow i {
-  left: 5px;
-  top: -4px;
-  z-index: 2;
-}
-.cloud.icon.up-arrow i:before {
-  width: 1px;
-  height: 7px;
-  background-color: currentColor;
-  border-left: solid 4px white;
-  border-right: solid 4px white;
-  top: 4px;
-  left: 1px;
-}
-.cloud.icon.up-arrow i:after {
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  left: 3px;
-  top: 4px;
-}
-.cloud.icon.down-arrow i {
-  left: 5px;
-  top: -4px;
-  z-index: 2;
-}
-.cloud.icon.down-arrow i:before {
-  width: 1px;
-  height: 7px;
-  background-color: currentColor;
-  border-left: solid 4px white;
-  border-right: solid 4px white;
-  top: 4px;
-  left: 1px;
-}
-.cloud.icon.down-arrow i:after {
-  width: 4px;
-  height: 4px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  left: 3px;
-  top: 6px;
-}
-.cloud.icon.filled {
-  background-color: currentColor;
-}
-.cloud.icon.filled:before, .cloud.icon.filled:after {
-  background-color: currentColor;
-}
-.cloud.icon.filled.up-arrow i:before {
-  background-color: white;
-  border: none;
-  left: 5px;
-}
-.cloud.icon.filled.up-arrow i:after {
-  border-color: white;
-}
-.cloud.icon.filled.down-arrow i {
-  top: -5px;
-}
-.cloud.icon.filled.down-arrow i:before {
-  background-color: white;
-  border: none;
-  left: 5px;
-}
-.cloud.icon.filled.down-arrow i:after {
-  border-color: white;
-}
-
-.moon.icon {
-  margin-left: 4px;
-  margin-top: 2px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px transparent;
-}
-.moon.icon:before {
-  left: 6px;
-  top: 1px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border-top: solid 1px transparent;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.moon.icon.filled {
-  background-color: currentColor;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-.moon.icon.filled:before {
-  background-color: white;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  left: 8px;
-  top: 2px;
-  width: 7px;
-  height: 10px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.sun.icon {
-  margin-left: 6px;
-  margin-top: 6px;
-  width: 6px;
-  height: 6px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
-}
-.sun.icon.filled {
-  background-color: currentColor;
-}
-.sun.icon.sun-brightness {
-  width: 3px;
-  height: 6px;
-  border-color: currentColor;
-  border-style: solid;
-  border-width: 1px 4px 1px 1px;
-  border-radius: 100%;
-}
-
-.sun-raindrop.icon {
-  margin-left: 6px;
-  margin-top: 6px;
-  width: 6px;
-  height: 6px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  0 8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  -6px 6px 0 -3px currentColor,  6px -6px 0 -3px currentColor,  6px 6px 0 -3px currentColor;
-}
-.sun-raindrop.icon:before {
-  left: 3px;
-  top: 3px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50% 0 50% 50%;
-  background-color: white;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.sun-raindrop.icon:after {
-  left: 4px;
-  top: 4px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50% 0 50% 50%;
-  background-color: white;
-  border: solid 1px currentColor;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.sun-raindrop.icon.filled {
-  background-color: currentColor;
-}
-.sun-raindrop.icon.filled:after {
-  background-color: currentColor;
-}
-
-.sun-horizon.icon {
-  margin-left: 6px;
-  margin-top: 9px;
-  width: 6px;
-  height: 6px;
-  border: 1px solid currentColor;
-  border-bottom: solid 1px transparent;
-  border-radius: 50%;
-  box-shadow: -8px 0 0 -3px currentColor,  8px 0 0 -3px currentColor,  0 -8px 0 -3px currentColor,  -6px -6px 0 -3px currentColor,  6px -6px 0 -3px currentColor;
-}
-.sun-horizon.icon:before {
-  left: -6px;
-  top: 6px;
-  width: 18px;
-  height: 1px;
-  background-color: currentColor;
-}
-.sun-horizon.icon.sun-rise i {
-  left: 2px;
-  top: 2px;
-  width: 2px;
-  height: 3px;
-  background-color: currentColor;
-}
-.sun-horizon.icon.sun-rise i:before {
-  left: -1px;
-  top: -1px;
-  width: 0;
-  height: 0;
-  border-bottom: solid 2px currentColor;
-  border-left: solid 2px transparent;
-  border-right: solid 2px transparent;
-}
-.sun-horizon.icon.sun-set i {
-  left: 2px;
-  top: 1px;
-  width: 2px;
-  height: 3px;
-  background-color: currentColor;
-}
-.sun-horizon.icon.sun-set i:before {
-  left: -1px;
-  top: 2px;
-  width: 0;
-  height: 0;
-  border-top: solid 2px currentColor;
-  border-left: solid 2px transparent;
-  border-right: solid 2px transparent;
-}
-.sun-horizon.icon.filled {
-  background-color: currentColor;
-}
-.sun-horizon.icon.filled:before {
-  top: 5px;
-  border-top: solid 1px white;
-}
-.sun-horizon.icon.filled.sun-rise i {
-  background-color: white;
-}
-.sun-horizon.icon.filled.sun-rise i:before {
-  border-bottom-color: white;
-}
-.sun-horizon.icon.filled.sun-set i {
-  background-color: white;
-}
-.sun-horizon.icon.filled.sun-set i:before {
-  border-top-color: white;
-}
-
 .record.icon {
   margin-left: 5px;
   margin-top: 14px;
@@ -9611,319 +10618,6 @@ body {
 }
 .record.icon.filled:after {
   background-color: currentColor;
-}
-
-.raindrop.icon {
-  margin-left: 5px;
-  margin-top: 5px;
-  width: 10px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 0px;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-.raindrop.icon.filled {
-  background-color: currentColor;
-}
-
-.raindrop-nodrop.icon {
-  margin-left: 5px;
-  margin-top: 5px;
-  width: 10px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 0px;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-.raindrop-nodrop.icon:after {
-  width: 19px;
-  height: 1px;
-  background-color: currentColor;
-  top: 5px;
-  left: -5px;
-}
-
-.raindrop-percent.icon {
-  margin-left: 5px;
-  margin-top: 5px;
-  width: 12px;
-  height: 12px;
-}
-.raindrop-percent.icon:before {
-  width: 10px;
-  height: 10px;
-  border: solid 1px currentColor;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 0px;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-.raindrop-percent.icon:after {
-  top: 1px;
-  content: "%";
-  font-family: Arial, sans-serif;
-  font-size: 8px;
-  font-weight: bold;
-  color: currentColor;
-  width: 12px;
-  line-height: 12px;
-  text-align: center;
-}
-.raindrop-percent.icon.filled:before {
-  background-color: currentColor;
-}
-.raindrop-percent.icon.filled:after {
-  color: white;
-}
-
-.umbrella.icon {
-  margin-left: 3px;
-  margin-top: 2px;
-  width: 13px;
-  height: 6px;
-  border-radius: 8px 8px 0 0;
-  border: solid 1px currentColor;
-}
-.umbrella.icon:before {
-  width: 4px;
-  height: 2px;
-  border-radius: 0 0 3px 3px;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  left: 6px;
-  top: 12px;
-}
-.umbrella.icon:after {
-  width: 1px;
-  height: 5px;
-  background-color: currentColor;
-  left: 6px;
-  top: 7px;
-}
-.umbrella.icon.filled {
-  background-color: currentColor;
-}
-
-.thermometer.icon {
-  margin-left: 7px;
-  margin-top: 11px;
-  width: 6px;
-  height: 6px;
-  border-radius: 4px;
-  border: solid 1px currentColor;
-}
-.thermometer.icon:before {
-  width: 2px;
-  height: 10px;
-  border-top: solid 1px currentColor;
-  border-left: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px white;
-  border-radius: 2px 2px 0 0;
-  background-color: white;
-  z-index: 1;
-  left: 1px;
-  top: -11px;
-}
-.thermometer.icon.filled:after {
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: currentColor;
-  left: 1px;
-  top: 1px;
-  z-index: 2;
-}
-
-.windy.icon {
-  margin-left: 2px;
-  margin-top: 10px;
-  width: 13px;
-  height: 1px;
-  background-color: currentColor;
-}
-.windy.icon:before {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  top: -7px;
-  right: -4px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.windy.icon:after {
-  width: 10px;
-  height: 1px;
-  background-color: currentColor;
-  top: 2px;
-}
-.windy.icon i {
-  width: 5px;
-  height: 1px;
-  background-color: currentColor;
-  top: -2px;
-}
-.windy.icon i:before {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  top: -5px;
-  right: -3px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.windy.icon i:after {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  border-left: solid 1px transparent;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-  top: 4px;
-  left: 7px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.lightning.icon {
-  margin-left: 5px;
-  margin-top: 12px;
-  width: 3px;
-  height: 6px;
-  border-top: solid 1px currentColor;
-  border-right: solid 1px currentColor;
-}
-.lightning.icon:before {
-  left: 6px;
-  top: -11px;
-  width: 3px;
-  height: 6px;
-  border-left: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-.lightning.icon:after {
-  width: 1px;
-  height: 12px;
-  background-color: currentColor;
-  top: -13px;
-  -webkit-transform-origin: left bottom;
-          transform-origin: left bottom;
-  -webkit-transform: rotate(31deg);
-          transform: rotate(31deg);
-  box-shadow: 6px 4px 0 0 currentColor;
-}
-
-.lightning-filled.icon {
-  margin-left: 5px;
-  margin-top: 1px;
-  width: 9px;
-  height: 3px;
-}
-.lightning-filled.icon:before {
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-right: solid 7px currentColor;
-  border-top: solid 11px transparent;
-}
-.lightning-filled.icon:after {
-  top: 8px;
-  left: 4px;
-  width: 0;
-  height: 0;
-  border-left: solid 7px currentColor;
-  border-bottom: solid 11px transparent;
-}
-
-.celsius.icon {
-  margin-left: 2px;
-  margin-top: 3px;
-  width: 17px;
-  height: 15px;
-}
-.celsius.icon:before {
-  content: "C";
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  color: currentColor;
-}
-.celsius.icon:after {
-  width: 2px;
-  height: 2px;
-  border-radius: 2px;
-  border: solid 1px currentColor;
-  left: 12px;
-  top: 1px;
-}
-
-.fahrenheit.icon {
-  margin-left: 3px;
-  margin-top: 3px;
-  width: 16px;
-  height: 15px;
-}
-.fahrenheit.icon:before {
-  content: "F";
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  color: currentColor;
-}
-.fahrenheit.icon:after {
-  width: 2px;
-  height: 2px;
-  border-radius: 2px;
-  border: solid 1px currentColor;
-  left: 11px;
-  top: 1px;
-}
-
-.tree.icon {
-  margin-left: 10px;
-  margin-top: 15px;
-  width: 2px;
-  height: 4px;
-  background-color: currentColor;
-}
-.tree.icon:before {
-  left: -4px;
-  top: -13px;
-  width: 0;
-  height: 0;
-  border-bottom: solid 7px currentColor;
-  border-left: solid 5px transparent;
-  border-right: solid 5px transparent;
-}
-.tree.icon:after {
-  left: -6px;
-  top: -9px;
-  width: 0;
-  height: 0;
-  border-bottom: solid 9px currentColor;
-  border-left: solid 7px transparent;
-  border-right: solid 7px transparent;
 }
 
 .anchor.icon {

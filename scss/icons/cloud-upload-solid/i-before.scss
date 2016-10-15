@@ -1,0 +1,13 @@
+@import '../../mixin';
+.cloud-upload-solid.icon {
+  i {
+    &:before {
+      @include pseudo();
+      top: 4px;
+      left: 5px;
+      width: 1px;
+      height: 7px;
+      background-color: currentColor;
+    }
+  }
+}
