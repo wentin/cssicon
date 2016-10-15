@@ -6325,60 +6325,7 @@ body {
   border-bottom: solid 1px currentColor;
 }
 
-.rain-drop.icon:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 9px;
-  height: 2px;
-  color: #fff;
-  background-color: currentColor;
-}
-
-.rain-drop.icon:before {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  border-left: solid 1px transparent;
-  border-right: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
-.rain-drop.icon i {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 4px;
-  height: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  border-radius: 0 2px 2px 2px;
-  background-color: currentColor;
-  box-shadow: -1px -6px 0 0 currentColor;
-  z-index: 2;
-}
-
-.rain-drop.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 1px;
-  margin-top: 9px;
-  width: 5px;
-  height: 6px;
-  border-radius: 4px 0 0 4px;
-  border-left: solid 1px currentColor;
-  border-top: solid 1px currentColor;
-  border-bottom: solid 1px currentColor;
-}
-
+/* No files to import found in icons/cloud-raindrop/* */
 .cloud-lightning.icon:after {
   content: '';
   position: absolute;
@@ -7179,32 +7126,6 @@ body {
   width: 19px;
   height: 1px;
   background-color: currentColor;
-}
-
-.search.icon i:after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  background-color: currentColor;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.search.icon i:before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.search.icon i {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 .no-raindrop.icon {

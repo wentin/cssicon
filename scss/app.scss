@@ -85,7 +85,10 @@ $highlightColor: #3CD5FF;
   }
   .camera-solid,
   .eye-solid2,
-  .eye-solid3 {
+  .eye-solid3,
+  .sun-raindrop,
+  .sun-raindrop-solid,
+  .moon-solid {
     &.icon:before {   
       color: white;
     }
@@ -101,7 +104,11 @@ $highlightColor: #3CD5FF;
   .navigate,
   .navigate i,
   .navigate-solid,
-  .tablet-solid {
+  .tablet-solid,
+  .cloud-raindrop,
+  .cloud-lightning,
+  .cloud-download,
+  .cloud-upload {
     &.icon:after {   
       color: white;
     }

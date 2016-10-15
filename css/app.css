@@ -727,7 +727,10 @@ button {
 }
 .viewer.cssIconHover .iconViewer .camera-solid.icon:before,
 .viewer.cssIconHover .iconViewer .eye-solid2.icon:before,
-.viewer.cssIconHover .iconViewer .eye-solid3.icon:before {
+.viewer.cssIconHover .iconViewer .eye-solid3.icon:before,
+.viewer.cssIconHover .iconViewer .sun-raindrop.icon:before,
+.viewer.cssIconHover .iconViewer .sun-raindrop-solid.icon:before,
+.viewer.cssIconHover .iconViewer .moon-solid.icon:before {
   color: white;
 }
 .viewer.cssIconHover .iconViewer .tag-solid.icon:after,
@@ -741,7 +744,11 @@ button {
 .viewer.cssIconHover .iconViewer .navigate.icon:after,
 .viewer.cssIconHover .iconViewer .navigate i.icon:after,
 .viewer.cssIconHover .iconViewer .navigate-solid.icon:after,
-.viewer.cssIconHover .iconViewer .tablet-solid.icon:after {
+.viewer.cssIconHover .iconViewer .tablet-solid.icon:after,
+.viewer.cssIconHover .iconViewer .cloud-raindrop.icon:after,
+.viewer.cssIconHover .iconViewer .cloud-lightning.icon:after,
+.viewer.cssIconHover .iconViewer .cloud-download.icon:after,
+.viewer.cssIconHover .iconViewer .cloud-upload.icon:after {
   color: white;
 }
 .viewer.cssIconHover .iconViewer .mustache.icon i,
