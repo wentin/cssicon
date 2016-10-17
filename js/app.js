@@ -64,11 +64,12 @@ app.controller("MainController", function($http, $scope, $scope, $q) {
     if (icon.cssHidden) {
       css += icon.cssHidden + '\n';
     }
-    var title = icon.name + " icon";
+    var title = icon.name;
     
     var data = {
-      title                 : title,
-      description           : title + " created with pure css",
+      title                 : "CSS ICON: " + title,
+      description           : title + " icon created with pure CSS, CSS ICON created via http://cssicon.space/",
+      tags                  : ["CSS", "ICON", "CSSICON"],
       editors               : "110", 
       layout                : "left", // top | left | right
       html                  : html,
