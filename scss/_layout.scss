@@ -118,16 +118,21 @@ button {
       line-height: 16px;
       display: block;
       float: left;
-      width: 25%;
+      width: 20%;
       text-decoration: none;
       text-align: center;
       i {
         display: block;
-        height: 40px;
+        height: 25px;
         margin-bottom: 8px;
       }
       &:hover {
         text-decoration: underline;
+      }
+    }
+    .youtube {
+      i {
+        background: url(../images/youtube.svg) no-repeat center bottom;
       }
     }
     .me {

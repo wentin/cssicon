@@ -167,17 +167,20 @@ button {
   line-height: 16px;
   display: block;
   float: left;
-  width: 25%;
+  width: 20%;
   text-decoration: none;
   text-align: center;
 }
 .icons .about a i {
   display: block;
-  height: 40px;
+  height: 25px;
   margin-bottom: 8px;
 }
 .icons .about a:hover {
   text-decoration: underline;
+}
+.icons .about .youtube i {
+  background: url(../images/youtube.svg) no-repeat center bottom;
 }
 .icons .about .me i {
   background: url(../images/w.svg) no-repeat center bottom;
