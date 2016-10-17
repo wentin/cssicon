@@ -745,6 +745,8 @@ button {
 .viewer.cssIconHover .iconViewer .navigate i.icon:after,
 .viewer.cssIconHover .iconViewer .navigate-solid.icon:after,
 .viewer.cssIconHover .iconViewer .tablet-solid.icon:after,
+.viewer.cssIconHover .iconViewer .snow.icon:after,
+.viewer.cssIconHover .iconViewer .rain.icon:after,
 .viewer.cssIconHover .iconViewer .cloud-raindrop.icon:after,
 .viewer.cssIconHover .iconViewer .cloud-lightning.icon:after,
 .viewer.cssIconHover .iconViewer .cloud-download.icon:after,
