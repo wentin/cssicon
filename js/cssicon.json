@@ -160,6 +160,17 @@
     ]
   },
   {
+    "id": 2001,
+    "name": "filter",
+    "classNames": "filter",
+    "style": "line",
+    "htmlChildMarkup": false,
+    "cssHidden": "",
+    "tag": [      
+      "filter"
+    ]
+  },
+  {
     "id": 7,
     "name": "menu",
     "classNames": "menu",

@@ -294,12 +294,42 @@ body {
   height: 21px;
 }
 
+.filter.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.filter.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -3px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.filter.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 10px;
+  width: 11px;
+  height: 1px;
+  background-color: currentColor;
+}
+
 .menu.icon:after {
   content: '';
   position: absolute;
   top: 5px;
-  left: 0;
-  width: 17px;
+  left: 2px;
+  width: 7px;
   height: 1px;
   background-color: currentColor;
 }
@@ -308,7 +338,7 @@ body {
   content: '';
   position: absolute;
   top: -5px;
-  left: 0;
+  left: -3px;
   width: 17px;
   height: 1px;
   background-color: currentColor;

@@ -1,0 +1,9 @@
+.filter.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+}
