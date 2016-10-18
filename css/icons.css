@@ -4941,7 +4941,7 @@ body {
   border: solid 1px currentColor;
 }
 
-.wink-tougue.icon:after {
+.wink-tongue.icon:after {
   content: '';
   position: absolute;
   right: 3px;
@@ -4952,7 +4952,7 @@ body {
   border: solid 1px currentColor;
 }
 
-.wink-tougue.icon:before {
+.wink-tongue.icon:before {
   content: '';
   position: absolute;
   left: 3px;
@@ -4968,7 +4968,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.wink-tougue.icon i:before {
+.wink-tongue.icon i:before {
   content: '';
   position: absolute;
   top: -1px;
@@ -4984,7 +4984,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.wink-tougue.icon i {
+.wink-tongue.icon i {
   position: absolute;
   left: 4px;
   top: 10px;
@@ -4995,7 +4995,7 @@ body {
           transform: rotate(-3deg);
 }
 
-.wink-tougue.icon {
+.wink-tongue.icon {
   color: #000;
   position: absolute;
   margin-left: 2px;
@@ -5006,7 +5006,7 @@ body {
   border: solid 1px currentColor;
 }
 
-.tougue.icon:after {
+.tongue.icon:after {
   content: '';
   position: absolute;
   right: 3px;
@@ -5017,7 +5017,7 @@ body {
   border: solid 1px currentColor;
 }
 
-.tougue.icon:before {
+.tongue.icon:before {
   content: '';
   position: absolute;
   left: 3px;
@@ -5028,7 +5028,7 @@ body {
   border: solid 1px currentColor;
 }
 
-.tougue.icon i:before {
+.tongue.icon i:before {
   content: '';
   position: absolute;
   top: -1px;
@@ -5044,7 +5044,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.tougue.icon i {
+.tongue.icon i {
   position: absolute;
   left: 4px;
   top: 10px;
@@ -5055,7 +5055,7 @@ body {
           transform: rotate(-3deg);
 }
 
-.tougue.icon {
+.tongue.icon {
   color: #000;
   position: absolute;
   margin-left: 2px;
@@ -5066,7 +5066,7 @@ body {
   border: solid 1px currentColor;
 }
 
-.tougue-solid.icon:after {
+.tongue-solid.icon:after {
   content: '';
   position: absolute;
   right: 4px;
@@ -5078,7 +5078,7 @@ body {
   background-color: currentColor;
 }
 
-.tougue-solid.icon:before {
+.tongue-solid.icon:before {
   content: '';
   position: absolute;
   left: 4px;
@@ -5090,7 +5090,7 @@ body {
   background-color: currentColor;
 }
 
-.tougue-solid.icon i:before {
+.tongue-solid.icon i:before {
   content: '';
   position: absolute;
   top: -1px;
@@ -5107,7 +5107,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.tougue-solid.icon i {
+.tongue-solid.icon i {
   position: absolute;
   left: 4px;
   top: 10px;
@@ -5119,7 +5119,7 @@ body {
           transform: rotate(-3deg);
 }
 
-.tougue-solid.icon {
+.tongue-solid.icon {
   color: #000;
   position: absolute;
   margin-left: 2px;

@@ -1774,8 +1774,8 @@
   },
   {
     "id": 144,
-    "name": "wink tougue",
-    "classNames": "wink-tougue",
+    "name": "wink tongue",
+    "classNames": "wink-tongue",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",
@@ -1783,8 +1783,8 @@
   },
   {
     "id": 145,
-    "name": "tougue",
-    "classNames": "tougue",
+    "name": "tongue",
+    "classNames": "tongue",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",
@@ -1792,8 +1792,8 @@
   },
   {
     "id": 146,
-    "name": "tougue solid",
-    "classNames": "tougue-solid",
+    "name": "tongue solid",
+    "classNames": "tongue-solid",
     "style": "",
     "htmlChildMarkup": true,
     "cssHidden": "",
