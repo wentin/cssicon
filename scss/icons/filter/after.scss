@@ -1,0 +1,11 @@
+@import '../../mixin';
+.filter.icon {
+  &:after {
+    @include pseudo();
+    top: 5px;
+    left: 2px;
+    width: 7px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
