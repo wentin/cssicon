@@ -24,7 +24,17 @@ $highlightColor: #3CD5FF;
       }
     }
   }
+  .animateControl ~ .codeBlocks {
+    top: 363px;
+  }
 }
+
+.iconViewer {
+  .icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+    transition: all 0.4s ease;
+  } 
+}
+
 
 .viewer.cssIconHover .iconViewer {
   .icon {   

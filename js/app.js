@@ -21,10 +21,32 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/icon-viewer.html',
       controller: 'IconController'
     })
-        
+    .state('animate', {
+      url: '/animate',
+      templateUrl: 'views/animate.html',
+      controller: 'AnimateController',
+      controllerAs: 'animate',
+      resolve:{
+        load: function (IconsService) {
+          return IconsService.loadIcons();
+        }
+      }
+    })
+    .state('animate.viewer', {
+      url: '/:uid1/to/:uid2',
+      templateUrl: 'views/animate-viewer.html',
+      controller: 'AnimateViewerController'
+    });
 });
 
-app.controller("MainController", function($http, $scope, $scope, $q) {
+app.controller("MainController", function() {
+  
+}); 
+
+app.controller("HomeController", function($http, $rootScope, $scope, IconsService, $q) {
+  $rootScope.viewerOpen = false;
+  $scope.icons = IconsService.getIcons();
+
   var generateHTML = $scope.generateHTML = function(icon){
     if (icon.htmlChildMarkup) {
       childHTML = "<i></i>";
@@ -147,12 +169,6 @@ app.controller("MainController", function($http, $scope, $scope, $q) {
   });
 }); 
 
-app.controller("HomeController", function($rootScope, $scope, IconsService) {
-  $rootScope.viewerOpen = false;
-  $scope.icons = IconsService.getIcons();
-
-}); 
-
 app.controller('IconController', function($rootScope, $scope, $filter, $stateParams) {
   $rootScope.viewerOpen = true;
   var icon = $filter('filter')($scope.icons, {classNames: $stateParams.uid}, true)[0];
@@ -178,21 +194,54 @@ app.controller('IconController', function($rootScope, $scope, $filter, $statePar
   }
 })
 
+app.controller("AnimateController", function($rootScope, $scope, IconsService, $state) {
+  $rootScope.viewerOpen = false;
+  $scope.icons = IconsService.getIcons();
+  $scope.animateIconA = null;
+  $scope.animateIconB = null;
+  $scope.animateIconToAssign = "A";
+  assignAnimateIcon = function(icon) {
+    if($scope.animateIconToAssign == "A") {
+      $scope.animateIconA = icon;
+      $scope.animateIconToAssign = "B";
+    } else if($scope.animateIconToAssign == "B") {
+      $scope.animateIconB = icon;
+      $scope.animateIconToAssign = "A";
+    }
+  }
+  $scope.iconAnimateClick = function(icon){
+    assignAnimateIcon(icon);
+    if ($scope.animateIconA && $scope.animateIconB) {
+      $state.transitionTo('animate.viewer', {uid1: $scope.animateIconA.classNames, uid2: $scope.animateIconB.classNames});
+    }
+  }
+});
+
+app.controller('AnimateViewerController', function($rootScope, $scope, $filter, $stateParams) {
+  $rootScope.viewerOpen = true;
+  $scope.animateViewerIconA = $filter('filter')($scope.icons, {classNames: $stateParams.uid1}, true)[0];
+  $scope.animateViewerIconB = $filter('filter')($scope.icons, {classNames: $stateParams.uid2}, true)[0];
+
+  $scope.buttonPlayClick = function(){
+    angular.element(document.querySelectorAll('.iconViewer .icon')).toggleClass($scope.animateViewerIconA.classNames).toggleClass($scope.animateViewerIconB.classNames);
+  }
+})
+
 app.service("IconsService", function($http, $q){
   var icons = null;
   // var url = "http://api.jsoneditoronline.org/v1/docs/995babe3c73846437f5f1d60549987f5/data";
   var url = "js/cssicon.json";
 
-  // var defer = false;
+  var defer = false;
   this.loadIcons = function(){
-    // if(!defer){
+    if(!defer){
       defer = $q.defer();
       $http.get(url).success(function (data) {
         icons = data;
         console.log('load json');
         defer.resolve();
       });
-    // }
+    }
     return defer.promise;
   }
   this.getIcons = function(){
@@ -200,9 +249,3 @@ app.service("IconsService", function($http, $q){
   }
 })
 
-app.directive("iconViewer", function() {
-  return {
-    replace: 'true',
-    templateUrl : 'views/icon-viewer.html',
-  };
-});

@@ -21,6 +21,10 @@ body {
     line-height: 30px;
     text-align: center;
   }
+  .animateControl .iconLabel {
+    font-size: 16px;
+    line-height: 30px;
+  }
   .buttonCodepen {
     font-family: $futura;
     font-weight: 700;
@@ -33,6 +37,7 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 25px;
+    letter-spacing: 0.05em;
   }
   xmp {
     font-weight: 400;

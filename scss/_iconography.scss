@@ -55,6 +55,279 @@ $highlightColor: #3CD5FF;
     transform: rotate(-45deg);
   }
 }
+.buttonPlay i {    
+  color: #000;
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  width: 1px;
+  height: 17px;
+  background-color: currentColor;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: 16px;
+    height: 1px;
+    background-color: currentColor;
+    transform-origin: left top;
+    transform: rotate(30deg);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    width: 16px;
+    height: 1px;
+    background-color: currentColor;
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+  }
+}
+.a-s.icon {
+  color: #000;
+  width: 16px;
+  height: 16px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 3px currentColor;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 13px;
+    top: 0;
+    width: 3px;
+    height: 16px;
+    background-color: currentColor;
+  }
+}
+.n-s.icon {
+  color: #000;
+  width: 13px;
+  height: 16px;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 13px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+    border-left: solid 3px currentColor;
+    border-radius: 6px 6px 0 0;
+  }
+}
+.i-s.icon {
+  color: #000;
+  width: 3px;
+  height: 21px;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background-color: currentColor;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 3px;
+    height: 16px;
+    background-color: currentColor;
+  }
+}
+.m-s.icon {
+  color: #000;
+  width: 21px;
+  height: 16px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 13px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+    border-left: solid 3px currentColor;
+    border-radius: 6px 6px 0 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    width: 6px;
+    height: 13px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+    border-left: solid 3px currentColor;
+    border-radius: 6px 6px 0 0;
+  }
+}
+.t-s.icon {
+  color: #000;
+  width: 11px;
+  height: 20px;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    width: 4px;
+    height: 17px;
+    border-right: solid 3px transparent;
+    border-left: solid 3px currentColor;
+    border-bottom: solid 3px currentColor;
+    border-radius: 0 0 6px 6px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 11px;
+    height: 3px;
+    background-color: currentColor;
+  }
+}
+.e-s.icon {
+  color: #000;
+  width: 16px;
+  height: 16px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    border-radius: 8px 8px 0 0;
+    border: solid 3px currentColor;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-top: solid 3px transparent;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px currentColor;
+    transform: rotate(-18deg);
+  }
+}
+.A.iconMarker {
+  color: #000;
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -7px;
+    width: 1px;
+    height: 12px;
+    background-color: currentColor;
+    transform: skew(-19deg);
+    transform-origin: right top;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -7px;
+    width: 1px;
+    height: 12px;
+    background-color: currentColor;
+    transform: skew(19deg);
+    transform-origin: left top;
+  }
+}
+.B.iconMarker {
+  color: #000;
+  position: absolute;
+  width: 1px;
+  height: 11px;
+  background-color: currentColor;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 4px;
+    border: solid 1px currentColor;
+    border-radius: 0 50% 50% 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 6px;
+    height: 5px;
+    border: solid 1px currentColor;
+    border-radius: 0 50% 50% 0;
+  }
+}
+.locked.buttonLock i {
+  color: #000;
+  position: absolute;
+  top: 7px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: -8px;
+    width: 5px;
+    height: 6px;
+    border-radius: 4px 4px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}
+.unlocked.buttonLock i {
+  color: #000;
+  position: absolute;
+  top: 7px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: -8px;
+    width: 5px;
+    height: 3px;
+    border-radius: 4px 4px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: -4px;
+    width: 1px;
+    height: 3px;
+    background-color: currentColor;
+  }
+}
+
 
 @import 'icons/I/*';
 @import 'icons/C/*';

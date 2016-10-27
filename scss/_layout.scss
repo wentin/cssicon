@@ -7,6 +7,11 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 button {
   outline: none;
 }
@@ -102,7 +107,7 @@ button {
     font-weight: 700;
     margin: 40px auto 0 auto;
     a {
-      color: black;
+      color: #000;
       text-decoration: underline;
     }
   }
@@ -115,7 +120,7 @@ button {
     a {
       font-size: 16px;
       font-weight: 700;
-      color: black;
+      color: #000;
       line-height: 16px;
       display: block;
       float: left;
@@ -182,7 +187,7 @@ button {
       height: 1px;
       left: -4px;
       top: 10px;
-      background-color: black;
+      background-color: #000;
       transform-origin: 50% 50%;
     }
     &:before {
@@ -228,7 +233,7 @@ button {
     }
     .buttonCodepen {
       display: block;
-      border: solid 1px black;
+      border: solid 1px #000;
       border-radius: $borderRadius;
       margin-bottom: 30px;
       cursor: pointer;
@@ -241,7 +246,7 @@ button {
         top: 6px;
       }
       &:hover {
-        background-color: black;
+        background-color: #000;
         color: white;
         svg path{
           fill: white;
@@ -272,6 +277,122 @@ button {
         display: block;
       }
     }
+
+    .animateControl {
+      margin-bottom: 30px;
+      .iconLabel {
+        margin-bottom: 0;
+        .iconALabel {
+          width: 50%;
+          float: left;
+          text-align: left;
+        }
+        .iconBLabel {
+          width: 50%;
+          float: right;
+          text-align: right;
+        }
+      }
+      .iconWrappers {
+        .iconWrapper {
+          position: relative;
+          padding: 26px;
+          border-color: #000;
+          cursor: pointer;
+          &:before {
+            content: "";
+            position: absolute;
+            right: -2px;
+            top: 6px;
+            width: 3px;
+            height: 12px;
+            background-color: white;
+          }
+          .A.iconMarker {
+            right: -3px;
+            top: 13px;
+          }
+          .B.iconMarker {
+            right: 2px;
+            top: 6px;
+          }
+          .buttonLock {
+            position: absolute;
+            left: -8px;
+            bottom: 5px;
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+          }
+        }
+        .iconAWrapper {
+          float: left;
+        }
+        .iconBWrapper {
+          float: right;
+        }
+        .animateDirection {
+          text-align: center;
+          top: 17px;
+          margin-left: 75px;
+          margin-right: 75px;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 20px;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+          }
+          &.AtoB:after {
+            content: "";
+            position: absolute;
+            right: 2px;
+            top: 15px;
+            width: 9px;
+            height: 9px;
+            border-left: solid 1px transparent;
+            border-top: solid 1px transparent;
+            border-right: solid 1px #000;
+            border-bottom: solid 1px #000;
+            transform: rotate(-45deg);
+            transform-origin: center center;
+          }
+          &.BtoA:after {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 15px;
+            width: 9px;
+            height: 9px;
+            border-left: solid 1px #000;
+            border-top: solid 1px #000;
+            border-right: solid 1px transparent;
+            border-bottom: solid 1px transparent;
+            transform: rotate(-45deg);
+            transform-origin: center center;
+          }
+          .buttonPlay {
+            cursor: pointer;
+            width: 39px;
+            height: 39px;
+            background-color: #fff;
+            border: solid 1px #000;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            &:hover {
+              background-color: #000;
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -280,24 +401,23 @@ button {
   width: 100%;
   height: 30px;
   margin: 30px 0 50px 0;
+  font-size: 20px;
   .icon {
     cursor: pointer;
-    float: left;
+    display: inline-block;
     &.C {
       position: relative;
+      margin-right: -5px;
     }
     &.S {
       position: relative;
-      margin-right: 6px;
     }
     &.I {
       position: relative;
       margin-left: 18px;
-      margin-right: 6px; 
     }
     &.O {
       position: relative;
-      margin-right: 6px; 
     }
     &.N {
       position: relative;
@@ -305,6 +425,30 @@ button {
     &:hover {
       color: $highlightColor;
     }
+  }
+}
+
+.animateLogo {
+  display: inline-block;
+  margin-left: 18px;
+  position: relative;
+  bottom: 0;
+  width: 119px;
+  height: 21px;
+  font-size: 16px;
+  .icon {
+    position: relative;
+    display: inline-block;
+    color: red !important;
+  }
+  .m-s.icon {
+    margin-right: -1px;
+  }
+  .t-s.icon {
+    margin-left: -1px;
+  }
+  .e-s.icon {
+    margin-left: -2px;
   }
 }
 
@@ -318,23 +462,23 @@ button {
     background: transparent;
     border: 0;
     width: 100%;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #000;
     padding: 9px 0 7px 0;
     outline: none;
     border-radius: 0;
     -webkit-appearance: none;
   }   
   ::-webkit-input-placeholder {
-     color: black;
+     color: #000;
   }
   :-moz-placeholder {
-     color: black;  
+     color: #000;  
   }
   ::-moz-placeholder {
-     color: black;  
+     color: #000;  
   }
   :-ms-input-placeholder {  
-     color: black;  
+     color: #000;  
   }
   .search.icon {
     display: none;

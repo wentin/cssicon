@@ -20,6 +20,10 @@ body {
   line-height: 30px;
   text-align: center;
 }
+.viewerWrapper .animateControl .iconLabel {
+  font-size: 16px;
+  line-height: 30px;
+}
 .viewerWrapper .buttonCodepen {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
@@ -32,6 +36,7 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 25px;
+  letter-spacing: 0.05em;
 }
 .viewerWrapper xmp {
   font-weight: 400;
@@ -51,6 +56,12 @@ body {
 body {
   box-sizing: border-box;
   margin: 0;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 button {
@@ -151,7 +162,7 @@ button {
   margin: 40px auto 0 auto;
 }
 .icons .info a {
-  color: black;
+  color: #000;
   text-decoration: underline;
 }
 .icons .about {
@@ -164,7 +175,7 @@ button {
 .icons .about a {
   font-size: 16px;
   font-weight: 700;
-  color: black;
+  color: #000;
   line-height: 16px;
   display: block;
   float: left;
@@ -221,7 +232,7 @@ button {
   height: 1px;
   left: -4px;
   top: 10px;
-  background-color: black;
+  background-color: #000;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
 }
@@ -272,7 +283,7 @@ button {
 }
 .viewer .viewerWrapper .buttonCodepen {
   display: block;
-  border: solid 1px black;
+  border: solid 1px #000;
   border-radius: 0;
   margin-bottom: 30px;
   cursor: pointer;
@@ -286,7 +297,7 @@ button {
   top: 6px;
 }
 .viewer .viewerWrapper .buttonCodepen:hover {
-  background-color: black;
+  background-color: #000;
   color: white;
 }
 .viewer .viewerWrapper .buttonCodepen:hover svg path {
@@ -316,38 +327,178 @@ button {
 .viewer .viewerWrapper h4 .buttonCopy:hover::after {
   display: block;
 }
+.viewer .viewerWrapper .animateControl {
+  margin-bottom: 30px;
+}
+.viewer .viewerWrapper .animateControl .iconLabel {
+  margin-bottom: 0;
+}
+.viewer .viewerWrapper .animateControl .iconLabel .iconALabel {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.viewer .viewerWrapper .animateControl .iconLabel .iconBLabel {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper {
+  position: relative;
+  padding: 26px;
+  border-color: #000;
+  cursor: pointer;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper:before {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 6px;
+  width: 3px;
+  height: 12px;
+  background-color: white;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper .A.iconMarker {
+  right: -3px;
+  top: 13px;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper .B.iconMarker {
+  right: 2px;
+  top: 6px;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper .buttonLock {
+  position: absolute;
+  left: -8px;
+  bottom: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconAWrapper {
+  float: left;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .iconBWrapper {
+  float: right;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection {
+  text-align: center;
+  top: 17px;
+  margin-left: 75px;
+  margin-right: 75px;
+  position: relative;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection.AtoB:after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 15px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection.BtoA:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 15px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px #000;
+  border-top: solid 1px #000;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection .buttonPlay {
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  background-color: #fff;
+  border: solid 1px #000;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection .buttonPlay:hover {
+  background-color: #000;
+}
+.viewer .viewerWrapper .animateControl .iconWrappers .animateDirection .buttonPlay:hover i {
+  color: #fff;
+}
 
 .logo {
   display: block;
   width: 100%;
   height: 30px;
   margin: 30px 0 50px 0;
+  font-size: 20px;
 }
 .logo .icon {
   cursor: pointer;
-  float: left;
+  display: inline-block;
 }
 .logo .icon.C {
   position: relative;
+  margin-right: -5px;
 }
 .logo .icon.S {
   position: relative;
-  margin-right: 6px;
 }
 .logo .icon.I {
   position: relative;
   margin-left: 18px;
-  margin-right: 6px;
 }
 .logo .icon.O {
   position: relative;
-  margin-right: 6px;
 }
 .logo .icon.N {
   position: relative;
 }
 .logo .icon:hover {
   color: #3CD5FF;
+}
+
+.animateLogo {
+  display: inline-block;
+  margin-left: 18px;
+  position: relative;
+  bottom: 0;
+  width: 119px;
+  height: 21px;
+  font-size: 16px;
+}
+.animateLogo .icon {
+  position: relative;
+  display: inline-block;
+  color: red !important;
+}
+.animateLogo .m-s.icon {
+  margin-right: -1px;
+}
+.animateLogo .t-s.icon {
+  margin-left: -1px;
+}
+.animateLogo .e-s.icon {
+  margin-left: -2px;
 }
 
 .searchWrapper {
@@ -361,23 +512,23 @@ button {
   background: transparent;
   border: 0;
   width: 100%;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #000;
   padding: 9px 0 7px 0;
   outline: none;
   border-radius: 0;
   -webkit-appearance: none;
 }
 .searchWrapper ::-webkit-input-placeholder {
-  color: black;
+  color: #000;
 }
 .searchWrapper :-moz-placeholder {
-  color: black;
+  color: #000;
 }
 .searchWrapper ::-moz-placeholder {
-  color: black;
+  color: #000;
 }
 .searchWrapper :-ms-input-placeholder {
-  color: black;
+  color: #000;
 }
 .searchWrapper .search.icon {
   display: none;
@@ -543,6 +694,298 @@ button {
           transform: rotate(-45deg);
 }
 
+.buttonPlay i {
+  color: #000;
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  width: 1px;
+  height: 17px;
+  background-color: currentColor;
+}
+.buttonPlay i:before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.buttonPlay i:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.a-s.icon {
+  color: #000;
+  width: 16px;
+  height: 16px;
+}
+.a-s.icon:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 3px currentColor;
+}
+.a-s.icon:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 0;
+  width: 3px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.n-s.icon {
+  color: #000;
+  width: 13px;
+  height: 16px;
+}
+.n-s.icon:after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 13px;
+  border-top: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  border-radius: 6px 6px 0 0;
+}
+
+.i-s.icon {
+  color: #000;
+  width: 3px;
+  height: 21px;
+}
+.i-s.icon:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: currentColor;
+}
+.i-s.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 3px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.m-s.icon {
+  color: #000;
+  width: 21px;
+  height: 16px;
+}
+.m-s.icon:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 13px;
+  border-top: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  border-radius: 6px 6px 0 0;
+}
+.m-s.icon:after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  width: 6px;
+  height: 13px;
+  border-top: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  border-radius: 6px 6px 0 0;
+}
+
+.t-s.icon {
+  color: #000;
+  width: 11px;
+  height: 20px;
+}
+.t-s.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 4px;
+  height: 17px;
+  border-right: solid 3px transparent;
+  border-left: solid 3px currentColor;
+  border-bottom: solid 3px currentColor;
+  border-radius: 0 0 6px 6px;
+}
+.t-s.icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.e-s.icon {
+  color: #000;
+  width: 16px;
+  height: 16px;
+}
+.e-s.icon:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  border-radius: 8px 8px 0 0;
+  border: solid 3px currentColor;
+}
+.e-s.icon:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border-top: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-bottom: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+}
+
+.A.iconMarker {
+  color: #000;
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+}
+.A.iconMarker:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -7px;
+  width: 1px;
+  height: 12px;
+  background-color: currentColor;
+  -webkit-transform: skew(-19deg);
+          transform: skew(-19deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+.A.iconMarker:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -7px;
+  width: 1px;
+  height: 12px;
+  background-color: currentColor;
+  -webkit-transform: skew(19deg);
+          transform: skew(19deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.B.iconMarker {
+  color: #000;
+  position: absolute;
+  width: 1px;
+  height: 11px;
+  background-color: currentColor;
+}
+.B.iconMarker:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-radius: 0 50% 50% 0;
+}
+.B.iconMarker:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  width: 6px;
+  height: 5px;
+  border: solid 1px currentColor;
+  border-radius: 0 50% 50% 0;
+}
+
+.locked.buttonLock i {
+  color: #000;
+  position: absolute;
+  top: 7px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+.locked.buttonLock i:before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.unlocked.buttonLock i {
+  color: #000;
+  position: absolute;
+  top: 7px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+.unlocked.buttonLock i:before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.unlocked.buttonLock i:after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+
 .I.icon {
   color: #000;
   position: absolute;
@@ -652,7 +1095,16 @@ button {
     background-color: black;
     color: white;
   }
+
+  .animateControl ~ .codeBlocks {
+    top: 363px;
+  }
 }
+.iconViewer .icon, .iconViewer .icon:before, .iconViewer .icon:after, .iconViewer .icon i, .iconViewer .icon i:before, .iconViewer .icon i:after {
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+}
+
 .viewer.cssIconHover .iconViewer {
   /* special cases */
 }

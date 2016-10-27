@@ -1,0 +1,83 @@
+<div class="viewer">
+  <a class="buttonClose" ui-sref="home" ng-click="handleButtonCloseClick()"></a>
+  <div class="viewerWrapper">
+    <div class="iconWrapper iconViewer">
+      <div ng-class="animateViewerIconA.classNames" class="icon">
+        <i ng-if="animateViewerIconA.htmlChildMarkup || animateViewerIconB.htmlChildMarkup"></i>
+      </div>
+    </div>
+    <div class="iconWrapperBig iconViewer">
+      <div class="scale">
+        <div ng-class="animateViewerIconA.classNames" class="icon">
+          <i ng-if="animateViewerIconA.htmlChildMarkup || animateViewerIconB.htmlChildMarkup"></i>
+        </div>
+      </div>
+    </div>
+    <div class="animateControl">
+      <div class="iconLabel clear">
+        <div class="iconALabel">
+          search
+        </div>
+        <div class="iconBLabel">
+          sun
+        </div>
+      </div>
+      <div class="iconWrappers clear">
+        <div class="iconWrapper iconAWrapper">
+          <div class="buttonLock locked"><i></i></div>
+          <div class="iconMarker A"></div>
+          <div ng-class="animateViewerIconA.classNames" class="icon">
+            <i ng-if="animateViewerIconA.htmlChildMarkup"></i>
+          </div>
+        </div>
+        <div class="iconWrapper iconBWrapper">
+          <div class="buttonLock unlocked"><i></i></div>
+          <div class="iconMarker B"></div>
+          <div ng-class="animateViewerIconB.classNames" class="icon">
+            <i ng-if="animateViewerIconB.htmlChildMarkup"></i>
+          </div>
+        </div>
+        <div class="animateDirection AtoB">
+          <div class="buttonPlay" ng-click="buttonPlayClick()"><i></i></div>
+        </div>
+      </div>
+    </div>
+    <form action="http://codepen.io/pen/define" method="POST" target="_blank">
+      <input type="hidden" name="data" ng-value='JSONstring'>
+      <button class="buttonCodepen" type="submit" >
+        TRY IT ON 
+        <span ng-include="'partials/codepen-logo.html'"></span>
+      </button>
+    </form>
+    <div class="codeBlocks">
+      <h4>HTML
+        <div class="html buttonCopy"
+        ng-mouseleave="handleButtonCopyMouseLeave()">
+          <div class="icon copy"></div>
+        </div>
+      </h4>
+      <xmp><div class="search icon"></div></xmp>
+      <h4>CSS
+        <div class="css buttonCopy" 
+        ng-mouseleave="handleButtonCopyMouseLeave()">
+          <div class="icon copy"></div>
+        </div>
+      </h4>
+      <xmp>.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+  transition: all 0.4s ease;
+}</xmp>
+      <h4>JS
+        <div class="css buttonCopy" 
+        ng-mouseleave="handleButtonCopyMouseLeave()">
+          <div class="icon copy"></div>
+        </div>
+      </h4>
+      <xmp>$('.icon').click(function(){
+  $(this)
+    .toggleClass('sun')
+    .toggleClass('search');
+})</xmp>
+      
+    </div>
+  </div>
+</div>
