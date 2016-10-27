@@ -505,10 +505,25 @@ button {
 .iconWrapper {
   position: relative;
 }
-.iconWrapper.selectedAnimateIconA, .iconWrapper.selectedAnimateIconB {
+.iconWrapper .A.iconMarker {
+  right: -3px;
+  top: 13px;
+}
+.iconWrapper .B.iconMarker {
+  right: 2px;
+  top: 6px;
+}
+
+.icons .iconWrapper.selectedAnimateIconA, .icons .iconWrapper.selectedAnimateIconB {
   border-color: #ff50a6;
 }
-.iconWrapper.selectedAnimateIconA:before, .iconWrapper.selectedAnimateIconB:before {
+.icons .iconWrapper.selectedAnimateIconA:hover, .icons .iconWrapper.selectedAnimateIconB:hover {
+  border-color: #ff50a6;
+}
+.icons .iconWrapper.selectedAnimateIconA:hover .iconMarker, .icons .iconWrapper.selectedAnimateIconB:hover .iconMarker {
+  color: #ff50a6;
+}
+.icons .iconWrapper.selectedAnimateIconA:before, .icons .iconWrapper.selectedAnimateIconB:before {
   content: "";
   position: absolute;
   right: -2px;
@@ -517,25 +532,29 @@ button {
   height: 12px;
   background-color: white;
 }
-.iconWrapper.selectedAnimateIconA .icon, .iconWrapper.selectedAnimateIconB .icon {
+.icons .iconWrapper.selectedAnimateIconA .icon, .icons .iconWrapper.selectedAnimateIconB .icon {
   color: #ff50a6;
 }
-.iconWrapper.selectedAnimateIconA .iconMarker, .iconWrapper.selectedAnimateIconB .iconMarker {
+.icons .iconWrapper.selectedAnimateIconA .iconMarker, .icons .iconWrapper.selectedAnimateIconB .iconMarker {
   color: #ff50a6;
 }
-.iconWrapper.selectedAnimateIconA .A.iconMarker {
+.icons .iconWrapper.selectedAnimateIconA .A.iconMarker {
   display: block;
 }
-.iconWrapper.selectedAnimateIconB .B.iconMarker {
+.icons .iconWrapper.selectedAnimateIconA .B.iconMarker {
+  display: none;
+}
+.icons .iconWrapper.selectedAnimateIconA:hover .B.iconMarker {
+  display: none;
+}
+.icons .iconWrapper.selectedAnimateIconB .A.iconMarker {
+  display: none;
+}
+.icons .iconWrapper.selectedAnimateIconB .B.iconMarker {
   display: block;
 }
-.iconWrapper .A.iconMarker {
-  right: -3px;
-  top: 13px;
-}
-.iconWrapper .B.iconMarker {
-  right: 2px;
-  top: 6px;
+.icons .iconWrapper.selectedAnimateIconB:hover .A.iconMarker {
+  display: none;
 }
 
 .logo {

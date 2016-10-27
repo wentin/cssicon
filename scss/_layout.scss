@@ -458,9 +458,25 @@ button {
 }
 .iconWrapper {
   position: relative;
+  .A.iconMarker {
+    right: -3px;
+    top: 13px;
+  }
+  .B.iconMarker {
+    right: 2px;
+    top: 6px;
+  }
+}
+.icons .iconWrapper {
   &.selectedAnimateIconA,
   &.selectedAnimateIconB {
     border-color: $animateHighlightColor;
+    &:hover {
+      border-color: $animateHighlightColor;
+      .iconMarker {
+        color: $animateHighlightColor;
+      }
+    }
     &:before{
       content: "";
       position: absolute;
@@ -477,22 +493,33 @@ button {
       color: $animateHighlightColor;
     }
   }
-  &.selectedAnimateIconA .A.iconMarker {
-    display: block;
+  &.selectedAnimateIconA {
+    .A.iconMarker {
+      display: block;
+    }
+    .B.iconMarker {
+      display: none;
+    }
+    &:hover {
+      .B.iconMarker {
+        display: none;
+      }
+    }
   }
-  &.selectedAnimateIconB .B.iconMarker {
-    display: block;
-  }
-  .A.iconMarker {
-    right: -3px;
-    top: 13px;
-  }
-  .B.iconMarker {
-    right: 2px;
-    top: 6px;
+  &.selectedAnimateIconB {
+    .A.iconMarker {
+      display: none;
+    }
+    .B.iconMarker {
+      display: block;
+    }
+    &:hover {
+      .A.iconMarker {
+        display: none;
+      }
+    }
   }
 }
-
 .logo {
   display: block;
   width: 100%;
