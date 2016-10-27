@@ -1,5 +1,6 @@
-<div class="container" ng-class="{viewerOpen: $root.viewerOpen, letterIconViewerOpen: $root.letterIconViewerOpen}" >
-  <div class="icons">
+<div class="container containerAnimate" ng-class="{viewerOpen: $root.viewerOpen, letterIconViewerOpen: $root.letterIconViewerOpen}" >
+  <div class="icons" 
+    ng-class="{iconsAnimateIconToAssignA: animateIconToAssign == 'A', iconsAnimateIconToAssignB: animateIconToAssign == 'B'}">
     <div class="logo">
       <div class="C icon" ui-sref=".icon({ uid: 'C' })" ng-class="{selected: 'C' == selectedIcon.classNames}"></div>
       <div class="S icon" ui-sref=".icon({ uid: 'S' })" ng-class="{selected: 'S' == selectedIcon.classNames}"></div>
@@ -23,12 +24,15 @@
         <div class="search icon"></div>
         <button class="close icon" type="reset" ng-click="searchText=''"></button>
     </form>
-    <a class="iconWrapper" ng-class="{selected: icon.classNames == selectedIcon.classNames}"
+    <a class="iconWrapper" 
+       ng-class="{selectedAnimateIconA: icon.classNames == animateIconA.classNames, selectedAnimateIconB: icon.classNames == animateIconB.classNames}"
        ng-click="iconAnimateClick(icon)"
        ng-repeat-start="icon in icons | filter: searchText | filter: {'style': '!letter'} | orderBy: 'style'">
       <div ng-class="icon.classNames" class="icon">
         <i ng-if="icon.htmlChildMarkup"></i>
-      </div> 
+      </div>
+      <div class="iconMarker A"></div>
+      <div class="iconMarker B"></div>
     </a> 
     <i ng-repeat-end></i>
     <div class="iconWrapper iconWrapperHidden"></div>

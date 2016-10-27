@@ -6,7 +6,7 @@
 
 $highlightColor: #3CD5FF;
 @media screen and ( min-height: 550px ){
-  .codeBlocks {
+  .containerHome .codeBlocks {
     position: absolute;
     top: 289px;
     left: 20px;
@@ -24,159 +24,157 @@ $highlightColor: #3CD5FF;
       }
     }
   }
-  .animateControl ~ .codeBlocks {
-    top: 363px;
-  }
 }
 
-.iconViewer {
+.containerAnimate .iconViewer {
   .icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
     transition: all 0.4s ease;
   } 
 }
 
-
-.viewer.cssIconHover .iconViewer {
-  .icon {   
-    color: $highlightColor !important;
-  }
-  .icon:before,
-  .icon:after,
-  .icon i,
-  .icon i:before,
-  .icon i:after,
-  [class*="-solid"]:before,
-  [class*="-solid"]:after {   
-    color: black;
-  }
-  [class*="-solid"] i,
-  [class*="-solid"] i:before,
-  [class*="-solid"] i:after {
-    color: white;
-  }
-
-  /* special cases */
-  .pin-solid,
-  .stop-solid,
-  .clock-solid,
-  .clock-h3m30-solid,
-  .clock-h9m0-solid,
-  .clock-h9m30-solid,
-  .mail-solid,
-  .card-solid,
-  .keyboard-solid,
-  .mouse-solid,
-  .browser-solid,
-  .mobile-solid,
-  .target-solid,
-  .picture-solid,
-  .float-solid,
-  .unamused-solid,
-  .pensive-solid,
-  .smiley-solid,
-  .relieved-smiley-solid,
-  .sad-solid,
-  .smiley-solid,
-  .grin-solid,
-  .laugh-solid,
-  .relieved-solid,
-  .tougue-solid,
-  .smile-solid {
-    &.icon:before,
-    &.icon:after {   
-      color: white;
+.containerHome {
+  .viewer.cssIconHover .iconViewer {
+    .icon {   
+      color: $highlightColor !important;
     }
-  }
-  .focus {
-    &.icon:before,
-    &.icon:after {   
-      color: white;
-    }
-  }
-  .camera-solid,
-  .eye-solid2,
-  .eye-solid3,
-  .sun-raindrop,
-  .sun-raindrop-solid,
-  .moon-solid {
-    &.icon:before {   
-      color: white;
-    }
-  }
-  .tag-solid,
-  .battery-solid-0,
-  .battery-solid-1,
-  .battery-solid,
-  .battery-solid-3,
-  .suitcase-1,
-  .suitcase-3,
-  .watch-solid,
-  .navigate,
-  .navigate i,
-  .navigate-solid,
-  .tablet-solid,
-  .snow,
-  .rain,
-  .cloud-raindrop,
-  .cloud-lightning,
-  .cloud-download,
-  .cloud-upload {
-    &.icon:after {   
-      color: white;
-    }
-  }
-  .mustache.icon {
-    i,
-    i:before,
-    i:after {   
-      color: white;
-    }
-  }
-  .left-double-quote-solid,
-  .right-double-quote-solid {
-    i:before,
-    i:after {   
+    .icon:before,
+    .icon:after,
+    .icon i,
+    .icon i:before,
+    .icon i:after,
+    [class*="-solid"]:before,
+    [class*="-solid"]:after {   
       color: black;
     }
-  }
-}
-.viewer.cssIconBeforeHover .iconViewer {
-  .icon:before{
-    color: $highlightColor !important;
-  }
-}
-.viewer.cssIconAfterHover .iconViewer {
-  .icon:after {
-    color: $highlightColor !important;
-  }
-}
-.viewer.cssChildHover .iconViewer {
-  .icon i {   
-    color: $highlightColor !important;
-  }
-  .icon i:before,
-  .icon i:after {
-    color: black;
-  }
-  [class*="-solid"] i:before,
-  [class*="-solid"] i:after {
-    color: white;
-  }
-
-  .mustache.icon {
-    i:before,
-    i:after {   
+    [class*="-solid"] i,
+    [class*="-solid"] i:before,
+    [class*="-solid"] i:after {
       color: white;
     }
+
+    /* special cases */
+    .pin-solid,
+    .stop-solid,
+    .clock-solid,
+    .clock-h3m30-solid,
+    .clock-h9m0-solid,
+    .clock-h9m30-solid,
+    .mail-solid,
+    .card-solid,
+    .keyboard-solid,
+    .mouse-solid,
+    .browser-solid,
+    .mobile-solid,
+    .target-solid,
+    .picture-solid,
+    .float-solid,
+    .unamused-solid,
+    .pensive-solid,
+    .smiley-solid,
+    .relieved-smiley-solid,
+    .sad-solid,
+    .smiley-solid,
+    .grin-solid,
+    .laugh-solid,
+    .relieved-solid,
+    .tougue-solid,
+    .smile-solid {
+      &.icon:before,
+      &.icon:after {   
+        color: white;
+      }
+    }
+    .focus {
+      &.icon:before,
+      &.icon:after {   
+        color: white;
+      }
+    }
+    .camera-solid,
+    .eye-solid2,
+    .eye-solid3,
+    .sun-raindrop,
+    .sun-raindrop-solid,
+    .moon-solid {
+      &.icon:before {   
+        color: white;
+      }
+    }
+    .tag-solid,
+    .battery-solid-0,
+    .battery-solid-1,
+    .battery-solid,
+    .battery-solid-3,
+    .suitcase-1,
+    .suitcase-3,
+    .watch-solid,
+    .navigate,
+    .navigate i,
+    .navigate-solid,
+    .tablet-solid,
+    .snow,
+    .rain,
+    .cloud-raindrop,
+    .cloud-lightning,
+    .cloud-download,
+    .cloud-upload {
+      &.icon:after {   
+        color: white;
+      }
+    }
+    .mustache.icon {
+      i,
+      i:before,
+      i:after {   
+        color: white;
+      }
+    }
+    .left-double-quote-solid,
+    .right-double-quote-solid {
+      i:before,
+      i:after {   
+        color: black;
+      }
+    }
   }
-}
-.viewer.cssChildBeforeHover .iconViewer {
-  .icon i:before{
-    color: $highlightColor !important;
+  .viewer.cssIconBeforeHover .iconViewer {
+    .icon:before{
+      color: $highlightColor !important;
+    }
   }
-}
-.viewer.cssChildAfterHover .iconViewer {
-  .icon i:after {
-    color: $highlightColor !important;
-  } 
+  .viewer.cssIconAfterHover .iconViewer {
+    .icon:after {
+      color: $highlightColor !important;
+    }
+  }
+  .viewer.cssChildHover .iconViewer {
+    .icon i {   
+      color: $highlightColor !important;
+    }
+    .icon i:before,
+    .icon i:after {
+      color: black;
+    }
+    [class*="-solid"] i:before,
+    [class*="-solid"] i:after {
+      color: white;
+    }
+
+    .mustache.icon {
+      i:before,
+      i:after {   
+        color: white;
+      }
+    }
+  }
+  .viewer.cssChildBeforeHover .iconViewer {
+    .icon i:before{
+      color: $highlightColor !important;
+    }
+  }
+  .viewer.cssChildAfterHover .iconViewer {
+    .icon i:after {
+      color: $highlightColor !important;
+    } 
+  }
 }

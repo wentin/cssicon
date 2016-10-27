@@ -2,6 +2,7 @@
 $borderRadius: 0;
 $borderColor: #ccc;
 $highlightColor: #3CD5FF;
+$animateHighlightColor: #ff50a6;
 
 body {
   box-sizing: border-box;
@@ -65,6 +66,12 @@ button {
     }
   }
 }
+.containerHome .icons .iconWrapper:hover {
+  border-color: $highlightColor;
+}
+.containerAnimate .icons .iconWrapper:hover {
+  border-color: $animateHighlightColor;
+}
 .icons {
   width: 100%;
   height: 100%;
@@ -90,7 +97,6 @@ button {
     cursor: pointer;
     transition: border-color 0.4s ease-out;
     &:hover {
-      border-color: $highlightColor;
       transition: none;
     }
     &.iconWrapperHidden {
@@ -98,6 +104,9 @@ button {
       height: 0px;
       border: none;
       padding: 0;
+    }
+    .iconMarker {
+      display: none;
     }
   }
   .info {
@@ -308,14 +317,6 @@ button {
             height: 12px;
             background-color: white;
           }
-          .A.iconMarker {
-            right: -3px;
-            top: 13px;
-          }
-          .B.iconMarker {
-            right: 2px;
-            top: 6px;
-          }
           .buttonLock {
             position: absolute;
             left: -8px;
@@ -323,6 +324,9 @@ button {
             width: 15px;
             height: 15px;
             background-color: #fff;
+          }
+          &:hover .buttonLock i {
+            color: $animateHighlightColor;
           }
         }
         .iconAWrapper {
@@ -395,6 +399,67 @@ button {
     }
   }
 }
+.iconWrapper {
+  position: relative;
+  &.selectedAnimateIconA,
+  &.selectedAnimateIconB {
+    border-color: $animateHighlightColor;
+    &:before{
+      content: "";
+      position: absolute;
+      right: -2px;
+      top: 6px;
+      width: 3px;
+      height: 12px;
+      background-color: white;
+    }
+    .icon {
+      color: $animateHighlightColor;
+    }
+    .iconMarker {
+      color: $animateHighlightColor;
+    }
+  }
+  &.selectedAnimateIconA .A.iconMarker {
+    display: block;
+  }
+  &.selectedAnimateIconB .B.iconMarker {
+    display: block;
+  }
+  .A.iconMarker {
+    right: -3px;
+    top: 13px;
+  }
+  .B.iconMarker {
+    right: 2px;
+    top: 6px;
+  }
+}
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover,
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover {
+  &:before{
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 6px;
+    width: 3px;
+    height: 12px;
+    background-color: white;
+  }
+  .iconMarker {
+    color: $animateHighlightColor;
+  }
+}
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover {
+  .A.iconMarker {
+    display: block;
+  }
+} 
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover {
+  .B.iconMarker {
+    display: block;
+  }
+} 
 
 .logo {
   display: block;
@@ -422,10 +487,11 @@ button {
     &.N {
       position: relative;
     }
-    &:hover {
-      color: $highlightColor;
-    }
+    
   }
+}
+.containerHome .logo .icon:hover {
+  color: $highlightColor;
 }
 
 .animateLogo {
@@ -439,7 +505,7 @@ button {
   .icon {
     position: relative;
     display: inline-block;
-    color: red !important;
+    color: $animateHighlightColor !important;
   }
   .m-s.icon {
     margin-right: -1px;

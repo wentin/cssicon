@@ -116,6 +116,14 @@ button {
           transform-origin: center top;
 }
 
+.containerHome .icons .iconWrapper:hover {
+  border-color: #3CD5FF;
+}
+
+.containerAnimate .icons .iconWrapper:hover {
+  border-color: #ff50a6;
+}
+
 .icons {
   width: 100%;
   height: 100%;
@@ -144,7 +152,6 @@ button {
           transition: border-color 0.4s ease-out;
 }
 .icons .iconWrapper:hover {
-  border-color: #3CD5FF;
   -webkit-transition: none;
           transition: none;
 }
@@ -153,6 +160,9 @@ button {
   height: 0px;
   border: none;
   padding: 0;
+}
+.icons .iconWrapper .iconMarker {
+  display: none;
 }
 .icons .info {
   max-width: 600px;
@@ -358,13 +368,8 @@ button {
   height: 12px;
   background-color: white;
 }
-.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper .A.iconMarker {
-  right: -3px;
-  top: 13px;
-}
-.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper .B.iconMarker {
-  right: 2px;
-  top: 6px;
+.viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper:hover .buttonLock i {
+  color: #ff50a6;
 }
 .viewer .viewerWrapper .animateControl .iconWrappers .iconWrapper .buttonLock {
   position: absolute;
@@ -445,6 +450,65 @@ button {
   color: #fff;
 }
 
+.iconWrapper {
+  position: relative;
+}
+.iconWrapper.selectedAnimateIconA, .iconWrapper.selectedAnimateIconB {
+  border-color: #ff50a6;
+}
+.iconWrapper.selectedAnimateIconA:before, .iconWrapper.selectedAnimateIconB:before {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 6px;
+  width: 3px;
+  height: 12px;
+  background-color: white;
+}
+.iconWrapper.selectedAnimateIconA .icon, .iconWrapper.selectedAnimateIconB .icon {
+  color: #ff50a6;
+}
+.iconWrapper.selectedAnimateIconA .iconMarker, .iconWrapper.selectedAnimateIconB .iconMarker {
+  color: #ff50a6;
+}
+.iconWrapper.selectedAnimateIconA .A.iconMarker {
+  display: block;
+}
+.iconWrapper.selectedAnimateIconB .B.iconMarker {
+  display: block;
+}
+.iconWrapper .A.iconMarker {
+  right: -3px;
+  top: 13px;
+}
+.iconWrapper .B.iconMarker {
+  right: 2px;
+  top: 6px;
+}
+
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover:before,
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover:before {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 6px;
+  width: 3px;
+  height: 12px;
+  background-color: white;
+}
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover .iconMarker,
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover .iconMarker {
+  color: #ff50a6;
+}
+
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover .A.iconMarker {
+  display: block;
+}
+
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover .B.iconMarker {
+  display: block;
+}
+
 .logo {
   display: block;
   width: 100%;
@@ -473,7 +537,8 @@ button {
 .logo .icon.N {
   position: relative;
 }
-.logo .icon:hover {
+
+.containerHome .logo .icon:hover {
   color: #3CD5FF;
 }
 
@@ -489,7 +554,7 @@ button {
 .animateLogo .icon {
   position: relative;
   display: inline-block;
-  color: red !important;
+  color: #ff50a6 !important;
 }
 .animateLogo .m-s.icon {
   margin-right: -1px;
@@ -1077,7 +1142,7 @@ button {
 }
 
 @media screen and (min-height: 550px) {
-  .codeBlocks {
+  .containerHome .codeBlocks {
     position: absolute;
     top: 289px;
     left: 20px;
@@ -1088,168 +1153,159 @@ button {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .codeBlocks .codeBlockHover {
+  .containerHome .codeBlocks .codeBlockHover {
     cursor: pointer;
   }
-  .codeBlocks .codeBlockHover:hover {
+  .containerHome .codeBlocks .codeBlockHover:hover {
     background-color: black;
     color: white;
   }
-
-  .animateControl ~ .codeBlocks {
-    top: 363px;
-  }
 }
-.iconViewer .icon, .iconViewer .icon:before, .iconViewer .icon:after, .iconViewer .icon i, .iconViewer .icon i:before, .iconViewer .icon i:after {
+.containerAnimate .iconViewer .icon, .containerAnimate .iconViewer .icon:before, .containerAnimate .iconViewer .icon:after, .containerAnimate .iconViewer .icon i, .containerAnimate .iconViewer .icon i:before, .containerAnimate .iconViewer .icon i:after {
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease;
 }
 
-.viewer.cssIconHover .iconViewer {
+.containerHome .viewer.cssIconHover .iconViewer {
   /* special cases */
 }
-.viewer.cssIconHover .iconViewer .icon {
+.containerHome .viewer.cssIconHover .iconViewer .icon {
   color: #3CD5FF !important;
 }
-.viewer.cssIconHover .iconViewer .icon:before,
-.viewer.cssIconHover .iconViewer .icon:after,
-.viewer.cssIconHover .iconViewer .icon i,
-.viewer.cssIconHover .iconViewer .icon i:before,
-.viewer.cssIconHover .iconViewer .icon i:after,
-.viewer.cssIconHover .iconViewer [class*="-solid"]:before,
-.viewer.cssIconHover .iconViewer [class*="-solid"]:after {
+.containerHome .viewer.cssIconHover .iconViewer .icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .icon i,
+.containerHome .viewer.cssIconHover .iconViewer .icon i:before,
+.containerHome .viewer.cssIconHover .iconViewer .icon i:after,
+.containerHome .viewer.cssIconHover .iconViewer [class*="-solid"]:before,
+.containerHome .viewer.cssIconHover .iconViewer [class*="-solid"]:after {
   color: black;
 }
-.viewer.cssIconHover .iconViewer [class*="-solid"] i,
-.viewer.cssIconHover .iconViewer [class*="-solid"] i:before,
-.viewer.cssIconHover .iconViewer [class*="-solid"] i:after {
+.containerHome .viewer.cssIconHover .iconViewer [class*="-solid"] i,
+.containerHome .viewer.cssIconHover .iconViewer [class*="-solid"] i:before,
+.containerHome .viewer.cssIconHover .iconViewer [class*="-solid"] i:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .pin-solid.icon:before, .viewer.cssIconHover .iconViewer .pin-solid.icon:after,
-.viewer.cssIconHover .iconViewer .stop-solid.icon:before,
-.viewer.cssIconHover .iconViewer .stop-solid.icon:after,
-.viewer.cssIconHover .iconViewer .clock-solid.icon:before,
-.viewer.cssIconHover .iconViewer .clock-solid.icon:after,
-.viewer.cssIconHover .iconViewer .clock-h3m30-solid.icon:before,
-.viewer.cssIconHover .iconViewer .clock-h3m30-solid.icon:after,
-.viewer.cssIconHover .iconViewer .clock-h9m0-solid.icon:before,
-.viewer.cssIconHover .iconViewer .clock-h9m0-solid.icon:after,
-.viewer.cssIconHover .iconViewer .clock-h9m30-solid.icon:before,
-.viewer.cssIconHover .iconViewer .clock-h9m30-solid.icon:after,
-.viewer.cssIconHover .iconViewer .mail-solid.icon:before,
-.viewer.cssIconHover .iconViewer .mail-solid.icon:after,
-.viewer.cssIconHover .iconViewer .card-solid.icon:before,
-.viewer.cssIconHover .iconViewer .card-solid.icon:after,
-.viewer.cssIconHover .iconViewer .keyboard-solid.icon:before,
-.viewer.cssIconHover .iconViewer .keyboard-solid.icon:after,
-.viewer.cssIconHover .iconViewer .mouse-solid.icon:before,
-.viewer.cssIconHover .iconViewer .mouse-solid.icon:after,
-.viewer.cssIconHover .iconViewer .browser-solid.icon:before,
-.viewer.cssIconHover .iconViewer .browser-solid.icon:after,
-.viewer.cssIconHover .iconViewer .mobile-solid.icon:before,
-.viewer.cssIconHover .iconViewer .mobile-solid.icon:after,
-.viewer.cssIconHover .iconViewer .target-solid.icon:before,
-.viewer.cssIconHover .iconViewer .target-solid.icon:after,
-.viewer.cssIconHover .iconViewer .picture-solid.icon:before,
-.viewer.cssIconHover .iconViewer .picture-solid.icon:after,
-.viewer.cssIconHover .iconViewer .float-solid.icon:before,
-.viewer.cssIconHover .iconViewer .float-solid.icon:after,
-.viewer.cssIconHover .iconViewer .unamused-solid.icon:before,
-.viewer.cssIconHover .iconViewer .unamused-solid.icon:after,
-.viewer.cssIconHover .iconViewer .pensive-solid.icon:before,
-.viewer.cssIconHover .iconViewer .pensive-solid.icon:after,
-.viewer.cssIconHover .iconViewer .smiley-solid.icon:before,
-.viewer.cssIconHover .iconViewer .smiley-solid.icon:after,
-.viewer.cssIconHover .iconViewer .relieved-smiley-solid.icon:before,
-.viewer.cssIconHover .iconViewer .relieved-smiley-solid.icon:after,
-.viewer.cssIconHover .iconViewer .sad-solid.icon:before,
-.viewer.cssIconHover .iconViewer .sad-solid.icon:after,
-.viewer.cssIconHover .iconViewer .smiley-solid.icon:before,
-.viewer.cssIconHover .iconViewer .smiley-solid.icon:after,
-.viewer.cssIconHover .iconViewer .grin-solid.icon:before,
-.viewer.cssIconHover .iconViewer .grin-solid.icon:after,
-.viewer.cssIconHover .iconViewer .laugh-solid.icon:before,
-.viewer.cssIconHover .iconViewer .laugh-solid.icon:after,
-.viewer.cssIconHover .iconViewer .relieved-solid.icon:before,
-.viewer.cssIconHover .iconViewer .relieved-solid.icon:after,
-.viewer.cssIconHover .iconViewer .tougue-solid.icon:before,
-.viewer.cssIconHover .iconViewer .tougue-solid.icon:after,
-.viewer.cssIconHover .iconViewer .smile-solid.icon:before,
-.viewer.cssIconHover .iconViewer .smile-solid.icon:after {
+.containerHome .viewer.cssIconHover .iconViewer .pin-solid.icon:before, .containerHome .viewer.cssIconHover .iconViewer .pin-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .stop-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .stop-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .clock-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .clock-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .clock-h3m30-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .clock-h3m30-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .clock-h9m0-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .clock-h9m0-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .clock-h9m30-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .clock-h9m30-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .mail-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .mail-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .card-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .card-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .keyboard-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .keyboard-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .mouse-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .mouse-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .browser-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .browser-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .mobile-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .mobile-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .target-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .target-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .picture-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .picture-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .float-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .float-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .unamused-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .unamused-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .pensive-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .pensive-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .smiley-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .smiley-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .relieved-smiley-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .relieved-smiley-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .sad-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .sad-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .smiley-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .smiley-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .grin-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .grin-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .laugh-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .laugh-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .relieved-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .relieved-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .tougue-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .tougue-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .smile-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .smile-solid.icon:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .focus.icon:before, .viewer.cssIconHover .iconViewer .focus.icon:after {
+.containerHome .viewer.cssIconHover .iconViewer .focus.icon:before, .containerHome .viewer.cssIconHover .iconViewer .focus.icon:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .camera-solid.icon:before,
-.viewer.cssIconHover .iconViewer .eye-solid2.icon:before,
-.viewer.cssIconHover .iconViewer .eye-solid3.icon:before,
-.viewer.cssIconHover .iconViewer .sun-raindrop.icon:before,
-.viewer.cssIconHover .iconViewer .sun-raindrop-solid.icon:before,
-.viewer.cssIconHover .iconViewer .moon-solid.icon:before {
+.containerHome .viewer.cssIconHover .iconViewer .camera-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .eye-solid2.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .eye-solid3.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .sun-raindrop.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .sun-raindrop-solid.icon:before,
+.containerHome .viewer.cssIconHover .iconViewer .moon-solid.icon:before {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .tag-solid.icon:after,
-.viewer.cssIconHover .iconViewer .battery-solid-0.icon:after,
-.viewer.cssIconHover .iconViewer .battery-solid-1.icon:after,
-.viewer.cssIconHover .iconViewer .battery-solid.icon:after,
-.viewer.cssIconHover .iconViewer .battery-solid-3.icon:after,
-.viewer.cssIconHover .iconViewer .suitcase-1.icon:after,
-.viewer.cssIconHover .iconViewer .suitcase-3.icon:after,
-.viewer.cssIconHover .iconViewer .watch-solid.icon:after,
-.viewer.cssIconHover .iconViewer .navigate.icon:after,
-.viewer.cssIconHover .iconViewer .navigate i.icon:after,
-.viewer.cssIconHover .iconViewer .navigate-solid.icon:after,
-.viewer.cssIconHover .iconViewer .tablet-solid.icon:after,
-.viewer.cssIconHover .iconViewer .snow.icon:after,
-.viewer.cssIconHover .iconViewer .rain.icon:after,
-.viewer.cssIconHover .iconViewer .cloud-raindrop.icon:after,
-.viewer.cssIconHover .iconViewer .cloud-lightning.icon:after,
-.viewer.cssIconHover .iconViewer .cloud-download.icon:after,
-.viewer.cssIconHover .iconViewer .cloud-upload.icon:after {
+.containerHome .viewer.cssIconHover .iconViewer .tag-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .battery-solid-0.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .battery-solid-1.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .battery-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .battery-solid-3.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .suitcase-1.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .suitcase-3.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .watch-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .navigate.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .navigate i.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .navigate-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .tablet-solid.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .snow.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .rain.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .cloud-raindrop.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .cloud-lightning.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .cloud-download.icon:after,
+.containerHome .viewer.cssIconHover .iconViewer .cloud-upload.icon:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .mustache.icon i,
-.viewer.cssIconHover .iconViewer .mustache.icon i:before,
-.viewer.cssIconHover .iconViewer .mustache.icon i:after {
+.containerHome .viewer.cssIconHover .iconViewer .mustache.icon i,
+.containerHome .viewer.cssIconHover .iconViewer .mustache.icon i:before,
+.containerHome .viewer.cssIconHover .iconViewer .mustache.icon i:after {
   color: white;
 }
-.viewer.cssIconHover .iconViewer .left-double-quote-solid i:before,
-.viewer.cssIconHover .iconViewer .left-double-quote-solid i:after,
-.viewer.cssIconHover .iconViewer .right-double-quote-solid i:before,
-.viewer.cssIconHover .iconViewer .right-double-quote-solid i:after {
+.containerHome .viewer.cssIconHover .iconViewer .left-double-quote-solid i:before,
+.containerHome .viewer.cssIconHover .iconViewer .left-double-quote-solid i:after,
+.containerHome .viewer.cssIconHover .iconViewer .right-double-quote-solid i:before,
+.containerHome .viewer.cssIconHover .iconViewer .right-double-quote-solid i:after {
   color: black;
 }
-
-.viewer.cssIconBeforeHover .iconViewer .icon:before {
+.containerHome .viewer.cssIconBeforeHover .iconViewer .icon:before {
   color: #3CD5FF !important;
 }
-
-.viewer.cssIconAfterHover .iconViewer .icon:after {
+.containerHome .viewer.cssIconAfterHover .iconViewer .icon:after {
   color: #3CD5FF !important;
 }
-
-.viewer.cssChildHover .iconViewer .icon i {
+.containerHome .viewer.cssChildHover .iconViewer .icon i {
   color: #3CD5FF !important;
 }
-.viewer.cssChildHover .iconViewer .icon i:before,
-.viewer.cssChildHover .iconViewer .icon i:after {
+.containerHome .viewer.cssChildHover .iconViewer .icon i:before,
+.containerHome .viewer.cssChildHover .iconViewer .icon i:after {
   color: black;
 }
-.viewer.cssChildHover .iconViewer [class*="-solid"] i:before,
-.viewer.cssChildHover .iconViewer [class*="-solid"] i:after {
+.containerHome .viewer.cssChildHover .iconViewer [class*="-solid"] i:before,
+.containerHome .viewer.cssChildHover .iconViewer [class*="-solid"] i:after {
   color: white;
 }
-.viewer.cssChildHover .iconViewer .mustache.icon i:before,
-.viewer.cssChildHover .iconViewer .mustache.icon i:after {
+.containerHome .viewer.cssChildHover .iconViewer .mustache.icon i:before,
+.containerHome .viewer.cssChildHover .iconViewer .mustache.icon i:after {
   color: white;
 }
-
-.viewer.cssChildBeforeHover .iconViewer .icon i:before {
+.containerHome .viewer.cssChildBeforeHover .iconViewer .icon i:before {
   color: #3CD5FF !important;
 }
-
-.viewer.cssChildAfterHover .iconViewer .icon i:after {
+.containerHome .viewer.cssChildAfterHover .iconViewer .icon i:after {
   color: #3CD5FF !important;
 }
 

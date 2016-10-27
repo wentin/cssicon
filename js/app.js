@@ -199,14 +199,22 @@ app.controller("AnimateController", function($rootScope, $scope, IconsService, $
   $scope.icons = IconsService.getIcons();
   $scope.animateIconA = null;
   $scope.animateIconB = null;
+  $scope.animateIconALock = false;
+  $scope.animateIconBLock = false;
   $scope.animateIconToAssign = "A";
   assignAnimateIcon = function(icon) {
+    console.log($scope.animateIconToAssign);
     if($scope.animateIconToAssign == "A") {
       $scope.animateIconA = icon;
-      $scope.animateIconToAssign = "B";
+      if(!$scope.animateIconBLock) {
+        $scope.animateIconToAssign = "B";
+      }
     } else if($scope.animateIconToAssign == "B") {
       $scope.animateIconB = icon;
-      $scope.animateIconToAssign = "A";
+      console.log($scope.animateIconB);
+      if(!$scope.animateIconALock) {
+        $scope.animateIconToAssign = "A";
+      }
     }
   }
   $scope.iconAnimateClick = function(icon){
@@ -224,7 +232,23 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
 
   $scope.buttonPlayClick = function(){
     angular.element(document.querySelectorAll('.iconViewer .icon')).toggleClass($scope.animateViewerIconA.classNames).toggleClass($scope.animateViewerIconB.classNames);
+    angular.element(document.querySelectorAll('.animateDirection')).toggleClass('AtoB').toggleClass('BtoA');
   }
+  
+  // setTimeout($scope.buttonPlayClick, 1000);
+
+  $scope.iconLockClick = function(lockedIcon){
+    if(lockedIcon == "A") {
+      $scope.$parent.animateIconALock = !$scope.$parent.animateIconALock;
+      $scope.$parent.animateIconBLock = false;
+      $scope.$parent.animateIconToAssign = "B";
+    } else if(lockedIcon == "B") {
+      $scope.$parent.animateIconBLock = !$scope.$parent.animateIconBLock;
+      $scope.$parent.animateIconALock = false;
+      $scope.$parent.animateIconToAssign = "A";
+    }
+  }
+
 })
 
 app.service("IconsService", function($http, $q){

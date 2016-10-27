@@ -16,22 +16,26 @@
     <div class="animateControl">
       <div class="iconLabel clear">
         <div class="iconALabel">
-          search
+          {{animateViewerIconA.name}}
         </div>
         <div class="iconBLabel">
-          sun
+          {{animateViewerIconB.name}}
         </div>
       </div>
       <div class="iconWrappers clear">
-        <div class="iconWrapper iconAWrapper">
-          <div class="buttonLock locked"><i></i></div>
+        <div class="iconWrapper iconAWrapper" ng-click="iconLockClick('A')">
+          <div class="buttonLock"
+            ng-class="{locked: animateIconALock, unlocked: !animateIconALock}"
+            ><i></i></div>
           <div class="iconMarker A"></div>
           <div ng-class="animateViewerIconA.classNames" class="icon">
             <i ng-if="animateViewerIconA.htmlChildMarkup"></i>
           </div>
         </div>
-        <div class="iconWrapper iconBWrapper">
-          <div class="buttonLock unlocked"><i></i></div>
+        <div class="iconWrapper iconBWrapper" ng-click="iconLockClick('B')">
+          <div class="buttonLock"
+            ng-class="{locked: animateIconBLock, unlocked: !animateIconBLock}"
+            ><i></i></div>
           <div class="iconMarker B"></div>
           <div ng-class="animateViewerIconB.classNames" class="icon">
             <i ng-if="animateViewerIconB.htmlChildMarkup"></i>
