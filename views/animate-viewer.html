@@ -1,5 +1,5 @@
 <div class="viewer">
-  <a class="buttonClose" ui-sref="home" ng-click="handleButtonCloseClick()"></a>
+  <a class="buttonClose" ui-sref="animate" ng-click="handleButtonCloseClick()"></a>
   <div class="viewerWrapper">
     <div class="iconWrapper iconViewer">
       <div ng-class="animateViewerIconA.classNames" class="icon">
@@ -23,8 +23,8 @@
         </div>
       </div>
       <div class="iconWrappers clear">
-        <div class="iconWrapper iconAWrapper" ng-click="iconLockClick('A')">
-          <div class="buttonLock"
+        <div class="iconWrapper iconAWrapper" ng-class="{locked: animateIconALock}">
+          <div class="buttonLock" ng-click="iconLockClick('A')"
             ng-class="{locked: animateIconALock, unlocked: !animateIconALock}"
             ><i></i></div>
           <div class="iconMarker A"></div>
@@ -32,8 +32,8 @@
             <i ng-if="animateViewerIconA.htmlChildMarkup"></i>
           </div>
         </div>
-        <div class="iconWrapper iconBWrapper" ng-click="iconLockClick('B')">
-          <div class="buttonLock"
+        <div class="iconWrapper iconBWrapper" ng-class="{locked: animateIconBLock}">
+          <div class="buttonLock" ng-click="iconLockClick('B')"
             ng-class="{locked: animateIconBLock, unlocked: !animateIconBLock}"
             ><i></i></div>
           <div class="iconMarker B"></div>

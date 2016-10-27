@@ -70,8 +70,34 @@ button {
   border-color: $highlightColor;
 }
 .containerAnimate .icons .iconWrapper:hover {
-  border-color: $animateHighlightColor;
+  border-color: #ffa3d0;
 }
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover,
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover {
+  &:before{
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 6px;
+    width: 3px;
+    height: 12px;
+    background-color: white;
+  }
+  .iconMarker {
+    color: #ffa3d0;
+  }
+}
+.iconsAnimateIconToAssignA.icons .iconWrapper:hover {
+  .A.iconMarker {
+    display: block;
+  }
+} 
+.iconsAnimateIconToAssignB.icons .iconWrapper:hover {
+  .B.iconMarker {
+    display: block;
+  }
+} 
+
 .icons {
   width: 100%;
   height: 100%;
@@ -307,7 +333,6 @@ button {
           position: relative;
           padding: 26px;
           border-color: #000;
-          cursor: pointer;
           &:before {
             content: "";
             position: absolute;
@@ -318,6 +343,7 @@ button {
             background-color: white;
           }
           .buttonLock {
+            cursor: pointer;
             position: absolute;
             left: -8px;
             bottom: 5px;
@@ -325,8 +351,14 @@ button {
             height: 15px;
             background-color: #fff;
           }
-          &:hover .buttonLock i {
+          .buttonLock:hover i {
             color: $animateHighlightColor;
+          }
+          &.locked {
+            border-color: $borderColor;
+            .iconMarker {
+              color: $borderColor;
+            }
           }
         }
         .iconAWrapper {
@@ -435,31 +467,6 @@ button {
     top: 6px;
   }
 }
-.iconsAnimateIconToAssignA.icons .iconWrapper:hover,
-.iconsAnimateIconToAssignB.icons .iconWrapper:hover {
-  &:before{
-    content: "";
-    position: absolute;
-    right: -2px;
-    top: 6px;
-    width: 3px;
-    height: 12px;
-    background-color: white;
-  }
-  .iconMarker {
-    color: $animateHighlightColor;
-  }
-}
-.iconsAnimateIconToAssignA.icons .iconWrapper:hover {
-  .A.iconMarker {
-    display: block;
-  }
-} 
-.iconsAnimateIconToAssignB.icons .iconWrapper:hover {
-  .B.iconMarker {
-    display: block;
-  }
-} 
 
 .logo {
   display: block;

@@ -39,8 +39,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 });
 
-app.controller("MainController", function() {
+app.controller("MainController", function($scope, $rootScope) {
   
+  $scope.handleButtonCloseClick = function(){
+    $rootScope.viewerOpen = false;
+  }
+
+  $scope.handleButtonCopyMouseLeave = function(e){
+    angular.element(document.querySelectorAll(".buttonCopy")).removeClass('copied');
+  }
 }); 
 
 app.controller("HomeController", function($http, $rootScope, $scope, IconsService, $q) {
@@ -185,13 +192,6 @@ app.controller('IconController', function($rootScope, $scope, $filter, $statePar
 
   $scope.openIconPanel(icon);
   
-  $scope.handleButtonCloseClick = function(){
-    $rootScope.viewerOpen = false;
-  }
-
-  $scope.handleButtonCopyMouseLeave = function(e){
-    angular.element(document.querySelectorAll(".buttonCopy")).removeClass('copied');
-  }
 })
 
 app.controller("AnimateController", function($rootScope, $scope, IconsService, $state) {
@@ -227,15 +227,13 @@ app.controller("AnimateController", function($rootScope, $scope, IconsService, $
 
 app.controller('AnimateViewerController', function($rootScope, $scope, $filter, $stateParams) {
   $rootScope.viewerOpen = true;
-  $scope.animateViewerIconA = $filter('filter')($scope.icons, {classNames: $stateParams.uid1}, true)[0];
-  $scope.animateViewerIconB = $filter('filter')($scope.icons, {classNames: $stateParams.uid2}, true)[0];
+  $scope.$parent.animateIconA = $scope.animateViewerIconA = $filter('filter')($scope.icons, {classNames: $stateParams.uid1}, true)[0];
+  $scope.$parent.animateIconB = $scope.animateViewerIconB = $filter('filter')($scope.icons, {classNames: $stateParams.uid2}, true)[0];
 
   $scope.buttonPlayClick = function(){
     angular.element(document.querySelectorAll('.iconViewer .icon')).toggleClass($scope.animateViewerIconA.classNames).toggleClass($scope.animateViewerIconB.classNames);
     angular.element(document.querySelectorAll('.animateDirection')).toggleClass('AtoB').toggleClass('BtoA');
   }
-  
-  // setTimeout($scope.buttonPlayClick, 1000);
 
   $scope.iconLockClick = function(lockedIcon){
     if(lockedIcon == "A") {
