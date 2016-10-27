@@ -280,7 +280,7 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   }
   var animateGenerateCodepenString = function(icon1, icon2){
     var html = $scope.animateGenerateHTML(icon1, icon2);
-    var css = $scope.animateGenerateCSS(icon1, icon2);
+    var css = $scope.animateGenerateCSS();
     var js = '/* click on the icon to see the animation */\n' + $scope.animateGenerateJS(icon1, icon2);
 
     var title = icon1.classNames + " to " + icon2.classNames;
@@ -302,7 +302,7 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
 
   var htmlClipboard = new Clipboard('.html.buttonCopy', {
     text: function() {
-      return $scope.animateGenerateHTML($scope.animateViewerIconA);
+      return $scope.animateGenerateHTML($scope.animateViewerIconA, $scope.animateViewerIconB);
     }
   });
   
@@ -313,7 +313,7 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   
   var cssClipboard = new Clipboard('.css.buttonCopy', {
     text: function() {
-        return ".icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}";
+      return $scope.animateGenerateCSS();
     }
   });
   
@@ -324,7 +324,7 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
 
   var jsClipboard = new Clipboard('.js.buttonCopy', {
     text: function() {
-        return "$('.icon').click(function(){\n  $(this)\n    .toggleClass('"+$scope.animateViewerIconA.classNames+"')\n    .toggleClass('"+$scope.animateViewerIconB.classNames+"');\n})";;
+      return $scope.animateGenerateJS($scope.animateViewerIconA, $scope.animateViewerIconB);
     }
   });
   
