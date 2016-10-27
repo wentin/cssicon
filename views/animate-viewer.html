@@ -47,7 +47,7 @@
       </div>
     </div>
     <form action="http://codepen.io/pen/define" method="POST" target="_blank">
-      <input type="hidden" name="data" ng-value='JSONstring'>
+      <input type="hidden" name="data" ng-value='animateJSONstring'>
       <button class="buttonCodepen" type="submit" >
         CONTINUE ON 
         <span ng-include="'partials/codepen-logo.html'"></span>
@@ -59,8 +59,7 @@
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
-      </h4>
-      <xmp><div class="search icon"></div></xmp>
+      <xmp>{{animateGenerateHTML(animateViewerIconA)}}</xmp>
       <h4>CSS
         <div class="css buttonCopy" 
         ng-mouseleave="handleButtonCopyMouseLeave()">
@@ -71,15 +70,15 @@
   transition: all 0.4s ease;
 }</xmp>
       <h4>JS
-        <div class="css buttonCopy" 
+        <div class="js buttonCopy" 
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>
       <xmp>$('.icon').click(function(){
   $(this)
-    .toggleClass('sun')
-    .toggleClass('search');
+    .toggleClass('{{animateViewerIconA.classNames}}')
+    .toggleClass('{{animateViewerIconB.classNames}}');
 })</xmp>
       
     </div>

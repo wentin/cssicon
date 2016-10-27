@@ -346,6 +346,7 @@ button {
   padding: 0;
   background-color: transparent;
   width: 100%;
+  letter-spacing: 0.03em;
 }
 .viewer .viewerWrapper .buttonCodepen svg {
   margin-left: 3px;

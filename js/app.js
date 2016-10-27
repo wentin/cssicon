@@ -203,13 +203,25 @@ app.controller("AnimateController", function($rootScope, $scope, IconsService, $
   $scope.animateIconBLock = false;
   $scope.animateIconToAssign = "A";
   assignAnimateIcon = function(icon) {
-    if ( icon.classNames != $scope.animateIconA.classNames && icon.classNames != $scope.animateIconB.classNames){
-      if($scope.animateIconToAssign == "A") {
+    if($scope.animateIconToAssign == "A") {
+      if ($scope.animateIconA == null) {
         $scope.animateIconA = icon;
         if(!$scope.animateIconBLock) {
           $scope.animateIconToAssign = "B";
         }
-      } else if($scope.animateIconToAssign == "B") {
+      } else if ( icon.classNames != $scope.animateIconA.classNames) {
+        $scope.animateIconA = icon;
+        if(!$scope.animateIconBLock) {
+          $scope.animateIconToAssign = "B";
+        }
+      }
+    } else if($scope.animateIconToAssign == "B") {
+      if ($scope.animateIconB == null) {
+        $scope.animateIconB = icon;
+        if(!$scope.animateIconALock) {
+          $scope.animateIconToAssign = "A";
+        }
+      } else if ( icon.classNames != $scope.animateIconB.classNames) {
         $scope.animateIconB = icon;
         if(!$scope.animateIconALock) {
           $scope.animateIconToAssign = "A";
@@ -247,6 +259,70 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
     }
   }
 
+  $scope.animateGenerateHTML = function(icon){
+    if (icon.htmlChildMarkup) {
+      childHTML = "<i></i>";
+    } else {
+      childHTML = '';
+    }
+    var HTML = '<div class="' + icon.classNames + ' icon">' + childHTML + '</div>'
+    return HTML;
+  }
+
+  var animateGenerateCodepenString = function(icon1, icon2){
+    var html = $scope.animateGenerateHTML(icon1);
+    var css = "@import \"http://cssicon.space/css/icons.css\";\n.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}";
+    var js = "$('.icon').click(function(){\n  $(this)\n    .toggleClass('"+icon1.classNames+"')\n    .toggleClass('"+icon2.classNames+"');\n})";
+
+    var title = icon1.classNames + " to " + icon2.classNames;
+    
+    var data = {
+      title                 : "CSS ICON animate: " + title,
+      description           : title + " icon animation created with pure CSS, CSS ICON animation created via http://cssicon.space/",
+      tags                  : ["CSS", "ICON", "CSSICON", "animate", "animation"],
+      editors               : "111", 
+      layout                : "left", // top | left | right
+      html                  : html,
+      css                   : css,
+      js                    : js,
+      js_external           : "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    }
+    return JSON.stringify(data).replace(/"/g, "&​quot;").replace(/'/g, "&apos;");
+  }
+  $scope.animateJSONstring = animateGenerateCodepenString($scope.animateViewerIconA, $scope.animateViewerIconB);
+
+  var htmlClipboard = new Clipboard('.html.buttonCopy', {
+    text: function() {
+      return $scope.animateGenerateHTML($scope.animateViewerIconA);
+    }
+  });
+  
+  htmlClipboard.on('success', function(e) {
+    console.log("html", e.trigger);
+    angular.element(e.trigger).addClass('copied');
+  });
+  
+  var cssClipboard = new Clipboard('.css.buttonCopy', {
+    text: function() {
+        return ".icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}";
+    }
+  });
+  
+  cssClipboard.on('success', function(e) {
+    console.log("css", e.trigger);
+    angular.element(e.trigger).addClass('copied');
+  });
+
+  var jsClipboard = new Clipboard('.js.buttonCopy', {
+    text: function() {
+        return "$('.icon').click(function(){\n  $(this)\n    .toggleClass('"+$scope.animateViewerIconA.classNames+"')\n    .toggleClass('"+$scope.animateViewerIconB.classNames+"');\n})";;
+    }
+  });
+  
+  jsClipboard.on('success', function(e) {
+    console.log("js", e.trigger);
+    angular.element(e.trigger).addClass('copied');
+  });
 })
 
 app.service("IconsService", function($http, $q){
