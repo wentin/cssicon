@@ -116,6 +116,29 @@ button {
           transform-origin: center top;
 }
 
+.containerHome .animateLogo {
+  cursor: pointer;
+}
+.containerHome .animateLogo .icon {
+  color: #ccc !important;
+}
+.containerHome .animateLogo:hover .icon {
+  color: #ff50a6 !important;
+}
+
+.containerAnimate .animateLogo .icon {
+  color: #ff50a6 !important;
+}
+.containerAnimate .logo {
+  cursor: pointer;
+}
+.containerAnimate .logo > .icon {
+  color: #ccc !important;
+}
+.containerAnimate .logo:hover > .icon {
+  color: #3CD5FF !important;
+}
+
 .containerHome .icons .iconWrapper:hover {
   border-color: #3CD5FF;
 }
@@ -557,11 +580,6 @@ button {
   height: 21px;
   font-size: 16px;
 }
-.animateLogo .icon {
-  position: relative;
-  display: inline-block;
-  color: #ff50a6 !important;
-}
 .animateLogo .m-s.icon {
   margin-right: -1px;
 }
@@ -570,6 +588,10 @@ button {
 }
 .animateLogo .e-s.icon {
   margin-left: -2px;
+}
+.animateLogo .icon {
+  position: relative;
+  display: inline-block;
 }
 
 .searchWrapper {

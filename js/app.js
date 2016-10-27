@@ -203,7 +203,6 @@ app.controller("AnimateController", function($rootScope, $scope, IconsService, $
   $scope.animateIconBLock = false;
   $scope.animateIconToAssign = "A";
   assignAnimateIcon = function(icon) {
-    console.log($scope.animateIconToAssign);
     if($scope.animateIconToAssign == "A") {
       $scope.animateIconA = icon;
       if(!$scope.animateIconBLock) {
@@ -211,7 +210,6 @@ app.controller("AnimateController", function($rootScope, $scope, IconsService, $
       }
     } else if($scope.animateIconToAssign == "B") {
       $scope.animateIconB = icon;
-      console.log($scope.animateIconB);
       if(!$scope.animateIconALock) {
         $scope.animateIconToAssign = "A";
       }

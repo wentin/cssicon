@@ -66,6 +66,31 @@ button {
     }
   }
 }
+.containerHome {
+  .animateLogo {
+    cursor: pointer;
+  }
+  .animateLogo .icon {
+    color: $borderColor !important;
+  }
+  .animateLogo:hover .icon {
+    color: $animateHighlightColor !important;
+  }
+}
+.containerAnimate {
+  .animateLogo .icon {
+    color: $animateHighlightColor !important;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .logo > .icon {
+    color: $borderColor !important;
+  }
+  .logo:hover > .icon {
+    color: $highlightColor !important;
+  }
+}
 .containerHome .icons .iconWrapper:hover {
   border-color: $highlightColor;
 }
@@ -509,11 +534,6 @@ button {
   width: 119px;
   height: 21px;
   font-size: 16px;
-  .icon {
-    position: relative;
-    display: inline-block;
-    color: $animateHighlightColor !important;
-  }
   .m-s.icon {
     margin-right: -1px;
   }
@@ -522,6 +542,10 @@ button {
   }
   .e-s.icon {
     margin-left: -2px;
+  }
+  .icon {
+    position: relative;
+    display: inline-block;
   }
 }
 
