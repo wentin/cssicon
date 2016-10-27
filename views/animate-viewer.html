@@ -59,27 +59,21 @@
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
-      <xmp>{{animateGenerateHTML(animateViewerIconA)}}</xmp>
+      <xmp>{{animateGenerateHTML(animateViewerIconA, animateViewerIconB)}}</xmp>
       <h4>CSS
         <div class="css buttonCopy" 
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>
-      <xmp>.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
-  transition: all 0.4s ease;
-}</xmp>
+      <xmp>{{animateGenerateCSS()}}</xmp>
       <h4>JS
         <div class="js buttonCopy" 
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>
-      <xmp>$('.icon').click(function(){
-  $(this)
-    .toggleClass('{{animateViewerIconA.classNames}}')
-    .toggleClass('{{animateViewerIconB.classNames}}');
-})</xmp>
+      <xmp>{{animateGenerateJS(animateViewerIconA,animateViewerIconB)}}</xmp>
       
     </div>
   </div>

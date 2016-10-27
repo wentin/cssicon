@@ -259,20 +259,29 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
     }
   }
 
-  $scope.animateGenerateHTML = function(icon){
-    if (icon.htmlChildMarkup) {
+  $scope.animateGenerateHTML = function(icon1, icon2){
+    if (icon1.htmlChildMarkup || icon2.htmlChildMarkup) {
       childHTML = "<i></i>";
     } else {
       childHTML = '';
     }
-    var HTML = '<div class="' + icon.classNames + ' icon">' + childHTML + '</div>'
+    var HTML = '<div class="' + icon1.classNames + ' icon">' + childHTML + '</div>'
     return HTML;
   }
 
+  $scope.animateGenerateCSS = function(){
+    var CSS = "/* get the styles for both icon*/\n@import \"http://cssicon.space/css/icons.css\";\n\n.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}\n/* this is merely a rough demo to showcase the potential of CSS ICON on animation, more crafted animation can go from here */";
+    return CSS;
+  }
+
+  $scope.animateGenerateJS = function(icon1, icon2){
+    var JS = "$('.icon').click(function(){\n  $(this)\n    .toggleClass('"+icon1.classNames+"')\n    .toggleClass('"+icon2.classNames+"');\n})";
+    return JS;
+  }
   var animateGenerateCodepenString = function(icon1, icon2){
-    var html = $scope.animateGenerateHTML(icon1);
-    var css = "@import \"http://cssicon.space/css/icons.css\";\n.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}";
-    var js = "$('.icon').click(function(){\n  $(this)\n    .toggleClass('"+icon1.classNames+"')\n    .toggleClass('"+icon2.classNames+"');\n})";
+    var html = $scope.animateGenerateHTML(icon1, icon2);
+    var css = $scope.animateGenerateCSS(icon1, icon2);
+    var js = '/* click on the icon to see the animation */\n' + $scope.animateGenerateJS(icon1, icon2);
 
     var title = icon1.classNames + " to " + icon2.classNames;
     
