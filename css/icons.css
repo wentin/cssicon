@@ -1902,7 +1902,8 @@ body {
 .code.icon:after {
   content: '';
   position: absolute;
-  left: 6px;
+  left: 8px;
+  top: 2px;
   width: 8px;
   height: 8px;
   border-bottom: solid 1px currentColor;
@@ -1914,6 +1915,8 @@ body {
 .code.icon:before {
   content: '';
   position: absolute;
+  top: 2px;
+  left: 2px;
   width: 8px;
   height: 8px;
   border-left: solid 1px currentColor;
@@ -1927,6 +1930,8 @@ body {
   position: absolute;
   margin-left: 3px;
   margin-top: 6px;
+  width: 19px;
+  height: 13px;
 }
 
 .flag.icon:before {

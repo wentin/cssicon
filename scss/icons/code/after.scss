@@ -2,7 +2,8 @@
 .code.icon {
   &:after {
     @include pseudo();
-    left: 6px;
+    left: 8px;
+    top: 2px;
     width: 8px;
     height: 8px;
     border-bottom: solid 1px currentColor;
