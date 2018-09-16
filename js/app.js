@@ -270,7 +270,7 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   }
 
   $scope.animateGenerateCSS = function(){
-    var CSS = "/* get the styles for both icon*/\n@import \"http://cssicon.space/css/icons.css\";\n\n.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}\n/* this is merely a rough demo to showcase the potential of CSS ICON on animation, more crafted animation can go from here */";
+    var CSS = "/* get the styles for both icon*/\n@import \"https://cssicon.space/css/icons.css\";\n\n.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { \n  transition: all 0.4s ease;\n}\n/* this is merely a rough demo to showcase the potential of CSS ICON on animation, more crafted animation can go from here */";
     return CSS;
   }
 
