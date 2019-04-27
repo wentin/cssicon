@@ -1,11 +1,11 @@
-$grey: #333;
+$grey: #000;
+$light: #ccc;
 $white: #fff;
-$color: #19D599;
+$color: #000;
 
 body {
-  width: 1280px;
+  width: 1540px;
   margin: 0 auto;
-  background-color: #F6F5F3;
 }
 footer {
   float: left;
@@ -14,9 +14,11 @@ footer {
 }
 .logo {
   display: block;
-  width: 100%;
+  width: 200px;
   height: 30px;
   margin: 100px 0 50px 0;
+  transform: scale(2);
+  transform-origin: left bottom;
   div {
     position: relative;
     float: left;
@@ -102,11 +104,10 @@ footer {
   float: left;
   width: 21px;
   height: 21px;
-  border-radius: 2px;
+  border-radius: 0px;
   background-color: $white;
-  padding: 25px;
-  border-radius: 5px;
-  border: solid 2px transparent;
+  padding: 26px;
+  border: solid 1px $light;
   margin: 0 5px 5px 0;
   transition: border-color 0.4s ease-out;
   transform: scale(1,1);
