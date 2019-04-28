@@ -137,7 +137,6 @@ app.controller("HomeController", function($http, $rootScope, $scope, IconsServic
   });
   
   htmlClipboard.on('success', function(e) {
-    console.log("html", e.trigger);
     angular.element(e.trigger).addClass('copied');
   });
   
@@ -148,7 +147,6 @@ app.controller("HomeController", function($http, $rootScope, $scope, IconsServic
   });
   
   cssClipboard.on('success', function(e) {
-    console.log("css", e.trigger);
     angular.element(e.trigger).addClass('copied');
   });
 });
@@ -263,7 +261,6 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   });
   
   htmlClipboard.on('success', function(e) {
-    console.log("html", e.trigger);
     angular.element(e.trigger).addClass('copied');
   });
   
@@ -274,7 +271,6 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   });
   
   cssClipboard.on('success', function(e) {
-    console.log("css", e.trigger);
     angular.element(e.trigger).addClass('copied');
   });
 
@@ -285,7 +281,6 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   });
   
   jsClipboard.on('success', function(e) {
-    console.log("js", e.trigger);
     angular.element(e.trigger).addClass('copied');
   });
 })
@@ -301,7 +296,6 @@ app.service("IconsService", function($http, $q){
       defer = $q.defer();
       $http.get(url).success(function (data) {
         icons = data;
-        console.log('load json');
         defer.resolve();
       });
     }
