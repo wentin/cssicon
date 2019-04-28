@@ -48,7 +48,7 @@ app.controller("MainController", function($scope, $rootScope) {
   $scope.handleButtonCopyMouseLeave = function(e){
     angular.element(document.querySelectorAll(".buttonCopy")).removeClass('copied');
   }
-}); 
+});
 
 app.controller("HomeController", function($http, $rootScope, $scope, IconsService, $q) {
   $rootScope.viewerOpen = false;
@@ -87,25 +87,6 @@ app.controller("HomeController", function($http, $rootScope, $scope, IconsServic
     return CSS;
   }
   
-  var generateCodepenString = function(icon){
-    var html = generateHTML(icon);
-    var css = generateCSS(icon);
-    if (icon.cssHidden) {
-      css += icon.cssHidden + '\n';
-    }
-    var title = icon.name;
-    
-    var data = {
-      title                 : "CSS ICON: " + title,
-      description           : title + " icon created with pure CSS, CSS ICON created via http://cssicon.space/",
-      tags                  : ["CSS", "ICON", "CSSICON"],
-      editors               : "110", 
-      layout                : "left", // top | left | right
-      html                  : html,
-      css                   : css,
-    }
-    return JSON.stringify(data).replace(/"/g, "&​quot;").replace(/'/g, "&apos;");
-  }
 
   var openIconPanel = $scope.openIconPanel = function(icon){
     $scope.selectedIcon = icon;
@@ -147,10 +128,6 @@ app.controller("HomeController", function($http, $rootScope, $scope, IconsServic
     }, function(){
       $scope.selectedIcon.cssBlocks.cssChildAfter = false;
     });
-
-    $q.all([cssIconHttp, cssIconBeforeHttp, cssIconAfterHttp, cssChildHttp, cssChildBeforeHttp, cssChildAfterHttp, ]).then(function(){
-      $scope.JSONstring = generateCodepenString($scope.selectedIcon);
-    });
   }
 
   var htmlClipboard = new Clipboard('.html.buttonCopy', {
@@ -174,16 +151,16 @@ app.controller("HomeController", function($http, $rootScope, $scope, IconsServic
     console.log("css", e.trigger);
     angular.element(e.trigger).addClass('copied');
   });
-}); 
+});
 
 app.controller('IconController', function($rootScope, $scope, $filter, $stateParams) {
   $rootScope.viewerOpen = true;
   var icon = $filter('filter')($scope.icons, {classNames: $stateParams.uid}, true)[0];
   
-  if (icon.classNames == "C" || 
-      icon.classNames == "S" || 
-      icon.classNames == "I" || 
-      icon.classNames == "O" || 
+  if (icon.classNames == "C" ||
+      icon.classNames == "S" ||
+      icon.classNames == "I" ||
+      icon.classNames == "O" ||
       icon.classNames == "N" ) {
     $rootScope.letterIconViewerOpen = true;
   } else {
@@ -278,28 +255,7 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
     var JS = "$('.icon').click(function(){\n  $(this)\n    .toggleClass('"+icon1.classNames+"')\n    .toggleClass('"+icon2.classNames+"');\n})";
     return JS;
   }
-  var animateGenerateCodepenString = function(icon1, icon2){
-    var html = $scope.animateGenerateHTML(icon1, icon2);
-    var css = $scope.animateGenerateCSS();
-    var js = '/* click on the icon to see the animation */\n' + $scope.animateGenerateJS(icon1, icon2);
-
-    var title = icon1.classNames + " to " + icon2.classNames;
-    
-    var data = {
-      title                 : "CSS ICON animate: " + title,
-      description           : title + " icon animation created with pure CSS, CSS ICON animation created via http://cssicon.space/",
-      tags                  : ["CSS", "ICON", "CSSICON", "animate", "animation"],
-      editors               : "111", 
-      layout                : "left", // top | left | right
-      html                  : html,
-      css                   : css,
-      js                    : js,
-      js_external           : "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
-    }
-    return JSON.stringify(data).replace(/"/g, "&​quot;").replace(/'/g, "&apos;");
-  }
-  $scope.animateJSONstring = animateGenerateCodepenString($scope.animateViewerIconA, $scope.animateViewerIconB);
-
+  
   var htmlClipboard = new Clipboard('.html.buttonCopy', {
     text: function() {
       return $scope.animateGenerateHTML($scope.animateViewerIconA, $scope.animateViewerIconB);
