@@ -110,10 +110,8 @@ button {
   text-align: center;
 }
 .container.viewerOpen.letterIconViewerOpen .viewerWrapper .iconWrapperBig .scale {
-  -webkit-transform: scale(3);
-          transform: scale(3);
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
+  transform: scale(3);
+  transform-origin: center top;
 }
 
 .containerHome .animateLogo {
@@ -194,12 +192,10 @@ button {
   margin-bottom: 5px;
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: border-color 0.4s ease-out;
-          transition: border-color 0.4s ease-out;
+  transition: border-color 0.4s ease-out;
 }
 .icons .iconWrapper:hover {
-  -webkit-transition: none;
-          transition: none;
+  transition: none;
 }
 .icons .iconWrapper.iconWrapperHidden {
   visibility: hidden;
@@ -289,16 +285,13 @@ button {
   left: -4px;
   top: 10px;
   background-color: #000;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 .viewer .buttonClose:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .viewer .buttonClose:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .viewer .viewerWrapper {
   box-sizing: border-box;
@@ -328,37 +321,9 @@ button {
   margin: 40px auto 0 auto;
 }
 .viewer .viewerWrapper .iconWrapperBig .scale {
-  -webkit-transform: scale(4);
-          transform: scale(4);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
+  transform: scale(4);
+  transform-origin: left top;
   display: inline-block;
-}
-.viewer .viewerWrapper .iconLabel {
-  margin-bottom: 30px;
-}
-.viewer .viewerWrapper .buttonCodepen {
-  display: block;
-  border: solid 1px #000;
-  border-radius: 0;
-  margin-bottom: 30px;
-  cursor: pointer;
-  padding: 0;
-  background-color: transparent;
-  width: 100%;
-  letter-spacing: 0.03em;
-}
-.viewer .viewerWrapper .buttonCodepen svg {
-  margin-left: 3px;
-  position: relative;
-  top: 6px;
-}
-.viewer .viewerWrapper .buttonCodepen:hover {
-  background-color: #000;
-  color: white;
-}
-.viewer .viewerWrapper .buttonCodepen:hover svg path {
-  fill: white;
 }
 .viewer .viewerWrapper h4 .buttonCopy {
   float: right;
@@ -383,9 +348,6 @@ button {
 }
 .viewer .viewerWrapper h4 .buttonCopy:hover::after {
   display: block;
-}
-.viewer .viewerWrapper .animateControl {
-  margin-bottom: 30px;
 }
 .viewer .viewerWrapper .animateControl .iconLabel {
   margin-bottom: 0;
@@ -465,10 +427,8 @@ button {
   border-top: solid 1px transparent;
   border-right: solid 1px #000;
   border-bottom: solid 1px #000;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
+  transform: rotate(-45deg);
+  transform-origin: center center;
 }
 .viewer .viewerWrapper .animateControl .iconWrappers .animateDirection.BtoA:after {
   content: "";
@@ -481,10 +441,8 @@ button {
   border-top: solid 1px #000;
   border-right: solid 1px transparent;
   border-bottom: solid 1px transparent;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
+  transform: rotate(-45deg);
+  transform-origin: center center;
 }
 .viewer .viewerWrapper .animateControl .iconWrappers .animateDirection .buttonPlay {
   cursor: pointer;
@@ -773,8 +731,7 @@ button {
   height: 12px;
   border: solid 1px black;
   border-radius: 100%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   position: relative;
 }
 .search.icon:before {
@@ -799,12 +756,10 @@ button {
   background-color: black;
   position: absolute;
   top: 10px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .close.icon:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .buttonPlay i {
@@ -824,10 +779,8 @@ button {
   width: 16px;
   height: 1px;
   background-color: currentColor;
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform-origin: left top;
+  transform: rotate(30deg);
 }
 .buttonPlay i:after {
   content: "";
@@ -837,10 +790,8 @@ button {
   width: 16px;
   height: 1px;
   background-color: currentColor;
-  -webkit-transform-origin: left bottom;
-          transform-origin: left bottom;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform-origin: left bottom;
+  transform: rotate(-30deg);
 }
 
 .a-s.icon {
@@ -981,8 +932,7 @@ button {
   border-right: solid 3px transparent;
   border-bottom: solid 3px currentColor;
   border-left: solid 3px currentColor;
-  -webkit-transform: rotate(-18deg);
-          transform: rotate(-18deg);
+  transform: rotate(-18deg);
 }
 
 .A.iconMarker {
@@ -1000,10 +950,8 @@ button {
   width: 1px;
   height: 12px;
   background-color: currentColor;
-  -webkit-transform: skew(-19deg);
-          transform: skew(-19deg);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform: skew(-19deg);
+  transform-origin: right top;
 }
 .A.iconMarker:after {
   content: '';
@@ -1013,10 +961,8 @@ button {
   width: 1px;
   height: 12px;
   background-color: currentColor;
-  -webkit-transform: skew(19deg);
-          transform: skew(19deg);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
+  transform: skew(19deg);
+  transform-origin: left top;
 }
 
 .B.iconMarker {
@@ -1126,8 +1072,7 @@ button {
   bottom: 0;
   width: 10px;
   height: 10px;
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
   border-radius: 50%;
   border-top: solid 4px currentColor;
   border-right: solid 4px transparent;
@@ -1142,8 +1087,7 @@ button {
   top: 0;
   width: 8px;
   height: 8px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   border-radius: 50%;
   border-top: solid 4px currentColor;
   border-right: solid 4px transparent;
@@ -1174,10 +1118,8 @@ button {
   width: 4px;
   height: 30px;
   background-color: currentColor;
-  -webkit-transform: skewX(32.5deg);
-          transform: skewX(32.5deg);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
+  transform: skewX(32.5deg);
+  transform-origin: left top;
 }
 
 .N.icon {
@@ -1192,7 +1134,7 @@ button {
 @media screen and (min-height: 550px) {
   .containerHome .codeBlocks {
     position: absolute;
-    top: 289px;
+    top: 214px;
     left: 20px;
     right: 0;
     bottom: 0;
@@ -1210,8 +1152,7 @@ button {
   }
 }
 .containerAnimate .iconViewer .icon, .containerAnimate .iconViewer .icon:before, .containerAnimate .iconViewer .icon:after, .containerAnimate .iconViewer .icon i, .containerAnimate .iconViewer .icon i:before, .containerAnimate .iconViewer .icon i:after {
-  -webkit-transition: all 0.4s ease;
-          transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .containerHome .viewer.cssIconHover .iconViewer {

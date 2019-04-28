@@ -116,12 +116,12 @@ button {
   .A.iconMarker {
     display: block;
   }
-} 
+}
 .iconsAnimateIconToAssignB.icons .iconWrapper:hover {
   .B.iconMarker {
     display: block;
   }
-} 
+}
 
 .icons {
   width: 100%;
@@ -288,32 +288,6 @@ button {
         display: inline-block;
       }
     }
-    .iconLabel {
-      margin-bottom: 30px;
-    }
-    .buttonCodepen {
-      display: block;
-      border: solid 1px #000;
-      border-radius: $borderRadius;
-      margin-bottom: 30px;
-      cursor: pointer;
-      padding: 0;
-      background-color: transparent;
-      width: 100%;
-      letter-spacing: 0.03em;
-      svg {
-        margin-left: 3px;
-        position: relative;
-        top: 6px;
-      }
-      &:hover {
-        background-color: #000;
-        color: white;
-        svg path{
-          fill: white;
-        }
-      }
-    }
     h4 .buttonCopy {
       float: right;
       cursor: pointer;
@@ -340,7 +314,6 @@ button {
     }
 
     .animateControl {
-      margin-bottom: 30px;
       .iconLabel {
         margin-bottom: 0;
         .iconALabel {
@@ -592,18 +565,18 @@ button {
     outline: none;
     border-radius: 0;
     -webkit-appearance: none;
-  }   
+  }
   ::-webkit-input-placeholder {
      color: #000;
   }
   :-moz-placeholder {
-     color: #000;  
+     color: #000;
   }
   ::-moz-placeholder {
-     color: #000;  
+     color: #000;
   }
-  :-ms-input-placeholder {  
-     color: #000;  
+  :-ms-input-placeholder {
+     color: #000;
   }
   .search.icon {
     display: none;
@@ -636,7 +609,7 @@ button {
   .container.viewerOpen {
     .logo {
       margin-bottom: 20px;
-    }    
+    }
     .searchWrapper {
       width: auto;
       position: relative;

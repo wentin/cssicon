@@ -46,13 +46,6 @@
         </div>
       </div>
     </div>
-    <form action="https://codepen.io/pen/define" method="POST" target="_blank">
-      <input type="hidden" name="data" ng-value='animateJSONstring'>
-      <button class="buttonCodepen" type="submit" >
-        CONTINUE ON 
-        <span ng-include="'partials/codepen-logo.html'"></span>
-      </button>
-    </form>
     <div class="codeBlocks">
       <h4>HTML
         <div class="html buttonCopy"
@@ -61,14 +54,14 @@
         </div>
       <xmp>{{animateGenerateHTML(animateViewerIconA, animateViewerIconB)}}</xmp>
       <h4>CSS
-        <div class="css buttonCopy" 
+        <div class="css buttonCopy"
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>
       <xmp>{{animateGenerateCSS()}}</xmp>
       <h4>JS
-        <div class="js buttonCopy" 
+        <div class="js buttonCopy"
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>

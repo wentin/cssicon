@@ -64,12 +64,12 @@ module.exports = function(grunt) {
           server: {
             options: {
               port: 8080,
-              hostname: '*'
+              hostname: '*',
+              protocol: 'https'
             }
           }
         }
     });
-    grunt.loadNpmTasks('grunt-sass-globbing');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-autoprefixer');

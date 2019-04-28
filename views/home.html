@@ -8,7 +8,7 @@
       <div class="C icon" ui-sref=".icon({ uid: 'C' })" ng-class="{selected: 'C' == selectedIcon.classNames}"></div>
       <div class="O icon" ui-sref=".icon({ uid: 'O' })" ng-class="{selected: 'O' == selectedIcon.classNames}"></div>
       <div class="N icon" ui-sref=".icon({ uid: 'N' })" ng-class="{selected: 'N' == selectedIcon.classNames}"></div>
-      <div class="animateLogo" ui-sref="animate"> 
+      <div class="animateLogo" ui-sref="animate">
         <div class="a-s icon"></div>
         <div class="n-s icon"></div>
         <div class="i-s icon"></div>
@@ -26,8 +26,8 @@
     <a class="iconWrapper" ng-class="{selected: icon.classNames == selectedIcon.classNames}" ui-sref=".icon({ uid: icon.classNames })" ng-repeat-start="icon in icons | filter: searchText | filter: {'style': '!letter'} | orderBy: 'style'">
       <div ng-class="icon.classNames" class="icon">
         <i ng-if="icon.htmlChildMarkup"></i>
-      </div> 
-    </a> 
+      </div>
+    </a>
     <i ng-repeat-end></i>
     <div class="iconWrapper iconWrapperHidden"></div>
     <div class="iconWrapper iconWrapperHidden"></div>

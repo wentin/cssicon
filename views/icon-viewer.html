@@ -1,11 +1,11 @@
-<div 
+<div
   class="viewer"
   ng-init="cssIconHover = cssIconBeforeHover = cssIconAfterHover = cssChildHover = cssChildBeforeHover = cssChildAfterHover = false;"
-  ng-class="{ cssIconHover: cssIconHover, 
-             cssIconBeforeHover: cssIconBeforeHover, 
-             cssIconAfterHover: cssIconAfterHover, 
-             cssChildHover: cssChildHover, 
-             cssChildBeforeHover: cssChildBeforeHover, 
+  ng-class="{ cssIconHover: cssIconHover,
+             cssIconBeforeHover: cssIconBeforeHover,
+             cssIconAfterHover: cssIconAfterHover,
+             cssChildHover: cssChildHover,
+             cssChildBeforeHover: cssChildBeforeHover,
              cssChildAfterHover: cssChildAfterHover}"
   >
   <a class="buttonClose" ui-sref="home" ng-click="handleButtonCloseClick()"></a>
@@ -25,13 +25,6 @@
     <div class="iconLabel">
       {{selectedIcon.name}}
     </div>
-    <form action="https://codepen.io/pen/define" method="POST" target="_blank">
-      <input type="hidden" name="data" ng-value='JSONstring'>
-      <button class="buttonCodepen" type="submit" >
-        TRY IT ON 
-        <span ng-include="'partials/codepen-logo.html'"></span>
-      </button>
-    </form>
     <div class="codeBlocks">
       <h4>HTML
         <div class="html buttonCopy"
@@ -41,24 +34,24 @@
       </h4>
       <xmp>{{generateHTML(selectedIcon)}}</xmp>
       <h4>CSS
-        <div class="css buttonCopy" 
+        <div class="css buttonCopy"
         ng-mouseleave="handleButtonCopyMouseLeave()">
           <div class="icon copy"></div>
         </div>
       </h4>
-      <div class="cssIcon codeBlockHover" 
+      <div class="cssIcon codeBlockHover"
            ng-mouseover = "cssIconHover = true"
            ng-mouseleave= "cssIconHover = false">
         <!-- <xmp ng-if="selectedIcon.cssBlocks.cssIcon" ng-include="'css/icons/'+selectedIcon.classNames+'/main.css'"></xmp> -->
         <xmp ng-if="selectedIcon.cssBlocks.cssIcon">{{selectedIcon.cssBlocks.cssIcon}}</xmp>
       </div>
-      <div class="cssIconBefore codeBlockHover" 
+      <div class="cssIconBefore codeBlockHover"
            ng-mouseover = "cssIconBeforeHover = true;"
            ng-mouseleave= "cssIconBeforeHover = false;">
         <!-- <xmp ng-if="selectedIcon.cssBlocks.cssIconBefore" ng-include="'css/icons/'+selectedIcon.classNames+'/before.css'"></xmp> -->
         <xmp ng-if="selectedIcon.cssBlocks.cssIconBefore">{{selectedIcon.cssBlocks.cssIconBefore}}</xmp>
       </div>
-      <div class="cssIconAfter codeBlockHover" 
+      <div class="cssIconAfter codeBlockHover"
            ng-mouseover = "cssIconAfterHover = true;"
            ng-mouseleave= "cssIconAfterHover = false;">
 
@@ -71,7 +64,7 @@
         <!-- <xmp ng-if="selectedIcon.cssBlocks.cssChild" ng-include="'css/icons/'+selectedIcon.classNames+'/i.css'"></xmp> -->
         <xmp ng-if="selectedIcon.cssBlocks.cssChild">{{selectedIcon.cssBlocks.cssChild}}</xmp>
       </div>
-      <div class="cssChildBefore codeBlockHover" 
+      <div class="cssChildBefore codeBlockHover"
            ng-mouseover = "cssChildBeforeHover = true;"
            ng-mouseleave= "cssChildBeforeHover = false;">
         <!-- <xmp ng-if="selectedIcon.cssBlocks.cssChildBefore" ng-include="'css/icons/'+selectedIcon.classNames+'/i-before.css'"></xmp> -->

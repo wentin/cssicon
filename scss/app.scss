@@ -8,7 +8,7 @@ $highlightColor: #3CD5FF;
 @media screen and ( min-height: 550px ){
   .containerHome .codeBlocks {
     position: absolute;
-    top: 289px;
+    top: 214px;
     left: 20px;
     right: 0;
     bottom: 0;
@@ -27,14 +27,14 @@ $highlightColor: #3CD5FF;
 }
 
 .containerAnimate .iconViewer {
-  .icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+  .icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after {
     transition: all 0.4s ease;
-  } 
+  }
 }
 
 .containerHome {
   .viewer.cssIconHover .iconViewer {
-    .icon {   
+    .icon {
       color: $highlightColor !important;
     }
     .icon:before,
@@ -43,7 +43,7 @@ $highlightColor: #3CD5FF;
     .icon i:before,
     .icon i:after,
     [class*="-solid"]:before,
-    [class*="-solid"]:after {   
+    [class*="-solid"]:after {
       color: black;
     }
     [class*="-solid"] i,
@@ -80,13 +80,13 @@ $highlightColor: #3CD5FF;
     .tougue-solid,
     .smile-solid {
       &.icon:before,
-      &.icon:after {   
+      &.icon:after {
         color: white;
       }
     }
     .focus {
       &.icon:before,
-      &.icon:after {   
+      &.icon:after {
         color: white;
       }
     }
@@ -96,7 +96,7 @@ $highlightColor: #3CD5FF;
     .sun-raindrop,
     .sun-raindrop-solid,
     .moon-solid {
-      &.icon:before {   
+      &.icon:before {
         color: white;
       }
     }
@@ -118,21 +118,21 @@ $highlightColor: #3CD5FF;
     .cloud-lightning,
     .cloud-download,
     .cloud-upload {
-      &.icon:after {   
+      &.icon:after {
         color: white;
       }
     }
     .mustache.icon {
       i,
       i:before,
-      i:after {   
+      i:after {
         color: white;
       }
     }
     .left-double-quote-solid,
     .right-double-quote-solid {
       i:before,
-      i:after {   
+      i:after {
         color: black;
       }
     }
@@ -148,7 +148,7 @@ $highlightColor: #3CD5FF;
     }
   }
   .viewer.cssChildHover .iconViewer {
-    .icon i {   
+    .icon i {
       color: $highlightColor !important;
     }
     .icon i:before,
@@ -162,7 +162,7 @@ $highlightColor: #3CD5FF;
 
     .mustache.icon {
       i:before,
-      i:after {   
+      i:after {
         color: white;
       }
     }
@@ -175,6 +175,6 @@ $highlightColor: #3CD5FF;
   .viewer.cssChildAfterHover .iconViewer {
     .icon i:after {
       color: $highlightColor !important;
-    } 
+    }
   }
 }
