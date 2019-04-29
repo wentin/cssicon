@@ -325,6 +325,64 @@ button {
   transform-origin: left top;
   display: inline-block;
 }
+.viewer .viewerWrapper a.donation {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  min-height: 80px;
+  border: 1px solid #000;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 0 56px;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 700;
+}
+.viewer .viewerWrapper a.donation blockquote {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 228px;
+}
+.viewer .viewerWrapper a.donation blockquote .left-double-quote-solid.icon {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+}
+.viewer .viewerWrapper a.donation blockquote .right-double-quote-solid.icon {
+  position: absolute;
+  right: -10px;
+  bottom: 3px;
+}
+.viewer .viewerWrapper a.donation .heart.icon {
+  position: absolute;
+  left: 30px;
+  margin-top: 0px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.viewer .viewerWrapper a.donation .arrow-right.icon {
+  position: absolute;
+  right: 30px;
+  margin-top: 0px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.viewer .viewerWrapper a.donation:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+.viewer .viewerWrapper a.donation:hover .icon {
+  color: #fff;
+}
+.viewer .viewerWrapper a.donation:hover .icon.heart, .viewer .viewerWrapper a.donation:hover .icon.heart:before, .viewer .viewerWrapper a.donation:hover .icon.heart:after {
+  background-color: currentColor;
+}
 .viewer .viewerWrapper h4 .buttonCopy {
   float: right;
   cursor: pointer;
@@ -520,8 +578,9 @@ button {
   display: block;
   width: 100%;
   height: 30px;
-  margin: 30px 0 50px 0;
+  margin: 30px 18px 50px 0;
   font-size: 20px;
+  text-align: left;
 }
 .logo .icon {
   cursor: pointer;
@@ -543,6 +602,7 @@ button {
 }
 .logo .icon.N {
   position: relative;
+  margin-right: 18px;
 }
 
 .containerHome .logo .icon:hover {
@@ -551,7 +611,6 @@ button {
 
 .animateLogo {
   display: inline-block;
-  margin-left: 18px;
   position: relative;
   bottom: 0;
   width: 119px;
@@ -627,7 +686,7 @@ button {
   display: block;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 900px) {
+@media only screen and (min-width: 686px) and (max-width: 900px) {
   .container.viewerOpen .logo {
     margin-bottom: 20px;
   }
@@ -647,15 +706,15 @@ button {
     margin-bottom: 20px;
   }
 }
-@media only screen and (min-width: 640px) and (max-width: 1024px) {
+@media only screen and (min-width: 686px) and (max-width: 1024px) {
   .container.viewerOpen .icons {
-    width: calc( 100% - 365px);
+    width: calc( 100% - 410px);
   }
   .container.viewerOpen .viewer {
-    width: 365px;
+    width: 410px;
   }
 }
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 685px) {
   .icons {
     width: 100%;
   }
@@ -704,6 +763,17 @@ button {
     top: inherit;
     margin-right: 5px;
     margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .viewer .viewerWrapper a.donation {
+    padding: 0 20px 0 0;
+  }
+  .viewer .viewerWrapper a.donation .heart.icon {
+    display: none;
+  }
+  .viewer .viewerWrapper a.donation .arrow-right.icon {
+    right: 20px;
   }
 }
 .copy.icon {
