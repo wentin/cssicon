@@ -33,12 +33,6 @@ body {
     line-height: 38px;
     text-align: center;
   }
-  a.donation {
-    font-family: $futura;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-  }
   h4 {
     font-weight: 700;
     margin-bottom: 10px;
@@ -61,4 +55,11 @@ body {
     font-size: 16px;
     line-height: 24px;
   }   
+}
+
+.icons a.donation {
+  font-family: $futura;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }

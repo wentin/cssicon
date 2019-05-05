@@ -166,9 +166,73 @@ button {
     font-size: 16px;
     font-weight: 700;
     margin: 40px auto 0 auto;
+    padding-right: 5px;
     a {
       color: #000;
       text-decoration: underline;
+    }
+  }
+  a.donation {
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    min-height: 80px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding: 0 56px;
+    
+    blockquote {
+      position: relative;
+      max-width: 360px;
+      
+      .left-double-quote-solid.icon {
+        position: absolute;
+        left: -25px;
+        top: -2px;
+        text-align: left;
+      }
+      
+      .right-double-quote-solid.icon {
+        position: absolute;
+        right: -10px;
+        bottom: 3px;
+        text-align: left;
+      }
+    }
+    
+    .heart.icon {
+      position: absolute;
+      left: 30px;
+      margin-top: 0px;
+      align-self: center;
+    }
+
+    
+    .arrow-right.icon {
+      position: absolute;
+      right: 30px;
+      margin-top: 0px;
+      align-self: center;
+    }
+    
+    &:hover {
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+      .icon {
+        color: #fff;
+        &.heart,
+        &.heart:before, 
+        &.heart:after {
+          background-color: currentColor;
+        }
+        &.heart {
+          
+        }
+      }
     }
   }
   .about {
@@ -286,69 +350,6 @@ button {
         transform: scale(4);
         transform-origin: left top;
         display: inline-block;
-      }
-    }
-    a.donation {
-      position: relative;
-      display: flex;
-      margin-top: 25px;
-      min-height: 80px;
-      border: 1px solid #000;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: #000;
-      padding: 0 56px;
-      
-      blockquote {
-        position: relative;
-        font-size: 16px;
-        line-height: 20px;
-        max-width: 228px;
-        
-        .left-double-quote-solid.icon {
-          position: absolute;
-          left: -25px;
-          top: -2px;
-        }
-        
-        .right-double-quote-solid.icon {
-          position: absolute;
-          right: -10px;
-          bottom: 3px;
-        }
-      }
-      
-      .heart.icon {
-        position: absolute;
-        left: 30px;
-        margin-top: 0px;
-        align-self: center;
-      }
-
-      
-      .arrow-right.icon {
-        position: absolute;
-        right: 30px;
-        margin-top: 0px;
-        align-self: center;
-      }
-      
-      &:hover {
-        cursor: pointer;
-        background-color: #000;
-        color: #fff;
-        .icon {
-          color: #fff;
-          &.heart,
-          &.heart:before, 
-          &.heart:after {
-            background-color: currentColor;
-          }
-          &.heart {
-            
-          }
-        }
       }
     }
     h4 .buttonCopy {
@@ -754,8 +755,8 @@ button {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .viewer .viewerWrapper a.donation {
+@media only screen and (max-width: 820px) {
+  .icons a.donation {
     padding: 0 20px 0 0;
     
     .heart.icon {

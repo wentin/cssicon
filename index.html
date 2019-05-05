@@ -11,6 +11,7 @@
   <script src="js/angular.min.js"></script>
   <script src="js/angular-ui-router.min.js"></script>
   <script src="js/clipboard.min.js"></script>
+  <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,5 +28,25 @@
 <body>
   <ui-view></ui-view>
   <script src="js/app.js"></script>
+  <script>
+    (function () {
+      if (typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('custom', 'CK7ICK3J', 'placement:cssiconspace', {
+          target: '.native-js', template: `
+  <a href="##link##" class="native-banner" style="background: linear-gradient(-30deg, ##backgroundColor##E5, ##backgroundColor##E5 45%, ##backgroundColor## 45%) #fff;">
+    <div class="native-main">
+      <img class="native-img" img src="##logo##">
+      <div class="native-details" style="color: ##textColor##">
+        <span class="native-company">Sponsored by ##company##</span>
+        <span class="native-desc">##description##</span>
+      </div>
+      <span class="native-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+    </div>
+  </a>`,
+        }
+        );
+      }
+    })();
+  </script>
 </body>
 </html>

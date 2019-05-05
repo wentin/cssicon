@@ -32,12 +32,6 @@ body {
   line-height: 38px;
   text-align: center;
 }
-.viewerWrapper a.donation {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
 .viewerWrapper h4 {
   font-weight: 700;
   margin-bottom: 10px;
@@ -57,6 +51,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.icons a.donation {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 body {
@@ -218,10 +219,67 @@ button {
   font-size: 16px;
   font-weight: 700;
   margin: 40px auto 0 auto;
+  padding-right: 5px;
 }
 .icons .info a {
   color: #000;
   text-decoration: underline;
+}
+.icons a.donation {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  min-height: 80px;
+  border: 1px solid #000;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 0 56px;
+}
+.icons a.donation blockquote {
+  position: relative;
+  max-width: 360px;
+}
+.icons a.donation blockquote .left-double-quote-solid.icon {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  text-align: left;
+}
+.icons a.donation blockquote .right-double-quote-solid.icon {
+  position: absolute;
+  right: -10px;
+  bottom: 3px;
+  text-align: left;
+}
+.icons a.donation .heart.icon {
+  position: absolute;
+  left: 30px;
+  margin-top: 0px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.icons a.donation .arrow-right.icon {
+  position: absolute;
+  right: 30px;
+  margin-top: 0px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.icons a.donation:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+.icons a.donation:hover .icon {
+  color: #fff;
+}
+.icons a.donation:hover .icon.heart, .icons a.donation:hover .icon.heart:before, .icons a.donation:hover .icon.heart:after {
+  background-color: currentColor;
 }
 .icons .about {
   display: block;
@@ -330,62 +388,6 @@ button {
   transform: scale(4);
   transform-origin: left top;
   display: inline-block;
-}
-.viewer .viewerWrapper a.donation {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 25px;
-  min-height: 80px;
-  border: 1px solid #000;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  text-decoration: none;
-  color: #000;
-  padding: 0 56px;
-}
-.viewer .viewerWrapper a.donation blockquote {
-  position: relative;
-  font-size: 16px;
-  line-height: 20px;
-  max-width: 228px;
-}
-.viewer .viewerWrapper a.donation blockquote .left-double-quote-solid.icon {
-  position: absolute;
-  left: -25px;
-  top: -2px;
-}
-.viewer .viewerWrapper a.donation blockquote .right-double-quote-solid.icon {
-  position: absolute;
-  right: -10px;
-  bottom: 3px;
-}
-.viewer .viewerWrapper a.donation .heart.icon {
-  position: absolute;
-  left: 30px;
-  margin-top: 0px;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.viewer .viewerWrapper a.donation .arrow-right.icon {
-  position: absolute;
-  right: 30px;
-  margin-top: 0px;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.viewer .viewerWrapper a.donation:hover {
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-}
-.viewer .viewerWrapper a.donation:hover .icon {
-  color: #fff;
-}
-.viewer .viewerWrapper a.donation:hover .icon.heart, .viewer .viewerWrapper a.donation:hover .icon.heart:before, .viewer .viewerWrapper a.donation:hover .icon.heart:after {
-  background-color: currentColor;
 }
 .viewer .viewerWrapper h4 .buttonCopy {
   float: right;
@@ -769,14 +771,14 @@ button {
     margin-bottom: 40px;
   }
 }
-@media only screen and (max-width: 480px) {
-  .viewer .viewerWrapper a.donation {
+@media only screen and (max-width: 820px) {
+  .icons a.donation {
     padding: 0 20px 0 0;
   }
-  .viewer .viewerWrapper a.donation .heart.icon {
+  .icons a.donation .heart.icon {
     display: none;
   }
-  .viewer .viewerWrapper a.donation .arrow-right.icon {
+  .icons a.donation .arrow-right.icon {
     right: 15px;
   }
 }
