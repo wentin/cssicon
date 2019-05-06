@@ -1207,6 +1207,66 @@ button {
   border-right: solid 4px currentColor;
 }
 
+.native-js {
+  position: relative;
+  margin-top: 25px;
+  font-family: "futura-pt", sans-serif;
+}
+
+.native-banner {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  background: #fff !important;
+  border: solid 1px black;
+}
+.native-banner:hover {
+  background-color: black !important;
+}
+.native-banner:hover .native-details {
+  color: #fff !important;
+}
+.native-banner .native-main {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.native-banner .native-details {
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  color: black !important;
+}
+.native-banner .native-company {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 1;
+  display: none;
+}
+.native-banner .native-desc {
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.native-banner .native-img, .native-banner .native-cta {
+  display: none;
+}
+
+.native-source {
+  display: none;
+}
+
 @media screen and (min-height: 550px) {
   .containerHome .codeBlocks {
     position: absolute;

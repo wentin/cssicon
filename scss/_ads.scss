@@ -1,0 +1,56 @@
+
+.native-js {
+    position: relative;
+    margin-top: 25px;
+    font-family: $futura;
+}
+
+.native-banner {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    background: #fff !important;
+    border: solid 1px black;
+
+    &:hover {
+        background-color: black !important;
+        .native-details {
+            color: #fff !important;
+        }
+    }
+
+    .native-main {
+        display: flex;
+        max-width: 1024px;
+        margin: 0 auto;
+        flex-grow: 1;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .native-details {
+        display: flex;
+        margin-right: 20px;
+        flex-flow: column nowrap;
+        color: black !important;
+    }
+    .native-company {
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        line-height: 1;
+        display: none;
+    }
+    .native-desc {
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+    .native-img, .native-cta {
+        display: none;
+    }
+}
+
+.native-source {
+    display: none;
+}

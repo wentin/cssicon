@@ -166,7 +166,22 @@ app.controller('IconController', function($rootScope, $scope, $filter, $statePar
   }
 
   $scope.openIconPanel(icon);
-  
+
+  if (typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('custom', 'CK7ICK3J', 'placement:cssiconspace', {
+      target: '.native-js', template: `
+<a href="##link##" class="native-banner" style="background: linear-gradient(-30deg, ##backgroundColor##E5, ##backgroundColor##E5 45%, ##backgroundColor## 45%) #fff;">
+  <div class="native-main">
+    <img class="native-img" img src="##logo##">
+    <div class="native-details" style="color: ##textColor##">
+      <span class="native-company">Sponsored by ##company##</span>
+      <span class="native-desc">##description##</span>
+    </div>
+    <span class="native-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+  </div>
+</a>`,
+    });
+  }
 })
 
 app.controller("AnimateController", function($rootScope, $scope, IconsService, $state) {
@@ -283,6 +298,23 @@ app.controller('AnimateViewerController', function($rootScope, $scope, $filter, 
   jsClipboard.on('success', function(e) {
     angular.element(e.trigger).addClass('copied');
   });
+
+  if (typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('custom', 'CK7ICK3J', 'placement:cssiconspace', {
+      target: '.native-js', template: `
+<a href="##link##" class="native-banner" style="background: linear-gradient(-30deg, ##backgroundColor##E5, ##backgroundColor##E5 45%, ##backgroundColor## 45%) #fff;">
+  <div class="native-main">
+    <img class="native-img" img src="##logo##">
+    <div class="native-details" style="color: ##textColor##">
+      <span class="native-company">Sponsored by ##company##</span>
+      <span class="native-desc">##description##</span>
+    </div>
+    <span class="native-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+  </div>
+</a>`,
+    }
+    );
+  }
 })
 
 app.service("IconsService", function($http, $q){
