@@ -1,8 +1,8 @@
 @import '../../mixin';
-.moon-solid.icon {
+.mobile-solid.icon {
   &:before {
     @include pseudo();
-    left: 8px;
+    left: 1px;
     top: 3px;
     width: 8px;
     height: 10px;

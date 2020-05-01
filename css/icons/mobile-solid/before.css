@@ -1,7 +1,7 @@
-.moon-solid.icon:before {
+.mobile-solid.icon:before {
   content: '';
   position: absolute;
-  left: 8px;
+  left: 1px;
   top: 3px;
   width: 8px;
   height: 10px;
