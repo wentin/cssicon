@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700";
 body {
-  font-family: "futura-pt", sans-serif;
+font-family: 'Chilanka', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,7 +13,7 @@ body {
   line-height: 22px;
 }
 .viewerWrapper .iconLabel {
-  font-family: "futura-pt", sans-serif;
+  font-family: 'Chilanka', cursive;
   font-weight: 700;
   font-size: 22px;
   color: black;
@@ -25,7 +25,7 @@ body {
   line-height: 30px;
 }
 .viewerWrapper .buttonCodepen {
-  font-family: "futura-pt", sans-serif;
+  font-family: 'Chilanka', cursive;
   font-weight: 700;
   font-size: 16px;
   color: black;
@@ -47,7 +47,7 @@ body {
 
 .searchWrapper input.search {
   color: black;
-  font-family: "futura-pt", sans-serif;
+  font-family: 'Chilanka', cursive;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
