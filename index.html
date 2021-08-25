@@ -1,9 +1,10 @@
-<html ng-app="iconApp" ng-controller="MainController">
+<html ng-app="iconApp" ng-controller="MainController" data-wf-page="page">
 <head>
   <meta charset="UTF-8">
   <title>CSS ICON -- project by Wenting Zhang</title>
   <link rel="icon" href="/favicon.png" type="image/x-icon"/>
   <meta name="viewport" content="width=device-width">
+  <link href="css/promo-modal.css" rel="stylesheet" type="text/css">
   <script src="https://use.typekit.net/vmt4alo.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link type="text/css" rel="stylesheet" href="css/app.css" />
@@ -26,7 +27,29 @@
   </script>
 </head>
 <body>
-  <ui-view></ui-view>
+  <div class="background"></div>
+  <div data-w-id="id-wrapper" class="wrapper">
+    <ui-view></ui-view>
+  </div>
+  <div data-w-id="id-modal" style="display:none" class="modal">
+    <div data-w-id="id-overlay" class="overlay"></div>
+    <div data-w-id="id-dialogue" style="-webkit-transform:translate3d(null, 0vh, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 0vh, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 0vh, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 0vh, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="dialogue">
+      <a href="https://wentin.substack.com/" target="_blank" class="graphic-wrapper w-inline-block"><img src="images/newsletter.png" loading="lazy" srcset="images/newsletter-p-500.png 500w, images/newsletter-p-800.png 800w, images/newsletter-p-1080.png 1080w, images/newsletter-p-1600.png 1600w, images/newsletter.png 1920w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 600.090087890625px, 60vw" alt="" class="graphic"></a>
+      <div class="text-wrapper">
+        <h4 class="subtitle">Introducing</h4>
+        <h1 class="title">wentin<span class="apostrophe">’</span>s newsletter</h1>
+        <p class="paragraph">Hello friend, I am wentin, creator of CSS ICON. I recently quitted my job and became a full-time indie hacker. I am building my product (a brand design app) in public and share my progress daily in my newsletter. Take a look!</p>
+        <a href="https://wentin.substack.com/" target="_blank" class="button w-inline-block">
+          <div class="label">tAKE A <br>LOOK</div>
+          <div data-w-id="6cc014d0-d572-04c1-3d73-788be59b0557" style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="icon-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5L13 5ZM12 19L11.2929 19.7071C11.4804 19.8946 11.7348 20 12 20C12.2652 20 12.5196 19.8946 12.7071 19.7071L12 19ZM19.7071 12.7071C20.0976 12.3166 20.0976 11.6834 19.7071 11.2929C19.3166 10.9024 18.6834 10.9024 18.2929 11.2929L19.7071 12.7071ZM5.70711 11.2929C5.31658 10.9024 4.68342 10.9024 4.29289 11.2929C3.90237 11.6834 3.90237 12.3166 4.29289 12.7071L5.70711 11.2929ZM11 5L11 19H13L13 5L11 5ZM12.7071 19.7071L19.7071 12.7071L18.2929 11.2929L11.2929 18.2929L12.7071 19.7071ZM12.7071 18.2929L5.70711 11.2929L4.29289 12.7071L11.2929 19.7071L12.7071 18.2929Z"></path>
+            </svg></div>
+        </a>
+      </div>
+    </div>
+  </div>
   <script src="js/app.js"></script>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=611e9a916129e1bca94e2938" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
 </body>
 </html>
