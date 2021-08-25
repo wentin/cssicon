@@ -228,7 +228,7 @@ button {
 .icons a.donation {
   position: relative;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-top: 25px;
   min-height: 80px;
   border: 1px solid #000;
