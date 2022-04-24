@@ -105,6 +105,7 @@
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   color: #000;
+  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
 }
